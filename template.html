@@ -380,30 +380,13 @@
     </div>
   </header>
 
-  <!-- ── ARTIKEL 1: Julius Sundblom ── -->
-  <div class="content">
-    <p class="article-kicker">Ledare · Af Julius Sundblom</p>
-
-    <h2 class="article-headline">{{HEADLINE_1}}</h2>
-
-    <p class="article-deck">En betraktelse öfver dagens skeenden i ljuset af Ålands eviga kamp</p>
-
-    <div class="byline-rule">
-      <span class="byline">Julius Sundblom · Tidningen Åland</span>
-    </div>
-
-    <div class="article-body">
-      {{COMMENTARY_1}}
-    </div>
-
-    <div class="ornament">— ✦ —</div>
-  </div>
+  {{ARTICLE_TOP}}
 
   <!-- ── TIDSMASKIN ── -->
   <div class="time-machine">
-    <div class="tm-era tm-era--past">
-      <span class="tm-era-label">Då</span>
-      <span class="tm-year-display">MCMXXI</span>
+    <div class="tm-era {{TM_LEFT_CLASS}}">
+      <span class="tm-era-label">{{TM_LEFT_LABEL}}</span>
+      <span class="tm-year-display">{{TM_LEFT_YEAR}}</span>
     </div>
     <div class="tm-track">
       <div class="tm-dot"></div>
@@ -414,29 +397,13 @@
       <div class="tm-dot"></div>
       <span class="tm-arrow-tip">›</span>
     </div>
-    <div class="tm-era tm-era--now">
-      <span class="tm-era-label">Nu</span>
-      <span class="tm-year-display">2026</span>
+    <div class="tm-era {{TM_RIGHT_CLASS}}">
+      <span class="tm-era-label">{{TM_RIGHT_LABEL}}</span>
+      <span class="tm-year-display">{{TM_RIGHT_YEAR}}</span>
     </div>
   </div>
 
-  <!-- ── ARTIKEL 2: Josefina Jansson ── -->
-  <div class="content">
-    <p class="modern-kicker">Nutida reportage · Ålands Radio</p>
-
-    <h2 class="modern-headline">{{HEADLINE_2}}</h2>
-
-    <div class="modern-byline-row">
-      <span class="modern-byline-name">Josefina Jansson</span>
-      <span class="modern-byline-org">· Ålands Radio</span>
-    </div>
-
-    <div class="modern-body">
-      {{COMMENTARY_2}}
-    </div>
-
-    <p class="modern-source">Källa: <a href="{{SOURCE_URL_2}}" target="_blank" rel="noopener">Ålands Radio</a></p>
-  </div>
+  {{ARTICLE_BOTTOM}}
 
   <!-- ── FOOTER ── -->
   <footer class="footer">

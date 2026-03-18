@@ -159,6 +159,12 @@ SPRÅKLIGA KRAV (strikt):
     "det åländska folkets oförytterliga rätt", "fastlandets godtycke"
 - Avsluta alltid med signaturen: *J.S.*
 
+FAKTAKRAV (strikt):
+- Håll dig till de fakta, händelser och personer som framgår av artikelinnehållet
+- Återge citat och uttalanden troget — omformulerade i din stil men ej förvrängda
+- Lägg inte till information som saknas i källmaterialet
+- Nyhetsvärdet och innehållet förblir troget originalet; endast stil och perspektiv är ditt
+
 INNEHÅLLSKRAV:
 - Koppla nyheten till Ålands konstitutionella ställning, autonomi eller folklig rättvisa
 - Visa stridbarhet — det ska BITAS
@@ -176,12 +182,18 @@ JOSEFINA_PROMPT = """Du är Josefina Jansson, en av Ålands Radio mest erfarna o
 
 Din uppgift är att skriva ett kort nutida nyhetsreportage / kommentar i din autentiska röst.
 
+FAKTAKRAV (strikt):
+- Håll dig till de fakta, händelser och personer som framgår av artikelinnehållet
+- Återge citat och uttalanden troget — omformulerade i din stil men ej förvrängda
+- Lägg inte till information som saknas i källmaterialet
+- Nyhetsvärdet och innehållet förblir troget originalet; endast stil och perspektiv är ditt
+
 STILKRAV:
 - Moderna, klara meningar — inga långa omständliga konstruktioner
 - Tillgänglig och varm ton, som om du berättar för en lyssnare du känner
 - Lokal förankring: Åland, ålänningarna, deras vardag
 - Kort intro som hakar in läsaren direkt
-- Citera gärna en person (hitta på ett trovärdigt citat om inget ges)
+- Använd citat och namn som finns i källmaterialet
 - Nutida perspektiv — vad händer just nu, vad betyder det för folk här?
 - Avsluta med en framåtblickande mening eller öppen fråga
 
@@ -261,9 +273,34 @@ def _to_paragraphs(text: str) -> str:
     )
 
 
+def _julius_block(headline: str, url: str, text: str) -> str:
+    return f"""  <div class="content">
+    <p class="article-kicker">Radiokommentar · Julius Sundblom</p>
+    <h2 class="article-headline">{headline}</h2>
+    <p class="article-deck">En betraktelse öfver dagens skeenden i ljuset af Ålands eviga kamp</p>
+    <div class="byline-rule"><span class="byline">Julius Sundblom · Tidningen Åland</span></div>
+    <div class="article-body">{_to_paragraphs(text)}</div>
+    <div class="ornament">— ✦ —</div>
+  </div>"""
+
+
+def _josefina_block(headline: str, url: str, text: str) -> str:
+    return f"""  <div class="content">
+    <p class="modern-kicker">Radiokommentar · Ålands Radio</p>
+    <h2 class="modern-headline">{headline}</h2>
+    <div class="modern-byline-row">
+      <span class="modern-byline-name">Josefina Jansson</span>
+      <span class="modern-byline-org">· Ålands Radio</span>
+    </div>
+    <div class="modern-body">{_to_paragraphs(text)}</div>
+    <p class="modern-source">Källa: <a href="{url}" target="_blank" rel="noopener">Ålands Radio</a></p>
+  </div>"""
+
+
 def render_html(headlines: list[tuple[str, str]],
                 sundblom_text: str,
-                josefina_text: str) -> str:
+                josefina_text: str,
+                julius_first: bool = True) -> str:
     """Bäddar in båda kommentarerna i HTML-mallen."""
     today    = datetime.date.today()
     weekdays = ["Måndagen","Tisdagen","Onsdagen","Torsdagen","Fredagen","Lördagen","Söndagen"]
@@ -272,19 +309,34 @@ def render_html(headlines: list[tuple[str, str]],
     date_str = f"{weekdays[today.weekday()]} den {today.day} {months[today.month]} {today.year}"
 
     headline_1, url_1 = headlines[0]
-    headline_2, url_2 = headlines[1] if len(headlines) > 1 else ("", "")
+    headline_2, url_2 = headlines[1] if len(headlines) > 1 else headlines[0]
+
+    julius  = _julius_block(headline_1, url_1, sundblom_text)
+    josefina = _josefina_block(headline_2, url_2, josefina_text)
+
+    if julius_first:
+        article_top, article_bottom = julius, josefina
+        tm_left_year, tm_left_label, tm_left_class = "MCMXXI", "Då", "tm-era--past"
+        tm_right_year, tm_right_label, tm_right_class = "2026", "Nu", "tm-era--now"
+    else:
+        article_top, article_bottom = josefina, julius
+        tm_left_year, tm_left_label, tm_left_class = "2026", "Nu", "tm-era--now"
+        tm_right_year, tm_right_label, tm_right_class = "MCMXXI", "Då", "tm-era--past"
 
     with open(TEMPLATE_FILE, encoding="utf-8") as f:
         template = f.read()
 
     return (template
             .replace("{{DATE}}", date_str)
-            .replace("{{HEADLINE_1}}", headline_1)
-            .replace("{{COMMENTARY_1}}", _to_paragraphs(sundblom_text))
-            .replace("{{SOURCE_URL_1}}", url_1)
-            .replace("{{HEADLINE_2}}", headline_2)
-            .replace("{{COMMENTARY_2}}", _to_paragraphs(josefina_text))
-            .replace("{{SOURCE_URL_2}}", url_2))
+            .replace("{{ARTICLE_TOP}}", article_top)
+            .replace("{{ARTICLE_BOTTOM}}", article_bottom)
+            .replace("{{TM_LEFT_YEAR}}", tm_left_year)
+            .replace("{{TM_LEFT_LABEL}}", tm_left_label)
+            .replace("{{TM_LEFT_CLASS}}", tm_left_class)
+            .replace("{{TM_RIGHT_YEAR}}", tm_right_year)
+            .replace("{{TM_RIGHT_LABEL}}", tm_right_label)
+            .replace("{{TM_RIGHT_CLASS}}", tm_right_class)
+            .replace("{{SOURCE_URL_1}}", url_1))
 
 
 # ─────────────────────────────────────────────────────────────────────────────
@@ -476,8 +528,10 @@ def main() -> None:
     sundblom_text = generate_sundblom(headline_1, url_1, body_1)
     josefina_text = generate_josefina(headline_2, url_2, body_2)
 
-    # 4. Rendera HTML
-    html = render_html(headlines, sundblom_text, josefina_text)
+    # 4. Rendera HTML — Julius först på jämna dagar, Josefina på udda
+    julius_first = datetime.date.today().day % 2 == 0
+    log.info("Ordning: %s", "Julius → Josefina" if julius_first else "Josefina → Julius")
+    html = render_html(headlines, sundblom_text, josefina_text, julius_first)
 
     # Spara lokalt också (för debug / artefakt)
     with open(OUTPUT_HTML, "w", encoding="utf-8") as f:
