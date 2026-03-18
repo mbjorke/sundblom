@@ -110,10 +110,10 @@ def fetch_top_headlines(n: int = 2) -> list[tuple[str, str]]:
 
 
 # ─────────────────────────────────────────────────────────────────────────────
-# 2. AI-LOOP  (Ralph-loop med Sundbloms röst)
+# 2. AI-LOOP
 # ─────────────────────────────────────────────────────────────────────────────
 
-SYSTEM_PROMPT = """Du är Julius Sundblom, grundare av Tidningen Åland och den åländska
+SUNDBLOM_PROMPT = """Du är Julius Sundblom, grundare av Tidningen Åland och den åländska
 autonomirörelsens mest brinnande förkämpe, skrivande år 1920–1928.
 
 Din uppgift är att skriva en ledarartikel / radiokommentar i din autentiska röst.
@@ -142,72 +142,103 @@ Om JA på någon fråga — skriv om tills texten känns som ett genuint tidning
 Svara ENBART med den färdiga texten. Ingen förklaring, ingen inledning."""
 
 
-def generate_commentary(headlines: list[tuple[str, str]]) -> str:
-    """Anropar Claude API och returnerar den Sundblomska kommentaren."""
-    if not ANTHROPIC_KEY:
-        raise EnvironmentError("ANTHROPIC_API_KEY saknas i miljövariablerna.")
+JOSEFINA_PROMPT = """Du är Josefina Jansson, reporter och programledare på Ålands Radio.
 
+Din uppgift är att skriva ett kort nutida nyhetsreportage / kommentar i din autentiska röst.
+
+STILKRAV:
+- Moderna, klara meningar — inga långa omständliga konstruktioner
+- Tillgänglig och varm ton, som om du berättar för en lyssnare du känner
+- Lokal förankring: Åland, ålänningarna, deras vardag
+- Kort intro som hakar in läsaren direkt
+- Citera gärna en person (hitta på ett trovärdigt citat om inget ges)
+- Nutida perspektiv — vad händer just nu, vad betyder det för folk här?
+- Avsluta med en framåtblickande mening eller öppen fråga
+
+FORMAT:
+- 3–4 stycken, cirka 150–200 ord totalt
+- Inga rubriker i versaler, inga arkaismer
+- Signera inte — byline läggs till separat
+
+Svara ENBART med den färdiga texten."""
+
+
+def _call_api(system: str, user: str, max_tokens: int = 1200) -> str:
     client = Anthropic(api_key=ANTHROPIC_KEY)
-
-    news_block = "\n".join(
-        f"RUBRIK {i+1}: {h}\nKÄLLA {i+1}: {u}"
-        for i, (h, u) in enumerate(headlines)
-    )
-    user_message = (
-        f"Dagens nyheter från Ålands Radio:\n\n"
-        f"{news_block}\n\n"
-        f"Skriv nu Sundbloms kommentar. Du kan utgå från en eller båda nyheterna — låt stridsbegäret avgöra."
-    )
-
-    log.info("Skickar till Claude API…")
     response = client.messages.create(
         model="claude-opus-4-5",
-        max_tokens=1200,
-        system=SYSTEM_PROMPT,
-        messages=[{"role": "user", "content": user_message}],
+        max_tokens=max_tokens,
+        system=system,
+        messages=[{"role": "user", "content": user}],
     )
+    return response.content[0].text.strip()
 
-    commentary = response.content[0].text.strip()
-    log.info("Kommentar mottagen (%d tecken).", len(commentary))
-    return commentary
+
+def generate_sundblom(headline: str, source_url: str) -> str:
+    """Genererar Julius Sundbloms ledarartikel om topnyheten."""
+    if not ANTHROPIC_KEY:
+        raise EnvironmentError("ANTHROPIC_API_KEY saknas i miljövariablerna.")
+    log.info("Genererar Sundblom-kommentar…")
+    text = _call_api(
+        SUNDBLOM_PROMPT,
+        f"Dagens nyhet från Ålands Radio:\n\nRUBRIK: {headline}\nKÄLLA: {source_url}\n\n"
+        f"Skriv nu Sundbloms kommentar om denna nyhet.",
+    )
+    log.info("Sundblom klar (%d tecken).", len(text))
+    return text
+
+
+def generate_josefina(headline: str, source_url: str) -> str:
+    """Genererar Josefina Janssons nutida reportage om följdnyheten."""
+    if not ANTHROPIC_KEY:
+        raise EnvironmentError("ANTHROPIC_API_KEY saknas i miljövariablerna.")
+    log.info("Genererar Josefina-kommentar…")
+    text = _call_api(
+        JOSEFINA_PROMPT,
+        f"Nyhet att kommentera:\n\nRUBRIK: {headline}\nKÄLLA: {source_url}\n\n"
+        f"Skriv nu ditt reportage om denna nyhet.",
+        max_tokens=600,
+    )
+    log.info("Josefina klar (%d tecken).", len(text))
+    return text
 
 
 # ─────────────────────────────────────────────────────────────────────────────
 # 3. FORMAT
 # ─────────────────────────────────────────────────────────────────────────────
 
-def render_html(headlines: list[tuple[str, str]], commentary: str) -> str:
-    """Bäddar in kommentaren i HTML-mallen."""
+def _to_paragraphs(text: str) -> str:
+    return "".join(
+        f"<p>{p.strip()}</p>"
+        for p in text.split("\n\n")
+        if p.strip()
+    )
+
+
+def render_html(headlines: list[tuple[str, str]],
+                sundblom_text: str,
+                josefina_text: str) -> str:
+    """Bäddar in båda kommentarerna i HTML-mallen."""
     today    = datetime.date.today()
     weekdays = ["Måndagen","Tisdagen","Onsdagen","Torsdagen","Fredagen","Lördagen","Söndagen"]
     months   = ["","januari","februari","mars","april","maj","juni",
                 "juli","augusti","september","oktober","november","december"]
     date_str = f"{weekdays[today.weekday()]} den {today.day} {months[today.month]} {today.year}"
 
-    # Convert newlines → <p> tags
-    paragraphs = "".join(
-        f"<p>{p.strip()}</p>"
-        for p in commentary.split("\n\n")
-        if p.strip()
-    )
-
-    # Use first headline as the displayed title
-    main_headline, _ = headlines[0]
-
-    # Build source links
-    source_links = " &nbsp;·&nbsp; ".join(
-        f'<a href="{u}" target="_blank" rel="noopener">Nyhet {i+1}</a>'
-        for i, (_, u) in enumerate(headlines)
-    )
+    headline_1, url_1 = headlines[0]
+    headline_2, url_2 = headlines[1] if len(headlines) > 1 else ("", "")
 
     with open(TEMPLATE_FILE, encoding="utf-8") as f:
         template = f.read()
 
     return (template
             .replace("{{DATE}}", date_str)
-            .replace("{{HEADLINE}}", main_headline)
-            .replace("{{COMMENTARY}}", paragraphs)
-            .replace("{{SOURCE_URL}}", source_links))
+            .replace("{{HEADLINE_1}}", headline_1)
+            .replace("{{COMMENTARY_1}}", _to_paragraphs(sundblom_text))
+            .replace("{{SOURCE_URL_1}}", url_1)
+            .replace("{{HEADLINE_2}}", headline_2)
+            .replace("{{COMMENTARY_2}}", _to_paragraphs(josefina_text))
+            .replace("{{SOURCE_URL_2}}", url_2))
 
 
 # ─────────────────────────────────────────────────────────────────────────────
@@ -389,11 +420,14 @@ def main() -> None:
     # 1. Scrape
     headlines = fetch_top_headlines(n=2)
 
-    # 2. Generera
-    commentary = generate_commentary(headlines)
+    # 2. Generera — två röster
+    headline_1, url_1 = headlines[0]
+    headline_2, url_2 = headlines[1] if len(headlines) > 1 else headlines[0]
+    sundblom_text  = generate_sundblom(headline_1, url_1)
+    josefina_text  = generate_josefina(headline_2, url_2)
 
     # 3. Rendera HTML
-    html = render_html(headlines, commentary)
+    html = render_html(headlines, sundblom_text, josefina_text)
 
     # Spara lokalt också (för debug / artefakt)
     with open(OUTPUT_HTML, "w", encoding="utf-8") as f:

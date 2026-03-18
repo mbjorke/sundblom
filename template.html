@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Sundbloms Radio-kommentarer — Tidningen Åland</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=IM+Fell+English:ital@0;1&family=UnifrakturMaguntia&family=IM+Fell+English+SC&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=IM+Fell+English:ital@0;1&family=UnifrakturMaguntia&family=IM+Fell+English+SC&family=Source+Serif+4:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
   <style>
     :root {
       --ink:      #1a1207;
@@ -13,6 +13,8 @@
       --rule:     #5c3d1a;
       --muted:    #6b5540;
       --accent:   #8b1a1a;
+      --modern-ink: #1a1a1a;
+      --modern-accent: #005f8a;
     }
 
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
@@ -36,7 +38,6 @@
       color: var(--ink);
     }
 
-    /* Paper texture overlay */
     body::before {
       content: "";
       position: fixed; inset: 0;
@@ -61,9 +62,7 @@
       text-align: center;
       padding: 2.2rem 2.5rem 0;
       border-bottom: 4px double var(--rule);
-      margin-bottom: 0;
     }
-
     .masthead-eyebrow {
       font-family: 'IM Fell English SC', serif;
       font-size: .7rem;
@@ -72,7 +71,6 @@
       text-transform: uppercase;
       margin-bottom: .5rem;
     }
-
     .masthead-title {
       font-family: 'UnifrakturMaguntia', cursive;
       font-size: clamp(2.4rem, 7vw, 3.8rem);
@@ -80,7 +78,6 @@
       line-height: 1;
       margin-bottom: .25rem;
     }
-
     .masthead-subtitle {
       font-family: 'IM Fell English SC', serif;
       font-size: .75rem;
@@ -88,12 +85,7 @@
       color: var(--muted);
       margin-bottom: .8rem;
     }
-
-    .masthead-rule {
-      height: 1px; background: var(--rule);
-      margin: .4rem 0;
-    }
-
+    .masthead-rule { height: 1px; background: var(--rule); margin: .4rem 0; }
     .masthead-dateline {
       display: flex;
       justify-content: space-between;
@@ -104,12 +96,9 @@
       font-style: italic;
     }
 
-    /* ── Column layout ── */
-    .content {
-      padding: 1.8rem 2.5rem 0;
-    }
+    /* ── Article shared ── */
+    .content { padding: 1.8rem 2.5rem 0; }
 
-    /* ── Article headline ── */
     .article-kicker {
       font-family: 'IM Fell English SC', serif;
       font-size: .65rem;
@@ -118,25 +107,6 @@
       text-transform: uppercase;
       margin-bottom: .5rem;
     }
-
-    .article-headline {
-      font-family: 'IM Fell English', Georgia, serif;
-      font-size: clamp(1.35rem, 4vw, 1.9rem);
-      font-weight: normal;
-      line-height: 1.25;
-      margin-bottom: .4rem;
-      color: var(--ink);
-      text-align: center;
-    }
-
-    .article-deck {
-      text-align: center;
-      font-style: italic;
-      font-size: .85rem;
-      color: var(--muted);
-      margin-bottom: 1rem;
-    }
-
     .byline-rule {
       display: flex; align-items: center; gap: .6rem;
       margin: .8rem 0 1.2rem;
@@ -151,14 +121,36 @@
       color: var(--muted);
       white-space: nowrap;
     }
+    .ornament {
+      text-align: center;
+      color: var(--rule);
+      font-size: 1.1rem;
+      margin: 1.4rem 0 0;
+      letter-spacing: .5em;
+    }
 
-    /* ── Body text ── */
+    /* ── Article 1: Sundblom (historisk stil) ── */
+    .article-headline {
+      font-family: 'IM Fell English', Georgia, serif;
+      font-size: clamp(1.35rem, 4vw, 1.9rem);
+      font-weight: normal;
+      line-height: 1.25;
+      margin-bottom: .4rem;
+      color: var(--ink);
+      text-align: center;
+    }
+    .article-deck {
+      text-align: center;
+      font-style: italic;
+      font-size: .85rem;
+      color: var(--muted);
+      margin-bottom: 1rem;
+    }
     .article-body {
       column-count: 2;
       column-gap: 2rem;
       column-rule: 1px solid #c8b090;
     }
-
     .article-body p {
       font-size: .92rem;
       line-height: 1.75;
@@ -166,7 +158,6 @@
       hyphens: auto;
       margin-bottom: .75rem;
     }
-
     .article-body p:first-child::first-letter {
       font-family: 'UnifrakturMaguntia', cursive;
       font-size: 3.8rem;
@@ -175,14 +166,71 @@
       margin: .05em .1em -.05em 0;
       color: var(--accent);
     }
-
-    /* Signature */
     .article-body p:last-child {
       text-align: right;
       font-style: italic;
       color: var(--muted);
       margin-top: 1.2rem;
     }
+
+    /* ── Divider between articles ── */
+    .section-divider {
+      margin: 2rem 2.5rem;
+      border: none;
+      border-top: 3px double var(--rule);
+    }
+
+    /* ── Article 2: Josefina (nutida stil) ── */
+    .modern-kicker {
+      font-family: 'Source Serif 4', Georgia, serif;
+      font-size: .68rem;
+      letter-spacing: .2em;
+      color: var(--modern-accent);
+      text-transform: uppercase;
+      margin-bottom: .5rem;
+      font-weight: 600;
+    }
+    .modern-headline {
+      font-family: 'Source Serif 4', Georgia, serif;
+      font-size: clamp(1.2rem, 3.5vw, 1.6rem);
+      font-weight: 600;
+      line-height: 1.3;
+      margin-bottom: .5rem;
+      color: var(--modern-ink);
+    }
+    .modern-byline-row {
+      display: flex;
+      align-items: center;
+      gap: .5rem;
+      margin-bottom: 1.2rem;
+      padding-bottom: .6rem;
+      border-bottom: 1px solid #c8b090;
+    }
+    .modern-byline-name {
+      font-family: 'Source Serif 4', Georgia, serif;
+      font-size: .72rem;
+      font-weight: 600;
+      color: var(--modern-ink);
+    }
+    .modern-byline-org {
+      font-family: 'Source Serif 4', Georgia, serif;
+      font-size: .72rem;
+      color: var(--muted);
+    }
+    .modern-body p {
+      font-family: 'Source Serif 4', Georgia, serif;
+      font-size: .95rem;
+      line-height: 1.7;
+      color: var(--modern-ink);
+      margin-bottom: .85rem;
+    }
+    .modern-source {
+      margin-top: .8rem;
+      font-family: 'Source Serif 4', Georgia, serif;
+      font-size: .68rem;
+      color: var(--muted);
+    }
+    .modern-source a { color: var(--modern-accent); }
 
     /* ── Footer ── */
     .footer {
@@ -196,23 +244,12 @@
       color: var(--muted);
       font-style: italic;
     }
-
-    .footer a {
-      color: var(--muted);
-    }
-
-    /* ── Ornament ── */
-    .ornament {
-      text-align: center;
-      color: var(--rule);
-      font-size: 1.1rem;
-      margin: 1.2rem 0 0;
-      letter-spacing: .5em;
-    }
+    .footer a { color: var(--muted); }
 
     @media (max-width: 540px) {
       .article-body { column-count: 1; }
       .masthead, .content, .footer { padding-left: 1.2rem; padding-right: 1.2rem; }
+      .section-divider { margin-left: 1.2rem; margin-right: 1.2rem; }
     }
   </style>
 </head>
@@ -232,23 +269,44 @@
     </div>
   </header>
 
-  <!-- ── ARTICLE ── -->
+  <!-- ── ARTIKEL 1: Julius Sundblom ── -->
   <div class="content">
-    <p class="article-kicker">Ledare · Dagens kommentar</p>
+    <p class="article-kicker">Ledare · Af Julius Sundblom</p>
 
-    <h2 class="article-headline">{{HEADLINE}}</h2>
+    <h2 class="article-headline">{{HEADLINE_1}}</h2>
 
     <p class="article-deck">En betraktelse öfver dagens skeenden i ljuset af Ålands eviga kamp</p>
 
     <div class="byline-rule">
-      <span class="byline">Af Julius Sundblom</span>
+      <span class="byline">Julius Sundblom · Tidningen Åland</span>
     </div>
 
     <div class="article-body">
-      {{COMMENTARY}}
+      {{COMMENTARY_1}}
     </div>
 
     <div class="ornament">— ✦ —</div>
+  </div>
+
+  <!-- ── DIVIDER ── -->
+  <hr class="section-divider">
+
+  <!-- ── ARTIKEL 2: Josefina Jansson ── -->
+  <div class="content">
+    <p class="modern-kicker">Nutida reportage · Ålands Radio</p>
+
+    <h2 class="modern-headline">{{HEADLINE_2}}</h2>
+
+    <div class="modern-byline-row">
+      <span class="modern-byline-name">Josefina Jansson</span>
+      <span class="modern-byline-org">· Ålands Radio</span>
+    </div>
+
+    <div class="modern-body">
+      {{COMMENTARY_2}}
+    </div>
+
+    <p class="modern-source">Källa: <a href="{{SOURCE_URL_2}}" target="_blank" rel="noopener">Ålands Radio</a></p>
   </div>
 
   <!-- ── FOOTER ── -->
@@ -258,7 +316,7 @@
       i Julius Sundbloms anda, {{DATE}}
     </span>
     <span>
-      Källnyheter: {{SOURCE_URL}}
+      Källnyhet: <a href="{{SOURCE_URL_1}}" target="_blank" rel="noopener">Ålands Radio</a>
       &ensp;·&ensp;
       <a href="arkiv/">Arkivet</a>
     </span>
