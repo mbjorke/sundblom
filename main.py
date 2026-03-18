@@ -55,6 +55,36 @@ def _article_is_hero(h2) -> bool:
     return "flex-row" not in classes
 
 
+def fetch_article_body(url: str) -> str:
+    """Hämtar brödtexten från en artikelsida. Returnerar tom sträng vid fel."""
+    if not url or url == ALANDS_RADIO_URL:
+        return ""
+    try:
+        resp = requests.get(url, timeout=15, headers={
+            "User-Agent": "SundblomBot/1.0 (+https://github.com)"
+        })
+        resp.raise_for_status()
+    except requests.RequestException as exc:
+        log.warning("Kunde inte hämta artikel (%s): %s", url, exc)
+        return ""
+
+    soup = BeautifulSoup(resp.text, "html.parser")
+
+    # Ålands Radio lägger artikeltext i <p>-taggar inuti article/main
+    container = soup.find("article") or soup.find("main") or soup.body
+    if not container:
+        return ""
+
+    paragraphs = [
+        p.get_text(strip=True)
+        for p in container.find_all("p")
+        if len(p.get_text(strip=True)) > 40
+    ]
+    body = "\n\n".join(paragraphs[:12])  # max 12 stycken
+    log.info("Artikelinnehåll hämtat (%d tecken): %s", len(body), url)
+    return body
+
+
 def fetch_top_headlines(n: int = 2) -> list[tuple[str, str]]:
     """
     Returns a list of (headline, url) for the top-n articles,
@@ -183,29 +213,36 @@ def _call_api(system: str, user: str, max_tokens: int = 1200) -> str:
     return response.content[0].text.strip()
 
 
-def generate_sundblom(headline: str, source_url: str) -> str:
+def _build_news_block(headline: str, source_url: str, body: str) -> str:
+    block = f"RUBRIK: {headline}\nKÄLLA: {source_url}"
+    if body:
+        block += f"\n\nARTIKELINNEHÅLL:\n{body}"
+    return block
+
+
+def generate_sundblom(headline: str, source_url: str, body: str = "") -> str:
     """Genererar Julius Sundbloms ledarartikel om topnyheten."""
     if not ANTHROPIC_KEY:
         raise EnvironmentError("ANTHROPIC_API_KEY saknas i miljövariablerna.")
     log.info("Genererar Sundblom-kommentar…")
+    news = _build_news_block(headline, source_url, body)
     text = _call_api(
         SUNDBLOM_PROMPT,
-        f"Dagens nyhet från Ålands Radio:\n\nRUBRIK: {headline}\nKÄLLA: {source_url}\n\n"
-        f"Skriv nu Sundbloms kommentar om denna nyhet.",
+        f"Dagens nyhet från Ålands Radio:\n\n{news}\n\nSkriv nu Sundbloms kommentar om denna nyhet.",
     )
     log.info("Sundblom klar (%d tecken).", len(text))
     return text
 
 
-def generate_josefina(headline: str, source_url: str) -> str:
+def generate_josefina(headline: str, source_url: str, body: str = "") -> str:
     """Genererar Josefina Janssons nutida reportage om följdnyheten."""
     if not ANTHROPIC_KEY:
         raise EnvironmentError("ANTHROPIC_API_KEY saknas i miljövariablerna.")
     log.info("Genererar Josefina-kommentar…")
+    news = _build_news_block(headline, source_url, body)
     text = _call_api(
         JOSEFINA_PROMPT,
-        f"Nyhet att kommentera:\n\nRUBRIK: {headline}\nKÄLLA: {source_url}\n\n"
-        f"Skriv nu ditt reportage om denna nyhet.",
+        f"Nyhet att kommentera:\n\n{news}\n\nSkriv nu ditt reportage om denna nyhet.",
         max_tokens=600,
     )
     log.info("Josefina klar (%d tecken).", len(text))
@@ -429,13 +466,17 @@ def main() -> None:
     # 1. Scrape
     headlines = fetch_top_headlines(n=2)
 
-    # 2. Generera — två röster
+    # 2. Hämta artikelinnehåll
     headline_1, url_1 = headlines[0]
     headline_2, url_2 = headlines[1] if len(headlines) > 1 else headlines[0]
-    sundblom_text  = generate_sundblom(headline_1, url_1)
-    josefina_text  = generate_josefina(headline_2, url_2)
+    body_1 = fetch_article_body(url_1)
+    body_2 = fetch_article_body(url_2)
 
-    # 3. Rendera HTML
+    # 3. Generera — två röster
+    sundblom_text = generate_sundblom(headline_1, url_1, body_1)
+    josefina_text = generate_josefina(headline_2, url_2, body_2)
+
+    # 4. Rendera HTML
     html = render_html(headlines, sundblom_text, josefina_text)
 
     # Spara lokalt också (för debug / artefakt)
@@ -443,10 +484,10 @@ def main() -> None:
         f.write(html)
     log.info("HTML sparad lokalt: %s", OUTPUT_HTML)
 
-    # 4. Publicera
+    # 5. Publicera
     publish_to_github(html)
 
-    # 5. Arkivera
+    # 6. Arkivera
     publish_archive_entry(html)
     rebuild_archive_index()
 
