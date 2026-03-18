@@ -173,11 +173,122 @@
       margin-top: 1.2rem;
     }
 
-    /* ── Divider between articles ── */
-    .section-divider {
-      margin: 2rem 2.5rem;
-      border: none;
-      border-top: 3px double var(--rule);
+    /* ── Tidsmaskin-divider ── */
+    .time-machine {
+      margin: 2rem 0 0;
+      background: var(--ink);
+      padding: 1.6rem 2.5rem;
+      position: relative;
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+    }
+
+    /* Scanlines bakgrund */
+    .time-machine::before {
+      content: "";
+      position: absolute; inset: 0;
+      background: repeating-linear-gradient(
+        90deg,
+        transparent,
+        transparent 38px,
+        rgba(200,160,60,.05) 38px,
+        rgba(200,160,60,.05) 39px
+      );
+      animation: scanlines 1.8s linear infinite;
+      pointer-events: none;
+    }
+
+    /* Ljusstreck som färdas från vänster till höger */
+    .time-machine::after {
+      content: "";
+      position: absolute;
+      top: 0; bottom: 0;
+      width: 80px;
+      background: linear-gradient(
+        90deg,
+        transparent,
+        rgba(220,180,80,.18),
+        transparent
+      );
+      animation: streak 2.8s ease-in-out infinite;
+      pointer-events: none;
+    }
+
+    @keyframes scanlines {
+      from { transform: translateX(0); }
+      to   { transform: translateX(39px); }
+    }
+    @keyframes streak {
+      0%   { left: -80px; opacity: 0; }
+      10%  { opacity: 1; }
+      90%  { opacity: 1; }
+      100% { left: calc(100% + 80px); opacity: 0; }
+    }
+
+    .tm-era {
+      text-align: center;
+      position: relative; z-index: 1;
+      flex-shrink: 0;
+    }
+    .tm-era-label {
+      display: block;
+      font-family: 'IM Fell English SC', serif;
+      font-size: .58rem;
+      letter-spacing: .25em;
+      text-transform: uppercase;
+      margin-bottom: .3rem;
+      opacity: .6;
+    }
+    .tm-era--past .tm-era-label { color: #c8a050; }
+    .tm-era--now  .tm-era-label { color: #7ab8d4; }
+
+    .tm-era--past .tm-year-display {
+      font-family: 'UnifrakturMaguntia', cursive;
+      font-size: 1.9rem;
+      color: #c8a050;
+      line-height: 1;
+    }
+    .tm-era--now .tm-year-display {
+      font-family: 'Source Serif 4', Georgia, serif;
+      font-size: 1.9rem;
+      font-weight: 600;
+      color: #7ab8d4;
+      line-height: 1;
+    }
+
+    .tm-track {
+      flex: 1;
+      position: relative; z-index: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: .3rem;
+      overflow: hidden;
+    }
+    .tm-dot {
+      width: 4px; height: 4px;
+      border-radius: 50%;
+      background: rgba(200,160,60,.35);
+      animation: pulse-dot 1.4s ease-in-out infinite;
+      flex-shrink: 0;
+    }
+    .tm-dot:nth-child(2) { animation-delay: .2s; }
+    .tm-dot:nth-child(3) { animation-delay: .4s; }
+    .tm-dot:nth-child(4) { animation-delay: .6s; }
+    .tm-dot:nth-child(5) { animation-delay: .8s; }
+    .tm-dot:nth-child(6) { animation-delay: 1s; }
+    .tm-arrow-tip {
+      color: #c8a050;
+      font-size: .9rem;
+      opacity: .7;
+      flex-shrink: 0;
+    }
+    @keyframes pulse-dot {
+      0%, 100% { opacity: .2; transform: scale(.8); }
+      50%       { opacity: .9; transform: scale(1.3); }
     }
 
     /* ── Article 2: Josefina (nutida stil) ── */
@@ -282,14 +393,32 @@
     </div>
 
     <div class="article-body">
-      <p>FLICKORNAS HEDER KRÄNKES — HVAD ÄR DET FÖR ANDA SOM SMYGER SIG IN?</p><p>Det finnes händelser, hvilka icke blott äro beklagansvärda, utan hvilka röra vid sjelfva grundvalarna för hvad ett anständigt samhälle bör vara. När unga flickor, som med brinnande hjärtan ägna sig åt idrottens ädla kamp, af vuxna människor benämnas med ord så vidriga att pennan näppeligen förmår återgifva dem — då hafva vi att göra med något mer än en enstaka förseelse. Då hafva vi att göra med en förgiftning af den anda, som bör råda der ungdomen fostras.</p><p>Låtom oss icke vika från den enkla sanningen: det åländska folkets fäderneärvda sedlighet och hederskänsla tillåter icke att våra döttrar behandlas såsom slödder. Hvad dessa föräldrar vittna om — detta nedlåtande, denna råhet — det strider mot allt hvad vi lärt af våra fäder och mödrarna före dem.</p><p>Man frågar sig: är det fastlandets förrående av all anständig hyfs som nu sipprar öfver till våra bygder? Eller hafva vi sjelfva försummat att vårda den moraliska grund, hvarpå själfstyrelsens heliga grundvalar hvila? Ty ett folk som icke förmår skydda sina barns heder i lekens oskyldiga ögonblick, huru skall det då försvara sin rätt i afgörandets svåra stunder?</p><p>Det åländska folkets oförytterliga rätt omfattar icke blott lagparagrafer och gränsdragningar — den omfattar äfven rätten att uppfostra våra barn i värdighet, fria från kränkningar. Detta må de ansvariga taga ad notam.</p><p>*J.S.*</p>
+      <p>DÅ FLICKORNA SMÄDAS, SMÄDAS SJÄLFVA ÅLAND</p><p>Hvad hafva vi nu måst förnimma? Att unga åländska flickor — våra egna döttrar, fostrade i den fäderneärvda idrottsandan — blifvit kallade äckliga af dem som borde vara deras fostrare! Att de bemötas med nedlåtenhet och hån, då de i godan tro ställt sig till förfogande för hederlig täflan!</p><p>Låtom oss icke vika en tum från den grundsanning, att hvart barn på dessa öar bär samma värdighet som hvarje vuxen medborgare. Det åländska folkets oförytterliga rätt att fostra sin ungdom i aktning och sjelfförtroende kan icke, får icke kränkas — hvarken af fastlandets godtycke eller af dem som invid våra egna idrottsplaner förgätit anständighetens enklaste bud.</p><p>Månget öga har sett, huru de små samhällen lida när de mäktiga förtramppa de svaga. Vi som år 1921 inför Nationernas Förbund tillkämpade oss sjelfstyrelsens heliga grundvalar, vi veta att ingen autonomi äger bestånd, om icke respekten för menniskovärdet genomsyrar äfven de minsta sammanhang. Den som föraktar en enda flicka i hennes unga sträfvan, han föraktar i samma stund hela det folk hon tillhör.</p><p>Derför säga vi med skärpa: utkräf ansvar! De föräldrar som nu höja sina röster göra rätt. Föreningarna måste rannsaka sig sjelfva. Den som icke förmår leda ungdomen med värdighet, han afträde och lemne platsen åt bättre krafter.</p><p>Aldrig skall det åländska folket stillatigande åse, att dess barn förödmjukas. Häraf vare hvar och en förvissad.</p><p>*J.S.*</p>
     </div>
 
     <div class="ornament">— ✦ —</div>
   </div>
 
-  <!-- ── DIVIDER ── -->
-  <hr class="section-divider">
+  <!-- ── TIDSMASKIN ── -->
+  <div class="time-machine">
+    <div class="tm-era tm-era--past">
+      <span class="tm-era-label">Då</span>
+      <span class="tm-year-display">MCMXXI</span>
+    </div>
+    <div class="tm-track">
+      <div class="tm-dot"></div>
+      <div class="tm-dot"></div>
+      <div class="tm-dot"></div>
+      <div class="tm-dot"></div>
+      <div class="tm-dot"></div>
+      <div class="tm-dot"></div>
+      <span class="tm-arrow-tip">›</span>
+    </div>
+    <div class="tm-era tm-era--now">
+      <span class="tm-era-label">Nu</span>
+      <span class="tm-year-display">2026</span>
+    </div>
+  </div>
 
   <!-- ── ARTIKEL 2: Josefina Jansson ── -->
   <div class="content">
@@ -303,7 +432,7 @@
     </div>
 
     <div class="modern-body">
-      <p>Idrottsrörelsen på Åland höjer rösten. Efter åratal av samtal om vikande resurser och slitna anläggningar börjar tålamodet tryta bland föreningsaktiva runt om på öarna.</p><p>– Vi kan inte fortsätta på det här viset. Våra barn och ungdomar förtjänar bättre, säger Maria Lindström, ordförande i en av öns större idrottsföreningar.</p><p>Det handlar inte bara om pengar, även om ekonomin förstås spelar in. Det handlar om att politiker och beslutsfattare måste förstå vad idrotten faktiskt betyder för ett litet samhälle som vårt. Folkhälsa, gemenskap, något meningsfullt att göra – särskilt för unga som annars kanske tappar fotfästet.</p><p>Jag träffar ideella ledare som lägger ner hundratals timmar varje år, ofta utan någon som helst ersättning. De gör det för att de brinner för sin sport och för ungarna. Men de orkar inte hur länge som helst om de känner att ingen lyssnar.</p><p>Frågan är om budgetförhandlingarna i höst äntligen ger idrotten det utrymme den behöver – eller om vi får höra samma löften igen.</p>
+      <p>Idrottsrörelsen på Åland slår larm. Man vill bli tagen på allvar – och det handlar inte bara om nya hallar eller bättre planer.</p><p>"Vi har länge känt att vi hamnar lite i skymundan när det ska prioriteras", säger en representant för Ålands Idrott. Budskapet är tydligt: utan ordentliga resurser och politiskt gehör riskerar föreningslivet att tappa mark.</p><p>Det är lätt att ta det ideella arbetet för givet. Alla de tränare som ställer upp kvällar och helger, alla föräldrar som skjutsar och tvättar matchställ. Men bakom kulisserna sliter många föreningar med krympande kassor och svårigheter att rekrytera ledare. Idrotten är mer än motion – den är en social kitt som håller ihop byar och bostadsområden, inte minst för unga som behöver någonstans att höra hemma.</p><p>Frågan är om politikerna lyssnar den här gången. Nästa budgetomgång blir ett test. Ska Åland fortsätta vara ett samhälle där barn och ungdomar har råd och möjlighet att röra på sig tillsammans – eller blir idrotten en klassfråga även här?</p>
     </div>
 
     <p class="modern-source">Källa: <a href="https://alandsradio.ax/nyheter/alands-idrott-behover-tas-pa-allvar" target="_blank" rel="noopener">Ålands Radio</a></p>
