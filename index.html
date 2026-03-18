@@ -8,27 +8,20 @@
   <link href="https://fonts.googleapis.com/css2?family=IM+Fell+English:ital@0;1&family=UnifrakturMaguntia&family=IM+Fell+English+SC&family=Source+Serif+4:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
   <style>
     :root {
-      --ink:      #1a1207;
-      --paper:    #f5ead6;
-      --rule:     #5c3d1a;
-      --muted:    #6b5540;
-      --accent:   #8b1a1a;
-      --modern-ink: #1a1a1a;
+      --ink:       #1a1207;
+      --paper:     #f5ead6;
+      --rule:      #5c3d1a;
+      --muted:     #6b5540;
+      --accent:    #8b1a1a;
+      --modern-ink:    #1a1a1a;
       --modern-accent: #005f8a;
+      --modern-paper:  #f8f5f0;
     }
 
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
     body {
       background: #d9c9a8;
-      background-image:
-        repeating-linear-gradient(
-          0deg,
-          transparent,
-          transparent 28px,
-          rgba(90,60,20,.04) 28px,
-          rgba(90,60,20,.04) 29px
-        );
       min-height: 100vh;
       display: flex;
       justify-content: center;
@@ -48,319 +41,267 @@
     .newspaper {
       position: relative; z-index: 1;
       background: var(--paper);
-      max-width: 780px;
+      max-width: 1060px;
       width: 100%;
-      box-shadow:
-        0 2px 4px rgba(0,0,0,.15),
-        0 8px 32px rgba(0,0,0,.25),
-        inset 0 0 60px rgba(150,110,50,.08);
-      padding: 0 0 3rem;
+      box-shadow: 0 2px 4px rgba(0,0,0,.15), 0 8px 32px rgba(0,0,0,.25);
     }
 
     /* ── Masthead ── */
     .masthead {
       text-align: center;
-      padding: 2.2rem 2.5rem 0;
+      padding: 2rem 2.5rem 0;
       border-bottom: 4px double var(--rule);
     }
     .masthead-eyebrow {
       font-family: 'IM Fell English SC', serif;
-      font-size: .7rem;
-      letter-spacing: .25em;
-      color: var(--muted);
-      text-transform: uppercase;
-      margin-bottom: .5rem;
+      font-size: .7rem; letter-spacing: .25em;
+      color: var(--muted); text-transform: uppercase; margin-bottom: .5rem;
     }
     .masthead-title {
       font-family: 'UnifrakturMaguntia', cursive;
-      font-size: clamp(2.4rem, 7vw, 3.8rem);
-      color: var(--ink);
-      line-height: 1;
-      margin-bottom: .25rem;
+      font-size: clamp(2.4rem, 6vw, 3.6rem);
+      line-height: 1; margin-bottom: .2rem;
     }
     .masthead-subtitle {
       font-family: 'IM Fell English SC', serif;
-      font-size: .75rem;
-      letter-spacing: .3em;
-      color: var(--muted);
-      margin-bottom: .8rem;
+      font-size: .75rem; letter-spacing: .3em;
+      color: var(--muted); margin-bottom: .8rem;
     }
     .masthead-rule { height: 1px; background: var(--rule); margin: .4rem 0; }
     .masthead-dateline {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
+      display: flex; justify-content: space-between;
       padding: .4rem 0 .6rem;
-      font-size: .7rem;
-      color: var(--muted);
-      font-style: italic;
+      font-size: .7rem; color: var(--muted); font-style: italic;
     }
 
-    /* ── Article shared ── */
-    .content { padding: 1.8rem 2.5rem 0; }
-
-    .article-kicker {
-      font-family: 'IM Fell English SC', serif;
-      font-size: .65rem;
-      letter-spacing: .35em;
-      color: var(--accent);
-      text-transform: uppercase;
-      margin-bottom: .5rem;
-    }
-    .byline-rule {
-      display: flex; align-items: center; gap: .6rem;
-      margin: .8rem 0 1.2rem;
-    }
-    .byline-rule::before, .byline-rule::after {
-      content: ""; flex: 1; height: 1px; background: var(--rule);
-    }
-    .byline {
-      font-family: 'IM Fell English SC', serif;
-      font-size: .65rem;
-      letter-spacing: .2em;
-      color: var(--muted);
-      white-space: nowrap;
-    }
-    .ornament {
-      text-align: center;
-      color: var(--rule);
-      font-size: 1.1rem;
-      margin: 1.4rem 0 0;
-      letter-spacing: .5em;
+    /* ── Split layout ── */
+    .split {
+      display: grid;
+      grid-template-columns: 1fr 44px 1fr;
+      min-height: 400px;
     }
 
-    /* ── Article 1: Sundblom (historisk stil) ── */
-    .article-headline {
-      font-family: 'IM Fell English', Georgia, serif;
-      font-size: clamp(1.35rem, 4vw, 1.9rem);
-      font-weight: normal;
-      line-height: 1.25;
-      margin-bottom: .4rem;
-      color: var(--ink);
+    /* ── Julius column (links) ── */
+    .col-julius {
+      padding: 1.8rem 1.8rem 2.5rem;
+      background: var(--paper);
+    }
+    .col-julius .col-header {
       text-align: center;
+      padding-bottom: .8rem;
+      border-bottom: 2px double var(--rule);
+      margin-bottom: 1.4rem;
     }
-    .article-deck {
-      text-align: center;
-      font-style: italic;
-      font-size: .85rem;
-      color: var(--muted);
-      margin-bottom: 1rem;
-    }
-    .article-body {
-      column-count: 2;
-      column-gap: 2rem;
-      column-rule: 1px solid #c8b090;
-    }
-    .article-body p {
-      font-size: .92rem;
-      line-height: 1.75;
-      text-align: justify;
-      hyphens: auto;
-      margin-bottom: .75rem;
-    }
-    .article-body p:first-child::first-letter {
+    .col-julius .col-name {
       font-family: 'UnifrakturMaguntia', cursive;
-      font-size: 3.8rem;
-      line-height: .75;
-      float: left;
-      margin: .05em .1em -.05em 0;
-      color: var(--accent);
+      font-size: 1.3rem; color: var(--ink);
     }
-    .article-body p:last-child {
-      text-align: right;
-      font-style: italic;
-      color: var(--muted);
-      margin-top: 1.2rem;
+    .col-julius .col-sub {
+      font-family: 'IM Fell English SC', serif;
+      font-size: .6rem; letter-spacing: .2em;
+      color: var(--muted); text-transform: uppercase;
+      margin-top: .2rem;
     }
 
-    /* ── Tidsmaskin-divider ── */
-    .time-machine {
-      margin: 2rem 0 0;
+    .julius-headline {
+      font-family: 'IM Fell English', Georgia, serif;
+      font-size: clamp(1rem, 2.2vw, 1.3rem);
+      font-weight: normal; line-height: 1.3;
+      text-align: center; margin-bottom: .5rem;
+    }
+    .julius-deck {
+      font-style: italic; font-size: .78rem;
+      color: var(--muted); text-align: center; margin-bottom: .9rem;
+    }
+    .julius-body { margin-bottom: 1.8rem; }
+    .julius-body p {
+      font-size: .85rem; line-height: 1.75;
+      text-align: justify; hyphens: auto; margin-bottom: .65rem;
+    }
+    .julius-body p:first-child::first-letter {
+      font-family: 'UnifrakturMaguntia', cursive;
+      font-size: 3.2rem; line-height: .75;
+      float: left; margin: .05em .1em -.05em 0;
+      color: var(--accent);
+    }
+    .julius-body p:last-child {
+      text-align: right; font-style: italic; color: var(--muted);
+    }
+    .article-divider {
+      border: none; border-top: 1px solid #c8b090;
+      margin: 1.4rem 0;
+    }
+
+    /* ── Tidsmaskin (vertikal strip) ── */
+    .time-strip {
       background: var(--ink);
-      padding: 1.6rem 2.5rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+      padding: 1.2rem 0;
       position: relative;
       overflow: hidden;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 1rem;
     }
 
-    /* Scanlines bakgrund */
-    .time-machine::before {
+    /* Horisontella scanlines */
+    .time-strip::before {
       content: "";
       position: absolute; inset: 0;
       background: repeating-linear-gradient(
-        90deg,
-        transparent,
-        transparent 38px,
-        rgba(200,160,60,.05) 38px,
-        rgba(200,160,60,.05) 39px
+        0deg,
+        transparent, transparent 28px,
+        rgba(200,160,60,.05) 28px, rgba(200,160,60,.05) 29px
       );
-      animation: scanlines 1.8s linear infinite;
+      animation: vscan 2s linear infinite;
       pointer-events: none;
     }
-
-    /* Ljusstreck som färdas från vänster till höger */
-    .time-machine::after {
+    /* Ljusstreck uppifrån och ner */
+    .time-strip::after {
       content: "";
-      position: absolute;
-      top: 0; bottom: 0;
-      width: 80px;
-      background: linear-gradient(
-        90deg,
-        transparent,
-        rgba(220,180,80,.18),
-        transparent
-      );
-      animation: streak 2.8s ease-in-out infinite;
+      position: absolute; left: 0; right: 0;
+      height: 80px;
+      background: linear-gradient(180deg, transparent, rgba(220,180,80,.2), transparent);
+      animation: vstreak 3s ease-in-out infinite;
       pointer-events: none;
     }
-
-    @keyframes scanlines {
-      from { transform: translateX(0); }
-      to   { transform: translateX(39px); }
+    @keyframes vscan {
+      from { transform: translateY(0); }
+      to   { transform: translateY(29px); }
     }
-    @keyframes streak {
-      0%   { left: -80px; opacity: 0; }
+    @keyframes vstreak {
+      0%   { top: -80px; opacity: 0; }
       10%  { opacity: 1; }
       90%  { opacity: 1; }
-      100% { left: calc(100% + 80px); opacity: 0; }
+      100% { top: calc(100% + 80px); opacity: 0; }
     }
 
-    .tm-era {
-      text-align: center;
+    .ts-era {
       position: relative; z-index: 1;
-      flex-shrink: 0;
+      text-align: center; flex-shrink: 0;
     }
-    .tm-era-label {
+    .ts-era-label {
       display: block;
       font-family: 'IM Fell English SC', serif;
-      font-size: .58rem;
-      letter-spacing: .25em;
-      text-transform: uppercase;
-      margin-bottom: .3rem;
-      opacity: .6;
+      font-size: .5rem; letter-spacing: .2em;
+      text-transform: uppercase; opacity: .6;
+      margin-bottom: .2rem;
     }
-    .tm-era--past .tm-era-label { color: #c8a050; }
-    .tm-era--now  .tm-era-label { color: #7ab8d4; }
+    .ts-era--past .ts-era-label { color: #c8a050; }
+    .ts-era--now  .ts-era-label { color: #7ab8d4; }
+    .ts-era--past .ts-year { font-family: 'UnifrakturMaguntia', cursive; font-size: 1rem; color: #c8a050; }
+    .ts-era--now  .ts-year { font-family: 'Source Serif 4', serif; font-size: 1rem; font-weight: 600; color: #7ab8d4; }
 
-    .tm-era--past .tm-year-display {
-      font-family: 'UnifrakturMaguntia', cursive;
-      font-size: 1.9rem;
-      color: #c8a050;
-      line-height: 1;
-    }
-    .tm-era--now .tm-year-display {
-      font-family: 'Source Serif 4', Georgia, serif;
-      font-size: 1.9rem;
-      font-weight: 600;
-      color: #7ab8d4;
-      line-height: 1;
-    }
-
-    .tm-track {
-      flex: 1;
+    .ts-track {
       position: relative; z-index: 1;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: .3rem;
-      overflow: hidden;
+      flex: 1;
+      display: flex; flex-direction: column;
+      align-items: center; justify-content: center; gap: .35rem;
     }
-    .tm-dot {
-      width: 4px; height: 4px;
-      border-radius: 50%;
+    .ts-dot {
+      width: 4px; height: 4px; border-radius: 50%;
       background: rgba(200,160,60,.35);
       animation: pulse-dot 1.4s ease-in-out infinite;
-      flex-shrink: 0;
     }
-    .tm-dot:nth-child(2) { animation-delay: .2s; }
-    .tm-dot:nth-child(3) { animation-delay: .4s; }
-    .tm-dot:nth-child(4) { animation-delay: .6s; }
-    .tm-dot:nth-child(5) { animation-delay: .8s; }
-    .tm-dot:nth-child(6) { animation-delay: 1s; }
-    .tm-arrow-tip {
-      color: #c8a050;
-      font-size: .9rem;
-      opacity: .7;
-      flex-shrink: 0;
-    }
+    .ts-dot:nth-child(2) { animation-delay: .2s; }
+    .ts-dot:nth-child(3) { animation-delay: .4s; }
+    .ts-dot:nth-child(4) { animation-delay: .6s; }
+    .ts-dot:nth-child(5) { animation-delay: .8s; }
+    .ts-dot:nth-child(6) { animation-delay: 1s; }
+    .ts-arrow { color: #c8a050; font-size: .8rem; opacity: .7; writing-mode: vertical-lr; }
     @keyframes pulse-dot {
       0%, 100% { opacity: .2; transform: scale(.8); }
       50%       { opacity: .9; transform: scale(1.3); }
     }
 
-    /* ── Article 2: Josefina (nutida stil) ── */
-    .modern-kicker {
-      font-family: 'Source Serif 4', Georgia, serif;
-      font-size: .68rem;
-      letter-spacing: .2em;
-      color: var(--modern-accent);
-      text-transform: uppercase;
-      margin-bottom: .5rem;
-      font-weight: 600;
+    /* ── Josefina column (höger) ── */
+    .col-josefina {
+      padding: 1.8rem 1.8rem 2.5rem;
+      background: var(--modern-paper);
     }
-    .modern-headline {
-      font-family: 'Source Serif 4', Georgia, serif;
-      font-size: clamp(1.2rem, 3.5vw, 1.6rem);
-      font-weight: 600;
-      line-height: 1.3;
-      margin-bottom: .5rem;
-      color: var(--modern-ink);
+    .col-josefina .col-header {
+      text-align: center;
+      padding-bottom: .8rem;
+      border-bottom: 2px solid #c8b090;
+      margin-bottom: 1.4rem;
     }
-    .modern-byline-row {
-      display: flex;
-      align-items: center;
-      gap: .5rem;
-      margin-bottom: 1.2rem;
-      padding-bottom: .6rem;
-      border-bottom: 1px solid #c8b090;
+    .col-josefina .col-name {
+      font-family: 'Source Serif 4', serif;
+      font-size: 1.15rem; font-weight: 600; color: var(--modern-ink);
     }
-    .modern-byline-name {
-      font-family: 'Source Serif 4', Georgia, serif;
-      font-size: .72rem;
-      font-weight: 600;
-      color: var(--modern-ink);
+    .col-josefina .col-sub {
+      font-family: 'Source Serif 4', serif;
+      font-size: .6rem; letter-spacing: .15em;
+      color: var(--muted); text-transform: uppercase;
+      margin-top: .2rem;
     }
-    .modern-byline-org {
-      font-family: 'Source Serif 4', Georgia, serif;
-      font-size: .72rem;
-      color: var(--muted);
+
+    .josefina-headline {
+      font-family: 'Source Serif 4', serif;
+      font-size: clamp(1rem, 2.2vw, 1.3rem);
+      font-weight: 600; line-height: 1.3;
+      margin-bottom: .8rem; color: var(--modern-ink);
     }
-    .modern-body p {
-      font-family: 'Source Serif 4', Georgia, serif;
-      font-size: .95rem;
-      line-height: 1.7;
-      color: var(--modern-ink);
-      margin-bottom: .85rem;
+    .josefina-body { margin-bottom: 1.8rem; }
+    .josefina-body p {
+      font-family: 'Source Serif 4', serif;
+      font-size: .88rem; line-height: 1.7;
+      color: var(--modern-ink); margin-bottom: .7rem;
     }
-    .modern-source {
-      margin-top: .8rem;
-      font-family: 'Source Serif 4', Georgia, serif;
-      font-size: .68rem;
-      color: var(--muted);
+    .josefina-source {
+      font-family: 'Source Serif 4', serif;
+      font-size: .65rem; color: var(--muted);
     }
-    .modern-source a { color: var(--modern-accent); }
+    .josefina-source a { color: var(--modern-accent); }
 
     /* ── Footer ── */
     .footer {
       border-top: 3px double var(--rule);
-      margin: 2rem 2.5rem 0;
-      padding-top: .8rem;
+      margin: 0;
+      padding: .8rem 2.5rem;
       display: flex;
       justify-content: space-between;
-      align-items: flex-start;
+      align-items: center;
       font-size: .65rem;
       color: var(--muted);
       font-style: italic;
+      background: var(--paper);
     }
     .footer a { color: var(--muted); }
 
-    @media (max-width: 540px) {
-      .article-body { column-count: 1; }
-      .masthead, .content, .footer { padding-left: 1.2rem; padding-right: 1.2rem; }
-      .section-divider { margin-left: 1.2rem; margin-right: 1.2rem; }
+    /* ── Mobile ── */
+    @media (max-width: 640px) {
+      .split { grid-template-columns: 1fr; }
+      .time-strip {
+        flex-direction: row;
+        height: 44px;
+        padding: 0 1rem;
+      }
+      .time-strip::before {
+        background: repeating-linear-gradient(
+          90deg, transparent, transparent 28px,
+          rgba(200,160,60,.05) 28px, rgba(200,160,60,.05) 29px
+        );
+        animation: vscan-h 2s linear infinite;
+      }
+      .time-strip::after {
+        width: 80px; height: auto; top: 0; bottom: 0; left: -80px;
+        background: linear-gradient(90deg, transparent, rgba(220,180,80,.2), transparent);
+        animation: vstreak-h 3s ease-in-out infinite;
+      }
+      @keyframes vscan-h {
+        from { transform: translateX(0); }
+        to   { transform: translateX(29px); }
+      }
+      @keyframes vstreak-h {
+        0%   { left: -80px; opacity: 0; }
+        10%  { opacity: 1; }
+        90%  { opacity: 1; }
+        100% { left: calc(100% + 80px); opacity: 0; }
+      }
+      .ts-track { flex-direction: row; }
+      .ts-arrow { writing-mode: horizontal-tb; }
+      .masthead, .footer { padding-left: 1.2rem; padding-right: 1.2rem; }
     }
   </style>
 </head>
@@ -380,58 +321,70 @@
     </div>
   </header>
 
-    <div class="content">
-    <p class="article-kicker">Radiokommentar · Julius Sundblom</p>
-    <h2 class="article-headline">Föräldrar: Flicklaget behandlas nedlåtande – kallades äckliga</h2>
-    <p class="article-deck">En betraktelse öfver dagens skeenden i ljuset af Ålands eviga kamp</p>
-    <div class="byline-rule"><span class="byline">Julius Sundblom · Tidningen Åland</span></div>
-    <div class="article-body"><p>SKAMFLÄCKEN PÅ IDROTTENS FANA</p><p>Det finnes händelser hvilka icke blott väcka harm, utan djupare röra vid själfva grundvalarna för ett samhälles sedliga ordning. Hvad som nu förmäles från en åländsk idrottsförening är af beskaffenhet att hvarje rättskaffens medborgare måste stanna upp och fråga sig: huru hafva vi kunnat låta detta ske?</p><p>Unga flickor i sina tidiga tonår — våra döttrar, vårt lands framtid — hafva af dem som borde vara deras ledare och föredömen bemötts med hån och förakt. De hafva, enligt hvad föräldrarna vittnesmåla, skickats undan till planens mitt såsom vore de till besvär, suckat blifvit emottagna när de infunnit sig till träning, och — hvad värst är — blifvit utskrattade i sin möda och kallade "äckliga" och "idioter" af en fullvuxen man som bär tränarens mantel.</p><p>Låtom oss icke vika från den sanning som här uppenbarar sig: detta är icke idrottsfostran, detta är själfva motsatsen dertill. När en tränare med egen nyckel bryter sig in i ett rum der flickor befinna sig, och i vrede utgjuter smädelser öfver dem — då hafva vi att göra med ett öfvergrepp mot det åländska folkets oförytterliga rätt att uppfostra sina barn i trygghet och värdighet.</p><p>Fäderneärvd är den åländska känslan för rättvisa. Aldrig skall det tagas lätt uppå att de svagare trampas ned af dem som fått sig förtroende gifvet. Att pojkarna i tränarens sällskap sedermera äfven de börjat ropa skymforden, visar blott huru förgiftande en dålig förebild verkar.</p><p>Det är väl att oegentligheterna påtalats till föreningen och att skrifvelse ingått till Ålands Idrott. Men låtom oss vara tydliga: detta är icke blott en föreningsangelägenhet. Det är en fråga om huruvida vi på detta land ämna tillåta att flickor behandlas såsom andra klassens människor, deras ansträngningar förlöjligade, deras närvaro betraktad såsom ett besvär.</p><p>Själfstyrelsens heliga grundvalar innefatta äfven detta: rätten att på vår egen mark, enligt våra egna värderingar, uppfostra ett släkte der hvarje barn — gosse som flicka — bemötes med aktning. Den som icke förmår detta, han är ovärdig hvarje uppdrag som rör ungdomens fostran.</p><p>*J.S.*</p></div>
-    <div class="ornament">— ✦ —</div>
-  </div>
+  <!-- ── SPLIT ── -->
+  <div class="split">
 
-  <!-- ── TIDSMASKIN ── -->
-  <div class="time-machine">
-    <div class="tm-era tm-era--past">
-      <span class="tm-era-label">Då</span>
-      <span class="tm-year-display">MCMXXI</span>
-    </div>
-    <div class="tm-track">
-      <div class="tm-dot"></div>
-      <div class="tm-dot"></div>
-      <div class="tm-dot"></div>
-      <div class="tm-dot"></div>
-      <div class="tm-dot"></div>
-      <div class="tm-dot"></div>
-      <span class="tm-arrow-tip">›</span>
-    </div>
-    <div class="tm-era tm-era--now">
-      <span class="tm-era-label">Nu</span>
-      <span class="tm-year-display">2026</span>
-    </div>
-  </div>
+    <!-- Julius -->
+    <div class="col-julius">
+      <div class="col-header">
+        <div class="col-name">Julius Sundblom</div>
+        <div class="col-sub">Tidningen Åland · 1920-tal</div>
+      </div>
 
-    <div class="content">
-    <p class="modern-kicker">Radiokommentar · Ålands Radio</p>
-    <h2 class="modern-headline">Ålands idrott: "Behöver tas på allvar"</h2>
-    <div class="modern-byline-row">
-      <span class="modern-byline-name">Josefina Jansson</span>
-      <span class="modern-byline-org">· Ålands Radio</span>
+      <h2 class="julius-headline">Föräldrar: Flicklaget behandlas nedlåtande – kallades äckliga</h2>
+      <div class="julius-body"><p>UNGDOMENS FOSTRAN ELLER FÖRAKTETS SKOLA?</p><p>Hvarför skola vi förvånas? Den anda som tillåter att unga flickor skymfas och förödmjukas på en idrottsplats är densamma anda som alltid söker förtrycka den svagare parten, vare sig det gäller ett folk eller ett barn. Här hafva vi icke blott en fråga om omdömeslösa ledare — här hafva vi en fråga om rättvisans grundvalar i vårt eget samhälle.</p><p>Man läse och begrunde hvad som skett. Flickor i sina tidiga tonår, fulla af iver och vilja, hafva samlats för att utöfva idrott. Men hvad möter dem? Suckar. Hånleenden. "Måste ni komma hit när ni är nybörjare?" Och när en ung flicka faller omkull — då skrattar tränaren åt henne.</p><p>Låtom oss icke vika från sanningen: detta är icke fostran, detta är förakt.</p><p>Sedermera följer det groteska skådespelet: en tränare som med egen nyckel bryter sig in i ett omklädningsrum, skrikande att flickorna äro "dumma i huvudet", "äckliga", "idioter". Och hvad sker då? Pojkarna upprepa hans ord. Så fortplantas föraktet, så grundlägges fördomens arfsynd i nästa generation.</p><p>Det åländska folkets oförytterliga rätt att fostra sina barn i rättrådighet och jämlikhet får icke kränkas — icke af fastlandets godtycke och icke heller af våra egna föreningars likgiltighet. Hvad hjälper det att vi vunnit självstyrelsens heliga grundvalar, om vi icke förmå upprätthålla den enklaste anständighet på vår egen hemmaplan?</p><p>En skrifvelse har afgått till Ålands Idrott. Godt så. Men låtom oss fordra mer än skrifvelser — låtom oss fordra handling, ansvar och upprättelse för dessa fäderneärvda värden som borde vara själfklara: att hvarje barn, flicka som gosse, bemötes med värdighet.</p><p>*J.S.*</p></div>
+
+      <hr class="article-divider">
+
+      <h2 class="julius-headline">Ålands idrott: "Behöver tas på allvar"</h2>
+      <div class="julius-body"><p>HVARFÖR TYSTNADENS MAKTSPEL ÅT VÅRA DÖTTRAR GIFVES</p><p>Det förmäles att flickor på idrottsplanen sändts till mittcirkeln under pågående spel, lämnades utan ledning och coachning, och att skratt och suckar mött deras försök att deltaga i det som borde vara en gemenskap för alla. Tränaren förnekar allt — ansvarspersonen talar om "missförstånd" — och föreningen finner sig själf oskyldig efter egna möten med egna parter. Månget föräldrahjärta har sett sin dotter komma hem med tomma ögon, och dock säger man: ingen hade agerat rätt.</p><p>Hvad är detta om icke fastlandets gamla sjuka, inflyttad till vårt eget sköte? Den maktens feghet som gömmer sig bakom protokoll och policydokument, medan de svagaste trampas under fot. Ålands Idrotts sportchef Jenna Gestranius säger det utan omsvep: "Det behöver tas på allvar" och "Det bryter definitivt mot det vi står för." Värdegrunden — rent spel och samma förutsättningar för alla — har kränkts.</p><p>Men hvad sker? Jo, ett utskott "fungerar som bollplank" och det juridiska ansvaret läggs hos föreningen, densamma förening som redan frikänt sig själf. Häraf förstår den uppmärksamme läsaren, att våra fäderneärvda idrottsgärningar löpa fara att förvandlas till slutna sällskap för dem som passar formerna, medan de andra få lära sig att tystnad är tingens ordning.</p><p>Låtom oss icke vika! Det åländska folkets oförytterliga rätt att uppfostra sina barn i frimodighet och rättvisa kräfver mera än bollplank. Det kräfver mod — hos styrelser, hos ledare, hos oss alla — att säga: detta tåla vi icke.</p><p>Ty hvad gagnar autonomi och själfstyrelse, om vi icke äfven förmå värna självstyrelsens heliga grundvalar i det lilla — på idrottsplanen, i omklädningsrummet, i våra barns första möten med gemenskapen?</p><p>*J.S.*</p></div>
     </div>
-    <div class="modern-body"><p>Det här är en historia som gnager. Föräldrar som larmar om att deras döttrar blivit utfrysta, skrattade åt, lämnade utan coachning mitt under match. En tränare som förnekar allt. Och en förening som landar i att "ingen hade agerat rätt".</p><p>Jenna Gestranius på Ålands idrott väger sina ord, men är tydlig: "Det väcker känslor och det behöver tas på allvar." Hon säger rakt ut att det som beskrivs bryter mot idrottsrörelsens värdegrund — rent spel, samma förutsättningar för alla, att bli sedd och hörd.</p><p>Föreningen har gått igenom sina policys med Ålands idrotts trygghetsutskott och fått godkänt på pappret. Men papper är en sak. Verkligheten i ett omklädningsrum eller på en bänk där ingen ser dig — det är något annat.</p><p>Ansvarspersonen i föreningen menar att tjejerna själva valde att inte delta, att de hellre var med sina vänner. Kanske. Eller så hade de redan gett upp. Det är en fråga som förtjänar ett ärligt svar — för de här flickornas skull, och för alla som kommer efter dem.</p></div>
-    <p class="modern-source">Källa: <a href="https://alandsradio.ax/nyheter/alands-idrott-behover-tas-pa-allvar" target="_blank" rel="noopener">Ålands Radio</a></p>
+
+    <!-- Tidsmaskin -->
+    <div class="time-strip">
+      <div class="ts-era ts-era--past">
+        <span class="ts-era-label">Då</span>
+        <span class="ts-year">MCMXXI</span>
+      </div>
+      <div class="ts-track">
+        <div class="ts-dot"></div>
+        <div class="ts-dot"></div>
+        <div class="ts-dot"></div>
+        <div class="ts-dot"></div>
+        <div class="ts-dot"></div>
+        <div class="ts-dot"></div>
+        <span class="ts-arrow">›</span>
+      </div>
+      <div class="ts-era ts-era--now">
+        <span class="ts-era-label">Nu</span>
+        <span class="ts-year">2026</span>
+      </div>
+    </div>
+
+    <!-- Josefina -->
+    <div class="col-josefina">
+      <div class="col-header">
+        <div class="col-name">Josefina Jansson</div>
+        <div class="col-sub">Ålands Radio · 2026</div>
+      </div>
+
+      <h2 class="josefina-headline">Föräldrar: Flicklaget behandlas nedlåtande – kallades äckliga</h2>
+      <div class="josefina-body"><p>**När tjejer kallas äckliga på träningen**</p><p>Det här är en historia som gör ont att berätta. Men den måste berättas.</p><p>På Åland finns ett flicklag i de tidiga tonåren som ville börja med en ny sport. De möttes inte av välkomnande armar – utan av suckar, utskrattning och i värsta fall rena glåpord. "Äckliga", "dumma i huvudet", "idioter" – ord som en tränare enligt föräldrarna slungat mot flickorna. Ord som pojkarna sedan upprepade.</p><p>Föräldrarna beskriver hur tjejerna skickas iväg till mitten av plan när det blir spel, utan stöd, utan uppmuntran. "Det har suckats, lite som att 'måste ni komma hit när ni är nybörjare'", berättar en förälder för Ålands Radio. En annan beskriver hur dottern trillade under en träning – och tränaren skrattade åt henne.</p><p>Nu har en skrivelse gått till Ålands Idrott. Frågan är vad som händer sen. För någonstans på Åland finns en grupp tonårstjejer som bara ville få vara med och spela. De förtjänar bättre än så här. Det gör alla våra barn.</p></div>
+      <p class="josefina-source">Källa: <a href="https://alandsradio.ax/nyheter/foraldrar-flicklaget-behandlas-nedlatande-kallades-ackliga" target="_blank" rel="noopener">Ålands Radio</a></p>
+
+      <hr class="article-divider">
+
+      <h2 class="josefina-headline">Ålands idrott: "Behöver tas på allvar"</h2>
+      <div class="josefina-body"><p>Det blåser kalla vindar i en lokal idrottsförening just nu. Föräldrar har reagerat, möten har hållits, och mitt i alltihop står en grupp unga tjejer som enligt uppgift känt sig åsidosatta under träningar.</p><p>Tränaren som pekats ut förnekar att något hänt. Föreningens ansvarsperson talar om missförstånd och menar att tjejerna själva valt att stå vid sidan om matchspelet. Men någonstans i den här härvan av ord mot ord finns det barn som upplevt något — suckar, skratt, en känsla av att inte räknas.</p><p>"Det väcker känslor och det behöver tas på allvar", säger Ålands idrotts sportchef Jenna Gestranius. Hon är tydlig med att det som beskrivs bryter mot idrottsrörelsens värdegrund om rent spel och lika förutsättningar för alla. Samtidigt påminner hon om att det juridiska ansvaret ligger hos föreningen själv.</p><p>Utskottet för trygg idrott har granskat ärendet och konstaterat att föreningen har sina policys på plats. Men policys på papper och verklighet i ett omklädningsrum är inte alltid samma sak. Frågan kvarstår: räcker det att ha reglerna — om känslan av att bli sedd ändå saknas?</p></div>
+      <p class="josefina-source">Källa: <a href="https://alandsradio.ax/nyheter/alands-idrott-behover-tas-pa-allvar" target="_blank" rel="noopener">Ålands Radio</a></p>
+    </div>
+
   </div>
 
   <!-- ── FOOTER ── -->
   <footer class="footer">
-    <span>
-      Genererad af en autonom skriftställare-maskin<br>
-      i Julius Sundbloms anda, Onsdagen den 18 mars 2026
-    </span>
-    <span>
-      Källnyhet: <a href="https://alandsradio.ax/nyheter/foraldrar-flicklaget-behandlas-nedlatande-kallades-ackliga" target="_blank" rel="noopener">Ålands Radio</a>
-      &ensp;·&ensp;
-      <a href="arkiv/">Arkivet</a>
-    </span>
+    <span>Genererad af en autonom skriftställare-maskin i Julius Sundbloms anda, Onsdagen den 18 mars 2026</span>
+    <span><a href="arkiv/">Arkivet</a></span>
   </footer>
 
 </article>
