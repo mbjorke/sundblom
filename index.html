@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sundbloms Radio-kommentarer — Tidningen Åland</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=IM+Fell+English:ital@0;1&family=UnifrakturMaguntia&family=IM+Fell+English+SC&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --ink:      #1a1207;
+      --paper:    #f5ead6;
+      --rule:     #5c3d1a;
+      --muted:    #6b5540;
+      --accent:   #8b1a1a;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      background: #d9c9a8;
+      background-image:
+        repeating-linear-gradient(
+          0deg,
+          transparent,
+          transparent 28px,
+          rgba(90,60,20,.04) 28px,
+          rgba(90,60,20,.04) 29px
+        );
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      padding: 2rem 1rem 4rem;
+      font-family: 'IM Fell English', Georgia, serif;
+      color: var(--ink);
+    }
+
+    /* Paper texture overlay */
+    body::before {
+      content: "";
+      position: fixed; inset: 0;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.75' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='300' height='300' filter='url(%23n)' opacity='0.04'/%3E%3C/svg%3E");
+      pointer-events: none; z-index: 0;
+    }
+
+    .newspaper {
+      position: relative; z-index: 1;
+      background: var(--paper);
+      max-width: 780px;
+      width: 100%;
+      box-shadow:
+        0 2px 4px rgba(0,0,0,.15),
+        0 8px 32px rgba(0,0,0,.25),
+        inset 0 0 60px rgba(150,110,50,.08);
+      padding: 0 0 3rem;
+    }
+
+    /* ── Masthead ── */
+    .masthead {
+      text-align: center;
+      padding: 2.2rem 2.5rem 0;
+      border-bottom: 4px double var(--rule);
+      margin-bottom: 0;
+    }
+
+    .masthead-eyebrow {
+      font-family: 'IM Fell English SC', serif;
+      font-size: .7rem;
+      letter-spacing: .25em;
+      color: var(--muted);
+      text-transform: uppercase;
+      margin-bottom: .5rem;
+    }
+
+    .masthead-title {
+      font-family: 'UnifrakturMaguntia', cursive;
+      font-size: clamp(2.4rem, 7vw, 3.8rem);
+      color: var(--ink);
+      line-height: 1;
+      margin-bottom: .25rem;
+    }
+
+    .masthead-subtitle {
+      font-family: 'IM Fell English SC', serif;
+      font-size: .75rem;
+      letter-spacing: .3em;
+      color: var(--muted);
+      margin-bottom: .8rem;
+    }
+
+    .masthead-rule {
+      height: 1px; background: var(--rule);
+      margin: .4rem 0;
+    }
+
+    .masthead-dateline {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: .4rem 0 .6rem;
+      font-size: .7rem;
+      color: var(--muted);
+      font-style: italic;
+    }
+
+    /* ── Column layout ── */
+    .content {
+      padding: 1.8rem 2.5rem 0;
+    }
+
+    /* ── Article headline ── */
+    .article-kicker {
+      font-family: 'IM Fell English SC', serif;
+      font-size: .65rem;
+      letter-spacing: .35em;
+      color: var(--accent);
+      text-transform: uppercase;
+      margin-bottom: .5rem;
+    }
+
+    .article-headline {
+      font-family: 'IM Fell English', Georgia, serif;
+      font-size: clamp(1.35rem, 4vw, 1.9rem);
+      font-weight: normal;
+      line-height: 1.25;
+      margin-bottom: .4rem;
+      color: var(--ink);
+      text-align: center;
+    }
+
+    .article-deck {
+      text-align: center;
+      font-style: italic;
+      font-size: .85rem;
+      color: var(--muted);
+      margin-bottom: 1rem;
+    }
+
+    .byline-rule {
+      display: flex; align-items: center; gap: .6rem;
+      margin: .8rem 0 1.2rem;
+    }
+    .byline-rule::before, .byline-rule::after {
+      content: ""; flex: 1; height: 1px; background: var(--rule);
+    }
+    .byline {
+      font-family: 'IM Fell English SC', serif;
+      font-size: .65rem;
+      letter-spacing: .2em;
+      color: var(--muted);
+      white-space: nowrap;
+    }
+
+    /* ── Body text ── */
+    .article-body {
+      column-count: 2;
+      column-gap: 2rem;
+      column-rule: 1px solid #c8b090;
+    }
+
+    .article-body p {
+      font-size: .92rem;
+      line-height: 1.75;
+      text-align: justify;
+      hyphens: auto;
+      margin-bottom: .75rem;
+    }
+
+    .article-body p:first-child::first-letter {
+      font-family: 'UnifrakturMaguntia', cursive;
+      font-size: 3.8rem;
+      line-height: .75;
+      float: left;
+      margin: .05em .1em -.05em 0;
+      color: var(--accent);
+    }
+
+    /* Signature */
+    .article-body p:last-child {
+      text-align: right;
+      font-style: italic;
+      color: var(--muted);
+      margin-top: 1.2rem;
+    }
+
+    /* ── Footer ── */
+    .footer {
+      border-top: 3px double var(--rule);
+      margin: 2rem 2.5rem 0;
+      padding-top: .8rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      font-size: .65rem;
+      color: var(--muted);
+      font-style: italic;
+    }
+
+    .footer a {
+      color: var(--muted);
+    }
+
+    /* ── Ornament ── */
+    .ornament {
+      text-align: center;
+      color: var(--rule);
+      font-size: 1.1rem;
+      margin: 1.2rem 0 0;
+      letter-spacing: .5em;
+    }
+
+    @media (max-width: 540px) {
+      .article-body { column-count: 1; }
+      .masthead, .content, .footer { padding-left: 1.2rem; padding-right: 1.2rem; }
+    }
+  </style>
+</head>
+<body>
+<article class="newspaper">
+
+  <!-- ── MASTHEAD ── -->
+  <header class="masthead">
+    <p class="masthead-eyebrow">Grundad anno domini 1891</p>
+    <h1 class="masthead-title">Tidningen Åland</h1>
+    <p class="masthead-subtitle">Organ för det åländska folkets fria och oförytterliga rätt</p>
+    <div class="masthead-rule"></div>
+    <div class="masthead-dateline">
+      <span>Onsdagen den 18 mars 2026</span>
+      <span>✦ &nbsp; Sundbloms Radio-kommentarer &nbsp; ✦</span>
+      <span>Pris: 10 penni</span>
+    </div>
+  </header>
+
+  <!-- ── ARTICLE ── -->
+  <div class="content">
+    <p class="article-kicker">Ledare · Dagens kommentar</p>
+
+    <h2 class="article-headline">Ålands idrott: "Behöver tas på allvar"</h2>
+
+    <p class="article-deck">En betraktelse öfver dagens skeenden i ljuset af Ålands eviga kamp</p>
+
+    <div class="byline-rule">
+      <span class="byline">Af Julius Sundblom</span>
+    </div>
+
+    <div class="article-body">
+      <p>DEN ÅLÄNDSKA IDROTTENS RÄTT TILL ERKÄNNANDE</p><p>Månget öga har under de gångna åren sett huru det åländska folkets strävanden på skilda områden mött likgiltighet, ja stundom rent af motstånd, från dem som borde vara dess naturliga förespråkare. Nu förnimma vi åter ropet från idrottens fält: den åländska kraftens utövare begära att tagas på allvar.</p><p>Hvad är väl idrotten annat än fäderneärvda dygders förvaltning i ny skepnad? Den styrka och uthållighet, hvarmed våra förfäder bröto sig väg genom skärgårdens isar och stormar, lefver i dag vidare hos den ungdom som på täflingsbanan söker hävda sin hembygds ära. Att då icke taga dessa strävanden på allvar är att ringakta själfva folksjälen.</p><p>Låtom oss icke vika i denna fråga, lika litet som vi veko då självstyrelsens heliga grundvalar skulle läggas! Det åländska folkets oförytterliga rätt sträcker sig tillika till rätten att på jämlika villkor deltaga i idrottens gemenskap, utan att behandlas såsom ett bihang till fastlandets godtycke. Hvad som fodras är erkännande — fullt, öppet och utan förbehåll.</p><p>Den som menar att idrottsfrågan blott rör sig om lek och nöje, han har föga förstått hvad det innebär att vara ålänning. Här handlar det om värdighet, om vår plats bland de nordiska folken, om den ungdom som skall bära autonomien vidare till kommande släkten. Denna sak måste tagas på allvar — af alla.</p><p>*J.S.*</p>
+    </div>
+
+    <div class="ornament">— ✦ —</div>
+  </div>
+
+  <!-- ── FOOTER ── -->
+  <footer class="footer">
+    <span>
+      Genererad af en autonom skriftställare-maskin<br>
+      i Julius Sundbloms anda, Onsdagen den 18 mars 2026
+    </span>
+    <span>
+      Källnyhet: <a href="https://alandsradio.ax/nyheter/alands-idrott-behover-tas-pa-allvar" target="_blank" rel="noopener">Ålands Radio</a>
+    </span>
+  </footer>
+
+</article>
+</body>
+</html>
