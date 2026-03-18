@@ -39,9 +39,26 @@ ANTHROPIC_KEY = os.environ.get("ANTHROPIC_API_KEY", "")
 # 1. SCRAPE
 # ─────────────────────────────────────────────────────────────────────────────
 
+def _article_is_hero(h2) -> bool:
+    """
+    Hero-artiklar: bild ovanför text → layoutdiv direkt under <article> har flex-col men ej flex-row.
+    List-kort: bild åt sidan → layoutdiv har flex-row.
+    Vi hittar <article>-föräldern och kollar dess första <div>-barns klasser.
+    """
+    article = h2.find_parent("article")
+    if article is None:
+        return False
+    layout_div = article.find("div", recursive=False)
+    if layout_div is None:
+        return False
+    classes = " ".join(layout_div.get("class", []))
+    return "flex-row" not in classes
+
+
 def fetch_top_headlines(n: int = 2) -> list[tuple[str, str]]:
     """
-    Returns a list of (headline, url) for the top-n articles.
+    Returns a list of (headline, url) for the top-n articles,
+    hero-articles (visually prominent) sorted before list-cards.
     Falls back to a single silence-from-the-mainland entry if unreachable.
     """
     fallback = [(
@@ -58,25 +75,37 @@ def fetch_top_headlines(n: int = 2) -> list[tuple[str, str]]:
         return fallback
 
     soup = BeautifulSoup(resp.text, "html.parser")
-    results = []
+
+    heroes, list_cards = [], []
     for h2 in soup.select("h2"):
         text = h2.get_text(strip=True)
-        if len(text) > 10:
-            link_tag = h2.find_parent("a") or h2.find("a")
-            href = ""
-            if link_tag and link_tag.get("href"):
-                href = link_tag["href"]
-                if href.startswith("/"):
-                    href = "https://alandsradio.ax" + href
-            log.info("Hittad rubrik: %s", text)
-            results.append((text, href or ALANDS_RADIO_URL))
-            if len(results) >= n:
-                break
+        if len(text) <= 10:
+            continue
+        link_tag = h2.find_parent("a") or h2.find("a")
+        href = ""
+        if link_tag and link_tag.get("href"):
+            href = link_tag["href"]
+            if href.startswith("/"):
+                href = "https://alandsradio.ax" + href
+        entry = (text, href or ALANDS_RADIO_URL)
+        if _article_is_hero(h2):
+            heroes.append(entry)
+        else:
+            list_cards.append(entry)
+
+    # Bygg resultatlistan: 1 hero (viktigaste) + 1 list-kort (första följdnyheten)
+    # så att DOM-ordningen speglar den visuella prioriteringen.
+    result_heroes = heroes[:1]
+    result_list   = list_cards[:max(0, n - len(result_heroes))]
+    results = result_heroes + result_list
 
     if not results:
         log.warning("Inga rubriker hittades på sidan.")
         return fallback
 
+    for i, (h, _) in enumerate(results):
+        kind = "hero" if i < len(result_heroes) else "list"
+        log.info("Rubrik %d (%s): %s", i + 1, kind, h)
     return results
 
 
@@ -359,8 +388,6 @@ def main() -> None:
 
     # 1. Scrape
     headlines = fetch_top_headlines(n=2)
-    for i, (h, u) in enumerate(headlines):
-        log.info("Rubrik %d: %s", i + 1, h)
 
     # 2. Generera
     commentary = generate_commentary(headlines)
