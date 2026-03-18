@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Arkivet — Sundbloms Radio-kommentarer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=IM+Fell+English:ital@0;1&family=UnifrakturMaguntia&family=IM+Fell+English+SC&display=swap" rel="stylesheet">
+  <style>
+    :root { --ink:#1a1207; --paper:#f5ead6; --rule:#5c3d1a; --muted:#6b5540; --accent:#8b1a1a; }
+    *, *::before, *::after { box-sizing:border-box; margin:0; padding:0; }
+    body {
+      background:#d9c9a8;
+      min-height:100vh; display:flex; justify-content:center; align-items:flex-start;
+      padding:2rem 1rem 4rem;
+      font-family:'IM Fell English', Georgia, serif; color:var(--ink);
+    }
+    .newspaper {
+      background:var(--paper); max-width:780px; width:100%;
+      box-shadow:0 2px 4px rgba(0,0,0,.15),0 8px 32px rgba(0,0,0,.25);
+      padding:0 0 3rem;
+    }
+    .masthead {
+      text-align:center; padding:2.2rem 2.5rem 0;
+      border-bottom:4px double var(--rule);
+    }
+    .masthead-eyebrow { font-family:'IM Fell English SC',serif; font-size:.7rem; letter-spacing:.25em; color:var(--muted); text-transform:uppercase; margin-bottom:.5rem; }
+    .masthead-title { font-family:'UnifrakturMaguntia',cursive; font-size:clamp(2.4rem,7vw,3.8rem); line-height:1; margin-bottom:.25rem; }
+    .masthead-subtitle { font-family:'IM Fell English SC',serif; font-size:.75rem; letter-spacing:.3em; color:var(--muted); margin-bottom:.8rem; }
+    .masthead-rule { height:1px; background:var(--rule); margin:.4rem 0; }
+    .masthead-dateline { display:flex; justify-content:space-between; padding:.4rem 0 .6rem; font-size:.7rem; color:var(--muted); font-style:italic; }
+    .content { padding:2rem 2.5rem 0; }
+    h2 { font-family:'IM Fell English',Georgia,serif; font-size:1.6rem; font-weight:normal; text-align:center; margin-bottom:1.5rem; }
+    ul { list-style:none; border-top:1px solid #c8b090; }
+    ul li { border-bottom:1px solid #c8b090; }
+    ul li a {
+      display:block; padding:.7rem .2rem;
+      font-family:'IM Fell English SC',serif; font-size:.85rem; letter-spacing:.05em;
+      color:var(--ink); text-decoration:none;
+    }
+    ul li a:hover { color:var(--accent); }
+    .back { display:block; text-align:center; margin-top:2rem; font-style:italic; font-size:.8rem; color:var(--muted); }
+    .back a { color:var(--muted); }
+    @media(max-width:540px) { .masthead,.content { padding-left:1.2rem; padding-right:1.2rem; } }
+  </style>
+</head>
+<body>
+<article class="newspaper">
+  <header class="masthead">
+    <p class="masthead-eyebrow">Grundad anno domini 1891</p>
+    <h1 class="masthead-title">Tidningen Åland</h1>
+    <p class="masthead-subtitle">Organ för det åländska folkets fria och oförytterliga rätt</p>
+    <div class="masthead-rule"></div>
+    <div class="masthead-dateline">
+      <span>Arkivet</span>
+      <span>✦ &nbsp; Sundbloms Radio-kommentarer &nbsp; ✦</span>
+      <span>Samtliga utgåvor</span>
+    </div>
+  </header>
+  <div class="content">
+    <h2>Tidigare utgåvor</h2>
+    <ul>
+        <li><a href="2026-03-18.html">Onsdag 18 mars 2026</a></li>
+    </ul>
+    <a class="back" href="../">← Tillbaka till senaste kommentaren</a>
+  </div>
+</article>
+</body>
+</html>
