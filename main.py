@@ -39,15 +39,15 @@ ANTHROPIC_KEY = os.environ.get("ANTHROPIC_API_KEY", "")
 # 1. SCRAPE
 # ─────────────────────────────────────────────────────────────────────────────
 
-def fetch_latest_headline() -> tuple[str, str]:
+def fetch_top_headlines(n: int = 2) -> list[tuple[str, str]]:
     """
-    Returns (headline, url). Falls back to the silence-from-the-mainland
-    message if the site is unreachable or empty.
+    Returns a list of (headline, url) for the top-n articles.
+    Falls back to a single silence-from-the-mainland entry if unreachable.
     """
-    fallback = (
+    fallback = [(
         "Den öronbedövande tystnaden från fastlandet",
         ALANDS_RADIO_URL,
-    )
+    )]
     try:
         resp = requests.get(ALANDS_RADIO_URL, timeout=15, headers={
             "User-Agent": "SundblomBot/1.0 (+https://github.com)"
@@ -58,8 +58,7 @@ def fetch_latest_headline() -> tuple[str, str]:
         return fallback
 
     soup = BeautifulSoup(resp.text, "html.parser")
-
-    # Try h2 links inside article cards
+    results = []
     for h2 in soup.select("h2"):
         text = h2.get_text(strip=True)
         if len(text) > 10:
@@ -70,10 +69,15 @@ def fetch_latest_headline() -> tuple[str, str]:
                 if href.startswith("/"):
                     href = "https://alandsradio.ax" + href
             log.info("Hittad rubrik: %s", text)
-            return text, href or ALANDS_RADIO_URL
+            results.append((text, href or ALANDS_RADIO_URL))
+            if len(results) >= n:
+                break
 
-    log.warning("Inga rubriker hittades på sidan.")
-    return fallback
+    if not results:
+        log.warning("Inga rubriker hittades på sidan.")
+        return fallback
+
+    return results
 
 
 # ─────────────────────────────────────────────────────────────────────────────
@@ -109,18 +113,21 @@ Om JA på någon fråga — skriv om tills texten känns som ett genuint tidning
 Svara ENBART med den färdiga texten. Ingen förklaring, ingen inledning."""
 
 
-def generate_commentary(headline: str, source_url: str) -> str:
+def generate_commentary(headlines: list[tuple[str, str]]) -> str:
     """Anropar Claude API och returnerar den Sundblomska kommentaren."""
     if not ANTHROPIC_KEY:
         raise EnvironmentError("ANTHROPIC_API_KEY saknas i miljövariablerna.")
 
     client = Anthropic(api_key=ANTHROPIC_KEY)
 
+    news_block = "\n".join(
+        f"RUBRIK {i+1}: {h}\nKÄLLA {i+1}: {u}"
+        for i, (h, u) in enumerate(headlines)
+    )
     user_message = (
-        f"Dagens nyhet från Ålands Radio:\n\n"
-        f"RUBRIK: {headline}\n"
-        f"KÄLLA: {source_url}\n\n"
-        f"Skriv nu Sundbloms kommentar om denna nyhet."
+        f"Dagens nyheter från Ålands Radio:\n\n"
+        f"{news_block}\n\n"
+        f"Skriv nu Sundbloms kommentar. Du kan utgå från en eller båda nyheterna — låt stridsbegäret avgöra."
     )
 
     log.info("Skickar till Claude API…")
@@ -140,7 +147,7 @@ def generate_commentary(headline: str, source_url: str) -> str:
 # 3. FORMAT
 # ─────────────────────────────────────────────────────────────────────────────
 
-def render_html(headline: str, commentary: str, source_url: str) -> str:
+def render_html(headlines: list[tuple[str, str]], commentary: str) -> str:
     """Bäddar in kommentaren i HTML-mallen."""
     today    = datetime.date.today()
     weekdays = ["Måndagen","Tisdagen","Onsdagen","Torsdagen","Fredagen","Lördagen","Söndagen"]
@@ -155,14 +162,23 @@ def render_html(headline: str, commentary: str, source_url: str) -> str:
         if p.strip()
     )
 
+    # Use first headline as the displayed title
+    main_headline, _ = headlines[0]
+
+    # Build source links
+    source_links = " &nbsp;·&nbsp; ".join(
+        f'<a href="{u}" target="_blank" rel="noopener">Nyhet {i+1}</a>'
+        for i, (_, u) in enumerate(headlines)
+    )
+
     with open(TEMPLATE_FILE, encoding="utf-8") as f:
         template = f.read()
 
     return (template
             .replace("{{DATE}}", date_str)
-            .replace("{{HEADLINE}}", headline)
+            .replace("{{HEADLINE}}", main_headline)
             .replace("{{COMMENTARY}}", paragraphs)
-            .replace("{{SOURCE_URL}}", source_url))
+            .replace("{{SOURCE_URL}}", source_links))
 
 
 # ─────────────────────────────────────────────────────────────────────────────
@@ -342,14 +358,15 @@ def main() -> None:
     log.info("═══ Sundbloms Radio-kommentarer — nattlig körning startar ═══")
 
     # 1. Scrape
-    headline, source_url = fetch_latest_headline()
-    log.info("Rubrik: %s", headline)
+    headlines = fetch_top_headlines(n=2)
+    for i, (h, u) in enumerate(headlines):
+        log.info("Rubrik %d: %s", i + 1, h)
 
     # 2. Generera
-    commentary = generate_commentary(headline, source_url)
+    commentary = generate_commentary(headlines)
 
     # 3. Rendera HTML
-    html = render_html(headline, commentary, source_url)
+    html = render_html(headlines, commentary)
 
     # Spara lokalt också (för debug / artefakt)
     with open(OUTPUT_HTML, "w", encoding="utf-8") as f:
