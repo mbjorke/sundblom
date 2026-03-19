@@ -2,8 +2,8 @@ name: 🗞️ Sundbloms dagliga kommentar
 
 on:
   schedule:
-    # Kl. 16:00 UTC varje dag (= 18:00 finsk vintertid / 19:00 sommartid)
-    - cron: "0 16 * * *"
+    # TILLFÄLLIGT 18:46 UTC för test — återställ till 0 16 * * * imorgon
+    - cron: "46 18 * * *"
 
   # Tillåt manuell körning från Actions-fliken
   workflow_dispatch:
