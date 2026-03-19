@@ -333,6 +333,65 @@
       transform: translateY(0);
     }
 
+    /* ── Sidvändningsnavigering ── */
+    .page-turn {
+      position: fixed;
+      top: 0; bottom: 0;
+      width: 15vw;
+      z-index: 50;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-decoration: none;
+      opacity: 0;
+      transition: opacity 0.4s ease, background 0.4s ease;
+      pointer-events: none;
+      cursor: pointer;
+    }
+    .page-turn.ready { pointer-events: auto; }
+    .page-turn:hover { opacity: 1; }
+    .page-turn--prev {
+      left: 0;
+      background: linear-gradient(to right, rgba(92,61,26,.12), transparent);
+    }
+    .page-turn--next {
+      right: 0;
+      background: linear-gradient(to left, rgba(92,61,26,.12), transparent);
+    }
+    .page-turn__arrow {
+      font-family: 'IM Fell English', Georgia, serif;
+      font-size: 4rem;
+      color: var(--rule);
+      opacity: 0.65;
+      user-select: none;
+      line-height: 1;
+    }
+    .page-turn__label {
+      display: block;
+      font-family: 'IM Fell English SC', serif;
+      font-size: .55rem;
+      letter-spacing: .2em;
+      color: var(--muted);
+      text-transform: uppercase;
+      text-align: center;
+      margin-top: .3rem;
+    }
+    .mobile-nav {
+      display: none;
+      justify-content: space-between;
+      padding: .6rem 2.5rem;
+      border-top: 1px solid #c8b090;
+      font-family: 'IM Fell English SC', serif;
+      font-size: .7rem;
+      letter-spacing: .1em;
+    }
+    .mobile-nav a { color: var(--muted); text-decoration: none; }
+    .mobile-nav a.ready { color: var(--ink); }
+    @media (max-width: 900px) {
+      .page-turn { display: none; }
+      .mobile-nav { display: flex; }
+    }
+
     /* ── Mobile ── */
     @media (max-width: 640px) {
       .split { grid-template-columns: 1fr; }
@@ -396,12 +455,7 @@
       </div>
 
       <h2 class="julius-headline">Fler får hemvårdsstöd, färre institutionsvård</h2>
-      <div class="julius-body"><p>OMSORGSFRÅGAN STÄLLER HEMMET INFÖR DESS PRÖFNING</p><p>Det är icke blott siffror som Åsubs statistiska sammanställning förkunnar — det är ett vittnesbörd om hvarest vårt samhälle i denna stund befinner sig, och hvarthän det torde vara stadd att vandra. Att institutionsvårdens klienttal vid fjolårets slut uppgick till 86 personer, fyra färre än föregående år, synes vid första anblick kunna tolkas såsom ett tecken på förbättrad folkhälsa. Men den som djupare begrundar siffrorna finner snart att förklaringen är en annan: vården flyttas från det allmännas anstalter till det enskilda hemmets väggar.</p><p>Så hafva vi nu 457 personer — däraf hälften öfverstigande 65 års ålder — som mottagit närståendevård i hemmet, en ökning med 61 själar. Hvad detta betyder i praktiskt arbete för hustrur, döttrar och svärdöttrar, de kvinna som bära denna börda, det säger statistiken föga om. Att två tredjedelar af de institutionsvårdade äro kvinnor manar till eftertanke; det svagare könet, som i hela sitt lif burit ansvar för andras välfärd, ändar sina dagar i det allmännas omsorg, medan männen oftare kunna räkna med huslig tillsyn intill det sista.</p><p>Att hemvårdsstödet för barn minskats med 115 understödda barn torde väcka viss oro. Det åländska hemmet är samhällets fäderneärvda grundval; dess bestånd får icke af det allmänna försummas. Låtom oss icke vika från den grundsats, att samhällets styrka alltjämt vilar på familjens bestånd och det husliga arbetets värdighet.</p><p>*J.S.*</p></div>
-
-      <hr class="article-divider">
-
-      <h2 class="julius-headline">Man döms efter traktorincident i Finström</h2>
-      <div class="julius-body"><p>VÅRDSLÖSHETENS FARLIGA FRUKT</p><p>Det torde icke förundra den uppmärksamme läsaren, att våra vägar än en gång blifvit skådeplatsen för en olycka, hvars orsak står att finna i bristande aktsamhet och ringaktning för medmänniskors lif och lemmar. Ålands tingsrätt har nu fällt sin dom i det beklagliga ärende, som tilldrog sig å Nya Godbyvägen i Finström sistlidne oktober, då en traktor utan tillbörlig bakbelysning blef påkörd af en personbil i nattens mörker.</p><p>Hvad som förvärrar denna händelse utöfver all måtta är den omständighet, att traktorföraren — nu dömd till tjugutvå dagsböter — medförde ett minderårigt barn såsom passagerare. Att utsätta ett barn för dylik fara genom att begifva sig ut på allmän väg med ett fordon, hvars ljusanordningar äro så bristfälliga att fordonet knappt kan förnimmas i mörkret, vittnar om en lättsinne som icke kan ursäktas. Den åländska bondens fäderneärvda plikttrogenhet och omsorg om de sina synes här hafva fått vika för en beklagansvärd slarfaktighet.</p><p>Tingsrätten har frikänt bilföraren, enär hon bromsade då traktorn ändtligen blef synlig för henne. Rätten torde härutinnan hafva dömt riktigt. Skulden ligger hos den, som försummat det enklaste försigtighetsbudet.</p><p>Låtom oss icke vika från den sanningen, att ordningen på våra vägar är en del af den allmänna samhällsordningen. Den som bryter mot henne, bryter mot oss alla.</p><p>*J.S.*</p></div>
+      <div class="julius-body"><p>HEMVÅRDENS TILLVÄXT OCH ANSTALTERNAS TILLBAKAGÅNG — HVAD SIFFRORNA FÖRTÄLJA OSS</p><p>De nyligen offentliggjorda uppgifterna från statistikverket gifva vid handen, att en märklig förskjutning ägt rum inom omsorgen om de gamla och svaga på våra öar. Vid utgången af det gångna året befunno sig blott 86 personer i anstaltsvård för åldringar — fyra färre än året förut — under det att icke mindre än 457 själar nu erhålla vård af närstående i det egna hemmet, en ökning med hela 61 personer.</p><p>Denna utveckling är, såvidt undertecknad kan bedöma, icke blott en fråga om siffror och budgetposter, utan rör vid något djupare i det åländska samhällslifvet. Hvarför? Emedan det visar, att familjen ännu håller sin plats såsom samhällets grundval. Det är hustrun, dottern, svärdottern — ty två tredjedelar af de vårdade äro kvinnor, och de vårdande likaså mestadels af det täcka könet — som bära denna börda, icke statens anonyma inrättningar.</p><p>Låtom oss dock ej förblindas. De 596 hushåll som erhålla hemservice, däribland 77 handikappade hem — sjutton fler än förut — vittna om att nöden är stor och behofven mångahanda. Att antalet barn för hvilka hemvårdsstöd utbetalas minskat med 115 under fjolåret väcker farhågor af ett annat slag: hvar äro de unga familjerna? Hvarför sviktar den åländska barnaskaran?</p><p>Siffrorna tala, men de tala icke af sig själfva. Det åländska folkets oförytterliga rätt att själft ordna sina angelägenheter innebär äfven plikten att vårda sina gamla och uppfostra sina unga — icke genom fastlandets godtycke eller främmande byråkraters påbud, utan genom egna händer, i egna hem, på fäderneärvda jord.</p><p>*J.S.*</p></div>
     </div>
 
     <!-- Tidsmaskin -->
@@ -438,18 +492,29 @@
       <p class="radio-source">
         <a href="https://alandsradio.ax/nyheter/fler-far-hemvardsstod-farre-institutionsvard" target="_blank" rel="noopener">Läs originalet på Ålands Radio →</a>
       </p>
-
-      <hr class="article-divider">
-
-      <h2 class="radio-headline">Man döms efter traktorincident i Finström</h2>
-      <p class="radio-byline">Martina Eriksson</p>
-      <div class="radio-body"><p>Ålands tingsrätt dömer en man till böter för äventyrande av trafiksäkerheten efter en trafikolycka på Nya Godbyvägen i Finström i oktober 2024.</p><p>Mannen körde en traktor trots att bakbelysningen var bristfällig, vilket gjorde fordonet svårt att upptäcka i mörkret.En personbil körde in i traktorns bakdäck. I samband med krocken skadades flera personer lindrigt, både personer som färdades i bilen och i traktorn. Mannen hade ett minderårigt barn som passagerare i traktorn. Efter sammanstötningen körde traktorn körde av vägen och hamnade i diket.</p><p>Bilföraren åtalades också för äventyrande av trafiksäkerheten, men enligt tingsrätten har hon inte brutit mot lagen.Tingsrätten konstaterar att traktorn var svår att upptäcka i mörkret och att bilföraren bromsade när hon såg den.</p><p>Traktorföraren döms till 22 dagsböter, totalt 176 euro. Han ska också betala en brottsofferavgift på 40 euro samt ersätta hälften av bilförarens rättegångskostnader.</p></div>
-      <p class="radio-source">
-        <a href="https://alandsradio.ax/nyheter/man-doms-efter-traktorincident-i-finstrom" target="_blank" rel="noopener">Läs originalet på Ålands Radio →</a>
-      </p>
     </div>
 
   </div>
+
+  <!-- Sidvändningsnavigering (desktop) -->
+  <a id="nav-prev" class="page-turn page-turn--prev" href="#" aria-label="Äldre utgåva">
+    <span>
+      <span class="page-turn__arrow">‹</span>
+      <span class="page-turn__label">Äldre</span>
+    </span>
+  </a>
+  <a id="nav-next" class="page-turn page-turn--next" href="#" aria-label="Nyare utgåva">
+    <span>
+      <span class="page-turn__arrow">›</span>
+      <span class="page-turn__label">Nyare</span>
+    </span>
+  </a>
+
+  <!-- Mobilnavigering -->
+  <nav class="mobile-nav">
+    <a id="mob-prev" href="#">← Äldre</a>
+    <a id="mob-next" href="#">Nyare →</a>
+  </nav>
 
   <!-- ── FOOTER ── -->
   <footer class="footer">
@@ -479,6 +544,35 @@
       const q = p.toString();
       history.replaceState(null, '', location.pathname + (q ? '?' + q : '') + location.hash);
     }
+  </script>
+  <script>
+    async function initNavigation() {
+      try {
+        const resp = await fetch('/arkiv/manifest.json');
+        if (!resp.ok) return;
+        const entries = await resp.json();
+        if (!entries.length) return;
+
+        const path = location.pathname.replace(/\/+$/, '');
+        const isHome = path === '' || path === '/index.html' || path === '/';
+        let idx = isHome ? -1 : entries.findIndex(e => path.endsWith(e.stem));
+
+        const prevEntry = entries[idx + 1];
+        const nextEntry = idx > 0 ? entries[idx - 1] : (idx === 0 ? { stem: '', isHome: true } : null);
+
+        function setNav(desktopId, mobileId, href, label) {
+          if (!href) return;
+          [desktopId, mobileId].forEach(id => {
+            const el = document.getElementById(id);
+            if (el) { el.href = href; el.classList.add('ready'); }
+          });
+        }
+
+        if (prevEntry) setNav('nav-prev', 'mob-prev', '/arkiv/' + prevEntry.stem, prevEntry.headline);
+        if (nextEntry) setNav('nav-next', 'mob-next', nextEntry.isHome ? '/' : '/arkiv/' + nextEntry.stem, nextEntry.headline);
+      } catch(e) { /* Navigation unavailable */ }
+    }
+    initNavigation();
   </script>
 </body>
 </html>
