@@ -416,18 +416,20 @@
     .article-source a { color: var(--radio-blue); text-decoration: none; }
     .article-source a:hover { text-decoration: underline; }
 
-    /* Mobilnavigering */
+    /* Navigering mellan utgåvor — alltid synlig */
     .mobile-nav {
       display: flex;
       justify-content: space-between;
-      padding: .6rem 2.5rem;
+      padding: .7rem 2.5rem;
       border-top: 1px solid #c8b090;
+      background: var(--paper);
       font-family: 'IM Fell English SC', serif;
-      font-size: .7rem;
+      font-size: .75rem;
       letter-spacing: .1em;
     }
-    .mobile-nav a { color: var(--muted); text-decoration: none; }
+    .mobile-nav a { color: var(--muted); text-decoration: none; transition: color .2s; }
     .mobile-nav a.ready { color: var(--ink); }
+    .mobile-nav a.ready:hover { color: var(--accent); }
 
     /* ── Mobile ── */
     @media (max-width: 640px) {
@@ -495,7 +497,7 @@
         <div class="col-sub">AI-tolkning · 1920-tal</div>
       </div>
       <h2 class="julius-headline">Kastelholmssamtalen sänds på Ålandskanalen</h2>
-      <div class="julius-body"><p>HAFSFRÅGORNA INFÖR VÄRLDENS ÖGON — KASTELHOLM KALLAR ÅTER TILL RÅDPLÄGNING</p><p>Det åländska Fredsinstitutets samkväm å Kastelholm hafva nu tolfte gången samlat lärda män och kvinnor att öfverlägga om frågorna för dagen, och att Ålands Radio jämväl i år befordrar dessa samtal till de elektriska mottagarapparaterna länder bolaget till heder. Från klockan tio till middagstimmen må den som äger apparat lyssna till hvad som föredrages.</p><p>Ämnet för årets samtal — hafvet såsom skådeplats för samverkan och tvedräkt — rör vid sjelfva lifsnerven för vårt skärgårdsfolk. Hafvet är icke allenast fiskarens bärgning och sjömannens arbetsplats; det är tillika den arena hvarpå nationernas intressen mäta sina krafter. Att Grönlands förre regeringschef, herr Kuupik Kleist, tager del i samtalen är af ej ringa vikt, ty de nordliga farvattnens framtid berör äfven vår egen demilitariserade ställning. Svenska utrikesdepartementets forna folkrättsrådgifvare, fru Marie Jacobsson, samt professorn i hafsrätt Henrik Ringbom fullständiga en panel som onekligen äger tyngd. Samtalet ledes af fru Hanna Ojanen.</p><p>Låtom oss minnas: det var folkrätten, och ej de mäktigas godtycke, som år 1921 stadfäste det åländska folkets oförytterliga rätt till sin svenska jord. Hvarje seriös öfverläggning om hafsrättens grunder erinrar sålunda om de fäderneärfda principer på hvilka sjelfstyrelsens heliga grundvalar hvila.</p><p>*J.S.*</p></div>
+      <div class="julius-body"><p>KASTELHOLMSSAMTALEN SÄNDA ÖFVER ÄTERN — HAFVET SÅSOM SKÅDEPLATS FÖR FRID OCH STRID</p><p>Det åländska folkets oförytterliga rätt att förkunna fredens budskap finner åter ett uttryck, då Ålands fredsinstitut för tolfte året samlar lärde män och kvinnor å det ärevördiga Kastelholms slott. Att Ålands Radio låter dessa samtal nå lyssnaren genom den så kallade Ålandskanalen är ett välkommet steg, ty hvad som afhandlas inom slottets murar förtjänar att bäras ut till hvarje åländsk stuga.</p><p>Årets ämne — hafvet såsom arena för samarbete och konflikt — är af icke ringa betydelse för oss, hvilkas fäderneärvda rätt till skärgården och dess vatten utgör sjelfva grundvalen för vår tillvaro. Grönlands förre statsminister Kuupik Kleist, den svenska folkrättsrådgifverskan Marie Jacobsson samt professorn i hafsjuridik Henrik Ringbom skola under fru Hanna Ojanens ledning granska de makter som bryta sina lansar öfver det nordiska hafvet.</p><p>Låtom oss icke vika från insikten att de åländska vattnen städse varit föremål för storpolitikens ränker. Det är en välsignelse att sjelfstyrelsens heliga grundvalar i dag medgifva oss att vara värd för dylika öfverläggningar — icke såsom Finlands lydiga tjänare, utan såsom det neutraliserade Åland, hvars röst bör höras när hafvets framtid står på spel.</p><p>*J.S.*</p></div>
     </div>
 
     <!-- Tidsmaskin (dekorativ) -->
