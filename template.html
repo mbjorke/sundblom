@@ -416,18 +416,20 @@
     .article-source a { color: var(--radio-blue); text-decoration: none; }
     .article-source a:hover { text-decoration: underline; }
 
-    /* Mobilnavigering */
+    /* Navigering mellan utgåvor — alltid synlig */
     .mobile-nav {
       display: flex;
       justify-content: space-between;
-      padding: .6rem 2.5rem;
+      padding: .7rem 2.5rem;
       border-top: 1px solid #c8b090;
+      background: var(--paper);
       font-family: 'IM Fell English SC', serif;
-      font-size: .7rem;
+      font-size: .75rem;
       letter-spacing: .1em;
     }
-    .mobile-nav a { color: var(--muted); text-decoration: none; }
+    .mobile-nav a { color: var(--muted); text-decoration: none; transition: color .2s; }
     .mobile-nav a.ready { color: var(--ink); }
+    .mobile-nav a.ready:hover { color: var(--accent); }
 
     /* ── Mobile ── */
     @media (max-width: 640px) {
