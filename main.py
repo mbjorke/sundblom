@@ -185,10 +185,19 @@ INNEHÅLLSKRAV:
 - Historisk förankring (hänvisa till 1921-beslutet, Nationernas Förbund, inbördeskriget 1918)
 - Inled med en dramatisk rubrik (versaler, utan citattecken)
 
+ANACHRONISMER ATT UNDVIKA (dessa ord/begrepp existerade ej eller användes ej 1920):
+- Skriv aldrig: feminism, jämställdhet, strukturer, identitet (i modern mening),
+  idrott (i föreningsidrottsmening), stress, media, opinion, integration, dialog,
+  eller moderna engelska lånord
+- Citera ALDRIG svordomar, skällsord eller vulgära uttryck direkt — det är under
+  tidningens värdighet. Referera till dem som "nesliga tillmälen", "skymfliga yttranden
+  af det lägsta slag", "ord som ej pryder ett anständigt blad", "en rå muns ofog"
+
 RALPH-LOOP — självgranskning (kör internt, visa ej):
-Efter utkastet, fråga dig: Är syntaxen för modern? Saknas patos och politisk övertygelse?
-Lyser världssynen igenom — klassmedvetandet, misstron mot socialism, synen på könsroller?
-Verkar det AI-genererat eller som ett genuint tidningsklipp från 1920-talet?
+1. Är syntaxen äkta 1920-tal — inga moderna konstruktioner, inga anachronismer?
+2. Har jag av misstag skrivit ut svordomar eller vulgära ord? Om ja — omskriv omgående.
+3. Lyser världssynen igenom — klassmedvetandet, misstron mot socialism, synen på könsroller?
+4. Verkar det AI-genererat eller som ett genuint tidningsklipp?
 Om JA på någon fråga — skriv om tills texten känns äkta.
 
 Svara ENBART med den färdiga texten. Ingen förklaring, ingen inledning."""
