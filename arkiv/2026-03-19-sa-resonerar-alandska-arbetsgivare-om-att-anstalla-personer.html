@@ -588,7 +588,7 @@
 
         const path = location.pathname.replace(/\/+$/, '');
         const isHome = path === '' || path === '/index.html' || path === '/';
-        const idx = isHome ? -1 : entries.findIndex(e => path.endsWith(e.stem));
+        const idx = isHome ? 0 : entries.findIndex(e => path.endsWith(e.stem));
 
         // Äldre (vänster): ett steg bakåt i tid, eller arkivet om vi är på äldsta
         const prevHref = entries[idx + 1]
