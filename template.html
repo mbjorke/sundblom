@@ -9,7 +9,7 @@
   <meta property="og:title"       content="Åland igår och idag">
   <meta property="og:description" content="Samma nyheter, två röster, hundra år isär. Julius Sundblom möter Ålands Radio.">
   <meta property="og:image"       content="https://sundblom.pages.dev/og-image.png">
-  <meta property="og:url"         content="https://xn--nud-wla.ax">
+  <meta property="og:url"         content="https://sundblom.pages.dev">
   <meta property="og:type"        content="website">
   <meta property="og:locale"      content="sv_FI">
   <meta name="twitter:card"       content="summary_large_image">
@@ -450,5 +450,15 @@
   </footer>
 
 </article>
+  <script>
+    /* Städa bort spårningsparametrar (fbclid, utm_*) från URL:en */
+    if (window.location.search) {
+      const p = new URLSearchParams(window.location.search);
+      ['fbclid','utm_source','utm_medium','utm_campaign','utm_term','utm_content']
+        .forEach(k => p.delete(k));
+      const q = p.toString();
+      history.replaceState(null, '', location.pathname + (q ? '?' + q : '') + location.hash);
+    }
+  </script>
 </body>
 </html>
