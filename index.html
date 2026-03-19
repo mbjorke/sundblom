@@ -20,7 +20,7 @@
   {
     "@context": "https://schema.org",
     "@type": "NewsArticle",
-    "headline": "Hus obeboeligt efter nattlig brand i Jomala",
+    "headline": "Kastelholmssamtalen sänds på Ålandskanalen",
     "datePublished": "2026-03-19",
     "inLanguage": "sv",
     "publisher": {
@@ -141,6 +141,7 @@
     .col-julius {
       padding: 1.8rem 1.8rem 2.5rem;
       background: var(--paper);
+      position: relative;
     }
     .col-julius .col-header {
       text-align: center;
@@ -265,6 +266,7 @@
     .col-radio {
       padding: 1.8rem 1.8rem 2.5rem;
       background: var(--radio-paper);
+      position: relative;
     }
     .col-radio .col-header {
       text-align: center;
@@ -378,10 +380,10 @@
     .col-nav-wrap .col-nav-overlay:hover {
       opacity: 1;
     }
-    .col-julius-wrap .col-nav-overlay {
+    .col-julius .col-nav-overlay {
       background: linear-gradient(to right, rgba(92,61,26,.07), transparent 60%);
     }
-    .col-radio-wrap .col-nav-overlay {
+    .col-radio .col-nav-overlay {
       background: linear-gradient(to left, rgba(0,95,138,.06), transparent 60%);
     }
     .col-nav-overlay .col-nav-arrow {
@@ -395,8 +397,8 @@
       user-select: none;
       line-height: 1;
     }
-    .col-julius-wrap .col-nav-arrow { left: .8rem; }
-    .col-radio-wrap .col-nav-arrow  { right: .8rem; }
+    .col-julius .col-nav-arrow { left: .8rem; }
+    .col-radio  .col-nav-arrow { right: .8rem; }
 
     /* Links inside columns stay above overlay */
     .col-julius a, .col-radio a { position: relative; z-index: 3; }
@@ -484,18 +486,16 @@
   <main id="main-content" class="split" aria-label="Artikeln">
 
     <!-- Julius (vänster) -->
-    <div class="col-nav-wrap col-julius-wrap">
-      <a id="nav-prev" class="col-nav-overlay" href="#" aria-label="Äldre utgåva">
+    <div class="col-julius">
+      <a id="nav-prev" class="col-nav-overlay" href="/arkiv/" aria-label="Äldre utgåva">
         <span class="col-nav-arrow">‹</span>
       </a>
-      <div class="col-julius">
-        <div class="col-header">
-          <div class="col-name">Julius Sundblom</div>
-          <div class="col-sub">AI-tolkning · 1920-tal</div>
-        </div>
-        <h2 class="julius-headline">Hus obeboeligt efter nattlig brand i Jomala</h2>
-        <div class="julius-body"><p>NATTENS ELDHÄRJNING I JOMALA — ETT HEM FÖRINTADT</p><p>En olyckshändelse af allvarligaste beskaffenhet har åter hemsökt våra bygder. Natten mot torsdagen utbröt eld i ett garage, sammankoppladt med ett bostadshus i Jomala socken, och förödelsen blef betydande. Garaget nedbrunno fullständigt, och bostadshuset skadades af röken så svårt, att det icke längre är beboeligt.</p><p>Familjen, bestående af fyra personer, undkom med lifvet tack vare att brandvarnaren gaf larm i tid. Dock har en person åsamkats skador i samband med försök att stäfja elden — ett vittnesbörd om den fara som hvarje eldsvåda innebär, äfven för den som söker hjälpa.</p><p>Det åländska samhällets fäderneärvda ordning vilade denna natt på frivilliga krafter. Jomala FBK, Gottby FBK och Räddningsverket ryckte ut med den beredvillighet som utmärker vårt folk, och räddningsledare Thomas Mattsson ledde arbetet. Polisen har nu öfvertagit utredningen för att bringa klarhet i brandens orsak.</p><p>Låtom oss icke vika från den plikt som åligger hvar och en: att i olyckan bistå sin nästa och att vårda det hem, det fäderneärf, som är det åländska lifvets grundval. Denna familj står nu utan tak öfver hufvudet, och det tillkommer socknen och dess inbyggare att visa den sammanhållning som alltid präglat våra öar.</p><p>*J.S.*</p></div>
+      <div class="col-header">
+        <div class="col-name">Julius Sundblom</div>
+        <div class="col-sub">AI-tolkning · 1920-tal</div>
       </div>
+      <h2 class="julius-headline">Kastelholmssamtalen sänds på Ålandskanalen</h2>
+      <div class="julius-body"><p>HAFSFRÅGORNA INFÖR VÄRLDENS ÖGON — KASTELHOLM KALLAR ÅTER TILL RÅDPLÄGNING</p><p>Det åländska Fredsinstitutets samkväm å Kastelholm hafva nu tolfte gången samlat lärda män och kvinnor att öfverlägga om frågorna för dagen, och att Ålands Radio jämväl i år befordrar dessa samtal till de elektriska mottagarapparaterna länder bolaget till heder. Från klockan tio till middagstimmen må den som äger apparat lyssna till hvad som föredrages.</p><p>Ämnet för årets samtal — hafvet såsom skådeplats för samverkan och tvedräkt — rör vid sjelfva lifsnerven för vårt skärgårdsfolk. Hafvet är icke allenast fiskarens bärgning och sjömannens arbetsplats; det är tillika den arena hvarpå nationernas intressen mäta sina krafter. Att Grönlands förre regeringschef, herr Kuupik Kleist, tager del i samtalen är af ej ringa vikt, ty de nordliga farvattnens framtid berör äfven vår egen demilitariserade ställning. Svenska utrikesdepartementets forna folkrättsrådgifvare, fru Marie Jacobsson, samt professorn i hafsrätt Henrik Ringbom fullständiga en panel som onekligen äger tyngd. Samtalet ledes af fru Hanna Ojanen.</p><p>Låtom oss minnas: det var folkrätten, och ej de mäktigas godtycke, som år 1921 stadfäste det åländska folkets oförytterliga rätt till sin svenska jord. Hvarje seriös öfverläggning om hafsrättens grunder erinrar sålunda om de fäderneärfda principer på hvilka sjelfstyrelsens heliga grundvalar hvila.</p><p>*J.S.*</p></div>
     </div>
 
     <!-- Tidsmaskin (dekorativ) -->
@@ -520,26 +520,24 @@
     </div>
 
     <!-- Ålands Radio (höger) -->
-    <div class="col-nav-wrap col-radio-wrap">
-      <a id="nav-next" class="col-nav-overlay" href="#" aria-label="Nyare utgåva">
+    <div class="col-radio">
+      <a id="nav-next" class="col-nav-overlay" href="/arkiv/" aria-label="Nyare utgåva">
         <span class="col-nav-arrow">›</span>
       </a>
-      <div class="col-radio">
-        <div class="col-header">
-          <div class="col-name">Ålands Radio</div>
-          <div class="col-sub">Originalartikeln · 2026</div>
-        </div>
-        <h2 class="radio-headline">Hus obeboeligt efter nattlig brand i Jomala</h2>
-        <p class="radio-byline">Martina Eriksson</p>
-        <div class="radio-body"><p>Natten mot torsdag började det brinna i ett garage, sammankopplat med ett bostadshus i Jomala.</p><p>Familjen på fyra personer som bor i huset väcktes av brandvarnare.</p><p>Garaget blev helt utbränt i branden och bostadshuset rökskadades svårt.</p><p>Räddningsledare i beredskap under natten,Thomas Mattsson, säger att huset inte är beboeligt.En person skadades i branden i samband med försök till släckning.</p><p>Polisen tar nu över utredningen av branden.Jomala FBK, Gottby FBK och Räddningsverket ryckte ut till branden.</p></div>
+      <div class="col-header">
+        <div class="col-name">Ålands Radio</div>
+        <div class="col-sub">Originalartikeln · 2026</div>
       </div>
+      <h2 class="radio-headline">Kastelholmssamtalen sänds på Ålandskanalen</h2>
+      <p class="radio-byline">Martina Eriksson</p>
+      <div class="radio-body"><p>Ålands Radio sänder, även i år, Kastelholmssamtalen via Ålandskanalen på tv.</p><p>Samtalen ordnas i år för tolfte gången av Ålands fredsinstitut.Årets tema är “Havet - som arena för samarbete och konflikt”</p><p>Sändningen från Kastelholmssamtalen pågår mellan klockan 10.00 och 12.00.</p><p>Panelen som samtalar på Kastelholms slott består av Grönlands tidigare premiärministerKuupik Kleist, tidigare ambassadören och svenska utrikesdepartementets folkrättsrådgivareMarie Jacobssonsamt professor i havsjuridikHenrik Ringbom. Moderator ärHanna Ojanen.</p></div>
     </div>
 
   </main>
 
   <!-- Källlänk under split -->
   <div class="article-source">
-    <a href="https://alandsradio.ax/nyheter/hus-obeboeligt-efter-nattlig-brand-i-jomala" target="_blank" rel="noopener">Läs originalet på Ålands Radio →</a>
+    <a href="https://alandsradio.ax/nyheter/kastelholmssamtalen-sands-pa-alandskanalen" target="_blank" rel="noopener">Läs originalet på Ålands Radio →</a>
   </div>
 
   <!-- Navigering mellan utgåvor -->
@@ -585,25 +583,31 @@
         const resp = await fetch('/arkiv/manifest.json');
         if (!resp.ok) return;
         const entries = await resp.json();
-        if (!entries.length) return;
 
         const path = location.pathname.replace(/\/+$/, '');
         const isHome = path === '' || path === '/index.html' || path === '/';
-        let idx = isHome ? -1 : entries.findIndex(e => path.endsWith(e.stem));
+        const idx = isHome ? -1 : entries.findIndex(e => path.endsWith(e.stem));
 
-        const prevEntry = entries[idx + 1];
-        const nextEntry = idx > 0 ? entries[idx - 1] : (idx === 0 ? { stem: '', isHome: true } : null);
+        // Äldre (vänster): ett steg bakåt i tid, eller arkivet om vi är på äldsta
+        const prevHref = entries[idx + 1]
+          ? '/arkiv/' + entries[idx + 1].stem
+          : '/arkiv/';
 
-        function setNav(desktopId, mobileId, href, label) {
-          if (!href) return;
+        // Nyare (höger): ett steg framåt, hemsidan om vi är på senaste i arkivet,
+        // eller arkivet om vi är på hemsidan (inga fler att visa)
+        const nextHref = idx > 0
+          ? '/arkiv/' + entries[idx - 1].stem
+          : (idx === 0 ? '/' : '/arkiv/');
+
+        function setNav(desktopId, mobileId, href) {
           [desktopId, mobileId].forEach(id => {
             const el = document.getElementById(id);
             if (el) { el.href = href; el.classList.add('ready'); }
           });
         }
 
-        if (prevEntry) setNav('nav-prev', 'mob-prev', '/arkiv/' + prevEntry.stem, prevEntry.headline);
-        if (nextEntry) setNav('nav-next', 'mob-next', nextEntry.isHome ? '/' : '/arkiv/' + nextEntry.stem, nextEntry.headline);
+        setNav('nav-prev', 'mob-prev', prevHref);
+        setNav('nav-next', 'mob-next', nextHref);
       } catch(e) { /* Navigation unavailable */ }
     }
     initNavigation();
