@@ -384,6 +384,64 @@ def _push_file(path: str, html_content: str, commit_message: str) -> str:
     return url
 
 
+def load_seen_urls() -> set:
+    """Hämtar redan processade artikel-URLar från arkiv/seen-urls.json."""
+    if not GITHUB_TOKEN or not GITHUB_REPO:
+        return set()
+    headers = {
+        "Authorization": f"Bearer {GITHUB_TOKEN}",
+        "Accept": "application/vnd.github+json",
+        "X-GitHub-Api-Version": "2022-11-28",
+    }
+    api_url = f"{GITHUB_API_BASE}/repos/{GITHUB_REPO}/contents/arkiv/seen-urls.json"
+    resp = requests.get(api_url, headers=headers, params={"ref": GITHUB_BRANCH})
+    if resp.status_code == 404:
+        return set()
+    resp.raise_for_status()
+    data = resp.json()
+    raw = base64.b64decode(data["content"]).decode("utf-8")
+    entries = json.loads(raw)
+    urls = {e["url"] for e in entries if "url" in e}
+    log.info("Laddade %d redan processade URLar.", len(urls))
+    return urls
+
+
+def save_seen_url(url: str, headline: str, date_iso: str) -> None:
+    """Lägger till en URL i arkiv/seen-urls.json."""
+    if not GITHUB_TOKEN or not GITHUB_REPO:
+        return
+    headers = {
+        "Authorization": f"Bearer {GITHUB_TOKEN}",
+        "Accept": "application/vnd.github+json",
+        "X-GitHub-Api-Version": "2022-11-28",
+    }
+    api_url = f"{GITHUB_API_BASE}/repos/{GITHUB_REPO}/contents/arkiv/seen-urls.json"
+
+    # Läs befintlig fil
+    sha = None
+    entries = []
+    resp = requests.get(api_url, headers=headers, params={"ref": GITHUB_BRANCH})
+    if resp.status_code == 200:
+        sha = resp.json().get("sha")
+        raw = base64.b64decode(resp.json()["content"]).decode("utf-8")
+        entries = json.loads(raw)
+    elif resp.status_code != 404:
+        resp.raise_for_status()
+
+    entries.append({"url": url, "headline": headline[:80], "date": date_iso})
+    new_content = json.dumps(entries, ensure_ascii=False, indent=2)
+
+    payload: dict = {
+        "message": f"🔖 Markerar som processad: {headline[:50]}",
+        "content": base64.b64encode(new_content.encode("utf-8")).decode("ascii"),
+        "branch": GITHUB_BRANCH,
+    }
+    if sha:
+        payload["sha"] = sha
+    requests.put(api_url, headers=headers, json=payload).raise_for_status()
+    log.info("URL sparad i seen-urls.json: %s", url)
+
+
 def publish_to_github(html_content: str) -> None:
     """Pushar index.html till GitHub Pages."""
     today = datetime.date.today().isoformat()
@@ -671,41 +729,67 @@ def publish_og_image(png_bytes: bytes) -> None:
 # ─────────────────────────────────────────────────────────────────────────────
 
 def main() -> None:
-    log.info("═══ Åland igår och idag — nattlig körning startar ═══")
+    log.info("═══ Åland igår och idag — daglig körning startar ═══")
 
-    # 1. Scrape rubriker (hämta bara den första)
-    headlines = fetch_top_headlines(n=1)
+    # 1. Scrape de 2 översta rubrikerna
+    headlines = fetch_top_headlines(n=2)
 
-    headline_1, url_1 = headlines[0]
+    # 2. Ladda redan processade URLar (undviker dubbletter vid helger/högtider)
+    seen_urls = load_seen_urls()
 
-    # 2. Hämta artikelinnehåll + författare
-    body_1, author_1 = fetch_article_body(url_1)
+    today = datetime.date.today().isoformat()
+    new_articles = 0
+    first_html = None  # Används för index.html + OG-bild
 
-    # 3. Generera Julius (1 text)
-    julius_1 = generate_sundblom(headline_1, url_1, body_1)
+    for headline, url in headlines:
+        if url == ALANDS_RADIO_URL:
+            log.info("Fallback-URL — hoppar över: %s", url)
+            continue
+        if url in seen_urls:
+            log.info("Redan processad — hoppar över: %s", url)
+            continue
 
-    # 4. Rendera HTML
-    html = render_html(headline_1, url_1, julius_1, body_1, author_1)
+        log.info("─── Processar: %s ───", headline)
 
-    # Spara lokalt (för debug / artefakt)
-    with open(OUTPUT_HTML, "w", encoding="utf-8") as f:
-        f.write(html)
-    log.info("HTML sparad lokalt: %s", OUTPUT_HTML)
+        # 3. Hämta artikelinnehåll + författare
+        body, author = fetch_article_body(url)
 
-    # 5. Publicera
-    publish_to_github(html)
+        # 4. Generera Julius
+        julius = generate_sundblom(headline, url, body)
 
-    # 6. OG-bild (skärmdump av den lokalt sparade index.html)
-    og_png = generate_og_image()
-    if og_png:
-        publish_og_image(og_png)
+        # 5. Rendera HTML
+        html = render_html(headline, url, julius, body, author)
 
-    # 7. Arkivera med beskrivande URL
-    publish_archive_entry(html, headline_1)
+        # 6. Spara lokalt (debug / OG-bild)
+        with open(OUTPUT_HTML, "w", encoding="utf-8") as f:
+            f.write(html)
+
+        # 7. Publicera index.html (bara den första nya artikeln)
+        if first_html is None:
+            publish_to_github(html)
+            og_png = generate_og_image()
+            if og_png:
+                publish_og_image(og_png)
+            first_html = html
+
+        # 8. Arkivera
+        publish_archive_entry(html, headline)
+
+        # 9. Markera som processad
+        save_seen_url(url, headline, today)
+        seen_urls.add(url)
+        new_articles += 1
+
+    if new_articles == 0:
+        log.info("Inga nya artiklar att publicera idag.")
+    else:
+        log.info("%d ny/nya artikel(ar) publicerade.", new_articles)
+
+    # 10. Bygg om arkivindex + manifest (alltid, oavsett om det fanns nyheter)
     rebuild_archive_index()
     generate_manifest()
 
-    # 8. robots.txt (publiceras vid varje körning — idempotent)
+    # 11. robots.txt (idempotent)
     publish_robots_txt()
 
     log.info("═══ Klar. ═══")
