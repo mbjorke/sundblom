@@ -397,8 +397,8 @@
     .col-julius .col-nav-arrow { left: .8rem; }
     .col-radio  .col-nav-arrow { right: .8rem; }
 
-    /* Links inside columns stay above overlay */
-    .col-julius a, .col-radio a { position: relative; z-index: 3; }
+    /* Links inside columns stay above overlay (but NOT the overlay itself) */
+    .col-julius a:not(.col-nav-overlay), .col-radio a:not(.col-nav-overlay) { position: relative; z-index: 3; }
 
     /* Källlänk under split */
     .article-source {
