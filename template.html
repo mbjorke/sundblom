@@ -3,11 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Åland igår och idag</title>
+  <title>{{HEADLINE_1}} — Åland igår och idag</title>
+  <meta name="description" content="{{DESCRIPTION}}">
 
   <!-- Open Graph / länkförhandsvisning -->
-  <meta property="og:title"       content="Åland igår och idag">
-  <meta property="og:description" content="Samma nyheter, två röster, hundra år isär. Julius Sundblom möter Ålands Radio.">
+  <meta property="og:title"       content="{{HEADLINE_1}} — Åland igår och idag">
+  <meta property="og:description" content="{{DESCRIPTION}}">
   <meta property="og:image"       content="https://sundblom.pages.dev/og-image.png">
   <meta property="og:url"         content="https://sundblom.pages.dev">
   <meta property="og:type"        content="website">
@@ -37,6 +38,8 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <!-- Förladda manifest.json så nav-JS inte skapar en kritisk kedja -->
+  <link rel="preload" href="/arkiv/manifest.json" as="fetch" crossorigin>
   <!-- Ladda fonter icke-blockerande för att undvika FOUT och render-blocking -->
   <link rel="preload" as="style"
         href="https://fonts.googleapis.com/css2?family=IM+Fell+English:ital@0;1&family=UnifrakturMaguntia&family=IM+Fell+English+SC&family=Source+Serif+4:ital,wght@0,400;0,600;1,400&display=swap"

@@ -319,10 +319,15 @@ def render_html(headline: str, url: str, julius_text: str, body: str, author: st
     with open(TEMPLATE_FILE, encoding="utf-8") as f:
         template = f.read()
 
+    # Bygg meta-beskrivning ur de första ~155 tecknen av Julius-texten
+    first_para = julius_text.split("\n\n")[0].strip() if julius_text else ""
+    description = (first_para[:152] + "…") if len(first_para) > 155 else first_para
+
     return (template
             .replace("{{DATE}}", date_str)
             .replace("{{DATE_ISO}}", today.isoformat())
             .replace("{{HEADLINE_1}}", headline)
+            .replace("{{DESCRIPTION}}", description)
             .replace("{{JULIUS_1}}", _to_paragraphs(julius_text))
             .replace("{{ORIGINAL_1}}", _to_paragraphs(body))
             .replace("{{AUTHOR_1}}", author_display)
