@@ -139,6 +139,8 @@ def fetch_top_headlines(n: int = 2) -> list[tuple[str, str]]:
             "User-Agent": "SundblomBot/1.0 (+https://github.com)"
         })
         resp.raise_for_status()
+        server_date = resp.headers.get("Date", "saknas")
+        log.info("Ålands Radio server-tid (HTTP Date-header): %s", server_date)
     except requests.RequestException as exc:
         log.warning("Kunde inte nå Ålands Radio: %s", exc)
         return fallback
