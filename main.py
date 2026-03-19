@@ -298,12 +298,9 @@ def _to_paragraphs(text: str) -> str:
     )
 
 
-def render_html(headlines: list[tuple[str, str]],
-                julius_texts: list[str],
-                originals: list[tuple[str, str]]) -> str:
+def render_html(headline: str, url: str, julius_text: str, body: str, author: str) -> str:
     """
-    Bäddar in alla texter i HTML-mallen.
-    originals: lista av (body_text, author_name) per artikel
+    Bäddar in en artikel i HTML-mallen.
     """
     today    = datetime.date.today()
     weekdays = ["Måndagen","Tisdagen","Onsdagen","Torsdagen","Fredagen","Lördagen","Söndagen"]
@@ -311,20 +308,11 @@ def render_html(headlines: list[tuple[str, str]],
                 "juli","augusti","september","oktober","november","december"]
     date_str = f"{weekdays[today.weekday()]} den {today.day} {months[today.month]} {today.year}"
 
-    headline_1, url_1 = headlines[0]
-    headline_2, url_2 = headlines[1] if len(headlines) > 1 else headlines[0]
-
-    body_1, author_1 = originals[0]
-    body_2, author_2 = originals[1] if len(originals) > 1 else originals[0]
-
     # Fallback om ingen text hittades
-    if not body_1:
-        body_1 = "Artikelinnehåll ej tillgängligt — besök Ålands Radio för att läsa originalet."
-    if not body_2:
-        body_2 = "Artikelinnehåll ej tillgängligt — besök Ålands Radio för att läsa originalet."
+    if not body:
+        body = "Artikelinnehåll ej tillgängligt — besök Ålands Radio för att läsa originalet."
 
-    author_display_1 = author_1 if author_1 else "Ålands Radio"
-    author_display_2 = author_2 if author_2 else "Ålands Radio"
+    author_display = author if author else "Ålands Radio"
 
     with open(TEMPLATE_FILE, encoding="utf-8") as f:
         template = f.read()
@@ -332,16 +320,11 @@ def render_html(headlines: list[tuple[str, str]],
     return (template
             .replace("{{DATE}}", date_str)
             .replace("{{DATE_ISO}}", today.isoformat())
-            .replace("{{HEADLINE_1}}", headline_1)
-            .replace("{{HEADLINE_2}}", headline_2)
-            .replace("{{JULIUS_1}}", _to_paragraphs(julius_texts[0]))
-            .replace("{{JULIUS_2}}", _to_paragraphs(julius_texts[1]))
-            .replace("{{ORIGINAL_1}}", _to_paragraphs(body_1))
-            .replace("{{ORIGINAL_2}}", _to_paragraphs(body_2))
-            .replace("{{AUTHOR_1}}", author_display_1)
-            .replace("{{AUTHOR_2}}", author_display_2)
-            .replace("{{SOURCE_URL_1}}", url_1)
-            .replace("{{SOURCE_URL_2}}", url_2))
+            .replace("{{HEADLINE_1}}", headline)
+            .replace("{{JULIUS_1}}", _to_paragraphs(julius_text))
+            .replace("{{ORIGINAL_1}}", _to_paragraphs(body))
+            .replace("{{AUTHOR_1}}", author_display)
+            .replace("{{SOURCE_URL_1}}", url))
 
 
 # ─────────────────────────────────────────────────────────────────────────────
@@ -411,6 +394,53 @@ def publish_archive_entry(html_content: str, headline: str = "") -> None:
     slug = slugify(headline) if headline else ""
     path = f"arkiv/{today}-{slug}.html" if slug else f"arkiv/{today}.html"
     _push_file(path, html_content, f"📁 Arkiverar {today}: {headline[:50]}")
+
+
+def generate_manifest() -> None:
+    """Bygger arkiv/manifest.json med alla utgåvor, sorterade nyast först."""
+    if not GITHUB_TOKEN or not GITHUB_REPO:
+        raise EnvironmentError("GITHUB_TOKEN eller GITHUB_REPO saknas.")
+
+    headers = {
+        "Authorization": f"Bearer {GITHUB_TOKEN}",
+        "Accept": "application/vnd.github+json",
+        "X-GitHub-Api-Version": "2022-11-28",
+    }
+    list_url = f"{GITHUB_API_BASE}/repos/{GITHUB_REPO}/contents/arkiv"
+    resp = requests.get(list_url, headers=headers, params={"ref": GITHUB_BRANCH})
+
+    raw = []  # list of (date_iso, slug, stem)
+    if resp.status_code == 200:
+        for item in resp.json():
+            name = item.get("name", "")
+            if name.endswith(".html") and name != "index.html":
+                stem = name[:-5]
+                date_iso = stem[:10]
+                slug = stem[11:] if len(stem) > 10 else ""
+                raw.append((date_iso, slug, stem))
+    elif resp.status_code != 404:
+        resp.raise_for_status()
+
+    # Deduplicera per datum — föredra slug-version framför datum-bara
+    by_date: dict[str, tuple[str, str, str]] = {}
+    for date_iso, slug, stem in raw:
+        if date_iso not in by_date or (slug and not by_date[date_iso][1]):
+            by_date[date_iso] = (date_iso, slug, stem)
+
+    entries = sorted(by_date.values(), key=lambda x: x[0], reverse=True)
+
+    manifest = [
+        {
+            "stem": stem,
+            "date": date_iso,
+            "headline": slug.replace("-", " ").capitalize() if slug else date_iso,
+        }
+        for date_iso, slug, stem in entries
+    ]
+
+    manifest_json = json.dumps(manifest, ensure_ascii=False, indent=2)
+    _push_file("arkiv/manifest.json", manifest_json, f"🗂️ Uppdaterar manifest.json ({len(manifest)} utgåvor)")
+    log.info("manifest.json genererat med %d poster.", len(manifest))
 
 
 def rebuild_archive_index() -> None:
@@ -640,26 +670,19 @@ def publish_og_image(png_bytes: bytes) -> None:
 def main() -> None:
     log.info("═══ Åland igår och idag — nattlig körning startar ═══")
 
-    # 1. Scrape rubriker
-    headlines = fetch_top_headlines(n=2)
+    # 1. Scrape rubriker (hämta bara den första)
+    headlines = fetch_top_headlines(n=1)
 
     headline_1, url_1 = headlines[0]
-    headline_2, url_2 = headlines[1] if len(headlines) > 1 else headlines[0]
 
     # 2. Hämta artikelinnehåll + författare
     body_1, author_1 = fetch_article_body(url_1)
-    body_2, author_2 = fetch_article_body(url_2)
 
-    # 3. Generera Julius (2 texter)
+    # 3. Generera Julius (1 text)
     julius_1 = generate_sundblom(headline_1, url_1, body_1)
-    julius_2 = generate_sundblom(headline_2, url_2, body_2)
 
     # 4. Rendera HTML
-    html = render_html(
-        headlines,
-        [julius_1, julius_2],
-        [(body_1, author_1), (body_2, author_2)],
-    )
+    html = render_html(headline_1, url_1, julius_1, body_1, author_1)
 
     # Spara lokalt (för debug / artefakt)
     with open(OUTPUT_HTML, "w", encoding="utf-8") as f:
@@ -677,6 +700,7 @@ def main() -> None:
     # 7. Arkivera med beskrivande URL
     publish_archive_entry(html, headline_1)
     rebuild_archive_index()
+    generate_manifest()
 
     # 8. robots.txt (publiceras vid varje körning — idempotent)
     publish_robots_txt()

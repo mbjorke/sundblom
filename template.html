@@ -333,6 +333,65 @@
       transform: translateY(0);
     }
 
+    /* ── Sidvändningsnavigering ── */
+    .page-turn {
+      position: fixed;
+      top: 0; bottom: 0;
+      width: 15vw;
+      z-index: 50;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-decoration: none;
+      opacity: 0;
+      transition: opacity 0.4s ease, background 0.4s ease;
+      pointer-events: none;
+      cursor: pointer;
+    }
+    .page-turn.ready { pointer-events: auto; }
+    .page-turn:hover { opacity: 1; }
+    .page-turn--prev {
+      left: 0;
+      background: linear-gradient(to right, rgba(92,61,26,.12), transparent);
+    }
+    .page-turn--next {
+      right: 0;
+      background: linear-gradient(to left, rgba(92,61,26,.12), transparent);
+    }
+    .page-turn__arrow {
+      font-family: 'IM Fell English', Georgia, serif;
+      font-size: 4rem;
+      color: var(--rule);
+      opacity: 0.65;
+      user-select: none;
+      line-height: 1;
+    }
+    .page-turn__label {
+      display: block;
+      font-family: 'IM Fell English SC', serif;
+      font-size: .55rem;
+      letter-spacing: .2em;
+      color: var(--muted);
+      text-transform: uppercase;
+      text-align: center;
+      margin-top: .3rem;
+    }
+    .mobile-nav {
+      display: none;
+      justify-content: space-between;
+      padding: .6rem 2.5rem;
+      border-top: 1px solid #c8b090;
+      font-family: 'IM Fell English SC', serif;
+      font-size: .7rem;
+      letter-spacing: .1em;
+    }
+    .mobile-nav a { color: var(--muted); text-decoration: none; }
+    .mobile-nav a.ready { color: var(--ink); }
+    @media (max-width: 900px) {
+      .page-turn { display: none; }
+      .mobile-nav { display: flex; }
+    }
+
     /* ── Mobile ── */
     @media (max-width: 640px) {
       .split { grid-template-columns: 1fr; }
@@ -397,11 +456,6 @@
 
       <h2 class="julius-headline">{{HEADLINE_1}}</h2>
       <div class="julius-body">{{JULIUS_1}}</div>
-
-      <hr class="article-divider">
-
-      <h2 class="julius-headline">{{HEADLINE_2}}</h2>
-      <div class="julius-body">{{JULIUS_2}}</div>
     </div>
 
     <!-- Tidsmaskin -->
@@ -438,18 +492,29 @@
       <p class="radio-source">
         <a href="{{SOURCE_URL_1}}" target="_blank" rel="noopener">Läs originalet på Ålands Radio →</a>
       </p>
-
-      <hr class="article-divider">
-
-      <h2 class="radio-headline">{{HEADLINE_2}}</h2>
-      <p class="radio-byline">{{AUTHOR_2}}</p>
-      <div class="radio-body">{{ORIGINAL_2}}</div>
-      <p class="radio-source">
-        <a href="{{SOURCE_URL_2}}" target="_blank" rel="noopener">Läs originalet på Ålands Radio →</a>
-      </p>
     </div>
 
   </div>
+
+  <!-- Sidvändningsnavigering (desktop) -->
+  <a id="nav-prev" class="page-turn page-turn--prev" href="#" aria-label="Äldre utgåva">
+    <span>
+      <span class="page-turn__arrow">‹</span>
+      <span class="page-turn__label">Äldre</span>
+    </span>
+  </a>
+  <a id="nav-next" class="page-turn page-turn--next" href="#" aria-label="Nyare utgåva">
+    <span>
+      <span class="page-turn__arrow">›</span>
+      <span class="page-turn__label">Nyare</span>
+    </span>
+  </a>
+
+  <!-- Mobilnavigering -->
+  <nav class="mobile-nav">
+    <a id="mob-prev" href="#">← Äldre</a>
+    <a id="mob-next" href="#">Nyare →</a>
+  </nav>
 
   <!-- ── FOOTER ── -->
   <footer class="footer">
@@ -479,6 +544,35 @@
       const q = p.toString();
       history.replaceState(null, '', location.pathname + (q ? '?' + q : '') + location.hash);
     }
+  </script>
+  <script>
+    async function initNavigation() {
+      try {
+        const resp = await fetch('/arkiv/manifest.json');
+        if (!resp.ok) return;
+        const entries = await resp.json();
+        if (!entries.length) return;
+
+        const path = location.pathname.replace(/\/+$/, '');
+        const isHome = path === '' || path === '/index.html' || path === '/';
+        let idx = isHome ? -1 : entries.findIndex(e => path.endsWith(e.stem));
+
+        const prevEntry = entries[idx + 1];
+        const nextEntry = idx > 0 ? entries[idx - 1] : (idx === 0 ? { stem: '', isHome: true } : null);
+
+        function setNav(desktopId, mobileId, href, label) {
+          if (!href) return;
+          [desktopId, mobileId].forEach(id => {
+            const el = document.getElementById(id);
+            if (el) { el.href = href; el.classList.add('ready'); }
+          });
+        }
+
+        if (prevEntry) setNav('nav-prev', 'mob-prev', '/arkiv/' + prevEntry.stem, prevEntry.headline);
+        if (nextEntry) setNav('nav-next', 'mob-next', nextEntry.isHome ? '/' : '/arkiv/' + nextEntry.stem, nextEntry.headline);
+      } catch(e) { /* Navigation unavailable */ }
+    }
+    initNavigation();
   </script>
 </body>
 </html>
