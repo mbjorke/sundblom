@@ -3,11 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Åland igår och idag</title>
+  <title>Eckeröstyrelsens förtroende för förvaltningen är intakt trots inledd utredning om tjänstefel — Åland igår och idag</title>
+  <meta name="description" content="ECKERÖ-AFFÄREN: NÄR TJÄNSTEMÄNNEN TAGA SIG MAKT UTAN FOLKETS LOF">
 
   <!-- Open Graph / länkförhandsvisning -->
-  <meta property="og:title"       content="Åland igår och idag">
-  <meta property="og:description" content="Samma nyheter, två röster, hundra år isär. Julius Sundblom möter Ålands Radio.">
+  <meta property="og:title"       content="Eckeröstyrelsens förtroende för förvaltningen är intakt trots inledd utredning om tjänstefel — Åland igår och idag">
+  <meta property="og:description" content="ECKERÖ-AFFÄREN: NÄR TJÄNSTEMÄNNEN TAGA SIG MAKT UTAN FOLKETS LOF">
   <meta property="og:image"       content="https://sundblom.pages.dev/og-image.png">
   <meta property="og:url"         content="https://sundblom.pages.dev">
   <meta property="og:type"        content="website">
@@ -37,6 +38,9 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <!-- Förladda manifest.json så nav-JS inte skapar en kritisk kedja -->
+  <link rel="preload" href="/arkiv/manifest.json" as="fetch" crossorigin>
+  <!-- Ladda fonter icke-blockerande för att undvika FOUT och render-blocking -->
   <link rel="preload" as="style"
         href="https://fonts.googleapis.com/css2?family=IM+Fell+English:ital@0;1&family=UnifrakturMaguntia&family=IM+Fell+English+SC&family=Source+Serif+4:ital,wght@0,400;0,600;1,400&display=swap"
         onload="this.onload=null;this.rel='stylesheet'">
@@ -45,6 +49,11 @@
           href="https://fonts.googleapis.com/css2?family=IM+Fell+English:ital@0;1&family=UnifrakturMaguntia&family=IM+Fell+English+SC&family=Source+Serif+4:ital,wght@0,400;0,600;1,400&display=swap">
   </noscript>
   <style>
+    /* Mjuka sidövergångar — eliminerar blinkandet vid navigering */
+    @view-transition { navigation: auto; }
+    ::view-transition-old(root) { animation-duration: 0.15s; }
+    ::view-transition-new(root) { animation-duration: 0.15s; }
+
     :root {
       --ink:        #1a1207;
       --paper:      #f5ead6;
@@ -67,7 +76,7 @@
       color: var(--paper);
       padding: .5rem 1rem;
       font-family: 'IM Fell English SC', serif;
-      font-size: .8rem;
+      font-size: .85rem;
       letter-spacing: .05em;
       z-index: 9999;
       text-decoration: none;
@@ -117,7 +126,7 @@
     }
     .masthead-eyebrow {
       font-family: 'IM Fell English SC', serif;
-      font-size: .7rem; letter-spacing: .25em;
+      font-size: .85rem; letter-spacing: .25em;
       color: var(--muted); text-transform: uppercase; margin-bottom: .5rem;
     }
     .masthead-title {
@@ -127,14 +136,14 @@
     }
     .masthead-subtitle {
       font-family: 'IM Fell English SC', serif;
-      font-size: .75rem; letter-spacing: .3em;
+      font-size: .85rem; letter-spacing: .3em;
       color: var(--muted); margin-bottom: .8rem;
     }
     .masthead-rule { height: 1px; background: var(--rule); margin: .4rem 0; }
     .masthead-dateline {
       display: flex; justify-content: space-between;
       padding: .4rem 0 .6rem;
-      font-size: .7rem; color: var(--muted); font-style: italic;
+      font-size: .85rem; color: var(--muted); font-style: italic;
     }
 
     /* ── Split layout ── */
@@ -162,7 +171,7 @@
     }
     .col-julius .col-sub {
       font-family: 'IM Fell English SC', serif;
-      font-size: .6rem; letter-spacing: .2em;
+      font-size: .85rem; letter-spacing: .2em;
       color: var(--muted); text-transform: uppercase;
       margin-top: .2rem;
     }
@@ -239,7 +248,7 @@
     .ts-era-label {
       display: block;
       font-family: 'IM Fell English SC', serif;
-      font-size: .5rem; letter-spacing: .2em;
+      font-size: .85rem; letter-spacing: .2em;
       text-transform: uppercase; opacity: .6;
       margin-bottom: .2rem;
     }
@@ -263,7 +272,7 @@
     .ts-dot:nth-child(4) { animation-delay: .6s; }
     .ts-dot:nth-child(5) { animation-delay: .8s; }
     .ts-dot:nth-child(6) { animation-delay: 1s; }
-    .ts-arrow { color: #c8a050; font-size: .8rem; opacity: .7; writing-mode: vertical-lr; }
+    .ts-arrow { color: #c8a050; font-size: .85rem; opacity: .7; writing-mode: vertical-lr; }
     @keyframes pulse-dot {
       0%, 100% { opacity: .2; transform: scale(.8); }
       50%       { opacity: .9; transform: scale(1.3); }
@@ -289,7 +298,7 @@
     }
     .col-radio .col-sub {
       font-family: 'Source Serif 4', serif;
-      font-size: .6rem; letter-spacing: .15em;
+      font-size: .85rem; letter-spacing: .15em;
       color: var(--muted); text-transform: uppercase;
       margin-top: .2rem;
     }
@@ -303,7 +312,7 @@
     }
     .radio-byline {
       font-family: 'Source Serif 4', serif;
-      font-size: .65rem; color: var(--muted);
+      font-size: .85rem; color: var(--muted);
       font-style: italic; margin-bottom: .8rem;
     }
     .radio-body { margin-bottom: .8rem; }
@@ -315,7 +324,7 @@
     }
     .radio-source {
       font-family: 'Source Serif 4', serif;
-      font-size: .65rem; color: var(--muted);
+      font-size: .85rem; color: var(--muted);
       margin-bottom: 1.8rem;
     }
     .radio-source a {
@@ -332,7 +341,7 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
-      font-size: .65rem;
+      font-size: .85rem;
       color: var(--muted);
       font-style: italic;
       background: var(--paper);
@@ -351,7 +360,7 @@
       background: var(--ink);
       color: #f5ead6;
       font-family: 'IM Fell English SC', serif;
-      font-size: .62rem;
+      font-size: .85rem;
       font-style: normal;
       letter-spacing: .04em;
       white-space: nowrap;
@@ -368,9 +377,6 @@
     }
 
     /* ── Kolumnnavigering (klickbara sidor) ── */
-    .col-nav-wrap {
-      position: relative;
-    }
     .col-nav-overlay {
       position: absolute;
       inset: 0;
@@ -407,7 +413,7 @@
     .col-julius .col-nav-arrow { left: .8rem; }
     .col-radio  .col-nav-arrow { right: .8rem; }
 
-    /* Links inside columns stay above overlay */
+    /* Links inside columns stay above overlay (but NOT the overlay itself) */
     .col-julius a:not(.col-nav-overlay), .col-radio a:not(.col-nav-overlay) { position: relative; z-index: 3; }
 
     /* Källlänk under split */
@@ -416,7 +422,7 @@
       padding: .5rem 1.8rem;
       text-align: right;
       font-family: 'Source Serif 4', serif;
-      font-size: .65rem;
+      font-size: .85rem;
       color: var(--muted);
       background: var(--radio-paper);
     }
@@ -431,7 +437,7 @@
       border-top: 1px solid #c8b090;
       background: var(--paper);
       font-family: 'IM Fell English SC', serif;
-      font-size: .75rem;
+      font-size: .85rem;
       letter-spacing: .1em;
     }
     .mobile-nav a { color: var(--muted); text-decoration: none; transition: color .2s; }
@@ -504,7 +510,7 @@
         <div class="col-sub">AI-tolkning · 1920-tal</div>
       </div>
       <h2 class="julius-headline">Eckeröstyrelsens förtroende för förvaltningen är intakt trots inledd utredning om tjänstefel</h2>
-      <div class="julius-body"><p>EGENDOMENS VANHELGANDE I ECKERÖ</p><p>Det finnes städse de som tro sig kunna styra och ställa med det allmännas tillhörigheter, såsom vore de deras egna — ja, ännu friare, ty med det egna umgås man dock varsamt. I Eckerö hafva tjänstemän nu utan behörig politisk förankring låtit riva pentryn i det kommunala äldreboendet Solgården, och frågan måste ställas: hvar fanns den ordnade beslutsgången, hvar fanns folkets valda representanters röst?</p><p>Styrelseledamoten herr Hilander förklarar, att informationsflödet icke fungerat, och att man nu gifvit kommundirektören i uppdrag att utreda huruvida tjänstefel begåtts. Nåväl! Här röjer sig ett symptom på den sjuka som härjar hvarhelst förvaltningskulturen sväller öfver sina bräddar: att tjänstemannaståndet börjar förvexla sin verkställande roll med en bestämmande makt, som blott tillkommer de af folket utsedda.</p><p>Det talas om att den åldring, som förmår tillreda sin egen föda, lika gärna kan dväljas i hemmet. Ett besynnerligt resonemang! I tjugo års tid hafva dessa pentryn gifvit de äldre en tryggare, mera hemlik tillvaro vid öfvergången till boendet — och nu skola de utan vidare utplånas, af ett pennstreck som ingen folkvald nämnd sanktionerat.</p><p>Låtom oss icke vika från den självklara principen: kommunal egendom tillhör kommunens folk, och beslut om densamma skola fattas i laga ordning, med öppna besvärsgrunder. Att förvaltningen nu säges åtnjuta styrelsens fulla förtroende är godt, men hvad hjälper förtroende utan fasta grundvalar? Ordföranden, fru Stjärnfelt, har afböjt all utfrågning — månne det vittnar om den goda dialog som man berömmer sig af?</p><p>Hvarför iakttaga de makthafvande så ofta denna tystnad, då de ställas till ansvar? Det är icke genom tystnad, utan genom öppenhet och respekt för de fäderneärvda formerna, som förtroendet mellan styrande och styrda bevaras. Annars vittrar det lika visst som pentryskåpen i Solgården.</p><p>*J.S.*</p></div>
+      <div class="julius-body"><p>ECKERÖ-AFFÄREN: NÄR TJÄNSTEMÄNNEN TAGA SIG MAKT UTAN FOLKETS LOF</p><p>Åter bringas vi underrättelse om huru tjänstemanna-väldet, denna vår tids lömska sjukdom, utbreder sig äfven i det lilla örikets fredligaste vrår. I Eckerö kommun hafva förvaltningens män gått så långt att de, utan att förankra saken hos de folkvalda, låtit riva ut pentryn från äldreboendet Solgården — kommunal egendom, som tillhör hvarje skattebetalare i socknen, har sålunda bortförts på godtyckets vink.</p><p>Att styrelseledamoten Hilander nu försäkrar om "högt förtroende" för de felade tjänsteinnehavarne må han själf svara för. Hvad vi däremot kunna konstatera är att informationsflödet — som han så milt uttrycker det — icke blott "icke fungerat", utan att själfva grundvalen för folkligt inflytande har åsidosatts. Beslut, som röra kommunens egendom och de äldstas välfärd, skola fattas i berörd nämnd eller af kommunstyrelsen, så att besvärsrätt föreligger. Detta är icke byråkratisk pedanteri; det är självstyrelsens heliga grundvalar.</p><p>Förvaltningens försvar — att den som förmår handskas med ett pentry lika väl kan dväljas i eget hem — vittnar om en beklämmande teknokratisk själfgodhet. I tjugu års tid hafva fyra af aderton rum erbjudit de tillträdande en tryggare och mer hemlik miljö. Nu har denna fäderneärvda omsorg sopats undan, icke genom folkviljans utslag, utan genom tjänstemännens administrativa fiat.</p><p>Låtom oss icke vika för dylika öfvertramp, hvarken i stort eller smått. Ty äfven i en liten skärgårdskommun gäller den eviga sanningen: makten utgår från folket, icke från kontorsstolen. Att kommunstyrelsens ordförande fru Stjärnfelt afböjer att låta sig utfrågas i saken gör icke det hela mera förtroendeinjagande.</p><p>Vi skola med intresse följa kommundirektör Rautanens utredning. Måtte den icke blifva ännu ett papper som lägges till handlingarna utan påföljd.</p><p>*J.S.*</p></div>
     </div>
 
     <!-- Tidsmaskin (dekorativ) -->
@@ -539,7 +545,7 @@
       </div>
       <h2 class="radio-headline">Eckeröstyrelsens förtroende för förvaltningen är intakt trots inledd utredning om tjänstefel</h2>
       <p class="radio-byline">Malin Lundberg</p>
-      <div class="radio-body"><p>Kommunstyrelsen i Eckerö har förtroende för förvaltningen, trots att man på sitt senaste möte enhälligt beslutade att ge kommundirektör Petri Rautanen i uppdrag att utreda om tjänstemännen begått något fel eller överskridit sina befogenheter när pentryn revs ut i äldreboendet Solgården. Det säger styrelseledamoten John Hilander.</p><p>– Vi har högt förtroende för vår förvaltning men i de här frågorna ser vi att informationsflödet inte fungerat, säger Hilander.Kommunstyrelsen menar att tjänstemännen borde ha förankrat beslutet om att rivningsarbetet politiskt innan man inledde arbetet.– Det rör sig om kommunal egendom, den kan man inte ändra på hur som helst. Beslut måste fattas i berörd nämnd eller av kommunstyrelsen så att det finns besvärsgrunder, säger Hilander.Förvaltningen menade att den som är i så bra skick att den kan laga sin egen mat och hantera ett pentry lika bra kan bo kvar hemma. Hur ser kommunstyrelsen på det resonemanget?– Fyra av 18 rum på Solgården har haft pentryn. För personer som flyttar hemifrån för första gången skapar det en tryggare och mer hemlik miljö. Det är något vi erbjudit under 20 års tid och tidigare har vi inte fått några indikationer på att det inte fungerar, säger Hilander.</p><p>Hur är stämningen mellan kommunstyrelsen och förvaltningen efter besluten på förra mötet?– Vi upplever en god dialog med tjänsteinnehavarna. Det här är ett sätt för oss att beskriva hur vi tycker att informationsflödet ska fungera och hur besluten ska tas, säger Hilander.På nästa kommunstyrelse ska kommundirektören informera om hur utredningen fortskrider. Kommunstyrelsens ordförandeAnn-Sofi Stjärnfelthar avböjt intervju.</p><p>Anklagelser om tjänstefel när pentryn revs</p></div>
+      <div class="radio-body"><p>Kommunstyrelsen i Eckerö har förtroende för förvaltningen, trots att man på sitt senaste möte enhälligt beslutade att ge kommundirektör Petri Rautanen i uppdrag att utreda om tjänstemännen begått något fel eller överskridit sina befogenheter när pentryn revs ut i äldreboendet Solgården. Det säger styrelseledamoten John Hilander.</p><p>– Vi har högt förtroende för vår förvaltning men i de här frågorna ser vi att informationsflödet inte fungerat, säger Hilander.</p><p>Kommunstyrelsen menar att tjänstemännen borde ha förankrat beslutet om att rivningsarbetet politiskt innan man inledde arbetet.</p><p>– Det rör sig om kommunal egendom, den kan man inte ändra på hur som helst. Beslut måste fattas i berörd nämnd eller av kommunstyrelsen så att det finns besvärsgrunder, säger Hilander.</p><p>Förvaltningen menade att den som är i så bra skick att den kan laga sin egen mat och hantera ett pentry lika bra kan bo kvar hemma. Hur ser kommunstyrelsen på det resonemanget?– Fyra av 18 rum på Solgården har haft pentryn. För personer som flyttar hemifrån för första gången skapar det en tryggare och mer hemlik miljö. Det är något vi erbjudit under 20 års tid och tidigare har vi inte fått några indikationer på att det inte fungerar, säger Hilander.</p><p>Hur är stämningen mellan kommunstyrelsen och förvaltningen efter besluten på förra mötet?– Vi upplever en god dialog med tjänsteinnehavarna. Det här är ett sätt för oss att beskriva hur vi tycker att informationsflödet ska fungera och hur besluten ska tas, säger Hilander.</p><p>På nästa kommunstyrelse ska kommundirektören informera om hur utredningen fortskrider. Kommunstyrelsens ordförandeAnn-Sofi Stjärnfelthar avböjt intervju.</p><p>Anklagelser om tjänstefel när pentryn revs</p></div>
     </div>
 
   </main>
@@ -595,6 +601,7 @@
 
         const path = location.pathname.replace(/\/+$/, '');
         const isHome = path === '' || path === '/index.html' || path === '/';
+        // isHome behandlas som idx=0 (senaste posten) så att "äldre" går till entries[1]
         const idx = isHome ? 0 : entries.findIndex(e => path.endsWith(e.stem));
 
         // Äldre (vänster): ett steg bakåt i tid, eller arkivet om vi är på äldsta
