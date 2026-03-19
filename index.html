@@ -20,7 +20,7 @@
   {
     "@context": "https://schema.org",
     "@type": "NewsArticle",
-    "headline": "Fler får hemvårdsstöd, färre institutionsvård",
+    "headline": "Hus obeboeligt efter nattlig brand i Jomala",
     "datePublished": "2026-03-19",
     "inLanguage": "sv",
     "publisher": {
@@ -333,51 +333,65 @@
       transform: translateY(0);
     }
 
-    /* ── Sidvändningsnavigering ── */
-    .page-turn {
-      position: fixed;
-      top: 0; bottom: 0;
-      width: 15vw;
-      z-index: 50;
-      display: flex;
-      align-items: center;
-      justify-content: center;
+    /* ── Kolumnnavigering (klickbara sidor) ── */
+    .col-nav-wrap {
+      position: relative;
+    }
+    .col-nav-wrap .col-nav-overlay {
+      position: absolute;
+      inset: 0;
+      z-index: 2;
+      display: block;
       text-decoration: none;
       opacity: 0;
-      transition: opacity 0.4s ease, background 0.4s ease;
+      transition: opacity 0.35s ease, background 0.35s ease;
       pointer-events: none;
-      cursor: pointer;
     }
-    .page-turn.ready { pointer-events: auto; }
-    .page-turn:hover { opacity: 1; }
-    .page-turn--prev {
-      left: 0;
-      background: linear-gradient(to right, rgba(92,61,26,.12), transparent);
+    .col-nav-wrap .col-nav-overlay.ready {
+      pointer-events: auto;
     }
-    .page-turn--next {
-      right: 0;
-      background: linear-gradient(to left, rgba(92,61,26,.12), transparent);
+    .col-nav-wrap .col-nav-overlay:hover {
+      opacity: 1;
     }
-    .page-turn__arrow {
+    .col-julius-wrap .col-nav-overlay {
+      background: linear-gradient(to right, rgba(92,61,26,.07), transparent 60%);
+    }
+    .col-radio-wrap .col-nav-overlay {
+      background: linear-gradient(to left, rgba(0,95,138,.06), transparent 60%);
+    }
+    .col-nav-overlay .col-nav-arrow {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
       font-family: 'IM Fell English', Georgia, serif;
-      font-size: 4rem;
+      font-size: 3rem;
       color: var(--rule);
-      opacity: 0.65;
+      opacity: 0.5;
       user-select: none;
       line-height: 1;
     }
-    .page-turn__label {
-      display: block;
-      font-family: 'IM Fell English SC', serif;
-      font-size: .55rem;
-      letter-spacing: .2em;
+    .col-julius-wrap .col-nav-arrow { left: .8rem; }
+    .col-radio-wrap .col-nav-arrow  { right: .8rem; }
+
+    /* Links inside columns stay above overlay */
+    .col-julius a, .col-radio a { position: relative; z-index: 3; }
+
+    /* Källlänk under split */
+    .article-source {
+      border-top: 1px solid #c8b090;
+      padding: .5rem 1.8rem;
+      text-align: right;
+      font-family: 'Source Serif 4', serif;
+      font-size: .65rem;
       color: var(--muted);
-      text-transform: uppercase;
-      text-align: center;
-      margin-top: .3rem;
+      background: var(--radio-paper);
     }
+    .article-source a { color: var(--radio-blue); text-decoration: none; }
+    .article-source a:hover { text-decoration: underline; }
+
+    /* Mobilnavigering */
     .mobile-nav {
-      display: none;
+      display: flex;
       justify-content: space-between;
       padding: .6rem 2.5rem;
       border-top: 1px solid #c8b090;
@@ -387,10 +401,6 @@
     }
     .mobile-nav a { color: var(--muted); text-decoration: none; }
     .mobile-nav a.ready { color: var(--ink); }
-    @media (max-width: 900px) {
-      .page-turn { display: none; }
-      .mobile-nav { display: flex; }
-    }
 
     /* ── Mobile ── */
     @media (max-width: 640px) {
@@ -448,14 +458,18 @@
   <div class="split">
 
     <!-- Julius (vänster) -->
-    <div class="col-julius">
-      <div class="col-header">
-        <div class="col-name">Julius Sundblom</div>
-        <div class="col-sub">AI-tolkning · 1920-tal</div>
+    <div class="col-nav-wrap col-julius-wrap">
+      <a id="nav-prev" class="col-nav-overlay" href="#" aria-label="Äldre utgåva">
+        <span class="col-nav-arrow">‹</span>
+      </a>
+      <div class="col-julius">
+        <div class="col-header">
+          <div class="col-name">Julius Sundblom</div>
+          <div class="col-sub">AI-tolkning · 1920-tal</div>
+        </div>
+        <h2 class="julius-headline">Hus obeboeligt efter nattlig brand i Jomala</h2>
+        <div class="julius-body"><p>ELDENS HÄRJNINGAR I JOMALA — EN FAMILJ HEMLÖS</p><p>I natt har åter en olycka hemsökt vår bygd, denna gång i Jomala socken, hvarest en eldsvåda utbrutit i ett garage, sammanbundet med en bostadsbyggnad. Genom Försynens nåd och brandvarnarens tjut väcktes den fyrahövdade familjen i tid, så att lifvet kunde räddas, ehuru hemmet nu ligger i spillror.</p><p>Garaget nedbrann till grunden, och bostadshuset har af röken skadats så svårt, att det icke längre är tjenligt att bebo — en hård lott för de drabbade, hvilka nu stå utan tak öfver hufvudet i vinterkylan.</p><p>Räddningsledaren Thomas Mattsson har bekräftat husets obeboeliga tillstånd. En person skadades tillika vid försök att bekämpa lågorna — ett vittnesbörd om det mod, som vårt folk städse visar i nödens stund. Polismyndigheten har nu öfvertagit utredningen af eldens orsak.</p><p>Låtom oss här erkänna det fäderneärvda samhällsband, som ännu lefver i det åländska folkdjupet: Jomala FBK, Gottby FBK och Räddningsverket ryckte alla ut för att bistå de nödställda. Det är denna gemenskap — byggd på plikt, grannsamverkan och fritt medborgaransvar — som utgör självstyrelsens heliga grundvalar. Icke statens fjärrpåbud, utan socknens egna söner, som löpa till elden när klockan kallar.</p><p>Må de drabbade finna tröst och bistånd hos sina medmänniskor, och må utredningen skyndsamt bringa klarhet i olyckans upphof.</p><p>*J.S.*</p></div>
       </div>
-
-      <h2 class="julius-headline">Fler får hemvårdsstöd, färre institutionsvård</h2>
-      <div class="julius-body"><p>HEMVÅRDENS TILLVÄXT OCH ANSTALTERNAS TILLBAKAGÅNG — HVAD SIFFRORNA FÖRTÄLJA OSS</p><p>De nyligen offentliggjorda uppgifterna från statistikverket gifva vid handen, att en märklig förskjutning ägt rum inom omsorgen om de gamla och svaga på våra öar. Vid utgången af det gångna året befunno sig blott 86 personer i anstaltsvård för åldringar — fyra färre än året förut — under det att icke mindre än 457 själar nu erhålla vård af närstående i det egna hemmet, en ökning med hela 61 personer.</p><p>Denna utveckling är, såvidt undertecknad kan bedöma, icke blott en fråga om siffror och budgetposter, utan rör vid något djupare i det åländska samhällslifvet. Hvarför? Emedan det visar, att familjen ännu håller sin plats såsom samhällets grundval. Det är hustrun, dottern, svärdottern — ty två tredjedelar af de vårdade äro kvinnor, och de vårdande likaså mestadels af det täcka könet — som bära denna börda, icke statens anonyma inrättningar.</p><p>Låtom oss dock ej förblindas. De 596 hushåll som erhålla hemservice, däribland 77 handikappade hem — sjutton fler än förut — vittna om att nöden är stor och behofven mångahanda. Att antalet barn för hvilka hemvårdsstöd utbetalas minskat med 115 under fjolåret väcker farhågor af ett annat slag: hvar äro de unga familjerna? Hvarför sviktar den åländska barnaskaran?</p><p>Siffrorna tala, men de tala icke af sig själfva. Det åländska folkets oförytterliga rätt att själft ordna sina angelägenheter innebär äfven plikten att vårda sina gamla och uppfostra sina unga — icke genom fastlandets godtycke eller främmande byråkraters påbud, utan genom egna händer, i egna hem, på fäderneärvda jord.</p><p>*J.S.*</p></div>
     </div>
 
     <!-- Tidsmaskin -->
@@ -480,35 +494,27 @@
     </div>
 
     <!-- Ålands Radio (höger) -->
-    <div class="col-radio">
-      <div class="col-header">
-        <div class="col-name">Ålands Radio</div>
-        <div class="col-sub">Originalartikeln · 2026</div>
+    <div class="col-nav-wrap col-radio-wrap">
+      <a id="nav-next" class="col-nav-overlay" href="#" aria-label="Nyare utgåva">
+        <span class="col-nav-arrow">›</span>
+      </a>
+      <div class="col-radio">
+        <div class="col-header">
+          <div class="col-name">Ålands Radio</div>
+          <div class="col-sub">Originalartikeln · 2026</div>
+        </div>
+        <h2 class="radio-headline">Hus obeboeligt efter nattlig brand i Jomala</h2>
+        <p class="radio-byline">Martina Eriksson</p>
+        <div class="radio-body"><p>Natten mot torsdag började det brinna i ett garage, sammankopplat med ett bostadshus i Jomala.</p><p>Familjen på fyra personer som bor i huset väcktes av brandvarnare.</p><p>Garaget blev helt utbränt i branden och bostadshuset rökskadades svårt.</p><p>Räddningsledare i beredskap under natten,Thomas Mattsson, säger att huset inte är beboeligt.En person skadades i branden i samband med försök till släckning.</p><p>Polisen tar nu över utredningen av branden.Jomala FBK, Gottby FBK och Räddningsverket ryckte ut till branden.</p></div>
       </div>
-
-      <h2 class="radio-headline">Fler får hemvårdsstöd, färre institutionsvård</h2>
-      <p class="radio-byline">Fredrik Sonck</p>
-      <div class="radio-body"><p>I slutet av år 2025 fanns 86 klienter inom institutionsvården för äldre på Åland. Jämfört med 2024 är det en minskning med fyra personer. Två tredjedelar av dessa klienter är kvinnor.</p><p>Detta framgår av färsk statistik från Åsub. Statistiken berättar även att totalt 322 klienter hade boendeservice vid utgången av 2025, 31 klienter färre än 2024.</p><p>Däremot har antalet personer som får närståendevård i hemmet ökat med 61 personer till 457 personer. Hälften av dem var 65 år eller äldre.</p><p>Ytterligare 596 hushåll fick hemservice. Hemservice ges bland annat till barnfamiljer, gamla och handikapphushåll. Antalet handikapphushåll som fick hemservice ökade med 17 och landade på 77 hushåll.</p><p>Antalet barn som för vilka hemvårdsstöd betalats ut minskade med 115 barn under fjolåret.</p></div>
-      <p class="radio-source">
-        <a href="https://alandsradio.ax/nyheter/fler-far-hemvardsstod-farre-institutionsvard" target="_blank" rel="noopener">Läs originalet på Ålands Radio →</a>
-      </p>
     </div>
 
   </div>
 
-  <!-- Sidvändningsnavigering (desktop) -->
-  <a id="nav-prev" class="page-turn page-turn--prev" href="#" aria-label="Äldre utgåva">
-    <span>
-      <span class="page-turn__arrow">‹</span>
-      <span class="page-turn__label">Äldre</span>
-    </span>
-  </a>
-  <a id="nav-next" class="page-turn page-turn--next" href="#" aria-label="Nyare utgåva">
-    <span>
-      <span class="page-turn__arrow">›</span>
-      <span class="page-turn__label">Nyare</span>
-    </span>
-  </a>
+  <!-- Källlänk under split -->
+  <div class="article-source">
+    <a href="https://alandsradio.ax/nyheter/hus-obeboeligt-efter-nattlig-brand-i-jomala" target="_blank" rel="noopener">Läs originalet på Ålands Radio →</a>
+  </div>
 
   <!-- Mobilnavigering -->
   <nav class="mobile-nav">
