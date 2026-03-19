@@ -141,6 +141,7 @@
     .col-julius {
       padding: 1.8rem 1.8rem 2.5rem;
       background: var(--paper);
+      position: relative;
     }
     .col-julius .col-header {
       text-align: center;
@@ -265,6 +266,7 @@
     .col-radio {
       padding: 1.8rem 1.8rem 2.5rem;
       background: var(--radio-paper);
+      position: relative;
     }
     .col-radio .col-header {
       text-align: center;
@@ -378,10 +380,10 @@
     .col-nav-wrap .col-nav-overlay:hover {
       opacity: 1;
     }
-    .col-julius-wrap .col-nav-overlay {
+    .col-julius .col-nav-overlay {
       background: linear-gradient(to right, rgba(92,61,26,.07), transparent 60%);
     }
-    .col-radio-wrap .col-nav-overlay {
+    .col-radio .col-nav-overlay {
       background: linear-gradient(to left, rgba(0,95,138,.06), transparent 60%);
     }
     .col-nav-overlay .col-nav-arrow {
@@ -395,8 +397,8 @@
       user-select: none;
       line-height: 1;
     }
-    .col-julius-wrap .col-nav-arrow { left: .8rem; }
-    .col-radio-wrap .col-nav-arrow  { right: .8rem; }
+    .col-julius .col-nav-arrow { left: .8rem; }
+    .col-radio  .col-nav-arrow { right: .8rem; }
 
     /* Links inside columns stay above overlay */
     .col-julius a, .col-radio a { position: relative; z-index: 3; }
@@ -484,18 +486,16 @@
   <main id="main-content" class="split" aria-label="Artikeln">
 
     <!-- Julius (vänster) -->
-    <div class="col-nav-wrap col-julius-wrap">
-      <a id="nav-prev" class="col-nav-overlay" href="#" aria-label="Äldre utgåva">
+    <div class="col-julius">
+      <a id="nav-prev" class="col-nav-overlay" href="/arkiv/" aria-label="Äldre utgåva">
         <span class="col-nav-arrow">‹</span>
       </a>
-      <div class="col-julius">
-        <div class="col-header">
-          <div class="col-name">Julius Sundblom</div>
-          <div class="col-sub">AI-tolkning · 1920-tal</div>
-        </div>
-        <h2 class="julius-headline">{{HEADLINE_1}}</h2>
-        <div class="julius-body">{{JULIUS_1}}</div>
+      <div class="col-header">
+        <div class="col-name">Julius Sundblom</div>
+        <div class="col-sub">AI-tolkning · 1920-tal</div>
       </div>
+      <h2 class="julius-headline">{{HEADLINE_1}}</h2>
+      <div class="julius-body">{{JULIUS_1}}</div>
     </div>
 
     <!-- Tidsmaskin (dekorativ) -->
@@ -520,19 +520,17 @@
     </div>
 
     <!-- Ålands Radio (höger) -->
-    <div class="col-nav-wrap col-radio-wrap">
-      <a id="nav-next" class="col-nav-overlay" href="#" aria-label="Nyare utgåva">
+    <div class="col-radio">
+      <a id="nav-next" class="col-nav-overlay" href="/arkiv/" aria-label="Nyare utgåva">
         <span class="col-nav-arrow">›</span>
       </a>
-      <div class="col-radio">
-        <div class="col-header">
-          <div class="col-name">Ålands Radio</div>
-          <div class="col-sub">Originalartikeln · 2026</div>
-        </div>
-        <h2 class="radio-headline">{{HEADLINE_1}}</h2>
-        <p class="radio-byline">{{AUTHOR_1}}</p>
-        <div class="radio-body">{{ORIGINAL_1}}</div>
+      <div class="col-header">
+        <div class="col-name">Ålands Radio</div>
+        <div class="col-sub">Originalartikeln · 2026</div>
       </div>
+      <h2 class="radio-headline">{{HEADLINE_1}}</h2>
+      <p class="radio-byline">{{AUTHOR_1}}</p>
+      <div class="radio-body">{{ORIGINAL_1}}</div>
     </div>
 
   </main>
@@ -585,25 +583,31 @@
         const resp = await fetch('/arkiv/manifest.json');
         if (!resp.ok) return;
         const entries = await resp.json();
-        if (!entries.length) return;
 
         const path = location.pathname.replace(/\/+$/, '');
         const isHome = path === '' || path === '/index.html' || path === '/';
-        let idx = isHome ? -1 : entries.findIndex(e => path.endsWith(e.stem));
+        const idx = isHome ? -1 : entries.findIndex(e => path.endsWith(e.stem));
 
-        const prevEntry = entries[idx + 1];
-        const nextEntry = idx > 0 ? entries[idx - 1] : (idx === 0 ? { stem: '', isHome: true } : null);
+        // Äldre (vänster): ett steg bakåt i tid, eller arkivet om vi är på äldsta
+        const prevHref = entries[idx + 1]
+          ? '/arkiv/' + entries[idx + 1].stem
+          : '/arkiv/';
 
-        function setNav(desktopId, mobileId, href, label) {
-          if (!href) return;
+        // Nyare (höger): ett steg framåt, hemsidan om vi är på senaste i arkivet,
+        // eller arkivet om vi är på hemsidan (inga fler att visa)
+        const nextHref = idx > 0
+          ? '/arkiv/' + entries[idx - 1].stem
+          : (idx === 0 ? '/' : '/arkiv/');
+
+        function setNav(desktopId, mobileId, href) {
           [desktopId, mobileId].forEach(id => {
             const el = document.getElementById(id);
             if (el) { el.href = href; el.classList.add('ready'); }
           });
         }
 
-        if (prevEntry) setNav('nav-prev', 'mob-prev', '/arkiv/' + prevEntry.stem, prevEntry.headline);
-        if (nextEntry) setNav('nav-next', 'mob-next', nextEntry.isHome ? '/' : '/arkiv/' + nextEntry.stem, nextEntry.headline);
+        setNav('nav-prev', 'mob-prev', prevHref);
+        setNav('nav-next', 'mob-next', nextHref);
       } catch(e) { /* Navigation unavailable */ }
     }
     initNavigation();
