@@ -426,19 +426,25 @@ def rebuild_archive_index() -> None:
     list_url = f"{GITHUB_API_BASE}/repos/{GITHUB_REPO}/contents/arkiv"
     resp = requests.get(list_url, headers=headers, params={"ref": GITHUB_BRANCH})
 
-    entries = []  # list of (date_iso, slug, filename_without_ext)
+    raw = []  # list of (date_iso, slug, stem)
     if resp.status_code == 200:
         for item in resp.json():
             name = item.get("name", "")
             if name.endswith(".html") and name != "index.html":
-                stem = name[:-5]          # t.ex. "2026-03-19-flicklaget-behandlas"
-                date_iso = stem[:10]      # alltid YYYY-MM-DD
+                stem = name[:-5]
+                date_iso = stem[:10]
                 slug = stem[11:] if len(stem) > 10 else ""
-                entries.append((date_iso, slug, stem))
+                raw.append((date_iso, slug, stem))
     elif resp.status_code != 404:
         resp.raise_for_status()
 
-    entries.sort(key=lambda x: x[0], reverse=True)
+    # Deduplicera per datum — föredra slug-version framför datum-bara
+    by_date: dict[str, tuple[str, str, str]] = {}
+    for date_iso, slug, stem in raw:
+        if date_iso not in by_date or (slug and not by_date[date_iso][1]):
+            by_date[date_iso] = (date_iso, slug, stem)
+
+    entries = sorted(by_date.values(), key=lambda x: x[0], reverse=True)
 
     weekdays = ["Måndag","Tisdag","Onsdag","Torsdag","Fredag","Lördag","Söndag"]
     months   = ["","januari","februari","mars","april","maj","juni",
