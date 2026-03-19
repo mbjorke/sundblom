@@ -7,11 +7,13 @@ Höger kolumn: Originalartikeln från Ålands Radio.
 """
 
 import os
+import re
 import sys
 import json
 import base64
 import logging
 import datetime
+import unicodedata
 import requests
 from bs4 import BeautifulSoup
 from anthropic import Anthropic
@@ -329,6 +331,7 @@ def render_html(headlines: list[tuple[str, str]],
 
     return (template
             .replace("{{DATE}}", date_str)
+            .replace("{{DATE_ISO}}", today.isoformat())
             .replace("{{HEADLINE_1}}", headline_1)
             .replace("{{HEADLINE_2}}", headline_2)
             .replace("{{JULIUS_1}}", _to_paragraphs(julius_texts[0]))
@@ -344,6 +347,20 @@ def render_html(headlines: list[tuple[str, str]],
 # ─────────────────────────────────────────────────────────────────────────────
 # 4. PUBLICERA via GitHub API
 # ─────────────────────────────────────────────────────────────────────────────
+
+def slugify(text: str, max_length: int = 60) -> str:
+    """Konverterar en rubrik till en URL-vänlig slug."""
+    replacements = {'å':'a','ä':'a','ö':'o','Å':'a','Ä':'a','Ö':'o',
+                    'é':'e','è':'e','ê':'e','ü':'u','ä':'a'}
+    for orig, repl in replacements.items():
+        text = text.replace(orig, repl)
+    # Normalisera resterande unicode
+    text = unicodedata.normalize('NFKD', text)
+    text = ''.join(c for c in text if not unicodedata.combining(c))
+    text = text.lower()
+    text = re.sub(r'[^a-z0-9\s-]', '', text)
+    text = re.sub(r'[\s-]+', '-', text).strip('-')
+    return text[:max_length].rstrip('-')
 
 def _push_file(path: str, html_content: str, commit_message: str) -> str:
     """Pushar en fil till repot via REST API. Returnerar html_url."""
@@ -388,10 +405,12 @@ def publish_to_github(html_content: str) -> None:
     _push_file(OUTPUT_HTML, html_content, f"🗞️ Åland igår och idag {today}")
 
 
-def publish_archive_entry(html_content: str) -> None:
-    """Sparar dagens artikel i arkiv/YYYY-MM-DD.html."""
+def publish_archive_entry(html_content: str, headline: str = "") -> None:
+    """Sparar dagens artikel med beskrivande URL: arkiv/YYYY-MM-DD-slug.html"""
     today = datetime.date.today().isoformat()
-    _push_file(f"arkiv/{today}.html", html_content, f"📁 Arkiverar {today}")
+    slug = slugify(headline) if headline else ""
+    path = f"arkiv/{today}-{slug}.html" if slug else f"arkiv/{today}.html"
+    _push_file(path, html_content, f"📁 Arkiverar {today}: {headline[:50]}")
 
 
 def rebuild_archive_index() -> None:
@@ -407,17 +426,19 @@ def rebuild_archive_index() -> None:
     list_url = f"{GITHUB_API_BASE}/repos/{GITHUB_REPO}/contents/arkiv"
     resp = requests.get(list_url, headers=headers, params={"ref": GITHUB_BRANCH})
 
-    entries = []
+    entries = []  # list of (date_iso, slug, filename_without_ext)
     if resp.status_code == 200:
         for item in resp.json():
             name = item.get("name", "")
             if name.endswith(".html") and name != "index.html":
-                date_iso = name[:-5]
-                entries.append(date_iso)
+                stem = name[:-5]          # t.ex. "2026-03-19-flicklaget-behandlas"
+                date_iso = stem[:10]      # alltid YYYY-MM-DD
+                slug = stem[11:] if len(stem) > 10 else ""
+                entries.append((date_iso, slug, stem))
     elif resp.status_code != 404:
         resp.raise_for_status()
 
-    entries.sort(reverse=True)
+    entries.sort(key=lambda x: x[0], reverse=True)
 
     weekdays = ["Måndag","Tisdag","Onsdag","Torsdag","Fredag","Lördag","Söndag"]
     months   = ["","januari","februari","mars","april","maj","juni",
@@ -430,10 +451,12 @@ def rebuild_archive_index() -> None:
         except ValueError:
             return iso
 
-    rows = "\n".join(
-        f'        <li><a href="{e}.html">{fmt_date(e)}</a></li>'
-        for e in entries
-    )
+    def fmt_entry(date_iso: str, slug: str, stem: str) -> str:
+        date_label = fmt_date(date_iso)
+        title = slug.replace('-', ' ').capitalize() if slug else date_label
+        return f'        <li><a href="{stem}.html"><span class="entry-date">{date_label}</span> — {title}</a></li>'
+
+    rows = "\n".join(fmt_entry(d, s, stem) for d, s, stem in entries)
 
     html = f"""<!DOCTYPE html>
 <html lang="sv">
@@ -548,6 +571,29 @@ def generate_og_image() -> bytes | None:
         return None
 
 
+def publish_robots_txt() -> None:
+    """Publicerar robots.txt som välkomnar sökmotorer och AI-botar."""
+    content = """User-agent: *
+Allow: /
+
+User-agent: GPTBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: Googlebot
+Allow: /
+
+Sitemap: https://xn--nud-wla.ax/arkiv/
+"""
+    _push_file("robots.txt", content, "🤖 Uppdaterar robots.txt")
+    log.info("robots.txt publicerad.")
+
+
 def publish_og_image(png_bytes: bytes) -> None:
     """Pushar og-image.png till repot via GitHub API."""
     if not GITHUB_TOKEN or not GITHUB_REPO:
@@ -622,9 +668,12 @@ def main() -> None:
     if og_png:
         publish_og_image(og_png)
 
-    # 7. Arkivera
-    publish_archive_entry(html)
+    # 7. Arkivera med beskrivande URL
+    publish_archive_entry(html, headline_1)
     rebuild_archive_index()
+
+    # 8. robots.txt (publiceras vid varje körning — idempotent)
+    publish_robots_txt()
 
     log.info("═══ Klar. ═══")
 
