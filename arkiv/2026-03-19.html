@@ -269,6 +269,34 @@
     }
     .footer a { color: var(--muted); }
 
+    .tip {
+      position: relative;
+      display: inline-block;
+    }
+    .tip::after {
+      content: attr(data-tip);
+      position: absolute;
+      bottom: calc(100% + 6px);
+      right: 0;
+      background: var(--ink);
+      color: #f5ead6;
+      font-family: 'IM Fell English SC', serif;
+      font-size: .62rem;
+      font-style: normal;
+      letter-spacing: .04em;
+      white-space: nowrap;
+      padding: .35rem .6rem;
+      border-radius: 2px;
+      pointer-events: none;
+      opacity: 0;
+      transform: translateY(4px);
+      transition: opacity .15s ease, transform .15s ease;
+    }
+    .tip:hover::after {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
     /* ── Mobile ── */
     @media (max-width: 640px) {
       .split { grid-template-columns: 1fr; }
@@ -332,12 +360,12 @@
       </div>
 
       <h2 class="julius-headline">Föräldrar: Flicklaget behandlas nedlåtande – kallades äckliga</h2>
-      <div class="julius-body"><p>SEDERNAS FÖRFALL I IDROTTEN — EN SORGLIG TIDSBILD</p><p>Det är med blandade känslor undertecknad tar del af uppgifterna om huru en viss tränare vid en åländsk idrottsförening skall hafva behandlat unga flickor på ett sätt som ej låter sig försvaras. Att en vuxen man, hvars uppgift är att handleda de unga, tillåter sig att inför minderåriga flickor bruka ord af det slag som ej pryder ett anständigt blad — ord som föräldrarna beskrifva såsom nesliga tillmälen — och att han därvid uppeggar gossar till samma råa ofog, vittnar om ett förfall i umgängestonen som bör oroa hvar och en som håller sedligheten i helgd.</p><p>Härtill kommer att flickorna enligt uppgift skrattas åt när de misslyckas, i stället för att mötas af den uppmuntran och det tålamod som anstår en fostrare. En flicka som trillat omkull och därpå blifvit hånad — hvad lär hon af detta, om icke att sky den som borde vara hennes ledare?</p><p>Dock måste i sammanhanget en sak sägas rent ut: det är icke givet att flickor skola trängas in i gossarnas lekar på samma villkor som dessa. Naturen har gifvit könen olika gåfvor och olika kallelser. Den kvinna som söker sin plats i moderskapets och hemmets värma tjänar samhället vida bättre än den som kastar sig in i täflingens och kraftmätningens manliga domäner. Att föräldrarna klaga öfver att flickorna "icke få deltaga fullt ut, på samma villkor" tyder på en sammanblandning af könsrollerna som sällan leder till lycka.</p><p>Men detta ursäktar ingalunda den rå behandling som här påtalas. En man som med skrik och skymfliga yttranden förföljer barn — gossar som flickor — har förbrutit sig mot fostrarens heliga plikt. Föreningen bör draga konsekvenserna; Ålands Idrott, dit skrifvelse insändts, likaså.</p><p>Låtom oss icke vika från de fäderneärvda grundsatserna: ordning, hyfsning och heder i umgänget mellan människor — det är hvarpå ett samhälle hvilar.</p><p>*J.S.*</p></div>
+      <div class="julius-body"><p>HURU UNGA FLICKOR VANVÖRDAS I IDRÖTTSFÖRENING — ETT SEDLIGHETENS FÖRFALL</p><p>Det finnes tilldragelser som nödga äfven den mest långmodige att gripa till pennan med en harm som icke låter sig styras. Hvad som nu förmäles från en åländsk idrottsförening är af ett sådant slag, att hvarje rättsinnad medborgare måste känna blodet stiga mot kinderna.</p><p>Unga flickor i de tidiga tonåren — barn ännu, hvars väsen borde vårdas med den ömhet som tillkommer blifvande hustrur och mödrar — hafva enligt föräldrars vittnesmål utsatts för behandling som icke anstår ett civiliseradt samfund. De hafva suckats åt, förlöjligats när de snubblat, och skickats åt sidan såsom vore de till besvär. Dock är detta blott begynnelsen på eländet.</p><p>En tränare — en man, märk väl, åt hvilken föräldrarna anförtrott sina döttrar — har enligt uppgift med egen nyckel brutit sig in i ett rum där damer och flickor befunno sig, och därvid utfarit i raseri med nesliga tillmälen af det lägsta slag, ord som ej pryder ett anständigt blad och som jag vägrar nedteckna. Att han därtill förmått gossar att upprepa denna rå muns ofog mot flickorna fullbordar bilden af ett sedligt förfall som borde få hvarje föreningsstyrelse att blygas intill märgen.</p><p>Låtom oss icke vika från den grundsanning som våra fäder kände: att ett samhälles värde mätes efter huru det behandlar sina svagaste. En flicka som hånas af en vuxen man, som utestänges från delaktighet och beröfvas uppmuntran — hon lär sig att det åländska samhället icke aktar henne. Hvilken lärdom är detta att skicka med in i framtiden?</p><p>Det åländska folkets oförytterliga rätt att själft ordna sina angelägenheter innefattar äfven plikten att vaka öfver sedligheten och umgänget inom de egna institutionerna. Då oegentligheter påtalas, må de icke sopas under mattan med byråkratiskt senfärdighet. Hvarje fader som läser dessa rader vet hvad han skulle önska göra med en sådan tränare. Föreningen må handla innan föräldrarna nödgas göra det.</p><p>*J.S.*</p></div>
 
       <hr class="article-divider">
 
       <h2 class="julius-headline">Ålands idrott: "Behöver tas på allvar"</h2>
-      <div class="julius-body"><p>FÖRSUMLIGHETEN I UNGDOMSVÅRDEN — EN ALLVARSAM VARNING</p><p>Den som i dessa dagar tager del af berättelserna om hvad som tilldragit sig inom en af våra idrottsföreningar, kan ej undgå att gripas af ett visst obehag. Här berättas om flickor som på mest förnedrande vis lämnats utan handledning och tillsyn, om osakligheter som ropats i omklädningsrum, om suckar och skratt riktade mot de unga — och detta under vuxna mäns uppsikt.</p><p>Låtom oss icke invagga oss i den föreställningen att dylika företeelser blott äro obetydliga missförstånd. Hvar helst de unga — och särskildt de unga kvinnorna — anförtros åt ledares omsorg, der hvilar ett tungt ansvar på den som handleder. Det är ett ansvar som icke kan bortförklaras med att "ingen hade agerat rätt", såsom föreningens ansvarsperson nu med beklaglig nonchalans framhåller. Att fördela skulden lika när vuxna svikit sitt vårdnadsuppdrag mot barn är en moralisk bankrutt.</p><p>Fröken Gestranius vid Ålands Idrott säger sig taga saken på allvar och påpekar att detta bryter mot de grundsatser organisationen förespråkar. Det är väl taladt. Men ord förslå icke långt om icke följderna blifva kännbara för dem som brista i sin plikt. Hvarför skall ansvaret allenast vara föreningens, när hela det åländska samhället har intresse af att dess ungdom fostras i sedlighet och rättskaffenhet?</p><p>Det åländska folkets fäderneärvda pliktmedvetande får aldrig vika för den moderna tidens slappa likgiltighet. Våra döttrar förtjäna bättre än att deras klagomål afvisas som osanning af män som sedermera icke ens vilja kommentera sitt eget handlande.</p><p>*J.S.*</p></div>
+      <div class="julius-body"><p>ETT FARLIGT FÖRFALL I UNGDOMENS FOSTRAN</p><p>Det kommer för våra öron underrättelser, som måste väcka allvarlig oro hos hvarje rättsinnig medborgare. I en af öarnas idrottsföreningar — ty så kallar man numera dessa kroppskulturens sällskap — hafva unga flickor blifvit föremål för behandling, som icke anstår en ansvarsmedveten ledare.</p><p>Hvad finner man? En tränare, mot hvilken föräldrar framfört klagomål om nesligt bemötande, förnekar allt — såsom den skyldige städse gör. Unga flickor skola enligt uppgift hafva blifvit lämnade utan vägledning midt under täfling, utsatta för hånfulla suckar och skratt. Föreningens ansvarsperson söker bortförklara det hela med tal om "missförstånd" och yttrar, att flickorna "sjelfva valt" att ej deltaga — en svepskäl af det slag, som alltid anföres när den vuxne vill undandra sig sin skyldighet.</p><p>Ålands Idrotts sportchef, en qvinna vid namn Gestranius, uttalar att detta "definitivt" bryter mot rörelsens egna grundvalar om "rent spel" och "samma förutsättningar för alla". Välan — men hvad tjänar fagra ord, när ingen bär det verkliga ansvaret? Utskott skola blott "fungera som bollplank" — en förunderlig omskrifning för handlingsförlamning.</p><p>Här röjer sig det moderna föreningslifvets grundskada: alla tala om ansvar, ingen tager det. Styrelsen pekar på utskottet, utskottet på föreningen, och under tiden stå de unga flickorna utan försvar. Så har det städse gått, när man öfverlämnar ungdomens fostran åt lösa sammanslutningar utan fasta grundvalar.</p><p>Låtom oss icke vika från den enkla sanningen: den som anförtros barn har en helig plikt, och den som bryter denna plikt skall svara derför — icke inför "bollplank", utan inför samhället och sin egen samvete. Det åländska folkets oförytterliga rätt att vårda sina barn i trygghet fordrar annat än byråkratiska utredningar.</p><p>*J.S.*</p></div>
     </div>
 
     <!-- Tidsmaskin -->
@@ -369,13 +397,13 @@
       </div>
 
       <h2 class="josefina-headline">Föräldrar: Flicklaget behandlas nedlåtande – kallades äckliga</h2>
-      <div class="josefina-body"><p>Flickorna som kallades "äckliga" – ett mönster vi måste prata om</p><p>Det börjar ofta likadant. En förening startar ett flicklag, klappar sig på axeln för satsningen – och sedan lämnas tjejerna att klara sig själva i ett system byggt för pojkarna.</p><p>På Åland vittnar nu föräldrar om hur deras döttrar, tidiga tonåringar, systematiskt behandlas som andraklassens idrottare. De skickas till mitten av plan "att göra lite vad de vill" medan tränarna fokuserar på pojkarna. En flicka som trillar faller under träning blir utskrattad av tränaren. Och när samma tränare låser upp ett omklädningsrum där flickorna befinner sig, skriker han att de är "dumma i huvudet, äckliga, idioter" – varpå pojkarna han tränar hakar på.</p><p>Det här handlar inte om en enskild dålig dag. Det handlar om strukturer där flickors idrottande tolereras men aldrig prioriteras, där vuxna män kan skrämma och förnedra unga tjejer utan konsekvens.</p><p>Föräldrarna har slagit larm till föreningen och till Ålands Idrott. Frågan är vad som händer sedan – och hur många flickor som redan tappat lusten innan någon brydde sig tillräckligt för att lyssna.</p></div>
+      <div class="josefina-body"><p>Flickor som kallas äckliga, som skrattas åt när de faller, som skickas undan medan pojkarna får tränarnas uppmärksamhet. Det är verkligheten för ett nystartat flicklag i en åländsk idrottsförening – om man ska tro de föräldrar som nu träder fram.</p><p>"Måste ni komma hit när ni är nybörjare", har det suckats åt tonårstjejerna. Vid spel får de hålla till i mitten av planen, utan stöd, utan instruktioner. En pappa berättar hur hans dotter trillade under en träning – och tränaren skrattade. En annan förälder beskriver hur samma tränare låste upp omklädningsrummet medan flickorna var där, skrek att de var "dumma i huvudet, äckliga, idioter" – och pojkarna hakade på.</p><p>Det här handlar inte om en enstaka dålig dag. Det handlar om strukturer. Om att flickor år 2024 fortfarande får lära sig att de tar plats på nåder, att deras närvaro är ett problem att hantera snarare än en resurs att odla. Föräldrarna har vänt sig till föreningen och skickat en skrivelse till Ålands Idrott.</p><p>Frågan är vad som händer nu – och hur många flickor som redan har slutat utan att någon frågade varför.</p></div>
       <p class="josefina-source">Källa: <a href="https://alandsradio.ax/nyheter/foraldrar-flicklaget-behandlas-nedlatande-kallades-ackliga" target="_blank" rel="noopener">Ålands Radio</a></p>
 
       <hr class="article-divider">
 
       <h2 class="josefina-headline">Ålands idrott: "Behöver tas på allvar"</h2>
-      <div class="josefina-body"><p>Det handlar om tjejer som ville spela fotboll. Tjejer som enligt föräldrarna möttes av suckar, skratt och till slut lämnades åt sig själva på mittplan medan tränaren valde bort dem.</p><p>Föreningen säger att det hela är ett missförstånd — att tjejerna själva valde att inte delta, att de hellre umgicks med sina kompisar. Det är en förklaring som får en att undra: när blev det flickornas ansvar att kräva sin plats i en idrott som borde välkomna dem?</p><p>Ålands Idrotts sportchef Jenna Gestranius är tydlig: det här bryter mot värdegrunden. "Att bli sedd, hörd och bekräftad är a och o för att vi ska trivas i idrottsrörelsen", säger hon. Ändå landar ansvaret hos föreningen själv att reda ut — samma förening som redan friat sig själv efter interna möten.</p><p>Tränaren förnekar allt. Ansvarspersonen menar att alla parter agerat fel. Men någonstans i den här härvan finns det unga tjejer som kom till träningen med förväntan och gick därifrån med känslan av att inte räknas. Det är den bilden som stannar kvar — och den behöver faktiskt tas på allvar, precis som Gestranius säger. Frågan är vem som gör det.</p></div>
+      <div class="josefina-body"><p>När unga tjejer väljer att ställa sig vid sidan om en match de kommit för att spela – då är det inte tjejerna som valt fel. Då är det något i omgivningen som misslyckats.</p><p>Det här ärendet handlar om en idrottsförening där föräldrar larmat om en tränare som enligt dem suckat, skrattat och lämnat tjejer utan coachning. Föreningen säger att allt bygger på missförstånd. Tränaren förnekar. Och tjejerna? De "valde att inte delta", enligt ansvarspersonen.</p><p>Jenna Gestranius på Ålands idrott är tydlig: "Det behöver tas på allvar." Hon slår fast att bemötandet bryter mot idrottens värdegrund – rätten att bli sedd, hörd och bekräftad gäller alla. Ändå hamnar ansvaret tillbaka hos föreningen själv. Trygg Idrott-utskottet har granskat policyer och konstaterat att de finns. Men policyer på papper skyddar ingen flicka som står ensam på mittplan.</p><p>Det är lätt att avfärda sådant här som "två sidor av samma historia". Men när vuxna män i maktposition bemöter unga tjejer med suckar – och systemet svarar med möten och regelgenomgångar – då måste vi fråga oss: vems röst väger egentligen tyngst i åländsk idrott?</p></div>
       <p class="josefina-source">Källa: <a href="https://alandsradio.ax/nyheter/alands-idrott-behover-tas-pa-allvar" target="_blank" rel="noopener">Ålands Radio</a></p>
     </div>
 
@@ -391,10 +419,9 @@
       <a href="arkiv/">Arkivet</a>
       &ensp;·&ensp;
       Buggar eller förbättringsförslag?
-      <a href="https://aland-1920-vs-2025.slack.com/" target="_blank" rel="noopener"
-         title="Hjälp oss träna upp Julius och Josefina — det kommer finnas buggar!">
-        Rapportera i Slack →
-      </a>
+      <span class="tip" data-tip="Hjälp oss träna upp Julius och Josefina — det kommer finnas buggar!">
+        <a href="https://aland-1920-vs-2025.slack.com/" target="_blank" rel="noopener">Rapportera i Slack →</a>
+      </span>
     </span>
   </footer>
 
