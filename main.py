@@ -1,7 +1,9 @@
 #!/usr/bin/env python3
 """
-Sundbloms Radio-kommentarer — Autonom nattlig generator
-Hämtar senaste nytt från Ålands Radio och genererar en Sundblomsk ledarartikel.
+Åland igår och idag — Autonom nattlig generator
+Hämtar senaste nytt från Ålands Radio.
+Vänster kolumn: Julius Sundbloms AI-tolkning (1920-tal).
+Höger kolumn: Originalartikeln från Ålands Radio.
 """
 
 import os
@@ -43,7 +45,6 @@ def _article_is_hero(h2) -> bool:
     """
     Hero-artiklar: bild ovanför text → layoutdiv direkt under <article> har flex-col men ej flex-row.
     List-kort: bild åt sidan → layoutdiv har flex-row.
-    Vi hittar <article>-föräldern och kollar dess första <div>-barns klasser.
     """
     article = h2.find_parent("article")
     if article is None:
@@ -55,10 +56,13 @@ def _article_is_hero(h2) -> bool:
     return "flex-row" not in classes
 
 
-def fetch_article_body(url: str) -> str:
-    """Hämtar brödtexten från en artikelsida. Returnerar tom sträng vid fel."""
+def fetch_article_body(url: str) -> tuple[str, str]:
+    """
+    Hämtar brödtexten och byline från en artikelsida.
+    Returnerar (body_text, author_name).
+    """
     if not url or url == ALANDS_RADIO_URL:
-        return ""
+        return "", ""
     try:
         resp = requests.get(url, timeout=15, headers={
             "User-Agent": "SundblomBot/1.0 (+https://github.com)"
@@ -66,14 +70,49 @@ def fetch_article_body(url: str) -> str:
         resp.raise_for_status()
     except requests.RequestException as exc:
         log.warning("Kunde inte hämta artikel (%s): %s", url, exc)
-        return ""
+        return "", ""
 
     soup = BeautifulSoup(resp.text, "html.parser")
 
-    # Ålands Radio lägger artikeltext i <p>-taggar inuti article/main
+    # ── Hitta författare ───────────────────────────────────────────────────
+    author = ""
+
+    # 1. rel="author"
+    author_tag = soup.find("a", rel="author")
+    if author_tag:
+        author = author_tag.get_text(strip=True)
+
+    # 2. itemprop="author"
+    if not author:
+        author_tag = soup.find(itemprop="author")
+        if author_tag:
+            author = author_tag.get_text(strip=True)
+
+    # 3. Klass som innehåller "author" eller "byline"
+    if not author:
+        for cls in ["author", "byline", "reporter"]:
+            tag = soup.find(class_=lambda c: c and cls in " ".join(c).lower() if c else False)
+            if tag:
+                text = tag.get_text(strip=True)
+                if 3 < len(text) < 60:
+                    author = text
+                    break
+
+    # 4. <meta name="author">
+    if not author:
+        meta = soup.find("meta", attrs={"name": "author"})
+        if meta and meta.get("content"):
+            author = meta["content"].strip()
+
+    if author:
+        log.info("Författare hittad: %s", author)
+    else:
+        log.info("Ingen författare hittad för: %s", url)
+
+    # ── Hämta brödtext ────────────────────────────────────────────────────
     container = soup.find("article") or soup.find("main") or soup.body
     if not container:
-        return ""
+        return "", author
 
     paragraphs = [
         p.get_text(strip=True)
@@ -82,7 +121,7 @@ def fetch_article_body(url: str) -> str:
     ]
     body = "\n\n".join(paragraphs[:12])  # max 12 stycken
     log.info("Artikelinnehåll hämtat (%d tecken): %s", len(body), url)
-    return body
+    return body, author
 
 
 def fetch_top_headlines(n: int = 2) -> list[tuple[str, str]]:
@@ -123,8 +162,6 @@ def fetch_top_headlines(n: int = 2) -> list[tuple[str, str]]:
         else:
             list_cards.append(entry)
 
-    # Bygg resultatlistan: 1 hero (viktigaste) + 1 list-kort (första följdnyheten)
-    # så att DOM-ordningen speglar den visuella prioriteringen.
     result_heroes = heroes[:1]
     result_list   = list_cards[:max(0, n - len(result_heroes))]
     results = result_heroes + result_list
@@ -140,7 +177,7 @@ def fetch_top_headlines(n: int = 2) -> list[tuple[str, str]]:
 
 
 # ─────────────────────────────────────────────────────────────────────────────
-# 2. AI-LOOP
+# 2. AI-LOOP (Julius only)
 # ─────────────────────────────────────────────────────────────────────────────
 
 SUNDBLOM_PROMPT = """Du är Julius Sundblom (1865–1945), grundare av Tidningen Åland och den åländska
@@ -213,52 +250,6 @@ Om JA på någon fråga — skriv om tills texten känns äkta.
 Svara ENBART med den färdiga texten. Ingen förklaring, ingen inledning."""
 
 
-JOSEFINA_PROMPT = """Du är Josefina Jansson, en av Ålands Radio mest erfarna och respekterade reportrar
-och programledare. Du har följt åländsk lokalpolitik, samhällsliv och kultur i decennier.
-
-DIN POLITISKA VÄRLDSSYN (låt den genomsyra texten):
-- Du är en övertygad feminist — jämställdhet är inte ett mål utan en självklarhet
-- Du har socialdemokratiska värderingar: välfärdsstaten, solidaritet, allas lika värde
-- Du ser strukturer och maktförhållanden där andra ser enskilda händelser
-- Barn och ungas rätt att bli tagna på allvar är en hjärtefråga — vuxenvärlden ska lyssna
-- Du är miljömedveten och tror på det nordiska samhällskontraktet
-- Du är kritisk mot korruption, nepotism och gamla herrklubbar som styr i det tysta
-- Du välkomnar mångfald och ser Ålands litenhet som en styrka, inte en ursäkt
-- Du litar på det offentliga samtalet och journalistikens roll att hålla makten ansvarig
-- Du är varm men inte naiv — du vet att trevliga fasader kan dölja orättvisor
-- Det Julius kallade "ordning" kallar du ofta "ojämlikhet som normaliserats"
-
-FAKTAKRAV (strikt):
-- Håll dig till de fakta, händelser och personer som framgår av artikelinnehållet
-- Återge citat och uttalanden troget — omformulerade i din stil men ej förvrängda
-- Lägg inte till information som saknas i källmaterialet
-- Nyhetsvärdet och innehållet förblir troget originalet; endast stil och perspektiv är ditt
-
-STILKRAV:
-- Moderna, klara meningar — inga långa omständliga konstruktioner
-- Tillgänglig och varm ton, som om du berättar för en lyssnare du känner
-- Lokal förankring: Åland, ålänningarna, deras vardag
-- Kort intro som hakar in läsaren direkt
-- Använd citat och namn som finns i källmaterialet
-- Nutida perspektiv — vad händer just nu, vad betyder det för folk här?
-- Avsluta med en framåtblickande mening eller öppen fråga
-
-FORMAT:
-- 3–4 stycken, cirka 150–200 ord totalt
-- Inga rubriker i versaler, inga arkaismer
-- Signera inte — byline läggs till separat
-
-JOSEFINA-LOOPEN — självgranskning (kör internt, visa ej):
-1. Låter det som radio — naturligt och talat, inte som en tidningsartikel?
-2. Känns det lokalt förankrat, eller kunde det handla om vilket samhälle som helst?
-3. Är ingressen tillräckligt skarp — skulle en lyssnare stanna kvar?
-4. Lyser världssynen igenom — feminismen, solidariteten, maktkritiken?
-5. Verkar det AI-genererat — för slätt, för korrekt, för opersonligt?
-Om JA på någon fråga — skriv om tills texten känns som ett äkta Josefina-inslag.
-
-Svara ENBART med den färdiga texten."""
-
-
 def _call_api(system: str, user: str, max_tokens: int = 1200) -> str:
     client = Anthropic(api_key=ANTHROPIC_KEY)
     response = client.messages.create(
@@ -291,21 +282,6 @@ def generate_sundblom(headline: str, source_url: str, body: str = "") -> str:
     return text
 
 
-def generate_josefina(headline: str, source_url: str, body: str = "") -> str:
-    """Genererar Josefina Janssons nutida reportage om följdnyheten."""
-    if not ANTHROPIC_KEY:
-        raise EnvironmentError("ANTHROPIC_API_KEY saknas i miljövariablerna.")
-    log.info("Genererar Josefina-kommentar…")
-    news = _build_news_block(headline, source_url, body)
-    text = _call_api(
-        JOSEFINA_PROMPT,
-        f"Nyhet att kommentera:\n\n{news}\n\nSkriv nu ditt reportage om denna nyhet.",
-        max_tokens=600,
-    )
-    log.info("Josefina klar (%d tecken).", len(text))
-    return text
-
-
 # ─────────────────────────────────────────────────────────────────────────────
 # 3. FORMAT
 # ─────────────────────────────────────────────────────────────────────────────
@@ -320,8 +296,11 @@ def _to_paragraphs(text: str) -> str:
 
 def render_html(headlines: list[tuple[str, str]],
                 julius_texts: list[str],
-                josefina_texts: list[str]) -> str:
-    """Bäddar in alla texter i den tvåkolumniga HTML-mallen."""
+                originals: list[tuple[str, str]]) -> str:
+    """
+    Bäddar in alla texter i HTML-mallen.
+    originals: lista av (body_text, author_name) per artikel
+    """
     today    = datetime.date.today()
     weekdays = ["Måndagen","Tisdagen","Onsdagen","Torsdagen","Fredagen","Lördagen","Söndagen"]
     months   = ["","januari","februari","mars","april","maj","juni",
@@ -330,6 +309,18 @@ def render_html(headlines: list[tuple[str, str]],
 
     headline_1, url_1 = headlines[0]
     headline_2, url_2 = headlines[1] if len(headlines) > 1 else headlines[0]
+
+    body_1, author_1 = originals[0]
+    body_2, author_2 = originals[1] if len(originals) > 1 else originals[0]
+
+    # Fallback om ingen text hittades
+    if not body_1:
+        body_1 = "Artikelinnehåll ej tillgängligt — besök Ålands Radio för att läsa originalet."
+    if not body_2:
+        body_2 = "Artikelinnehåll ej tillgängligt — besök Ålands Radio för att läsa originalet."
+
+    author_display_1 = author_1 if author_1 else "Ålands Radio"
+    author_display_2 = author_2 if author_2 else "Ålands Radio"
 
     with open(TEMPLATE_FILE, encoding="utf-8") as f:
         template = f.read()
@@ -340,8 +331,10 @@ def render_html(headlines: list[tuple[str, str]],
             .replace("{{HEADLINE_2}}", headline_2)
             .replace("{{JULIUS_1}}", _to_paragraphs(julius_texts[0]))
             .replace("{{JULIUS_2}}", _to_paragraphs(julius_texts[1]))
-            .replace("{{JOSEFINA_1}}", _to_paragraphs(josefina_texts[0]))
-            .replace("{{JOSEFINA_2}}", _to_paragraphs(josefina_texts[1]))
+            .replace("{{ORIGINAL_1}}", _to_paragraphs(body_1))
+            .replace("{{ORIGINAL_2}}", _to_paragraphs(body_2))
+            .replace("{{AUTHOR_1}}", author_display_1)
+            .replace("{{AUTHOR_2}}", author_display_2)
             .replace("{{SOURCE_URL_1}}", url_1)
             .replace("{{SOURCE_URL_2}}", url_2))
 
@@ -390,7 +383,7 @@ def _push_file(path: str, html_content: str, commit_message: str) -> str:
 def publish_to_github(html_content: str) -> None:
     """Pushar index.html till GitHub Pages."""
     today = datetime.date.today().isoformat()
-    _push_file(OUTPUT_HTML, html_content, f"🗞️ Sundbloms kommentar {today}")
+    _push_file(OUTPUT_HTML, html_content, f"🗞️ Åland igår och idag {today}")
 
 
 def publish_archive_entry(html_content: str) -> None:
@@ -417,14 +410,13 @@ def rebuild_archive_index() -> None:
         for item in resp.json():
             name = item.get("name", "")
             if name.endswith(".html") and name != "index.html":
-                date_iso = name[:-5]  # strip .html
+                date_iso = name[:-5]
                 entries.append(date_iso)
     elif resp.status_code != 404:
         resp.raise_for_status()
 
     entries.sort(reverse=True)
 
-    # Formatera datum på svenska
     weekdays = ["Måndag","Tisdag","Onsdag","Torsdag","Fredag","Lördag","Söndag"]
     months   = ["","januari","februari","mars","april","maj","juni",
                 "juli","augusti","september","oktober","november","december"]
@@ -446,7 +438,7 @@ def rebuild_archive_index() -> None:
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Arkivet — Sundbloms Radio-kommentarer</title>
+  <title>Arkivet — Åland igår och idag</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=IM+Fell+English:ital@0;1&family=UnifrakturMaguntia&family=IM+Fell+English+SC&display=swap" rel="stylesheet">
   <style>
@@ -491,13 +483,13 @@ def rebuild_archive_index() -> None:
 <article class="newspaper">
   <header class="masthead">
     <p class="masthead-eyebrow">Grundad anno domini 1891</p>
-    <h1 class="masthead-title">Tidningen Åland</h1>
-    <p class="masthead-subtitle">Organ för det åländska folkets fria och oförytterliga rätt</p>
+    <h1 class="masthead-title">Åland igår och idag</h1>
+    <p class="masthead-subtitle">Julius Sundblom tolkar · Ålands Radio berättar</p>
     <div class="masthead-rule"></div>
     <div class="masthead-dateline">
       <span>Arkivet</span>
-      <span>✦ &nbsp; Sundbloms Radio-kommentarer &nbsp; ✦</span>
-      <span>Samtliga utgåvor</span>
+      <span>✦ &nbsp; Samtliga utgåvor &nbsp; ✦</span>
+      <span>Åland igår och idag</span>
     </div>
   </header>
   <div class="content">
@@ -505,7 +497,7 @@ def rebuild_archive_index() -> None:
     <ul>
 {rows}
     </ul>
-    <a class="back" href="../">← Tillbaka till senaste kommentaren</a>
+    <a class="back" href="../">← Tillbaka till senaste utgåvan</a>
   </div>
 </article>
 </body>
@@ -520,27 +512,30 @@ def rebuild_archive_index() -> None:
 # ─────────────────────────────────────────────────────────────────────────────
 
 def main() -> None:
-    log.info("═══ Sundbloms Radio-kommentarer — nattlig körning startar ═══")
+    log.info("═══ Åland igår och idag — nattlig körning startar ═══")
 
-    # 1. Scrape
+    # 1. Scrape rubriker
     headlines = fetch_top_headlines(n=2)
 
-    # 2. Hämta artikelinnehåll
     headline_1, url_1 = headlines[0]
     headline_2, url_2 = headlines[1] if len(headlines) > 1 else headlines[0]
-    body_1 = fetch_article_body(url_1)
-    body_2 = fetch_article_body(url_2)
 
-    # 3. Generera — båda röster om båda nyheterna (4 texter)
-    julius_1   = generate_sundblom(headline_1, url_1, body_1)
-    julius_2   = generate_sundblom(headline_2, url_2, body_2)
-    josefina_1 = generate_josefina(headline_1, url_1, body_1)
-    josefina_2 = generate_josefina(headline_2, url_2, body_2)
+    # 2. Hämta artikelinnehåll + författare
+    body_1, author_1 = fetch_article_body(url_1)
+    body_2, author_2 = fetch_article_body(url_2)
+
+    # 3. Generera Julius (2 texter)
+    julius_1 = generate_sundblom(headline_1, url_1, body_1)
+    julius_2 = generate_sundblom(headline_2, url_2, body_2)
 
     # 4. Rendera HTML
-    html = render_html(headlines, [julius_1, julius_2], [josefina_1, josefina_2])
+    html = render_html(
+        headlines,
+        [julius_1, julius_2],
+        [(body_1, author_1), (body_2, author_2)],
+    )
 
-    # Spara lokalt också (för debug / artefakt)
+    # Spara lokalt (för debug / artefakt)
     with open(OUTPUT_HTML, "w", encoding="utf-8") as f:
         f.write(html)
     log.info("HTML sparad lokalt: %s", OUTPUT_HTML)

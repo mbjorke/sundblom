@@ -3,19 +3,19 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sundbloms Radio-kommentarer — Tidningen Åland</title>
+  <title>Åland igår och idag</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=IM+Fell+English:ital@0;1&family=UnifrakturMaguntia&family=IM+Fell+English+SC&family=Source+Serif+4:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
   <style>
     :root {
-      --ink:       #1a1207;
-      --paper:     #f5ead6;
-      --rule:      #5c3d1a;
-      --muted:     #6b5540;
-      --accent:    #8b1a1a;
-      --modern-ink:    #1a1a1a;
-      --modern-accent: #005f8a;
-      --modern-paper:  #f8f5f0;
+      --ink:        #1a1207;
+      --paper:      #f5ead6;
+      --rule:       #5c3d1a;
+      --muted:      #6b5540;
+      --accent:     #8b1a1a;
+      --radio-ink:  #1a1a1a;
+      --radio-blue: #005f8a;
+      --radio-paper:#f8f5f0;
     }
 
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
@@ -81,7 +81,7 @@
       min-height: 400px;
     }
 
-    /* ── Julius column (links) ── */
+    /* ── Julius column (vänster) ── */
     .col-julius {
       padding: 1.8rem 1.8rem 2.5rem;
       background: var(--paper);
@@ -108,10 +108,6 @@
       font-size: clamp(1rem, 2.2vw, 1.3rem);
       font-weight: normal; line-height: 1.3;
       text-align: center; margin-bottom: .5rem;
-    }
-    .julius-deck {
-      font-style: italic; font-size: .78rem;
-      color: var(--muted); text-align: center; margin-bottom: .9rem;
     }
     .julius-body { margin-bottom: 1.8rem; }
     .julius-body p {
@@ -143,8 +139,6 @@
       position: relative;
       overflow: hidden;
     }
-
-    /* Horisontella scanlines */
     .time-strip::before {
       content: "";
       position: absolute; inset: 0;
@@ -156,7 +150,6 @@
       animation: vscan 2s linear infinite;
       pointer-events: none;
     }
-    /* Ljusstreck uppifrån och ner */
     .time-strip::after {
       content: "";
       position: absolute; left: 0; right: 0;
@@ -175,7 +168,6 @@
       90%  { opacity: 1; }
       100% { top: calc(100% + 80px); opacity: 0; }
     }
-
     .ts-era {
       position: relative; z-index: 1;
       text-align: center; flex-shrink: 0;
@@ -191,7 +183,6 @@
     .ts-era--now  .ts-era-label { color: #7ab8d4; }
     .ts-era--past .ts-year { font-family: 'UnifrakturMaguntia', cursive; font-size: 1rem; color: #c8a050; }
     .ts-era--now  .ts-year { font-family: 'Source Serif 4', serif; font-size: 1rem; font-weight: 600; color: #7ab8d4; }
-
     .ts-track {
       position: relative; z-index: 1;
       flex: 1;
@@ -214,45 +205,59 @@
       50%       { opacity: .9; transform: scale(1.3); }
     }
 
-    /* ── Josefina column (höger) ── */
-    .col-josefina {
+    /* ── Ålands Radio column (höger) ── */
+    .col-radio {
       padding: 1.8rem 1.8rem 2.5rem;
-      background: var(--modern-paper);
+      background: var(--radio-paper);
     }
-    .col-josefina .col-header {
+    .col-radio .col-header {
       text-align: center;
       padding-bottom: .8rem;
       border-bottom: 2px solid #c8b090;
       margin-bottom: 1.4rem;
     }
-    .col-josefina .col-name {
+    .col-radio .col-name {
       font-family: 'Source Serif 4', serif;
-      font-size: 1.15rem; font-weight: 600; color: var(--modern-ink);
+      font-size: 1.15rem; font-weight: 600;
+      color: var(--radio-blue);
+      letter-spacing: .02em;
     }
-    .col-josefina .col-sub {
+    .col-radio .col-sub {
       font-family: 'Source Serif 4', serif;
       font-size: .6rem; letter-spacing: .15em;
       color: var(--muted); text-transform: uppercase;
       margin-top: .2rem;
     }
 
-    .josefina-headline {
+    .radio-headline {
       font-family: 'Source Serif 4', serif;
-      font-size: clamp(1rem, 2.2vw, 1.3rem);
+      font-size: clamp(1rem, 2.2vw, 1.25rem);
       font-weight: 600; line-height: 1.3;
-      margin-bottom: .8rem; color: var(--modern-ink);
+      margin-bottom: .35rem;
+      color: var(--radio-ink);
     }
-    .josefina-body { margin-bottom: 1.8rem; }
-    .josefina-body p {
-      font-family: 'Source Serif 4', serif;
-      font-size: .88rem; line-height: 1.7;
-      color: var(--modern-ink); margin-bottom: .7rem;
-    }
-    .josefina-source {
+    .radio-byline {
       font-family: 'Source Serif 4', serif;
       font-size: .65rem; color: var(--muted);
+      font-style: italic; margin-bottom: .8rem;
     }
-    .josefina-source a { color: var(--modern-accent); }
+    .radio-body { margin-bottom: .8rem; }
+    .radio-body p {
+      font-family: 'Source Serif 4', serif;
+      font-size: .87rem; line-height: 1.72;
+      color: var(--radio-ink); margin-bottom: .65rem;
+      text-align: left;
+    }
+    .radio-source {
+      font-family: 'Source Serif 4', serif;
+      font-size: .65rem; color: var(--muted);
+      margin-bottom: 1.8rem;
+    }
+    .radio-source a {
+      color: var(--radio-blue);
+      text-decoration: none;
+    }
+    .radio-source a:hover { text-decoration: underline; }
 
     /* ── Footer ── */
     .footer {
@@ -340,11 +345,11 @@
   <header class="masthead">
     <p class="masthead-eyebrow">Grundad anno domini 1891</p>
     <h1 class="masthead-title">Åland igår och idag</h1>
-    <p class="masthead-subtitle">Organ för det åländska folkets fria och oförytterliga rätt</p>
+    <p class="masthead-subtitle">Julius Sundblom tolkar · Ålands Radio berättar</p>
     <div class="masthead-rule"></div>
     <div class="masthead-dateline">
       <span>{{DATE}}</span>
-      <span>✦ &nbsp; AI-tolkning av Julius Sundbloms vs. Josefina Janssons världssyn &nbsp; ✦</span>
+      <span>✦ &nbsp; AI-tolkning af Julius Sundblom · originalet från Ålands Radio &nbsp; ✦</span>
       <span>Pris: 10 penni</span>
     </div>
   </header>
@@ -352,11 +357,11 @@
   <!-- ── SPLIT ── -->
   <div class="split">
 
-    <!-- Julius -->
+    <!-- Julius (vänster) -->
     <div class="col-julius">
       <div class="col-header">
         <div class="col-name">Julius Sundblom</div>
-        <div class="col-sub">Tidningen Åland · 1920-tal</div>
+        <div class="col-sub">AI-tolkning · 1920-tal</div>
       </div>
 
       <h2 class="julius-headline">{{HEADLINE_1}}</h2>
@@ -389,22 +394,28 @@
       </div>
     </div>
 
-    <!-- Josefina -->
-    <div class="col-josefina">
+    <!-- Ålands Radio (höger) -->
+    <div class="col-radio">
       <div class="col-header">
-        <div class="col-name">Josefina Jansson</div>
-        <div class="col-sub">Ålands Radio · 2026</div>
+        <div class="col-name">Ålands Radio</div>
+        <div class="col-sub">Originalartikeln · 2026</div>
       </div>
 
-      <h2 class="josefina-headline">{{HEADLINE_1}}</h2>
-      <div class="josefina-body">{{JOSEFINA_1}}</div>
-      <p class="josefina-source">Källa: <a href="{{SOURCE_URL_1}}" target="_blank" rel="noopener">Ålands Radio</a></p>
+      <h2 class="radio-headline">{{HEADLINE_1}}</h2>
+      <p class="radio-byline">{{AUTHOR_1}}</p>
+      <div class="radio-body">{{ORIGINAL_1}}</div>
+      <p class="radio-source">
+        <a href="{{SOURCE_URL_1}}" target="_blank" rel="noopener">Läs originalet på Ålands Radio →</a>
+      </p>
 
       <hr class="article-divider">
 
-      <h2 class="josefina-headline">{{HEADLINE_2}}</h2>
-      <div class="josefina-body">{{JOSEFINA_2}}</div>
-      <p class="josefina-source">Källa: <a href="{{SOURCE_URL_2}}" target="_blank" rel="noopener">Ålands Radio</a></p>
+      <h2 class="radio-headline">{{HEADLINE_2}}</h2>
+      <p class="radio-byline">{{AUTHOR_2}}</p>
+      <div class="radio-body">{{ORIGINAL_2}}</div>
+      <p class="radio-source">
+        <a href="{{SOURCE_URL_2}}" target="_blank" rel="noopener">Läs originalet på Ålands Radio →</a>
+      </p>
     </div>
 
   </div>
@@ -419,7 +430,7 @@
       <a href="arkiv/">Arkivet</a>
       &ensp;·&ensp;
       Buggar eller förbättringsförslag?
-      <span class="tip" data-tip="Hjälp oss träna upp Julius och Josefina — det kommer finnas buggar!">
+      <span class="tip" data-tip="Hjälp oss träna upp Julius — det kommer finnas buggar!">
         <a href="https://aland-1920-vs-2025.slack.com/" target="_blank" rel="noopener">Rapportera i Slack →</a>
       </span>
     </span>
