@@ -361,10 +361,7 @@
     }
 
     /* ── Kolumnnavigering (klickbara sidor) ── */
-    .col-nav-wrap {
-      position: relative;
-    }
-    .col-nav-wrap .col-nav-overlay {
+    .col-nav-overlay {
       position: absolute;
       inset: 0;
       z-index: 2;
@@ -374,10 +371,10 @@
       transition: opacity 0.35s ease, background 0.35s ease;
       pointer-events: none;
     }
-    .col-nav-wrap .col-nav-overlay.ready {
+    .col-nav-overlay.ready {
       pointer-events: auto;
     }
-    .col-nav-wrap .col-nav-overlay:hover {
+    .col-nav-overlay:hover {
       opacity: 1;
     }
     .col-julius .col-nav-overlay {
