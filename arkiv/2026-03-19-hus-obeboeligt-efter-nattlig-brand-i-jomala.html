@@ -42,14 +42,39 @@
       --ink:        #1a1207;
       --paper:      #f5ead6;
       --rule:       #5c3d1a;
-      --muted:      #6b5540;
+      --muted:      #5a4232; /* mörkare för WCAG AA-kontrast på paper */
       --accent:     #8b1a1a;
       --radio-ink:  #1a1a1a;
-      --radio-blue: #005f8a;
+      --radio-blue: #004d72; /* mörkare för WCAG AA-kontrast */
       --radio-paper:#f8f5f0;
     }
 
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    /* ── Hoppa till innehåll (skip link) ── */
+    .skip-link {
+      position: absolute;
+      top: -100%;
+      left: 1rem;
+      background: var(--ink);
+      color: var(--paper);
+      padding: .5rem 1rem;
+      font-family: 'IM Fell English SC', serif;
+      font-size: .8rem;
+      letter-spacing: .05em;
+      z-index: 9999;
+      text-decoration: none;
+      border-radius: 0 0 4px 4px;
+      transition: top .15s ease;
+    }
+    .skip-link:focus { top: 0; }
+
+    /* ── Fokussynlighet ── */
+    :focus-visible {
+      outline: 2px solid var(--accent);
+      outline-offset: 3px;
+      border-radius: 2px;
+    }
 
     body {
       background: #d9c9a8;
@@ -439,10 +464,11 @@
   </style>
 </head>
 <body>
-<article class="newspaper">
+<a class="skip-link" href="#main-content">Hoppa till innehåll</a>
+<div class="newspaper" role="document" aria-label="Åland igår och idag">
 
   <!-- ── MASTHEAD ── -->
-  <header class="masthead">
+  <header class="masthead" role="banner">
     <p class="masthead-eyebrow">Grundad anno domini 1891</p>
     <h1 class="masthead-title">Åland igår och idag</h1>
     <p class="masthead-subtitle">Julius Sundblom tolkar · Ålands Radio berättar</p>
@@ -455,7 +481,7 @@
   </header>
 
   <!-- ── SPLIT ── -->
-  <div class="split">
+  <main id="main-content" class="split" aria-label="Artikeln">
 
     <!-- Julius (vänster) -->
     <div class="col-nav-wrap col-julius-wrap">
@@ -468,12 +494,12 @@
           <div class="col-sub">AI-tolkning · 1920-tal</div>
         </div>
         <h2 class="julius-headline">Hus obeboeligt efter nattlig brand i Jomala</h2>
-        <div class="julius-body"><p>ELDENS HÄRJNINGAR I JOMALA — EN FAMILJ HEMLÖS</p><p>I natt har åter en olycka hemsökt vår bygd, denna gång i Jomala socken, hvarest en eldsvåda utbrutit i ett garage, sammanbundet med en bostadsbyggnad. Genom Försynens nåd och brandvarnarens tjut väcktes den fyrahövdade familjen i tid, så att lifvet kunde räddas, ehuru hemmet nu ligger i spillror.</p><p>Garaget nedbrann till grunden, och bostadshuset har af röken skadats så svårt, att det icke längre är tjenligt att bebo — en hård lott för de drabbade, hvilka nu stå utan tak öfver hufvudet i vinterkylan.</p><p>Räddningsledaren Thomas Mattsson har bekräftat husets obeboeliga tillstånd. En person skadades tillika vid försök att bekämpa lågorna — ett vittnesbörd om det mod, som vårt folk städse visar i nödens stund. Polismyndigheten har nu öfvertagit utredningen af eldens orsak.</p><p>Låtom oss här erkänna det fäderneärvda samhällsband, som ännu lefver i det åländska folkdjupet: Jomala FBK, Gottby FBK och Räddningsverket ryckte alla ut för att bistå de nödställda. Det är denna gemenskap — byggd på plikt, grannsamverkan och fritt medborgaransvar — som utgör självstyrelsens heliga grundvalar. Icke statens fjärrpåbud, utan socknens egna söner, som löpa till elden när klockan kallar.</p><p>Må de drabbade finna tröst och bistånd hos sina medmänniskor, och må utredningen skyndsamt bringa klarhet i olyckans upphof.</p><p>*J.S.*</p></div>
+        <div class="julius-body"><p>NATTENS ELDHÄRJNING I JOMALA — ETT HEM FÖRINTADT</p><p>En olyckshändelse af allvarligaste beskaffenhet har åter hemsökt våra bygder. Natten mot torsdagen utbröt eld i ett garage, sammankoppladt med ett bostadshus i Jomala socken, och förödelsen blef betydande. Garaget nedbrunno fullständigt, och bostadshuset skadades af röken så svårt, att det icke längre är beboeligt.</p><p>Familjen, bestående af fyra personer, undkom med lifvet tack vare att brandvarnaren gaf larm i tid. Dock har en person åsamkats skador i samband med försök att stäfja elden — ett vittnesbörd om den fara som hvarje eldsvåda innebär, äfven för den som söker hjälpa.</p><p>Det åländska samhällets fäderneärvda ordning vilade denna natt på frivilliga krafter. Jomala FBK, Gottby FBK och Räddningsverket ryckte ut med den beredvillighet som utmärker vårt folk, och räddningsledare Thomas Mattsson ledde arbetet. Polisen har nu öfvertagit utredningen för att bringa klarhet i brandens orsak.</p><p>Låtom oss icke vika från den plikt som åligger hvar och en: att i olyckan bistå sin nästa och att vårda det hem, det fäderneärf, som är det åländska lifvets grundval. Denna familj står nu utan tak öfver hufvudet, och det tillkommer socknen och dess inbyggare att visa den sammanhållning som alltid präglat våra öar.</p><p>*J.S.*</p></div>
       </div>
     </div>
 
-    <!-- Tidsmaskin -->
-    <div class="time-strip">
+    <!-- Tidsmaskin (dekorativ) -->
+    <div class="time-strip" aria-hidden="true">
       <div class="ts-era ts-era--past">
         <span class="ts-era-label">Då</span>
         <span class="ts-year">1920</span>
@@ -509,17 +535,17 @@
       </div>
     </div>
 
-  </div>
+  </main>
 
   <!-- Källlänk under split -->
   <div class="article-source">
     <a href="https://alandsradio.ax/nyheter/hus-obeboeligt-efter-nattlig-brand-i-jomala" target="_blank" rel="noopener">Läs originalet på Ålands Radio →</a>
   </div>
 
-  <!-- Mobilnavigering -->
-  <nav class="mobile-nav">
-    <a id="mob-prev" href="#">← Äldre</a>
-    <a id="mob-next" href="#">Nyare →</a>
+  <!-- Navigering mellan utgåvor -->
+  <nav class="mobile-nav" aria-label="Bläddra mellan utgåvor">
+    <a id="mob-prev" href="#" aria-label="Äldre utgåva">← Äldre</a>
+    <a id="mob-next" href="#" aria-label="Nyare utgåva">Nyare →</a>
   </nav>
 
   <!-- ── FOOTER ── -->
@@ -533,6 +559,8 @@
     <span>
       <a href="/arkiv/">Arkivet</a>
       &ensp;·&ensp;
+      <a href="/tillganglighet/">Tillgänglighet</a>
+      &ensp;·&ensp;
       Buggar eller förbättringsförslag?
       <span class="tip" data-tip="Hjälp oss träna upp Julius — det kommer finnas buggar!">
         <a href="https://aland-1920-vs-2025.slack.com/" target="_blank" rel="noopener">Rapportera i Slack →</a>
@@ -540,7 +568,7 @@
     </span>
   </footer>
 
-</article>
+</div>
   <script>
     /* Städa bort spårningsparametrar (fbclid, utm_*) från URL:en */
     if (window.location.search) {
