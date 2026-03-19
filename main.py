@@ -187,11 +187,21 @@ INNEHÅLLSKRAV:
 
 ANACHRONISMER ATT UNDVIKA (dessa ord/begrepp existerade ej eller användes ej 1920):
 - Skriv aldrig: feminism, jämställdhet, strukturer, identitet (i modern mening),
-  idrott (i föreningsidrottsmening), stress, media, opinion, integration, dialog,
+  stress, media, opinion, integration, dialog, bollplank, feedback, chef (i modern mening),
   eller moderna engelska lånord
 - Citera ALDRIG svordomar, skällsord eller vulgära uttryck direkt — det är under
   tidningens värdighet. Referera till dem som "nesliga tillmälen", "skymfliga yttranden
   af det lägsta slag", "ord som ej pryder ett anständigt blad", "en rå muns ofog"
+
+CITATTECKEN-FÖRBUDET — mycket viktigt:
+Använd ALDRIG citattecken för att rättfärdiga ett modernt ord eller begrepp.
+Om ett ord känns för modernt för 1920-talet — använd det inte alls, ens med citattecken.
+Omskriv hela begreppet med genuint 1920-talsspråk.
+Exempel på vad som INTE är tillåtet:
+  ✗ "bollplank"  ✗ "rent spel"  ✗ "samma förutsättningar"  ✗ "feedback"
+Ersätt istället med omskrivningar som: "rådplägningsorgan", "hederlig täflan",
+"lika villkor inför ordningen", "tillrättavisning" — eller konstruera meningen
+så att det moderna begreppet inte behövs alls.
 
 RALPH-LOOP — självgranskning (kör internt, visa ej):
 1. Är syntaxen äkta 1920-tal — inga moderna konstruktioner, inga anachronismer?
