@@ -333,51 +333,65 @@
       transform: translateY(0);
     }
 
-    /* ── Sidvändningsnavigering ── */
-    .page-turn {
-      position: fixed;
-      top: 0; bottom: 0;
-      width: 15vw;
-      z-index: 50;
-      display: flex;
-      align-items: center;
-      justify-content: center;
+    /* ── Kolumnnavigering (klickbara sidor) ── */
+    .col-nav-wrap {
+      position: relative;
+    }
+    .col-nav-wrap .col-nav-overlay {
+      position: absolute;
+      inset: 0;
+      z-index: 2;
+      display: block;
       text-decoration: none;
       opacity: 0;
-      transition: opacity 0.4s ease, background 0.4s ease;
+      transition: opacity 0.35s ease, background 0.35s ease;
       pointer-events: none;
-      cursor: pointer;
     }
-    .page-turn.ready { pointer-events: auto; }
-    .page-turn:hover { opacity: 1; }
-    .page-turn--prev {
-      left: 0;
-      background: linear-gradient(to right, rgba(92,61,26,.12), transparent);
+    .col-nav-wrap .col-nav-overlay.ready {
+      pointer-events: auto;
     }
-    .page-turn--next {
-      right: 0;
-      background: linear-gradient(to left, rgba(92,61,26,.12), transparent);
+    .col-nav-wrap .col-nav-overlay:hover {
+      opacity: 1;
     }
-    .page-turn__arrow {
+    .col-julius-wrap .col-nav-overlay {
+      background: linear-gradient(to right, rgba(92,61,26,.07), transparent 60%);
+    }
+    .col-radio-wrap .col-nav-overlay {
+      background: linear-gradient(to left, rgba(0,95,138,.06), transparent 60%);
+    }
+    .col-nav-overlay .col-nav-arrow {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
       font-family: 'IM Fell English', Georgia, serif;
-      font-size: 4rem;
+      font-size: 3rem;
       color: var(--rule);
-      opacity: 0.65;
+      opacity: 0.5;
       user-select: none;
       line-height: 1;
     }
-    .page-turn__label {
-      display: block;
-      font-family: 'IM Fell English SC', serif;
-      font-size: .55rem;
-      letter-spacing: .2em;
+    .col-julius-wrap .col-nav-arrow { left: .8rem; }
+    .col-radio-wrap .col-nav-arrow  { right: .8rem; }
+
+    /* Links inside columns stay above overlay */
+    .col-julius a, .col-radio a { position: relative; z-index: 3; }
+
+    /* Källlänk under split */
+    .article-source {
+      border-top: 1px solid #c8b090;
+      padding: .5rem 1.8rem;
+      text-align: right;
+      font-family: 'Source Serif 4', serif;
+      font-size: .65rem;
       color: var(--muted);
-      text-transform: uppercase;
-      text-align: center;
-      margin-top: .3rem;
+      background: var(--radio-paper);
     }
+    .article-source a { color: var(--radio-blue); text-decoration: none; }
+    .article-source a:hover { text-decoration: underline; }
+
+    /* Mobilnavigering */
     .mobile-nav {
-      display: none;
+      display: flex;
       justify-content: space-between;
       padding: .6rem 2.5rem;
       border-top: 1px solid #c8b090;
@@ -387,10 +401,6 @@
     }
     .mobile-nav a { color: var(--muted); text-decoration: none; }
     .mobile-nav a.ready { color: var(--ink); }
-    @media (max-width: 900px) {
-      .page-turn { display: none; }
-      .mobile-nav { display: flex; }
-    }
 
     /* ── Mobile ── */
     @media (max-width: 640px) {
@@ -448,14 +458,18 @@
   <div class="split">
 
     <!-- Julius (vänster) -->
-    <div class="col-julius">
-      <div class="col-header">
-        <div class="col-name">Julius Sundblom</div>
-        <div class="col-sub">AI-tolkning · 1920-tal</div>
+    <div class="col-nav-wrap col-julius-wrap">
+      <a id="nav-prev" class="col-nav-overlay" href="#" aria-label="Äldre utgåva">
+        <span class="col-nav-arrow">‹</span>
+      </a>
+      <div class="col-julius">
+        <div class="col-header">
+          <div class="col-name">Julius Sundblom</div>
+          <div class="col-sub">AI-tolkning · 1920-tal</div>
+        </div>
+        <h2 class="julius-headline">{{HEADLINE_1}}</h2>
+        <div class="julius-body">{{JULIUS_1}}</div>
       </div>
-
-      <h2 class="julius-headline">{{HEADLINE_1}}</h2>
-      <div class="julius-body">{{JULIUS_1}}</div>
     </div>
 
     <!-- Tidsmaskin -->
@@ -480,35 +494,27 @@
     </div>
 
     <!-- Ålands Radio (höger) -->
-    <div class="col-radio">
-      <div class="col-header">
-        <div class="col-name">Ålands Radio</div>
-        <div class="col-sub">Originalartikeln · 2026</div>
+    <div class="col-nav-wrap col-radio-wrap">
+      <a id="nav-next" class="col-nav-overlay" href="#" aria-label="Nyare utgåva">
+        <span class="col-nav-arrow">›</span>
+      </a>
+      <div class="col-radio">
+        <div class="col-header">
+          <div class="col-name">Ålands Radio</div>
+          <div class="col-sub">Originalartikeln · 2026</div>
+        </div>
+        <h2 class="radio-headline">{{HEADLINE_1}}</h2>
+        <p class="radio-byline">{{AUTHOR_1}}</p>
+        <div class="radio-body">{{ORIGINAL_1}}</div>
       </div>
-
-      <h2 class="radio-headline">{{HEADLINE_1}}</h2>
-      <p class="radio-byline">{{AUTHOR_1}}</p>
-      <div class="radio-body">{{ORIGINAL_1}}</div>
-      <p class="radio-source">
-        <a href="{{SOURCE_URL_1}}" target="_blank" rel="noopener">Läs originalet på Ålands Radio →</a>
-      </p>
     </div>
 
   </div>
 
-  <!-- Sidvändningsnavigering (desktop) -->
-  <a id="nav-prev" class="page-turn page-turn--prev" href="#" aria-label="Äldre utgåva">
-    <span>
-      <span class="page-turn__arrow">‹</span>
-      <span class="page-turn__label">Äldre</span>
-    </span>
-  </a>
-  <a id="nav-next" class="page-turn page-turn--next" href="#" aria-label="Nyare utgåva">
-    <span>
-      <span class="page-turn__arrow">›</span>
-      <span class="page-turn__label">Nyare</span>
-    </span>
-  </a>
+  <!-- Källlänk under split -->
+  <div class="article-source">
+    <a href="{{SOURCE_URL_1}}" target="_blank" rel="noopener">Läs originalet på Ålands Radio →</a>
+  </div>
 
   <!-- Mobilnavigering -->
   <nav class="mobile-nav">
