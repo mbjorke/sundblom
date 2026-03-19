@@ -508,6 +508,78 @@ def rebuild_archive_index() -> None:
 
 
 # ─────────────────────────────────────────────────────────────────────────────
+# 5. OG-BILD (skärmdump)
+# ─────────────────────────────────────────────────────────────────────────────
+
+def generate_og_image() -> bytes | None:
+    """Tar en 1200×630 skärmdump av index.html och returnerar PNG-bytes."""
+    try:
+        import threading
+        import http.server
+        import time
+        from playwright.sync_api import sync_playwright
+
+        class SilentHandler(http.server.SimpleHTTPRequestHandler):
+            def log_message(self, format, *args):
+                pass
+
+        httpd = http.server.HTTPServer(("", 8765), SilentHandler)
+        thread = threading.Thread(target=httpd.serve_forever)
+        thread.daemon = True
+        thread.start()
+        time.sleep(1)
+
+        with sync_playwright() as p:
+            browser = p.chromium.launch()
+            page = browser.new_page(viewport={"width": 1200, "height": 630})
+            page.goto("http://localhost:8765/index.html",
+                      wait_until="networkidle", timeout=30000)
+            page.wait_for_timeout(1500)  # Extra tid för typsnitt
+            png = page.screenshot(full_page=False)
+            browser.close()
+
+        httpd.shutdown()
+        log.info("OG-bild genererad (%d bytes).", len(png))
+        return png
+    except Exception as exc:
+        log.warning("Kunde inte generera OG-bild: %s", exc)
+        return None
+
+
+def publish_og_image(png_bytes: bytes) -> None:
+    """Pushar og-image.png till repot via GitHub API."""
+    if not GITHUB_TOKEN or not GITHUB_REPO:
+        log.warning("GitHub-miljövariabler saknas — OG-bild ej pushad.")
+        return
+
+    headers = {
+        "Authorization": f"Bearer {GITHUB_TOKEN}",
+        "Accept": "application/vnd.github+json",
+        "X-GitHub-Api-Version": "2022-11-28",
+    }
+    api_url = f"{GITHUB_API_BASE}/repos/{GITHUB_REPO}/contents/og-image.png"
+
+    sha = None
+    get_resp = requests.get(api_url, headers=headers, params={"ref": GITHUB_BRANCH})
+    if get_resp.status_code == 200:
+        sha = get_resp.json().get("sha")
+    elif get_resp.status_code != 404:
+        get_resp.raise_for_status()
+
+    payload: dict = {
+        "message": "🖼️ Uppdaterar OG-bild",
+        "content": base64.b64encode(png_bytes).decode("ascii"),
+        "branch": GITHUB_BRANCH,
+    }
+    if sha:
+        payload["sha"] = sha
+
+    put_resp = requests.put(api_url, headers=headers, json=payload)
+    put_resp.raise_for_status()
+    log.info("✅ OG-bild pushad.")
+
+
+# ─────────────────────────────────────────────────────────────────────────────
 # MAIN
 # ─────────────────────────────────────────────────────────────────────────────
 
@@ -543,7 +615,12 @@ def main() -> None:
     # 5. Publicera
     publish_to_github(html)
 
-    # 6. Arkivera
+    # 6. OG-bild (skärmdump av den lokalt sparade index.html)
+    og_png = generate_og_image()
+    if og_png:
+        publish_og_image(og_png)
+
+    # 7. Arkivera
     publish_archive_entry(html)
     rebuild_archive_index()
 

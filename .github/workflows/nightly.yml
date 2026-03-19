@@ -34,6 +34,10 @@ jobs:
       - name: Installera beroenden
         run: pip install -r requirements.txt
 
+      # 3b. Installera Playwright + Chromium (för OG-skärmdump)
+      - name: Installera Playwright Chromium
+        run: playwright install chromium --with-deps
+
       # 4. Kör generatorn
       - name: Kör Sundbloms generator
         env:
