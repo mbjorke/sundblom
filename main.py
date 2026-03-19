@@ -298,11 +298,13 @@ def _to_paragraphs(text: str) -> str:
     )
 
 
-def render_html(headline: str, url: str, julius_text: str, body: str, author: str) -> str:
+def render_html(headline: str, url: str, julius_text: str, body: str, author: str,
+                date_override: str = "") -> str:
     """
     Bäddar in en artikel i HTML-mallen.
+    date_override: ISO-datum (YYYY-MM-DD) om annat än dagens datum ska användas.
     """
-    today    = datetime.date.today()
+    today    = datetime.date.fromisoformat(date_override) if date_override else datetime.date.today()
     weekdays = ["Måndagen","Tisdagen","Onsdagen","Torsdagen","Fredagen","Lördagen","Söndagen"]
     months   = ["","januari","februari","mars","april","maj","juni",
                 "juli","augusti","september","oktober","november","december"]
@@ -388,9 +390,10 @@ def publish_to_github(html_content: str) -> None:
     _push_file(OUTPUT_HTML, html_content, f"🗞️ Åland igår och idag {today}")
 
 
-def publish_archive_entry(html_content: str, headline: str = "") -> None:
+def publish_archive_entry(html_content: str, headline: str = "",
+                          date_override: str = "") -> None:
     """Sparar dagens artikel med beskrivande URL: arkiv/YYYY-MM-DD-slug.html"""
-    today = datetime.date.today().isoformat()
+    today = date_override if date_override else datetime.date.today().isoformat()
     slug = slugify(headline) if headline else ""
     path = f"arkiv/{today}-{slug}.html" if slug else f"arkiv/{today}.html"
     _push_file(path, html_content, f"📁 Arkiverar {today}: {headline[:50]}")
