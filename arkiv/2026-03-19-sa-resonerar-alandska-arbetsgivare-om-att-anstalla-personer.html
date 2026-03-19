@@ -3,11 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Åland igår och idag</title>
+  <title>Så resonerar åländska arbetsgivare om att anställa personer med extrema åsikter — Åland igår och idag</title>
+  <meta name="description" content="YTTRANDE- OCH TANKEFRIHETENS GRÄNSER I TJÄNSTEMANNAFRÅGAN">
 
   <!-- Open Graph / länkförhandsvisning -->
-  <meta property="og:title"       content="Åland igår och idag">
-  <meta property="og:description" content="Samma nyheter, två röster, hundra år isär. Julius Sundblom möter Ålands Radio.">
+  <meta property="og:title"       content="Så resonerar åländska arbetsgivare om att anställa personer med extrema åsikter — Åland igår och idag">
+  <meta property="og:description" content="YTTRANDE- OCH TANKEFRIHETENS GRÄNSER I TJÄNSTEMANNAFRÅGAN">
   <meta property="og:image"       content="https://sundblom.pages.dev/og-image.png">
   <meta property="og:url"         content="https://sundblom.pages.dev">
   <meta property="og:type"        content="website">
@@ -37,6 +38,9 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <!-- Förladda manifest.json så nav-JS inte skapar en kritisk kedja -->
+  <link rel="preload" href="/arkiv/manifest.json" as="fetch" crossorigin>
+  <!-- Ladda fonter icke-blockerande för att undvika FOUT och render-blocking -->
   <link rel="preload" as="style"
         href="https://fonts.googleapis.com/css2?family=IM+Fell+English:ital@0;1&family=UnifrakturMaguntia&family=IM+Fell+English+SC&family=Source+Serif+4:ital,wght@0,400;0,600;1,400&display=swap"
         onload="this.onload=null;this.rel='stylesheet'">
@@ -45,6 +49,11 @@
           href="https://fonts.googleapis.com/css2?family=IM+Fell+English:ital@0;1&family=UnifrakturMaguntia&family=IM+Fell+English+SC&family=Source+Serif+4:ital,wght@0,400;0,600;1,400&display=swap">
   </noscript>
   <style>
+    /* Mjuka sidövergångar — eliminerar blinkandet vid navigering */
+    @view-transition { navigation: auto; }
+    ::view-transition-old(root) { animation-duration: 0.15s; }
+    ::view-transition-new(root) { animation-duration: 0.15s; }
+
     :root {
       --ink:        #1a1207;
       --paper:      #f5ead6;
@@ -67,7 +76,7 @@
       color: var(--paper);
       padding: .5rem 1rem;
       font-family: 'IM Fell English SC', serif;
-      font-size: .8rem;
+      font-size: .85rem;
       letter-spacing: .05em;
       z-index: 9999;
       text-decoration: none;
@@ -117,7 +126,7 @@
     }
     .masthead-eyebrow {
       font-family: 'IM Fell English SC', serif;
-      font-size: .7rem; letter-spacing: .25em;
+      font-size: .85rem; letter-spacing: .25em;
       color: var(--muted); text-transform: uppercase; margin-bottom: .5rem;
     }
     .masthead-title {
@@ -127,14 +136,14 @@
     }
     .masthead-subtitle {
       font-family: 'IM Fell English SC', serif;
-      font-size: .75rem; letter-spacing: .3em;
+      font-size: .85rem; letter-spacing: .3em;
       color: var(--muted); margin-bottom: .8rem;
     }
     .masthead-rule { height: 1px; background: var(--rule); margin: .4rem 0; }
     .masthead-dateline {
       display: flex; justify-content: space-between;
       padding: .4rem 0 .6rem;
-      font-size: .7rem; color: var(--muted); font-style: italic;
+      font-size: .85rem; color: var(--muted); font-style: italic;
     }
 
     /* ── Split layout ── */
@@ -162,7 +171,7 @@
     }
     .col-julius .col-sub {
       font-family: 'IM Fell English SC', serif;
-      font-size: .6rem; letter-spacing: .2em;
+      font-size: .85rem; letter-spacing: .2em;
       color: var(--muted); text-transform: uppercase;
       margin-top: .2rem;
     }
@@ -239,7 +248,7 @@
     .ts-era-label {
       display: block;
       font-family: 'IM Fell English SC', serif;
-      font-size: .5rem; letter-spacing: .2em;
+      font-size: .85rem; letter-spacing: .2em;
       text-transform: uppercase; opacity: .6;
       margin-bottom: .2rem;
     }
@@ -263,7 +272,7 @@
     .ts-dot:nth-child(4) { animation-delay: .6s; }
     .ts-dot:nth-child(5) { animation-delay: .8s; }
     .ts-dot:nth-child(6) { animation-delay: 1s; }
-    .ts-arrow { color: #c8a050; font-size: .8rem; opacity: .7; writing-mode: vertical-lr; }
+    .ts-arrow { color: #c8a050; font-size: .85rem; opacity: .7; writing-mode: vertical-lr; }
     @keyframes pulse-dot {
       0%, 100% { opacity: .2; transform: scale(.8); }
       50%       { opacity: .9; transform: scale(1.3); }
@@ -289,7 +298,7 @@
     }
     .col-radio .col-sub {
       font-family: 'Source Serif 4', serif;
-      font-size: .6rem; letter-spacing: .15em;
+      font-size: .85rem; letter-spacing: .15em;
       color: var(--muted); text-transform: uppercase;
       margin-top: .2rem;
     }
@@ -303,7 +312,7 @@
     }
     .radio-byline {
       font-family: 'Source Serif 4', serif;
-      font-size: .65rem; color: var(--muted);
+      font-size: .85rem; color: var(--muted);
       font-style: italic; margin-bottom: .8rem;
     }
     .radio-body { margin-bottom: .8rem; }
@@ -315,7 +324,7 @@
     }
     .radio-source {
       font-family: 'Source Serif 4', serif;
-      font-size: .65rem; color: var(--muted);
+      font-size: .85rem; color: var(--muted);
       margin-bottom: 1.8rem;
     }
     .radio-source a {
@@ -332,7 +341,7 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
-      font-size: .65rem;
+      font-size: .85rem;
       color: var(--muted);
       font-style: italic;
       background: var(--paper);
@@ -351,7 +360,7 @@
       background: var(--ink);
       color: #f5ead6;
       font-family: 'IM Fell English SC', serif;
-      font-size: .62rem;
+      font-size: .85rem;
       font-style: normal;
       letter-spacing: .04em;
       white-space: nowrap;
@@ -368,9 +377,6 @@
     }
 
     /* ── Kolumnnavigering (klickbara sidor) ── */
-    .col-nav-wrap {
-      position: relative;
-    }
     .col-nav-overlay {
       position: absolute;
       inset: 0;
@@ -407,7 +413,7 @@
     .col-julius .col-nav-arrow { left: .8rem; }
     .col-radio  .col-nav-arrow { right: .8rem; }
 
-    /* Links inside columns stay above overlay */
+    /* Links inside columns stay above overlay (but NOT the overlay itself) */
     .col-julius a:not(.col-nav-overlay), .col-radio a:not(.col-nav-overlay) { position: relative; z-index: 3; }
 
     /* Källlänk under split */
@@ -416,7 +422,7 @@
       padding: .5rem 1.8rem;
       text-align: right;
       font-family: 'Source Serif 4', serif;
-      font-size: .65rem;
+      font-size: .85rem;
       color: var(--muted);
       background: var(--radio-paper);
     }
@@ -431,7 +437,7 @@
       border-top: 1px solid #c8b090;
       background: var(--paper);
       font-family: 'IM Fell English SC', serif;
-      font-size: .75rem;
+      font-size: .85rem;
       letter-spacing: .1em;
     }
     .mobile-nav a { color: var(--muted); text-decoration: none; transition: color .2s; }
@@ -504,7 +510,7 @@
         <div class="col-sub">AI-tolkning · 1920-tal</div>
       </div>
       <h2 class="julius-headline">Så resonerar åländska arbetsgivare om att anställa personer med extrema åsikter</h2>
-      <div class="julius-body"><p>ANSTÄLLNINGSFRÅGAN OCH TIDENS OROSTECKEN</p><p>Så långt hafva vi då kommit, att man i Ålands offentlighet allvarligen måste dryfta, huruvida medborgare med samhällsomstörtande åskådningar böra kunna bekläda tjänster vid våra läroanstalter och verk. Det är ett varningstecken, som icke bör förbigås med tystnad.</p><p>Att frågan är »komplex», såsom flere arbetsgivare nu uttala sig, kan visserligen medgifvas ur rent juridisk synpunkt. Viking Lines kommunikationsdirektör, fru Boijer-Svahnström, anför att man ej får kartlägga politiska åsikter, och landskapets förvaltningschef herr Eriksson framhåller att åsikts- och yttrandefriheten är vidsträckt. Häremot är intet att invända, så långt lagen räcker.</p><p>Men lagen är blott samhällets lägsta gräns; sedelagen och det allmänna bästa stå högre.</p><p>Vi, som minnas inbördeskrigets fasor år 1918, veta alltför väl hvarthän det bär när extrema läror få fotfäste bland dem som uppfostra ungdomen eller förvalta det allmännas angelägenheter. Fru Romar vid ÅHS framhåller med rätta att åskådningen icke får påverka arbetsmiljön eller bemötandet af patienter. Dock frågar sig hvar redlig medborgare: kan den som hyllar omstörtande ideologier någonsin helt åtskilja sin öfvertygelse från sin gärning?</p><p>Herr Eriksson pekar på tjänstemannens skyldighet att uppträda såsom tjänsten förutsätter. Här hafva vi kärnan. Den som vill tjäna det åländska samhället måste äfven bära dess fäderneärvda värderingar: ordning, redbarhet och aktning för medmänniskan — icke dess motsats.</p><p>Låtom oss icke vika för falsk tolerans. Det åländska folkets oförytterliga rätt till själfstyrelsens heliga grundvalar innefattar äfven rätten att värna sina institutioner mot dem som i hjärtat förakta dem.</p><p>*J.S.*</p></div>
+      <div class="julius-body"><p>YTTRANDE- OCH TANKEFRIHETENS GRÄNSER I TJÄNSTEMANNAFRÅGAN</p><p>Det har kommit till vår kännedom att en timlärare vid Medis förknippats med nationalsocialistiska sympatier, hvilket föranlett en vidlyftig diskussion om hvad arbetsgivaren kan och får beakta vid anställningar. Frågan är af stor vikt, men de svar som gifvits af landskapets och näringslifvets representanter vittna om en beklagansvärd förvirring i grundläggande principfrågor.</p><p>Kommunikationsdirektör Johanna Boijer-Svahnström vid Viking Line meddelar att rederiet ej får "kartlägga livsstil eller politiska åsikter". Förvaltningschef John Eriksson framhåller att först om extremistiska åsikter "får uttryck i tjänsteutövandet" kan arbetsgivaren ingripa. Fru Ann-Britt Romar vid ÅHS tillägger att åsikterna ej får "påverka arbetsmiljön eller bemötandet".</p><p>Låtom oss icke vika från den sanning som fäderna kände: att yttrandefrihet är en helig grundval för det fria samhället, men att densamma aldrig afsåg att skänka skydd åt dem som förkunna barbari och tyranni. Den som bekänner sig till en lära, hvilkens väsen är våld mot oliktänkande och förakt för rättsstaten, har redan genom denna bekännelse visat sig olämplig att tjäna det allmänna. Hvad är det för vansinne att invänta tills skadan redan skett?</p><p>Vi som bevittnade det finska inbördeskrigets fasor 1918 — då de röda horderna sökte omstörta all ordning — veta hvad som händer när samhället i toleransens namn tolererar det intoleranta. Den nationalsocialistiska rörelsen, såsom den framträdt på kontinenten, är af samma andefattiga släkte: en samling vilseförda och hätskhetsapostlar som vilja ersätta förnuft med våld, bildning med pöbelherravälde.</p><p>Att landskapets tjänstemän nu famla efter riktlinjer vittnar om att de fäderneärvda begreppen om heder och medborgerlig plikt börjat urholkas äfven här. En lärare, af alla yrkesgrupper! En som skall fostra de unga i samhällets grundvalar! Deraf framgår att vakenhet är af nöden, icke passivitet.</p><p>*J.S.*</p></div>
     </div>
 
     <!-- Tidsmaskin (dekorativ) -->
@@ -595,6 +601,7 @@
 
         const path = location.pathname.replace(/\/+$/, '');
         const isHome = path === '' || path === '/index.html' || path === '/';
+        // isHome behandlas som idx=0 (senaste posten) så att "äldre" går till entries[1]
         const idx = isHome ? 0 : entries.findIndex(e => path.endsWith(e.stem));
 
         // Äldre (vänster): ett steg bakåt i tid, eller arkivet om vi är på äldsta
