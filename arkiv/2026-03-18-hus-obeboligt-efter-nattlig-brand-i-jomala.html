@@ -3,11 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Åland igår och idag</title>
+  <title>Hus obeboligt efter nattlig brand i Jomala — Åland igår och idag</title>
+  <meta name="description" content="ELDSVÅDA I JOMALA — FAMILJ RÄDDAD GENOM FÖRSYNENS SKICKELSE">
 
   <!-- Open Graph / länkförhandsvisning -->
-  <meta property="og:title"       content="Åland igår och idag">
-  <meta property="og:description" content="Samma nyheter, två röster, hundra år isär. Julius Sundblom möter Ålands Radio.">
+  <meta property="og:title"       content="Hus obeboligt efter nattlig brand i Jomala — Åland igår och idag">
+  <meta property="og:description" content="ELDSVÅDA I JOMALA — FAMILJ RÄDDAD GENOM FÖRSYNENS SKICKELSE">
   <meta property="og:image"       content="https://sundblom.pages.dev/og-image.png">
   <meta property="og:url"         content="https://sundblom.pages.dev">
   <meta property="og:type"        content="website">
@@ -37,6 +38,9 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <!-- Förladda manifest.json så nav-JS inte skapar en kritisk kedja -->
+  <link rel="preload" href="/arkiv/manifest.json" as="fetch" crossorigin>
+  <!-- Ladda fonter icke-blockerande för att undvika FOUT och render-blocking -->
   <link rel="preload" as="style"
         href="https://fonts.googleapis.com/css2?family=IM+Fell+English:ital@0;1&family=UnifrakturMaguntia&family=IM+Fell+English+SC&family=Source+Serif+4:ital,wght@0,400;0,600;1,400&display=swap"
         onload="this.onload=null;this.rel='stylesheet'">
@@ -45,6 +49,11 @@
           href="https://fonts.googleapis.com/css2?family=IM+Fell+English:ital@0;1&family=UnifrakturMaguntia&family=IM+Fell+English+SC&family=Source+Serif+4:ital,wght@0,400;0,600;1,400&display=swap">
   </noscript>
   <style>
+    /* Mjuka sidövergångar — eliminerar blinkandet vid navigering */
+    @view-transition { navigation: auto; }
+    ::view-transition-old(root) { animation-duration: 0.15s; }
+    ::view-transition-new(root) { animation-duration: 0.15s; }
+
     :root {
       --ink:        #1a1207;
       --paper:      #f5ead6;
@@ -67,7 +76,7 @@
       color: var(--paper);
       padding: .5rem 1rem;
       font-family: 'IM Fell English SC', serif;
-      font-size: .8rem;
+      font-size: .85rem;
       letter-spacing: .05em;
       z-index: 9999;
       text-decoration: none;
@@ -117,7 +126,7 @@
     }
     .masthead-eyebrow {
       font-family: 'IM Fell English SC', serif;
-      font-size: .7rem; letter-spacing: .25em;
+      font-size: .85rem; letter-spacing: .25em;
       color: var(--muted); text-transform: uppercase; margin-bottom: .5rem;
     }
     .masthead-title {
@@ -127,14 +136,14 @@
     }
     .masthead-subtitle {
       font-family: 'IM Fell English SC', serif;
-      font-size: .75rem; letter-spacing: .3em;
+      font-size: .85rem; letter-spacing: .3em;
       color: var(--muted); margin-bottom: .8rem;
     }
     .masthead-rule { height: 1px; background: var(--rule); margin: .4rem 0; }
     .masthead-dateline {
       display: flex; justify-content: space-between;
       padding: .4rem 0 .6rem;
-      font-size: .7rem; color: var(--muted); font-style: italic;
+      font-size: .85rem; color: var(--muted); font-style: italic;
     }
 
     /* ── Split layout ── */
@@ -162,7 +171,7 @@
     }
     .col-julius .col-sub {
       font-family: 'IM Fell English SC', serif;
-      font-size: .6rem; letter-spacing: .2em;
+      font-size: .85rem; letter-spacing: .2em;
       color: var(--muted); text-transform: uppercase;
       margin-top: .2rem;
     }
@@ -239,7 +248,7 @@
     .ts-era-label {
       display: block;
       font-family: 'IM Fell English SC', serif;
-      font-size: .5rem; letter-spacing: .2em;
+      font-size: .85rem; letter-spacing: .2em;
       text-transform: uppercase; opacity: .6;
       margin-bottom: .2rem;
     }
@@ -263,7 +272,7 @@
     .ts-dot:nth-child(4) { animation-delay: .6s; }
     .ts-dot:nth-child(5) { animation-delay: .8s; }
     .ts-dot:nth-child(6) { animation-delay: 1s; }
-    .ts-arrow { color: #c8a050; font-size: .8rem; opacity: .7; writing-mode: vertical-lr; }
+    .ts-arrow { color: #c8a050; font-size: .85rem; opacity: .7; writing-mode: vertical-lr; }
     @keyframes pulse-dot {
       0%, 100% { opacity: .2; transform: scale(.8); }
       50%       { opacity: .9; transform: scale(1.3); }
@@ -289,7 +298,7 @@
     }
     .col-radio .col-sub {
       font-family: 'Source Serif 4', serif;
-      font-size: .6rem; letter-spacing: .15em;
+      font-size: .85rem; letter-spacing: .15em;
       color: var(--muted); text-transform: uppercase;
       margin-top: .2rem;
     }
@@ -303,7 +312,7 @@
     }
     .radio-byline {
       font-family: 'Source Serif 4', serif;
-      font-size: .65rem; color: var(--muted);
+      font-size: .85rem; color: var(--muted);
       font-style: italic; margin-bottom: .8rem;
     }
     .radio-body { margin-bottom: .8rem; }
@@ -315,7 +324,7 @@
     }
     .radio-source {
       font-family: 'Source Serif 4', serif;
-      font-size: .65rem; color: var(--muted);
+      font-size: .85rem; color: var(--muted);
       margin-bottom: 1.8rem;
     }
     .radio-source a {
@@ -332,7 +341,7 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
-      font-size: .65rem;
+      font-size: .85rem;
       color: var(--muted);
       font-style: italic;
       background: var(--paper);
@@ -351,7 +360,7 @@
       background: var(--ink);
       color: #f5ead6;
       font-family: 'IM Fell English SC', serif;
-      font-size: .62rem;
+      font-size: .85rem;
       font-style: normal;
       letter-spacing: .04em;
       white-space: nowrap;
@@ -368,9 +377,6 @@
     }
 
     /* ── Kolumnnavigering (klickbara sidor) ── */
-    .col-nav-wrap {
-      position: relative;
-    }
     .col-nav-overlay {
       position: absolute;
       inset: 0;
@@ -407,7 +413,7 @@
     .col-julius .col-nav-arrow { left: .8rem; }
     .col-radio  .col-nav-arrow { right: .8rem; }
 
-    /* Links inside columns stay above overlay */
+    /* Links inside columns stay above overlay (but NOT the overlay itself) */
     .col-julius a:not(.col-nav-overlay), .col-radio a:not(.col-nav-overlay) { position: relative; z-index: 3; }
 
     /* Källlänk under split */
@@ -416,7 +422,7 @@
       padding: .5rem 1.8rem;
       text-align: right;
       font-family: 'Source Serif 4', serif;
-      font-size: .65rem;
+      font-size: .85rem;
       color: var(--muted);
       background: var(--radio-paper);
     }
@@ -431,7 +437,7 @@
       border-top: 1px solid #c8b090;
       background: var(--paper);
       font-family: 'IM Fell English SC', serif;
-      font-size: .75rem;
+      font-size: .85rem;
       letter-spacing: .1em;
     }
     .mobile-nav a { color: var(--muted); text-decoration: none; transition: color .2s; }
@@ -504,7 +510,7 @@
         <div class="col-sub">AI-tolkning · 1920-tal</div>
       </div>
       <h2 class="julius-headline">Hus obeboligt efter nattlig brand i Jomala</h2>
-      <div class="julius-body"><p>ELD HÄRJAR BONDENS HEMMAN — JOMALA DRABBAS AF NATTLIG OLYCKA</p><p>I nattens mörker bröt lågor fram ur ett gårdens uthus i Jomala, hvarvid en familj om fyra själar väcktes af den signalapparat som i vår tid varsko gifver för eldsvåda. Garaget nedbrann i sin helhet, och boningshuset skadades så svårt af röken, att det icke längre kan bebos. En person åsamkades skador då denne sökte taga sig an släckningsarbetet — ett vittnesbörd om det mod som ännu lefver bland vårt folk, äfven när faran står för dörren.</p><p>Räddningsledaren, herr Thomas Mattsson, har bekräftat att hemmet ej kan tjäna sitt ändamål förr än vidare, och polismyndigheten har nu öfvertagit utredningen af hvad som må hafva föranledt olyckan.</p><p>Jomala frivilliga brandkår, Gottby frivilliga brandkår samt Räddningsverket skyndade till platsen och förrättade sitt värfr med den plikttrogenhet som utmärker dessa fäderneärvda sammanslutningar. Ty det är i den frivilliga ordningens anda, i grannsämjans urgamla pakt, som det åländska samhället äger sin styrka. Icke i fastlandets byråkratiska förordningar, utan i det egna folkets offervillighet, ligger självstyrelsens heliga grundvalar förankrade.</p><p>Låtom oss icke förgäta: när nöden drabbar en åländsk familj, då stå vi samman. Så har det varit, och så skall det förblifva.</p><p>*J.S.*</p></div>
+      <div class="julius-body"><p>ELDSVÅDA I JOMALA — FAMILJ RÄDDAD GENOM FÖRSYNENS SKICKELSE</p><p>Natten mot torsdagen hemsöktes en gård i Jomala af eld, hvarvid ett garage blef fullständigt förhärjadt och det sammankopplade boningshuset af rök så svårt skadadt, att det enligt räddningsledaren icke längre är beboeligt. En familj om fyra personer bebodde huset, men väcktes i tid af brandvarnare och undkom sålunda det yttersta.</p><p>Det är i sanning en nåd att ej lifsförlust här är att beklaga, ty brand om natten, då menniskan ligger försänkt i sömn, hör till det mest fruktade af alla olyckor som kunna hemsöka den åländska landsbygden. En person skadades vid försök till släckning — ett vittnesbörd om den offervilja och det mod som alltjämt lefver i vår befolkning, äfven om dylikt ingripande stundom medför fara för den hjelpande själf.</p><p>Till brandplatsen utryckte Jomala FBK, Gottby FBK samt Räddningsverket, och man kan blott med tacksamhet erkänna det oförtrutna arbete som dessa frivilliga krafter utföra för det allmännas bästa. Polismyndigheten har nu öfvertagit utredningen af brandens orsak.</p><p>Låtom oss här påminna oss hvad som bör ligga hvarje husfader på hjärtat: att det fäderneärvda hemmet, denna grundval för familjelif och samhällsordning, kräfver vaksamhet och vård. En brandvarnare — ett ringa ting — stod denna natt mellan lif och död. Måtte hvar och en taga lärdom häraf.</p><p>*J.S.*</p></div>
     </div>
 
     <!-- Tidsmaskin (dekorativ) -->
@@ -595,6 +601,7 @@
 
         const path = location.pathname.replace(/\/+$/, '');
         const isHome = path === '' || path === '/index.html' || path === '/';
+        // isHome behandlas som idx=0 (senaste posten) så att "äldre" går till entries[1]
         const idx = isHome ? 0 : entries.findIndex(e => path.endsWith(e.stem));
 
         // Äldre (vänster): ett steg bakåt i tid, eller arkivet om vi är på äldsta
