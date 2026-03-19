@@ -43,6 +43,16 @@ BACKFILL_ARTICLES = [
         "Föräldrar: flicklaget behandlas nedlåtande — kallades äckliga",
     ),
     (
+        "2026-03-19",
+        "https://alandsradio.ax/nyheter/zekaj-cosmic-har-gett-kraftigt-produktivitetstapp-ocksa-pa-aland",
+        "Zekaj Cosmic har gett kraftigt produktivitetstapp också på Åland",
+    ),
+    (
+        "2026-03-19",
+        "https://alandsradio.ax/nyheter/aland-post-omstallningsforhandlar-igen-tre-kan-sagas-upp",
+        "Åland Post omställningsförhandlar igen — tre kan sägas upp",
+    ),
+    (
         "2026-03-15",
         "https://alandsradio.ax/nyheter/alands-idrott-behover-tas-pa-allvar",
         "Ålands idrott behöver tas på allvar",

@@ -485,19 +485,18 @@ def generate_manifest() -> None:
     elif resp.status_code != 404:
         resp.raise_for_status()
 
-    # Deduplicera per datum — föredra slug-version framför datum-bara
-    by_date: dict[str, tuple[str, str, str]] = {}
-    for date_iso, slug, stem in raw:
-        if date_iso not in by_date or (slug and not by_date[date_iso][1]):
-            by_date[date_iso] = (date_iso, slug, stem)
-
-    entries = sorted(by_date.values(), key=lambda x: x[0], reverse=True)
+    # Sortera nyast först — alla artiklar visas, flera per dag möjligt
+    entries = sorted(
+        [(d, s, st) for d, s, st in raw if s],  # bara slug-versioner
+        key=lambda x: x[2],  # stem = YYYY-MM-DD-slug → alfabetisk = kronologisk
+        reverse=True,
+    )
 
     manifest = [
         {
             "stem": stem,
             "date": date_iso,
-            "headline": slug.replace("-", " ").capitalize() if slug else date_iso,
+            "headline": slug.replace("-", " ").capitalize(),
         }
         for date_iso, slug, stem in entries
     ]
@@ -532,13 +531,12 @@ def rebuild_archive_index() -> None:
     elif resp.status_code != 404:
         resp.raise_for_status()
 
-    # Deduplicera per datum — föredra slug-version framför datum-bara
-    by_date: dict[str, tuple[str, str, str]] = {}
-    for date_iso, slug, stem in raw:
-        if date_iso not in by_date or (slug and not by_date[date_iso][1]):
-            by_date[date_iso] = (date_iso, slug, stem)
-
-    entries = sorted(by_date.values(), key=lambda x: x[0], reverse=True)
+    # Sortera nyast först — alla artiklar visas, flera per dag möjligt
+    entries = sorted(
+        [(d, s, st) for d, s, st in raw if s],  # bara slug-versioner
+        key=lambda x: x[2],
+        reverse=True,
+    )
 
     weekdays = ["Måndag","Tisdag","Onsdag","Torsdag","Fredag","Lördag","Söndag"]
     months   = ["","januari","februari","mars","april","maj","juni",
