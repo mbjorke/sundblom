@@ -128,8 +128,8 @@ def fetch_article_body(url: str) -> tuple[str, str]:
 
 def fetch_top_headlines(n: int = 2) -> list[tuple[str, str]]:
     """
-    Returns a list of (headline, url) for the top-n articles,
-    hero-articles (visually prominent) sorted before list-cards.
+    Returns a list of (headline, url) for the top-n articles in DOM-order.
+    Ålands Radio visar nyast överst — DOM-ordning ger senast publicerade artiklar.
     Falls back to a single silence-from-the-mainland entry if unreachable.
     """
     fallback = [(
@@ -149,34 +149,31 @@ def fetch_top_headlines(n: int = 2) -> list[tuple[str, str]]:
 
     soup = BeautifulSoup(resp.text, "html.parser")
 
-    heroes, list_cards = [], []
+    seen_hrefs = set()
+    results = []
     for h2 in soup.select("h2"):
+        if len(results) >= n:
+            break
         text = h2.get_text(strip=True)
         if len(text) <= 10:
             continue
         link_tag = h2.find_parent("a") or h2.find("a")
-        href = ""
-        if link_tag and link_tag.get("href"):
-            href = link_tag["href"]
-            if href.startswith("/"):
-                href = "https://alandsradio.ax" + href
-        entry = (text, href or ALANDS_RADIO_URL)
-        if _article_is_hero(h2):
-            heroes.append(entry)
-        else:
-            list_cards.append(entry)
-
-    result_heroes = heroes[:1]
-    result_list   = list_cards[:max(0, n - len(result_heroes))]
-    results = result_heroes + result_list
+        if not link_tag or not link_tag.get("href"):
+            continue
+        href = link_tag["href"]
+        if href.startswith("/"):
+            href = "https://alandsradio.ax" + href
+        if href in seen_hrefs or href == ALANDS_RADIO_URL:
+            continue
+        seen_hrefs.add(href)
+        results.append((text, href))
 
     if not results:
         log.warning("Inga rubriker hittades på sidan.")
         return fallback
 
-    for i, (h, _) in enumerate(results):
-        kind = "hero" if i < len(result_heroes) else "list"
-        log.info("Rubrik %d (%s): %s", i + 1, kind, h)
+    for i, (h, url) in enumerate(results):
+        log.info("Rubrik %d: %s — %s", i + 1, h, url)
     return results
 
 
