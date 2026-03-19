@@ -126,10 +126,11 @@ def fetch_article_body(url: str) -> tuple[str, str]:
     return body, author
 
 
-def fetch_top_headlines(n: int = 2) -> list[tuple[str, str]]:
+def fetch_top_headlines(n: int = 20) -> list[tuple[str, str]]:
     """
     Returns a list of (headline, url) for the top-n articles in DOM-order.
     Ålands Radio visar nyast överst — DOM-ordning ger senast publicerade artiklar.
+    seen-urls.json filtrerar redan processade, så n kan vara generöst (default 20).
     Falls back to a single silence-from-the-mainland entry if unreachable.
     """
     fallback = [(

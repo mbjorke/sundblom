@@ -49,6 +49,11 @@
           href="https://fonts.googleapis.com/css2?family=IM+Fell+English:ital@0;1&family=UnifrakturMaguntia&family=IM+Fell+English+SC&family=Source+Serif+4:ital,wght@0,400;0,600;1,400&display=swap">
   </noscript>
   <style>
+    /* Mjuka sidövergångar — eliminerar blinkandet vid navigering */
+    @view-transition { navigation: auto; }
+    ::view-transition-old(root) { animation-duration: 0.15s; }
+    ::view-transition-new(root) { animation-duration: 0.15s; }
+
     :root {
       --ink:        #1a1207;
       --paper:      #f5ead6;
