@@ -8,6 +8,12 @@ originalartikeln. Publiceras automatiskt varje dag kl. 16:00 UTC på **[nudå.ax
 
 ---
 
+## Inspirerat av
+
+Ett stort tack till **Jimmy Flink** och hans [klassiskanyheter.se](https://klassiskanyheter.se/) — ett pionjärprojekt som visade att klassisk tidningsstil och modern webbteknik kan mötas på ett genuint och stilfullt sätt. Hans arbete var en direkt inspiration till det här projektet.
+
+---
+
 ## Vad det gör
 
 - **Skrapar** topprubrikerna från [alandsradio.ax](https://alandsradio.ax/nyheter)
