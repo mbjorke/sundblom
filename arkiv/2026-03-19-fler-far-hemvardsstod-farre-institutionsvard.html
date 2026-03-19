@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Åland igår och idag</title>
+
+  <!-- Open Graph / länkförhandsvisning -->
+  <meta property="og:title"       content="Åland igår och idag">
+  <meta property="og:description" content="Samma nyheter, två röster, hundra år isär. Julius Sundblom möter Ålands Radio.">
+  <meta property="og:image"       content="https://sundblom.pages.dev/og-image.png">
+  <meta property="og:url"         content="https://sundblom.pages.dev">
+  <meta property="og:type"        content="website">
+  <meta property="og:locale"      content="sv_FI">
+  <meta name="twitter:card"       content="summary_large_image">
+  <meta name="twitter:image"      content="https://sundblom.pages.dev/og-image.png">
+
+  <!-- JSON-LD strukturerad data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "NewsArticle",
+    "headline": "Fler får hemvårdsstöd, färre institutionsvård",
+    "datePublished": "2026-03-19",
+    "inLanguage": "sv",
+    "publisher": {
+      "@type": "Organization",
+      "name": "Åland igår och idag",
+      "url": "https://nudå.ax"
+    },
+    "about": {
+      "@type": "Thing",
+      "name": "Åland"
+    }
+  }
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=IM+Fell+English:ital@0;1&family=UnifrakturMaguntia&family=IM+Fell+English+SC&family=Source+Serif+4:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --ink:        #1a1207;
+      --paper:      #f5ead6;
+      --rule:       #5c3d1a;
+      --muted:      #6b5540;
+      --accent:     #8b1a1a;
+      --radio-ink:  #1a1a1a;
+      --radio-blue: #005f8a;
+      --radio-paper:#f8f5f0;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      background: #d9c9a8;
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      padding: 2rem 1rem 4rem;
+      font-family: 'IM Fell English', Georgia, serif;
+      color: var(--ink);
+    }
+
+    body::before {
+      content: "";
+      position: fixed; inset: 0;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.75' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='300' height='300' filter='url(%23n)' opacity='0.04'/%3E%3C/svg%3E");
+      pointer-events: none; z-index: 0;
+    }
+
+    .newspaper {
+      position: relative; z-index: 1;
+      background: var(--paper);
+      max-width: 1060px;
+      width: 100%;
+      box-shadow: 0 2px 4px rgba(0,0,0,.15), 0 8px 32px rgba(0,0,0,.25);
+    }
+
+    /* ── Masthead ── */
+    .masthead {
+      text-align: center;
+      padding: 2rem 2.5rem 0;
+      border-bottom: 4px double var(--rule);
+    }
+    .masthead-eyebrow {
+      font-family: 'IM Fell English SC', serif;
+      font-size: .7rem; letter-spacing: .25em;
+      color: var(--muted); text-transform: uppercase; margin-bottom: .5rem;
+    }
+    .masthead-title {
+      font-family: 'UnifrakturMaguntia', cursive;
+      font-size: clamp(2.4rem, 6vw, 3.6rem);
+      line-height: 1; margin-bottom: .2rem;
+    }
+    .masthead-subtitle {
+      font-family: 'IM Fell English SC', serif;
+      font-size: .75rem; letter-spacing: .3em;
+      color: var(--muted); margin-bottom: .8rem;
+    }
+    .masthead-rule { height: 1px; background: var(--rule); margin: .4rem 0; }
+    .masthead-dateline {
+      display: flex; justify-content: space-between;
+      padding: .4rem 0 .6rem;
+      font-size: .7rem; color: var(--muted); font-style: italic;
+    }
+
+    /* ── Split layout ── */
+    .split {
+      display: grid;
+      grid-template-columns: 1fr 44px 1fr;
+      min-height: 400px;
+    }
+
+    /* ── Julius column (vänster) ── */
+    .col-julius {
+      padding: 1.8rem 1.8rem 2.5rem;
+      background: var(--paper);
+    }
+    .col-julius .col-header {
+      text-align: center;
+      padding-bottom: .8rem;
+      border-bottom: 2px double var(--rule);
+      margin-bottom: 1.4rem;
+    }
+    .col-julius .col-name {
+      font-family: 'UnifrakturMaguntia', cursive;
+      font-size: 1.3rem; color: var(--ink);
+    }
+    .col-julius .col-sub {
+      font-family: 'IM Fell English SC', serif;
+      font-size: .6rem; letter-spacing: .2em;
+      color: var(--muted); text-transform: uppercase;
+      margin-top: .2rem;
+    }
+
+    .julius-headline {
+      font-family: 'IM Fell English', Georgia, serif;
+      font-size: clamp(1rem, 2.2vw, 1.3rem);
+      font-weight: normal; line-height: 1.3;
+      text-align: center; margin-bottom: .5rem;
+    }
+    .julius-body { margin-bottom: 1.8rem; }
+    .julius-body p {
+      font-size: .85rem; line-height: 1.75;
+      text-align: justify; hyphens: auto; margin-bottom: .65rem;
+    }
+    .julius-body p:first-child::first-letter {
+      font-family: 'UnifrakturMaguntia', cursive;
+      font-size: 3.2rem; line-height: .75;
+      float: left; margin: .05em .1em -.05em 0;
+      color: var(--accent);
+    }
+    .julius-body p:last-child {
+      text-align: right; font-style: italic; color: var(--muted);
+    }
+    .article-divider {
+      border: none; border-top: 1px solid #c8b090;
+      margin: 1.4rem 0;
+    }
+
+    /* ── Tidsmaskin (vertikal strip) ── */
+    .time-strip {
+      background: var(--ink);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+      padding: 1.2rem 0;
+      position: relative;
+      overflow: hidden;
+    }
+    .time-strip::before {
+      content: "";
+      position: absolute; inset: 0;
+      background: repeating-linear-gradient(
+        0deg,
+        transparent, transparent 28px,
+        rgba(200,160,60,.05) 28px, rgba(200,160,60,.05) 29px
+      );
+      animation: vscan 2s linear infinite;
+      pointer-events: none;
+    }
+    .time-strip::after {
+      content: "";
+      position: absolute; left: 0; right: 0;
+      height: 80px;
+      background: linear-gradient(180deg, transparent, rgba(220,180,80,.2), transparent);
+      animation: vstreak 3s ease-in-out infinite;
+      pointer-events: none;
+    }
+    @keyframes vscan {
+      from { transform: translateY(0); }
+      to   { transform: translateY(29px); }
+    }
+    @keyframes vstreak {
+      0%   { top: -80px; opacity: 0; }
+      10%  { opacity: 1; }
+      90%  { opacity: 1; }
+      100% { top: calc(100% + 80px); opacity: 0; }
+    }
+    .ts-era {
+      position: relative; z-index: 1;
+      text-align: center; flex-shrink: 0;
+    }
+    .ts-era-label {
+      display: block;
+      font-family: 'IM Fell English SC', serif;
+      font-size: .5rem; letter-spacing: .2em;
+      text-transform: uppercase; opacity: .6;
+      margin-bottom: .2rem;
+    }
+    .ts-era--past .ts-era-label { color: #c8a050; }
+    .ts-era--now  .ts-era-label { color: #7ab8d4; }
+    .ts-era--past .ts-year { font-family: 'UnifrakturMaguntia', cursive; font-size: 1rem; color: #c8a050; }
+    .ts-era--now  .ts-year { font-family: 'Source Serif 4', serif; font-size: 1rem; font-weight: 600; color: #7ab8d4; }
+    .ts-track {
+      position: relative; z-index: 1;
+      flex: 1;
+      display: flex; flex-direction: column;
+      align-items: center; justify-content: center; gap: .35rem;
+    }
+    .ts-dot {
+      width: 4px; height: 4px; border-radius: 50%;
+      background: rgba(200,160,60,.35);
+      animation: pulse-dot 1.4s ease-in-out infinite;
+    }
+    .ts-dot:nth-child(2) { animation-delay: .2s; }
+    .ts-dot:nth-child(3) { animation-delay: .4s; }
+    .ts-dot:nth-child(4) { animation-delay: .6s; }
+    .ts-dot:nth-child(5) { animation-delay: .8s; }
+    .ts-dot:nth-child(6) { animation-delay: 1s; }
+    .ts-arrow { color: #c8a050; font-size: .8rem; opacity: .7; writing-mode: vertical-lr; }
+    @keyframes pulse-dot {
+      0%, 100% { opacity: .2; transform: scale(.8); }
+      50%       { opacity: .9; transform: scale(1.3); }
+    }
+
+    /* ── Ålands Radio column (höger) ── */
+    .col-radio {
+      padding: 1.8rem 1.8rem 2.5rem;
+      background: var(--radio-paper);
+    }
+    .col-radio .col-header {
+      text-align: center;
+      padding-bottom: .8rem;
+      border-bottom: 2px solid #c8b090;
+      margin-bottom: 1.4rem;
+    }
+    .col-radio .col-name {
+      font-family: 'Source Serif 4', serif;
+      font-size: 1.15rem; font-weight: 600;
+      color: var(--radio-blue);
+      letter-spacing: .02em;
+    }
+    .col-radio .col-sub {
+      font-family: 'Source Serif 4', serif;
+      font-size: .6rem; letter-spacing: .15em;
+      color: var(--muted); text-transform: uppercase;
+      margin-top: .2rem;
+    }
+
+    .radio-headline {
+      font-family: 'Source Serif 4', serif;
+      font-size: clamp(1rem, 2.2vw, 1.25rem);
+      font-weight: 600; line-height: 1.3;
+      margin-bottom: .35rem;
+      color: var(--radio-ink);
+    }
+    .radio-byline {
+      font-family: 'Source Serif 4', serif;
+      font-size: .65rem; color: var(--muted);
+      font-style: italic; margin-bottom: .8rem;
+    }
+    .radio-body { margin-bottom: .8rem; }
+    .radio-body p {
+      font-family: 'Source Serif 4', serif;
+      font-size: .87rem; line-height: 1.72;
+      color: var(--radio-ink); margin-bottom: .65rem;
+      text-align: left;
+    }
+    .radio-source {
+      font-family: 'Source Serif 4', serif;
+      font-size: .65rem; color: var(--muted);
+      margin-bottom: 1.8rem;
+    }
+    .radio-source a {
+      color: var(--radio-blue);
+      text-decoration: none;
+    }
+    .radio-source a:hover { text-decoration: underline; }
+
+    /* ── Footer ── */
+    .footer {
+      border-top: 3px double var(--rule);
+      margin: 0;
+      padding: .8rem 2.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: .65rem;
+      color: var(--muted);
+      font-style: italic;
+      background: var(--paper);
+    }
+    .footer a { color: var(--muted); }
+
+    .tip {
+      position: relative;
+      display: inline-block;
+    }
+    .tip::after {
+      content: attr(data-tip);
+      position: absolute;
+      bottom: calc(100% + 6px);
+      right: 0;
+      background: var(--ink);
+      color: #f5ead6;
+      font-family: 'IM Fell English SC', serif;
+      font-size: .62rem;
+      font-style: normal;
+      letter-spacing: .04em;
+      white-space: nowrap;
+      padding: .35rem .6rem;
+      border-radius: 2px;
+      pointer-events: none;
+      opacity: 0;
+      transform: translateY(4px);
+      transition: opacity .15s ease, transform .15s ease;
+    }
+    .tip:hover::after {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    /* ── Mobile ── */
+    @media (max-width: 640px) {
+      .split { grid-template-columns: 1fr; }
+      .time-strip {
+        flex-direction: row;
+        height: 44px;
+        padding: 0 1rem;
+      }
+      .time-strip::before {
+        background: repeating-linear-gradient(
+          90deg, transparent, transparent 28px,
+          rgba(200,160,60,.05) 28px, rgba(200,160,60,.05) 29px
+        );
+        animation: vscan-h 2s linear infinite;
+      }
+      .time-strip::after {
+        width: 80px; height: auto; top: 0; bottom: 0; left: -80px;
+        background: linear-gradient(90deg, transparent, rgba(220,180,80,.2), transparent);
+        animation: vstreak-h 3s ease-in-out infinite;
+      }
+      @keyframes vscan-h {
+        from { transform: translateX(0); }
+        to   { transform: translateX(29px); }
+      }
+      @keyframes vstreak-h {
+        0%   { left: -80px; opacity: 0; }
+        10%  { opacity: 1; }
+        90%  { opacity: 1; }
+        100% { left: calc(100% + 80px); opacity: 0; }
+      }
+      .ts-track { flex-direction: row; }
+      .ts-arrow { writing-mode: horizontal-tb; }
+      .masthead, .footer { padding-left: 1.2rem; padding-right: 1.2rem; }
+    }
+  </style>
+</head>
+<body>
+<article class="newspaper">
+
+  <!-- ── MASTHEAD ── -->
+  <header class="masthead">
+    <p class="masthead-eyebrow">Grundad anno domini 1891</p>
+    <h1 class="masthead-title">Åland igår och idag</h1>
+    <p class="masthead-subtitle">Julius Sundblom tolkar · Ålands Radio berättar</p>
+    <div class="masthead-rule"></div>
+    <div class="masthead-dateline">
+      <span>Torsdagen den 19 mars 2026</span>
+      <span>✦ &nbsp; AI-tolkning af Julius Sundblom · originalet från Ålands Radio &nbsp; ✦</span>
+      <span>Pris: 10 penni</span>
+    </div>
+  </header>
+
+  <!-- ── SPLIT ── -->
+  <div class="split">
+
+    <!-- Julius (vänster) -->
+    <div class="col-julius">
+      <div class="col-header">
+        <div class="col-name">Julius Sundblom</div>
+        <div class="col-sub">AI-tolkning · 1920-tal</div>
+      </div>
+
+      <h2 class="julius-headline">Fler får hemvårdsstöd, färre institutionsvård</h2>
+      <div class="julius-body"><p>ÅLDRINGARNAS VÅR OCH SAMHÄLLSORDNINGENS PRÖVNING</p><p>Det är en gammal sanning, att ett folks karakter röjes i huru det vårdar sina ålderstigna. De siffror, som nu framlagts af Ålands statistik- och utredningsbyrå, gifva oss anledning till eftertanke — icke blott öfver torra tal, utan öfver hvad som rör sig i djupet af vårt samhällsväsen.</p><p>Åttiosex åldringar befinna sig vid årsskiftet inom institutionsvårdens väggar, fyra färre än föregående år. Två tredjedelar äro kvinnor — dessa som i hela sitt lif burit hemmets ok, fostrat barnen och hållit den husliga härden brinnande. Att de nu, vid krafternas aftagande, stundom måste öfvergifvas åt anstaltens opersonliga omsorg, är en tanke som aldrig borde lämna oss oberörda.</p><p>Dock skönjes en rörelse i motsatt riktning, och häri ligger ett ljus. Fyrahundrafemtiosju personer erhålla nu vård af närstående i det egna hemmet — en ökning med sextioen själar. Detta är såsom det bör vara. Familjen, icke staten, är samhällets grundval. När sonen eller dottern tager vid där föräldrarna en gång buro, när hustrun vårdar den sjuke mannen eller tvärtom, då fullbordas den naturliga ordning som våra fäder kände och som moderniteten alltför ofta hotar att upplösa.</p><p>Femhundranittiosex hushåll erhöllo hemservice — bland dem sju och sjuttio handikappade hem, sjutton fler än förut. Här visar sig samhällets barmhärtighet, rätt förstådd: icke att öfvertaga familjens plikter, utan att understödja dem som bära dem.</p><p>Att antalet barn för hvilka hemvårdsstöd utbetalats minskade med etthundrafemton under året är en uppgift som tarfvar noggrannare granskning. Månne det vittnar om ett sjunkande barnantal? Om färre mödrar som finna sig manade att i hemmet fullgöra den förnämsta af alla kallelser? Låtom oss icke vika från den insikt våra förfäder bar: att det åländska folkets oförytterliga rätt till framtiden hvilar på de barn som födas och fostras i trygghet.</p><p>Siffrorna äro blott skal; hvad som rör sig inom dem är lifsödets allvar. Må de fäderneärvda banden af plikt och omsorg förblifva starkare än byråkratiens pappersexercis.</p><p>*J.S.*</p></div>
+
+      <hr class="article-divider">
+
+      <h2 class="julius-headline">Man döms efter traktorincident i Finström</h2>
+      <div class="julius-body"><p>ETT ALLVARLIGT MENE TEKEL PÅ LANDSVÄGARNA</p><p>Det torde icke råda något tvifvel om att de mekaniserade fordonens allt talrikare förekomst på våra vägar ställer nya och stundom fruktansvärda kraf på såväl vägfarande som på den allmänna ordningens upprätthållande. Hvad som nyligen timat på Nya Godbyvägen i Finström utgör häraf ett beklagansvärt vittnesbörd.</p><p>En man hade gifvit sig ut i nattens mörker med sin traktor, oaktadt bakbelysningen å densamma befann sig i bristfälligt skick — en vårdslöshet af det slag som icke blott äfventyrar den egna lifhanken, utan tillika sätter oskyldiga medtrafikanter i allvarlig fara. Att han därtill medförde ett minderårigt barn såsom passagerare gör hans handlande än mera oförsvarligt. Den fäderneärvda plikten att skydda de små tyckes hafva vägdt lätt i denna mans sinne.</p><p>En personbil, hvars förarinna ej förmådde upptäcka det illa belysta fordonet förrän i sista stund, körde in i traktorns bakhjul. Flere personer skadades, om än icke svårt, och traktorn hamnade i diket. Tingsrätten har nu fällt sitt utslag: traktorföraren dömes till tjugutvå dagsböter, sammanlagdt etthundrasjuttiosex kronor, jämte brottsofferafgift och ersättning för rättegångskostnader. Bilförerskan, som bromsade så snart hon varseblef faran, frikändes.</p><p>Låtom oss icke vika från den grundsats som måste gälla i ett ordnat samhälle: den som tager ett fordon ut på allmän väg bär det fulla ansvaret för att detsamma är i trafikdugligt skick. Detta är icke blott en lagfråga, utan en fråga om allmän sedlighet och hänsyn till nästan. Det åländska folkets oförytterliga rätt till säkra färdvägar må icke offras åt enskild lättja eller slarfvaktighet.</p><p>Må denna dom stå som en varning.</p><p>*J.S.*</p></div>
+    </div>
+
+    <!-- Tidsmaskin -->
+    <div class="time-strip">
+      <div class="ts-era ts-era--past">
+        <span class="ts-era-label">Då</span>
+        <span class="ts-year">1920</span>
+      </div>
+      <div class="ts-track">
+        <div class="ts-dot"></div>
+        <div class="ts-dot"></div>
+        <div class="ts-dot"></div>
+        <div class="ts-dot"></div>
+        <div class="ts-dot"></div>
+        <div class="ts-dot"></div>
+        <span class="ts-arrow">›</span>
+      </div>
+      <div class="ts-era ts-era--now">
+        <span class="ts-era-label">Nu</span>
+        <span class="ts-year">2026</span>
+      </div>
+    </div>
+
+    <!-- Ålands Radio (höger) -->
+    <div class="col-radio">
+      <div class="col-header">
+        <div class="col-name">Ålands Radio</div>
+        <div class="col-sub">Originalartikeln · 2026</div>
+      </div>
+
+      <h2 class="radio-headline">Fler får hemvårdsstöd, färre institutionsvård</h2>
+      <p class="radio-byline">Fredrik Sonck</p>
+      <div class="radio-body"><p>I slutet av år 2025 fanns 86 klienter inom institutionsvården för äldre på Åland. Jämfört med 2024 är det en minskning med fyra personer. Två tredjedelar av dessa klienter är kvinnor.</p><p>Detta framgår av färsk statistik från Åsub. Statistiken berättar även att totalt 322 klienter hade boendeservice vid utgången av 2025, 31 klienter färre än 2024.</p><p>Däremot har antalet personer som får närståendevård i hemmet ökat med 61 personer till 457 personer. Hälften av dem var 65 år eller äldre.</p><p>Ytterligare 596 hushåll fick hemservice. Hemservice ges bland annat till barnfamiljer, gamla och handikapphushåll. Antalet handikapphushåll som fick hemservice ökade med 17 och landade på 77 hushåll.</p><p>Antalet barn som för vilka hemvårdsstöd betalats ut minskade med 115 barn under fjolåret.</p></div>
+      <p class="radio-source">
+        <a href="https://alandsradio.ax/nyheter/fler-far-hemvardsstod-farre-institutionsvard" target="_blank" rel="noopener">Läs originalet på Ålands Radio →</a>
+      </p>
+
+      <hr class="article-divider">
+
+      <h2 class="radio-headline">Man döms efter traktorincident i Finström</h2>
+      <p class="radio-byline">Martina Eriksson</p>
+      <div class="radio-body"><p>Ålands tingsrätt dömer en man till böter för äventyrande av trafiksäkerheten efter en trafikolycka på Nya Godbyvägen i Finström i oktober 2024.</p><p>Mannen körde en traktor trots att bakbelysningen var bristfällig, vilket gjorde fordonet svårt att upptäcka i mörkret.En personbil körde in i traktorns bakdäck. I samband med krocken skadades flera personer lindrigt, både personer som färdades i bilen och i traktorn. Mannen hade ett minderårigt barn som passagerare i traktorn. Efter sammanstötningen körde traktorn körde av vägen och hamnade i diket.</p><p>Bilföraren åtalades också för äventyrande av trafiksäkerheten, men enligt tingsrätten har hon inte brutit mot lagen.Tingsrätten konstaterar att traktorn var svår att upptäcka i mörkret och att bilföraren bromsade när hon såg den.</p><p>Traktorföraren döms till 22 dagsböter, totalt 176 euro. Han ska också betala en brottsofferavgift på 40 euro samt ersätta hälften av bilförarens rättegångskostnader.</p></div>
+      <p class="radio-source">
+        <a href="https://alandsradio.ax/nyheter/man-doms-efter-traktorincident-i-finstrom" target="_blank" rel="noopener">Läs originalet på Ålands Radio →</a>
+      </p>
+    </div>
+
+  </div>
+
+  <!-- ── FOOTER ── -->
+  <footer class="footer">
+    <span>
+      Genererad af en autonom skriftställare-maskin i Julius Sundbloms anda, Torsdagen den 19 mars 2026<br>
+      Skapad av <a href="https://blueberry.ax/" target="_blank" rel="noopener">Blueberry</a>
+      &ensp;·&ensp;
+      <a href="https://github.com/mbjorke/sundblom" target="_blank" rel="noopener">Öppen källkod på GitHub</a>
+    </span>
+    <span>
+      <a href="/arkiv/">Arkivet</a>
+      &ensp;·&ensp;
+      Buggar eller förbättringsförslag?
+      <span class="tip" data-tip="Hjälp oss träna upp Julius — det kommer finnas buggar!">
+        <a href="https://aland-1920-vs-2025.slack.com/" target="_blank" rel="noopener">Rapportera i Slack →</a>
+      </span>
+    </span>
+  </footer>
+
+</article>
+  <script>
+    /* Städa bort spårningsparametrar (fbclid, utm_*) från URL:en */
+    if (window.location.search) {
+      const p = new URLSearchParams(window.location.search);
+      ['fbclid','utm_source','utm_medium','utm_campaign','utm_term','utm_content']
+        .forEach(k => p.delete(k));
+      const q = p.toString();
+      history.replaceState(null, '', location.pathname + (q ? '?' + q : '') + location.hash);
+    }
+  </script>
+</body>
+</html>
