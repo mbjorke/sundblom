@@ -395,7 +395,7 @@ const { headline, juliusHtml, bodyHtml, author, sourceUrl, prevHref, nextHref, d
   .tap-zone {
     display: none; /* dold på desktop med hover */
   }
-  @media (hover: none) {
+  @media (hover: none), (max-width: 640px) {
     .tap-zone {
       display: block;
       position: fixed;
