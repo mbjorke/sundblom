@@ -132,6 +132,13 @@ const resolvedOgTitle = ogTitle ?? title;
   <a class="skip-link" href="#main-content">Hoppa till innehåll</a>
   <slot />
   <script>
+    /* AbortError från View Transitions är ofarlig — tystas globalt */
+    window.addEventListener('unhandledrejection', (e) => {
+      if (e.reason?.name === 'AbortError') e.preventDefault();
+    });
+  </script>
+
+  <script>
     /* Städa bort spårningsparametrar (fbclid, utm_*) från URL:en */
     if (window.location.search) {
       const p = new URLSearchParams(window.location.search);
