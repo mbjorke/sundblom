@@ -2,8 +2,9 @@ name: 🗞️ Sundbloms dagliga kommentar
 
 on:
   schedule:
-    # Kl. 16:00 UTC varje dag (= 18:00 finsk vintertid / 19:00 sommartid)
-    - cron: "0 16 * * *"
+    # Kl. 14:30 UTC = 16:30 finsk vintertid (EET/UTC+2)
+    # OBS: sommartid (EEST/UTC+3) april–okt blir det 17:30 finsk tid
+    - cron: "30 14 * * *"
 
   # Tillåt manuell körning från Actions-fliken
   workflow_dispatch:
