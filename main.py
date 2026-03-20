@@ -451,8 +451,8 @@ def publish_og_image(png_bytes: bytes) -> None:
 def main() -> None:
     log.info("═══ Åland igår och idag — daglig körning startar ═══")
 
-    # 1. Scrape de 2 översta rubrikerna
-    headlines = fetch_top_headlines(n=2)
+    # 1. Scrape upp till 20 rubriker i DOM-ordning — seen_urls filtrerar bort gamla
+    headlines = fetch_top_headlines(n=20)
 
     # 2. Ladda redan processade URLar (undviker dubbletter vid helger/högtider)
     seen_urls = load_seen_urls()
