@@ -1,0 +1,74 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Masthead from '../../components/Masthead.astro';
+import ArticleSplit from '../../components/ArticleSplit.astro';
+import { formatSwedishDate, toParagraphs, toDescription } from '../../utils/format';
+
+export async function getStaticPaths() {
+  const allArticles = await getCollection('articles');
+  // Sort newest first: idx 0 = newest, idx n-1 = oldest
+  const sorted = allArticles.sort((a, b) => b.id.localeCompare(a.id));
+
+  return sorted.map((entry, idx) => {
+    // "newer" = one step toward index 0 (more recent)
+    const newerEntry = idx > 0 ? sorted[idx - 1] : null;
+    // "older" = one step toward index n-1 (less recent)
+    const olderEntry = idx < sorted.length - 1 ? sorted[idx + 1] : null;
+
+    // If newerEntry is index 0 (the latest), link to home instead of /arkiv/slug
+    const nextHref = idx === 1
+      ? '/'
+      : newerEntry
+        ? `/arkiv/${newerEntry.data.slug}`
+        : null;
+
+    const prevHref = olderEntry ? `/arkiv/${olderEntry.data.slug}` : null;
+
+    return {
+      params: { slug: entry.data.slug },
+      props: { entry, prevHref, nextHref },
+    };
+  });
+}
+
+const { entry, prevHref, nextHref } = Astro.props;
+const article = entry.data;
+
+const dateLabel = formatSwedishDate(article.date);
+const juliusHtml = toParagraphs(article.julius_text);
+const bodyHtml = article.body
+  ? toParagraphs(article.body)
+  : '<p>Artikelinnehåll ej tillgängligt — besök Ålands Radio för att läsa originalet.</p>';
+const description = toDescription(article.julius_text);
+---
+
+<BaseLayout
+  title={`${article.headline} — Åland igår och idag`}
+  description={description}
+  dateIso={article.date}
+>
+  <div class="newspaper" role="document" aria-label="Åland igår och idag">
+    <Masthead dateLabel={dateLabel} />
+    <ArticleSplit
+      headline={article.headline}
+      juliusHtml={juliusHtml}
+      bodyHtml={bodyHtml}
+      author={article.author || 'Ålands Radio'}
+      sourceUrl={article.source_url}
+      prevHref={prevHref}
+      nextHref={nextHref}
+      dateLabel={dateLabel}
+    />
+  </div>
+</BaseLayout>
+
+<style>
+  .newspaper {
+    position: relative; z-index: 1;
+    background: var(--paper);
+    max-width: 1060px;
+    width: 100%;
+    box-shadow: 0 2px 4px rgba(0,0,0,.15), 0 8px 32px rgba(0,0,0,.25);
+  }
+</style>

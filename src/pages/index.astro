@@ -1,0 +1,59 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Masthead from '../components/Masthead.astro';
+import ArticleSplit from '../components/ArticleSplit.astro';
+import { formatSwedishDate, toParagraphs, toDescription } from '../utils/format';
+
+// Sort articles newest first (stem = YYYY-MM-DD-slug → alphabetic sort works)
+const allArticles = await getCollection('articles');
+const sorted = allArticles.sort((a, b) => b.id.localeCompare(a.id));
+
+if (sorted.length === 0) {
+  throw new Error('No articles found in src/content/articles/');
+}
+
+const article = sorted[0].data;
+const nextArticle = sorted[1]?.data ?? null;
+
+const dateLabel = formatSwedishDate(article.date);
+const juliusHtml = toParagraphs(article.julius_text);
+const bodyHtml = article.body
+  ? toParagraphs(article.body)
+  : '<p>Artikelinnehåll ej tillgängligt — besök Ålands Radio för att läsa originalet.</p>';
+const description = toDescription(article.julius_text);
+
+// Nav: no "newer" from index (this IS the latest); "older" = second article
+const prevHref = nextArticle ? `/arkiv/${nextArticle.slug}` : null;
+const nextHref = null; // already on newest
+---
+
+<BaseLayout
+  title={`${article.headline} — Åland igår och idag`}
+  description={description}
+  dateIso={article.date}
+>
+  <div class="newspaper" role="document" aria-label="Åland igår och idag">
+    <Masthead dateLabel={dateLabel} />
+    <ArticleSplit
+      headline={article.headline}
+      juliusHtml={juliusHtml}
+      bodyHtml={bodyHtml}
+      author={article.author || 'Ålands Radio'}
+      sourceUrl={article.source_url}
+      prevHref={prevHref}
+      nextHref={nextHref}
+      dateLabel={dateLabel}
+    />
+  </div>
+</BaseLayout>
+
+<style>
+  .newspaper {
+    position: relative; z-index: 1;
+    background: var(--paper);
+    max-width: 1060px;
+    width: 100%;
+    box-shadow: 0 2px 4px rgba(0,0,0,.15), 0 8px 32px rgba(0,0,0,.25);
+  }
+</style>

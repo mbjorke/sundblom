@@ -1,0 +1,145 @@
+---
+import { ViewTransitions } from 'astro:transitions';
+
+interface Props {
+  title: string;
+  description?: string;
+  ogTitle?: string;
+  dateIso?: string;
+}
+
+const { title, description = '', ogTitle, dateIso } = Astro.props;
+const resolvedOgTitle = ogTitle ?? title;
+---
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>{title}</title>
+  {description && <meta name="description" content={description} />}
+
+  <!-- Open Graph / länkförhandsvisning -->
+  <meta property="og:title" content={resolvedOgTitle} />
+  {description && <meta property="og:description" content={description} />}
+  <meta property="og:image" content="https://sundblom.pages.dev/og-image.png" />
+  <meta property="og:url" content="https://sundblom.pages.dev" />
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="sv_FI" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:image" content="https://sundblom.pages.dev/og-image.png" />
+
+  {dateIso && (
+    <script type="application/ld+json" set:html={JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "NewsArticle",
+      "headline": resolvedOgTitle,
+      "datePublished": dateIso,
+      "inLanguage": "sv",
+      "publisher": {
+        "@type": "Organization",
+        "name": "Åland igår och idag",
+        "url": "https://nudå.ax"
+      },
+      "about": {
+        "@type": "Thing",
+        "name": "Åland"
+      }
+    })} />
+  )}
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <!-- Ladda fonter icke-blockerande -->
+  <link
+    rel="preload"
+    as="style"
+    href="https://fonts.googleapis.com/css2?family=IM+Fell+English:ital@0;1&family=UnifrakturMaguntia&family=IM+Fell+English+SC&family=Source+Serif+4:ital,wght@0,400;0,600;1,400&display=swap"
+    onload="this.onload=null;this.rel='stylesheet'"
+  />
+  <noscript>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=IM+Fell+English:ital@0;1&family=UnifrakturMaguntia&family=IM+Fell+English+SC&family=Source+Serif+4:ital,wght@0,400;0,600;1,400&display=swap"
+    />
+  </noscript>
+
+  <ViewTransitions />
+
+  <style>
+    /* Mjuka sidövergångar */
+    ::view-transition-old(root) { animation-duration: 0.15s; }
+    ::view-transition-new(root) { animation-duration: 0.15s; }
+
+    :root {
+      --ink:        #1a1207;
+      --paper:      #f5ead6;
+      --rule:       #5c3d1a;
+      --muted:      #5a4232;
+      --accent:     #8b1a1a;
+      --radio-ink:  #1a1a1a;
+      --radio-blue: #004d72;
+      --radio-paper:#f8f5f0;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    /* ── Hoppa till innehåll (skip link) ── */
+    .skip-link {
+      position: absolute;
+      top: -100%;
+      left: 1rem;
+      background: var(--ink);
+      color: var(--paper);
+      padding: .5rem 1rem;
+      font-family: 'IM Fell English SC', serif;
+      font-size: .85rem;
+      letter-spacing: .05em;
+      z-index: 9999;
+      text-decoration: none;
+      border-radius: 0 0 4px 4px;
+      transition: top .15s ease;
+    }
+    .skip-link:focus { top: 0; }
+
+    /* ── Fokussynlighet ── */
+    :focus-visible {
+      outline: 2px solid var(--accent);
+      outline-offset: 3px;
+      border-radius: 2px;
+    }
+
+    body {
+      background: #d9c9a8;
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      padding: 2rem 1rem 4rem;
+      font-family: 'IM Fell English', Georgia, serif;
+      color: var(--ink);
+    }
+
+    body::before {
+      content: "";
+      position: fixed; inset: 0;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.75' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='300' height='300' filter='url(%23n)' opacity='0.04'/%3E%3C/svg%3E");
+      pointer-events: none; z-index: 0;
+    }
+  </style>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Hoppa till innehåll</a>
+  <slot />
+  <script>
+    /* Städa bort spårningsparametrar (fbclid, utm_*) från URL:en */
+    if (window.location.search) {
+      const p = new URLSearchParams(window.location.search);
+      ['fbclid','utm_source','utm_medium','utm_campaign','utm_term','utm_content']
+        .forEach(k => p.delete(k));
+      const q = p.toString();
+      history.replaceState(null, '', location.pathname + (q ? '?' + q : '') + location.hash);
+    }
+  </script>
+</body>
+</html>

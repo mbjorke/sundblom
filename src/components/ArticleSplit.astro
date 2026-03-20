@@ -1,0 +1,425 @@
+---
+interface Props {
+  headline: string;
+  juliusHtml: string;
+  bodyHtml: string;
+  author: string;
+  sourceUrl: string;
+  prevHref: string | null;
+  nextHref: string | null;
+  dateLabel: string;
+}
+
+const { headline, juliusHtml, bodyHtml, author, sourceUrl, prevHref, nextHref, dateLabel } = Astro.props;
+---
+
+<main id="main-content" class="split" aria-label="Artikeln">
+
+  <!-- Julius (vänster) -->
+  <div class="col-julius">
+    {prevHref && (
+      <a class="col-nav-overlay" href={prevHref} aria-label="Äldre utgåva">
+        <span class="col-nav-arrow">‹</span>
+      </a>
+    )}
+    <div class="col-header">
+      <div class="col-name">Julius Sundblom</div>
+      <div class="col-sub">AI-tolkning · 1920-tal</div>
+    </div>
+    <h2 class="julius-headline">{headline}</h2>
+    <div class="julius-body" set:html={juliusHtml} />
+  </div>
+
+  <!-- Tidsmaskin (dekorativ) -->
+  <div class="time-strip" aria-hidden="true">
+    <div class="ts-era ts-era--past">
+      <span class="ts-era-label">Då</span>
+      <span class="ts-year">1920</span>
+    </div>
+    <div class="ts-track">
+      <div class="ts-dot"></div>
+      <div class="ts-dot"></div>
+      <div class="ts-dot"></div>
+      <div class="ts-dot"></div>
+      <div class="ts-dot"></div>
+      <div class="ts-dot"></div>
+      <span class="ts-arrow">›</span>
+    </div>
+    <div class="ts-era ts-era--now">
+      <span class="ts-era-label">Nu</span>
+      <span class="ts-year">{new Date().getFullYear()}</span>
+    </div>
+  </div>
+
+  <!-- Ålands Radio (höger) -->
+  <div class="col-radio">
+    {nextHref && (
+      <a class="col-nav-overlay" href={nextHref} aria-label="Nyare utgåva">
+        <span class="col-nav-arrow">›</span>
+      </a>
+    )}
+    <div class="col-header">
+      <div class="col-name">Ålands Radio</div>
+      <div class="col-sub">Originalartikeln · {new Date().getFullYear()}</div>
+    </div>
+    <h2 class="radio-headline">{headline}</h2>
+    <p class="radio-byline">{author}</p>
+    <div class="radio-body" set:html={bodyHtml} />
+  </div>
+
+</main>
+
+<!-- Källlänk under split -->
+<div class="article-source">
+  <a href={sourceUrl} target="_blank" rel="noopener">Läs originalet på Ålands Radio →</a>
+</div>
+
+<!-- Navigering mellan utgåvor — alltid synlig -->
+<nav class="mobile-nav" aria-label="Bläddra mellan utgåvor">
+  {prevHref
+    ? <a href={prevHref} aria-label="Äldre utgåva" class="ready">← Äldre</a>
+    : <span class="disabled">← Äldre</span>
+  }
+  {nextHref
+    ? <a href={nextHref} aria-label="Nyare utgåva" class="ready">Nyare →</a>
+    : <span class="disabled">Nyare →</span>
+  }
+</nav>
+
+<!-- Footer -->
+<footer class="footer">
+  <span>
+    Genererad af en autonom skriftställare-maskin i Julius Sundbloms anda, {dateLabel}<br />
+    Skapad av <a href="https://blueberry.ax/" target="_blank" rel="noopener">Blueberry</a>
+    &ensp;·&ensp;
+    <a href="https://github.com/mbjorke/sundblom" target="_blank" rel="noopener">Öppen källkod på GitHub</a>
+  </span>
+  <span>
+    <a href="/arkiv/">Arkivet</a>
+    &ensp;·&ensp;
+    <a href="/tillganglighet/">Tillgänglighet</a>
+    &ensp;·&ensp;
+    Buggar eller förbättringsförslag?
+    <span class="tip" data-tip="Hjälp oss träna upp Julius — det kommer finnas buggar!">
+      <a href="https://aland-1920-vs-2025.slack.com/" target="_blank" rel="noopener">Rapportera i Slack →</a>
+    </span>
+  </span>
+</footer>
+
+<style>
+  /* ── Split layout ── */
+  .split {
+    display: grid;
+    grid-template-columns: 1fr 44px 1fr;
+    min-height: 400px;
+  }
+
+  /* ── Julius column (vänster) ── */
+  .col-julius {
+    padding: 1.8rem 1.8rem 2.5rem;
+    background: var(--paper);
+    position: relative;
+  }
+  .col-julius .col-header {
+    text-align: center;
+    padding-bottom: .8rem;
+    border-bottom: 2px double var(--rule);
+    margin-bottom: 1.4rem;
+  }
+  .col-julius .col-name {
+    font-family: 'UnifrakturMaguntia', cursive;
+    font-size: 1.3rem; color: var(--ink);
+  }
+  .col-julius .col-sub {
+    font-family: 'IM Fell English SC', serif;
+    font-size: .85rem; letter-spacing: .2em;
+    color: var(--muted); text-transform: uppercase;
+    margin-top: .2rem;
+  }
+
+  .julius-headline {
+    font-family: 'IM Fell English', Georgia, serif;
+    font-size: clamp(1rem, 2.2vw, 1.3rem);
+    font-weight: normal; line-height: 1.3;
+    text-align: center; margin-bottom: .5rem;
+  }
+  .julius-body { margin-bottom: 1.8rem; }
+  .julius-body :global(p) {
+    font-size: .85rem; line-height: 1.75;
+    text-align: justify; hyphens: auto; margin-bottom: .65rem;
+  }
+  .julius-body :global(p:first-child::first-letter) {
+    font-family: 'UnifrakturMaguntia', cursive;
+    font-size: 3.2rem; line-height: .75;
+    float: left; margin: .05em .1em -.05em 0;
+    color: var(--accent);
+  }
+  .julius-body :global(p:last-child) {
+    text-align: right; font-style: italic; color: var(--muted);
+  }
+
+  /* ── Tidsmaskin (vertikal strip) ── */
+  .time-strip {
+    background: var(--ink);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.2rem 0;
+    position: relative;
+    overflow: hidden;
+  }
+  .time-strip::before {
+    content: "";
+    position: absolute; inset: 0;
+    background: repeating-linear-gradient(
+      0deg,
+      transparent, transparent 28px,
+      rgba(200,160,60,.05) 28px, rgba(200,160,60,.05) 29px
+    );
+    animation: vscan 2s linear infinite;
+    pointer-events: none;
+  }
+  .time-strip::after {
+    content: "";
+    position: absolute; left: 0; right: 0;
+    height: 80px;
+    background: linear-gradient(180deg, transparent, rgba(220,180,80,.2), transparent);
+    animation: vstreak 3s ease-in-out infinite;
+    pointer-events: none;
+  }
+  @keyframes vscan {
+    from { transform: translateY(0); }
+    to   { transform: translateY(29px); }
+  }
+  @keyframes vstreak {
+    0%   { top: -80px; opacity: 0; }
+    10%  { opacity: 1; }
+    90%  { opacity: 1; }
+    100% { top: calc(100% + 80px); opacity: 0; }
+  }
+  .ts-era {
+    position: relative; z-index: 1;
+    text-align: center; flex-shrink: 0;
+  }
+  .ts-era-label {
+    display: block;
+    font-family: 'IM Fell English SC', serif;
+    font-size: .85rem; letter-spacing: .2em;
+    text-transform: uppercase; opacity: .6;
+    margin-bottom: .2rem;
+  }
+  .ts-era--past .ts-era-label { color: #c8a050; }
+  .ts-era--now  .ts-era-label { color: #7ab8d4; }
+  .ts-era--past .ts-year { font-family: 'UnifrakturMaguntia', cursive; font-size: 1rem; color: #c8a050; }
+  .ts-era--now  .ts-year { font-family: 'Source Serif 4', serif; font-size: 1rem; font-weight: 600; color: #7ab8d4; }
+  .ts-track {
+    position: relative; z-index: 1;
+    flex: 1;
+    display: flex; flex-direction: column;
+    align-items: center; justify-content: center; gap: .35rem;
+  }
+  .ts-dot {
+    width: 4px; height: 4px; border-radius: 50%;
+    background: rgba(200,160,60,.35);
+    animation: pulse-dot 1.4s ease-in-out infinite;
+  }
+  .ts-dot:nth-child(2) { animation-delay: .2s; }
+  .ts-dot:nth-child(3) { animation-delay: .4s; }
+  .ts-dot:nth-child(4) { animation-delay: .6s; }
+  .ts-dot:nth-child(5) { animation-delay: .8s; }
+  .ts-dot:nth-child(6) { animation-delay: 1s; }
+  .ts-arrow { color: #c8a050; font-size: .85rem; opacity: .7; writing-mode: vertical-lr; }
+  @keyframes pulse-dot {
+    0%, 100% { opacity: .2; transform: scale(.8); }
+    50%       { opacity: .9; transform: scale(1.3); }
+  }
+
+  /* ── Ålands Radio column (höger) ── */
+  .col-radio {
+    padding: 1.8rem 1.8rem 2.5rem;
+    background: var(--radio-paper);
+    position: relative;
+  }
+  .col-radio .col-header {
+    text-align: center;
+    padding-bottom: .8rem;
+    border-bottom: 2px solid #c8b090;
+    margin-bottom: 1.4rem;
+  }
+  .col-radio .col-name {
+    font-family: 'Source Serif 4', serif;
+    font-size: 1.15rem; font-weight: 600;
+    color: var(--radio-blue);
+    letter-spacing: .02em;
+  }
+  .col-radio .col-sub {
+    font-family: 'Source Serif 4', serif;
+    font-size: .85rem; letter-spacing: .15em;
+    color: var(--muted); text-transform: uppercase;
+    margin-top: .2rem;
+  }
+
+  .radio-headline {
+    font-family: 'Source Serif 4', serif;
+    font-size: clamp(1rem, 2.2vw, 1.25rem);
+    font-weight: 600; line-height: 1.3;
+    margin-bottom: .35rem;
+    color: var(--radio-ink);
+  }
+  .radio-byline {
+    font-family: 'Source Serif 4', serif;
+    font-size: .85rem; color: var(--muted);
+    font-style: italic; margin-bottom: .8rem;
+  }
+  .radio-body { margin-bottom: .8rem; }
+  .radio-body :global(p) {
+    font-family: 'Source Serif 4', serif;
+    font-size: .87rem; line-height: 1.72;
+    color: var(--radio-ink); margin-bottom: .65rem;
+    text-align: left;
+  }
+
+  /* ── Kolumnnavigering ── */
+  .col-nav-overlay {
+    position: absolute;
+    inset: 0;
+    z-index: 2;
+    display: block;
+    text-decoration: none;
+    opacity: 0;
+    transition: opacity 0.35s ease, background 0.35s ease;
+  }
+  .col-nav-overlay:hover {
+    opacity: 1;
+  }
+  .col-julius .col-nav-overlay {
+    background: linear-gradient(to right, rgba(92,61,26,.07), transparent 60%);
+  }
+  .col-radio .col-nav-overlay {
+    background: linear-gradient(to left, rgba(0,95,138,.06), transparent 60%);
+  }
+  .col-nav-overlay .col-nav-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-family: 'IM Fell English', Georgia, serif;
+    font-size: 3rem;
+    color: var(--rule);
+    opacity: 0.5;
+    user-select: none;
+    line-height: 1;
+  }
+  .col-julius .col-nav-arrow { left: .8rem; }
+  .col-radio  .col-nav-arrow { right: .8rem; }
+
+  /* Links inside columns stay above overlay */
+  .col-julius a:not(.col-nav-overlay), .col-radio a:not(.col-nav-overlay) { position: relative; z-index: 3; }
+
+  /* Källlänk under split */
+  .article-source {
+    border-top: 1px solid #c8b090;
+    padding: .5rem 1.8rem;
+    text-align: right;
+    font-family: 'Source Serif 4', serif;
+    font-size: .85rem;
+    color: var(--muted);
+    background: var(--radio-paper);
+  }
+  .article-source a { color: var(--radio-blue); text-decoration: none; }
+  .article-source a:hover { text-decoration: underline; }
+
+  /* ── Nav mellan utgåvor ── */
+  .mobile-nav {
+    display: flex;
+    justify-content: space-between;
+    padding: .7rem 2.5rem;
+    border-top: 1px solid #c8b090;
+    background: var(--paper);
+    font-family: 'IM Fell English SC', serif;
+    font-size: .85rem;
+    letter-spacing: .1em;
+  }
+  .mobile-nav a { color: var(--ink); text-decoration: none; transition: color .2s; }
+  .mobile-nav a:hover { color: var(--accent); }
+  .mobile-nav .disabled { color: var(--muted); }
+
+  /* ── Footer ── */
+  .footer {
+    border-top: 3px double var(--rule);
+    margin: 0;
+    padding: .8rem 2.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: .85rem;
+    color: var(--muted);
+    font-style: italic;
+    background: var(--paper);
+  }
+  .footer a { color: var(--muted); }
+
+  .tip {
+    position: relative;
+    display: inline-block;
+  }
+  .tip::after {
+    content: attr(data-tip);
+    position: absolute;
+    bottom: calc(100% + 6px);
+    right: 0;
+    background: var(--ink);
+    color: #f5ead6;
+    font-family: 'IM Fell English SC', serif;
+    font-size: .85rem;
+    font-style: normal;
+    letter-spacing: .04em;
+    white-space: nowrap;
+    padding: .35rem .6rem;
+    border-radius: 2px;
+    pointer-events: none;
+    opacity: 0;
+    transform: translateY(4px);
+    transition: opacity .15s ease, transform .15s ease;
+  }
+  .tip:hover::after {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  /* ── Mobile ── */
+  @media (max-width: 640px) {
+    .split { grid-template-columns: 1fr; }
+    .time-strip {
+      flex-direction: row;
+      height: 44px;
+      padding: 0 1rem;
+    }
+    .time-strip::before {
+      background: repeating-linear-gradient(
+        90deg, transparent, transparent 28px,
+        rgba(200,160,60,.05) 28px, rgba(200,160,60,.05) 29px
+      );
+      animation: vscan-h 2s linear infinite;
+    }
+    .time-strip::after {
+      width: 80px; height: auto; top: 0; bottom: 0; left: -80px;
+      background: linear-gradient(90deg, transparent, rgba(220,180,80,.2), transparent);
+      animation: vstreak-h 3s ease-in-out infinite;
+    }
+    @keyframes vscan-h {
+      from { transform: translateX(0); }
+      to   { transform: translateX(29px); }
+    }
+    @keyframes vstreak-h {
+      0%   { left: -80px; opacity: 0; }
+      10%  { opacity: 1; }
+      90%  { opacity: 1; }
+      100% { left: calc(100% + 80px); opacity: 0; }
+    }
+    .ts-track { flex-direction: row; }
+    .ts-arrow { writing-mode: horizontal-tb; }
+    .footer { padding-left: 1.2rem; padding-right: 1.2rem; flex-direction: column; gap: .5rem; }
+    .mobile-nav { padding-left: 1.2rem; padding-right: 1.2rem; }
+  }
+</style>
