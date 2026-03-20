@@ -284,7 +284,7 @@ const { headline, juliusHtml, bodyHtml, author, sourceUrl, prevHref, nextHref, d
     text-align: left;
   }
 
-  /* ── Kolumnnavigering ── */
+  /* ── Kolumnnavigering (bara desktop med hover) ── */
   .col-nav-overlay {
     position: absolute;
     inset: 0;
@@ -296,6 +296,9 @@ const { headline, juliusHtml, bodyHtml, author, sourceUrl, prevHref, nextHref, d
   }
   .col-nav-overlay:hover {
     opacity: 1;
+  }
+  @media (hover: none), (max-width: 640px) {
+    .col-nav-overlay { display: none; }
   }
   .col-julius .col-nav-overlay {
     background: linear-gradient(to right, rgba(92,61,26,.07), transparent 60%);
