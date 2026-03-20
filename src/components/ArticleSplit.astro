@@ -93,10 +93,14 @@ const { headline, juliusHtml, bodyHtml, author, sourceUrl, prevHref, nextHref, d
 {nextHref && <span class="tap-zone tap-zone--next" aria-hidden="true" />}
 
 <script>
-  // Kindle-stil tapnavigering — läser alltid från DOM så View Transitions
-  // inte lämnar kvar gamla href-värden i en closure.
+  import { navigate } from 'astro:transitions/client';
+
+  // Kindle-stil tapnavigering.
+  // Körs på touch-enheter (maxTouchPoints > 0) ELLER smalt viewport (≤768px).
+  // Avfyras inte om användaren trycker på en länk/knapp eller markerar text.
   function onTap(e) {
-    if (!window.matchMedia('(hover: none), (max-width: 640px)').matches) return;
+    const isTouch = navigator.maxTouchPoints > 0 || window.innerWidth <= 768;
+    if (!isTouch) return;
     if (e.target.closest('a, button, input, select, textarea')) return;
     const sel = window.getSelection();
     if (sel && sel.toString().length > 0) return;
@@ -106,10 +110,9 @@ const { headline, juliusHtml, bodyHtml, author, sourceUrl, prevHref, nextHref, d
     const href = e.clientX < window.innerWidth / 2
       ? main.dataset.prev
       : main.dataset.next;
-    if (href) window.location.href = href;
+    if (href) navigate(href);
   }
 
-  // Lägg till lyssnare en gång och behåll den över View Transitions
   document.addEventListener('click', onTap);
 </script>
 
