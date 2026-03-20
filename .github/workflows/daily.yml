@@ -30,15 +30,11 @@ jobs:
           python-version: "3.11"
           cache: "pip"
 
-      # 3. Installera beroenden
-      - name: Installera beroenden
+      # 3. Installera Python-beroenden
+      - name: Installera Python-beroenden
         run: pip install -r requirements.txt
 
-      # 3b. Installera Playwright + Chromium (för OG-skärmdump)
-      - name: Installera Playwright Chromium
-        run: playwright install chromium --with-deps
-
-      # 4. Kör generatorn
+      # 4. Kör generatorn (skriver JSON till src/content/articles/)
       - name: Kör Sundbloms generator
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
@@ -46,12 +42,3 @@ jobs:
           GITHUB_REPO:       ${{ github.repository }}
           GITHUB_BRANCH:     ${{ github.ref_name }}
         run: python main.py
-
-      # 5. Spara index.html som artefakt (för felsökning)
-      - name: Spara HTML-artefakt
-        if: always()
-        uses: actions/upload-artifact@v4
-        with:
-          name: sundblom-${{ github.run_id }}
-          path: index.html
-          retention-days: 30

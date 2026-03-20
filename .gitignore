@@ -1,5 +1,14 @@
+# Python
 __pycache__/
 *.py[cod]
 *.pyc
 .env
 .env.*
+
+# Node / Bun
+node_modules/
+bun.lockb
+
+# Astro build output
+dist/
+.astro/

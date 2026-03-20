@@ -4,6 +4,11 @@
 Hämtar senaste nytt från Ålands Radio.
 Vänster kolumn: Julius Sundbloms AI-tolkning (1920-tal).
 Höger kolumn: Originalartikeln från Ålands Radio.
+
+Ny arkitektur (Astro-rebuild):
+  - Skriver artikel-data som JSON till src/content/articles/YYYY-MM-DD-slug.json
+  - Astro bygger statisk HTML från JSON-filerna vid deployment
+  - Cloudflare Pages kör `bun run build` automatiskt
 """
 
 import os
@@ -29,8 +34,6 @@ log = logging.getLogger(__name__)
 # ── Constants ─────────────────────────────────────────────────────────────────
 ALANDS_RADIO_URL = "https://alandsradio.ax/nyheter"
 GITHUB_API_BASE  = "https://api.github.com"
-OUTPUT_HTML      = "index.html"
-TEMPLATE_FILE    = os.path.join(os.path.dirname(__file__), "template.html")
 
 # ── GitHub config (from env) ───────────────────────────────────────────────
 GITHUB_TOKEN  = os.environ.get("GITHUB_TOKEN", "")
@@ -42,21 +45,6 @@ ANTHROPIC_KEY = os.environ.get("ANTHROPIC_API_KEY", "")
 # ─────────────────────────────────────────────────────────────────────────────
 # 1. SCRAPE
 # ─────────────────────────────────────────────────────────────────────────────
-
-def _article_is_hero(h2) -> bool:
-    """
-    Hero-artiklar: bild ovanför text → layoutdiv direkt under <article> har flex-col men ej flex-row.
-    List-kort: bild åt sidan → layoutdiv har flex-row.
-    """
-    article = h2.find_parent("article")
-    if article is None:
-        return False
-    layout_div = article.find("div", recursive=False)
-    if layout_div is None:
-        return False
-    classes = " ".join(layout_div.get("class", []))
-    return "flex-row" not in classes
-
 
 def fetch_article_body(url: str) -> tuple[str, str]:
     """
@@ -285,55 +273,7 @@ def generate_sundblom(headline: str, source_url: str, body: str = "") -> str:
 
 
 # ─────────────────────────────────────────────────────────────────────────────
-# 3. FORMAT
-# ─────────────────────────────────────────────────────────────────────────────
-
-def _to_paragraphs(text: str) -> str:
-    return "".join(
-        f"<p>{p.strip()}</p>"
-        for p in text.split("\n\n")
-        if p.strip()
-    )
-
-
-def render_html(headline: str, url: str, julius_text: str, body: str, author: str,
-                date_override: str = "") -> str:
-    """
-    Bäddar in en artikel i HTML-mallen.
-    date_override: ISO-datum (YYYY-MM-DD) om annat än dagens datum ska användas.
-    """
-    today    = datetime.date.fromisoformat(date_override) if date_override else datetime.date.today()
-    weekdays = ["Måndagen","Tisdagen","Onsdagen","Torsdagen","Fredagen","Lördagen","Söndagen"]
-    months   = ["","januari","februari","mars","april","maj","juni",
-                "juli","augusti","september","oktober","november","december"]
-    date_str = f"{weekdays[today.weekday()]} den {today.day} {months[today.month]} {today.year}"
-
-    # Fallback om ingen text hittades
-    if not body:
-        body = "Artikelinnehåll ej tillgängligt — besök Ålands Radio för att läsa originalet."
-
-    author_display = author if author else "Ålands Radio"
-
-    with open(TEMPLATE_FILE, encoding="utf-8") as f:
-        template = f.read()
-
-    # Bygg meta-beskrivning ur de första ~155 tecknen av Julius-texten
-    first_para = julius_text.split("\n\n")[0].strip() if julius_text else ""
-    description = (first_para[:152] + "…") if len(first_para) > 155 else first_para
-
-    return (template
-            .replace("{{DATE}}", date_str)
-            .replace("{{DATE_ISO}}", today.isoformat())
-            .replace("{{HEADLINE_1}}", headline)
-            .replace("{{DESCRIPTION}}", description)
-            .replace("{{JULIUS_1}}", _to_paragraphs(julius_text))
-            .replace("{{ORIGINAL_1}}", _to_paragraphs(body))
-            .replace("{{AUTHOR_1}}", author_display)
-            .replace("{{SOURCE_URL_1}}", url))
-
-
-# ─────────────────────────────────────────────────────────────────────────────
-# 4. PUBLICERA via GitHub API
+# 3. SLUG
 # ─────────────────────────────────────────────────────────────────────────────
 
 def slugify(text: str, max_length: int = 60) -> str:
@@ -350,7 +290,12 @@ def slugify(text: str, max_length: int = 60) -> str:
     text = re.sub(r'[\s-]+', '-', text).strip('-')
     return text[:max_length].rstrip('-')
 
-def _push_file(path: str, html_content: str, commit_message: str) -> str:
+
+# ─────────────────────────────────────────────────────────────────────────────
+# 4. PUBLICERA via GitHub API
+# ─────────────────────────────────────────────────────────────────────────────
+
+def _push_file(path: str, content: str, commit_message: str) -> str:
     """Pushar en fil till repot via REST API. Returnerar html_url."""
     if not GITHUB_TOKEN or not GITHUB_REPO:
         raise EnvironmentError("GITHUB_TOKEN eller GITHUB_REPO saknas.")
@@ -374,7 +319,7 @@ def _push_file(path: str, html_content: str, commit_message: str) -> str:
 
     payload: dict = {
         "message": commit_message,
-        "content": base64.b64encode(html_content.encode("utf-8")).decode("ascii"),
+        "content": base64.b64encode(content.encode("utf-8")).decode("ascii"),
         "branch": GITHUB_BRANCH,
     }
     if sha:
@@ -445,255 +390,29 @@ def save_seen_url(url: str, headline: str, date_iso: str) -> None:
     log.info("URL sparad i seen-urls.json: %s", url)
 
 
-def publish_to_github(html_content: str) -> None:
-    """Pushar index.html till GitHub Pages."""
-    today = datetime.date.today().isoformat()
-    _push_file(OUTPUT_HTML, html_content, f"🗞️ Åland igår och idag {today}")
-
-
-def publish_archive_entry(html_content: str, headline: str = "",
-                          date_override: str = "") -> None:
-    """Sparar dagens artikel med beskrivande URL: arkiv/YYYY-MM-DD-slug.html"""
-    today = date_override if date_override else datetime.date.today().isoformat()
-    slug = slugify(headline) if headline else ""
-    path = f"arkiv/{today}-{slug}.html" if slug else f"arkiv/{today}.html"
-    _push_file(path, html_content, f"📁 Arkiverar {today}: {headline[:50]}")
-
-
-def generate_manifest() -> None:
-    """Bygger arkiv/manifest.json med alla utgåvor, sorterade nyast först."""
-    if not GITHUB_TOKEN or not GITHUB_REPO:
-        raise EnvironmentError("GITHUB_TOKEN eller GITHUB_REPO saknas.")
-
-    headers = {
-        "Authorization": f"Bearer {GITHUB_TOKEN}",
-        "Accept": "application/vnd.github+json",
-        "X-GitHub-Api-Version": "2022-11-28",
+def save_article_json(headline: str, julius_text: str, body: str, author: str,
+                      source_url: str, date_iso: str, slug: str) -> None:
+    """
+    Pushar artikel-data som JSON till src/content/articles/YYYY-MM-DD-slug.json.
+    Astro läser dessa filer och bygger statisk HTML vid deployment.
+    """
+    path = f"src/content/articles/{date_iso}-{slug}.json"
+    article = {
+        "headline": headline,
+        "julius_text": julius_text,
+        "body": body,
+        "author": author or "Ålands Radio",
+        "source_url": source_url,
+        "date": date_iso,
+        "slug": slug,
     }
-    list_url = f"{GITHUB_API_BASE}/repos/{GITHUB_REPO}/contents/arkiv"
-    resp = requests.get(list_url, headers=headers, params={"ref": GITHUB_BRANCH})
-
-    raw = []  # list of (date_iso, slug, stem)
-    if resp.status_code == 200:
-        for item in resp.json():
-            name = item.get("name", "")
-            if name.endswith(".html") and name != "index.html":
-                stem = name[:-5]
-                date_iso = stem[:10]
-                slug = stem[11:] if len(stem) > 10 else ""
-                raw.append((date_iso, slug, stem))
-    elif resp.status_code != 404:
-        resp.raise_for_status()
-
-    # Sortera nyast först — alla artiklar visas, flera per dag möjligt
-    entries = sorted(
-        [(d, s, st) for d, s, st in raw if s],  # bara slug-versioner
-        key=lambda x: x[2],  # stem = YYYY-MM-DD-slug → alfabetisk = kronologisk
-        reverse=True,
-    )
-
-    manifest = [
-        {
-            "stem": stem,
-            "date": date_iso,
-            "headline": slug.replace("-", " ").capitalize(),
-        }
-        for date_iso, slug, stem in entries
-    ]
-
-    manifest_json = json.dumps(manifest, ensure_ascii=False, indent=2)
-    _push_file("arkiv/manifest.json", manifest_json, f"🗂️ Uppdaterar manifest.json ({len(manifest)} utgåvor)")
-    log.info("manifest.json genererat med %d poster.", len(manifest))
-
-
-def rebuild_archive_index() -> None:
-    """Hämtar alla arkivfiler och publicerar en uppdaterad arkivindex-sida."""
-    if not GITHUB_TOKEN or not GITHUB_REPO:
-        raise EnvironmentError("GITHUB_TOKEN eller GITHUB_REPO saknas.")
-
-    headers = {
-        "Authorization": f"Bearer {GITHUB_TOKEN}",
-        "Accept": "application/vnd.github+json",
-        "X-GitHub-Api-Version": "2022-11-28",
-    }
-    list_url = f"{GITHUB_API_BASE}/repos/{GITHUB_REPO}/contents/arkiv"
-    resp = requests.get(list_url, headers=headers, params={"ref": GITHUB_BRANCH})
-
-    raw = []  # list of (date_iso, slug, stem)
-    if resp.status_code == 200:
-        for item in resp.json():
-            name = item.get("name", "")
-            if name.endswith(".html") and name != "index.html":
-                stem = name[:-5]
-                date_iso = stem[:10]
-                slug = stem[11:] if len(stem) > 10 else ""
-                raw.append((date_iso, slug, stem))
-    elif resp.status_code != 404:
-        resp.raise_for_status()
-
-    # Sortera nyast först — alla artiklar visas, flera per dag möjligt
-    entries = sorted(
-        [(d, s, st) for d, s, st in raw if s],  # bara slug-versioner
-        key=lambda x: x[2],
-        reverse=True,
-    )
-
-    weekdays = ["Måndag","Tisdag","Onsdag","Torsdag","Fredag","Lördag","Söndag"]
-    months   = ["","januari","februari","mars","april","maj","juni",
-                "juli","augusti","september","oktober","november","december"]
-
-    def fmt_date(iso: str) -> str:
-        try:
-            d = datetime.date.fromisoformat(iso)
-            return f"{weekdays[d.weekday()]} {d.day} {months[d.month]} {d.year}"
-        except ValueError:
-            return iso
-
-    def fmt_entry(date_iso: str, slug: str, stem: str) -> str:
-        date_label = fmt_date(date_iso)
-        title = slug.replace('-', ' ').capitalize() if slug else date_label
-        return f'        <li><a href="{stem}.html"><span class="entry-date">{date_label}</span> — {title}</a></li>'
-
-    rows = "\n".join(fmt_entry(d, s, stem) for d, s, stem in entries)
-
-    html = f"""<!DOCTYPE html>
-<html lang="sv">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Arkivet — Åland igår och idag</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=IM+Fell+English:ital@0;1&family=UnifrakturMaguntia&family=IM+Fell+English+SC&display=swap" rel="stylesheet">
-  <style>
-    :root {{ --ink:#1a1207; --paper:#f5ead6; --rule:#5c3d1a; --muted:#6b5540; --accent:#8b1a1a; }}
-    *, *::before, *::after {{ box-sizing:border-box; margin:0; padding:0; }}
-    body {{
-      background:#d9c9a8;
-      min-height:100vh; display:flex; justify-content:center; align-items:flex-start;
-      padding:2rem 1rem 4rem;
-      font-family:'IM Fell English', Georgia, serif; color:var(--ink);
-    }}
-    .newspaper {{
-      background:var(--paper); max-width:780px; width:100%;
-      box-shadow:0 2px 4px rgba(0,0,0,.15),0 8px 32px rgba(0,0,0,.25);
-      padding:0 0 3rem;
-    }}
-    .masthead {{
-      text-align:center; padding:2.2rem 2.5rem 0;
-      border-bottom:4px double var(--rule);
-    }}
-    .masthead-eyebrow {{ font-family:'IM Fell English SC',serif; font-size:.7rem; letter-spacing:.25em; color:var(--muted); text-transform:uppercase; margin-bottom:.5rem; }}
-    .masthead-title {{ font-family:'UnifrakturMaguntia',cursive; font-size:clamp(2.4rem,7vw,3.8rem); line-height:1; margin-bottom:.25rem; }}
-    .masthead-subtitle {{ font-family:'IM Fell English SC',serif; font-size:.75rem; letter-spacing:.3em; color:var(--muted); margin-bottom:.8rem; }}
-    .masthead-rule {{ height:1px; background:var(--rule); margin:.4rem 0; }}
-    .masthead-dateline {{ display:flex; justify-content:space-between; padding:.4rem 0 .6rem; font-size:.7rem; color:var(--muted); font-style:italic; }}
-    .content {{ padding:2rem 2.5rem 0; }}
-    h2 {{ font-family:'IM Fell English',Georgia,serif; font-size:1.6rem; font-weight:normal; text-align:center; margin-bottom:1.5rem; }}
-    ul {{ list-style:none; border-top:1px solid #c8b090; }}
-    ul li {{ border-bottom:1px solid #c8b090; }}
-    ul li a {{
-      display:block; padding:.7rem .2rem;
-      font-family:'IM Fell English SC',serif; font-size:.85rem; letter-spacing:.05em;
-      color:var(--ink); text-decoration:none;
-    }}
-    ul li a:hover {{ color:var(--accent); }}
-    .back {{ display:block; text-align:center; margin-top:2rem; font-style:italic; font-size:.8rem; color:var(--muted); }}
-    .back a {{ color:var(--muted); }}
-    @media(max-width:540px) {{ .masthead,.content {{ padding-left:1.2rem; padding-right:1.2rem; }} }}
-  </style>
-</head>
-<body>
-<article class="newspaper">
-  <header class="masthead">
-    <p class="masthead-eyebrow">Grundad anno domini 1891</p>
-    <h1 class="masthead-title">Åland igår och idag</h1>
-    <p class="masthead-subtitle">Julius Sundblom tolkar · Ålands Radio berättar</p>
-    <div class="masthead-rule"></div>
-    <div class="masthead-dateline">
-      <span>Arkivet</span>
-      <span>✦ &nbsp; Samtliga utgåvor &nbsp; ✦</span>
-      <span>Åland igår och idag</span>
-    </div>
-  </header>
-  <div class="content">
-    <h2>Tidigare utgåvor</h2>
-    <ul>
-{rows}
-    </ul>
-    <a class="back" href="../">← Tillbaka till senaste utgåvan</a>
-  </div>
-</article>
-</body>
-</html>"""
-
-    _push_file("arkiv/index.html", html, f"📚 Uppdaterar arkivindex ({len(entries)} utgåvor)")
-    log.info("Arkivindex uppdaterat med %d poster.", len(entries))
-
-
-# ─────────────────────────────────────────────────────────────────────────────
-# 5. OG-BILD (skärmdump)
-# ─────────────────────────────────────────────────────────────────────────────
-
-def generate_og_image() -> bytes | None:
-    """Tar en 1200×630 skärmdump av index.html och returnerar PNG-bytes."""
-    try:
-        import threading
-        import http.server
-        import time
-        from playwright.sync_api import sync_playwright
-
-        class SilentHandler(http.server.SimpleHTTPRequestHandler):
-            def log_message(self, format, *args):
-                pass
-
-        httpd = http.server.HTTPServer(("", 8765), SilentHandler)
-        thread = threading.Thread(target=httpd.serve_forever)
-        thread.daemon = True
-        thread.start()
-        time.sleep(1)
-
-        with sync_playwright() as p:
-            browser = p.chromium.launch()
-            page = browser.new_page(viewport={"width": 1200, "height": 630})
-            page.goto("http://localhost:8765/index.html",
-                      wait_until="networkidle", timeout=30000)
-            page.wait_for_timeout(1500)  # Extra tid för typsnitt
-            png = page.screenshot(full_page=False)
-            browser.close()
-
-        httpd.shutdown()
-        log.info("OG-bild genererad (%d bytes).", len(png))
-        return png
-    except Exception as exc:
-        log.warning("Kunde inte generera OG-bild: %s", exc)
-        return None
-
-
-def publish_robots_txt() -> None:
-    """Publicerar robots.txt som välkomnar sökmotorer och AI-botar."""
-    content = """User-agent: *
-Allow: /
-
-User-agent: GPTBot
-Allow: /
-
-User-agent: ClaudeBot
-Allow: /
-
-User-agent: Google-Extended
-Allow: /
-
-User-agent: Googlebot
-Allow: /
-
-Sitemap: https://xn--nud-wla.ax/arkiv/
-"""
-    _push_file("robots.txt", content, "🤖 Uppdaterar robots.txt")
-    log.info("robots.txt publicerad.")
+    content = json.dumps(article, ensure_ascii=False, indent=2)
+    _push_file(path, content, f"🗞️ Ny artikel: {headline[:60]}")
+    log.info("Artikel JSON sparad: %s", path)
 
 
 def publish_og_image(png_bytes: bytes) -> None:
-    """Pushar og-image.png till repot via GitHub API."""
+    """Pushar og-image.png till public/ via GitHub API."""
     if not GITHUB_TOKEN or not GITHUB_REPO:
         log.warning("GitHub-miljövariabler saknas — OG-bild ej pushad.")
         return
@@ -703,7 +422,7 @@ def publish_og_image(png_bytes: bytes) -> None:
         "Accept": "application/vnd.github+json",
         "X-GitHub-Api-Version": "2022-11-28",
     }
-    api_url = f"{GITHUB_API_BASE}/repos/{GITHUB_REPO}/contents/og-image.png"
+    api_url = f"{GITHUB_API_BASE}/repos/{GITHUB_REPO}/contents/public/og-image.png"
 
     sha = None
     get_resp = requests.get(api_url, headers=headers, params={"ref": GITHUB_BRANCH})
@@ -732,15 +451,14 @@ def publish_og_image(png_bytes: bytes) -> None:
 def main() -> None:
     log.info("═══ Åland igår och idag — daglig körning startar ═══")
 
-    # 1. Scrape de 2 översta rubrikerna
-    headlines = fetch_top_headlines(n=2)
+    # 1. Scrape upp till 20 rubriker i DOM-ordning — seen_urls filtrerar bort gamla
+    headlines = fetch_top_headlines(n=20)
 
     # 2. Ladda redan processade URLar (undviker dubbletter vid helger/högtider)
     seen_urls = load_seen_urls()
 
     today = datetime.date.today().isoformat()
     new_articles = 0
-    first_html = None  # Används för index.html + OG-bild
 
     for headline, url in headlines:
         if url == ALANDS_RADIO_URL:
@@ -758,25 +476,13 @@ def main() -> None:
         # 4. Generera Julius
         julius = generate_sundblom(headline, url, body)
 
-        # 5. Rendera HTML
-        html = render_html(headline, url, julius, body, author)
+        # 5. Bygg slug
+        slug = slugify(headline)
 
-        # 6. Spara lokalt (debug / OG-bild)
-        with open(OUTPUT_HTML, "w", encoding="utf-8") as f:
-            f.write(html)
+        # 6. Spara JSON till src/content/articles/ via GitHub API
+        save_article_json(headline, julius, body, author, url, today, slug)
 
-        # 7. Publicera index.html (bara den första nya artikeln)
-        if first_html is None:
-            publish_to_github(html)
-            og_png = generate_og_image()
-            if og_png:
-                publish_og_image(og_png)
-            first_html = html
-
-        # 8. Arkivera
-        publish_archive_entry(html, headline)
-
-        # 9. Markera som processad
+        # 7. Markera som processad
         save_seen_url(url, headline, today)
         seen_urls.add(url)
         new_articles += 1
@@ -785,13 +491,6 @@ def main() -> None:
         log.info("Inga nya artiklar att publicera idag.")
     else:
         log.info("%d ny/nya artikel(ar) publicerade.", new_articles)
-
-    # 10. Bygg om arkivindex + manifest (alltid, oavsett om det fanns nyheter)
-    rebuild_archive_index()
-    generate_manifest()
-
-    # 11. robots.txt (idempotent)
-    publish_robots_txt()
 
     log.info("═══ Klar. ═══")
 

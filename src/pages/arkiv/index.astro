@@ -1,0 +1,75 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { formatSwedishDate } from '../../utils/format';
+
+const allArticles = await getCollection('articles');
+const sorted = allArticles.sort((a, b) => b.id.localeCompare(a.id));
+---
+
+<BaseLayout title="Arkivet — Åland igår och idag">
+  <article class="newspaper">
+    <header class="masthead" role="banner">
+      <p class="masthead-eyebrow">Grundad anno domini 1891</p>
+      <h1 class="masthead-title">Åland igår och idag</h1>
+      <p class="masthead-subtitle">Julius Sundblom tolkar · Ålands Radio berättar</p>
+      <div class="masthead-rule"></div>
+      <div class="masthead-dateline">
+        <span>Arkivet</span>
+        <span>✦ &nbsp; Samtliga utgåvor &nbsp; ✦</span>
+        <span>Åland igår och idag</span>
+      </div>
+    </header>
+
+    <div class="content">
+      <h2>Tidigare utgåvor</h2>
+      <ul>
+        {sorted.map(entry => {
+          const dateLabel = formatSwedishDate(entry.data.date);
+          const title = entry.data.headline;
+          return (
+            <li>
+              <a href={`/arkiv/${entry.data.slug}`}>
+                <span class="entry-date">{dateLabel}</span> — {title}
+              </a>
+            </li>
+          );
+        })}
+      </ul>
+      <a class="back" href="/">← Tillbaka till senaste utgåvan</a>
+    </div>
+  </article>
+</BaseLayout>
+
+<style>
+  .newspaper {
+    background: var(--paper); max-width: 780px; width: 100%;
+    box-shadow: 0 2px 4px rgba(0,0,0,.15), 0 8px 32px rgba(0,0,0,.25);
+    padding: 0 0 3rem;
+    position: relative; z-index: 1;
+  }
+  .masthead {
+    text-align: center; padding: 2.2rem 2.5rem 0;
+    border-bottom: 4px double var(--rule);
+  }
+  .masthead-eyebrow { font-family: 'IM Fell English SC', serif; font-size: .7rem; letter-spacing: .25em; color: var(--muted); text-transform: uppercase; margin-bottom: .5rem; }
+  .masthead-title { font-family: 'UnifrakturMaguntia', cursive; font-size: clamp(2.4rem, 7vw, 3.8rem); line-height: 1; margin-bottom: .25rem; }
+  .masthead-subtitle { font-family: 'IM Fell English SC', serif; font-size: .75rem; letter-spacing: .3em; color: var(--muted); margin-bottom: .8rem; }
+  .masthead-rule { height: 1px; background: var(--rule); margin: .4rem 0; }
+  .masthead-dateline { display: flex; justify-content: space-between; padding: .4rem 0 .6rem; font-size: .7rem; color: var(--muted); font-style: italic; }
+  .content { padding: 2rem 2.5rem 0; }
+  h2 { font-family: 'IM Fell English', Georgia, serif; font-size: 1.6rem; font-weight: normal; text-align: center; margin-bottom: 1.5rem; }
+  ul { list-style: none; border-top: 1px solid #c8b090; }
+  ul li { border-bottom: 1px solid #c8b090; }
+  ul li a {
+    display: block; padding: .7rem .2rem;
+    font-family: 'IM Fell English SC', serif; font-size: .85rem; letter-spacing: .05em;
+    color: var(--ink); text-decoration: none;
+  }
+  ul li a:hover { color: var(--accent); }
+  .back { display: block; text-align: center; margin-top: 2rem; font-style: italic; font-size: .8rem; color: var(--muted); text-decoration: none; }
+  .back:hover { color: var(--accent); }
+  @media (max-width: 540px) {
+    .masthead, .content { padding-left: 1.2rem; padding-right: 1.2rem; }
+  }
+</style>
