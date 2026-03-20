@@ -13,7 +13,9 @@ interface Props {
 const { headline, juliusHtml, bodyHtml, author, sourceUrl, prevHref, nextHref, dateLabel } = Astro.props;
 ---
 
-<main id="main-content" class="split" aria-label="Artikeln">
+<main id="main-content" class="split" aria-label="Artikeln"
+  data-prev={prevHref ?? ''}
+  data-next={nextHref ?? ''}>
 
   <!-- Julius (vänster) -->
   <div class="col-julius">
@@ -90,23 +92,25 @@ const { headline, juliusHtml, bodyHtml, author, sourceUrl, prevHref, nextHref, d
 {prevHref && <span class="tap-zone tap-zone--prev" aria-hidden="true" />}
 {nextHref && <span class="tap-zone tap-zone--next" aria-hidden="true" />}
 
-<script define:vars={{ prevHref, nextHref }}>
-  // Kindle-stil tapnavigering: vänster halva = äldre, höger = nyare
-  // pointer-events: none på tap-zonerna — vi lyssnar på document istället
-  // Avfyras INTE om användaren klickar på en länk, knapp eller väljer text
-  if (window.matchMedia('(hover: none), (max-width: 640px)').matches) {
-    document.addEventListener('click', (e) => {
-      // Hoppa över om det finns en länk/knapp i klickvägen
-      if (e.target.closest('a, button, input, select, textarea')) return;
-      // Hoppa över textmarkering
-      const sel = window.getSelection();
-      if (sel && sel.toString().length > 0) return;
+<script>
+  // Kindle-stil tapnavigering — läser alltid från DOM så View Transitions
+  // inte lämnar kvar gamla href-värden i en closure.
+  function onTap(e) {
+    if (!window.matchMedia('(hover: none), (max-width: 640px)').matches) return;
+    if (e.target.closest('a, button, input, select, textarea')) return;
+    const sel = window.getSelection();
+    if (sel && sel.toString().length > 0) return;
 
-      const isLeft = e.clientX < window.innerWidth / 2;
-      const href = isLeft ? prevHref : nextHref;
-      if (href) window.location.href = href;
-    });
+    const main = document.getElementById('main-content');
+    if (!main) return;
+    const href = e.clientX < window.innerWidth / 2
+      ? main.dataset.prev
+      : main.dataset.next;
+    if (href) window.location.href = href;
   }
+
+  // Lägg till lyssnare en gång och behåll den över View Transitions
+  document.addEventListener('click', onTap);
 </script>
 
 <!-- Footer -->
