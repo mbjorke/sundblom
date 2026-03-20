@@ -86,9 +86,28 @@ const { headline, juliusHtml, bodyHtml, author, sourceUrl, prevHref, nextHref, d
   }
 </nav>
 
-<!-- Kindle-stil tapzoner för mobil (vänster = äldre, höger = nyare) -->
-{prevHref && <a href={prevHref} class="tap-zone tap-zone--prev" aria-label="Äldre artikel" />}
-{nextHref && <a href={nextHref} class="tap-zone tap-zone--next" aria-label="Nyare artikel" />}
+<!-- Kindle-stil tapzoner — bara visuella pilar, JS hanterar klicken -->
+{prevHref && <span class="tap-zone tap-zone--prev" aria-hidden="true" />}
+{nextHref && <span class="tap-zone tap-zone--next" aria-hidden="true" />}
+
+<script define:vars={{ prevHref, nextHref }}>
+  // Kindle-stil tapnavigering: vänster halva = äldre, höger = nyare
+  // pointer-events: none på tap-zonerna — vi lyssnar på document istället
+  // Avfyras INTE om användaren klickar på en länk, knapp eller väljer text
+  if (window.matchMedia('(hover: none), (max-width: 640px)').matches) {
+    document.addEventListener('click', (e) => {
+      // Hoppa över om det finns en länk/knapp i klickvägen
+      if (e.target.closest('a, button, input, select, textarea')) return;
+      // Hoppa över textmarkering
+      const sel = window.getSelection();
+      if (sel && sel.toString().length > 0) return;
+
+      const isLeft = e.clientX < window.innerWidth / 2;
+      const href = isLeft ? prevHref : nextHref;
+      if (href) window.location.href = href;
+    });
+  }
+</script>
 
 <!-- Footer -->
 <footer class="footer">
@@ -297,14 +316,19 @@ const { headline, juliusHtml, bodyHtml, author, sourceUrl, prevHref, nextHref, d
   .col-nav-overlay:hover {
     opacity: 1;
   }
-  @media (hover: none), (max-width: 640px) {
-    .col-nav-overlay { display: none; }
-  }
   .col-julius .col-nav-overlay {
     background: linear-gradient(to right, rgba(92,61,26,.07), transparent 60%);
   }
   .col-radio .col-nav-overlay {
     background: linear-gradient(to left, rgba(0,95,138,.06), transparent 60%);
+  }
+  @media (hover: none), (max-width: 640px) {
+    .col-nav-overlay,
+    .col-julius .col-nav-overlay,
+    .col-radio .col-nav-overlay {
+      display: none !important;
+      pointer-events: none !important;
+    }
   }
   .col-nav-overlay .col-nav-arrow {
     position: absolute;
@@ -394,26 +418,25 @@ const { headline, juliusHtml, bodyHtml, author, sourceUrl, prevHref, nextHref, d
     transform: translateY(0);
   }
 
-  /* ── Kindle-stil tapzoner — bara på touch-skärmar ── */
+  /* ── Kindle-stil tapzoner — bara visuella indikatorer på touch ── */
   .tap-zone {
-    display: none; /* dold på desktop med hover */
+    display: none;
   }
   @media (hover: none), (max-width: 640px) {
     .tap-zone {
       display: block;
       position: fixed;
       top: 0;
-      bottom: 56px; /* ovanför mobile-nav */
-      width: 48%;
-      z-index: 1; /* under text-länkar (z-index: 3) och overlays (z-index: 2) */
+      bottom: 0;
+      width: 2rem;          /* smal remsa — bara pilen, inte hela halva skärmen */
+      z-index: 1;
+      pointer-events: none; /* blockerar INGA klick — JS hanterar navigationen */
       background: transparent;
-      -webkit-tap-highlight-color: transparent;
-      text-decoration: none;
     }
     .tap-zone--prev { left: 0; }
     .tap-zone--next { right: 0; }
 
-    /* Alltid synliga kantpilar */
+    /* Synliga kantpilar */
     .tap-zone::after {
       position: absolute;
       top: 50%;
@@ -424,13 +447,8 @@ const { headline, juliusHtml, bodyHtml, author, sourceUrl, prevHref, nextHref, d
       opacity: .25;
       line-height: 1;
     }
-    .tap-zone--prev::after { content: "‹"; left: .4rem; }
-    .tap-zone--next::after { content: "›"; right: .4rem; }
-
-    /* Feedback vid tap */
-    .tap-zone:active {
-      background: rgba(26, 18, 7, .05);
-    }
+    .tap-zone--prev::after { content: "‹"; left: .2rem; }
+    .tap-zone--next::after { content: "›"; right: .2rem; }
   }
 
   /* ── Mobile ── */
