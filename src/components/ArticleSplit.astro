@@ -403,31 +403,30 @@ const { headline, juliusHtml, bodyHtml, author, sourceUrl, prevHref, nextHref, d
       bottom: 56px; /* ovanför mobile-nav */
       width: 48%;
       z-index: 1; /* under text-länkar (z-index: 3) och overlays (z-index: 2) */
-      opacity: 0;
+      background: transparent;
       -webkit-tap-highlight-color: transparent;
       text-decoration: none;
     }
     .tap-zone--prev { left: 0; }
     .tap-zone--next { right: 0; }
 
-    /* Diskret kantindikator */
+    /* Alltid synliga kantpilar */
     .tap-zone::after {
-      content: attr(aria-label);
       position: absolute;
       top: 50%;
       transform: translateY(-50%);
       font-family: 'IM Fell English', Georgia, serif;
       font-size: 2rem;
-      opacity: .1;
       color: var(--muted);
+      opacity: .25;
+      line-height: 1;
     }
-    .tap-zone--prev::after { content: "‹"; left: .3rem; }
-    .tap-zone--next::after { content: "›"; right: .3rem; }
+    .tap-zone--prev::after { content: "‹"; left: .4rem; }
+    .tap-zone--next::after { content: "›"; right: .4rem; }
 
     /* Feedback vid tap */
     .tap-zone:active {
-      opacity: .05;
-      background: var(--ink);
+      background: rgba(26, 18, 7, .05);
     }
   }
 
