@@ -86,6 +86,10 @@ const { headline, juliusHtml, bodyHtml, author, sourceUrl, prevHref, nextHref, d
   }
 </nav>
 
+<!-- Kindle-stil tapzoner för mobil (vänster = äldre, höger = nyare) -->
+{prevHref && <a href={prevHref} class="tap-zone tap-zone--prev" aria-label="Äldre artikel" />}
+{nextHref && <a href={nextHref} class="tap-zone tap-zone--next" aria-label="Nyare artikel" />}
+
 <!-- Footer -->
 <footer class="footer">
   <span>
@@ -139,7 +143,7 @@ const { headline, juliusHtml, bodyHtml, author, sourceUrl, prevHref, nextHref, d
 
   .julius-headline {
     font-family: 'IM Fell English', Georgia, serif;
-    font-size: clamp(1rem, 2.2vw, 1.3rem);
+    font-size: 1.1rem;
     font-weight: normal; line-height: 1.3;
     text-align: center; margin-bottom: .5rem;
   }
@@ -262,7 +266,7 @@ const { headline, juliusHtml, bodyHtml, author, sourceUrl, prevHref, nextHref, d
 
   .radio-headline {
     font-family: 'Source Serif 4', serif;
-    font-size: clamp(1rem, 2.2vw, 1.25rem);
+    font-size: 1.1rem;
     font-weight: 600; line-height: 1.3;
     margin-bottom: .35rem;
     color: var(--radio-ink);
@@ -385,6 +389,46 @@ const { headline, juliusHtml, bodyHtml, author, sourceUrl, prevHref, nextHref, d
   .tip:hover::after {
     opacity: 1;
     transform: translateY(0);
+  }
+
+  /* ── Kindle-stil tapzoner — bara på touch-skärmar ── */
+  .tap-zone {
+    display: none; /* dold på desktop med hover */
+  }
+  @media (hover: none) {
+    .tap-zone {
+      display: block;
+      position: fixed;
+      top: 0;
+      bottom: 56px; /* ovanför mobile-nav */
+      width: 48%;
+      z-index: 1; /* under text-länkar (z-index: 3) och overlays (z-index: 2) */
+      opacity: 0;
+      -webkit-tap-highlight-color: transparent;
+      text-decoration: none;
+    }
+    .tap-zone--prev { left: 0; }
+    .tap-zone--next { right: 0; }
+
+    /* Diskret kantindikator */
+    .tap-zone::after {
+      content: attr(aria-label);
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      font-family: 'IM Fell English', Georgia, serif;
+      font-size: 2rem;
+      opacity: .1;
+      color: var(--muted);
+    }
+    .tap-zone--prev::after { content: "‹"; left: .3rem; }
+    .tap-zone--next::after { content: "›"; right: .3rem; }
+
+    /* Feedback vid tap */
+    .tap-zone:active {
+      opacity: .05;
+      background: var(--ink);
+    }
   }
 
   /* ── Mobile ── */
