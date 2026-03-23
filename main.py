@@ -212,6 +212,7 @@ INNEHÅLLSKRAV:
 - Visa stridbarhet — det ska BITAS
 - Historisk förankring (hänvisa till 1921-beslutet, Nationernas Förbund, inbördeskriget 1918)
 - Inled med en dramatisk rubrik (versaler, utan citattecken)
+- LÄNGD: Skriv max 4–5 stycken, ungefär lika lång som originaltexten — ej längre
 
 ANACHRONISMER ATT UNDVIKA (dessa ord/begrepp existerade ej eller användes ej 1920):
 - Skriv aldrig: feminism, jämställdhet, strukturer, identitet (i modern mening),
@@ -241,7 +242,7 @@ Om JA på någon fråga — skriv om tills texten känns äkta.
 Svara ENBART med den färdiga texten. Ingen förklaring, ingen inledning."""
 
 
-def _call_api(system: str, user: str, max_tokens: int = 1200) -> str:
+def _call_api(system: str, user: str, max_tokens: int = 700) -> str:
     client = Anthropic(api_key=ANTHROPIC_KEY)
     response = client.messages.create(
         model=SUNDBLOM_MODEL,
