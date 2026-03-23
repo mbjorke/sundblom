@@ -450,7 +450,7 @@ def save_article_json(headline: str, julius_text: str, body: str, author: str,
         "author": author or "Ålands Radio",
         "source_url": source_url,
         "date": date_iso,
-        "published_at": datetime.utcnow().strftime("%Y-%m-%dT%H:%M:%SZ"),
+        "published_at": datetime.datetime.now(datetime.timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
         "slug": slug,
     }
     content = json.dumps(article, ensure_ascii=False, indent=2)
