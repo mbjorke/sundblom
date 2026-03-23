@@ -9,6 +9,15 @@ const sorted = allArticles.sort((a, b) => {
   const tb = b.data.published_at ?? (b.data.date + 'T00:00:00Z');
   return tb.localeCompare(ta);
 });
+
+// Gruppera per datum
+const byDate: Record<string, typeof sorted> = {};
+for (const entry of sorted) {
+  const d = entry.data.date;
+  if (!byDate[d]) byDate[d] = [];
+  byDate[d].push(entry);
+}
+const days = Object.keys(byDate).sort((a, b) => b.localeCompare(a));
 ---
 
 <BaseLayout title="Arkivet — Åland igår och idag">
@@ -26,24 +35,63 @@ const sorted = allArticles.sort((a, b) => {
     </header>
 
     <div class="content">
-      <h2>Tidigare utgåvor</h2>
-      <ul>
-        {sorted.map(entry => {
-          const dateLabel = formatSwedishDate(entry.data.date);
-          const title = entry.data.headline;
-          return (
-            <li>
-              <a href={`/arkiv/${entry.data.slug}`}>
-                <span class="entry-date">{dateLabel}</span> — {title}
-              </a>
-            </li>
-          );
-        })}
-      </ul>
+      <div class="search-wrap">
+        <input
+          id="search"
+          type="search"
+          placeholder="Sök rubrik…"
+          aria-label="Sök i arkivet"
+          autocomplete="off"
+        />
+      </div>
+
+      <div id="archive-list">
+        {days.map(date => (
+          <div class="day-group" data-date={date}>
+            <h2 class="day-heading">{formatSwedishDate(date)}</h2>
+            <ul>
+              {byDate[date].map(entry => (
+                <li data-headline={entry.data.headline.toLowerCase()}>
+                  <a href={`/arkiv/${entry.data.slug}`}>
+                    {entry.data.headline}
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </div>
+        ))}
+      </div>
+
+      <p id="no-results" hidden>Inga artiklar matchar sökningen.</p>
       <a class="back" href="/">← Tillbaka till senaste utgåvan</a>
     </div>
   </article>
 </BaseLayout>
+
+<script>
+  const input = document.getElementById('search') as HTMLInputElement;
+  const groups = document.querySelectorAll<HTMLElement>('.day-group');
+  const noResults = document.getElementById('no-results')!;
+
+  input.addEventListener('input', () => {
+    const q = input.value.toLowerCase().trim();
+    let anyVisible = false;
+
+    groups.forEach(group => {
+      const items = group.querySelectorAll<HTMLElement>('li');
+      let groupVisible = false;
+      items.forEach(li => {
+        const match = !q || li.dataset.headline!.includes(q);
+        li.hidden = !match;
+        if (match) groupVisible = true;
+      });
+      group.hidden = !groupVisible;
+      if (groupVisible) anyVisible = true;
+    });
+
+    noResults.hidden = anyVisible || !q;
+  });
+</script>
 
 <style>
   .newspaper {
@@ -61,18 +109,43 @@ const sorted = allArticles.sort((a, b) => {
   .masthead-subtitle { font-family: 'IM Fell English SC', serif; font-size: .75rem; letter-spacing: .3em; color: var(--muted); margin-bottom: .8rem; }
   .masthead-rule { height: 1px; background: var(--rule); margin: .4rem 0; }
   .masthead-dateline { display: flex; justify-content: space-between; padding: .4rem 0 .6rem; font-size: .7rem; color: var(--muted); font-style: italic; }
+
   .content { padding: 2rem 2.5rem 0; }
-  h2 { font-family: 'IM Fell English', Georgia, serif; font-size: 1.6rem; font-weight: normal; text-align: center; margin-bottom: 1.5rem; }
-  ul { list-style: none; border-top: 1px solid #c8b090; }
-  ul li { border-bottom: 1px solid #c8b090; }
+
+  /* Sökfält */
+  .search-wrap { margin-bottom: 1.8rem; }
+  #search {
+    width: 100%; box-sizing: border-box;
+    padding: .55rem .9rem;
+    font-family: 'IM Fell English', Georgia, serif; font-size: .9rem;
+    background: var(--paper); color: var(--ink);
+    border: 1px solid #c8b090; border-radius: 2px;
+    outline: none;
+  }
+  #search:focus { border-color: var(--accent); }
+
+  /* Dagsgruppering */
+  .day-group { margin-bottom: 1.4rem; }
+  .day-heading {
+    font-family: 'IM Fell English SC', serif; font-size: .75rem;
+    letter-spacing: .2em; color: var(--muted); text-transform: uppercase;
+    font-weight: normal; margin: 0 0 .4rem;
+    border-bottom: 1px solid #c8b090; padding-bottom: .3rem;
+  }
+  ul { list-style: none; margin: 0; padding: 0; }
+  ul li { border-bottom: 1px solid #e8d8c0; }
   ul li a {
-    display: block; padding: .7rem .2rem;
+    display: block; padding: .55rem .2rem;
     font-family: 'IM Fell English SC', serif; font-size: .85rem; letter-spacing: .05em;
     color: var(--ink); text-decoration: none;
   }
   ul li a:hover { color: var(--accent); }
+
+  #no-results { text-align: center; color: var(--muted); font-style: italic; font-size: .85rem; margin-top: 2rem; }
+
   .back { display: block; text-align: center; margin-top: 2rem; font-style: italic; font-size: .8rem; color: var(--muted); text-decoration: none; }
   .back:hover { color: var(--accent); }
+
   @media (max-width: 540px) {
     .masthead, .content { padding-left: 1.2rem; padding-right: 1.2rem; }
   }
