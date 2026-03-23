@@ -8,7 +8,11 @@ import { formatSwedishDate, toParagraphs, toDescription } from '../../utils/form
 export async function getStaticPaths() {
   const allArticles = await getCollection('articles');
   // Sort newest first: idx 0 = newest, idx n-1 = oldest
-  const sorted = allArticles.sort((a, b) => b.id.localeCompare(a.id));
+  const sorted = allArticles.sort((a, b) => {
+    const ta = a.data.published_at ?? (a.data.date + 'T00:00:00Z');
+    const tb = b.data.published_at ?? (b.data.date + 'T00:00:00Z');
+    return tb.localeCompare(ta);
+  });
 
   return sorted.map((entry, idx) => {
     // "newer" = one step toward index 0 (more recent)

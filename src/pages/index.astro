@@ -5,9 +5,12 @@ import Masthead from '../components/Masthead.astro';
 import ArticleSplit from '../components/ArticleSplit.astro';
 import { formatSwedishDate, toParagraphs, toDescription } from '../utils/format';
 
-// Sort articles newest first (stem = YYYY-MM-DD-slug → alphabetic sort works)
 const allArticles = await getCollection('articles');
-const sorted = allArticles.sort((a, b) => b.id.localeCompare(a.id));
+const sorted = allArticles.sort((a, b) => {
+  const ta = a.data.published_at ?? (a.data.date + 'T00:00:00Z');
+  const tb = b.data.published_at ?? (b.data.date + 'T00:00:00Z');
+  return tb.localeCompare(ta);
+});
 
 if (sorted.length === 0) {
   throw new Error('No articles found in src/content/articles/');

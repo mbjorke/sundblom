@@ -9,6 +9,7 @@ const articles = defineCollection({
     author: z.string(),
     source_url: z.string(),
     date: z.string(),
+    published_at: z.string().optional(),
     slug: z.string(),
   }),
 });
