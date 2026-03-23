@@ -391,6 +391,50 @@ def save_seen_url(url: str, headline: str, date_iso: str) -> None:
     log.info("URL sparad i seen-urls.json: %s", url)
 
 
+def load_last_headline() -> str:
+    """Hämtar senast publicerad rubrik från last_headline.txt i repot."""
+    if not GITHUB_TOKEN or not GITHUB_REPO:
+        return ""
+    headers = {
+        "Authorization": f"Bearer {GITHUB_TOKEN}",
+        "Accept": "application/vnd.github+json",
+        "X-GitHub-Api-Version": "2022-11-28",
+    }
+    api_url = f"{GITHUB_API_BASE}/repos/{GITHUB_REPO}/contents/last_headline.txt"
+    resp = requests.get(api_url, headers=headers, params={"ref": GITHUB_BRANCH})
+    if resp.status_code == 404:
+        return ""
+    resp.raise_for_status()
+    return base64.b64decode(resp.json()["content"]).decode("utf-8").strip()
+
+
+def save_last_headline(headline: str) -> None:
+    """Sparar senast publicerad rubrik till last_headline.txt i repot."""
+    if not GITHUB_TOKEN or not GITHUB_REPO:
+        return
+    headers = {
+        "Authorization": f"Bearer {GITHUB_TOKEN}",
+        "Accept": "application/vnd.github+json",
+        "X-GitHub-Api-Version": "2022-11-28",
+    }
+    api_url = f"{GITHUB_API_BASE}/repos/{GITHUB_REPO}/contents/last_headline.txt"
+    sha = None
+    resp = requests.get(api_url, headers=headers, params={"ref": GITHUB_BRANCH})
+    if resp.status_code == 200:
+        sha = resp.json().get("sha")
+    elif resp.status_code != 404:
+        resp.raise_for_status()
+    payload: dict = {
+        "message": f"🔖 Uppdaterar senaste rubrik: {headline[:60]}",
+        "content": base64.b64encode(headline.encode("utf-8")).decode("ascii"),
+        "branch": GITHUB_BRANCH,
+    }
+    if sha:
+        payload["sha"] = sha
+    requests.put(api_url, headers=headers, json=payload).raise_for_status()
+    log.info("last_headline.txt uppdaterad.")
+
+
 def save_article_json(headline: str, julius_text: str, body: str, author: str,
                       source_url: str, date_iso: str, slug: str) -> None:
     """
@@ -452,10 +496,20 @@ def publish_og_image(png_bytes: bytes) -> None:
 def main() -> None:
     log.info("═══ Åland igår och idag — daglig körning startar ═══")
 
-    # 1. Scrape upp till 20 rubriker i DOM-ordning — seen_urls filtrerar bort gamla
+    # 1. Scrape upp till 20 rubriker i DOM-ordning
     headlines = fetch_top_headlines(n=20)
+    if not headlines:
+        log.info("Inga rubriker hittades — avslutar.")
+        return
 
-    # 2. Ladda redan processade URLar (undviker dubbletter vid helger/högtider)
+    # 2. Early exit: om topprubrik är oförändrad sedan senaste körning → spara API-anrop
+    last_headline = load_last_headline()
+    top_headline = headlines[0][0]
+    if top_headline == last_headline:
+        log.info("Topprubrik oförändrad (%s) — ingen ny artikel att publicera.", top_headline[:60])
+        return
+
+    # 3. Ladda redan processade URLar (undviker dubbletter vid helger/högtider)
     seen_urls = load_seen_urls()
 
     today = datetime.date.today().isoformat()
@@ -492,6 +546,7 @@ def main() -> None:
         log.info("Inga nya artiklar att publicera idag.")
     else:
         log.info("%d ny/nya artikel(ar) publicerade.", new_articles)
+        save_last_headline(top_headline)
 
     log.info("═══ Klar. ═══")
 
