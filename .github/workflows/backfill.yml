@@ -1,53 +1,33 @@
-name: 📚 Backfill arkiv
+name: 🗂️ Backfill mars 2026
 
 on:
-  # Kör manuellt från Actions-fliken
-  workflow_dispatch:
+  workflow_dispatch:  # Körs manuellt en gång
 
 permissions:
   contents: write
 
 jobs:
   backfill:
-    name: Generera och arkivera historiska artiklar
+    name: Backfilla saknade mars-artiklar
     runs-on: ubuntu-latest
     timeout-minutes: 30
 
     steps:
+      - uses: actions/checkout@v4
 
-      # 1. Checka ut repot
-      - name: Checka ut kod
-        uses: actions/checkout@v4
-
-      # 2. Sätt upp Python
-      - name: Sätt upp Python 3.11
-        uses: actions/setup-python@v5
+      - uses: actions/setup-python@v5
         with:
           python-version: "3.11"
           cache: "pip"
 
-      # 3. Installera beroenden
       - name: Installera beroenden
         run: pip install -r requirements.txt
 
-      # 4. Installera Playwright + Chromium (för OG-skärmdump)
-      - name: Installera Playwright Chromium
-        run: playwright install chromium --with-deps
-
-      # 5. Kör backfill-skriptet
       - name: Kör backfill
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          SUNDBLOM_MODEL:    ${{ secrets.SUNDBLOM_MODEL }}
           GITHUB_TOKEN:      ${{ secrets.GITHUB_TOKEN }}
           GITHUB_REPO:       ${{ github.repository }}
-          GITHUB_BRANCH:     ${{ github.ref_name }}
-        run: python backfill.py
-
-      # 6. Spara index.html som artefakt (för felsökning)
-      - name: Spara HTML-artefakt
-        if: always()
-        uses: actions/upload-artifact@v4
-        with:
-          name: backfill-${{ github.run_id }}
-          path: index.html
-          retention-days: 30
+          GITHUB_BRANCH:     main
+        run: python backfill_march.py
