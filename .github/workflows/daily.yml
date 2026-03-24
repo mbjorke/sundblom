@@ -2,8 +2,11 @@ name: 🗞️ Sundbloms dagliga kommentar
 
 on:
   schedule:
-    # Var 6:e timme (06, 12, 18, 00 UTC) — deduplicering i main.py förhindrar dubbletter
-    - cron: "0 */6 * * *"
+    # 07:30, 12:30, 16:30, 22:00 finsk vintertid (EET = UTC+2)
+    - cron: "30 5 * * *"   # 07:30 EET
+    - cron: "30 10 * * *"  # 12:30 EET
+    - cron: "30 14 * * *"  # 16:30 EET
+    - cron: "0 20 * * *"   # 22:00 EET
 
   # Tillåt manuell körning från Actions-fliken
   workflow_dispatch:

@@ -250,7 +250,43 @@ def _call_api(system: str, user: str, max_tokens: int = 500) -> str:
         system=system,
         messages=[{"role": "user", "content": user}],
     )
+    _log_tokens(response.usage.input_tokens, response.usage.output_tokens)
     return response.content[0].text.strip()
+
+
+def _log_tokens(input_tokens: int, output_tokens: int) -> None:
+    """Loggar token-användning och sparar löpande summa i arkiv/token-usage.json."""
+    log.info(f"Tokens: {input_tokens} in + {output_tokens} out = {input_tokens + output_tokens} totalt")
+    if not GITHUB_TOKEN or not GITHUB_REPO:
+        return
+    headers = {
+        "Authorization": f"Bearer {GITHUB_TOKEN}",
+        "Accept": "application/vnd.github+json",
+        "X-GitHub-Api-Version": "2022-11-28",
+    }
+    api_url = f"{GITHUB_API_BASE}/repos/{GITHUB_REPO}/contents/arkiv/token-usage.json"
+    resp = requests.get(api_url, headers=headers)
+    if resp.status_code == 200:
+        data = json.loads(base64.b64decode(resp.json()["content"]).decode())
+        sha = resp.json()["sha"]
+    else:
+        data = {"total_input": 0, "total_output": 0, "calls": []}
+        sha = None
+    data["total_input"] += input_tokens
+    data["total_output"] += output_tokens
+    data["calls"].append({
+        "date": datetime.datetime.now(datetime.timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
+        "model": SUNDBLOM_MODEL,
+        "input": input_tokens,
+        "output": output_tokens,
+    })
+    body: dict = {
+        "message": f"📊 Token-logg: {input_tokens}+{output_tokens} tokens",
+        "content": base64.b64encode(json.dumps(data, ensure_ascii=False, indent=2).encode()).decode(),
+    }
+    if sha:
+        body["sha"] = sha
+    requests.put(api_url, headers=headers, json=body)
 
 
 def _build_news_block(headline: str, source_url: str, body: str) -> str:
