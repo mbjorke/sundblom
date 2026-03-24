@@ -80,7 +80,7 @@ def fetch_article(url: str) -> tuple[str, str, str]:
             t = el.get_text(strip=True)
             if t and len(t) > 30:
                 body_parts.append(t)
-        body = "\n".join(body_parts[:12])
+        body = "\n\n".join(body_parts[:12])
 
         # Författare
         author = ""
