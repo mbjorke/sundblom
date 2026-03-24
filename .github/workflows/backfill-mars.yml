@@ -1,0 +1,71 @@
+name: 📅 Backfill mars-artiklar
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  backfill-mars:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: "pip"
+      - run: pip install -r requirements.txt
+
+      - name: Generera mars-artiklar
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          SUNDBLOM_MODEL:    ${{ secrets.SUNDBLOM_MODEL }}
+          GITHUB_TOKEN:      ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_REPO:       ${{ github.repository }}
+          GITHUB_BRANCH:     main
+        run: |
+          python3 << 'PYEOF'
+          import os, json, time, requests
+          from bs4 import BeautifulSoup
+          from backfill_march import fetch_article, generate_julius, push_file, slugify, log_tokens
+
+          HEADERS = {"User-Agent": "SundblomBackfill/1.0"}
+          articles = [
+              ("2026-03-02", "https://alandsradio.ax/nyheter/svagare-uppsagningsskydd-vacker-oro-hos-vardfacket"),
+              ("2026-03-03", "https://alandsradio.ax/nyheter/efter-turerna-regeringen-sager-ja-till-oppositionens-ahs-forslag"),
+              ("2026-03-03", "https://alandsradio.ax/nyheter/datainspektionens-tips-till-barn-och-unga-dela-inte-mer-an-nodvandigt"),
+              ("2026-03-16", "https://alandsradio.ax/nyheter/renovering-av-aldreboendet-solgarden-orsakar-konflikt-i-eckero"),
+              ("2026-03-16", "https://alandsradio.ax/nyheter/27-soker-jobb-som-vd-for-stadens-fastighetsverk"),
+              ("2026-03-18", "https://alandsradio.ax/nyheter/hd-beslut-om-rattspsykiatrisk-vard-zekaj-vi-hade-ratt"),
+              ("2026-03-18", "https://alandsradio.ax/nyheter/blomsterhandlaren-kritisk-till-rustas-stora-tradgardsutbud"),
+              ("2026-03-18", "https://alandsradio.ax/nyheter/ny-hbl-matning-alanningarna-haller-fast-vid-demilitariseringen"),
+          ]
+          total_in = total_out = 0
+          for day, url in articles:
+              print(f"\n─── {day}: {url.split('/')[-1]} ───")
+              body, author, _ = fetch_article(url)
+              r = requests.get(url, headers=HEADERS, timeout=15)
+              soup = BeautifulSoup(r.text, "html.parser")
+              h1 = soup.find("h1")
+              headline = h1.get_text(strip=True) if h1 else url.split("/")[-1]
+              print(f"Rubrik: {headline}")
+              julius, in_t, out_t = generate_julius(headline, url, body)
+              total_in += in_t; total_out += out_t
+              print(f"Julius klar ({len(julius)} tecken). Tokens: {in_t}+{out_t}")
+              slug = slugify(headline)
+              article = {
+                  "headline": headline, "julius_text": julius, "body": body,
+                  "author": author, "source_url": url, "date": day, "slug": slug,
+                  "published_at": f"{day}T08:00:00Z",
+              }
+              path = f"src/content/articles/{day}-{slug}.json"
+              push_file(path, json.dumps(article, ensure_ascii=False, indent=2),
+                        f"📅 Backfill: {headline[:60]}")
+              print(f"Sparad: {path}")
+              time.sleep(2)
+          log_tokens(total_in, total_out)
+          print(f"\n✅ Klart! {total_in}+{total_out} tokens")
+          PYEOF
