@@ -333,6 +333,25 @@ def slugify(text: str, max_length: int = 60) -> str:
 # 4. PUBLICERA via GitHub API
 # ─────────────────────────────────────────────────────────────────────────────
 
+def _file_sha(folder: str, slug: str) -> bool:
+    """Returnerar True om det redan finns en artikel-JSON med given slug (oavsett datum)."""
+    if not GITHUB_TOKEN or not GITHUB_REPO:
+        return False
+    headers = {
+        "Authorization": f"Bearer {GITHUB_TOKEN}",
+        "Accept": "application/vnd.github+json",
+        "X-GitHub-Api-Version": "2022-11-28",
+    }
+    api_url = f"{GITHUB_API_BASE}/repos/{GITHUB_REPO}/contents/{folder}"
+    resp = requests.get(api_url, headers=headers, params={"ref": GITHUB_BRANCH})
+    if resp.status_code != 200:
+        return False
+    return any(
+        f["name"].endswith(f"-{slug}.json") or f["name"] == f"{slug}.json"
+        for f in resp.json()
+    )
+
+
 def _push_file(path: str, content: str, commit_message: str) -> str:
     """Pushar en fil till repot via REST API. Returnerar html_url."""
     if not GITHUB_TOKEN or not GITHUB_REPO:
@@ -561,6 +580,14 @@ def main() -> None:
             log.info("Redan processad — hoppar över: %s", url)
             continue
 
+        # Slug-kontroll: om en JSON med samma slug redan finns (oavsett datum) → hoppa över
+        slug = slugify(headline)
+        existing = _file_sha(f"src/content/articles", slug)
+        if existing:
+            log.info("Slug redan publicerad — hoppar över: %s", slug)
+            save_seen_url(url, headline, today)
+            continue
+
         log.info("─── Processar: %s ───", headline)
 
         # 3. Hämta artikelinnehåll + författare
@@ -568,9 +595,6 @@ def main() -> None:
 
         # 4. Generera Julius
         julius = generate_sundblom(headline, url, body)
-
-        # 5. Bygg slug
-        slug = slugify(headline)
 
         # 6. Spara JSON till src/content/articles/ via GitHub API
         save_article_json(headline, julius, body, author, url, today, slug)
