@@ -1,6 +1,6 @@
 {
-  "total_input": 33364,
-  "total_output": 7811,
+  "total_input": 35306,
+  "total_output": 8285,
   "calls": [
     {
       "date": "2026-03-24T06:49:07Z",
@@ -15,6 +15,12 @@
       "input": 5608,
       "output": 1356,
       "source": "backfill"
+    },
+    {
+      "date": "2026-03-24T11:14:02Z",
+      "model": "claude-haiku-4-5-20251001",
+      "input": 1942,
+      "output": 474
     }
   ]
 }
