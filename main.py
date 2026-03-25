@@ -41,7 +41,7 @@ GITHUB_TOKEN  = os.environ.get("GITHUB_TOKEN", "")
 GITHUB_REPO   = os.environ.get("GITHUB_REPO", "")        # "username/repo"
 GITHUB_BRANCH = os.environ.get("GITHUB_BRANCH", "main")
 GOOGLE_API_KEY  = os.environ.get("GOOGLE_API_KEY", "")
-SUNDBLOM_MODEL  = os.environ.get("SUNDBLOM_MODEL", "gemini-2.0-flash")
+SUNDBLOM_MODEL  = os.environ.get("SUNDBLOM_MODEL") or "gemini-2.0-flash"
 
 
 # ─────────────────────────────────────────────────────────────────────────────
