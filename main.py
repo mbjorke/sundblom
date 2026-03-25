@@ -21,8 +21,7 @@ import datetime
 import unicodedata
 import requests
 from bs4 import BeautifulSoup
-from google import genai
-from google.genai import types as genai_types
+import google.generativeai as genai
 
 # ── Logging ──────────────────────────────────────────────────────────────────
 logging.basicConfig(
@@ -244,14 +243,14 @@ Svara ENBART med den färdiga texten. Ingen förklaring, ingen inledning."""
 
 
 def _call_api(system: str, user: str, max_tokens: int = 500) -> str:
-    client = genai.Client(api_key=GOOGLE_API_KEY)
-    response = client.models.generate_content(
-        model=SUNDBLOM_MODEL,
-        contents=user,
-        config=genai_types.GenerateContentConfig(
-            system_instruction=system,
-            max_output_tokens=max_tokens,
-        ),
+    genai.configure(api_key=GOOGLE_API_KEY)
+    model = genai.GenerativeModel(
+        model_name=SUNDBLOM_MODEL,
+        system_instruction=system,
+    )
+    response = model.generate_content(
+        user,
+        generation_config=genai.types.GenerationConfig(max_output_tokens=max_tokens),
     )
     usage = response.usage_metadata
     _log_tokens(usage.prompt_token_count, usage.candidates_token_count)
