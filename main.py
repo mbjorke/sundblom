@@ -299,8 +299,8 @@ def _build_news_block(headline: str, source_url: str, body: str) -> str:
 
 def generate_sundblom(headline: str, source_url: str, body: str = "") -> str:
     """Genererar Julius Sundbloms ledarartikel om topnyheten."""
-    if not ANTHROPIC_KEY:
-        raise EnvironmentError("ANTHROPIC_API_KEY saknas i miljövariablerna.")
+    if not GOOGLE_API_KEY:
+        raise EnvironmentError("GOOGLE_API_KEY saknas i miljövariablerna.")
     log.info("Genererar Sundblom-kommentar…")
     news = _build_news_block(headline, source_url, body)
     text = _call_api(
