@@ -21,7 +21,8 @@ import datetime
 import unicodedata
 import requests
 from bs4 import BeautifulSoup
-import google.generativeai as genai
+from google import genai
+from google.genai import types as genai_types
 
 # ── Logging ──────────────────────────────────────────────────────────────────
 logging.basicConfig(
@@ -40,7 +41,7 @@ GITHUB_TOKEN  = os.environ.get("GITHUB_TOKEN", "")
 GITHUB_REPO   = os.environ.get("GITHUB_REPO", "")        # "username/repo"
 GITHUB_BRANCH = os.environ.get("GITHUB_BRANCH", "main")
 GOOGLE_API_KEY  = os.environ.get("GOOGLE_API_KEY", "")
-SUNDBLOM_MODEL  = os.environ.get("SUNDBLOM_MODEL") or "gemini-2.0-flash-lite"
+SUNDBLOM_MODEL  = os.environ.get("SUNDBLOM_MODEL") or "gemini-2.5-flash"
 
 
 # ─────────────────────────────────────────────────────────────────────────────
@@ -243,14 +244,14 @@ Svara ENBART med den färdiga texten. Ingen förklaring, ingen inledning."""
 
 
 def _call_api(system: str, user: str, max_tokens: int = 500) -> str:
-    genai.configure(api_key=GOOGLE_API_KEY)
-    model = genai.GenerativeModel(
-        model_name=SUNDBLOM_MODEL,
-        system_instruction=system,
-    )
-    response = model.generate_content(
-        user,
-        generation_config=genai.types.GenerationConfig(max_output_tokens=max_tokens),
+    client = genai.Client(api_key=GOOGLE_API_KEY)
+    response = client.models.generate_content(
+        model=SUNDBLOM_MODEL,
+        contents=user,
+        config=genai_types.GenerateContentConfig(
+            system_instruction=system,
+            max_output_tokens=max_tokens,
+        ),
     )
     usage = response.usage_metadata
     _log_tokens(usage.prompt_token_count, usage.candidates_token_count)
