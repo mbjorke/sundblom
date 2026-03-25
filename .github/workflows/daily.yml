@@ -40,7 +40,8 @@ jobs:
       # 4. Kör generatorn (skriver JSON till src/content/articles/)
       - name: Kör Sundbloms generator
         env:
-          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          GOOGLE_API_KEY:    ${{ secrets.GOOGLE_API_KEY }}
+          SUNDBLOM_MODEL:    ${{ secrets.SUNDBLOM_MODEL }}
           GITHUB_TOKEN:      ${{ secrets.GITHUB_TOKEN }}
           GITHUB_REPO:       ${{ github.repository }}
           GITHUB_BRANCH:     ${{ github.ref_name }}

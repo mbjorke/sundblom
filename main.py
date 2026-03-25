@@ -21,7 +21,7 @@ import datetime
 import unicodedata
 import requests
 from bs4 import BeautifulSoup
-from anthropic import Anthropic
+import google.generativeai as genai
 
 # ── Logging ──────────────────────────────────────────────────────────────────
 logging.basicConfig(
@@ -39,8 +39,8 @@ GITHUB_API_BASE  = "https://api.github.com"
 GITHUB_TOKEN  = os.environ.get("GITHUB_TOKEN", "")
 GITHUB_REPO   = os.environ.get("GITHUB_REPO", "")        # "username/repo"
 GITHUB_BRANCH = os.environ.get("GITHUB_BRANCH", "main")
-ANTHROPIC_KEY   = os.environ.get("ANTHROPIC_API_KEY", "")
-SUNDBLOM_MODEL  = os.environ.get("SUNDBLOM_MODEL", "claude-haiku-4-5-20251001")
+GOOGLE_API_KEY  = os.environ.get("GOOGLE_API_KEY", "")
+SUNDBLOM_MODEL  = os.environ.get("SUNDBLOM_MODEL", "gemini-2.0-flash")
 
 
 # ─────────────────────────────────────────────────────────────────────────────
@@ -243,15 +243,16 @@ Svara ENBART med den färdiga texten. Ingen förklaring, ingen inledning."""
 
 
 def _call_api(system: str, user: str, max_tokens: int = 500) -> str:
-    client = Anthropic(api_key=ANTHROPIC_KEY)
-    response = client.messages.create(
-        model=SUNDBLOM_MODEL,
-        max_tokens=max_tokens,
-        system=system,
-        messages=[{"role": "user", "content": user}],
+    genai.configure(api_key=GOOGLE_API_KEY)
+    model = genai.GenerativeModel(
+        model_name=SUNDBLOM_MODEL,
+        system_instruction=system,
+        generation_config=genai.types.GenerationConfig(max_output_tokens=max_tokens),
     )
-    _log_tokens(response.usage.input_tokens, response.usage.output_tokens)
-    return response.content[0].text.strip()
+    response = model.generate_content(user)
+    usage = response.usage_metadata
+    _log_tokens(usage.prompt_token_count, usage.candidates_token_count)
+    return response.text.strip()
 
 
 def _log_tokens(input_tokens: int, output_tokens: int) -> None:
