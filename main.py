@@ -41,7 +41,7 @@ GITHUB_TOKEN  = os.environ.get("GITHUB_TOKEN", "")
 GITHUB_REPO   = os.environ.get("GITHUB_REPO", "")        # "username/repo"
 GITHUB_BRANCH = os.environ.get("GITHUB_BRANCH", "main")
 GOOGLE_API_KEY  = os.environ.get("GOOGLE_API_KEY", "")
-SUNDBLOM_MODEL  = os.environ.get("SUNDBLOM_MODEL") or "gemini-2.5-flash"
+SUNDBLOM_MODEL  = os.environ.get("SUNDBLOM_MODEL") or "gemini-2.0-flash"
 
 
 # ─────────────────────────────────────────────────────────────────────────────
@@ -243,7 +243,7 @@ Om JA på någon fråga — skriv om tills texten känns äkta.
 Svara ENBART med den färdiga texten. Ingen förklaring, ingen inledning."""
 
 
-def _call_api(system: str, user: str, max_tokens: int = 500) -> str:
+def _call_api(system: str, user: str, max_tokens: int = 2048) -> str:
     client = genai.Client(api_key=GOOGLE_API_KEY)
     response = client.models.generate_content(
         model=SUNDBLOM_MODEL,

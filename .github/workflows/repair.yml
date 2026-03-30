@@ -1,0 +1,35 @@
+name: 🔧 Reparera trunkerade artiklar
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  repair:
+    name: Reparera julius_text
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+
+    steps:
+      - name: Checka ut kod
+        uses: actions/checkout@v4
+
+      - name: Sätt upp Python 3.11
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: "pip"
+
+      - name: Installera Python-beroenden
+        run: pip install -r requirements.txt
+
+      - name: Kör reparation
+        env:
+          GOOGLE_API_KEY: ${{ secrets.GOOGLE_API_KEY }}
+          SUNDBLOM_MODEL: ${{ secrets.SUNDBLOM_MODEL }}
+          GITHUB_TOKEN:   ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_REPO:    ${{ github.repository }}
+          GITHUB_BRANCH:  ${{ github.ref_name }}
+        run: python repair.py
