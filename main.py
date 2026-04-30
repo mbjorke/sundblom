@@ -494,6 +494,27 @@ def save_last_headline(headline: str) -> None:
         payload["sha"] = sha
     requests.put(api_url, headers=headers, json=payload).raise_for_status()
     log.info("last_headline.txt uppdaterad.")
+    _update_build_meta(headers)
+
+
+def _update_build_meta(headers: dict) -> None:
+    """Uppdaterar src/build-meta.json med aktuell tidsstämpel.
+    Importeras av index.astro så att CF Pages alltid räknar hemsidan som förändrad."""
+    api_url = f"{GITHUB_API_BASE}/repos/{GITHUB_REPO}/contents/src/build-meta.json"
+    sha = None
+    resp = requests.get(api_url, headers=headers, params={"ref": GITHUB_BRANCH})
+    if resp.status_code == 200:
+        sha = resp.json().get("sha")
+    meta = {"last_updated": datetime.datetime.now(datetime.timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")}
+    payload: dict = {
+        "message": f"🕐 Uppdaterar build-meta [skip cf]",
+        "content": base64.b64encode(json.dumps(meta, indent=2).encode()).decode(),
+        "branch": GITHUB_BRANCH,
+    }
+    if sha:
+        payload["sha"] = sha
+    requests.put(api_url, headers=headers, json=payload)
+    log.info("build-meta.json uppdaterad.")
 
 
 def save_article_json(headline: str, julius_text: str, body: str, author: str,
