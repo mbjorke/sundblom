@@ -4,7 +4,7 @@
   "version": "0.1.0",
   "scripts": {
     "dev": "astro dev",
-    "build": "astro build",
+    "build": "rm -rf .astro && astro build",
     "preview": "astro preview",
     "astro": "astro"
   },
