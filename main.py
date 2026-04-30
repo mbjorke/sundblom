@@ -470,7 +470,13 @@ def load_last_headline() -> str:
 
 
 def save_last_headline(headline: str) -> None:
-    """Sparar senast publicerad rubrik till last_headline.txt i repot."""
+    """Sparar senast publicerad rubrik och build-meta i ett enda atomärt commit.
+
+    Använder Git Trees API för att uppdatera last_headline.txt OCH
+    src/build-meta.json i samma commit — utan [skip cf] — så att CF Pages
+    triggas och bygger från en state där build-meta redan är uppdaterad.
+    Det gör att index.html får ett nytt hash och laddas upp av CF Pages.
+    """
     if not GITHUB_TOKEN or not GITHUB_REPO:
         return
     headers = {
@@ -478,43 +484,76 @@ def save_last_headline(headline: str) -> None:
         "Accept": "application/vnd.github+json",
         "X-GitHub-Api-Version": "2022-11-28",
     }
-    api_url = f"{GITHUB_API_BASE}/repos/{GITHUB_REPO}/contents/last_headline.txt"
-    sha = None
-    resp = requests.get(api_url, headers=headers, params={"ref": GITHUB_BRANCH})
-    if resp.status_code == 200:
-        sha = resp.json().get("sha")
-    elif resp.status_code != 404:
-        resp.raise_for_status()
-    payload: dict = {
-        "message": f"🔖 Uppdaterar senaste rubrik: {headline[:60]}",
-        "content": base64.b64encode(headline.encode("utf-8")).decode("ascii"),
-        "branch": GITHUB_BRANCH,
-    }
-    if sha:
-        payload["sha"] = sha
-    requests.put(api_url, headers=headers, json=payload).raise_for_status()
-    log.info("last_headline.txt uppdaterad.")
-    _update_build_meta(headers)
 
+    now_iso = datetime.datetime.now(datetime.timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
+    meta = {"last_updated": now_iso}
 
-def _update_build_meta(headers: dict) -> None:
-    """Uppdaterar src/build-meta.json med aktuell tidsstämpel.
-    Importeras av index.astro så att CF Pages alltid räknar hemsidan som förändrad."""
-    api_url = f"{GITHUB_API_BASE}/repos/{GITHUB_REPO}/contents/src/build-meta.json"
-    sha = None
-    resp = requests.get(api_url, headers=headers, params={"ref": GITHUB_BRANCH})
-    if resp.status_code == 200:
-        sha = resp.json().get("sha")
-    meta = {"last_updated": datetime.datetime.now(datetime.timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")}
-    payload: dict = {
-        "message": f"🕐 Uppdaterar build-meta [skip cf]",
-        "content": base64.b64encode(json.dumps(meta, indent=2).encode()).decode(),
-        "branch": GITHUB_BRANCH,
-    }
-    if sha:
-        payload["sha"] = sha
-    requests.put(api_url, headers=headers, json=payload)
-    log.info("build-meta.json uppdaterad.")
+    # 1. Hämta aktuell HEAD för branchen
+    ref_resp = requests.get(
+        f"{GITHUB_API_BASE}/repos/{GITHUB_REPO}/git/refs/heads/{GITHUB_BRANCH}",
+        headers=headers,
+    )
+    ref_resp.raise_for_status()
+    head_sha = ref_resp.json()["object"]["sha"]
+
+    # 2. Hämta träd-SHA från HEAD-commiten
+    commit_resp = requests.get(
+        f"{GITHUB_API_BASE}/repos/{GITHUB_REPO}/git/commits/{head_sha}",
+        headers=headers,
+    )
+    commit_resp.raise_for_status()
+    base_tree_sha = commit_resp.json()["tree"]["sha"]
+
+    # 3. Skapa nytt träd med båda filerna inline (mode 100644 = vanlig fil)
+    tree_resp = requests.post(
+        f"{GITHUB_API_BASE}/repos/{GITHUB_REPO}/git/trees",
+        headers=headers,
+        json={
+            "base_tree": base_tree_sha,
+            "tree": [
+                {
+                    "path": "last_headline.txt",
+                    "mode": "100644",
+                    "type": "blob",
+                    "content": headline,
+                },
+                {
+                    "path": "src/build-meta.json",
+                    "mode": "100644",
+                    "type": "blob",
+                    "content": json.dumps(meta, indent=2),
+                },
+            ],
+        },
+    )
+    tree_resp.raise_for_status()
+    new_tree_sha = tree_resp.json()["sha"]
+
+    # 4. Skapa commit som pekar på det nya trädet
+    commit_create_resp = requests.post(
+        f"{GITHUB_API_BASE}/repos/{GITHUB_REPO}/git/commits",
+        headers=headers,
+        json={
+            "message": f"🔖 Uppdaterar senaste rubrik: {headline[:60]}",
+            "tree": new_tree_sha,
+            "parents": [head_sha],
+        },
+    )
+    commit_create_resp.raise_for_status()
+    new_commit_sha = commit_create_resp.json()["sha"]
+
+    # 5. Flytta branch-ref till det nya commitet
+    update_ref_resp = requests.patch(
+        f"{GITHUB_API_BASE}/repos/{GITHUB_REPO}/git/refs/heads/{GITHUB_BRANCH}",
+        headers=headers,
+        json={"sha": new_commit_sha},
+    )
+    update_ref_resp.raise_for_status()
+
+    log.info(
+        "last_headline.txt + build-meta.json uppdaterade atomärt (commit %s).",
+        new_commit_sha[:7],
+    )
 
 
 def save_article_json(headline: str, julius_text: str, body: str, author: str,
