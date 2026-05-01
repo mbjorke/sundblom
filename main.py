@@ -286,7 +286,7 @@ def _log_tokens(input_tokens: int, output_tokens: int) -> None:
         "output": output_tokens,
     })
     body: dict = {
-        "message": f"📊 Token-logg: {input_tokens}+{output_tokens} tokens [skip ci]",
+        "message": f"[skip ci] 📊 Token-logg: {input_tokens}+{output_tokens} tokens",
         "content": base64.b64encode(json.dumps(data, ensure_ascii=False, indent=2).encode()).decode(),
     }
     if sha:
@@ -442,7 +442,7 @@ def save_seen_url(url: str, headline: str, date_iso: str) -> None:
     new_content = json.dumps(entries, ensure_ascii=False, indent=2)
 
     payload: dict = {
-        "message": f"🔖 Markerar som processad: {headline[:50]} [skip ci]",
+        "message": f"[skip ci] 🔖 Markerar som processad: {headline[:50]}",
         "content": base64.b64encode(new_content.encode("utf-8")).decode("ascii"),
         "branch": GITHUB_BRANCH,
     }
@@ -574,7 +574,7 @@ def save_article_json(headline: str, julius_text: str, body: str, author: str,
         "slug": slug,
     }
     content = json.dumps(article, ensure_ascii=False, indent=2)
-    _push_file(path, content, f"🗞️ Ny artikel: {headline[:60]} [skip ci]")
+    _push_file(path, content, f"[skip ci] 🗞️ Ny artikel: {headline[:60]}")
     log.info("Artikel JSON sparad: %s", path)
 
 
