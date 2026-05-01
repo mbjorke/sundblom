@@ -542,13 +542,26 @@ def save_last_headline(headline: str) -> None:
     commit_create_resp.raise_for_status()
     new_commit_sha = commit_create_resp.json()["sha"]
 
-    # 5. Flytta branch-ref till det nya commitet
+    # 5. Flytta branch-ref (main) till det nya commitet
     update_ref_resp = requests.patch(
         f"{GITHUB_API_BASE}/repos/{GITHUB_REPO}/git/refs/heads/{GITHUB_BRANCH}",
         headers=headers,
         json={"sha": new_commit_sha},
     )
     update_ref_resp.raise_for_status()
+
+    # 6. Flytta deploy-branchen till samma commit → triggar CF Pages exakt en gång
+    #    CF Pages är konfigurerat att lyssna på 'deploy', inte 'main',
+    #    så inga mellanliggande commits till main triggar några deploys alls.
+    deploy_resp = requests.patch(
+        f"{GITHUB_API_BASE}/repos/{GITHUB_REPO}/git/refs/heads/deploy",
+        headers=headers,
+        json={"sha": new_commit_sha, "force": True},
+    )
+    if deploy_resp.status_code == 200:
+        log.info("deploy-branch uppdaterad → CF Pages-deploy triggas.")
+    else:
+        log.warning("Kunde inte uppdatera deploy-branch: %s", deploy_resp.text)
 
     log.info(
         "last_headline.txt + build-meta.json uppdaterade atomärt (commit %s).",
