@@ -488,67 +488,77 @@ def save_last_headline(headline: str) -> None:
     now_iso = datetime.datetime.now(datetime.timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
     meta = {"last_updated": now_iso}
 
-    # 1. Hämta aktuell HEAD för branchen
-    ref_resp = requests.get(
-        f"{GITHUB_API_BASE}/repos/{GITHUB_REPO}/git/refs/heads/{GITHUB_BRANCH}",
-        headers=headers,
-    )
-    ref_resp.raise_for_status()
-    head_sha = ref_resp.json()["object"]["sha"]
+    new_commit_sha = None
+    for attempt in range(5):
+        # 1. Hämta aktuell HEAD för branchen
+        ref_resp = requests.get(
+            f"{GITHUB_API_BASE}/repos/{GITHUB_REPO}/git/refs/heads/{GITHUB_BRANCH}",
+            headers=headers,
+        )
+        ref_resp.raise_for_status()
+        head_sha = ref_resp.json()["object"]["sha"]
 
-    # 2. Hämta träd-SHA från HEAD-commiten
-    commit_resp = requests.get(
-        f"{GITHUB_API_BASE}/repos/{GITHUB_REPO}/git/commits/{head_sha}",
-        headers=headers,
-    )
-    commit_resp.raise_for_status()
-    base_tree_sha = commit_resp.json()["tree"]["sha"]
+        # 2. Hämta träd-SHA från HEAD-commiten
+        commit_resp = requests.get(
+            f"{GITHUB_API_BASE}/repos/{GITHUB_REPO}/git/commits/{head_sha}",
+            headers=headers,
+        )
+        commit_resp.raise_for_status()
+        base_tree_sha = commit_resp.json()["tree"]["sha"]
 
-    # 3. Skapa nytt träd med båda filerna inline (mode 100644 = vanlig fil)
-    tree_resp = requests.post(
-        f"{GITHUB_API_BASE}/repos/{GITHUB_REPO}/git/trees",
-        headers=headers,
-        json={
-            "base_tree": base_tree_sha,
-            "tree": [
-                {
-                    "path": "last_headline.txt",
-                    "mode": "100644",
-                    "type": "blob",
-                    "content": headline,
-                },
-                {
-                    "path": "src/build-meta.json",
-                    "mode": "100644",
-                    "type": "blob",
-                    "content": json.dumps(meta, indent=2),
-                },
-            ],
-        },
-    )
-    tree_resp.raise_for_status()
-    new_tree_sha = tree_resp.json()["sha"]
+        # 3. Skapa nytt träd med båda filerna inline (mode 100644 = vanlig fil)
+        tree_resp = requests.post(
+            f"{GITHUB_API_BASE}/repos/{GITHUB_REPO}/git/trees",
+            headers=headers,
+            json={
+                "base_tree": base_tree_sha,
+                "tree": [
+                    {
+                        "path": "last_headline.txt",
+                        "mode": "100644",
+                        "type": "blob",
+                        "content": headline,
+                    },
+                    {
+                        "path": "src/build-meta.json",
+                        "mode": "100644",
+                        "type": "blob",
+                        "content": json.dumps(meta, indent=2),
+                    },
+                ],
+            },
+        )
+        tree_resp.raise_for_status()
+        new_tree_sha = tree_resp.json()["sha"]
 
-    # 4. Skapa commit som pekar på det nya trädet
-    commit_create_resp = requests.post(
-        f"{GITHUB_API_BASE}/repos/{GITHUB_REPO}/git/commits",
-        headers=headers,
-        json={
-            "message": f"🔖 Uppdaterar senaste rubrik: {headline[:60]}",
-            "tree": new_tree_sha,
-            "parents": [head_sha],
-        },
-    )
-    commit_create_resp.raise_for_status()
-    new_commit_sha = commit_create_resp.json()["sha"]
+        # 4. Skapa commit som pekar på det nya trädet
+        commit_create_resp = requests.post(
+            f"{GITHUB_API_BASE}/repos/{GITHUB_REPO}/git/commits",
+            headers=headers,
+            json={
+                "message": f"🔖 Uppdaterar senaste rubrik: {headline[:60]}",
+                "tree": new_tree_sha,
+                "parents": [head_sha],
+            },
+        )
+        commit_create_resp.raise_for_status()
+        new_commit_sha = commit_create_resp.json()["sha"]
 
-    # 5. Flytta branch-ref (main) till det nya commitet
-    update_ref_resp = requests.patch(
-        f"{GITHUB_API_BASE}/repos/{GITHUB_REPO}/git/refs/heads/{GITHUB_BRANCH}",
-        headers=headers,
-        json={"sha": new_commit_sha},
-    )
-    update_ref_resp.raise_for_status()
+        # 5. Flytta branch-ref (main) till det nya commitet
+        update_ref_resp = requests.patch(
+            f"{GITHUB_API_BASE}/repos/{GITHUB_REPO}/git/refs/heads/{GITHUB_BRANCH}",
+            headers=headers,
+            json={"sha": new_commit_sha},
+        )
+        if update_ref_resp.status_code == 422:
+            # Branch moved since we read HEAD — re-read and retry
+            log.warning("Branch-ref konflikt (attempt %d/5) — läser om HEAD och försöker igen.", attempt + 1)
+            continue
+        update_ref_resp.raise_for_status()
+        break
+    else:
+        log.error("Kunde inte uppdatera branch-ref efter 5 försök — hoppar över deploy-trigger.")
+        return
 
     # 6. Flytta deploy-branchen till samma commit → triggar CF Pages exakt en gång
     #    CF Pages är konfigurerat att lyssna på 'deploy', inte 'main',
