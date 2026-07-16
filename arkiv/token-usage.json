@@ -1,6 +1,6 @@
 {
-  "total_input": 2743315,
-  "total_output": 711674,
+  "total_input": 2745300,
+  "total_output": 712193,
   "calls": [
     {
       "date": "2026-03-24T06:49:07Z",
@@ -9052,6 +9052,12 @@
       "model": "gemini-2.5-flash",
       "input": 1825,
       "output": 533
+    },
+    {
+      "date": "2026-07-16T07:37:03Z",
+      "model": "gemini-2.5-flash",
+      "input": 1985,
+      "output": 519
     }
   ]
 }
