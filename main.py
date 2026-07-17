@@ -23,6 +23,7 @@ import requests
 from bs4 import BeautifulSoup
 from google import genai
 from google.genai import types as genai_types
+import selector  # Redaktörsomdömet — LLM-grind före generering
 
 # ── Logging ──────────────────────────────────────────────────────────────────
 logging.basicConfig(
@@ -714,6 +715,17 @@ def main() -> None:
         # 3. Hämta artikelinnehåll + författare
         body, author = fetch_article_body(url)
 
+        # 3b. Redaktörsomdömet — avgör om nyheten förtjänar en ledare alls
+        omdome = selector.editorial_judgment(headline, body, url)
+        if not omdome.get("skriv"):
+            log.info("🧭 Redaktörsomdöme AVVISAR (nyhetsvärde %s): %s",
+                      omdome.get("nyhetsvarde"), omdome.get("anledning", "")[:100])
+            save_seen_url(url, headline, today)
+            seen_urls.add(url)
+            continue
+        log.info("🧭 Redaktörsomdöme GODKÄNNER (nyhetsvärde %s, tema %s)",
+                 omdome.get("nyhetsvarde"), omdome.get("tema"))
+
         # 4. Generera Julius
         julius = generate_sundblom(headline, url, body)
 
@@ -730,6 +742,9 @@ def main() -> None:
     else:
         log.info("%d ny/nya artikel(ar) publicerade.", new_articles)
         save_last_headline(top_headline)
+
+    # Töm redaktörsommödets logg (en gång per körning)
+    selector.flush_log()
 
     log.info("═══ Klar. ═══")
 
