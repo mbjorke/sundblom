@@ -27,6 +27,15 @@
       "bevis": {
         "frekvens_total": 96
       }
+    },
+    {
+      "fras": "må vi",
+      "anledning": "Formelisk öppningskonstruktion ('må vi...') — överanvänd arkaisk fyllnad",
+      "tillagd": "2026-07-17",
+      "bevis": {
+        "frekvens_artiklar": 151,
+        "andel_artiklar_pct": 10
+      }
     }
   ],
   "rotera": [
