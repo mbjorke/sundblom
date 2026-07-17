@@ -2,8 +2,8 @@ name: 📈 Sundbloms veckoreflektion
 
 on:
   schedule:
-    # Måndag 09:00 finsk sommartid (EEST = UTC+3) → 06:00 UTC
-    - cron: "0 6 * * 1"
+    # Fredag 20:00 finsk sommartid (EEST = UTC+3) → 17:00 UTC (vintertid 19:00 EET)
+    - cron: "0 17 * * 5"
   # Tillåt manuell körning från Actions-fliken
   workflow_dispatch:
 
