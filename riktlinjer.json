@@ -45,6 +45,15 @@
         "frekvens_artiklar": 101,
         "andel_artiklar_pct": 7
       }
+    },
+    {
+      "fras": "månne",
+      "anledning": "Formelisk frågepartikel — arkaisk fyllnad, överanvänd",
+      "tillagd": "2026-07-17",
+      "bevis": {
+        "frekvens_artiklar": 33,
+        "andel_artiklar_pct": 2
+      }
     }
   ],
   "rotera": [
