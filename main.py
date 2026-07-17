@@ -35,6 +35,7 @@ log = logging.getLogger(__name__)
 # ── Constants ─────────────────────────────────────────────────────────────────
 ALANDS_RADIO_URL = "https://alandsradio.ax/nyheter"
 GITHUB_API_BASE  = "https://api.github.com"
+RIKTLINJER_PATH = os.path.join(os.path.dirname(os.path.abspath(__file__)), "riktlinjer.json")
 
 # ── GitHub config (from env) ───────────────────────────────────────────────
 GITHUB_TOKEN  = os.environ.get("GITHUB_TOKEN", "")
@@ -195,7 +196,7 @@ SPRÅKLIGA KRAV (strikt):
 - Ålderdomlig svensk ortografi: hvar, hvarför, hafva, gifva, äfven, blott, ej, icke,
   hvad, hvars, hvarmed, såsom, densamma, deraf, häraf, tillika, allenast, sedermera
 - Långa, värdiga meningar med inskjutna bisatser och participfraser
-- Inversioner: "Månget öga har sett…", "Aldrig skall det åländska folket…"
+- Inversioner: "Sällan hafva vi sett…", "Aldrig skall det åländska folket…" — variera, upprepa inte samma
 - Varierande periodsstruktur: korta hugg följda av långa sveep
 - Obligatoriska nyckelfraser (minst två per text):
     "fäderneärvda", "självstyrelsens heliga grundvalar", "låtom oss icke vika",
@@ -301,15 +302,47 @@ def _build_news_block(headline: str, source_url: str, body: str) -> str:
     return block
 
 
+def load_riktlinjer() -> str:
+    """Läser riktlinjer.json och bygger ett injicerbart block för prompten.
+    Detta är Julius långsiktiga minne — veckans lärdomar (undvikna fraser,
+    stilmål) ändrar nästa generations texter. Returnerar tom sträng om filen saknas."""
+    if not os.path.exists(RIKTLINJER_PATH):
+        return ""
+    try:
+        with open(RIKTLINJER_PATH, "r", encoding="utf-8") as f:
+            data = json.load(f)
+    except (json.JSONDecodeError, OSError) as e:
+        log.warning("Kunde inte läsa riktlinjer.json: %s", e)
+        return ""
+    parts = ["\n\nREDKTIONELLA RIKTLINJER (följ strikt — din växande erfarenhet):"]
+    undvik = data.get("undvik", [])
+    if undvik:
+        parts.append("UNDVIK helt dessa slitna fraser (de är för använda för att bära din röst):")
+        for r in undvik:
+            parts.append(f"  - \"{r.get('fras')}\" ({r.get('anledning', '')})")
+    rotera = data.get("rotera", [])
+    if rotera:
+        parts.append("ROTERA (använd högst EN gång per text och variera):")
+        for r in rotera:
+            parts.append(f"  - \"{r.get('fras')}\" ({r.get('anledning', '')})")
+    stilmal = data.get("stilmal", [])
+    if stilmal:
+        parts.append("STILMÅL:")
+        for s in stilmal:
+            parts.append(f"  - {s.get('mal')}: {s.get('target', '')}")
+    return "\n".join(parts) + "\n" if len(parts) > 1 else ""
+
+
 def generate_sundblom(headline: str, source_url: str, body: str = "") -> str:
     """Genererar Julius Sundbloms ledarartikel om topnyheten."""
     if not GOOGLE_API_KEY:
         raise EnvironmentError("GOOGLE_API_KEY saknas i miljövariablerna.")
     log.info("Genererar Sundblom-kommentar…")
     news = _build_news_block(headline, source_url, body)
+    riktlinjer = load_riktlinjer()
     text = _call_api(
         SUNDBLOM_PROMPT,
-        f"Dagens nyhet från Ålands Radio:\n\n{news}\n\nSkriv nu Sundbloms kommentar om denna nyhet.",
+        f"{riktlinjer}Dagens nyhet från Ålands Radio:\n\n{news}\n\nSkriv nu Sundbloms kommentar om denna nyhet.",
     )
     log.info("Sundblom klar (%d tecken).", len(text))
     return text

@@ -1,0 +1,91 @@
+{
+  "version": 1,
+  "updated": "2026-07-17",
+  "beskrivning": "Levande redaktionella riktlinjer. Läses av main.py före varje generering och injiceras i prompten. Växer via veckoreflektion (reflect_week.py) + 5 min mänskligt godkännande. Detta är Julius långsiktiga minne — det enda som gör att veckans lärdom ändrar nästa veckas texter.",
+  "undvik": [
+    {
+      "fras": "månget öga har",
+      "anledning": "Sliten kliché — förekom i ca 70% av 1531 texter (1076 ggr). Stod dessutom som inversionsexempel i prompten och kopierades därför mekaniskt. Använd andra inversioner i stället.",
+      "tillagd": "2026-07-17",
+      "bevis": {
+        "frekvens_total": 1076,
+        "andel_artiklar_pct": 70
+      }
+    },
+    {
+      "fras": "sannerligen",
+      "anledning": "Överanvänd intensifierare (256 ggr). Blir formelisk och förutsägbar.",
+      "tillagd": "2026-07-17",
+      "bevis": {
+        "frekvens_total": 256
+      }
+    },
+    {
+      "fras": "i sanning",
+      "anledning": "Formelisk intensifierare (96 ggr). Undvik helt.",
+      "tillagd": "2026-07-17",
+      "bevis": {
+        "frekvens_total": 96
+      }
+    }
+  ],
+  "rotera": [
+    {
+      "fras": "låtom oss",
+      "anledning": "1610 förekomster — används som standardinledning. Högst en gång per text; variera öppningen.",
+      "tillagd": "2026-07-17",
+      "bevis": {
+        "frekvens_total": 1610
+      }
+    }
+  ],
+  "stilmal": [
+    {
+      "mal": "Variera meningslängd",
+      "nuvarande": "median 25 ord, stdev 9.6, 12% av meningar över 35 ord — för enhetligt långa",
+      "target": "Blanda korta hugg (under 12 ord) med några svep (över 35). Stdev bör öka mot 14+.",
+      "tillagd": "2026-07-17"
+    },
+    {
+      "mal": "Minska moraliseringstäthet på moderna ämnen",
+      "nuvarande": "Hög moral-term density på tech/GDPR-klustret driver komik-poängen",
+      "target": "Använd historiskt trovärdig ram och få fakta, inte alltigenom moraliserande ton",
+      "tillagd": "2026-07-17"
+    }
+  ],
+  "veckoreflektioner": [
+    {
+      "datum": "2026-07-17",
+      "artiklar": 113,
+      "troper": {
+        "låtom oss": 118,
+        "månget öga": 92,
+        "månget öga har": 87,
+        "sannerligen": 19,
+        "må vi": 15,
+        "vårt folk": 10,
+        "vårt land": 8,
+        "mången": 8,
+        "vår plikt": 4,
+        "i sanning": 3
+      },
+      "meningslangd": {
+        "median": 25,
+        "mean": 25.4,
+        "stdev": 9.7,
+        "over35_pct": 15
+      },
+      "nya_forslag": [
+        {
+          "fras": "månget öga",
+          "bevis": {
+            "frekvens_total": 92,
+            "per_artikel": 0.81
+          },
+          "forslag": "rotera",
+          "anledning": "92 förekomster över 113 artiklar (81% av texter)."
+        }
+      ]
+    }
+  ]
+}

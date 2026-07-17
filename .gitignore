@@ -12,3 +12,6 @@ bun.lockb
 # Astro build output
 dist/
 .astro/
+
+# Transient logg från belöningsloopen (regenereras varje körning)
+straff_logg.json

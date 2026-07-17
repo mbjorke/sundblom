@@ -1,0 +1,49 @@
+name: 📈 Sundbloms veckoreflektion
+
+on:
+  schedule:
+    # Måndag 09:00 finsk sommartid (EEST = UTC+3) → 06:00 UTC
+    - cron: "0 6 * * 1"
+  # Tillåt manuell körning från Actions-fliken
+  workflow_dispatch:
+
+permissions:
+  contents: write   # Krävs för att committa tillbaka riktlinjer/exempel
+
+jobs:
+  reflect-and-reward:
+    name: Veckoreflektion + belöningsloop
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    steps:
+      # 1. Checka ut repot
+      - name: Checka ut kod
+        uses: actions/checkout@v4
+
+      # 2. Sätt upp Python (reflect_week.py + reward_loop.py är stdlib-baserade — ingen API-kostnad)
+      - name: Sätt upp Python 3.11
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      # 3. Veckoreflektion — mäter klichéer + meningsrytm, loggar till riktlinjer.json (ändrar ej undvik-listan)
+      - name: Kör veckoreflektion
+        run: python reflect_week.py 7
+
+      # 4. Belöningsloop — belönar klichéfria texter (→ exempelbibliotek), straffar kliché-texter (→ strafflogg)
+      - name: Kör belöningsloop
+        run: python reward_loop.py 7
+
+      # 5. Committa tillbaka persistent tillstånd (riktlinjer + guld-exempel). straff_logg.json är transient (gitignorad).
+      - name: Committa veckans lärdom
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add riktlinjer.json exempelbibliotek.json 2>/dev/null || true
+          if git diff --staged --quiet; then
+            echo "Inga ändringar att committa denna vecka."
+          else
+            git commit -m "[skip ci] 📈 Veckoreflektion + belöningsloop: lärdom sparad"
+            git push
+          fi
