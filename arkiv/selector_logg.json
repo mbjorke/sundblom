@@ -1,0 +1,612 @@
+[
+  {
+    "date": "2026-03-01",
+    "headline": "IFK hockey slog ut Bålsta",
+    "url": "https://alandsradio.ax/nyheter/ifk-hockey-slog-ut-balsta",
+    "skriv": false,
+    "nyhetsvarde": 2,
+    "tema": "sport",
+    "anledning": "Ren sportresultat-rapportering utan samhällelig eller redaktionell vinkel.",
+    "backfill": true
+  },
+  {
+    "date": "2026-03-02",
+    "headline": "Så kan Gottbys nya brandstation se ut",
+    "url": "https://alandsradio.ax/nyheter/sa-kan-gottbys-nya-brandstation-se-ut-1",
+    "skriv": false,
+    "nyhetsvarde": 2,
+    "tema": "kommunal rutin",
+    "anledning": "Ren ritningsnotis om en brandstation, ingen konflikt eller substans.",
+    "backfill": true
+  },
+  {
+    "date": "2026-03-03",
+    "headline": "Inget vakuum består på narkotikamarknaden – polisen varnar för våldskapital",
+    "url": "https://alandsradio.ax/nyheter/inget-vakuum-bestar-pa-narkotikamarknaden-polisen-varnar-for-det-valdskapital-som-ar-redo-att-trada-in",
+    "skriv": true,
+    "nyhetsvarde": 7,
+    "tema": "sedlighet och samhällsordning",
+    "anledning": "Ett sedernas förfall och samhällsordningens upplösning värt en varnande ledare.",
+    "backfill": true
+  },
+  {
+    "date": "2026-03-07",
+    "headline": "Elevrådet: Slopa personalkaffet om KHS måste spara",
+    "url": "https://alandsradio.ax/nyheter/elevradet-slopa-personalkaffet-om-khs-maste-spara",
+    "skriv": false,
+    "nyhetsvarde": 2,
+    "tema": "skolrutin",
+    "anledning": "Trivial notis om besparingar på kaffe, saknar redaktionell tyngd.",
+    "backfill": true
+  },
+  {
+    "date": "2026-03-09",
+    "headline": "ÅU: Åland får vargbesök i mars",
+    "url": "https://alandsradio.ax/nyheter/au-aland-far-vargbesok-i-mars-1",
+    "skriv": false,
+    "nyhetsvarde": 3,
+    "tema": "natur",
+    "anledning": "Spekulativ naturnotis utan substans eller anknytning till Julius värld.",
+    "backfill": true
+  },
+  {
+    "date": "2026-03-12",
+    "headline": "Så ska Åland skydda sig mot cyberattacker",
+    "url": "https://alandsradio.ax/nyheter/sa-ska-aland-skydda-sig-mot-cyberattacker",
+    "skriv": false,
+    "nyhetsvarde": 4,
+    "tema": "säkerhet",
+    "anledning": "Teknisk myndighetsnotis utan tydlig politisk konflikt eller anknytning till redaktionens värld.",
+    "backfill": true
+  },
+  {
+    "date": "2026-03-15",
+    "headline": "Ålands idrott behöver tas på allvar",
+    "url": "https://alandsradio.ax/nyheter/alands-idrott-behover-tas-pa-allvar",
+    "skriv": false,
+    "nyhetsvarde": 4,
+    "tema": "idrott/sedlighet",
+    "anledning": "Föreningsintern konflikt om ungdomsidrott, för lokal och tunn för en ledare trots sedlighetsanknytning.",
+    "backfill": true
+  },
+  {
+    "date": "2026-03-16",
+    "headline": "27 söker jobb som vd för stadens fastighetsverk",
+    "url": "https://alandsradio.ax/nyheter/27-soker-jobb-som-vd-for-stadens-fastighetsverk",
+    "skriv": false,
+    "nyhetsvarde": 2,
+    "tema": "personalnotis",
+    "anledning": "Ren rekryteringsnotis utan substans eller konflikt.",
+    "backfill": true
+  },
+  {
+    "date": "2026-03-19",
+    "headline": "Zekaj: Cosmic har gett kraftigt produktivitetstapp också på Åland",
+    "url": "https://alandsradio.ax/nyheter/zekaj-cosmic-har-gett-kraftigt-produktivitetstapp-ocksa-pa-aland",
+    "skriv": true,
+    "nyhetsvarde": 6,
+    "tema": "samhällsordning/förvaltning",
+    "anledning": "Vittnar om modernitetens förfall genom ett misslyckat systembyte i sjukvården, värt en varnande kommentar.",
+    "backfill": true
+  },
+  {
+    "date": "2026-03-21",
+    "headline": "Planerna på ny färjelinje försenas – hamnproblem stoppar start till sommaren",
+    "url": "https://alandsradio.ax/nyheter/planerna-pa-ny-farjelinje-forsenas-hamnproblem-stoppar-start-till-sommaren",
+    "skriv": false,
+    "nyhetsvarde": 4,
+    "tema": "sjöfart/ekonomi",
+    "anledning": "Teknisk förseningsnotis om en färjelinje, saknar den tyngd och konflikt som krävs.",
+    "backfill": true
+  },
+  {
+    "date": "2026-03-23",
+    "headline": "Ålands gymnasium söker drygt 20 lärare till hösten",
+    "url": "https://alandsradio.ax/nyheter/alands-gymnasium-soker-drygt-20-larare-till-hosten",
+    "skriv": false,
+    "nyhetsvarde": 2,
+    "tema": "utbildningsrutin",
+    "anledning": "Ren rekryteringsnotis, ingen substans för en ledare om bildning.",
+    "backfill": true
+  },
+  {
+    "date": "2026-03-26",
+    "headline": "Bus med dörrknackning ledde till polisinsats",
+    "url": "https://alandsradio.ax/nyheter/bus-med-dorrknackning-ledde-till-polisinsats",
+    "skriv": false,
+    "nyhetsvarde": 3,
+    "tema": "ungdomsoseder",
+    "anledning": "Smålokal ungdomsnotis, för obetydlig trots antydan om sedlighetsförfall.",
+    "backfill": true
+  },
+  {
+    "date": "2026-03-29",
+    "headline": "Språkbråk om skattebyrån: Landskapet kritiska till frivillig finska på Ålandskon",
+    "url": "https://alandsradio.ax/nyheter/sprakbrak-om-skattebyran-landskapet-kritiska-till-frivillig-finska-pa-alandskontoret",
+    "skriv": true,
+    "nyhetsvarde": 8,
+    "tema": "svensk identitet/självstyrelse",
+    "anledning": "Kärnfrågan om svenska språkets ställning i myndighetsutövning på Åland kräver en principfast ledare.",
+    "backfill": true
+  },
+  {
+    "date": "2026-03-30",
+    "headline": "Ab Livet släpper ny musik",
+    "url": "https://alandsradio.ax/kultur/ab-livet-slapper-ny-musik",
+    "skriv": false,
+    "nyhetsvarde": 2,
+    "tema": "kultur/nöje",
+    "anledning": "Lättviktig musiknotis utan bildningsvärde eller samhällsanknytning.",
+    "backfill": true
+  },
+  {
+    "date": "2026-04-01",
+    "headline": "Fullmäktigeordförande manar till samarbete efter krisen i staden",
+    "url": "https://alandsradio.ax/nyheter/fullmaktigeordforande-manar-till-samarbete-efter-krisen-i-staden",
+    "skriv": true,
+    "nyhetsvarde": 6,
+    "tema": "samhällsordning",
+    "anledning": "En politisk kris i stadens ledning med avgång rör samhällsordningen och förtjänar kommentar.",
+    "backfill": true
+  },
+  {
+    "date": "2026-04-05",
+    "headline": "Jomala svarar elevrådet vid KHS: Det blir inget fritidsbusskort",
+    "url": "https://alandsradio.ax/nyheter/jomala-svarar-elevradet-vid-khs-det-blir-inget-fritidsbusskort",
+    "skriv": false,
+    "nyhetsvarde": 2,
+    "tema": "kommunal rutin",
+    "anledning": "Trivial kommunal budgetfråga om busskort, saknar redaktionell tyngd.",
+    "backfill": true
+  },
+  {
+    "date": "2026-04-06",
+    "headline": "Man över bord från åländsk tanker i Nordsjön",
+    "url": "https://alandsradio.ax/nyheter/man-over-bord-fran-alandsk-tanker-i-nordsjon",
+    "skriv": true,
+    "nyhetsvarde": 6,
+    "tema": "sjöfart/olycka",
+    "anledning": "En sjöolycka med dödlig utgång ombord ett åländskt fartyg rör sjöfartsnationens öde och förtjänar uppmärksamhet.",
+    "backfill": true
+  },
+  {
+    "date": "2026-04-09",
+    "headline": "Hundratals lockas till musikinstitutets instrumentprovardag",
+    "url": "https://alandsradio.ax/nyheter/hundratals-lockas-till-musikinstitutets-instrumentprovardag",
+    "skriv": false,
+    "nyhetsvarde": 2,
+    "tema": "kultur/nöje",
+    "anledning": "Trevlig men innehållslös evenemangsnotis utan substans.",
+    "backfill": true
+  },
+  {
+    "date": "2026-04-12",
+    "headline": "FMI: Kom ihåg att kontrollera varningar innan du gör upp eld",
+    "url": "https://alandsradio.ax/nyheter/fmi-kom-ihag-att-kontrollera-varningar-innan-du-gor-upp-eld",
+    "skriv": false,
+    "nyhetsvarde": 2,
+    "tema": "väder/rutin",
+    "anledning": "Ren väder- och säkerhetsupplysning, ingen ledarsubstans.",
+    "backfill": true
+  },
+  {
+    "date": "2026-04-13",
+    "headline": "ÅHS har försummat dataskydd och informationssäkerhet – Datainspektionen klar med",
+    "url": "https://alandsradio.ax/nyheter/ahs-har-forsummat-dataskydd-och-informationssakerhet-datainspektionen-klar-med-granskning",
+    "skriv": true,
+    "nyhetsvarde": 7,
+    "tema": "förvaltning/samhällsordning",
+    "anledning": "En myndighets försummelse av medborgarnas skydd är ett allvarligt förvaltningsfel värt en principiell ledare.",
+    "backfill": true
+  },
+  {
+    "date": "2026-04-15",
+    "headline": "Språkminoriteter hamnar i kläm – Henriksson frågar EU-kommissionen om ålänningar",
+    "url": "https://alandsradio.ax/nyheter/sprakminoriteter-hamnar-i-klam-anna-maja-henriksson-fragar-eu-kommissionen-om-alanningar-och-svt-play",
+    "skriv": true,
+    "nyhetsvarde": 7,
+    "tema": "svensk identitet",
+    "anledning": "Frågan om ålänningars tillgång till svenskt kulturutbud rör kärnan i den svenska identiteten och riksbandet.",
+    "backfill": true
+  },
+  {
+    "date": "2026-04-19",
+    "headline": "Visit Åland: Åland bestämmer om turistskatt",
+    "url": "https://alandsradio.ax/nyheter/visit-aland-aland-bestammer-om-turistskatt",
+    "skriv": true,
+    "nyhetsvarde": 6,
+    "tema": "självstyrelse",
+    "anledning": "En fråga om Ålands egen behörighet gentemot riket berör självstyrelsens grundvalar.",
+    "backfill": true
+  },
+  {
+    "date": "2026-04-20",
+    "headline": "19 unga deltog i Vokalisten",
+    "url": "https://alandsradio.ax/nyheter/19-unga-deltog-i-vokalisten",
+    "skriv": false,
+    "nyhetsvarde": 1,
+    "tema": "nöje",
+    "anledning": "Ren ungdomstävlingsnotis, obetydlig för samhällslivet.",
+    "backfill": true
+  },
+  {
+    "date": "2026-04-22",
+    "headline": "Två män får böter för att ha fällt träd med örnbo",
+    "url": "https://alandsradio.ax/nyheter/tva-man-far-boter-for-att-ha-fallt-trad-med-ornbo",
+    "skriv": false,
+    "nyhetsvarde": 3,
+    "tema": "rättsfall/natur",
+    "anledning": "Mindre rättsfall om naturskyddsförseelse, för tunt för en ledare.",
+    "backfill": true
+  },
+  {
+    "date": "2026-04-26",
+    "headline": "Misshandel vid skola på Åland – man döms till böter",
+    "url": "https://alandsradio.ax/nyheter/misshandel-vid-skola-pa-aland-man-doms-till-boter",
+    "skriv": false,
+    "nyhetsvarde": 3,
+    "tema": "brott",
+    "anledning": "Rutinmässigt brottmål med lindrigt straff, saknar bredare samhällssubstans.",
+    "backfill": true
+  },
+  {
+    "date": "2026-04-27",
+    "headline": "Ålands Natur och miljö vill ha stöd för enskilda avlopp",
+    "url": "https://alandsradio.ax/nyheter/alands-natur-och-miljo-vill-ha-stod-for-enskilda-avlopp",
+    "skriv": false,
+    "nyhetsvarde": 4,
+    "tema": "miljö/egendom",
+    "anledning": "Ett förslag om avloppsstöd är en förvaltningsfråga utan den tyngd som krävs för en ledare.",
+    "backfill": true
+  },
+  {
+    "date": "2026-04-29",
+    "headline": "Ohälsosam mat och fetma pekas ut i ny rapport",
+    "url": "https://alandsradio.ax/nyheter/v-1",
+    "skriv": true,
+    "nyhetsvarde": 6,
+    "tema": "sedlighet/folkhälsa",
+    "anledning": "Ett tecken på modernitetens förfall i kost och leverne som angår folkets kropp och sedlighet.",
+    "backfill": true
+  },
+  {
+    "date": "2026-05-03",
+    "headline": "Villkorligt fängelse för två äldre män – bägge körde grovt rattfulla",
+    "url": "https://alandsradio.ax/nyheter/villkorligt-fangelse-for-tva-aldre-man-bagge-korde-grovt-rattfulla",
+    "skriv": false,
+    "nyhetsvarde": 3,
+    "tema": "brott/sedlighet",
+    "anledning": "Rutinmässiga rattfylleridomar, för vanliga för att kräva en ledare.",
+    "backfill": true
+  },
+  {
+    "date": "2026-05-04",
+    "headline": "Bil vd: Färre auktoriserade bilförsäljare kan skapa problem för bilägare",
+    "url": "https://alandsradio.ax/nyheter/bil-vd-farre-auktoriserade-bilforsaljare-kan-skapa-problem-for-bilagare",
+    "skriv": false,
+    "nyhetsvarde": 3,
+    "tema": "näringsliv",
+    "anledning": "Bransch-specifik notis om bilhandel, saknar bredare samhällsvikt.",
+    "backfill": true
+  },
+  {
+    "date": "2026-05-06",
+    "headline": "Polisens utredning klar: Ingen brottsmisstanke i samband med branden vid Fyren",
+    "url": "https://alandsradio.ax/nyheter/polisens-utredning-klar-ingen-brottsmisstanke-i-samband-med-branden-vid-fyren",
+    "skriv": false,
+    "nyhetsvarde": 2,
+    "tema": "lokal olycka",
+    "anledning": "Utredning utan brottsmisstanke om en restaurangbrand, ren lokal notis.",
+    "backfill": true
+  },
+  {
+    "date": "2026-05-10",
+    "headline": "IFK Mariehamn och FC Lahti delade på poängen",
+    "url": "https://alandsradio.ax/nyheter/ifk-mariehamn-och-fc-lahti-delade-pa-poangen",
+    "skriv": false,
+    "nyhetsvarde": 1,
+    "tema": "sport",
+    "anledning": "Ren sportresultat-rapportering, ingen redaktionell vinkel.",
+    "backfill": true
+  },
+  {
+    "date": "2026-05-11",
+    "headline": "Aborterna i Finland ökar – marginell ökning på Åland",
+    "url": "https://alandsradio.ax/nyheter/aborterna-i-finland-okar-marginell-okning-pa-aland",
+    "skriv": true,
+    "nyhetsvarde": 7,
+    "tema": "sedlighet",
+    "anledning": "Statistik om aborter rör sedlighetens tillstånd i folket och kräver redaktionell ställning.",
+    "backfill": true
+  },
+  {
+    "date": "2026-05-12",
+    "headline": "Utvärdering: KST stärkte socialvården – men äldreomsorgen släpar efter",
+    "url": "https://alandsradio.ax/nyheter/utvardering-kst-starkte-socialvarden-men-aldreomsorgen-slapar-efter",
+    "skriv": true,
+    "nyhetsvarde": 6,
+    "tema": "samhällsordning/förvaltning",
+    "anledning": "En strukturell utvärdering av omsorgen om de gamla rör samhällsordningens plikt mot de svaga.",
+    "backfill": true
+  },
+  {
+    "date": "2026-05-17",
+    "headline": "THL: Vaccin mot vattkoppor bör erbjudas vuxna",
+    "url": "https://alandsradio.ax/nyheter/thl-vaccin-mot-vattkoppor-bor-erbjudas-vuxna",
+    "skriv": false,
+    "nyhetsvarde": 3,
+    "tema": "hälsovård",
+    "anledning": "Teknisk hälsovårdsrekommendation utan politisk eller samhällelig konflikt.",
+    "backfill": true
+  },
+  {
+    "date": "2026-05-18",
+    "headline": "Ålandspremiär för Skiftets pensionärsparlament",
+    "url": "https://alandsradio.ax/nyheter/alandspremiar-for-skiftets-pensionarsparlament",
+    "skriv": false,
+    "nyhetsvarde": 2,
+    "tema": "förening",
+    "anledning": "Trevlig föreningsnotis om pensionärer, saknar substans för en ledare.",
+    "backfill": true
+  },
+  {
+    "date": "2026-05-21",
+    "headline": "ÅT: Skarvbon har konstaterats på Råttgrundet",
+    "url": "https://alandsradio.ax/nyheter/at-skarvbon-har-konstaterats-pa-rattgrundet",
+    "skriv": false,
+    "nyhetsvarde": 2,
+    "tema": "natur",
+    "anledning": "Ren naturnotis om fågelbon, ingen anknytning till redaktionens värld.",
+    "backfill": true
+  },
+  {
+    "date": "2026-05-24",
+    "headline": "Succé för moppeträffen - igen",
+    "url": "https://alandsradio.ax/nyheter/succe-for-moppetraffen-igen",
+    "skriv": false,
+    "nyhetsvarde": 1,
+    "tema": "ungdom/nöje",
+    "anledning": "Trivial ungdomsnotis utan samhällsvikt.",
+    "backfill": true
+  },
+  {
+    "date": "2026-05-25",
+    "headline": "ÅHS styrelse positiva till IVF för att få syskon",
+    "url": "https://alandsradio.ax/nyheter/ahs-styrelse-positiva-till-ivf-for-att-fa-syskon",
+    "skriv": true,
+    "nyhetsvarde": 6,
+    "tema": "sedlighet/familj",
+    "anledning": "Frågan om fertilitetsvårdens gränser rör familjens och sedlighetens ordning och förtjänar ställningstagande.",
+    "backfill": true
+  },
+  {
+    "date": "2026-05-27",
+    "headline": "Större sjöräddningsövning ordnas utanför Mariehamn",
+    "url": "https://alandsradio.ax/nyheter/storre-sjoraddningsovning-ordnas-utanfor-mariehamn",
+    "skriv": false,
+    "nyhetsvarde": 4,
+    "tema": "sjöfart/säkerhet",
+    "anledning": "Rutinövning, dock med intressant not om GPS-störningar, men för tunt sammantaget för en ledare.",
+    "backfill": true
+  },
+  {
+    "date": "2026-05-31",
+    "headline": "Roligt att få den här möjligheten – Sara Wiss om seniorlandslagsdebuten",
+    "url": "https://alandsradio.ax/nyheter/roligt-att-fa-den-har-mojligheten-sara-wiss-om-seniorlandslagsdebuten",
+    "skriv": false,
+    "nyhetsvarde": 1,
+    "tema": "sport",
+    "anledning": "Personporträtt kring idrottsprestation, ingen ledarsubstans.",
+    "backfill": true
+  },
+  {
+    "date": "2026-06-01",
+    "headline": "Ålandstidningen slutar med morgondistribution",
+    "url": "https://alandsradio.ax/nyheter/alandstidningen-slutar-med-morgondistribution",
+    "skriv": true,
+    "nyhetsvarde": 6,
+    "tema": "press/bildning",
+    "anledning": "Förändringar i pressens spridning rör bildningens och den fria opinionens villkor på Åland.",
+    "backfill": true
+  },
+  {
+    "date": "2026-06-03",
+    "headline": "Lussestudent prisas av Svenska litteratursällskapet",
+    "url": "https://alandsradio.ax/nyheter/lussestudent-prisas-av-svenska-litteratursallskapet",
+    "skriv": false,
+    "nyhetsvarde": 3,
+    "tema": "bildning",
+    "anledning": "Trevlig personnotis om ett studentpris, men för tunn substans för en ledare.",
+    "backfill": true
+  },
+  {
+    "date": "2026-06-07",
+    "headline": "Upphandlingen kritiseras i egna leden: Jag tycker att man sviker lagtinget",
+    "url": "https://alandsradio.ax/nyheter/upphandlingen-far-kritik-fran-de-egna-regeringsleden",
+    "skriv": true,
+    "nyhetsvarde": 8,
+    "tema": "självstyrelse/politik",
+    "anledning": "En regeringskris om skärgårdstrafikens upphandling med hot om misstroende är väsentlig rikspolitik för Åland.",
+    "backfill": true
+  },
+  {
+    "date": "2026-06-08",
+    "headline": "19-åring körde 153 kilometer i timmen på 90-väg",
+    "url": "https://alandsradio.ax/nyheter/19-aring-korde-153-kilometer-i-timmen-pa-90-vag",
+    "skriv": false,
+    "nyhetsvarde": 3,
+    "tema": "trafikbrott",
+    "anledning": "Rutinmässigt trafikbrott, saknar bredare samhällsbetydelse.",
+    "backfill": true
+  },
+  {
+    "date": "2026-06-11",
+    "headline": "Ändringsbudgeten godkändes efter omröstning om Sunnanvind",
+    "url": "https://alandsradio.ax/nyheter/andringsbudgeten-godkandes-efter-omrostning-om-sunnanvind",
+    "skriv": true,
+    "nyhetsvarde": 6,
+    "tema": "politik/ekonomi",
+    "anledning": "En lagtingsomröstning om budgetmedel med politisk oenighet rör självstyrelsens ekonomiska förvaltning.",
+    "backfill": true
+  },
+  {
+    "date": "2026-06-14",
+    "headline": "Vägarbeten på Jomalarakan från och med måndag",
+    "url": "https://alandsradio.ax/nyheter/vagarbeten-pa-jomalarakan-fran-och-med-mandag",
+    "skriv": false,
+    "nyhetsvarde": 1,
+    "tema": "rutin",
+    "anledning": "Ren trafikupplysning om vägarbete, utan substans.",
+    "backfill": true
+  },
+  {
+    "date": "2026-06-15",
+    "headline": "Ålands största avloppspumpstation tryggas med nödgenerator",
+    "url": "https://alandsradio.ax/nyheter/alands-storsta-avloppspumpstation-tryggas-med-nodgenerator",
+    "skriv": false,
+    "nyhetsvarde": 3,
+    "tema": "infrastruktur",
+    "anledning": "Teknisk infrastrukturåtgärd, saknar politisk eller sedlig substans för en ledare.",
+    "backfill": true
+  },
+  {
+    "date": "2026-06-17",
+    "headline": "Havererad sändning från fullmäktige – staden ber om ursäkt",
+    "url": "https://alandsradio.ax/nyheter/havererad-sandning-fran-fullmaktige-staden-ber-om-ursakt",
+    "skriv": false,
+    "nyhetsvarde": 2,
+    "tema": "teknik/rutin",
+    "anledning": "Teknisk sändningsmiss utan djupare samhällsbetydelse.",
+    "backfill": true
+  },
+  {
+    "date": "2026-06-21",
+    "headline": "Barn slutar simskolan tidigare – utan att vara simkunniga",
+    "url": "https://alandsradio.ax/nyheter/barn-slutar-simskolan-tidigare-utan-att-vara-simkunniga",
+    "skriv": true,
+    "nyhetsvarde": 6,
+    "tema": "bildning/sedlighet",
+    "anledning": "Sviktande simkunnighet bland barn är ett tecken på fostrans förfall värt en förmanande ledare.",
+    "backfill": true
+  },
+  {
+    "date": "2026-06-22",
+    "headline": "98 uppdrag för polisen under midsommar – Helgen har i det stora hela varit lugn",
+    "url": "https://alandsradio.ax/nyheter/98-uppdrag-for-polisen-under-midsommar-helgen-har-i-det-stora-hela-varit-lugn",
+    "skriv": false,
+    "nyhetsvarde": 3,
+    "tema": "ordning",
+    "anledning": "Rutinmässig polisrapport om en lugn helg, ingen substans för en ledare.",
+    "backfill": true
+  },
+  {
+    "date": "2026-06-24",
+    "headline": "Söderström och Karlsson blev sprintmästare",
+    "url": "https://alandsradio.ax/nyheter/soderstrom-och-karlsson-blev-sprintmastare",
+    "skriv": false,
+    "nyhetsvarde": 1,
+    "tema": "sport",
+    "anledning": "Ren sportresultat-rapportering, ingen redaktionell vinkel.",
+    "backfill": true
+  },
+  {
+    "date": "2026-06-28",
+    "headline": "Wiklöf donerar Bomarsundsbrev till museum",
+    "url": "https://alandsradio.ax/nyheter/wiklof-donerar-bomarsundsbrev-till-museum",
+    "skriv": true,
+    "nyhetsvarde": 6,
+    "tema": "historia/bildning",
+    "anledning": "Historiska brev från Bomarsundstiden återförs till Åland — ett bildningsämne värdigt Julius penna.",
+    "backfill": true
+  },
+  {
+    "date": "2026-06-29",
+    "headline": "50 Ålandsförsäkrade fartyg sitter fast i Persiska viken",
+    "url": "https://alandsradio.ax/nyheter/50-alandsforsakrade-fartyg-sitter-fast-i-persiska-viken",
+    "skriv": true,
+    "nyhetsvarde": 7,
+    "tema": "sjöfart/internationell politik",
+    "anledning": "Åländsk sjöfart drabbad av krigsrisk i Hormuzsundet rör rikets och sjöfartsnäringens öde i världspolitiken.",
+    "backfill": true
+  },
+  {
+    "date": "2026-07-01",
+    "headline": "Sänkt hastighet och parkeringsförbud vid Svinö",
+    "url": "https://alandsradio.ax/nyheter/sankt-hastighet-och-parkeringsforbud-vid-svino",
+    "skriv": false,
+    "nyhetsvarde": 1,
+    "tema": "rutin",
+    "anledning": "Ren trafikupplysning inför en festival, utan substans.",
+    "backfill": true
+  },
+  {
+    "date": "2026-07-05",
+    "headline": "Avbrott i sändningarna från ÅRTV",
+    "url": "https://alandsradio.ax/nyheter/avbrott-i-sandningarna-fran-artv",
+    "skriv": false,
+    "nyhetsvarde": 1,
+    "tema": "teknik",
+    "anledning": "Tekniskt sändningsavbrott, ren rutinnotis.",
+    "backfill": true
+  },
+  {
+    "date": "2026-07-06",
+    "headline": "Åländsk ost ska göras på mjölk från riket – ÅCA: Vi vill behålla platserna i hyl",
+    "url": "https://alandsradio.ax/nyheter/alandsk-ost-ska-goras-pa-mjolk-fran-riket-aca-vi-vill-behalla-platserna-i-hyllan",
+    "skriv": true,
+    "nyhetsvarde": 7,
+    "tema": "egendom/åländsk identitet",
+    "anledning": "Att åländsk ost görs på mjölk från riket rör den åländska jordbruksnäringens och identitetens kärna.",
+    "backfill": true
+  },
+  {
+    "date": "2026-07-08",
+    "headline": "Yngling körde moped i 94 km/h",
+    "url": "https://alandsradio.ax/nyheter/yngling-korde-moped-i-94-kmh",
+    "skriv": false,
+    "nyhetsvarde": 3,
+    "tema": "trafikbrott/ungdom",
+    "anledning": "Rutinmässigt trafikbrott av en minderårig, för tunt för en ledare trots sedlig anstrykning.",
+    "backfill": true
+  },
+  {
+    "date": "2026-07-12",
+    "headline": "Mer vind i seglen under sista tävlingsdagarna – Alandia Sailing Team vann i Mari",
+    "url": "https://alandsradio.ax/nyheter/mer-vind-i-seglen-under-sista-tavlingsdagarna-alandia-saling-team-vann-i-mariehamnsregattan",
+    "skriv": false,
+    "nyhetsvarde": 1,
+    "tema": "sport",
+    "anledning": "Ren seglingsresultat-rapportering utan redaktionell vinkel.",
+    "backfill": true
+  },
+  {
+    "date": "2026-07-13",
+    "headline": "Bröderna Alexander och August besteg Europas högst belägna byggnad",
+    "url": "https://alandsradio.ax/nyheter/broderna-alexander-och-august-besteg-europas-hogst-belagna-byggnad",
+    "skriv": false,
+    "nyhetsvarde": 3,
+    "tema": "personnotis/äventyr",
+    "anledning": "Personligt äventyrsreportage utan samhällelig eller politisk anknytning.",
+    "backfill": true
+  },
+  {
+    "date": "2026-07-15",
+    "headline": "IS: Polisen utreder misstänkt våldtäkt på Viking-färja",
+    "url": "https://alandsradio.ax/nyheter/is-polisen-utreder-misstankt-valdtakt-pa-viking-farja",
+    "skriv": true,
+    "nyhetsvarde": 7,
+    "tema": "sedlighet/brott",
+    "anledning": "En grov sedlighetskränkning ombord ett fartyg i vår farvatten kräver redaktionell uppmärksamhet trots tunna detaljer.",
+    "backfill": true
+  },
+  {
+    "date": "2026-07-17",
+    "headline": "Vuxna på stan sträcker ut handen till föräldrar",
+    "url": "https://alandsradio.ax/nyheter/vuxna-pa-stan-stracker-ut-handen-till-foraldrar",
+    "skriv": false,
+    "nyhetsvarde": 4,
+    "tema": "sedlighet/förening",
+    "anledning": "Välmenande föreningsinitiativ för ungdomars trygghet, men för lokalt och tunt för en ledare.",
+    "backfill": true
+  }
+]

@@ -26,6 +26,7 @@ from collections import Counter
 HERE = os.path.dirname(os.path.abspath(__file__))
 RIKTLINJER_PATH = os.path.join(HERE, "riktlinjer.json")
 ARTICLES_GLOB = os.path.join(HERE, "src", "content", "articles", "*.json")
+SELECTOR_LOG_PATH = os.path.join(HERE, "arkiv", "selector_logg.json")
 
 # Fraser att bevaka (från riktlinjerna + kända klichéer)
 WATCH_TROPES = [
@@ -97,6 +98,44 @@ def propose_additions(trope_counts, n_articles):
     return proposals
 
 
+def measure_urval(days: int = 7):
+    """Mät redaktörsomdömets urval de senaste `days` dagarna från selector_logg.json.
+    Returnerar None om loggen saknas eller saknar data för perioden."""
+    if not os.path.exists(SELECTOR_LOG_PATH):
+        return None
+    try:
+        with open(SELECTOR_LOG_PATH, "r", encoding="utf-8") as f:
+            entries = json.load(f)
+    except (json.JSONDecodeError, OSError):
+        return None
+    cutoff = datetime.date.today() - datetime.timedelta(days=days)
+    recent = []
+    for e in entries:
+        try:
+            d = datetime.date.fromisoformat((e.get("date") or "")[:10])
+        except ValueError:
+            continue
+        if d >= cutoff:
+            recent.append(e)
+    if not recent:
+        return None
+    total = len(recent)
+    godkanda = sum(1 for e in recent if e.get("skriv"))
+    avvisade = total - godkanda
+    values = [e.get("nyhetsvarde") for e in recent
+              if isinstance(e.get("nyhetsvarde"), (int, float))]
+    nyh_snitt = round(st.mean(values), 1) if values else None
+    teman = Counter((e.get("tema") or "okänt") for e in recent if not e.get("skriv"))
+    return {
+        "total": total,
+        "godkanda": godkanda,
+        "avvisade": avvisade,
+        "godkande_pct": round(100 * godkanda / total),
+        "nyhetsvarde_snitt": nyh_snitt,
+        "top_avvis_teman": [{"tema": t, "count": c} for t, c in teman.most_common(5)],
+    }
+
+
 def main():
     articles = load_recent(7)
     if not articles:
@@ -105,6 +144,7 @@ def main():
 
     trope_counts, sentence_stats, n = measure(articles)
     proposals = propose_additions(trope_counts, n)
+    urval = measure_urval(7)
 
     # Ladda nuvarande riktlinjer för att visa vad som redan finns
     with open(RIKTLINJER_PATH, "r", encoding="utf-8") as f:
@@ -139,6 +179,19 @@ def main():
     else:
         veckobrev.append("  (inga nya — nuvarande riktlinjer håller)")
 
+    if urval:
+        veckobrev.append("")
+        veckobrev.append("URVAL — redaktörsomdömet denna vecka:")
+        veckobrev.append(
+            f"  {urval['godkanda']}/{urval['total']} godkända ({urval['godkande_pct']}%) — "
+            f"{urval['avvisade']} avvisade för att bli ledare"
+        )
+        if urval["nyhetsvarde_snitt"] is not None:
+            veckobrev.append(f"  nyhetsvärde snitt: {urval['nyhetsvarde_snitt']}")
+        if urval["top_avvis_teman"]:
+            veckobrev.append("  vanligaste avvis-teman: " +
+                             ", ".join(f"{t['tema']} ({t['count']})" for t in urval["top_avvis_teman"]))
+
     brev = "\n".join(veckobrev)
     print(brev)
 
@@ -149,6 +202,7 @@ def main():
         "troper": dict(trope_counts.most_common(10)),
         "meningslangd": sentence_stats,
         "nya_forslag": nya,
+        "urval": urval,
     }
     riktlinjer.setdefault("veckoreflektioner", []).append(entry)
     riktlinjer["updated"] = datetime.date.today().isoformat()
