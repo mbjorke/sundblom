@@ -128,6 +128,39 @@
           "anledning": "92 förekomster över 113 artiklar (81% av texter)."
         }
       ]
+    },
+    {
+      "datum": "2026-07-17",
+      "artiklar": 113,
+      "troper": {
+        "låtom oss": 118,
+        "månget öga": 92,
+        "månget öga har": 87,
+        "sannerligen": 19,
+        "må vi": 15,
+        "vårt folk": 10,
+        "mången": 8,
+        "vårt land": 8,
+        "vår plikt": 4,
+        "i sanning": 3
+      },
+      "meningslangd": {
+        "median": 25,
+        "mean": 25.4,
+        "stdev": 9.7,
+        "over35_pct": 15
+      },
+      "nya_forslag": [
+        {
+          "fras": "månget öga",
+          "bevis": {
+            "frekvens_total": 92,
+            "per_artikel": 0.81
+          },
+          "forslag": "rotera",
+          "anledning": "92 förekomster över 113 artiklar (81% av texter)."
+        }
+      ]
     }
   ]
 }
