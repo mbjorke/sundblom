@@ -628,5 +628,25 @@
     "tema": "sedlighet",
     "anledning": "Tunn notis om rutinmässigt polisarbete. Saknar substans för en ledarartikel, trots viss koppling till sedlighet och allmän ordning. [nyhetsvärde 3 < 6]",
     "fallback": false
+  },
+  {
+    "date": "2026-07-18",
+    "headline": "ÅU upp på medaljplats – första ligasegern mot toppkonkurrenterna",
+    "url": "https://alandsradio.ax/nyheter/au-upp-pa-medaljplats-forsta-ligasegern-mot-toppkonkurrenterna",
+    "skriv": false,
+    "nyhetsvarde": 2,
+    "tema": "sport",
+    "anledning": "Ren sportresultat-rapportering, ingen redaktionell vinkel för en ledarartikel av Julius Sundblom. Matchresultat är för obetydligt för ledarspalten 1926. [nyhetsvärde 2 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-07-18",
+    "headline": "Isac Holmström omutlig i Getaloppet – för femte året i rad",
+    "url": "https://alandsradio.ax/nyheter/isac-holmstrom-omutlig-i-getaloppet-for-femte-aret-i-rad",
+    "skriv": false,
+    "nyhetsvarde": 1,
+    "tema": "sport",
+    "anledning": "Ren sportresultat-rapportering av ett lokalt sportevenemang. Saknar koppling till Julius Sundbloms redaktionella intressen och politiska agenda. Inget att skriva en ledare om. [nyhetsvärde 1 < 6]",
+    "fallback": false
   }
 ]
