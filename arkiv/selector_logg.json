@@ -608,5 +608,15 @@
     "tema": "sedlighet/förening",
     "anledning": "Välmenande föreningsinitiativ för ungdomars trygghet, men för lokalt och tunt för en ledare.",
     "backfill": true
+  },
+  {
+    "date": "2026-07-18",
+    "headline": "Kasper fick inget sommarjobb – då snickrade han ihop en egen glasskiosk",
+    "url": "https://alandsradio.ax/nyheter/kasper-fick-inget-sommarjobb-da-snickrade-han-ihop-en-egen-glasskiosk",
+    "skriv": false,
+    "nyhetsvarde": 2,
+    "tema": "ekonomi",
+    "anledning": "En smålokal personnotis om en ung man som driver en glasskiosk. Saknar samhällelig eller politisk tyngd för en ledare. [nyhetsvärde 2 < 6]",
+    "fallback": false
   }
 ]
