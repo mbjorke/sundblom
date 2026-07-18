@@ -618,5 +618,15 @@
     "tema": "ekonomi",
     "anledning": "En smålokal personnotis om en ung man som driver en glasskiosk. Saknar samhällelig eller politisk tyngd för en ledare. [nyhetsvärde 2 < 6]",
     "fallback": false
+  },
+  {
+    "date": "2026-07-18",
+    "headline": "Polisen laddar för sommarens mest intensiva evenemangsveckor",
+    "url": "https://alandsradio.ax/nyheter/polisen-laddar-for-sommarens-mest-intensiva-evenemangsveckor",
+    "skriv": false,
+    "nyhetsvarde": 3,
+    "tema": "sedlighet",
+    "anledning": "Tunn notis om rutinmässigt polisarbete. Saknar substans för en ledarartikel, trots viss koppling till sedlighet och allmän ordning. [nyhetsvärde 3 < 6]",
+    "fallback": false
   }
 ]
