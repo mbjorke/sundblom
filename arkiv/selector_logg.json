@@ -648,5 +648,25 @@
     "tema": "sport",
     "anledning": "Ren sportresultat-rapportering av ett lokalt sportevenemang. Saknar koppling till Julius Sundbloms redaktionella intressen och politiska agenda. Inget att skriva en ledare om. [nyhetsvärde 1 < 6]",
     "fallback": false
+  },
+  {
+    "date": "2026-07-19",
+    "headline": "Våffelrakan dubbla nordiska mästare",
+    "url": "https://alandsradio.ax/nyheter/vaffelrakan-dubbla-nordiska-mastare",
+    "skriv": false,
+    "nyhetsvarde": 2,
+    "tema": "mat",
+    "anledning": "Trivial notis om en mattävling, saknar politisk, samhällelig eller kulturell substans för en ledarartikel. [nyhetsvärde 2 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-07-19",
+    "headline": "Putte blev publikens val igen",
+    "url": "https://alandsradio.ax/nyheter/putte-blev-publikens-val-igen",
+    "skriv": false,
+    "nyhetsvarde": 1,
+    "tema": "kultur",
+    "anledning": "Trivial notis om en lokal bilutställning. Saknar politisk, samhällelig eller ekonomisk relevans för en ledarartikel. Fokus ligger på enskild person och fritidsintresse utan bredare betydelse. [nyhetsvärde 1 < 6]",
+    "fallback": false
   }
 ]
