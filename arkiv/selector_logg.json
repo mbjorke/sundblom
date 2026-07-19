@@ -668,5 +668,25 @@
     "tema": "kultur",
     "anledning": "Trivial notis om en lokal bilutställning. Saknar politisk, samhällelig eller ekonomisk relevans för en ledarartikel. Fokus ligger på enskild person och fritidsintresse utan bredare betydelse. [nyhetsvärde 1 < 6]",
     "fallback": false
+  },
+  {
+    "date": "2026-07-19",
+    "headline": "Polisen utreder misstänkt våldtäkt på allmän plats i Mariehamn",
+    "url": "https://alandsradio.ax/nyheter/polisen-utreder-misstankt-valdtakt-pa-allman-plats-i-mariehamn",
+    "skriv": true,
+    "nyhetsvarde": 7,
+    "tema": "sedlighet, samhällsordning",
+    "anledning": "Misstänkt grovt brott mot sedligheten på allmän plats, oroande utveckling med ungdomar på nätterna och förfall av samhällsordningen.",
+    "fallback": false
+  },
+  {
+    "date": "2026-07-19",
+    "headline": "Puttes buss blev publikens val igen",
+    "url": "https://alandsradio.ax/nyheter/puttes-buss-blev-publikens-val-igen",
+    "skriv": false,
+    "nyhetsvarde": 1,
+    "tema": "kultur",
+    "anledning": "Trivial notis om ett lokalt evenemang och personliga utmärkelser. Saknar koppling till centrala ledarteman. [nyhetsvärde 1 < 6]",
+    "fallback": false
   }
 ]
