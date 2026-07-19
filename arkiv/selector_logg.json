@@ -688,5 +688,15 @@
     "tema": "kultur",
     "anledning": "Trivial notis om ett lokalt evenemang och personliga utmärkelser. Saknar koppling till centrala ledarteman. [nyhetsvärde 1 < 6]",
     "fallback": false
+  },
+  {
+    "date": "2026-07-19",
+    "headline": "Två brons med hem från islandshästs-FM",
+    "url": "https://alandsradio.ax/nyheter/tva-brons-med-hem-fran-islandshasts-fm",
+    "skriv": false,
+    "nyhetsvarde": 1,
+    "tema": "sport",
+    "anledning": "Ren sportresultat-rapportering av en smal nischsport, ingen koppling till Julius redaktionella teman eller Ålands större frågor. För obetydlig notis. [nyhetsvärde 1 < 6]",
+    "fallback": false
   }
 ]
