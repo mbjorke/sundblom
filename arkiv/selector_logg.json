@@ -848,5 +848,25 @@
     "tema": "ekonomi",
     "anledning": "Trivial notis om sortering av flaskor, saknar väsentlig samhälls- eller autonomirelevans. Ingen substans för en ledare. [nyhetsvärde 1 < 6]",
     "fallback": false
+  },
+  {
+    "date": "2026-07-20",
+    "headline": "IFK-tränaren: Två nya spelare kommer ikväll",
+    "url": "https://alandsradio.ax/nyheter/ifk-tranaren-tva-nya-spelare-kommer-ikvall",
+    "skriv": false,
+    "nyhetsvarde": 1,
+    "tema": "sport",
+    "anledning": "Ren sportresultat-rapportering och spelarrykten. Trivial notis utan större betydelse för en ledare 1926. [nyhetsvärde 1 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-07-20",
+    "headline": "“Nya” IFK – men samma gamla resultat",
+    "url": "https://alandsradio.ax/nyheter/nya-ifk-men-samma-gamla-resultat",
+    "skriv": false,
+    "nyhetsvarde": 1,
+    "tema": "sport",
+    "anledning": "Ren sportresultat-rapportering utan djupare redaktionell vinkel för en ledarartikel. Julius Sundblom skulle inte skriva om detta. [nyhetsvärde 1 < 6]",
+    "fallback": false
   }
 ]
