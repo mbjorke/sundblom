@@ -728,5 +728,75 @@
     "tema": "ekonomi",
     "anledning": "Smålokal notis om ett fastighetsprojekt och näringsidkares oro, men saknar den djupare substans eller politiska vinkel som krävs för en ledare år 1926. Det berör varken autonomi, nationell identitet eller större samhällsfrågor med tillräcklig tyngd. [nyhetsvärde 3 < 6]",
     "fallback": false
+  },
+  {
+    "date": "2026-07-20",
+    "headline": "Fem kommunstyrelseordförande vill se färre kommuner",
+    "url": "https://alandsradio.ax/nyheter/fem-kommunstyrelseordforande-vill-se-farre-kommuner",
+    "skriv": true,
+    "nyhetsvarde": 8,
+    "tema": "självstyrelse, ekonomi, samhällsordning",
+    "anledning": "Frågan om kommunindelning har direkt bäring på den åländska självstyrelsens struktur, effektivitet och ekonomiska bärkraft, samt relationen mellan centrala och lokala intressen. Den berör både ekonomiska principer och skyddet för de mindre kommunernas identitet, vilket passar Julius Sundbloms intresse för åländsk särart och samhällsutveckling. Civilministerns kommentar understryker dess politiska relevans.",
+    "fallback": false
+  },
+  {
+    "date": "2026-07-20",
+    "headline": "Så gjordes Ålands Radios kommunenkät",
+    "url": "https://alandsradio.ax/nyheter/sa-gjordes-alands-radios-kommunenkat",
+    "skriv": false,
+    "nyhetsvarde": 2,
+    "tema": "lokal förvaltning",
+    "anledning": "Artikeln beskriver metodiken bakom en enkät, inte resultatet eller konsekvenserna av den. För lite substans för en ledare och för rutinartat. Enkätresultaten, om de är väsentliga, skulle kunna vara av intresse men inte hur enkäten gjorts. [nyhetsvärde 2 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-07-20",
+    "headline": "Ålands Radio direktsänder sjösättningen av Emelia i radio och tv",
+    "url": "https://alandsradio.ax/nyheter/alands-radio-direktsander-sjosattningen-av-emelia-i-radio-och-tv",
+    "skriv": false,
+    "nyhetsvarde": 2,
+    "tema": "lokal notis",
+    "anledning": "En lokal notis om en sjösättning och en radiosändning. Saknar politisk, samhällelig eller ekonomisk relevans för en ledarartikel av Julius Sundblom. Ingen substans för en värdig ledare. [nyhetsvärde 2 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-07-20",
+    "headline": "Eckerö Link väljer svensk flagg – sparar 800 000",
+    "url": "https://alandsradio.ax/nyheter/eckero-link-valjer-svensk-flagg-sparar-800-000",
+    "skriv": false,
+    "nyhetsvarde": 4,
+    "tema": "ekonomi",
+    "anledning": "Detta är en ekonomisk nyhet om ett rederis val av flagg för att optimera bidrag, men den saknar den djupare politiska, samhälleliga eller självstyrelse-relevans som Julius söker för en ledare. Det är en affärsbeslut, inte en fråga om principer eller autonomi som berör Julius direkt. [nyhetsvärde 4 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-07-20",
+    "headline": "Långnäs hamn och Snäckö färjfäste får miljötillstånd för sprängning",
+    "url": "https://alandsradio.ax/nyheter/langnas-hamn-och-snacko-farjfaste-far-miljotillstand-for-sprangning",
+    "skriv": false,
+    "nyhetsvarde": 3,
+    "tema": "infrastruktur",
+    "anledning": "Rutinåtgärder för infrastrukturprojekt utan större samhällelig eller politisk kontrovers. För obetydligt för en ledarartikel. [nyhetsvärde 3 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-07-20",
+    "headline": "Tidigare anställd vid äldreboende blir inte målsägande i mål mot förman",
+    "url": "https://alandsradio.ax/nyheter/tidigare-anstalld-vid-aldreboende-blir-inte-malsagande-i-mal-mot-forman",
+    "skriv": false,
+    "nyhetsvarde": 3,
+    "tema": "rättvisa",
+    "anledning": "Även om det rör rättvisa och eventuella brister i systemet, är denna specifika notis om en enskild persons nekade målsägandestatus och återkallade överklagande för detaljerad och smal för att motivera en ledare. Den saknar den bredare samhälleliga eller politiska implikationen som Julius skulle söka. [nyhetsvärde 3 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-07-20",
+    "headline": "Stormvarning ändrade Birka Gotlands trafik – passagerare erbjuds heldag i Marieh",
+    "url": "https://alandsradio.ax/nyheter/stormvarning-andrade-birka-gotlands-trafik-passagerare-erbjuds-heldag-i-mariehamn-i-stallet-for-visby",
+    "skriv": false,
+    "nyhetsvarde": 1,
+    "tema": "väder",
+    "anledning": "Väderrelaterad trafikstörning är trivial. Ingen koppling till autonomi, politik, samhällsordning eller djupare teman. Alldeles för obetydligt för en ledare av Julius Sundblom. [nyhetsvärde 1 < 6]",
+    "fallback": false
   }
 ]
