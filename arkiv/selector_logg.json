@@ -798,5 +798,55 @@
     "tema": "väder",
     "anledning": "Väderrelaterad trafikstörning är trivial. Ingen koppling till autonomi, politik, samhällsordning eller djupare teman. Alldeles för obetydligt för en ledare av Julius Sundblom. [nyhetsvärde 1 < 6]",
     "fallback": false
+  },
+  {
+    "date": "2026-07-20",
+    "headline": "Misstänkt släppt efter förhör – polisen fortsätter våldtäktsutredning",
+    "url": "https://alandsradio.ax/nyheter/misstankt-slappt-efter-forhor-polisen-fortsatter-valdtaktsutredning",
+    "skriv": false,
+    "nyhetsvarde": 4,
+    "tema": "rättvisa",
+    "anledning": "Även om brottslighet rör rättvisa och sedlighet, är denna nyhet en rutinmässig uppdatering om en pågående utredning utan tillräcklig substans för en ledarartikel. Ingen dom, inga politiska implikationer, endast en notis om att en misstänkt släppts efter förhör. [nyhetsvärde 4 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-07-20",
+    "headline": "Öppna åländska mästerskapen i friidrott inleds på måndagskvällen",
+    "url": "https://alandsradio.ax/nyheter/oppna-alandska-masterskapen-i-friidrott-inleds-pa-mandagskvallen",
+    "skriv": false,
+    "nyhetsvarde": 2,
+    "tema": "sport",
+    "anledning": "Ren sportresultat-rapportering om ett idrottsevenemang, saknar politisk, samhällelig eller existentiell relevans för en ledarartikel. [nyhetsvärde 2 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-07-20",
+    "headline": "Ålandspremiär för The Gems – stora i Tyskland men svalare mottagna i Sverige",
+    "url": "https://alandsradio.ax/nyheter/alandspremiar-for-the-gems-stora-i-tyskland-men-svalare-mottagna-i-sverige",
+    "skriv": false,
+    "nyhetsvarde": 1,
+    "tema": "kultur/nöje",
+    "anledning": "Ren nöjesnyhet om ett rockband, saknar politisk, samhällelig eller existentiell relevans för Tidningen Åland år 1926. Inget som Julius Sundblom skulle skriva en ledare om. [nyhetsvärde 1 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-07-20",
+    "headline": "”Hör du ett gnagande ljud - ring Anticimex”",
+    "url": "https://alandsradio.ax/nyheter/ja",
+    "skriv": false,
+    "nyhetsvarde": 1,
+    "tema": "trivial notis",
+    "anledning": "Trivial notis om skadedjur, saknar politisk, samhällelig eller kulturell relevans för en ledare. [nyhetsvärde 1 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-07-20",
+    "headline": "Skärgårdsbutiker riskerar förlora panttillstånd när turister sorterar fel",
+    "url": "https://alandsradio.ax/nyheter/skargardsbutiker-riskerar-forlora-panttillstand-nar-turister-sorterar-fel",
+    "skriv": false,
+    "nyhetsvarde": 1,
+    "tema": "ekonomi",
+    "anledning": "Trivial notis om sortering av flaskor, saknar väsentlig samhälls- eller autonomirelevans. Ingen substans för en ledare. [nyhetsvärde 1 < 6]",
+    "fallback": false
   }
 ]
