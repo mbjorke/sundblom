@@ -698,5 +698,35 @@
     "tema": "sport",
     "anledning": "Ren sportresultat-rapportering av en smal nischsport, ingen koppling till Julius redaktionella teman eller Ålands större frågor. För obetydlig notis. [nyhetsvärde 1 < 6]",
     "fallback": false
+  },
+  {
+    "date": "2026-07-20",
+    "headline": "Sjöräddningen assisterade båt i hård vind",
+    "url": "https://alandsradio.ax/nyheter/sjoraddningen-assisterade-bat-i-hard-vind",
+    "skriv": false,
+    "nyhetsvarde": 2,
+    "tema": "lokal notis",
+    "anledning": "Trivial lokal notis om sjöräddning, saknar väsentlig samhälls- eller politisk relevans för en ledare. [nyhetsvärde 2 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-07-20",
+    "headline": "Ny musikfestival arrangeras i Godby samtidigt som Skördefesten",
+    "url": "https://alandsradio.ax/nyheter/ny-musikfestival-arrangeras-i-godby-samtidigt-som-skordefesten",
+    "skriv": false,
+    "nyhetsvarde": 2,
+    "tema": "kultur och nöje",
+    "anledning": "En ren nöjesnotis om en musikfestival. Saknar politisk, samhällelig, ekonomisk eller sedlig relevans för en ledare av Julius Sundblom. Ingen substans för en djupare analys. [nyhetsvärde 2 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-07-20",
+    "headline": "Centrumledaren om Ömsens cityprojekt: “Just nu står vi alla och famlar“",
+    "url": "https://alandsradio.ax/nyheter/centrumledaren-om-omsens-cityprojekt-just-nu-star-vi-alla-och-famlar",
+    "skriv": false,
+    "nyhetsvarde": 3,
+    "tema": "ekonomi",
+    "anledning": "Smålokal notis om ett fastighetsprojekt och näringsidkares oro, men saknar den djupare substans eller politiska vinkel som krävs för en ledare år 1926. Det berör varken autonomi, nationell identitet eller större samhällsfrågor med tillräcklig tyngd. [nyhetsvärde 3 < 6]",
+    "fallback": false
   }
 ]
