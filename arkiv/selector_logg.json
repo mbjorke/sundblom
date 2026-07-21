@@ -908,5 +908,55 @@
     "tema": "självstyrelse, ekonomi, samhällsordning",
     "anledning": "Frågan om kommunsammanslagningar, och särskilt tvångssammanslagningar, berör Ålands självstyrelse i grunden. Det handlar om maktfördelning, lokal autonomi och ekonomisk bärkraft, vilket är centrala teman för Julius Sundblom. Dessutom ger nyheten insikt i landskapsregeringens agerande och rikspolitisk påverkan, vilket ger tillräckligt med substans för en ledarartikel.",
     "fallback": false
+  },
+  {
+    "date": "2026-07-21",
+    "headline": "Mariehamns församling nöjd med parklunchen: “Kommer man på nytt så är det ju någ",
+    "url": "https://alandsradio.ax/nyheter/mariehamns-forsamling-nojd-med-parklunchen-kommer-man-pa-nytt-sa-ar-det-ju-nagot-positivt",
+    "skriv": false,
+    "nyhetsvarde": 2,
+    "tema": "lokal notis",
+    "anledning": "Trivial lokal notis om församlingsverksamhet. Saknar politisk, samhällelig eller autonomirelaterad tyngd. Ingen substans för en ledare. [nyhetsvärde 2 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-07-21",
+    "headline": "Inga tips om Putinstatyerna – utredningen fortsätter",
+    "url": "https://alandsradio.ax/nyheter/inga-tips-om-putinstatyerna-utredningen-fortsatter",
+    "skriv": false,
+    "nyhetsvarde": 2,
+    "tema": "småbrott",
+    "anledning": "Trivial notis om ett smålokalt, mindre brott utan djupare samhällelig, politisk eller autonomi-koppling. Saknar substans för en ledare. [nyhetsvärde 2 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-07-21",
+    "headline": "IFK lånar Ludvig Richtnér från IF Elfsborg",
+    "url": "https://alandsradio.ax/sport/ifk-lanar-ludvig-richtner-fran-if-elfsborg",
+    "skriv": false,
+    "nyhetsvarde": 1,
+    "tema": "sport",
+    "anledning": "En ren sportnotis om ett spelarlån. Saknar politisk, samhällelig eller kulturell relevans för en ledarartikel av Julius Sundblom. Ingen substans för diskussion om autonomi, sedlighet eller samhällsordning. [nyhetsvärde 1 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-07-21",
+    "headline": "Därför blir bålgetingarna fler på Åland",
+    "url": "https://alandsradio.ax/nyheter/darfor-blir-balgetingarna-fler-pa-aland",
+    "skriv": false,
+    "nyhetsvarde": 1,
+    "tema": "natur",
+    "anledning": "Trivial notis om insekter och väder, ingen koppling till Julius redaktionella värld eller substans för en ledarartikel. [nyhetsvärde 1 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-07-21",
+    "headline": "Landskapsregeringen kritisk till att barn under 15 år ska kunna tas i förvar",
+    "url": "https://alandsradio.ax/nyheter/landskapsregeringen-kritisk-till-att-barn-under-15-ar-ska-kunna-tas-i-forvar",
+    "skriv": true,
+    "nyhetsvarde": 8,
+    "tema": "rättvisa och självstyrelse",
+    "anledning": "Landskapsregeringens ställningstagande mot ett lagförslag som rör medborgerliga friheter, särskilt barns rättigheter, och dess potentiella implikationer för autonomin genom att yttra sig i rikets behörighet. Frågan om rättssäkerhet och statens roll gentemot individen är central.",
+    "fallback": false
   }
 ]
