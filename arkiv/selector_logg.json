@@ -868,5 +868,45 @@
     "tema": "sport",
     "anledning": "Ren sportresultat-rapportering utan djupare redaktionell vinkel för en ledarartikel. Julius Sundblom skulle inte skriva om detta. [nyhetsvärde 1 < 6]",
     "fallback": false
+  },
+  {
+    "date": "2026-07-21",
+    "headline": "IFK Mariehamn säljer försvarsspelare till FC Inter",
+    "url": "https://alandsradio.ax/nyheter/ifk-mariehamn-saljer-forsvarsspelare-till-fc-inter",
+    "skriv": false,
+    "nyhetsvarde": 1,
+    "tema": "sport",
+    "anledning": "Ren sportnotis utan koppling till autonomi, samhällsordning eller annan relevant tematik för en ledarartikel av Sundblom. För obetydlig. [nyhetsvärde 1 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-07-21",
+    "headline": "Mariehamns stad ändrar stadsplanen",
+    "url": "https://alandsradio.ax/nyheter/mariehamns-stad-andrar-stadsplanen",
+    "skriv": false,
+    "nyhetsvarde": 3,
+    "tema": "lokal förvaltning",
+    "anledning": "Småskaliga ändringar i stadsplanen är en rutinåtgärd och saknar den politiska, samhälleliga eller autonomirelaterade tyngd som motiverar en ledarartikel av Julius Sundblom. [nyhetsvärde 3 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-07-21",
+    "headline": "Fyra personer räddades på Ålands hav efter motorhaveri",
+    "url": "https://alandsradio.ax/nyheter/fyra-personer-raddades-pa-alands-hav-efter-motorhaveri",
+    "skriv": false,
+    "nyhetsvarde": 3,
+    "tema": "olycka",
+    "anledning": "En ren räddningsinsats utan större samhällelig eller politisk bäring. Saknar koppling till Julius redaktionella värld bortom en allmän händelse. [nyhetsvärde 3 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-07-21",
+    "headline": "Zetterman: Tvångssammanslagningar troliga under de närmaste åren",
+    "url": "https://alandsradio.ax/nyheter/zetterman-tvangssammanslagningar-troliga-under-de-narmaste-aren",
+    "skriv": true,
+    "nyhetsvarde": 8,
+    "tema": "självstyrelse, ekonomi, samhällsordning",
+    "anledning": "Frågan om kommunsammanslagningar, och särskilt tvångssammanslagningar, berör Ålands självstyrelse i grunden. Det handlar om maktfördelning, lokal autonomi och ekonomisk bärkraft, vilket är centrala teman för Julius Sundblom. Dessutom ger nyheten insikt i landskapsregeringens agerande och rikspolitisk påverkan, vilket ger tillräckligt med substans för en ledarartikel.",
+    "fallback": false
   }
 ]
