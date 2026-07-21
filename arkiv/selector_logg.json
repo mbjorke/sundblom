@@ -958,5 +958,55 @@
     "tema": "rättvisa och självstyrelse",
     "anledning": "Landskapsregeringens ställningstagande mot ett lagförslag som rör medborgerliga friheter, särskilt barns rättigheter, och dess potentiella implikationer för autonomin genom att yttra sig i rikets behörighet. Frågan om rättssäkerhet och statens roll gentemot individen är central.",
     "fallback": false
+  },
+  {
+    "date": "2026-07-21",
+    "headline": "Åländska deltagare om brandlägret: \"Det blir som en andra familj\"",
+    "url": "https://alandsradio.ax/nyheter/stort-coolt-och-roligt-sa-beskriver-algot-det-internationella-brandkarslagret-haly-2026-dar-34-alandska-ungdomar-och-22-ledare-deltog-nar-lagret-holls-i-masku-utanfor-abo-den-11-17-juli",
+    "skriv": false,
+    "nyhetsvarde": 1,
+    "tema": "Föreningsliv",
+    "anledning": "Trivial notis om fritidsaktivitet för ungdomar, saknar nyhetsvärde för en ledarartikel. Ingen relevans för Julius redaktionella inriktning. [nyhetsvärde 1 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-07-21",
+    "headline": "Guldhjältarna samlades tio år efter bragden",
+    "url": "https://alandsradio.ax/nyheter/guldhjaltarna-samlades-tio-ar-efter-bragden",
+    "skriv": false,
+    "nyhetsvarde": 1,
+    "tema": "sport",
+    "anledning": "Ren sportnostalgi och personnotiser om gamla idrottare, ingen redaktionell vinkel för en ledare. [nyhetsvärde 1 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-07-21",
+    "headline": "ÅHS ser fler munskador kopplade till vitt snus",
+    "url": "https://alandsradio.ax/nyheter/ahs-ser-fler-munskador-kopplade-till-vitt-snus",
+    "skriv": false,
+    "nyhetsvarde": 4,
+    "tema": "sedlighet",
+    "anledning": "Temat kan kopplas till sedlighet, men ämnet är för nytt och saknar långtidsdata. Beslutsunderlag för en ledare är för svagt. [nyhetsvärde 4 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-07-21",
+    "headline": "Joakim ”Jockiboi” Lundell: ”Åland har karaktär”",
+    "url": "https://alandsradio.ax/nyheter/joakim-jockiboi-lundell-aland-har-karaktar",
+    "skriv": false,
+    "nyhetsvarde": 1,
+    "tema": "kultur",
+    "anledning": "Trivial notis om en modern underhållare och hans framträdande. Saknar koppling till tidningens ledarämnen. [nyhetsvärde 1 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-07-21",
+    "headline": "Stort polispådrag i Hammarland – person misstänks ha hotat med vapen",
+    "url": "https://alandsradio.ax/nyheter/stort-polispadrag-i-hammarland-person-misstanks-ha-hotat-med-vapen",
+    "skriv": false,
+    "nyhetsvarde": 3,
+    "tema": "sedlighet",
+    "anledning": "Trivial notis om en enskild kriminell händelse. Saknar större samhälls- eller politisk relevans för en ledare. [nyhetsvärde 3 < 6]",
+    "fallback": false
   }
 ]
