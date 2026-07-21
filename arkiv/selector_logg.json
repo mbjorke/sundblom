@@ -1008,5 +1008,25 @@
     "tema": "sedlighet",
     "anledning": "Trivial notis om en enskild kriminell händelse. Saknar större samhälls- eller politisk relevans för en ledare. [nyhetsvärde 3 < 6]",
     "fallback": false
+  },
+  {
+    "date": "2026-07-21",
+    "headline": "Markbrand i Degersand släcktes snabbt",
+    "url": "https://alandsradio.ax/nyheter/markbrand-i-degersand-slacktes-snabbt",
+    "skriv": false,
+    "nyhetsvarde": 1,
+    "tema": "lokalnotis",
+    "anledning": "En liten lokal markbrand som snabbt släcktes, utan större konsekvenser eller redaktionell vinkel för en ledarartikel. [nyhetsvärde 1 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-07-21",
+    "headline": "Åländska deltagare om brandlägret: ”Det blir som en andra familj”",
+    "url": "https://alandsradio.ax/nyheter/alandska-deltagare-om-brandlagret-det-blir-som-en-andra-familj",
+    "skriv": false,
+    "nyhetsvarde": 2,
+    "tema": "smånotis",
+    "anledning": "Trivial personnotis om ett sommarläger. Saknar politisk, samhällelig eller ekonomisk relevans för en ledarartikel. [nyhetsvärde 2 < 6]",
+    "fallback": false
   }
 ]
