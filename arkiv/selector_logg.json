@@ -1128,5 +1128,75 @@
     "tema": "turism",
     "anledning": "Trivial notis om en rutinmässig fartygsanlöpning. Saknar politisk, samhällelig eller ekonomisk relevans utöver en marginell turistaspekt. Inget för Julius Sundblom. [nyhetsvärde 2 < 6]",
     "fallback": false
+  },
+  {
+    "date": "2026-07-22",
+    "headline": "Nyförvärvets säsong över efter 30 minuter",
+    "url": "https://alandsradio.ax/nyheter/nyforvarvets-sasong-over-efter-30-minuter",
+    "skriv": false,
+    "nyhetsvarde": 1,
+    "tema": "sport",
+    "anledning": "Ren sportresultat-rapportering med fokus på en enskild spelares skada. Saknar nyhetsvärde för en ledarartikel av Sundblom. [nyhetsvärde 1 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-07-22",
+    "headline": "Inga blåljusutryckningar på Rockoff hittills",
+    "url": "https://alandsradio.ax/nyheter/inga-blaljusutryckningar-pa-rockoff-hittills",
+    "skriv": false,
+    "nyhetsvarde": 2,
+    "tema": "samhällsordning",
+    "anledning": "Artikeln beskriver en rutinmässig festivalrapport med fokus på ordning och säkerhet, vilket saknar den tyngd och konflikt som krävs för en ledarartikel av Julius Sundblom. Det är ingen väsentlig händelse som berör autonomi, storpolitik eller djupare samhällsfrågor. [nyhetsvärde 2 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-07-22",
+    "headline": "\"Kanske inte så barnvänligt\" - Vikingamarknaden startar på torsdag",
+    "url": "https://alandsradio.ax/nyheter/kanske-inte-sa-barnvanligt-vikingamarknaden-startar-pa-torsdag",
+    "skriv": false,
+    "nyhetsvarde": 2,
+    "tema": "kultur/lokalnyhet",
+    "anledning": "Trivial notis om en lokal kulturhändelse. Ingen bäring på politik, samhälle, autonomi eller andra tyngre ämnen. Det \"vuxna inslaget\" är för obetydligt för en ledare. [nyhetsvärde 2 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-07-22",
+    "headline": "Efter gränsbevakningens kontroll av fritidsbåtar: Inga allvarliga brott upptäckt",
+    "url": "https://alandsradio.ax/nyheter/efter-gransbevakningens-kontroll-av-fritidsbatar-inga-allvarliga-brott-upptacktes",
+    "skriv": false,
+    "nyhetsvarde": 2,
+    "tema": "rutinärende",
+    "anledning": "Rutinkontroll av gränsbevakningen utan att allvarliga brott uppdagats. För obetydligt för en ledare. [nyhetsvärde 2 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-07-22",
+    "headline": "Polisen om högljudda bilar: “Kan gripas“",
+    "url": "https://alandsradio.ax/nyheter/polisen-om-hogljudda-bilar-kan-gripas",
+    "skriv": false,
+    "nyhetsvarde": 3,
+    "tema": "sedlighet",
+    "anledning": "Trivial notis om ordningsstörningar, saknar större samhällelig eller politisk relevans för en ledarartikel av Julius. Även om det berör sedlighet, är substansen för tunn. [nyhetsvärde 3 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-07-22",
+    "headline": "Motorbåt fick bottenkontakt söder om Lemland",
+    "url": "https://alandsradio.ax/nyheter/motorbat-fick-bottenkontakt-soder-om-lemland",
+    "skriv": false,
+    "nyhetsvarde": 1,
+    "tema": "lokalnotis",
+    "anledning": "En trivial notis om en mindre incident, saknar politisk, samhällelig eller kulturell relevans för en ledarartikel. Ingen koppling till Julius redaktionella teman. [nyhetsvärde 1 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-07-22",
+    "headline": "Minderåriga misstänkta för misshandel i Mariehamn",
+    "url": "https://alandsradio.ax/nyheter/minderariga-misstankta-for-misshandel-i-mariehamn",
+    "skriv": false,
+    "nyhetsvarde": 3,
+    "tema": "sedlighet",
+    "anledning": "En smålokal notis om ett enskilt brott bland minderåriga. Saknar större samhällsrelevans eller koppling till Julius redaktionella teman utöver en vag koppling till sedlighet, men inte tillräckligt för en ledare. [nyhetsvärde 3 < 6]",
+    "fallback": false
   }
 ]
