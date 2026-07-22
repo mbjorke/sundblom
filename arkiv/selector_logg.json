@@ -1198,5 +1198,35 @@
     "tema": "sedlighet",
     "anledning": "En smålokal notis om ett enskilt brott bland minderåriga. Saknar större samhällsrelevans eller koppling till Julius redaktionella teman utöver en vag koppling till sedlighet, men inte tillräckligt för en ledare. [nyhetsvärde 3 < 6]",
     "fallback": false
+  },
+  {
+    "date": "2026-07-22",
+    "headline": "Man odlade hampa i Saltvik – “Tog i ordentligt”",
+    "url": "https://alandsradio.ax/nyheter/man-odlade-hampa-i-saltvik-tog-i-ordentligt",
+    "skriv": false,
+    "nyhetsvarde": 3,
+    "tema": "sedlighet",
+    "anledning": "En enskild personnotis om narkotikabrott saknar den samhälleliga eller politiska tyngden för en ledare 1926. 'Sedlighetens förfall' kan tangera detta, men fallet är för lokalt och isolerat för att Julius skulle finna det värdigt en ledarartikel. [nyhetsvärde 3 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-07-22",
+    "headline": "Inga blåljusutryckningar till Rockoff hittills",
+    "url": "https://alandsradio.ax/nyheter/inga-blaljusutryckningar-till-rockoff-hittills",
+    "skriv": false,
+    "nyhetsvarde": 2,
+    "tema": "smånotis",
+    "anledning": "Trivial notis om avsaknad av incidenter vid en festival. Saknar djupare samhälls-, autonomi- eller politisk relevans. För obetydlig för en ledarartikel av Julius. [nyhetsvärde 2 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-07-22",
+    "headline": "Så gick Gränsbevakningens årliga kontroll av fritidsbåtstrafiken",
+    "url": "https://alandsradio.ax/nyheter/sa-gick-gransbevakningens-arliga-kontroll-av-fritidsbatstrafiken",
+    "skriv": false,
+    "nyhetsvarde": 2,
+    "tema": "rutinåtgärd",
+    "anledning": "Ren rutinåtgärd från Gränsbevakningen, ingen större nyhetshändelse eller kontrovers. Saknar substans för en ledarartikel. [nyhetsvärde 2 < 6]",
+    "fallback": false
   }
 ]
