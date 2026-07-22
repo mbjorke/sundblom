@@ -1028,5 +1028,45 @@
     "tema": "smånotis",
     "anledning": "Trivial personnotis om ett sommarläger. Saknar politisk, samhällelig eller ekonomisk relevans för en ledarartikel. [nyhetsvärde 2 < 6]",
     "fallback": false
+  },
+  {
+    "date": "2026-07-22",
+    "headline": "Luke: Lovande blåbärssäsong väntar",
+    "url": "https://alandsradio.ax/nyheter/luke-lovande-blabarssasong-vantar",
+    "skriv": false,
+    "nyhetsvarde": 2,
+    "tema": "ekonomi/vardagsliv",
+    "anledning": "Trivial notis om blåbärssäsongen, saknar större politisk, samhällelig eller existentiell betydelse för en ledare. För svag substans. [nyhetsvärde 2 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-07-22",
+    "headline": "Lyxjakten Evrima lägger till i Mariehamn på onsdagen",
+    "url": "https://alandsradio.ax/nyheter/lyxjakten-evrima-lagger-till-i-mariehamn-pa-onsdagen",
+    "skriv": false,
+    "nyhetsvarde": 2,
+    "tema": "turism",
+    "anledning": "Trivial notis om ett enskilt fartygs anlöp. Saknar politisk, samhällelig eller ekonomisk relevans av tillräcklig dignitet för en ledare. Ingen koppling till Julius redaktionella teman. [nyhetsvärde 2 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-07-22",
+    "headline": "Nordiskt miljöläger på Åland med extra säkerhet “Väldigt skönt att känna att man",
+    "url": "https://alandsradio.ax/nyheter/nordiskt-miljolager-pa-aland-med-extra-sakerhet-valdigt-skont-att-kanna-att-man-gor-nagonting",
+    "skriv": false,
+    "nyhetsvarde": 3,
+    "tema": "ungdomsaktivitet",
+    "anledning": "Ämnet klimat och biologisk mångfald är inte en central del av Julius Sundbloms redaktionella värld år 1926. Säkerhetsaspekten är för vag och utan konkret hot för att motivera en ledare. [nyhetsvärde 3 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-07-22",
+    "headline": "Här skaver relationen med landskapet – ingen ger toppbetyg",
+    "url": "https://alandsradio.ax/nyheter/har-skaver-relationen-med-landskapet-ingen-ger-toppbetyg",
+    "skriv": true,
+    "nyhetsvarde": 8,
+    "tema": "självstyrelse",
+    "anledning": "Central fråga om autonomins funktionssätt, förhållandet mellan landskap och kommuner, samt konsekvenser av landskapsregeringens beslut rörande viktig infrastruktur.",
+    "fallback": false
   }
 ]
