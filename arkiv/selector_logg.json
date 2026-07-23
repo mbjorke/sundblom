@@ -1298,5 +1298,25 @@
     "tema": "ekonomi",
     "anledning": "Ekonomiska bekymmer kring nya rederier, en viktig näring för Åland, med potentiell påverkan på lokala investerare och öns framtid. Här finns utrymme att diskutera sund affärssed, risker för småsparare och autonomins ekonomiska suveränitet.",
     "fallback": false
+  },
+  {
+    "date": "2026-07-23",
+    "headline": "Nästa skadesmäll för IFK – Dahlström opererar axeln",
+    "url": "https://alandsradio.ax/nyheter/nasta-skadesmall-for-ifk-dahlstrom-opererar-axeln",
+    "skriv": false,
+    "nyhetsvarde": 2,
+    "tema": "sport",
+    "anledning": "Ren sportresultat-rapportering om en fotbollsklubb, för obetydligt för en ledare. [nyhetsvärde 2 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-07-23",
+    "headline": "Tallink-vd:ns besked om Åland: “Vi ska meddela hamnarna i god tid”",
+    "url": "https://alandsradio.ax/nyheter/tallink-vdns-besked-om-aland-vi-ska-meddela-hamnarna-i-god-tid",
+    "skriv": false,
+    "nyhetsvarde": 2,
+    "tema": "ekonomi",
+    "anledning": "Trivial notis om ett rederis rutinärenden. Saknar konkret beslutsfattande av vikt för Julius tidning år 1926. Inget som direkt berör autonomi, sedlighet eller klassfrågor. [nyhetsvärde 2 < 6]",
+    "fallback": false
   }
 ]
