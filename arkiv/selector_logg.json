@@ -1228,5 +1228,75 @@
     "tema": "rutinåtgärd",
     "anledning": "Ren rutinåtgärd från Gränsbevakningen, ingen större nyhetshändelse eller kontrovers. Saknar substans för en ledarartikel. [nyhetsvärde 2 < 6]",
     "fallback": false
+  },
+  {
+    "date": "2026-07-23",
+    "headline": "Bra respons på persontrafikenkät - Men fler röster från fasta Åland behövs",
+    "url": "https://alandsradio.ax/nyheter/bra-respons-pa-persontrafikenkat-men-fler-roster-fran-fasta-aland-behovs",
+    "skriv": false,
+    "nyhetsvarde": 2,
+    "tema": "lokal transport",
+    "anledning": "Enkät om persontrafik är en rutinåtgärd och för lokal för en ledarartikel. Saknar politisk, samhällelig eller existentiell bäring för en ledare. [nyhetsvärde 2 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-07-23",
+    "headline": "Hemmabyggd våtmark ska rena Ålands vatten – testas i Dalkarby träsk",
+    "url": "https://alandsradio.ax/nyheter/hemmabyggd-vatmark-ska-rena-alands-vatten-testas-i-dalkarby-trask",
+    "skriv": false,
+    "nyhetsvarde": 2,
+    "tema": "miljöteknik",
+    "anledning": "Detta är en lokal notis om ett miljötekniskt experiment som saknar koppling till centrala redaktionella teman som självstyrelse, politik eller samhällsordning. Det är för trivialt för en ledarartikel av Julius Sundblom. [nyhetsvärde 2 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-07-23",
+    "headline": "Tallinks bränslekostnader steg med 8,4 miljoner andra kvartalet",
+    "url": "https://alandsradio.ax/nyheter/tallinks-branslekostnader-steg-med-84-miljoner-andra-kvartalet",
+    "skriv": false,
+    "nyhetsvarde": 4,
+    "tema": "ekonomi",
+    "anledning": "Internationell rederirapport med generella ekonomiska trender. Saknar specifik åländsk vinkel utöver att det påverkar rederinäringen som helhet. För tunn för en ledare. [nyhetsvärde 4 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-07-23",
+    "headline": "Vårdnadshavares inblandning i ungdomsbråk utreds efter misshandel på Torggatan",
+    "url": "https://alandsradio.ax/nyheter/vardnadshavares-inblandning-i-ungdomsbrak-utreds-efter-misshandel-pa-torggatan",
+    "skriv": false,
+    "nyhetsvarde": 3,
+    "tema": "sedlighet",
+    "anledning": "Smålokal notis om ungdomsbråk och en vårdnadshavare. Saknar större samhälls- eller autonomirelevans för en ledarartikel. Ämnet 'sedlighet' kan vara relevant, men substansen är för tunn för en ledare. [nyhetsvärde 3 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-07-23",
+    "headline": "Hund skickas tillbaka till Tyskland efter saknat intyg",
+    "url": "https://alandsradio.ax/nyheter/hund-skickas-tillbaka-till-tyskland-efter-saknat-intyg",
+    "skriv": false,
+    "nyhetsvarde": 3,
+    "tema": "byråkrati",
+    "anledning": "Även om det rör Landskapsregeringen och en del av självstyrelselagen, är detta en enskild byråkratisk händelse gällande ett djur, utan större samhällelig, ekonomisk eller politisk bäring. För obetydligt för en ledare. [nyhetsvärde 3 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-07-23",
+    "headline": "13 av 16 kommunstyrelseordförande: Svårt att få människor att engagera sig i kom",
+    "url": "https://alandsradio.ax/nyheter/13-av-16-kommunstyrelseordforande-svart-att-fa-manniskor-att-engagera-sig-i-kommunpolitiken",
+    "skriv": true,
+    "nyhetsvarde": 7,
+    "tema": "självstyrelse",
+    "anledning": "Frågan om det lokala engagemangets minskning är av central betydelse för den åländska självstyrelsens vitalitet och demokrati. Detta är en oroande trend som Julius skulle se som ett hot mot samhällsordningen och den åländska identiteten. Det är tillräckligt med substans för en ledare om bildningens och civilsamhällets betydelse.",
+    "fallback": false
+  },
+  {
+    "date": "2026-07-23",
+    "headline": "Näringslivsprofilen tvivlar på nya rederiers finansiering: “Falska förhoppningar",
+    "url": "https://alandsradio.ax/nyheter/naringslivsprofilen-tvivlar-pa-nya-rederiers-finansiering-falska-forhoppningar",
+    "skriv": true,
+    "nyhetsvarde": 8,
+    "tema": "ekonomi",
+    "anledning": "Ekonomiska bekymmer kring nya rederier, en viktig näring för Åland, med potentiell påverkan på lokala investerare och öns framtid. Här finns utrymme att diskutera sund affärssed, risker för småsparare och autonomins ekonomiska suveränitet.",
+    "fallback": false
   }
 ]
