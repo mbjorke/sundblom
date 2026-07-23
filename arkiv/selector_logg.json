@@ -1318,5 +1318,25 @@
     "tema": "ekonomi",
     "anledning": "Trivial notis om ett rederis rutinärenden. Saknar konkret beslutsfattande av vikt för Julius tidning år 1926. Inget som direkt berör autonomi, sedlighet eller klassfrågor. [nyhetsvärde 2 < 6]",
     "fallback": false
+  },
+  {
+    "date": "2026-07-23",
+    "headline": "“Mariehamns stadskärna har stor potential“",
+    "url": "https://alandsradio.ax/nyheter/mariehamns-stadskarna-har-stor-potential",
+    "skriv": false,
+    "nyhetsvarde": 3,
+    "tema": "ekonomi/stadsutveckling",
+    "anledning": "För obetydlig notis. En extern konsults besök och allmänna observationer om stadsutveckling är inte tillräckligt substantiellt för en ledare, och saknar den tyngd som Julius Sundblom söker i ledarartiklar. Dessutom är det år 1926 och fokus bör ligga på den tidens utmaningar, inte nutida e-handel och flödesanalys. Det ryms inte i Julius redaktionella värld. [nyhetsvärde 3 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-07-23",
+    "headline": "Dåligt väder hotar högsäsongen för restauranger och gästhamnar",
+    "url": "https://alandsradio.ax/nyheter/daligt-vader-hotar-hogsasongen-for-restauranger-och-gasthamnar",
+    "skriv": false,
+    "nyhetsvarde": 3,
+    "tema": "ekonomi",
+    "anledning": "Väderrelaterade ekonomiska svårigheter för enskilda näringsidkare är en vanlig notis, men saknar den tyngd eller de bredare implikationer som Julius skulle anse vara värdiga en ledarartikel. Det är inte ett systemproblem eller ett politiskt beslut som kan påverkas. [nyhetsvärde 3 < 6]",
+    "fallback": false
   }
 ]
