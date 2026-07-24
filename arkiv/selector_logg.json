@@ -1388,5 +1388,35 @@
     "tema": "ekonomi",
     "anledning": "Trivial notis om en lokal återbruksanläggning. Saknar politisk, samhällelig eller existentiell bäring för en ledarartikel av Julius Sundblom. Ingen substans för en värdig ledare. [nyhetsvärde 2 < 6]",
     "fallback": false
+  },
+  {
+    "date": "2026-07-24",
+    "headline": "Rekordmånga ansökningar till musikinstitutet inför hösten",
+    "url": "https://alandsradio.ax/nyheter/rekordmanga-ansokningar-till-musikinstitutet-infor-hosten",
+    "skriv": false,
+    "nyhetsvarde": 3,
+    "tema": "kultur/utbildning",
+    "anledning": "Trivial notis om ansökningar till musikinstitutet. Saknar politisk, samhällelig eller ekonomisk tyngd för en ledare av Julius. [nyhetsvärde 3 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-07-24",
+    "headline": "ÅT: Svensk influerare gripen på Åland – misstänktes för våldtäkt",
+    "url": "https://alandsradio.ax/nyheter/at-svensk-influerare-gripen-pa-aland-misstanktes-for-valdtakt",
+    "skriv": false,
+    "nyhetsvarde": 4,
+    "tema": "sedlighet",
+    "anledning": "För obetydlig personnotis utan större betydelse, utredningen har inte lett till häktning och saknar substans för en ledarartikel. [nyhetsvärde 4 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-07-24",
+    "headline": "Nya skyddsrumsregler saknar Ålandsperspektiv",
+    "url": "https://alandsradio.ax/nyheter/nya-skyddsrumsregler-saknar-alandsperspektiv",
+    "skriv": true,
+    "nyhetsvarde": 8,
+    "tema": "självstyrelse",
+    "anledning": "Frågan rör rikets lagstiftningsbehörighet kontra Ålands autonoma ställning i en viktig fråga om befolkningsskydd och räddningsväsende. Landskapsregeringens kritik belyser potentiella konflikter i tolkningen av autonomin och dess praktiska konsekvenser, vilket är av stor vikt för Julius Sundblom.",
+    "fallback": false
   }
 ]
