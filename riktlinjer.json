@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-07-17",
+  "updated": "2026-07-24",
   "beskrivning": "Levande redaktionella riktlinjer. Läses av main.py före varje generering och injiceras i prompten. Växer via veckoreflektion (reflect_week.py) + 5 min mänskligt godkännande. Detta är Julius långsiktiga minne — det enda som gör att veckans lärdom ändrar nästa veckas texter.",
   "undvik": [
     {
@@ -296,6 +296,57 @@
           {
             "tema": "sedlighet/förening",
             "count": 1
+          }
+        ]
+      }
+    },
+    {
+      "datum": "2026-07-24",
+      "artiklar": 24,
+      "troper": {
+        "låtom oss": 28,
+        "månget öga har": 11,
+        "månget öga": 11,
+        "sannerligen": 7,
+        "må vi": 4,
+        "mången": 3,
+        "vår plikt": 2,
+        "i sanning": 1,
+        "vårt folk": 1
+      },
+      "meningslangd": {
+        "median": 26,
+        "mean": 25.9,
+        "stdev": 9.0,
+        "over35_pct": 15
+      },
+      "nya_forslag": [],
+      "urval": {
+        "total": 85,
+        "godkanda": 9,
+        "avvisade": 76,
+        "godkande_pct": 11,
+        "nyhetsvarde_snitt": 2.8,
+        "top_avvis_teman": [
+          {
+            "tema": "sport",
+            "count": 12
+          },
+          {
+            "tema": "ekonomi",
+            "count": 9
+          },
+          {
+            "tema": "sedlighet",
+            "count": 8
+          },
+          {
+            "tema": "kultur",
+            "count": 5
+          },
+          {
+            "tema": "lokal notis",
+            "count": 4
           }
         ]
       }
