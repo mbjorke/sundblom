@@ -1418,5 +1418,35 @@
     "tema": "självstyrelse",
     "anledning": "Frågan rör rikets lagstiftningsbehörighet kontra Ålands autonoma ställning i en viktig fråga om befolkningsskydd och räddningsväsende. Landskapsregeringens kritik belyser potentiella konflikter i tolkningen av autonomin och dess praktiska konsekvenser, vilket är av stor vikt för Julius Sundblom.",
     "fallback": false
+  },
+  {
+    "date": "2026-07-24",
+    "headline": "“Skutor och segel finns i ålänningarnas DNA“",
+    "url": "https://alandsradio.ax/nyheter/dagen-fore-sjosattningen-av-galeasen-emelia-pagar-de-sista-forberedelserna-i-sjokvarteret-under-fredagen-placeras-kilar-ut-under-de-smorda-flotrannorna-som-behandlats-med-fartalg-och-kristallsapa",
+    "skriv": false,
+    "nyhetsvarde": 3,
+    "tema": "kultur",
+    "anledning": "Kulturnotis utan större samhällelig eller politisk relevans. För obetydlig för en ledarartikel. [nyhetsvärde 3 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-07-24",
+    "headline": "LR vill förlänga ö-undantaget – och skydda skärgårdstrafiken",
+    "url": "https://alandsradio.ax/nyheter/lr-vill-forlanga-o-undantaget-och-skydda-skargardstrafiken",
+    "skriv": true,
+    "nyhetsvarde": 8,
+    "tema": "självstyrelse, ekonomi, samhällsordning",
+    "anledning": "Landskapsregeringens ställningstagande i en fråga av stor betydelse för Ålands ekonomi och självstyrelse. Sjötransporterna är vitala, och att värna dem mot yttre påbud är en kärnfråga för Julius. Frågan om EU-reglering kontra lokal autonomi och ekonomisk bärkraft ger god substans för en ledare om Ålands särställning och överlevnad.",
+    "fallback": false
+  },
+  {
+    "date": "2026-07-24",
+    "headline": "Svag tilltro till havsbaserad vindkraft bland kommunordförande",
+    "url": "https://alandsradio.ax/nyheter/svag-tilltro-till-havsbaserad-vindkraft-bland-kommunordforande",
+    "skriv": false,
+    "nyhetsvarde": 4,
+    "tema": "ekonomi",
+    "anledning": "Ämnet är för modernt och rör energifrågor som inte var relevanta 1926. Dessutom är det en åsiktssammanställning snarare än en konkret händelse eller ett beslut. Julius hade svårt att se det som en ledarartikel. [nyhetsvärde 4 < 6]",
+    "fallback": false
   }
 ]
