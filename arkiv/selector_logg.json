@@ -1338,5 +1338,55 @@
     "tema": "ekonomi",
     "anledning": "Väderrelaterade ekonomiska svårigheter för enskilda näringsidkare är en vanlig notis, men saknar den tyngd eller de bredare implikationer som Julius skulle anse vara värdiga en ledarartikel. Det är inte ett systemproblem eller ett politiskt beslut som kan påverkas. [nyhetsvärde 3 < 6]",
     "fallback": false
+  },
+  {
+    "date": "2026-07-24",
+    "headline": "Tillfälliga trafikbegränsningar i Mariehamn under lördagen",
+    "url": "https://alandsradio.ax/nyheter/tillfalliga-trafikbegransningar-i-mariehamn-under-lordagen",
+    "skriv": false,
+    "nyhetsvarde": 2,
+    "tema": "lokal notis",
+    "anledning": "Trivial notis om tillfälliga trafikbegränsningar för en modern festival. Saknar koppling till Julius redaktionella värld eller substans för en ledare. [nyhetsvärde 2 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-07-24",
+    "headline": "Mariehamns stad ger 5 000 euro i sponsring till Ålands Segelsällskap",
+    "url": "https://alandsradio.ax/nyheter/mariehamns-stad-ger-5-000-euro-i-sponsring-till-alands-segelsallskap",
+    "skriv": false,
+    "nyhetsvarde": 2,
+    "tema": "smånotis",
+    "anledning": "Trivial lokal notis om sponsring till sportevenemang. Saknar större politisk, samhällelig eller existentiell bäring för Åland. [nyhetsvärde 2 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-07-24",
+    "headline": "Man med inreseförbud uppehöll sig på Åland",
+    "url": "https://alandsradio.ax/nyheter/man-med-inreseforbud-uppeholl-sig-pa-aland",
+    "skriv": false,
+    "nyhetsvarde": 3,
+    "tema": "kriminalitet",
+    "anledning": "En enskild personnotis om brott mot inreseförbud. Saknar den bredare samhälleliga, politiska eller autonoma relevans som krävs för en ledarartikel av Sundblom. Dessutom för tunt med substans för en värdig ledare. [nyhetsvärde 3 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-07-24",
+    "headline": "Blåljus i backspegeln – håll åt sidan och undvik tvära stopp",
+    "url": "https://alandsradio.ax/nyheter/blaljus-i-backspegeln-hall-at-sidan-och-undvik-tvara-stopp",
+    "skriv": false,
+    "nyhetsvarde": 1,
+    "tema": "trafik",
+    "anledning": "Trivial notis om trafikregler. Saknar koppling till centrala teman som självstyrelse eller större samhällsfrågor. För liten substans för en ledare. [nyhetsvärde 1 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-07-24",
+    "headline": "Nu närmar sig öppningen för Svinryggens återbruksanläggning",
+    "url": "https://alandsradio.ax/nyheter/nu-narmar-sig-oppningen-for-svinryggens-aterbruksanlaggning",
+    "skriv": false,
+    "nyhetsvarde": 2,
+    "tema": "ekonomi",
+    "anledning": "Trivial notis om en lokal återbruksanläggning. Saknar politisk, samhällelig eller existentiell bäring för en ledarartikel av Julius Sundblom. Ingen substans för en värdig ledare. [nyhetsvärde 2 < 6]",
+    "fallback": false
   }
 ]
