@@ -1488,5 +1488,15 @@
     "tema": "kultur",
     "anledning": "Trivial nöjesnotis om artist och konsert, helt utan substans för en ledare 1926. Denna typ av notis existerar inte 1926. [nyhetsvärde 1 < 6]",
     "fallback": false
+  },
+  {
+    "date": "2026-07-25",
+    "headline": "Ronan Keating hemlig gäst på Wiklöfs konsert",
+    "url": "https://alandsradio.ax/nyheter/ronan-keating-hemlig-gast-pa-wiklofs-konsert",
+    "skriv": false,
+    "nyhetsvarde": 1,
+    "tema": "kändisnytt",
+    "anledning": "Ren kändisnytt och underhållning, saknar relevans för politiska, samhälleliga eller sedliga frågor år 1926. [nyhetsvärde 1 < 6]",
+    "fallback": false
   }
 ]
