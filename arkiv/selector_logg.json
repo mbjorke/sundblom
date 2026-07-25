@@ -1448,5 +1448,15 @@
     "tema": "ekonomi",
     "anledning": "Ämnet är för modernt och rör energifrågor som inte var relevanta 1926. Dessutom är det en åsiktssammanställning snarare än en konkret händelse eller ett beslut. Julius hade svårt att se det som en ledarartikel. [nyhetsvärde 4 < 6]",
     "fallback": false
+  },
+  {
+    "date": "2026-07-25",
+    "headline": "Landskapet vill effektivisera servicen för arbetssökande",
+    "url": "https://alandsradio.ax/nyheter/landskapet-vill-effektivisera-servicen-for-arbetssokande",
+    "skriv": true,
+    "nyhetsvarde": 6,
+    "tema": "ekonomi och samhällsordning",
+    "anledning": "Ändringar i arbetsmarknadsservicen berör direkt ekonomin och samhällsordningen, vilket är relevant för Julius. Förändringar i hur arbetslösheten hanteras och krav på individen är av substans för en ledare.",
+    "fallback": false
   }
 ]
