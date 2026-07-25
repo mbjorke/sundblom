@@ -1458,5 +1458,35 @@
     "tema": "ekonomi och samhällsordning",
     "anledning": "Ändringar i arbetsmarknadsservicen berör direkt ekonomin och samhällsordningen, vilket är relevant för Julius. Förändringar i hur arbetslösheten hanteras och krav på individen är av substans för en ledare.",
     "fallback": false
+  },
+  {
+    "date": "2026-07-25",
+    "headline": "Säsongens första seger gled IFK ur händerna",
+    "url": "https://alandsradio.ax/nyheter/ifk-mariehamn",
+    "skriv": false,
+    "nyhetsvarde": 1,
+    "tema": "sport",
+    "anledning": "Ren sportresultat-rapportering utan djupare redaktionell vinkel eller relevans för Julius Sundbloms intresseområden. [nyhetsvärde 1 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-07-25",
+    "headline": "Två bilar fick bärgas efter kollision vid Sjökvarteret",
+    "url": "https://alandsradio.ax/nyheter/tva-bilar-fick-bargas-efter-kollision-vid-sjokvarteret",
+    "skriv": false,
+    "nyhetsvarde": 2,
+    "tema": "trivial notis",
+    "anledning": "Trivial notis om en trafikolycka utan större samhällelig betydelse eller koppling till Julius redaktionella teman. [nyhetsvärde 2 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-07-25",
+    "headline": "Christer Sjögren: “Jag spelade in My Way redan på tidig Vikinga-tid”",
+    "url": "https://alandsradio.ax/nyheter/christer-sjogren-jag-spelade-in-my-way-redan-pa-tidig-vikinga-tid",
+    "skriv": false,
+    "nyhetsvarde": 1,
+    "tema": "kultur",
+    "anledning": "Trivial nöjesnotis om artist och konsert, helt utan substans för en ledare 1926. Denna typ av notis existerar inte 1926. [nyhetsvärde 1 < 6]",
+    "fallback": false
   }
 ]
