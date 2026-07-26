@@ -1498,5 +1498,15 @@
     "tema": "kändisnytt",
     "anledning": "Ren kändisnytt och underhållning, saknar relevans för politiska, samhälleliga eller sedliga frågor år 1926. [nyhetsvärde 1 < 6]",
     "fallback": false
+  },
+  {
+    "date": "2026-07-26",
+    "headline": "Hund i hemmet kan ge friskare barn",
+    "url": "https://alandsradio.ax/nyheter/hund-i-hemmet-kan-ge-friskare-barn",
+    "skriv": false,
+    "nyhetsvarde": 1,
+    "tema": "hälsa",
+    "anledning": "Vetenskaplig studie om hundars hälsoeffekter på barn är irrelevant för Julius redaktionella värld och saknar politisk, samhällelig eller autonomisk relevans. [nyhetsvärde 1 < 6]",
+    "fallback": false
   }
 ]
