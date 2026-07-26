@@ -1528,5 +1528,15 @@
     "tema": "smånotiser",
     "anledning": "Triviala sjöräddningsnotiser utan större samhällelig eller politisk relevans. Ingen vinkel för en ledare. [nyhetsvärde 2 < 6]",
     "fallback": false
+  },
+  {
+    "date": "2026-07-26",
+    "headline": "Nostalgin lockade till Rockoff",
+    "url": "https://alandsradio.ax/nyheter/nostalgin-lockade-till-rockoff",
+    "skriv": false,
+    "nyhetsvarde": 1,
+    "tema": "kultur och underhållning",
+    "anledning": "Trivial notis om en modern festival. Saknar koppling till centrala ledarteman som autonomi, samhällsordning, sedlighet eller rikspolitik. Ingen substans för en värdig ledare. [nyhetsvärde 1 < 6]",
+    "fallback": false
   }
 ]
