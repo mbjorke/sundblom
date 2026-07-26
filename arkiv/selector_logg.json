@@ -1508,5 +1508,25 @@
     "tema": "hälsa",
     "anledning": "Vetenskaplig studie om hundars hälsoeffekter på barn är irrelevant för Julius redaktionella värld och saknar politisk, samhällelig eller autonomisk relevans. [nyhetsvärde 1 < 6]",
     "fallback": false
+  },
+  {
+    "date": "2026-07-26",
+    "headline": "Besökare från hela Finland på 25 juli-konserten: ”Så bra blandning artister”",
+    "url": "https://alandsradio.ax/nyheter/besokare-fran-hela-finland-pa-25-juli-konserten-sa-bra-blandning-artister",
+    "skriv": false,
+    "nyhetsvarde": 2,
+    "tema": "kultur/nöje",
+    "anledning": "Ren nöjesrapportering utan djupare samhälls-, autonomi- eller politisk relevans. För obetydligt för en ledarartikel av Julius Sundblom. [nyhetsvärde 2 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-07-26",
+    "headline": "Man föll överbord – fullt upp för sjöräddningen under helgen",
+    "url": "https://alandsradio.ax/nyheter/man-foll-overbord-fullt-upp-for-sjoraddningen-under-helgen",
+    "skriv": false,
+    "nyhetsvarde": 2,
+    "tema": "smånotiser",
+    "anledning": "Triviala sjöräddningsnotiser utan större samhällelig eller politisk relevans. Ingen vinkel för en ledare. [nyhetsvärde 2 < 6]",
+    "fallback": false
   }
 ]
