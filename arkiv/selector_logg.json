@@ -1588,5 +1588,35 @@
     "tema": "sedlighet",
     "anledning": "Standard rapportering om fylleri och ordningsstörningar. Saknar den unika händelse eller samhällsfråga som motiverar en ledare av Julius. [nyhetsvärde 3 < 6]",
     "fallback": false
+  },
+  {
+    "date": "2026-07-27",
+    "headline": "Premiär för den nyskrivna pjäsen Vem är den där Någon?",
+    "url": "https://alandsradio.ax/nyheter/premiar-for-den-nyskrivna-pjasen-vem-ar-den-dar-nagon",
+    "skriv": false,
+    "nyhetsvarde": 2,
+    "tema": "kultur",
+    "anledning": "Kulturkritik och teaterrecensioner är inte fokus för ledarartiklar, särskilt inte om det är en barnpjäs. [nyhetsvärde 2 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-07-27",
+    "headline": "Fältarna: Fler yngre barn rör sig ensamma på stan nattetid",
+    "url": "https://alandsradio.ax/nyheter/faltarna-fler-yngre-barn-ror-sig-ensamma-pa-stan-nattetid",
+    "skriv": false,
+    "nyhetsvarde": 3,
+    "tema": "sedlighet",
+    "anledning": "Ämnet berör sedlighet och samhällsordning, men innehållet är tunt och bygger på generella observationer. Det saknas konkreta fakta, incidenter av större dignitet eller beslut som motiverar en ledarartikel. Mer en notis om föräldrars ansvar. [nyhetsvärde 3 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-07-27",
+    "headline": "Pussinen-Amani efter svenska framgångarna i NM: “Det går åt rätt håll inför EM“",
+    "url": "https://alandsradio.ax/nyheter/pussinen-amani-efter-svenska-framgangarna-i-nm-det-gar-at-ratt-hall-infor-em",
+    "skriv": false,
+    "nyhetsvarde": 2,
+    "tema": "sport",
+    "anledning": "Ren sportresultat-rapportering och personnotis utan större betydelse för ledarsidan. [nyhetsvärde 2 < 6]",
+    "fallback": false
   }
 ]
