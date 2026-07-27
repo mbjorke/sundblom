@@ -1538,5 +1538,15 @@
     "tema": "kultur och underhållning",
     "anledning": "Trivial notis om en modern festival. Saknar koppling till centrala ledarteman som autonomi, samhällsordning, sedlighet eller rikspolitik. Ingen substans för en värdig ledare. [nyhetsvärde 1 < 6]",
     "fallback": false
+  },
+  {
+    "date": "2026-07-27",
+    "headline": "Ikonen: Gott samarbete har fört självstyrelselagen till remiss",
+    "url": "https://alandsradio.ax/nyheter/ikonen-gott-samarbete-har-fort-sjalvstyrelselagen-till-remiss",
+    "skriv": true,
+    "nyhetsvarde": 9,
+    "tema": "självstyrelse, politik, lagstiftning",
+    "anledning": "Förslaget till en ny självstyrelselag är av central betydelse för Ålands autonomi och framtid. Att det nu är ute på remiss, med en minister som uttrycker tacksamhet för samarbete, och med tidsramar för beslut, är av högsta intresse för Julius Sundblom. Det ryms väl inom hans redaktionella värld och erbjuder gott om substans för en ledare om självstyrelsens utveckling, Ålands ställning och samarbetet med riket. Att Katrin Sjögren framhåller att lagen stärker Ålands rätt att vara annorlunda är en ytterligare bekräftelse på dess relevans.",
+    "fallback": false
   }
 ]
