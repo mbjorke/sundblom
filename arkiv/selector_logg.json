@@ -1548,5 +1548,45 @@
     "tema": "självstyrelse, politik, lagstiftning",
     "anledning": "Förslaget till en ny självstyrelselag är av central betydelse för Ålands autonomi och framtid. Att det nu är ute på remiss, med en minister som uttrycker tacksamhet för samarbete, och med tidsramar för beslut, är av högsta intresse för Julius Sundblom. Det ryms väl inom hans redaktionella värld och erbjuder gott om substans för en ledare om självstyrelsens utveckling, Ålands ställning och samarbetet med riket. Att Katrin Sjögren framhåller att lagen stärker Ålands rätt att vara annorlunda är en ytterligare bekräftelse på dess relevans.",
     "fallback": false
+  },
+  {
+    "date": "2026-07-27",
+    "headline": "Ungdomsbråket väcker reaktioner – polisen har fått ingripa",
+    "url": "https://alandsradio.ax/nyheter/ungdomsbraket-vacker-reaktioner-polisen-har-fatt-ingripa",
+    "skriv": false,
+    "nyhetsvarde": 3,
+    "tema": "sedlighet",
+    "anledning": "Smålokal notis om ungdomsbråk och polisens ingripande. Saknar den bredare samhälleliga eller politiska relevans som Julius söker för en ledare. Även om det rör sedlighet, är substansen för tunn för en djupare analys av samhällsordningen. Polisen hanterar ärendet rutinmässigt, inga beslut eller konflikter av ledartikelskaliber. [nyhetsvärde 3 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-07-27",
+    "headline": "Barn som utsätts för sexuellt våld på nätet ökar - AI används för att manipulera",
+    "url": "https://alandsradio.ax/nyheter/barn-som-utsatts-for-sexuellt-vald-pa-natet-okar",
+    "skriv": true,
+    "nyhetsvarde": 8,
+    "tema": "sedlighet och modernitetens förfall",
+    "anledning": "Även om \"nätet\" och \"AI\" är framtida begrepp för 1926, är kärnan i nyheten barns utsatthet för sexuellt våld och manipulering av oskyldiga bilder. Detta faller direkt under 'sedlighet och modernitetens förfall' och är en djupt väsentlig händelse. Omfattningen och den moraliska implikationen ger tillräcklig substans för en ledare.",
+    "fallback": false
+  },
+  {
+    "date": "2026-07-27",
+    "headline": "Historien om demenscentret i Mariehamn – en berättelse om utredningar, beslut oc",
+    "url": "https://alandsradio.ax/nyheter/historien-om-demenscentret-i-mariehamn-en-berattelse-om-utredningar-beslut-och-tvarstopp",
+    "skriv": false,
+    "nyhetsvarde": 3,
+    "tema": "lokal politik",
+    "anledning": "Ämnet är ett kommunalt beslut om en social inrättning, vilket är för lokalt och specifikt för att motivera en ledarartikel av Sundblom. Det rör inte direkt autonomin, rikspolitiken eller större samhällsfrågor på det sätt Julius brukar adressera. Dessutom är det en tillbakablick på en process som stannat av, inte ett aktuellt, avgörande beslut som kräver omedelbar kommentar. Det saknas också den typ av konflikt eller ideologisk spänning som brukar trigga Julius. [nyhetsvärde 3 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-07-27",
+    "headline": "Arbetsdryg helg för polisen – hög berusningsnivå ledde till flera ingripanden",
+    "url": "https://alandsradio.ax/nyheter/arbetsdryg-helg-for-polisen-hog-berusningsniva-ledde-till-flera-ingripanden",
+    "skriv": false,
+    "nyhetsvarde": 3,
+    "tema": "sedlighet",
+    "anledning": "Standard rapportering om fylleri och ordningsstörningar. Saknar den unika händelse eller samhällsfråga som motiverar en ledare av Julius. [nyhetsvärde 3 < 6]",
+    "fallback": false
   }
 ]
