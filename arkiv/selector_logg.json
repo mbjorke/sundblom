@@ -1748,5 +1748,55 @@
     "tema": "personnotis",
     "anledning": "Personlig berättelse utan större betydelse för autonomin eller samhällsordningen. För 'modernitetens förfall' är det för tunt och saknar konkret kritik eller analys av samhällsstrukturer. [nyhetsvärde 2 < 6]",
     "fallback": false
+  },
+  {
+    "date": "2026-07-28",
+    "headline": "Kobba Klintar blir scen för tvärkonstnärlig performance",
+    "url": "https://alandsradio.ax/nyheter/kobba-klintar-blir-scen-for-tvarkonstnarlig-performance",
+    "skriv": false,
+    "nyhetsvarde": 2,
+    "tema": "kultur",
+    "anledning": "Trivial kulturnotis utan större samhällelig relevans eller koppling till Julius redaktionella värld. Saknar substans för en ledare. [nyhetsvärde 2 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-07-28",
+    "headline": "Släpade kundvagnar efter moped – tvisten avslutad med förlikning",
+    "url": "https://alandsradio.ax/nyheter/slapade-kundvagnar-efter-moped-tvisten-avslutad-med-forlikning",
+    "skriv": false,
+    "nyhetsvarde": 2,
+    "tema": "sedlighet",
+    "anledning": "Trivial lokal notis om pojkstreck, ingen större samhällelig betydelse eller redaktionell vinkel för Julius Sundblom. [nyhetsvärde 2 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-07-28",
+    "headline": "Soroush Mahmoudi närmar sig toppen i svensk fotboll",
+    "url": "https://alandsradio.ax/nyheter/soroush-mahmoudi-narmar-sig-toppen-i-svensk-fotboll",
+    "skriv": false,
+    "nyhetsvarde": 2,
+    "tema": "sport",
+    "anledning": "Ren sportresultat-rapportering och personnotis utan större betydelse för ledarartikel. Saknar koppling till Julius Sundbloms redaktionella värld. [nyhetsvärde 2 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-07-28",
+    "headline": "Lyckad satsning på Rockoffbussen – “Glad stämning och allsång“",
+    "url": "https://alandsradio.ax/nyheter/lyckad-satsning-pa-rockoffbussen-glad-stamning-och-allsang",
+    "skriv": false,
+    "nyhetsvarde": 2,
+    "tema": "lokal notis",
+    "anledning": "Trivial lokal notis om bussarrangemang och god stämning vid en musikfestival. Saknar politisk, samhällelig, ekonomisk eller sedlig relevans för en ledarartikel av Sundblom. [nyhetsvärde 2 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-07-28",
+    "headline": "5 600 besökte Vikingamarknaden",
+    "url": "https://alandsradio.ax/nyheter/5-600-besokte-vikingamarknaden",
+    "skriv": false,
+    "nyhetsvarde": 2,
+    "tema": "kultur, turism",
+    "anledning": "En ren notis om besökarantal för ett enskilt evenemang. Saknar den bredare samhälls-, politiska eller sedlighetsaspekten som skulle motivera en ledare. [nyhetsvärde 2 < 6]",
+    "fallback": false
   }
 ]
