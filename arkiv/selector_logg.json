@@ -1708,5 +1708,45 @@
     "tema": "personnotis",
     "anledning": "Trivial personnotis om 'pojkstreck', saknar politisk, samhällelig eller sedlig relevans för en ledare. [nyhetsvärde 1 < 6]",
     "fallback": false
+  },
+  {
+    "date": "2026-07-28",
+    "headline": "Tommy Thörnroos om sexuellt våld mot barn på nätet: “Mörkertalet kan vara jättes",
+    "url": "https://alandsradio.ax/nyheter/tommy-thornroos-om-sexuellt-vald-mot-barn-pa-natet-morkertalet-kan-vara-jattestort",
+    "skriv": false,
+    "nyhetsvarde": 4,
+    "tema": "sedlighet",
+    "anledning": "Ämnet är viktigt ur ett sedlighetsperspektiv, men det är en varning och en allmän iakttagelse om ett framtida problem, snarare än en konkret händelse eller ett beslut som motiverar en ledarartikel av Julius Sundblom 1926. 'Nätet' och 'onlinebrott' är dessutom framtida koncept som inte passar Julius omedelbara redaktionella ram. [nyhetsvärde 4 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-07-28",
+    "headline": "Crosskeys vd: “I dag är vi ett engelskspråkigt företag“",
+    "url": "https://alandsradio.ax/nyheter/crosskeys-vd-i-dag-ar-vi-ett-engelsksprakigt-foretag",
+    "skriv": false,
+    "nyhetsvarde": 2,
+    "tema": "ekonomi/arbetsliv",
+    "anledning": "Även om det berör ett åländskt företag, handlar detta om en intern språkutveckling och företagskulturfråga, vilket är för obetydligt för en ledarartikel av Julius Sundblom. Det saknar större politisk, samhällelig eller autonomisk relevans som Sundblom skulle prioritera. [nyhetsvärde 2 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-07-28",
+    "headline": "Kokong Festival drar igång för femte gången",
+    "url": "https://alandsradio.ax/nyheter/kokong-festival-drar-igang-for-femte-gangen",
+    "skriv": false,
+    "nyhetsvarde": 2,
+    "tema": "kultur/nöje",
+    "anledning": "Kultur- och nöjesnotis av begränsad vikt för ledarsidan. Ingen koppling till autonomi, samhällsordning eller sedlighet. [nyhetsvärde 2 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-07-28",
+    "headline": "Majas dagbok blev boken “Det vänder mot det goda“",
+    "url": "https://alandsradio.ax/nyheter/majas-dagbok-blev-boken-det-vander-mot-det-goda",
+    "skriv": false,
+    "nyhetsvarde": 2,
+    "tema": "personnotis",
+    "anledning": "Personlig berättelse utan större betydelse för autonomin eller samhällsordningen. För 'modernitetens förfall' är det för tunt och saknar konkret kritik eller analys av samhällsstrukturer. [nyhetsvärde 2 < 6]",
+    "fallback": false
   }
 ]
