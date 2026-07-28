@@ -1798,5 +1798,15 @@
     "tema": "kultur, turism",
     "anledning": "En ren notis om besökarantal för ett enskilt evenemang. Saknar den bredare samhälls-, politiska eller sedlighetsaspekten som skulle motivera en ledare. [nyhetsvärde 2 < 6]",
     "fallback": false
+  },
+  {
+    "date": "2026-07-28",
+    "headline": "Ålands naturskola kan få Nordiska rådets miljöpris – en av åtta kandidater",
+    "url": "https://alandsradio.ax/nyheter/alands-naturskola-kan-fa-nordiska-radets-miljopris-en-av-atta-kandidater",
+    "skriv": false,
+    "nyhetsvarde": 4,
+    "tema": "kultur",
+    "anledning": "En nominering till ett pris är för tunn för en ledare, särskilt då ämnet, utomhuspedagogik och miljöfrågor, inte direkt anknyter till Julius Sundbloms kärnfrågor år 1926. Det saknas politisk eller samhällsordnande substans. [nyhetsvärde 4 < 6]",
+    "fallback": false
   }
 ]
