@@ -1808,5 +1808,45 @@
     "tema": "kultur",
     "anledning": "En nominering till ett pris är för tunn för en ledare, särskilt då ämnet, utomhuspedagogik och miljöfrågor, inte direkt anknyter till Julius Sundbloms kärnfrågor år 1926. Det saknas politisk eller samhällsordnande substans. [nyhetsvärde 4 < 6]",
     "fallback": false
+  },
+  {
+    "date": "2026-07-29",
+    "headline": "Museitekniker på Pommern jobbade ombord på Glenlee i Skottland",
+    "url": "https://alandsradio.ax/nyheter/museitekniker-pa-pommern-jobbade-ombord-pa-glenlee-i-skottland",
+    "skriv": false,
+    "nyhetsvarde": 3,
+    "tema": "kultur",
+    "anledning": "En ren personnotis om ett arbetsutbyte mellan museitekniker, saknar större samhällelig relevans eller koppling till Julius redaktionella teman. För smal och obetydlig för en ledare. [nyhetsvärde 3 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-07-29",
+    "headline": "Man döms efter farlig körning vid Ångbåtsbryggan",
+    "url": "https://alandsradio.ax/nyheter/man-doms-efter-farlig-korning-vid-angbatsbryggan",
+    "skriv": false,
+    "nyhetsvarde": 3,
+    "tema": "sedlighet",
+    "anledning": "Även om det berör sedlighet och rättvisa, är detta en enskild, relativt liten dom utan större samhällelig eller politisk bäring för en ledare. För lite substans för Julius att skriva en värdig ledare om, snarare en notis. [nyhetsvärde 3 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-07-29",
+    "headline": "Studie: Debatten om havsbaserad vindkraft på Åland har blivit mer infekterad",
+    "url": "https://alandsradio.ax/nyheter/studie-debatten-om-havsbaserad-vindkraft-pa-aland-har-blivit-mer-infekterad",
+    "skriv": false,
+    "nyhetsvarde": 3,
+    "tema": "modernitetens förfall",
+    "anledning": "Ämnet i sig är för framåtblickande för 1926. Vindkraft är inte en aktuell fråga. Debattklimat är ingen större nyhet. Saknar substans för en ledare. [nyhetsvärde 3 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-07-29",
+    "headline": "Jordgubbssäsongen över tidigare än vanligt – regnet satte punkt",
+    "url": "https://alandsradio.ax/nyheter/jordgubbssasongen-over-tidigare-an-vanligt-regnet-satte-punkt",
+    "skriv": false,
+    "nyhetsvarde": 2,
+    "tema": "ekonomi/vardag",
+    "anledning": "Trivial notis om jordgubbssäsongen som saknar djupare politisk, samhällelig eller existentiell bäring. Inte tillräckligt substantiellt för en ledare. [nyhetsvärde 2 < 6]",
+    "fallback": false
   }
 ]
