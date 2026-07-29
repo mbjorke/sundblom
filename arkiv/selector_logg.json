@@ -1888,5 +1888,35 @@
     "tema": "kultur",
     "anledning": "Trivial notis om en lokal konstföreställning, saknar väsentligt nyhetsvärde och koppling till Julius redaktionella värld av politisk, samhällelig eller moralisk betydelse. [nyhetsvärde 1 < 6]",
     "fallback": false
+  },
+  {
+    "date": "2026-07-29",
+    "headline": "Så här stora är fartygens utsläpp av växthusgaser",
+    "url": "https://alandsradio.ax/nyheter/sa-har-stora-ar-fartygens-utslapp-av-vaxthusgaser",
+    "skriv": false,
+    "nyhetsvarde": 4,
+    "tema": "ekonomi",
+    "anledning": "Nyheten handlar om bränsleförbrukning och utsläpp, vilket är en modern miljöfråga som inte faller inom Julius traditionella intresseområde. Även om det nämner ekonomi (bränslekostnader) är det kopplat till en framtida oro snarare än en konkret händelse eller konflikt som Julius skulle vilja skriva en ledare om. För obetydlig och tidig för att utgöra grund för en ledare 1926. [nyhetsvärde 4 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-07-29",
+    "headline": "Högljudda bilar problem för turistföretagare – gäster kräver pengarna tillbaka",
+    "url": "https://alandsradio.ax/nyheter/hogljudda-bilar-problem-for-turistforetagare-gaster-kraver-pengarna-tillbaka",
+    "skriv": false,
+    "nyhetsvarde": 3,
+    "tema": "sedlighet",
+    "anledning": "Trivial notis om störande biljud, saknar tillräcklig substans eller politisk relevans för en ledare av Julius. Fokus är smålokal ordningsstörning, inte ett större samhällsproblem ur hans perspektiv. [nyhetsvärde 3 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-07-29",
+    "headline": "Skarpansvägen - gatan med rötter i Bomarsund",
+    "url": "https://alandsradio.ax/nyheter/skarpansvagen-gatan-med-rotter-i-bomarsund",
+    "skriv": false,
+    "nyhetsvarde": 2,
+    "tema": "historia",
+    "anledning": "Kulturhistorisk notis utan politisk, samhällelig eller ekonomisk tyngd. För tunn för en ledare. [nyhetsvärde 2 < 6]",
+    "fallback": false
   }
 ]
