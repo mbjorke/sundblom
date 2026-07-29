@@ -1848,5 +1848,45 @@
     "tema": "ekonomi/vardag",
     "anledning": "Trivial notis om jordgubbssäsongen som saknar djupare politisk, samhällelig eller existentiell bäring. Inte tillräckligt substantiellt för en ledare. [nyhetsvärde 2 < 6]",
     "fallback": false
+  },
+  {
+    "date": "2026-07-29",
+    "headline": "Sjukdomsanfall på Finncanopus – helikopter från Åland ryckte ut",
+    "url": "https://alandsradio.ax/nyheter/sjukdomsanfall-pa-finncanopus-helikopter-fran-aland-ryckte-ut",
+    "skriv": false,
+    "nyhetsvarde": 2,
+    "tema": "trivial notis",
+    "anledning": "En ren räddningsinsats, ingen större samhällelig relevans eller koppling till Julius redaktionella teman. [nyhetsvärde 2 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-07-29",
+    "headline": "Fimpar och snus ökar i naturen: “Väldigt dåligt för Östersjön”",
+    "url": "https://alandsradio.ax/nyheter/fimpar-och-snus-okar-i-naturen-valdigt-daligt-for-ostersjon",
+    "skriv": false,
+    "nyhetsvarde": 2,
+    "tema": "miljö",
+    "anledning": "Trivial notis om nedskräpning, ingen koppling till Julius redaktionella värld eller substans för ledarartikel. [nyhetsvärde 2 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-07-29",
+    "headline": "Ingen skatteåterbäring på måndag? Det här kan vara varför",
+    "url": "https://alandsradio.ax/nyheter/ingen-skatteaterbaring-pa-mandag-det-har-kan-vara-varfor",
+    "skriv": false,
+    "nyhetsvarde": 2,
+    "tema": "ekonomi",
+    "anledning": "Ren rutinåtgärd från skattemyndigheterna. Inget att skriva en ledare om. Berör inte autonomi, sedlighet, eller viktiga samhällsfrågor för Åland. [nyhetsvärde 2 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-07-29",
+    "headline": "Kobba Klintar inspiration för tvärkonstnärlig performance",
+    "url": "https://alandsradio.ax/nyheter/kobba-klintar-inspiration-for-tvarkonstnarlig-performance",
+    "skriv": false,
+    "nyhetsvarde": 1,
+    "tema": "kultur",
+    "anledning": "Trivial notis om en lokal konstföreställning, saknar väsentligt nyhetsvärde och koppling till Julius redaktionella värld av politisk, samhällelig eller moralisk betydelse. [nyhetsvärde 1 < 6]",
+    "fallback": false
   }
 ]
