@@ -1918,5 +1918,75 @@
     "tema": "historia",
     "anledning": "Kulturhistorisk notis utan politisk, samhällelig eller ekonomisk tyngd. För tunn för en ledare. [nyhetsvärde 2 < 6]",
     "fallback": false
+  },
+  {
+    "date": "2026-07-30",
+    "headline": "Rehn vann Compak Cup",
+    "url": "https://alandsradio.ax/nyheter/rehn-vann-compak-cup",
+    "skriv": false,
+    "nyhetsvarde": 1,
+    "tema": "sport",
+    "anledning": "Ren sportresultat-rapportering av lokal tävling utan större betydelse för Ålands politiska, ekonomiska eller samhälleliga liv. Ingen redaktionell vinkel för en ledare. [nyhetsvärde 1 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-07-30",
+    "headline": "Båt fick motorproblem – bogserades till hemmahamn",
+    "url": "https://alandsradio.ax/nyheter/bat-fick-motorproblem-bogserades-till-hemmahamn",
+    "skriv": false,
+    "nyhetsvarde": 1,
+    "tema": "trivial notis",
+    "anledning": "En ren räddningsnotis utan djupare nyhetsvärde eller tematisk koppling till Julius redaktionella värld. Saknar substans för en ledare. [nyhetsvärde 1 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-07-30",
+    "headline": "S:t Görans piffas upp",
+    "url": "https://alandsradio.ax/nyheter/st-gorans-piffas-upp",
+    "skriv": false,
+    "nyhetsvarde": 1,
+    "tema": "kultur/lokal",
+    "anledning": "Ren rutinåtgärd gällande kyrkounderhåll. För obetydligt för en ledare. [nyhetsvärde 1 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-07-30",
+    "headline": "Axel Söderback ny äldreomsorgschef i Lemland",
+    "url": "https://alandsradio.ax/nyheter/axel-soderback-ny-aldreomsorgschef-i-lemland",
+    "skriv": false,
+    "nyhetsvarde": 3,
+    "tema": "lokal förvaltning",
+    "anledning": "Smålokal notis om en rutinåtgärd. Varningshistoriken är intressant men inte tillräckligt substantiell för en ledare av Julius Sundblom, som har större frågor att bevaka. [nyhetsvärde 3 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-07-30",
+    "headline": "Musikdängor går hem hos de äldre på Troberghemmet – aktivitetskoordinator vill f",
+    "url": "https://alandsradio.ax/nyheter/musikdangor-gar-hem-hos-de-aldre-pa-troberghemmet-aktivitetskoordinator-vill-forgylla-sommardagarna",
+    "skriv": false,
+    "nyhetsvarde": 1,
+    "tema": "smånotiser",
+    "anledning": "Trivial notis om en lokal aktivitet på ett äldreboende. Saknar politisk, samhällelig eller autonomirelaterad relevans för en ledare. [nyhetsvärde 1 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-07-30",
+    "headline": "Veteranbilar räddas undan nya EU-regler – slipper skrotas",
+    "url": "https://alandsradio.ax/nyheter/veteranbilar-raddas-undan-nya-eu-regler-slipper-skrotas",
+    "skriv": false,
+    "nyhetsvarde": 3,
+    "tema": "miljö",
+    "anledning": "Veteranbilar och miljöregler är för moderna för Julius redaktionella värld 1926. Nyheten är av marginell betydelse för Julius intresseområden. [nyhetsvärde 3 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-07-30",
+    "headline": "Viking Lines och Eckerölinjens stora fördel när energipriserna rusar",
+    "url": "https://alandsradio.ax/nyheter/viking-lines-och-eckerolinjens-stora-fordel-nar-energipriserna-rusar",
+    "skriv": false,
+    "nyhetsvarde": 3,
+    "tema": "ekonomi",
+    "anledning": "Artikeln behandlar rederiernas effektivitet och bränslekostnader, men är för teknisk och saknar den politiska eller samhällsordningsmässiga relevans som krävs för en Sundblom-ledare. Den är primärt en ekonomisk-teknisk rapport om rederiernas drift, inte en fråga om självstyrelse, svensk identitet, klass eller sedlighet. [nyhetsvärde 3 < 6]",
+    "fallback": false
   }
 ]
