@@ -2008,5 +2008,95 @@
     "tema": "kultur",
     "anledning": "Trivial notis om en lokal marknad. Saknar koppling till centrala redaktionella teman som autonomi, samhällsordning eller större politiska skeenden. Även om Röda Korset är en viktig organisation, är just denna marknad inte tillräckligt substantiell för en ledare. [nyhetsvärde 2 < 6]",
     "fallback": false
+  },
+  {
+    "date": "2026-07-30",
+    "headline": "Man får fängelsestraff efter omfattande brottslighet",
+    "url": "https://alandsradio.ax/nyheter/man-far-fangelsestraff-efter-omfattande-brottslighet",
+    "skriv": false,
+    "nyhetsvarde": 4,
+    "tema": "kriminalitet",
+    "anledning": "Enskild brottslighet utan bredare samhällelig eller politisk relevans. För obetydligt för en ledare av Julius Sundblom. [nyhetsvärde 4 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-07-30",
+    "headline": "Följ med Ålands Radio i Sjöbevakningens patrullbåt",
+    "url": "https://alandsradio.ax/nyheter/folj-med-alands-radio-i-sjobevakningens-patrullbat",
+    "skriv": false,
+    "nyhetsvarde": 2,
+    "tema": "rutinåtgärd",
+    "anledning": "Rutinuppdrag för sjöbevakningen, ingen väsentlig händelse. Saknar koppling till centrala teman som autonomi, politik eller större samhällsfrågor. [nyhetsvärde 2 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-07-30",
+    "headline": "Arrangörerna är mycket nöjda med årets Rockoff",
+    "url": "https://alandsradio.ax/nyheter/arrangorerna-ar-mycket-nojda-med-arets-rockoff",
+    "skriv": false,
+    "nyhetsvarde": 1,
+    "tema": "kultur",
+    "anledning": "Trivial notis om en modern festival. Saknar nyhetsvärde för 1926 och passar inte Julius redaktionella värld. Ingen substans för en ledarartikel. [nyhetsvärde 1 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-07-30",
+    "headline": "Utredningar fortsätter efter förra veckans händelser",
+    "url": "https://alandsradio.ax/nyheter/utredningar-fortsatter-efter-forra-veckans-handelser",
+    "skriv": true,
+    "nyhetsvarde": 8,
+    "tema": "sedlighet och ordning",
+    "anledning": "Flera brott, särskilt de misstänkta våldtäkterna och vapenbrottet, berör sedlighet, säkerhet och samhällsordning. Fallet med Putinstatyerna vid konsulatet kan dessutom tolkas som en provokation med internationell klang, vilket Julius skulle kunna analysera ur ett ordningsperspektiv eller med koppling till Finlands relationer med Ryssland.",
+    "fallback": false
+  },
+  {
+    "date": "2026-07-30",
+    "headline": "\"Vi har skärgården som studio\" - Havsmörker tar naturens ljud till Kokong",
+    "url": "https://alandsradio.ax/nyheter/vi-har-skargarden-som-studio-havsmorker-tar-naturens-ljud-till-kokong",
+    "skriv": false,
+    "nyhetsvarde": 3,
+    "tema": "kultur",
+    "anledning": "Även om det handlar om kultur och åländsk skärgård, är det en för modern och nischad konstform för att motivera en ledare av Julius. Fokus ligger på experimentell musik och en specifik festival, inte en bredare kulturell eller samhällelig fråga av intresse för en ledare 1926. [nyhetsvärde 3 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-07-30",
+    "headline": "Fel bränsle i tanken satte stopp för båttur",
+    "url": "https://alandsradio.ax/nyheter/fel-bransle-i-tanken-satte-stopp-for-battur",
+    "skriv": false,
+    "nyhetsvarde": 1,
+    "tema": "trivial notis",
+    "anledning": "Trivial personnotis utan större betydelse, inget nyhetsvärde för en ledarartikel. [nyhetsvärde 1 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-07-30",
+    "headline": "Norra Esplanadgatan stängs av mellan fredag och lördag",
+    "url": "https://alandsradio.ax/nyheter/norra-esplanadgatan-stangs-av-mellan-fredag-och-lordag",
+    "skriv": false,
+    "nyhetsvarde": 1,
+    "tema": "lokalnotis",
+    "anledning": "En renodlad lokal trafiknotis utan politisk, samhällelig eller ekonomisk relevans. För obetydlig för en ledarartikel. [nyhetsvärde 1 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-07-30",
+    "headline": "Finnlines intäkter ökar kraftigt",
+    "url": "https://alandsradio.ax/nyheter/finnlines-intakter-okar-kraftigt",
+    "skriv": false,
+    "nyhetsvarde": 4,
+    "tema": "ekonomi",
+    "anledning": "Även om det berör ekonomi och sjöfart, som är viktiga för Åland, handlar det om en enskild näringsidkares intäkter. Dessutom är siffrorna inte särredovisade för Åland, vilket gör den lokala relevansen för en ledare begränsad. Nyheten saknar direkt koppling till autonomi, politik eller samhällsordning på ett sätt som skulle motivera en ledarartikel av Julius Sundblom. [nyhetsvärde 4 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-07-30",
+    "headline": "Sänkt hastighet på Österleden under Sjödagarna",
+    "url": "https://alandsradio.ax/nyheter/sankt-hastighet-pa-osterleden-under-sjodagarna",
+    "skriv": false,
+    "nyhetsvarde": 1,
+    "tema": "lokal notis",
+    "anledning": "Trivial, lokal trafikreglering för ett evenemang. Saknar politisk, samhällelig eller existentiell betydelse för Åland. Ingen substans för en ledare. [nyhetsvärde 1 < 6]",
+    "fallback": false
   }
 ]
