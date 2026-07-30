@@ -1988,5 +1988,25 @@
     "tema": "ekonomi",
     "anledning": "Artikeln behandlar rederiernas effektivitet och bränslekostnader, men är för teknisk och saknar den politiska eller samhällsordningsmässiga relevans som krävs för en Sundblom-ledare. Den är primärt en ekonomisk-teknisk rapport om rederiernas drift, inte en fråga om självstyrelse, svensk identitet, klass eller sedlighet. [nyhetsvärde 3 < 6]",
     "fallback": false
+  },
+  {
+    "date": "2026-07-30",
+    "headline": "Har du sett en tumlare? Rapportera till landskapsregeringen",
+    "url": "https://alandsradio.ax/nyheter/har-du-sett-en-tumlare-rapportera-till-landskapsregeringen",
+    "skriv": false,
+    "nyhetsvarde": 2,
+    "tema": "miljö",
+    "anledning": "Trivial notis om en rutinåtgärd från landskapsregeringen gällande miljöövervakning. Saknar politisk, samhällelig eller ekonomisk relevans för en ledare. [nyhetsvärde 2 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-07-30",
+    "headline": "Röda korsmarknaden firar 60 år",
+    "url": "https://alandsradio.ax/nyheter/roda-korsmarknaden-firar-60-ar",
+    "skriv": false,
+    "nyhetsvarde": 2,
+    "tema": "kultur",
+    "anledning": "Trivial notis om en lokal marknad. Saknar koppling till centrala redaktionella teman som autonomi, samhällsordning eller större politiska skeenden. Även om Röda Korset är en viktig organisation, är just denna marknad inte tillräckligt substantiell för en ledare. [nyhetsvärde 2 < 6]",
+    "fallback": false
   }
 ]
