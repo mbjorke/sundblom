@@ -2198,5 +2198,45 @@
     "tema": "självstyrelse, samhällsordning, ekonomi",
     "anledning": "Central fråga om kommunal självstyrelse och samhällsorganisation som rör resurser och ansvar. Starkt motstånd från kommunerna mot centralisering. Innehåller politisk konflikt och ett stundande beslut med betydande konsekvenser för Ålands lokala självbestämmande och ekonomi. Passar väl in i Julius Sundbloms redaktionella linje om åländsk autonomi och samhällsfrågor.",
     "fallback": false
+  },
+  {
+    "date": "2026-07-31",
+    "headline": "Rescue Krickan assisterade båt med batteriproblem",
+    "url": "https://alandsradio.ax/nyheter/rescue-krickan-assisterade-bat-med-batteriproblem",
+    "skriv": false,
+    "nyhetsvarde": 1,
+    "tema": "trivial notis",
+    "anledning": "Trivial notis om sjöräddning utan större betydelse, ingen koppling till Julius redaktionella värld. [nyhetsvärde 1 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-07-31",
+    "headline": "Landskapsregeringen följer läget gällande svinpesten",
+    "url": "https://alandsradio.ax/nyheter/landskapsregeringen-foljer-laget-gallande-svinpesten",
+    "skriv": false,
+    "nyhetsvarde": 3,
+    "tema": "jordbruk/miljö",
+    "anledning": "Ärendet bedöms inte beröra Åland i dagsläget och inga åtgärder vidtas. För obetydligt för en ledare. [nyhetsvärde 3 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-07-31",
+    "headline": "Åskan uteblir – klar eftermiddag lovas på Åland",
+    "url": "https://alandsradio.ax/nyheter/askan-uteblir-klar-eftermiddag-lovas-pa-aland",
+    "skriv": false,
+    "nyhetsvarde": 1,
+    "tema": "väder",
+    "anledning": "Ren väderprognos utan djupare samhällelig eller politisk relevans. För obetydlig för en ledare av Julius Sundblom. [nyhetsvärde 1 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-07-31",
+    "headline": "Nikolaos Dosis lämnar IFK Mariehamn",
+    "url": "https://alandsradio.ax/nyheter/nikolaos-dosis-lamnar-ifk-mariehamn",
+    "skriv": false,
+    "nyhetsvarde": 1,
+    "tema": "sport",
+    "anledning": "Ren sportresultat-rapportering om ett truppbeslut i en sportklubb. Ingen större betydelse för Ålands samhälle eller politik, och passar inte Julius redaktionella värld. [nyhetsvärde 1 < 6]",
+    "fallback": false
   }
 ]
