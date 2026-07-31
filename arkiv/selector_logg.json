@@ -2238,5 +2238,35 @@
     "tema": "sport",
     "anledning": "Ren sportresultat-rapportering om ett truppbeslut i en sportklubb. Ingen större betydelse för Ålands samhälle eller politik, och passar inte Julius redaktionella värld. [nyhetsvärde 1 < 6]",
     "fallback": false
+  },
+  {
+    "date": "2026-07-31",
+    "headline": "Hundvalp ormbiten – sjöräddningen ryckte ut till Kökar",
+    "url": "https://alandsradio.ax/nyheter/hundvalp-ormbiten-sjoraddningen-ryckte-ut-till-kokar",
+    "skriv": false,
+    "nyhetsvarde": 1,
+    "tema": "trivial notis",
+    "anledning": "Trivial notis om en hundvalp, saknar nyhetsvärde för en ledarartikel av Julius Sundblom. Ingen koppling till autonomi, politik, ekonomi eller samhällsfrågor av större vikt. [nyhetsvärde 1 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-07-31",
+    "headline": "Sjödagarna är tillbaka  - “Som ett mininöjesfält“",
+    "url": "https://alandsradio.ax/nyheter/sjodagarna-ar-tillbaka-som-ett-mininojesfalt",
+    "skriv": false,
+    "nyhetsvarde": 2,
+    "tema": "kultur",
+    "anledning": "Trivial nöjesnotis. Saknar politisk, samhällelig eller ekonomisk relevans för en ledarartikel. [nyhetsvärde 2 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-07-31",
+    "headline": "Tallink hyr ut M/S Romantika till Italien",
+    "url": "https://alandsradio.ax/nyheter/tallink-hyr-ut-ms-romantika-till-italien",
+    "skriv": false,
+    "nyhetsvarde": 3,
+    "tema": "ekonomi",
+    "anledning": "Standard affärsbeslut från ett externt rederi. Saknar direkt koppling till åländsk självstyrelse, samhällsordning eller större politiska skeenden. För obetydligt för en ledare av Julius. [nyhetsvärde 3 < 6]",
+    "fallback": false
   }
 ]
