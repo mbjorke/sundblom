@@ -2098,5 +2098,105 @@
     "tema": "lokal notis",
     "anledning": "Trivial, lokal trafikreglering för ett evenemang. Saknar politisk, samhällelig eller existentiell betydelse för Åland. Ingen substans för en ledare. [nyhetsvärde 1 < 6]",
     "fallback": false
+  },
+  {
+    "date": "2026-07-31",
+    "headline": "Blomqvist och Pettersson vann ÅM i sportpistol",
+    "url": "https://alandsradio.ax/nyheter/blomqvist-och-pettersson-vann-am-i-sportpistol",
+    "skriv": false,
+    "nyhetsvarde": 1,
+    "tema": "sport",
+    "anledning": "Ren sportresultat-rapportering av lokal karaktär, saknar politisk, samhällelig eller existentiell bäring. För obetydlig för en ledare. [nyhetsvärde 1 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-07-31",
+    "headline": "Sander Blomqvist siktar mot Europas jazzscener",
+    "url": "https://alandsradio.ax/nyheter/sander-blomqvist-siktar-mot-europas-jazzscener",
+    "skriv": false,
+    "nyhetsvarde": 2,
+    "tema": "kultur, personnotis",
+    "anledning": "Personlig framgångssaga inom musik, men saknar den tyngd av samhällelig, politisk eller autonomi-relaterad relevans som skulle motivera en ledarartikel av Julius Sundblom. För smal fokus på enskild konstnärlig karriär. [nyhetsvärde 2 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-07-31",
+    "headline": "Södragatan är Mariehamns bäst bevarade stadsdel",
+    "url": "https://alandsradio.ax/nyheter/sodragatan-ar-mariehamns-bast-bevarade-stadsdel",
+    "skriv": false,
+    "nyhetsvarde": 2,
+    "tema": "kulturhistoria",
+    "anledning": "Kulturhistorisk notis om byggnadsbevarande, saknar politisk, samhällelig eller ekonomisk tyngd för en ledare 1926. Dessutom är det en tillbakablick på 1960- och 70-talets stadsplanering, vilket är framtida för 1926. [nyhetsvärde 2 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-07-31",
+    "headline": "Nikolas Dosis lämnar IFK Mariehamn",
+    "url": "https://alandsradio.ax/nyheter/nikolas-dosis-lamnar-ifk-mariehamn",
+    "skriv": false,
+    "nyhetsvarde": 1,
+    "tema": "sport",
+    "anledning": "Detta är en ren sportnotis om en spelarövergång. Saknar helt nyhetsvärde och tematisk passning för en ledarartikel av Julius Sundblom. Ingen substans för redaktionell tolkning. [nyhetsvärde 1 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-07-31",
+    "headline": "60 000 liter olja pumpades upp ur Ilmarinens vrak",
+    "url": "https://alandsradio.ax/nyheter/60-000-liter-olja-pumpades-upp-ur-ilmarinens-vrak",
+    "skriv": false,
+    "nyhetsvarde": 3,
+    "tema": "miljö",
+    "anledning": "Miljöåtgärd utan direkt koppling till Julius redaktionella värld. Visserligen historisk koppling till kriget och Ålands skydd, men primärt en notis om en rutinmässig sanering som är för tunn för en ledare. [nyhetsvärde 3 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-07-31",
+    "headline": "Kökar laddar för sommarmarknad",
+    "url": "https://alandsradio.ax/nyheter/kokar-laddar-for-sommarmarknad",
+    "skriv": false,
+    "nyhetsvarde": 1,
+    "tema": "lokalnotis",
+    "anledning": "Trivial, smålokal notis utan större betydelse, saknar koppling till redaktionell linje. [nyhetsvärde 1 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-07-31",
+    "headline": "Ny lyxkryssare på besök i Mariehamn",
+    "url": "https://alandsradio.ax/nyheter/ny-lyxkryssare-pa-besok-i-mariehamn",
+    "skriv": false,
+    "nyhetsvarde": 2,
+    "tema": "ekonomi/turism",
+    "anledning": "Trivial notis om turistbesök. Ingen väsentlig händelse, inget utrymme för en ledare. [nyhetsvärde 2 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-07-31",
+    "headline": "Svinpest konstaterad i riket – inga restriktioner på Åland i nuläget",
+    "url": "https://alandsradio.ax/nyheter/svinpest-konstaterad-i-riket-inga-restriktioner-pa-aland-i-nulaget",
+    "skriv": false,
+    "nyhetsvarde": 4,
+    "tema": "ekonomi",
+    "anledning": "Veterinärfråga med ekonomisk implikation, men utan direkt koppling till Julius centrala teman eller tillräckligt med åländsk substans för en ledare år 1926. [nyhetsvärde 4 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-07-31",
+    "headline": "Ovanligt rent badvatten i år – regn och blåst påverkar",
+    "url": "https://alandsradio.ax/nyheter/ovanligt-rent-badvatten-i-ar-regn-och-blast-paverkar",
+    "skriv": false,
+    "nyhetsvarde": 1,
+    "tema": "miljö",
+    "anledning": "Trivial notis om badvattenkvalitet, saknar relevans för ledarartikel och Julius Sundbloms intresseområden. [nyhetsvärde 1 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-07-31",
+    "headline": "Brett kommunalt motstånd mot Zekajs äldreomsorgsplaner",
+    "url": "https://alandsradio.ax/nyheter/brett-kommunalt-motstand-mot-zekajs-aldreomsorgsplaner",
+    "skriv": true,
+    "nyhetsvarde": 8,
+    "tema": "självstyrelse, samhällsordning, ekonomi",
+    "anledning": "Central fråga om kommunal självstyrelse och samhällsorganisation som rör resurser och ansvar. Starkt motstånd från kommunerna mot centralisering. Innehåller politisk konflikt och ett stundande beslut med betydande konsekvenser för Ålands lokala självbestämmande och ekonomi. Passar väl in i Julius Sundbloms redaktionella linje om åländsk autonomi och samhällsfrågor.",
+    "fallback": false
   }
 ]
