@@ -44,8 +44,9 @@ STRAFF_PATH = os.path.join(HERE, "straff_logg.json")
 SELECTOR_LOG_PATH = os.path.join(HERE, "arkiv", "selector_logg.json")
 STATE_PATH = "arkiv/reflection_state.json"  # relativt repo-rot; pushas via API
 
-# Starkare modell för reflektion (veckovis "tänkande"; kostnad försumbar 1×/vecka).
-SUNDBLOM_REFLECTION_MODEL = os.environ.get("SUNDBLOM_REFLECTION_MODEL") or "gemini-2.5-pro"
+# Starkare modell för reflektion. Default = flash (känd att fungera med nyckeln);
+# sätt SUNDBLOM_REFLECTION_MODEL-secret till t.ex. gemini-2.5-pro för äkta "tänkande".
+SUNDBLOM_REFLECTION_MODEL = os.environ.get("SUNDBLOM_REFLECTION_MODEL") or "gemini-2.5-flash"
 
 log = logging.getLogger("reflect")
 logging.basicConfig(level=logging.INFO, format="%(asctime)s [%(name)s] %(message)s")
@@ -119,10 +120,17 @@ Svara ENBART med den färdiga texten (rubrik + stycken + signatur). Ingen förkl
 # API-anrop
 # ─────────────────────────────────────────────────────────────────────────────
 
+# Singleton-klient (undviker httpx "client has been closed" vid GC).
+_client_instance: "genai.Client | None" = None
+
+
 def _client() -> "genai.Client":
+    global _client_instance
     if not M.GOOGLE_API_KEY:
         raise EnvironmentError("GOOGLE_API_KEY saknas.")
-    return genai.Client(api_key=M.GOOGLE_API_KEY)
+    if _client_instance is None:
+        _client_instance = genai.Client(api_key=M.GOOGLE_API_KEY)
+    return _client_instance
 
 
 def _plan(system: str, user: str) -> dict:
@@ -141,13 +149,14 @@ def _plan(system: str, user: str) -> dict:
 
 
 def _generate(system: str, user: str) -> str:
-    """Genererar reflektionen. Pro-modellen får tänka (thinking på som default)."""
+    """Genererar reflektionen. thinking_budget=0 (flash); pro kan tänka om secret sätts."""
     resp = _client().models.generate_content(
         model=SUNDBLOM_REFLECTION_MODEL,
         contents=user,
         config=genai_types.GenerateContentConfig(
             system_instruction=system,
             max_output_tokens=2048,
+            thinking_config=genai_types.ThinkingConfig(thinking_budget=0),
         ),
     )
     usage = resp.usage_metadata
