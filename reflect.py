@@ -44,16 +44,16 @@ STRAFF_PATH = os.path.join(HERE, "straff_logg.json")
 SELECTOR_LOG_PATH = os.path.join(HERE, "arkiv", "selector_logg.json")
 STATE_PATH = "arkiv/reflection_state.json"  # relativt repo-rot; pushas via API
 
-# Starkare modell för reflektion. Default = flash (känd att fungera med nyckeln);
-# sätt SUNDBLOM_REFLECTION_MODEL-secret till t.ex. gemini-2.5-pro för äkta "tänkande".
-SUNDBLOM_REFLECTION_MODEL = os.environ.get("SUNDBLOM_REFLECTION_MODEL") or "gemini-2.5-flash"
+# Starkare modell för reflektion. Default = pro (äkta "tänkande" 1×/vecka, kostnad försumbar).
+# Om nyckeln ej stödjer pro, sätt SUNDBLOM_REFLECTION_MODEL=gemini-2.5-flash.
+SUNDBLOM_REFLECTION_MODEL = os.environ.get("SUNDBLOM_REFLECTION_MODEL") or "gemini-2.5-pro"
 
 log = logging.getLogger("reflect")
 logging.basicConfig(level=logging.INFO, format="%(asctime)s [%(name)s] %(message)s")
 
-MODES = ("traddragning", "omprövning", "iakttagelse")
+MODES = ("tråddragning", "omprövning", "iakttagelse")
 MODE_DESC = {
-    "traddragning": (
+    "tråddragning": (
         "TRÅDDRAGNING. Du har märkt att ett visst tema återvänt i dina ledare under "
         "senaste tiden. Drag i den tråden — varför återkommer det, vad säger mönstret "
         "om vår tid, varifrån kommer oron? Skriv betraktelsen kring det återkommande."
@@ -149,14 +149,13 @@ def _plan(system: str, user: str) -> dict:
 
 
 def _generate(system: str, user: str) -> str:
-    """Genererar reflektionen. thinking_budget=0 (flash); pro kan tänka om secret sätts."""
+    """Genererar reflektionen. Pro-modellen får tänka (thinking på som default)."""
     resp = _client().models.generate_content(
         model=SUNDBLOM_REFLECTION_MODEL,
         contents=user,
         config=genai_types.GenerateContentConfig(
             system_instruction=system,
             max_output_tokens=2048,
-            thinking_config=genai_types.ThinkingConfig(thinking_budget=0),
         ),
     )
     usage = resp.usage_metadata
@@ -495,7 +494,7 @@ def main() -> None:
     log.info("Minne byggt: %d tecken, %d referenser.", len(memory), len(refs))
 
     if args.selftest:
-        plan = {"mode": args.mode or "traddragning", "focus": "(selftest)", "why_now": "test", "public_headline": "TEST"}
+        plan = {"mode": args.mode or "tråddragning", "focus": "(selftest)", "why_now": "test", "public_headline": "TEST"}
         log.info("[selftest] läge: %s", plan["mode"])
         prompt_user = REFLECTION_PROMPT.format(mode_desc=MODE_DESC[plan["mode"]], memory=memory[:4000])
         log.info("[selftest] promptlängd: %d tecken. OK.", len(prompt_user))
@@ -512,13 +511,10 @@ def main() -> None:
     # Generera (system = personan, user = uppgift + minne — speglar main.py:s mönster)
     user = REFLECTION_PROMPT.format(mode_desc=MODE_DESC[mode], memory=memory[:6000])
     text = _generate(_PERSONA_HEAD, user)
-    # rubrik = första raden; resten = text
+    # rubrik = första raden; julius_text = HELA genererade texten (som main.py)
     lines = text.strip().splitlines()
     headline = lines[0].strip().lstrip("#").strip() if lines else f"Reflektion {today}"
-    julius_text = "\n".join(lines[1:]).strip() if len(lines) > 1 else text.strip()
-    if not julius_text:
-        julius_text = headline
-        headline = f"Reflektion {today}"
+    julius_text = text.strip()  # behåll rubrik + stycken + signatur intakta
     log.info("Reflektion genererad (%d tecken): %s", len(julius_text), headline[:60])
 
     if args.dry_run:
