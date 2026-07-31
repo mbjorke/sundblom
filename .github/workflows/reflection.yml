@@ -1,0 +1,44 @@
+name: 🪞 Sundbloms veckobetraktelse
+
+on:
+  schedule:
+    # Söndag 20:00 finsk sommartid (EEST = UTC+3) → 17:00 UTC
+    # (vintertid 19:00 EET → 17:00 UTC, samma)
+    - cron: "0 17 * * 0"
+  # Tillåt manuell körning från Actions-fliken
+  workflow_dispatch:
+
+permissions:
+  contents: write   # _push_file behöver write för att skapa artiklar + state
+
+jobs:
+  reflect:
+    name: Fristående reflektion ur minne
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    steps:
+      # 1. Checka ut repot
+      - name: Checka ut kod
+        uses: actions/checkout@v4
+
+      # 2. Sätt upp Python
+      - name: Sätt upp Python 3.11
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: "pip"
+
+      # 3. Installera Python-beroenden (google-genai för reflektionsgenerering)
+      - name: Installera Python-beroenden
+        run: pip install -r requirements.txt
+
+      # 4. Kör reflektorn — skriver en fristående betraktelse ur minne + pushar via API
+      - name: Kör reflektion
+        env:
+          GOOGLE_API_KEY:               ${{ secrets.GOOGLE_API_KEY }}
+          SUNDBLOM_REFLECTION_MODEL:    ${{ secrets.SUNDBLOM_REFLECTION_MODEL }}
+          GITHUB_TOKEN:                 ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_REPO:                  ${{ github.repository }}
+          GITHUB_BRANCH:                ${{ github.ref_name }}
+        run: python reflect.py
