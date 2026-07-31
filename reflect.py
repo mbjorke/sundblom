@@ -44,9 +44,11 @@ STRAFF_PATH = os.path.join(HERE, "straff_logg.json")
 SELECTOR_LOG_PATH = os.path.join(HERE, "arkiv", "selector_logg.json")
 STATE_PATH = "arkiv/reflection_state.json"  # relativt repo-rot; pushas via API
 
-# Starkare modell för reflektion. Default = pro (äkta "tänkande" 1×/vecka, kostnad försumbar).
-# Om nyckeln ej stödjer pro, sätt SUNDBLOM_REFLECTION_MODEL=gemini-2.5-flash.
-SUNDBLOM_REFLECTION_MODEL = os.environ.get("SUNDBLOM_REFLECTION_MODEL") or "gemini-2.5-pro"
+# Modell för reflektion. Default = flash med thinking på (till skillnad från dagens thinking_budget=0).
+# gemini-2.5-pro är 404 för denna nyckel. Sätt SUNDBLOM_REFLECTION_MODEL för att byta.
+SUNDBLOM_REFLECTION_MODEL = os.environ.get("SUNDBLOM_REFLECTION_MODEL") or "gemini-2.5-flash"
+# Thinking-budget för reflektionen (0 = av; >0 = tänkande på)
+SUNDBLOM_REFLECTION_THINKING = int(os.environ.get("SUNDBLOM_REFLECTION_THINKING", "8192"))
 
 log = logging.getLogger("reflect")
 logging.basicConfig(level=logging.INFO, format="%(asctime)s [%(name)s] %(message)s")
@@ -149,15 +151,28 @@ def _plan(system: str, user: str) -> dict:
 
 
 def _generate(system: str, user: str) -> str:
-    """Genererar reflektionen. Pro-modellen får tänka (thinking på som default)."""
-    resp = _client().models.generate_content(
-        model=SUNDBLOM_REFLECTION_MODEL,
-        contents=user,
-        config=genai_types.GenerateContentConfig(
-            system_instruction=system,
-            max_output_tokens=2048,
-        ),
-    )
+    """Genererar reflektionen. Thinking på (thinking_budget>0) för äkta eftertanke."""
+    try:
+        resp = _client().models.generate_content(
+            model=SUNDBLOM_REFLECTION_MODEL,
+            contents=user,
+            config=genai_types.GenerateContentConfig(
+                system_instruction=system,
+                max_output_tokens=2048,
+                thinking_config=genai_types.ThinkingConfig(thinking_budget=SUNDBLOM_REFLECTION_THINKING),
+            ),
+        )
+    except Exception as e:
+        log.warning("Thinking-budget %d misslyckades (%s) — faller tillbaka på thinking=0", SUNDBLOM_REFLECTION_THINKING, str(e)[:80])
+        resp = _client().models.generate_content(
+            model=SUNDBLOM_REFLECTION_MODEL,
+            contents=user,
+            config=genai_types.GenerateContentConfig(
+                system_instruction=system,
+                max_output_tokens=2048,
+                thinking_config=genai_types.ThinkingConfig(thinking_budget=0),
+            ),
+        )
     usage = resp.usage_metadata
     if usage:
         log.info("Tokens: %d in + %d out", usage.prompt_token_count, usage.candidates_token_count)
