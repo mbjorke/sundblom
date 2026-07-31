@@ -48,7 +48,9 @@ STATE_PATH = "arkiv/reflection_state.json"  # relativt repo-rot; pushas via API
 # gemini-2.5-pro är 404 för denna nyckel. Sätt SUNDBLOM_REFLECTION_MODEL för att byta.
 SUNDBLOM_REFLECTION_MODEL = os.environ.get("SUNDBLOM_REFLECTION_MODEL") or "gemini-2.5-flash"
 # Thinking-budget för reflektionen (0 = av; >0 = tänkande på)
-SUNDBLOM_REFLECTION_THINKING = int(os.environ.get("SUNDBLOM_REFLECTION_THINKING", "8192"))
+# max_output_tokens måste vara thinking_budget + response-budget (thinking ingår i max_output_tokens)
+SUNDBLOM_REFLECTION_THINKING = int(os.environ.get("SUNDBLOM_REFLECTION_THINKING", "4096"))
+SUNDBLOM_REFLECTION_MAX_TOKENS = int(os.environ.get("SUNDBLOM_REFLECTION_MAX_TOKENS", "8192"))
 
 log = logging.getLogger("reflect")
 logging.basicConfig(level=logging.INFO, format="%(asctime)s [%(name)s] %(message)s")
@@ -158,7 +160,7 @@ def _generate(system: str, user: str) -> str:
             contents=user,
             config=genai_types.GenerateContentConfig(
                 system_instruction=system,
-                max_output_tokens=2048,
+                max_output_tokens=SUNDBLOM_REFLECTION_MAX_TOKENS,
                 thinking_config=genai_types.ThinkingConfig(thinking_budget=SUNDBLOM_REFLECTION_THINKING),
             ),
         )
@@ -169,7 +171,7 @@ def _generate(system: str, user: str) -> str:
             contents=user,
             config=genai_types.GenerateContentConfig(
                 system_instruction=system,
-                max_output_tokens=2048,
+                max_output_tokens=SUNDBLOM_REFLECTION_MAX_TOKENS,
                 thinking_config=genai_types.ThinkingConfig(thinking_budget=0),
             ),
         )
