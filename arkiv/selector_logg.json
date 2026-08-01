@@ -2298,5 +2298,35 @@
     "tema": "sport",
     "anledning": "Ren sportresultat-rapportering om en enskild fotbollsspelares klubbyte. Saknar nyhetsvärde för en ledarartikel av Sundblom. För obetydligt för att Julius ska skriva om. [nyhetsvärde 1 < 6]",
     "fallback": false
+  },
+  {
+    "date": "2026-08-01",
+    "headline": "Får rivna i Eckerö - troligtvis av varg",
+    "url": "https://alandsradio.ax/nyheter/far-rivna-i-eckero-troligtvis-av-varg",
+    "skriv": false,
+    "nyhetsvarde": 3,
+    "tema": "smånotis",
+    "anledning": "En enskild notis om fårrivning, även om det är en varg, har inte tillräcklig politisk, samhällelig eller ekonomisk tyngd för en ledarartikel av Julius Sundblom. För lokalt och för specifikt utan koppling till större teman. [nyhetsvärde 3 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-08-01",
+    "headline": "Bergroth tvåa i tävling där presidenten var beskyddare",
+    "url": "https://alandsradio.ax/nyheter/bergroth-tvaa-i-tavling-dar-presidenten-var-beskyddare",
+    "skriv": false,
+    "nyhetsvarde": 1,
+    "tema": "sport",
+    "anledning": "Ren sportresultat-rapportering utan koppling till Julius Sundbloms redaktionella värld eller substans för en ledarartikel. [nyhetsvärde 1 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-08-01",
+    "headline": "BP vann över DIF",
+    "url": "https://alandsradio.ax/nyheter/bp-vann-over-dif",
+    "skriv": false,
+    "nyhetsvarde": 1,
+    "tema": "sport",
+    "anledning": "Ren sportresultat-rapportering utan koppling till politik, samhälle eller Julius redaktionella värld. Ingen substans för en ledare. [nyhetsvärde 1 < 6]",
+    "fallback": false
   }
 ]
