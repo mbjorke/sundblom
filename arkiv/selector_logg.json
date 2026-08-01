@@ -2268,5 +2268,35 @@
     "tema": "ekonomi",
     "anledning": "Standard affärsbeslut från ett externt rederi. Saknar direkt koppling till åländsk självstyrelse, samhällsordning eller större politiska skeenden. För obetydligt för en ledare av Julius. [nyhetsvärde 3 < 6]",
     "fallback": false
+  },
+  {
+    "date": "2026-08-01",
+    "headline": "IFK dam kryssade mot Apassit",
+    "url": "https://alandsradio.ax/nyheter/ifk-dam-kryssade-mot-apassit",
+    "skriv": false,
+    "nyhetsvarde": 1,
+    "tema": "sport",
+    "anledning": "Ren sportresultat-rapportering utan större betydelse för Julius redaktionella värld 1926. Saknar politisk, samhällelig eller autonomirelevant vinkel. [nyhetsvärde 1 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-08-01",
+    "headline": "Nytt bottennapp av IFK",
+    "url": "https://alandsradio.ax/nyheter/nytt-bottennapp-av-ifk",
+    "skriv": false,
+    "nyhetsvarde": 1,
+    "tema": "sport",
+    "anledning": "Ren sportresultat-rapportering utan djupare samhällelig eller politisk relevans. För obetydlig för en ledare av Sundblom. [nyhetsvärde 1 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-08-01",
+    "headline": "Fonsell flyttar till Norge",
+    "url": "https://alandsradio.ax/nyheter/fonsell-flyttar-till-norge",
+    "skriv": false,
+    "nyhetsvarde": 1,
+    "tema": "sport",
+    "anledning": "Ren sportresultat-rapportering om en enskild fotbollsspelares klubbyte. Saknar nyhetsvärde för en ledarartikel av Sundblom. För obetydligt för att Julius ska skriva om. [nyhetsvärde 1 < 6]",
+    "fallback": false
   }
 ]
