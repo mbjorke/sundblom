@@ -2348,5 +2348,25 @@
     "tema": "sport",
     "anledning": "Ren sportresultat-rapportering av en nationell tävling, ingen koppling till åländsk autonomi, samhälle eller sedlighet. [nyhetsvärde 1 < 6]",
     "fallback": false
+  },
+  {
+    "date": "2026-08-02",
+    "headline": "Lindman och Nordin klubbmästare",
+    "url": "https://alandsradio.ax/nyheter/lindman-och-nordin-klubbmastare",
+    "skriv": false,
+    "nyhetsvarde": 1,
+    "tema": "sport",
+    "anledning": "Ren sportresultat-rapportering av lokal karaktär, saknar politisk, samhällelig eller existentiell relevans för Julius Sundblom. [nyhetsvärde 1 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-08-02",
+    "headline": "En poäng för IFK akademi mot jumbon",
+    "url": "https://alandsradio.ax/nyheter/en-poang-for-ifk-akademi-mot-jumbon",
+    "skriv": false,
+    "nyhetsvarde": 1,
+    "tema": "sport",
+    "anledning": "Ren sportresultat-rapportering från en lägre division. Ingen koppling till autonomi, samhälle, sedlighet eller politik. För obetydlig för en ledare. [nyhetsvärde 1 < 6]",
+    "fallback": false
   }
 ]
