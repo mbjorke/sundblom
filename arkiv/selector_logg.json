@@ -2328,5 +2328,25 @@
     "tema": "sport",
     "anledning": "Ren sportresultat-rapportering utan koppling till politik, samhälle eller Julius redaktionella värld. Ingen substans för en ledare. [nyhetsvärde 1 < 6]",
     "fallback": false
+  },
+  {
+    "date": "2026-08-02",
+    "headline": "MLK:s herrar upp på andra plats",
+    "url": "https://alandsradio.ax/nyheter/mlks-herrar-upp-pa-andra-plats",
+    "skriv": false,
+    "nyhetsvarde": 1,
+    "tema": "sport",
+    "anledning": "Ren sportresultat-rapportering utan större samhällelig relevans eller koppling till Julius redaktionella teman. [nyhetsvärde 1 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-08-02",
+    "headline": "Donner med och vann lag-FM",
+    "url": "https://alandsradio.ax/nyheter/donner-med-och-vann-lag-fm",
+    "skriv": false,
+    "nyhetsvarde": 1,
+    "tema": "sport",
+    "anledning": "Ren sportresultat-rapportering av en nationell tävling, ingen koppling till åländsk autonomi, samhälle eller sedlighet. [nyhetsvärde 1 < 6]",
+    "fallback": false
   }
 ]
