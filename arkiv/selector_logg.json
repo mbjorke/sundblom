@@ -2418,5 +2418,45 @@
     "tema": "sedlighet",
     "anledning": "Ärendet rör en personnotis och sedlighet, men saknar den samhälleliga eller politiska tyngd som motiverar en ledare. För lite substans för Julius att utnyttja. Mer en notis för den allmänna avdelningen. [nyhetsvärde 4 < 6]",
     "fallback": false
+  },
+  {
+    "date": "2026-08-03",
+    "headline": "Camilla Gunell: Bra om det blir prövat av domstolen",
+    "url": "https://alandsradio.ax/nyheter/camilla-gunell-bra-om-det-blir-provat-av-domstolen",
+    "skriv": true,
+    "nyhetsvarde": 8,
+    "tema": "ekonomi och självstyrelse",
+    "anledning": "Upphandling av skärgårdstrafiken är en central ekonomisk fråga för Åland. Att den prövas i Marknadsdomstolen är av stor vikt för självstyrelsens beslutsfattande och för den åländska infrastrukturen. Detta berör såväl ekonomi som rättvisa och självstyrelsens förmåga att agera.",
+    "fallback": false
+  },
+  {
+    "date": "2026-08-03",
+    "headline": "Taxibilarna på Åland rullade över 3,7 miljoner kilometer förra året",
+    "url": "https://alandsradio.ax/nyheter/taxibilarna-pa-aland-rullade-over-37-miljoner-kilometer-forra-aret",
+    "skriv": false,
+    "nyhetsvarde": 2,
+    "tema": "ekonomi",
+    "anledning": "Statistik över taxikörning är en ren rutinåtgärd och saknar den tyngd och konflikt som krävs för en ledarartikel. Ingen koppling till självstyrelse eller dylikt. [nyhetsvärde 2 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-08-03",
+    "headline": "Mjölkfri risgrynsgröt återkallas: kan innehålla mjölk",
+    "url": "https://alandsradio.ax/nyheter/mjolkfri-risgrynsgrot-aterkallas-kan-innehalla-mjolk",
+    "skriv": false,
+    "nyhetsvarde": 1,
+    "tema": "konsumentskydd",
+    "anledning": "Detta är en modern konsumentfråga om produktsäkerhet som saknar koppling till Julius Sundbloms redaktionella värld år 1926. Den är för obetydlig och saknar politisk, samhällelig eller kulturell relevans för en ledarartikel. [nyhetsvärde 1 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-08-03",
+    "headline": "Åland Opera Festival vill nå yngre med ny barnopera",
+    "url": "https://alandsradio.ax/nyheter/aland-opera-festival-vill-na-yngre-med-ny-barnopera",
+    "skriv": false,
+    "nyhetsvarde": 2,
+    "tema": "kultur",
+    "anledning": "Kulturpersonnotis och evenemangsrapportering. Brist på allvarlig samhällelig relevans eller koppling till Julius Sundbloms kärnämnen. [nyhetsvärde 2 < 6]",
+    "fallback": false
   }
 ]
