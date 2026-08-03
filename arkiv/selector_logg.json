@@ -2458,5 +2458,35 @@
     "tema": "kultur",
     "anledning": "Kulturpersonnotis och evenemangsrapportering. Brist på allvarlig samhällelig relevans eller koppling till Julius Sundbloms kärnämnen. [nyhetsvärde 2 < 6]",
     "fallback": false
+  },
+  {
+    "date": "2026-08-03",
+    "headline": "Bör sociala medier förbjudas för unga?",
+    "url": "https://alandsradio.ax/nyheter/bor-sociala-medier-forbjudas-for-unga",
+    "skriv": false,
+    "nyhetsvarde": 3,
+    "tema": "modernitetens förfall",
+    "anledning": "Ämnet i sig om sociala mediers påverkan och ett eventuellt förbud berör visserligen sedlighet och modernitetens förfall, vilket skulle kunna vara av intresse för Julius. Dock är detta en ren diskussion, en utredande radioinslag, som inte rapporterar om ett konkret åländskt beslut, en ny lag som direkt påverkar Åland eller en specifik händelse. Innehållet är spekulativt och allmänt, inte tillräckligt substantiellt för en ledarartikel med Julius skarpa och konkreta ton. Diskussionen är för tunn och saknar den tyngd och lokala/rikspolitiska relevans som krävs för en ledare. [nyhetsvärde 3 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-08-03",
+    "headline": "Månader av uppladdning ska leda till ett 20 minuter långt crescendo i Cannes",
+    "url": "https://alandsradio.ax/nyheter/manader-av-uppladdning-ska-leda-till-ett-20-minuter-langt-crescendo-i-cannes",
+    "skriv": false,
+    "nyhetsvarde": 2,
+    "tema": "kultur/nöje",
+    "anledning": "Ren nöjesnyhet utan koppling till Julius Sundbloms redaktionella värld eller substantiella samhällsfrågor. För obetydlig för en ledarartikel. [nyhetsvärde 2 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-08-03",
+    "headline": "Jaktförvaltare: \"Med största sannolikhet var det varg\"",
+    "url": "https://alandsradio.ax/nyheter/jaktforvaltare-med-storsta-sannolikhet-var-det-varg",
+    "skriv": false,
+    "nyhetsvarde": 3,
+    "tema": "lokala händelser",
+    "anledning": "Även om vargobservationer kan vara intressanta, är detta en lokal notis utan djupare politisk, samhällelig eller existentiell betydelse för Åland eller dess självstyrelse. Den saknar substans för en ledarartikel av Sundblom. [nyhetsvärde 3 < 6]",
+    "fallback": false
   }
 ]
