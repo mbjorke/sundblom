@@ -2368,5 +2368,55 @@
     "tema": "sport",
     "anledning": "Ren sportresultat-rapportering från en lägre division. Ingen koppling till autonomi, samhälle, sedlighet eller politik. För obetydlig för en ledare. [nyhetsvärde 1 < 6]",
     "fallback": false
+  },
+  {
+    "date": "2026-08-03",
+    "headline": "Avgångar på Seglingelinjen ställs in",
+    "url": "https://alandsradio.ax/nyheter/avgangar-pa-seglingelinjen-stalls-in",
+    "skriv": false,
+    "nyhetsvarde": 2,
+    "tema": "lokal nyhet",
+    "anledning": "Trivial notis om inställda färjeavgångar på grund av tekniska problem. Saknar större samhällsrelevans eller koppling till Julius redaktionella teman. [nyhetsvärde 2 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-08-03",
+    "headline": "Norska färjerederiet överklagar upphandlingen av skärgårdstrafiken",
+    "url": "https://alandsradio.ax/nyheter/norska-farjerederiet-overklagar-upphandlingen-av-skargardstrafiken",
+    "skriv": true,
+    "nyhetsvarde": 8,
+    "tema": "autonomi, ekonomi, rättvisa",
+    "anledning": "Detta är en betydande fråga som direkt rör Ålands självstyrelse, ekonomiska förutsättningar och rättvisan i offentliga upphandlingar. Kritiken mot upphandlingen, bristen på konkurrens och hanteringen av återköpsklausulen utmanar landskapsregeringens agerande och har stor substans för en ledarartikel.",
+    "fallback": false
+  },
+  {
+    "date": "2026-08-03",
+    "headline": "Sänkt hastighet på Nya Godbyvägen på grund av vägarbete",
+    "url": "https://alandsradio.ax/nyheter/sankt-hastighet-pa-nya-godbyvagen-pa-grund-av-vagarbete",
+    "skriv": false,
+    "nyhetsvarde": 2,
+    "tema": "infrastruktur",
+    "anledning": "Trivial notis om rutinmässigt vägarbete, saknar politisk, samhällelig eller existentiell betydelse för Åland. Ingen substans för en ledare. [nyhetsvärde 2 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-08-03",
+    "headline": "Sjödagarna tillbaka – besökarna ger tummen upp",
+    "url": "https://alandsradio.ax/nyheter/sjodagarna-tillbaka-besokarna-ger-tummen-upp",
+    "skriv": false,
+    "nyhetsvarde": 2,
+    "tema": "lokalt nöje",
+    "anledning": "Trivial lokal notis om ett nöjesevenemang. Saknar politisk, samhällelig eller ekonomisk tyngd för en ledare. [nyhetsvärde 2 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-08-03",
+    "headline": "Utslagen man filmas och kränks – polisen utreder",
+    "url": "https://alandsradio.ax/nyheter/utslagen-man-filmas-och-kranks-polisen-utreder",
+    "skriv": false,
+    "nyhetsvarde": 4,
+    "tema": "sedlighet",
+    "anledning": "Ärendet rör en personnotis och sedlighet, men saknar den samhälleliga eller politiska tyngd som motiverar en ledare. För lite substans för Julius att utnyttja. Mer en notis för den allmänna avdelningen. [nyhetsvärde 4 < 6]",
+    "fallback": false
   }
 ]
