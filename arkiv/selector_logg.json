@@ -2598,5 +2598,45 @@
     "tema": "rättvisa",
     "anledning": "Ärendet rör misstankar om brott inom kommunal förvaltning, vilket berör rättvisa, förvaltningens integritet och medborgarnas förtroende. Trots att åtal inte väcks, belyser det viktiga frågor kring maktmissbruk och ekonomiska skador inom offentlig sektor. Det finns tillräckligt med substans för en ledare om ansvarsutkrävande och transparens, även om utgången i detta specifika fall är att åtal inte väcks.",
     "fallback": false
+  },
+  {
+    "date": "2026-08-04",
+    "headline": "Panel: Här är årets sommarplåga",
+    "url": "https://alandsradio.ax/nyheter/panel-har-ar-arets-sommarplaga",
+    "skriv": false,
+    "nyhetsvarde": 1,
+    "tema": "kultur",
+    "anledning": "Trivial underhållningsnotis, saknar all relevans för Julius Sundbloms redaktionella linje. Ingen substans för en ledare. [nyhetsvärde 1 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-08-04",
+    "headline": "Åländska banker: Lämna inte ut dina bankkoder till anhöriga",
+    "url": "https://alandsradio.ax/nyheter/alandska-banker-lamna-inte-ut-dina-bankkoder-till-anhoriga",
+    "skriv": false,
+    "nyhetsvarde": 2,
+    "tema": "sedlighet",
+    "anledning": "Ämnet är för specifikt och tekniskt för en ledare, och handlar mer om praktiska bankråd än samhällsordning eller autonomi. Visserligen finns en koppling till 'modernitetens förfall' och 'sedlighet' i vid bemärkelse genom bedrägeririsk och åldrandet, men den konkreta vinkeln om bankkoder är för smal och saknar den politiska eller samhällsanalytiska tyngd Julius söker. Det är en ren servicenotis. [nyhetsvärde 2 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-08-04",
+    "headline": "Skyddsjakt utlyst på två vargar",
+    "url": "https://alandsradio.ax/nyheter/skyddsjakt-utlyst-pa-tva-vargar",
+    "skriv": false,
+    "nyhetsvarde": 3,
+    "tema": "lokala angelägenheter",
+    "anledning": "En smålokal notis om skyddsjakt på vargar saknar den politiska, samhälleliga eller autonomirelevans som motiverar en ledarartikel av Julius Sundblom. Det finns ingen koppling till större tematiska frågor som åländsk självstyrelse, svensk identitet, klass- och samhällsordning eller modernitetens förfall. Notisen är dessutom relativt tunn i substans för en ledare. [nyhetsvärde 3 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-08-04",
+    "headline": "GDPR begränsar rättighet att filma på offentliga platser",
+    "url": "https://alandsradio.ax/nyheter/gdpr-begransar-rattighet-att-filma-pa-offentliga-platser",
+    "skriv": false,
+    "nyhetsvarde": 1,
+    "tema": "modernitetens förfall",
+    "anledning": "Ämnet är för modernt och irrelevant för 1926 års tidning. GDPR existerade inte. Om vi tolkar det som en diskussion om personlig integritet kontra den framväxande filmtekniken, är det fortfarande en mycket nischad fråga som inte har den breda samhälleliga eller politiska relevans som Julius söker för en ledarartikel. [nyhetsvärde 1 < 6]",
+    "fallback": false
   }
 ]
