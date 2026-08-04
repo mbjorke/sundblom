@@ -2638,5 +2638,15 @@
     "tema": "modernitetens förfall",
     "anledning": "Ämnet är för modernt och irrelevant för 1926 års tidning. GDPR existerade inte. Om vi tolkar det som en diskussion om personlig integritet kontra den framväxande filmtekniken, är det fortfarande en mycket nischad fråga som inte har den breda samhälleliga eller politiska relevans som Julius söker för en ledarartikel. [nyhetsvärde 1 < 6]",
     "fallback": false
+  },
+  {
+    "date": "2026-08-04",
+    "headline": "Brand i egnahemshus släcktes snabbt",
+    "url": "https://alandsradio.ax/nyheter/brand-i-egnahemshus-slacktes-snabbt",
+    "skriv": false,
+    "nyhetsvarde": 2,
+    "tema": "trivial notis",
+    "anledning": "Brand i egnahemshus är en lokal notis utan större politisk, samhällelig eller ekonomisk bäring. Saknar koppling till Julius Sundbloms redaktionella teman. [nyhetsvärde 2 < 6]",
+    "fallback": false
   }
 ]
