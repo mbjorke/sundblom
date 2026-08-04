@@ -2488,5 +2488,65 @@
     "tema": "lokala händelser",
     "anledning": "Även om vargobservationer kan vara intressanta, är detta en lokal notis utan djupare politisk, samhällelig eller existentiell betydelse för Åland eller dess självstyrelse. Den saknar substans för en ledarartikel av Sundblom. [nyhetsvärde 3 < 6]",
     "fallback": false
+  },
+  {
+    "date": "2026-08-04",
+    "headline": "M/S Eckerö får anmärkning av tillsynsmyndighet – burgare inte tillräckligt varma",
+    "url": "https://alandsradio.ax/nyheter/ms-eckero-far-anmarkning-av-tillsynsmyndighet-burgare-inte-tillrackligt-varma",
+    "skriv": false,
+    "nyhetsvarde": 1,
+    "tema": "ekonomi",
+    "anledning": "Trivial notis om livsmedelshygien utan större betydelse för Julius redaktionella värld. Saknar politisk eller samhällelig tyngd. [nyhetsvärde 1 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-08-04",
+    "headline": "Åländsk restaureringsplan ute på remiss",
+    "url": "https://alandsradio.ax/nyheter/alandsk-restaureringsplan-ute-pa-remiss",
+    "skriv": false,
+    "nyhetsvarde": 4,
+    "tema": "naturvård",
+    "anledning": "Planen är i ett tidigt remisskede, inga konkreta beslut eller åtgärder har ännu fattats som skulle motivera en ledare. Den bygger på frivillighet och pekar inte ut specifika områden, vilket gör den för vag för Sundblom. [nyhetsvärde 4 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-08-04",
+    "headline": "Får investeringsstöd för äppellager",
+    "url": "https://alandsradio.ax/nyheter/far-investeringsstod-for-appellager",
+    "skriv": false,
+    "nyhetsvarde": 3,
+    "tema": "ekonomi",
+    "anledning": "Tunn notis om ett rutinmässigt investeringsstöd. Saknar större politisk eller samhällelig betydelse utöver det lokala och saknar konflikt eller djupare problematik som Julius kunde lyfta i en ledare. [nyhetsvärde 3 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-08-04",
+    "headline": "Klar majoritet av kommunerna vill se mer stöd för digitalisering",
+    "url": "https://alandsradio.ax/nyheter/klar-majoritet-av-kommunerna-vill-se-mer-stod-for-digitalisering",
+    "skriv": false,
+    "nyhetsvarde": 3,
+    "tema": "modernitetens förfall",
+    "anledning": "Ämnet digitalisering är för modernt och tekniskt för att passa Julius redaktionella inriktning år 1926. Den handlar mer om administrativa frågor än stora samhällsfrågor. [nyhetsvärde 3 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-08-04",
+    "headline": "Från Orwell till Pippi – årets Katrinafestival har totalitarism som tema",
+    "url": "https://alandsradio.ax/nyheter/fran-orwell-till-pippi-arets-katrinafestival-har-totalitarism-som-tema",
+    "skriv": false,
+    "nyhetsvarde": 3,
+    "tema": "kultur",
+    "anledning": "Kulturfestival med tema totalitarism är intressant men saknar den direkta politiska, samhälleliga eller autonomi-kopplingen som krävs för en ledarartikel av Julius. Innehållet är mer en notis om en kulturhändelse än substans för en djupare redaktionell analys av den sorten. [nyhetsvärde 3 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-08-04",
+    "headline": "Åtal mot tidigare anställda i staden läggs ner",
+    "url": "https://alandsradio.ax/nyheter/atal-mot-tidigare-anstallda-i-staden-laggs-ner",
+    "skriv": true,
+    "nyhetsvarde": 6,
+    "tema": "rättvisa",
+    "anledning": "Fråga om rättvisa och missbruk av tjänsteställning inom stadsförvaltningen. Även om åtal läggs ner, belyser det problem med sedlighet och förvaltning som Julius sannolikt skulle vilja kommentera. Att en tredje person fortfarande är under utredning ger också substans för att problem kvarstår.",
+    "fallback": false
   }
 ]
