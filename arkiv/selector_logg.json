@@ -2548,5 +2548,55 @@
     "tema": "rättvisa",
     "anledning": "Fråga om rättvisa och missbruk av tjänsteställning inom stadsförvaltningen. Även om åtal läggs ner, belyser det problem med sedlighet och förvaltning som Julius sannolikt skulle vilja kommentera. Att en tredje person fortfarande är under utredning ger också substans för att problem kvarstår.",
     "fallback": false
+  },
+  {
+    "date": "2026-08-04",
+    "headline": "Stulna skyltar ett problem för landskapet",
+    "url": "https://alandsradio.ax/nyheter/stulna-skyltar-ett-problem-for-landskapet",
+    "skriv": false,
+    "nyhetsvarde": 2,
+    "tema": "småbrottslighet",
+    "anledning": "Trivial notis om småskalig vandalism. Saknar väsentlig koppling till politik, samhällsordning eller autonomi som Julius skulle vilja skriva om. För obetydlig. [nyhetsvärde 2 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-08-04",
+    "headline": "Archipelago Raid återvänder till Åland - “ett fantastiskt landskap som gjort för",
+    "url": "https://alandsradio.ax/nyheter/archipelago-raid-atervander-till-aland-ett-fantastiskt-landskap-som-gjort-for-att-segla-f18-raid",
+    "skriv": false,
+    "nyhetsvarde": 2,
+    "tema": "sport",
+    "anledning": "Ren sportresultat-rapportering och evenemangsnyhet. Saknar politisk, samhällelig eller ekonomisk tyngd för en ledarartikel. Julius intresserar sig inte för sportevenemang i denna mån. [nyhetsvärde 2 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-08-04",
+    "headline": "Misstänkte influeraren har gjort motanmälan",
+    "url": "https://alandsradio.ax/nyheter/misstankte-influeraren-har-gjort-motanmalan",
+    "skriv": false,
+    "nyhetsvarde": 3,
+    "tema": "rättvisa",
+    "anledning": "Även om det rör en brottsmisstanke och en motanmälan, rör det fortfarande primärt en personlig rättsfråga utan direkt bäring på Ålands självstyrelse, samhällsordning i stort eller några bredare Julius-teman. Det saknar substans för en ledare. [nyhetsvärde 3 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-08-04",
+    "headline": "Torghattens besvär kan fördröja avtal om skärgårdstrafiken med ett år",
+    "url": "https://alandsradio.ax/nyheter/torghattens-besvar-kan-fordroja-avtal-om-skargardstrafiken-med-ett-ar",
+    "skriv": false,
+    "nyhetsvarde": 4,
+    "tema": "ekonomi, byråkrati",
+    "anledning": "Även om det handlar om skärgårdstrafiken, ett viktigt ämne, är detta en byråkratisk fördröjningsnyhet rörande upphandlingsregler. Det saknas den politiska, samhälleliga eller autonomipolitiska tyngd som skulle motivera en ledare från Julius Sundblom. Det är mer en notis om en administrativ process. [nyhetsvärde 4 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-08-04",
+    "headline": "Inget åtal mot tidigare anställda i staden",
+    "url": "https://alandsradio.ax/nyheter/inget-atal-mot-tidigare-anstallda-i-staden",
+    "skriv": true,
+    "nyhetsvarde": 8,
+    "tema": "rättvisa",
+    "anledning": "Ärendet rör misstankar om brott inom kommunal förvaltning, vilket berör rättvisa, förvaltningens integritet och medborgarnas förtroende. Trots att åtal inte väcks, belyser det viktiga frågor kring maktmissbruk och ekonomiska skador inom offentlig sektor. Det finns tillräckligt med substans för en ledare om ansvarsutkrävande och transparens, även om utgången i detta specifika fall är att åtal inte väcks.",
+    "fallback": false
   }
 ]
