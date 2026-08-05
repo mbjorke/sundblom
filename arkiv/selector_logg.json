@@ -2708,5 +2708,55 @@
     "tema": "politik/personnotis",
     "anledning": "Intern partifråga med viss politisk bäring, men saknar den tyngd eller konflikt som Julius skulle anse värdig en ledare. Mer en personnotis och rutinmässigt partiledarbyte. [nyhetsvärde 4 < 6]",
     "fallback": false
+  },
+  {
+    "date": "2026-08-05",
+    "headline": "Lagtingspartierna: Här finns Katrin Sjögrens efterträdare",
+    "url": "https://alandsradio.ax/nyheter/lagtingspartierna-har-finns-katrin-sjogrens-eftertradare",
+    "skriv": false,
+    "nyhetsvarde": 3,
+    "tema": "interna partifrågor",
+    "anledning": "Interna partifrågor och spekulationer om partiledarbyten är för obetydliga för en ledarartikel. Julius intresserar sig för substantiella politiska beslut och principer, inte personbyten inom partierna. [nyhetsvärde 3 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-08-05",
+    "headline": "16-årige Wilton kan vara Ålands yngsta chef",
+    "url": "https://alandsradio.ax/nyheter/16-arige-wilton-kan-vara-alands-yngsta-chef",
+    "skriv": false,
+    "nyhetsvarde": 2,
+    "tema": "personnotis",
+    "anledning": "En ren personnotis om en ung företagare. Saknar större samhälls- eller politisk relevans för en ledare. [nyhetsvärde 2 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-08-05",
+    "headline": "Så ska jägarna hitta vargarna i Eckerö",
+    "url": "https://alandsradio.ax/nyheter/sa-ska-jagarna-hitta-vargarna-i-eckero",
+    "skriv": false,
+    "nyhetsvarde": 3,
+    "tema": "natur/jakt",
+    "anledning": "Småskalig, lokal jaktnyhet utan djupare politisk, samhällelig eller existentiell bäring för 1926 års ledarspalt. Vargfrågan var 1926 inte en central debattfråga. [nyhetsvärde 3 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-08-05",
+    "headline": "Ekström ensam om att bekräfta intresse för att bli ny liberal ordförande",
+    "url": "https://alandsradio.ax/nyheter/ekstrom-ensam-om-att-bekrafta-intresse-for-att-bli-ny-liberal-ordforande",
+    "skriv": false,
+    "nyhetsvarde": 3,
+    "tema": "partipolitik",
+    "anledning": "Intern partipolitik i ett enskilt parti är sällan av tillräckligt redaktionellt intresse för en ledare, särskilt då det handlar om en ren personfråga om ordförandeskap snarare än ideologisk inriktning eller autonoma beslut. [nyhetsvärde 3 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-08-05",
+    "headline": "47 utlåtanden på självstyrelselagen – fler att vänta enligt Harry Jansson",
+    "url": "https://alandsradio.ax/nyheter/47-utlatanden-pa-sjalvstyrelselagen-fler-att-vanta-enligt-harry-jansson",
+    "skriv": true,
+    "nyhetsvarde": 9,
+    "tema": "självstyrelse",
+    "anledning": "Detta är centralt för Ålands autonomi. Utlåtanden från tingsrätten och ministerier belyser kritiska punkter gällande lagtolkning, myndighetskompetens, och rikspolitiska implikationer för självstyrelsen. Detta ger rikligt med substans för en ledarartikel av Julius Sundblom, som kan diskutera autonomins gränser och dess relation till rikspolitiken.",
+    "fallback": false
   }
 ]
