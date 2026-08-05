@@ -2648,5 +2648,65 @@
     "tema": "trivial notis",
     "anledning": "Brand i egnahemshus är en lokal notis utan större politisk, samhällelig eller ekonomisk bäring. Saknar koppling till Julius Sundbloms redaktionella teman. [nyhetsvärde 2 < 6]",
     "fallback": false
+  },
+  {
+    "date": "2026-08-05",
+    "headline": "Liten terrängbrand i Hammarland",
+    "url": "https://alandsradio.ax/nyheter/liten-terrangbrand-i-hammarland",
+    "skriv": false,
+    "nyhetsvarde": 1,
+    "tema": "lokal notis",
+    "anledning": "Trivial, smålokal notis utan större betydelse, saknar koppling till redaktionella teman. [nyhetsvärde 1 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-08-05",
+    "headline": "47 utlåtanden på självstyrelselagen",
+    "url": "https://alandsradio.ax/nyheter/47-utlatanden-pa-sjalvstyrelselagen",
+    "skriv": true,
+    "nyhetsvarde": 8,
+    "tema": "självstyrelse",
+    "anledning": "Processen kring en ny självstyrelselag är av central betydelse för Ålands framtid. De inkomna utlåtandena, särskilt de från riksmyndigheter som ifrågasätter åländsk kompetens (smittsamma sjukdomar, apotek), har direkt relevans för självstyrelsens räckvidd och innehåll. Detta är en väsentlig händelse med rikspolitisk tyngd och gott om substans för en ledare om Ålands autonomi.",
+    "fallback": false
+  },
+  {
+    "date": "2026-08-05",
+    "headline": "Tallink Silja nådde högsta passagerarantalet sedan 2019",
+    "url": "https://alandsradio.ax/nyheter/tallink-silja-nadde-hogsta-passagerarantalet-sedan-2019",
+    "skriv": false,
+    "nyhetsvarde": 3,
+    "tema": "ekonomi",
+    "anledning": "Statistik över rederiverksamhet är en notis, inte en händelse med tillräcklig vikt för en ledare. Inga politiska implikationer eller frågor om självstyrelse berörs. [nyhetsvärde 3 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-08-05",
+    "headline": "Upphandlingen av skärgårdstrafiken går vidare: \"Har fått svar\"",
+    "url": "https://alandsradio.ax/nyheter/upphandlingen-av-skargardstrafiken-gar-vidare-har-fatt-svar",
+    "skriv": true,
+    "nyhetsvarde": 8,
+    "tema": "ekonomi, självstyrelse, rättvisa",
+    "anledning": "Upphandling av skärgårdstrafiken är en central fråga för Ålands ekonomi, infrastruktur och självstyrelse. Att en viktig del av samhällsfunktionerna upphandlas och dessutom överklagas till marknadsdomstolen är av stor vikt. Detta visar på en konflikt som påverkar Ålands autonomi och ekonomiska framtid, samt utmanar Landskapsregeringens agerande. Julius skulle se detta som en möjlighet att belysa Landskapsregeringens beslut, försvara åländska intressen och möjligtvis kritisera byråkrati eller yttre påverkan. Det finns tillräckligt med substans i artikeln för en ledare.",
+    "fallback": false
+  },
+  {
+    "date": "2026-08-05",
+    "headline": "100 ungdomar samlas i Mariehamn för ReGenereation",
+    "url": "https://alandsradio.ax/nyheter/100-ungdomar-samlas-i-mariehamn-for-regenereation",
+    "skriv": false,
+    "nyhetsvarde": 4,
+    "tema": "modernitetens foerfall",
+    "anledning": "Klimatmötet med ungdomar är för trivialt och saknar den tyngd som krävs för en ledarartikel av Julius Sundblom. Fokus på ungdomars inflytande och miljöfrågor år 1926 är inte tillräckligt relevant för Julius redaktionella värld. Det saknas en direkt koppling till åländsk självstyrelse, svensk identitet, eller sedlighetens förfall på ett sätt som skulle motivera en ledare. [nyhetsvärde 4 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-08-05",
+    "headline": "Katrin Sjögren avgår som liberalernas ordförande",
+    "url": "https://alandsradio.ax/nyheter/katrin-sjogren-avgar-som-liberalernas-ordforande",
+    "skriv": false,
+    "nyhetsvarde": 4,
+    "tema": "politik/personnotis",
+    "anledning": "Intern partifråga med viss politisk bäring, men saknar den tyngd eller konflikt som Julius skulle anse värdig en ledare. Mer en personnotis och rutinmässigt partiledarbyte. [nyhetsvärde 4 < 6]",
+    "fallback": false
   }
 ]
