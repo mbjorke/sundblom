@@ -2758,5 +2758,15 @@
     "tema": "självstyrelse",
     "anledning": "Detta är centralt för Ålands autonomi. Utlåtanden från tingsrätten och ministerier belyser kritiska punkter gällande lagtolkning, myndighetskompetens, och rikspolitiska implikationer för självstyrelsen. Detta ger rikligt med substans för en ledarartikel av Julius Sundblom, som kan diskutera autonomins gränser och dess relation till rikspolitiken.",
     "fallback": false
+  },
+  {
+    "date": "2026-08-05",
+    "headline": "Skolfartyg gick på grund utanför Herröskatan",
+    "url": "https://alandsradio.ax/nyheter/skolfartyg-gick-pa-grund-utanfor-herroskatan",
+    "skriv": false,
+    "nyhetsvarde": 2,
+    "tema": "sjöfart",
+    "anledning": "Trivial olycka med lyckligt slut, ingen större betydelse för Åland utöver en notis. Saknar politisk eller samhällelig vinkel för ledare. [nyhetsvärde 2 < 6]",
+    "fallback": false
   }
 ]
