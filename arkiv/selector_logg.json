@@ -2768,5 +2768,35 @@
     "tema": "sjöfart",
     "anledning": "Trivial olycka med lyckligt slut, ingen större betydelse för Åland utöver en notis. Saknar politisk eller samhällelig vinkel för ledare. [nyhetsvärde 2 < 6]",
     "fallback": false
+  },
+  {
+    "date": "2026-08-06",
+    "headline": "Mobil tandvårdsenhet besöker skärgårdskommunerna",
+    "url": "https://alandsradio.ax/nyheter/mobil-tandvardsenhet-besoker-skargardskommunerna",
+    "skriv": false,
+    "nyhetsvarde": 1,
+    "tema": "hälsovård",
+    "anledning": "Trivial notis om rutinåtgärd. Saknar politisk, samhällelig eller ekonomisk betydelse för en ledarartikel. [nyhetsvärde 1 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-08-06",
+    "headline": "När alla känner alla – Prideveckans program vill belysa synlighet och utsatthet ",
+    "url": "https://alandsradio.ax/nyheter/nar-alla-kanner-alla-prideveckans-program-vill-belysa-synlighet-och-utsatthet-i-sma-samhallen",
+    "skriv": false,
+    "nyhetsvarde": 2,
+    "tema": "sedlighet",
+    "anledning": "Ämnet är för kontroversiellt och berör inte Julius Sundbloms redaktionella värld direkt. Fokus på hbtqi-frågor och modernitetens förfall ligger utanför det som bedöms som en värdig ledare för Tidningen Åland 1926. [nyhetsvärde 2 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-08-06",
+    "headline": "Vargata träsk ett skräckexempel: “worst-case scenario”",
+    "url": "https://alandsradio.ax/nyheter/vargata-trask-ett-skrackexempel-worst-case-scenario",
+    "skriv": false,
+    "nyhetsvarde": 3,
+    "tema": "miljö",
+    "anledning": "Miljöfrågor är inte direkt kopplade till Julius kärnämnen som autonomi, samhällsordning eller svensk identitet. Dessutom är detta en lokal notis om en specifik miljöfråga snarare än en övergripande samhällsfråga som skulle motivera en ledare. [nyhetsvärde 3 < 6]",
+    "fallback": false
   }
 ]
