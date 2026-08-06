@@ -2798,5 +2798,45 @@
     "tema": "miljö",
     "anledning": "Miljöfrågor är inte direkt kopplade till Julius kärnämnen som autonomi, samhällsordning eller svensk identitet. Dessutom är detta en lokal notis om en specifik miljöfråga snarare än en övergripande samhällsfråga som skulle motivera en ledare. [nyhetsvärde 3 < 6]",
     "fallback": false
+  },
+  {
+    "date": "2026-08-06",
+    "headline": "Vuxna ska få vaccin mot vattkoppor",
+    "url": "https://alandsradio.ax/nyheter/vuxna-ska-fa-vaccin-mot-vattkoppor",
+    "skriv": false,
+    "nyhetsvarde": 2,
+    "tema": "hälsa",
+    "anledning": "Trivial notis om en rutinåtgärd inom hälsovården. Saknar koppling till Julius Sundbloms redaktionella intressen som självstyrelse, politik, samhällsordning eller sedlighet. Ingen substans för en ledare. [nyhetsvärde 2 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-08-06",
+    "headline": "Getaboden stänger efter 70 år",
+    "url": "https://alandsradio.ax/nyheter/getaboden-stanger-efter-70-ar",
+    "skriv": false,
+    "nyhetsvarde": 2,
+    "tema": "ekonomi",
+    "anledning": "En enskild butiks nedläggning är en smålokal notis med begränsat nyhetsvärde för en ledare. Även om det är av ekonomisk natur, saknas den bredare samhällsekonomiska eller politiska relevansen för Julius. Mer en notis för dagliga nyheter än en ledare. [nyhetsvärde 2 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-08-06",
+    "headline": "Färre barnskyddsanmälningar i juli än i fjol",
+    "url": "https://alandsradio.ax/nyheter/farre-barnskyddsanmalningar-i-juli-an-i-fjol",
+    "skriv": false,
+    "nyhetsvarde": 3,
+    "tema": "sedlighet",
+    "anledning": "Statistik om barnskyddsanmälningar är för obetydlig och saknar konkret händelseutveckling eller konflikt för en ledare. Den redaktionella vinkeln saknas. [nyhetsvärde 3 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-08-06",
+    "headline": "Hiroshimaafton fokuserar på ungdomar",
+    "url": "https://alandsradio.ax/feature/hiroshimaafton-fokuserar-pa-ungdomar",
+    "skriv": false,
+    "nyhetsvarde": 3,
+    "tema": "internationell politik",
+    "anledning": "Ämnet är för abstrakt och ligger utanför Julius omedelbara redaktionella fokus 1926. Evenemanget är dessutom en lokal minnesstund utan direkt åländsk relevans eller kontrovers. [nyhetsvärde 3 < 6]",
+    "fallback": false
   }
 ]
