@@ -2888,5 +2888,35 @@
     "tema": "utbildning",
     "anledning": "Tunn notis om ansökningsläget och intresse för gymnasieutbildningar. Saknar politisk, samhällelig eller autonomirelaterad konflikt/beslut. Inte tillräckligt substantiellt för en ledare. [nyhetsvärde 3 < 6]",
     "fallback": false
+  },
+  {
+    "date": "2026-08-07",
+    "headline": "LR vill ha fortsatt dialog om självstyrelselagen",
+    "url": "https://alandsradio.ax/nyheter/lr-vill-ha-fortsatt-dialog-om-sjalvstyrelselagen",
+    "skriv": true,
+    "nyhetsvarde": 9,
+    "tema": "självstyrelse",
+    "anledning": "Central fråga för Ålands autonomi och framtid. Innehåller konkreta krav som egen plats i Europaparlamentet, behörighet för arbetsavtal och ekonomisk zon. Visar på en pågående politisk dialog av stor vikt.",
+    "fallback": false
+  },
+  {
+    "date": "2026-08-07",
+    "headline": "Ålandsbekanta arkeologen Jan Fast ledde ny utgrävning",
+    "url": "https://alandsradio.ax/nyheter/alandsbekanta-arkeologen-jan-fast-ledde-ny-utgravning",
+    "skriv": false,
+    "nyhetsvarde": 3,
+    "tema": "kultur",
+    "anledning": "Arkeologiska fynd är intressanta men saknar den politiska eller samhälleliga tyngd som motiverar en ledare av Julius Sundblom. Det är mer en kultur- eller vetenskapsnotis än en fråga för redaktionell åsikt om Ålands framtid eller samhällsordning. Inga konflikter eller politiska beslut att kommentera. [nyhetsvärde 3 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-08-07",
+    "headline": "Hambrudd: Vuxenutbildningen behöver separeras mer och få en egen pott",
+    "url": "https://alandsradio.ax/nyheter/hambrudd-vuxenutbildningen-behover-separeras-mer-och-fa-en-egen-pott",
+    "skriv": false,
+    "nyhetsvarde": 4,
+    "tema": "utbildning",
+    "anledning": "Intern förvaltningsfråga om utbildningsbudget och -organisation. Ingen omedelbar koppling till större samhällsfrågor eller Julius redaktionella prioriteter 1926. Saknar den konflikt eller beslutsamhet som krävs för en ledare. [nyhetsvärde 4 < 6]",
+    "fallback": false
   }
 ]
