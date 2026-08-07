@@ -2838,5 +2838,55 @@
     "tema": "internationell politik",
     "anledning": "Ämnet är för abstrakt och ligger utanför Julius omedelbara redaktionella fokus 1926. Evenemanget är dessutom en lokal minnesstund utan direkt åländsk relevans eller kontrovers. [nyhetsvärde 3 < 6]",
     "fallback": false
+  },
+  {
+    "date": "2026-08-07",
+    "headline": "Mats Adamczak: Vill se större kommunalt ansvar för discgolfbanorna",
+    "url": "https://alandsradio.ax/nyheter/kritik-mot-underhallet-av-flera-alandska-discgolfbanor-har-vackt-fragor-om-vem-som-ansvarar-for-skotseln-mats-adamczak-som-var-med-och-initierade-satsningen-pa-banorna-under-pandemin-vill-se-ett-storre-kommunalt-ansvar",
+    "skriv": false,
+    "nyhetsvarde": 2,
+    "tema": "fritid",
+    "anledning": "Ämnet är för trivialt och saknar koppling till centrala teman som självstyrelse, samhällsordning, ekonomi på en makronivå, eller sedlighet. Det handlar om underhåll av discgolfbanor, vilket är en perifer angelägenhet för Julius Sundbloms redaktionella fokus. Substansen är också för tunn för en ledare. [nyhetsvärde 2 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-08-07",
+    "headline": "Alberto Gerbasi: \"Vad annars ska jag göra, om inte musiken?\"",
+    "url": "https://alandsradio.ax/nyheter/alberto-gerbasi-vad-annars-ska-jag-gora-om-inte-musiken",
+    "skriv": false,
+    "nyhetsvarde": 2,
+    "tema": "kultur",
+    "anledning": "Personporträtt om ung musiker saknar politisk, samhällelig eller existentiell tyngd för en ledarartikel. Även om en låt har samhällskritisk ton, är det ingen nyhet av väsentlig betydelse. [nyhetsvärde 2 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-08-07",
+    "headline": "Lumparlands kommun ansöker om ytterligare 200 000 euro från landskapet",
+    "url": "https://alandsradio.ax/nyheter/lumparlands-kommun-ansoker-om-ytterligare-200-000-euro-fran-landskapet",
+    "skriv": true,
+    "nyhetsvarde": 7,
+    "tema": "ekonomi",
+    "anledning": "Betydande ekonomiska problem i en åländsk kommun som kräver landskapets ingripande. Detta berör autonomins finansiella stabilitet och kan leda till en diskussion om ansvar, självstyrelsens ekonomiska förvaltning och eventuella konsekvenser för andra kommuner. Det finns substans för en ledarartikel om kommunal ekonomi och landskapets roll.",
+    "fallback": false
+  },
+  {
+    "date": "2026-08-07",
+    "headline": "Ny åländsk webbapp hjälper användare undvika energikrascher",
+    "url": "https://alandsradio.ax/nyheter/ny-alandsk-webbapp-hjalper-anvandare-undvika-energikrascher",
+    "skriv": false,
+    "nyhetsvarde": 2,
+    "tema": "personnotis",
+    "anledning": "Trivial notis om en enskild persons initiativ utan större samhällelig eller politisk relevans. Saknar substans för en ledare av Julius Sundblom. [nyhetsvärde 2 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-08-07",
+    "headline": "Studiehandledaren ser ökat intresse från vuxna för gymnasieutbildningar",
+    "url": "https://alandsradio.ax/nyheter/studiehandledaren-ser-okat-intresse-fran-vuxna-for-gymnasieutbildningar",
+    "skriv": false,
+    "nyhetsvarde": 3,
+    "tema": "utbildning",
+    "anledning": "Tunn notis om ansökningsläget och intresse för gymnasieutbildningar. Saknar politisk, samhällelig eller autonomirelaterad konflikt/beslut. Inte tillräckligt substantiellt för en ledare. [nyhetsvärde 3 < 6]",
+    "fallback": false
   }
 ]
