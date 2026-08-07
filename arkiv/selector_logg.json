@@ -2988,5 +2988,55 @@
     "tema": "sport",
     "anledning": "Ren sportresultat-rapportering av en enskild idrottsprestation utan koppling till politik, samhällsfrågor, eller Ålands autonomi. För obetydlig för en ledarartikel av Julius Sundblom. [nyhetsvärde 1 < 6]",
     "fallback": false
+  },
+  {
+    "date": "2026-08-07",
+    "headline": "Finström har pengar för investeringar",
+    "url": "https://alandsradio.ax/nyheter/finstrom-har-pengar-for-investeringar",
+    "skriv": false,
+    "nyhetsvarde": 2,
+    "tema": "lokalekonomi",
+    "anledning": "Trivial notis om en kommuns ekonomi år 2025 – vilket är långt in i framtiden från 1926 års perspektiv. Saknar all relevans för Julius Sundbloms redaktionella värld och de ämnen han skulle behandla i en ledare. Dessutom är det en ekonomisk rapport från en enskild kommun, utan större politisk, samhällelig eller autonomisk bäring. [nyhetsvärde 2 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-08-07",
+    "headline": "Succé för Sjödagarna – men oklart med fortsättning",
+    "url": "https://alandsradio.ax/nyheter/succe-for-sjodagarna-men-oklart-med-fortsattning",
+    "skriv": false,
+    "nyhetsvarde": 2,
+    "tema": "kulturarrangemang",
+    "anledning": "Trivial notis om ett kulturevenemang med osäker fortsättning. Saknar väsentlig koppling till politik, samhällsordning eller självstyrelse. [nyhetsvärde 2 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-08-07",
+    "headline": "Breidandagen bjuder på terränglopp och korpfinaler",
+    "url": "https://alandsradio.ax/nyheter/breidandagen-bjuder-pa-terranglopp-och-korpfinaler",
+    "skriv": false,
+    "nyhetsvarde": 1,
+    "tema": "sport",
+    "anledning": "Trivial lokal notis om sportaktiviteter och föreningsuppvisningar. Saknar all relevans för Julius Sundbloms redaktionella värld och har ingen substans för en ledarartikel. [nyhetsvärde 1 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-08-07",
+    "headline": "Vägarbeten i Finström – hastigheten sänks",
+    "url": "https://alandsradio.ax/nyheter/vagarbeten-i-finstrom-hastigheten-sanks",
+    "skriv": false,
+    "nyhetsvarde": 2,
+    "tema": "infrastruktur",
+    "anledning": "Trivial lokal notis om vägarbeten. Saknar relevans för Julius Sundbloms redaktionella fokus. [nyhetsvärde 2 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-08-07",
+    "headline": "Brist på studiebostäder i Vasa drabbar ålänningar - “Det har varit jättesvårt”",
+    "url": "https://alandsradio.ax/nyheter/brist-pa-studiebostader-i-vasa-drabbar-alanningar-det-har-varit-jattesvart",
+    "skriv": false,
+    "nyhetsvarde": 3,
+    "tema": "personnotis",
+    "anledning": "Trivial notis om en enskild students bostadssituation; saknar större samhällelig, politisk eller autonomi-relaterad relevans för Åland som helhet. Inte tillräckligt substantiellt för en ledare av Julius Sundblom. [nyhetsvärde 3 < 6]",
+    "fallback": false
   }
 ]
