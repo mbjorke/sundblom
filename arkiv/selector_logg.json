@@ -3048,5 +3048,25 @@
     "tema": "sedlighet",
     "anledning": "Trivial notis om en mindre brottmålsdom utan större samhällelig betydelse eller koppling till Julius Sundbloms kärnämnen. Saknar substans för en ledare. [nyhetsvärde 1 < 6]",
     "fallback": false
+  },
+  {
+    "date": "2026-08-08",
+    "headline": "Ny generation på väg in i sjöräddningen i Saltvik – “Väldigt positivt”",
+    "url": "https://alandsradio.ax/nyheter/ny-generation-pa-vag-in-i-sjoraddningen-i-saltvik-valdigt-positivt",
+    "skriv": false,
+    "nyhetsvarde": 3,
+    "tema": "lokal reportage",
+    "anledning": "Positiv men rutinmässig lokalnotis om frivilligverksamhet, saknar koppling till Julius Sundbloms kärnämnen som autonomi, samhällsordning eller större politiska frågor. [nyhetsvärde 3 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-08-08",
+    "headline": "IFK Akademi vann borta",
+    "url": "https://alandsradio.ax/nyheter/ifk-akademi-vann-borta",
+    "skriv": false,
+    "nyhetsvarde": 1,
+    "tema": "sport",
+    "anledning": "Ren sportresultat-rapportering, ingen redaktionell vinkel för en ledarartikel av Julius Sundblom. Dessutom är det 1926 och en match i division 3 skulle inte ha samma nyhetsvärde. [nyhetsvärde 1 < 6]",
+    "fallback": false
   }
 ]
