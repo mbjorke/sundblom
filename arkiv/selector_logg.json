@@ -3088,5 +3088,45 @@
     "tema": "självstyrelse och ekonomi",
     "anledning": "Enkät bland kommunstyrelseordföranden belyser viktiga framtidsfrågor för Åland, inklusive befolkningsutveckling, ekonomi och infrastruktur (färjplaner) som direkt påverkar den åländska självstyrelsens vitalitet och de enskilda kommunernas överlevnad. Detta är av direkt relevans för Julius Sundbloms redaktionella linje gällande Ålands framtid och välstånd.",
     "fallback": false
+  },
+  {
+    "date": "2026-08-10",
+    "headline": "25 300 euro till förstudie om Axyards torrdocka",
+    "url": "https://alandsradio.ax/nyheter/25-300-euro-till-forstudie-om-axyards-torrdocka",
+    "skriv": false,
+    "nyhetsvarde": 3,
+    "tema": "ekonomi/infrastruktur",
+    "anledning": "Förstudie är en rutinåtgärd och initialt skede av ett projekt; för litet substans för en ledare. Beslutet saknar den tyngd och konflikt som krävs för Sundblom att engagera sig i. [nyhetsvärde 3 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-08-10",
+    "headline": "Motorbåt fick hjälp av sjöräddningen",
+    "url": "https://alandsradio.ax/nyheter/motorbat-fick-hjalp-av-sjoraddningen",
+    "skriv": false,
+    "nyhetsvarde": 2,
+    "tema": "vardagsnotis",
+    "anledning": "Trivial sjöräddningsnotis utan större betydelse, saknar politisk, samhällelig eller kulturell relevans för en ledarartikel. [nyhetsvärde 2 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-08-10",
+    "headline": "Weyand tog brons i judo-VM",
+    "url": "https://alandsradio.ax/nyheter/weyand-tog-brons-i-judo-vm",
+    "skriv": false,
+    "nyhetsvarde": 1,
+    "tema": "sport",
+    "anledning": "Ren sportresultat-rapportering utan koppling till Julius redaktionella intressen. [nyhetsvärde 1 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-08-10",
+    "headline": "Åland Sport Week fortsätter att växa",
+    "url": "https://alandsradio.ax/nyheter/aland-sport-week-fortsatter-att-vaxa",
+    "skriv": false,
+    "nyhetsvarde": 2,
+    "tema": "sport",
+    "anledning": "Ren sportevenemangsnotis. Saknar substans och koppling till Julius redaktionella värld av politiska eller samhälleliga frågor av vikt. Att erbjuda en 'självstyrelserunda' är en trivial detalj i sammanhanget och saknar djupare politisk relevans. [nyhetsvärde 2 < 6]",
+    "fallback": false
   }
 ]
