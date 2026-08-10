@@ -3068,5 +3068,25 @@
     "tema": "sport",
     "anledning": "Ren sportresultat-rapportering, ingen redaktionell vinkel för en ledarartikel av Julius Sundblom. Dessutom är det 1926 och en match i division 3 skulle inte ha samma nyhetsvärde. [nyhetsvärde 1 < 6]",
     "fallback": false
+  },
+  {
+    "date": "2026-08-10",
+    "headline": "20 år sedan rånet mot Ålandsbanken",
+    "url": "https://alandsradio.ax/nyheter/20-ar-sedan-ranet-mot-alandsbanken",
+    "skriv": false,
+    "nyhetsvarde": 3,
+    "tema": "kriminalitet",
+    "anledning": "Historisk notis om ett brott. Även om det var 'största rånet' saknar det den politiska, samhälleliga eller moraliska vinkel Julius skulle kräva för en ledare. Det är primärt en upprepning av ett brottsförlopp, snarare än en analys av dess konsekvenser för samhället eller självstyrelsen. [nyhetsvärde 3 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-08-10",
+    "headline": "Så ser kommunstyrelseordförandena på framtiden i sin kommun",
+    "url": "https://alandsradio.ax/nyheter/sa-ser-kommunstyrelseordforandena-pa-framtiden-i-sin-kommun",
+    "skriv": true,
+    "nyhetsvarde": 7,
+    "tema": "självstyrelse och ekonomi",
+    "anledning": "Enkät bland kommunstyrelseordföranden belyser viktiga framtidsfrågor för Åland, inklusive befolkningsutveckling, ekonomi och infrastruktur (färjplaner) som direkt påverkar den åländska självstyrelsens vitalitet och de enskilda kommunernas överlevnad. Detta är av direkt relevans för Julius Sundbloms redaktionella linje gällande Ålands framtid och välstånd.",
+    "fallback": false
   }
 ]
