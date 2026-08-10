@@ -3128,5 +3128,55 @@
     "tema": "sport",
     "anledning": "Ren sportevenemangsnotis. Saknar substans och koppling till Julius redaktionella värld av politiska eller samhälleliga frågor av vikt. Att erbjuda en 'självstyrelserunda' är en trivial detalj i sammanhanget och saknar djupare politisk relevans. [nyhetsvärde 2 < 6]",
     "fallback": false
+  },
+  {
+    "date": "2026-08-10",
+    "headline": "IFK bygger vidare efter stark debutsäsong",
+    "url": "https://alandsradio.ax/nyheter/ifk-bygger-vidare-efter-stark-debutsasong",
+    "skriv": false,
+    "nyhetsvarde": 1,
+    "tema": "sport",
+    "anledning": "Ren sportresultat-rapportering och trivial notis om ett lokalt idrottslags förberedelser. Saknar helt koppling till Julius redaktionella värld och har ingen substans för en ledare. [nyhetsvärde 1 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-08-10",
+    "headline": "Josefsson om Ålandsdelegationens utlåtande: \"Ett icke ställningstagande\"",
+    "url": "https://alandsradio.ax/nyheter/josefsson-om-alandsdelegationens-utlatande-ett-icke-stallningstagande",
+    "skriv": true,
+    "nyhetsvarde": 8,
+    "tema": "självstyrelse",
+    "anledning": "Frågan om intäkterna från utsläppshandeln, och rätten för Åland att hantera dessa, berör kärnan i självstyrelselagen och Ålands ekonomiska autonomi. Konflikten med Finlands regering om fördelning och kontroll över medel är av stor politisk och ekonomisk relevans för landskapet. Att Ålandsdelegationen lämnar ett 'icke ställningstagande' är i sig en viktig händelse som Julius kan analysera och kritisera ur självstyrelsesynpunkt, särskilt med tanke på de betydande summor det handlar om och principen om Ålands rätt att förvalta sina egna medel.",
+    "fallback": false
+  },
+  {
+    "date": "2026-08-10",
+    "headline": "Solfattig juli månad – västra delen av landet fick mest regn",
+    "url": "https://alandsradio.ax/nyheter/solfattig-juli-manad-vastra-delen-av-landet-fick-mest-regn",
+    "skriv": false,
+    "nyhetsvarde": 2,
+    "tema": "väder",
+    "anledning": "Ren väderrapportering med fakta om regn och soltimmar. Saknar all anknytning till Julius redaktionella intressen. [nyhetsvärde 2 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-08-10",
+    "headline": "Renovering gör GHS mer energieffektiv",
+    "url": "https://alandsradio.ax/nyheter/renovering-gor-ghs-mer-energieffektiv",
+    "skriv": false,
+    "nyhetsvarde": 2,
+    "tema": "lokal notis",
+    "anledning": "Småskalig renovering av en skola, rutinåtgärd utan större politisk, ekonomisk eller samhällelig bäring. Kopplingen till läskunnighet är för svag för en ledare av Julius. [nyhetsvärde 2 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-08-10",
+    "headline": "ÅD: Åland kan inte runda riket i striden om utsläppsmiljonerna",
+    "url": "https://alandsradio.ax/nyheter/ad-aland-kan-inte-runda-riket-i-striden-om-utslappsmiljonerna",
+    "skriv": true,
+    "nyhetsvarde": 8,
+    "tema": "självstyrelse, ekonomi",
+    "anledning": "Striden om intäkterna från utsläppsrätter är en central fråga rörande Ålands ekonomiska självbestämmanderätt och relationen till riket. Det handlar om fördelning av medel, lagstiftningskompetens och EU-reglers tolkning, vilket har stor betydelse för autonomin och landskapets framtid. Tematisk passning är utmärkt då det berör ekonomisk självständighet och relationen till Finland. Innehållet är tillräckligt substantiellt med olika parters ståndpunkter och delegationens utlåtande.",
+    "fallback": false
   }
 ]
