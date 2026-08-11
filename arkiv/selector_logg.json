@@ -3218,5 +3218,65 @@
     "tema": "lokal förvaltning",
     "anledning": "En ren rutinåtgärd om namnbyte och färg på en lokal enhet. Saknar betydande politisk, samhällelig eller autonomirelevant vinkel som Julius skulle finna värdig en ledarartikel. Det är en smålokal notis. [nyhetsvärde 2 < 6]",
     "fallback": false
+  },
+  {
+    "date": "2026-08-11",
+    "headline": "Haverikommissionen om olyckan i Grisslehamn: “God bild av vad som har hänt”",
+    "url": "https://alandsradio.ax/nyheter/haverikommissionen-om-olyckan-i-grisslehamn-god-bild-av-vad-som-har-hant",
+    "skriv": false,
+    "nyhetsvarde": 3,
+    "tema": "sjöfart",
+    "anledning": "En olycka utan personskador, även om det rör en Ålandsfärja, är inte av tillräcklig vikt för en ledare. Haverikommissionens uttalande är rutinartat och saknar den politiska eller samhälleliga vinkel Julius efterfrågar. [nyhetsvärde 3 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-08-11",
+    "headline": "LR går Föglö till mötes – Skarven föreslås återfå fjolårets turlista",
+    "url": "https://alandsradio.ax/nyheter/lr-gar-foglo-till-motes-skarven-foreslas-aterfa-fjolarets-turlista",
+    "skriv": false,
+    "nyhetsvarde": 3,
+    "tema": "lokal förvaltning",
+    "anledning": "Även om det rör en viktig samhällsfunktion är detta en rutinåtgärd gällande lokal färjetrafik. Det saknar den bredare politiska eller samhälleliga relevansen som motiverar en ledarartikel av Julius Sundblom. Det är för detaljerat och lokalt, utan större konflikt eller principiell fråga. [nyhetsvärde 3 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-08-11",
+    "headline": "Skador fortsätter drabba IFK - Nissinen borta 6-8 veckor",
+    "url": "https://alandsradio.ax/nyheter/skador-fortsatter-drabba-ifk-nissinen-borta-6-8-veckor",
+    "skriv": false,
+    "nyhetsvarde": 1,
+    "tema": "sport",
+    "anledning": "Ren sportresultat-rapportering av skador på spelare. För trivialt för en ledarartikel. [nyhetsvärde 1 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-08-11",
+    "headline": "Har du ingen gymnasiestudieplats? Än finns det platser kvar",
+    "url": "https://alandsradio.ax/nyheter/har-du-ingen-gymnasiestudieplats-an-finns-det-platser-kvar",
+    "skriv": false,
+    "nyhetsvarde": 2,
+    "tema": "utbildning",
+    "anledning": "Trivial notis om lediga studieplatser. Saknar politisk, samhällelig eller autonomirelaterad tyngd för en ledarartikel av Julius. [nyhetsvärde 2 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-08-11",
+    "headline": "Sommaren var lugn för brottsofferjouren",
+    "url": "https://alandsradio.ax/nyheter/sommaren-var-lugn-for-brottsofferjouren",
+    "skriv": false,
+    "nyhetsvarde": 2,
+    "tema": "samhälle",
+    "anledning": "Notisen handlar om en lokal jourtjänst som haft lugnt, utan större dramatik eller konsekvenser. Inget politiskt, ekonomiskt eller autonomirelaterat att ta av. Väldigt tunn substans. [nyhetsvärde 2 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-08-11",
+    "headline": "Sju barn fick avbryta hemundervisningen",
+    "url": "https://alandsradio.ax/nyheter/sju-barn-fick-avbryta-hemundervisningen",
+    "skriv": false,
+    "nyhetsvarde": 3,
+    "tema": "utbildning",
+    "anledning": "Notisen behandlar en rutinåtgärd kring hemundervisning, inte en principiell fråga om utbildning eller autonomi. Den saknar den dramatik eller konflikt som skulle motivera en ledare. [nyhetsvärde 3 < 6]",
+    "fallback": false
   }
 ]
