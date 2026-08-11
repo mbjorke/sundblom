@@ -3178,5 +3178,45 @@
     "tema": "självstyrelse, ekonomi",
     "anledning": "Striden om intäkterna från utsläppsrätter är en central fråga rörande Ålands ekonomiska självbestämmanderätt och relationen till riket. Det handlar om fördelning av medel, lagstiftningskompetens och EU-reglers tolkning, vilket har stor betydelse för autonomin och landskapets framtid. Tematisk passning är utmärkt då det berör ekonomisk självständighet och relationen till Finland. Innehållet är tillräckligt substantiellt med olika parters ståndpunkter och delegationens utlåtande.",
     "fallback": false
+  },
+  {
+    "date": "2026-08-11",
+    "headline": "Så blir årets Kulturnatt i Mariehamn",
+    "url": "https://alandsradio.ax/nyheter/sa-blir-arets-kulturnatt-i-mariehamn",
+    "skriv": false,
+    "nyhetsvarde": 3,
+    "tema": "kultur",
+    "anledning": "Trivial kultur- och nöjesnotis. Saknar substans för en ledare och någon av Julius redaktionella vinklar. För obetydligt för en ledarartikel. [nyhetsvärde 3 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-08-11",
+    "headline": "Åland har lägst brottslighet i landet – men en typ av brott ökade 2025",
+    "url": "https://alandsradio.ax/nyheter/aland-har-lagst-brottslighet-i-landet-men-en-typ-av-brott-okade-2025",
+    "skriv": false,
+    "nyhetsvarde": 4,
+    "tema": "sedlighet",
+    "anledning": "Även om brottslighet rör sedlighet, är denna nyhet mestadels statistikrapportering och saknar den substans eller konflikt som en ledarartikel av Sundblom skulle kräva. Ökningen av trafikbrott är för specifikt och saknar bredare samhällsrelevans för en ledare. [nyhetsvärde 4 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-08-11",
+    "headline": "Medis inför skriftliga avtal efter nazistkoppling",
+    "url": "https://alandsradio.ax/nyheter/medis-infor-skriftliga-avtal-efter-nazistkoppling",
+    "skriv": false,
+    "nyhetsvarde": 3,
+    "tema": "sedlighet",
+    "anledning": "Även om det berör sedlighet och bildning, är detta en intern rutinåtgärd på en relativt liten institution. Händelsen i sig, nazistkopplingen, hade varit mer relevant, men denna nyhet är endast en följd av den, och saknar den tyngd som krävs för en ledare 1926. [nyhetsvärde 3 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-08-11",
+    "headline": "Rådhuset blir Welcome office",
+    "url": "https://alandsradio.ax/nyheter/radhuset-blir-welcome-office",
+    "skriv": false,
+    "nyhetsvarde": 2,
+    "tema": "lokal förvaltning",
+    "anledning": "En ren rutinåtgärd om namnbyte och färg på en lokal enhet. Saknar betydande politisk, samhällelig eller autonomirelevant vinkel som Julius skulle finna värdig en ledarartikel. Det är en smålokal notis. [nyhetsvärde 2 < 6]",
+    "fallback": false
   }
 ]
