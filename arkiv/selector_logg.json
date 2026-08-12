@@ -3448,5 +3448,45 @@
     "tema": "demografi",
     "anledning": "Statistik över befolkningsförändringar är mer en rutinmässig notis än en händelse som kräver en ledarartikel. Ingen direkt koppling till autonomi, politik, eller större samhällsfrågor med tydlig konflikt eller beslut som kräver Sundbloms penna. Saknar substans för en värdig ledare. [nyhetsvärde 3 < 6]",
     "fallback": false
+  },
+  {
+    "date": "2026-08-12",
+    "headline": "Torka i Europa kan märkas i åländska butiker",
+    "url": "https://alandsradio.ax/nyheter/torka-i-europa-kan-markas-i-alandska-butiker",
+    "skriv": true,
+    "nyhetsvarde": 6,
+    "tema": "ekonomi",
+    "anledning": "Ekonomisk påverkan på åländska hushåll och lantbrukare med relevans för självstyrelsens möjligheter att hantera kriser.",
+    "fallback": false
+  },
+  {
+    "date": "2026-08-12",
+    "headline": "Allt gick enligt plan när Eckerö Link provanlöpte Långnäs",
+    "url": "https://alandsradio.ax/nyheter/allt-gick-enligt-plan-nar-eckero-link-provanlopte-langnas",
+    "skriv": false,
+    "nyhetsvarde": 2,
+    "tema": "ekonomi/infrastruktur",
+    "anledning": "Provanlöp av nytt fartyg är en rutinåtgärd och en kommersiell notis utan större politisk eller samhällelig vinkel. Saknar substans för en ledare. [nyhetsvärde 2 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-08-12",
+    "headline": "ÅD upprepar önskemål om mer resurser i utlåtande om självstyrelselagen",
+    "url": "https://alandsradio.ax/nyheter/ad-upprepar-onskemal-om-mer-resurser-i-utlatande-om-sjalvstyrelselagen",
+    "skriv": true,
+    "nyhetsvarde": 8,
+    "tema": "självstyrelse",
+    "anledning": "Frågan om Ålandsdelegationens ställning och resurser rör direkt självstyrelsens funktion och relationen till riksmyndigheterna. Tydligare regler och resursbehov är avgörande för autonomins praktiska utövande och dess framtida utveckling. Detta är av högsta intresse för Julius.",
+    "fallback": false
+  },
+  {
+    "date": "2026-08-12",
+    "headline": "Amanda “Stormskärs Maja” Jansson och Jon Henriksen i ny åländsk kortfilm – ska l",
+    "url": "https://alandsradio.ax/nyheter/amanda-stormskars-maja-jansson-och-jon-henriksen-i-ny-alandsk-kortfilm-ska-locka-turister",
+    "skriv": false,
+    "nyhetsvarde": 2,
+    "tema": "kultur",
+    "anledning": "Kortfilm om turism är för lättviktigt för en ledarartikel. Saknar substans för en djupare analys av politik, samhälle eller autonomi. En ren nöjesnyhet. [nyhetsvärde 2 < 6]",
+    "fallback": false
   }
 ]
