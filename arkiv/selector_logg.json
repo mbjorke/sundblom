@@ -3388,5 +3388,65 @@
     "tema": "ekonomi och självstyrelse",
     "anledning": "Frågan om kommunsammanslagningar och eventuellt tvångingripande från landskapet är direkt kopplad till den åländska självstyrelsens funktion och kommunernas ekonomiska bärkraft, vilket är av stor vikt för Julius.",
     "fallback": false
+  },
+  {
+    "date": "2026-08-12",
+    "headline": "Utrikesminister Valtonen besöker Åland på fredag",
+    "url": "https://alandsradio.ax/nyheter/utrikesminister-valtonen-besoker-aland-pa-fredag",
+    "skriv": true,
+    "nyhetsvarde": 9,
+    "tema": "självstyrelse, internationell politik, säkerhet",
+    "anledning": "Besök av utrikesministern är alltid av stor vikt för Ålands ställning. Särskilt med tanke på säkerhetsläget och diskussioner om Helsingforsavtalet, vilket direkt rör Ålands demilitarisering. Detta förtjänar en djuplodande ledare av Sundblom.",
+    "fallback": false
+  },
+  {
+    "date": "2026-08-12",
+    "headline": "Måtar: En enda intressent kan utlösa misstroende",
+    "url": "https://alandsradio.ax/nyheter/matar-en-enda-intressent-kan-utlosa-misstroende",
+    "skriv": true,
+    "nyhetsvarde": 8,
+    "tema": "självstyrelse, ekonomi",
+    "anledning": "Fråga om landskapsregeringens agerande, potentiell misstroendeomröstning, stor upphandling med ekonomiska konsekvenser för skattebetalarna. Rör kärnan i självstyret och dess förvaltning.",
+    "fallback": false
+  },
+  {
+    "date": "2026-08-12",
+    "headline": "Jeanette Pajunen får jobb i Eckerö",
+    "url": "https://alandsradio.ax/nyheter/jeanette-pajunen-far-jobb-i-eckero",
+    "skriv": false,
+    "nyhetsvarde": 2,
+    "tema": "småkommunal förvaltning",
+    "anledning": "Trivial notis om en kommuns rekrytering och interna lönefrågor, ingen större betydelse för landskapet eller Julius redaktionella intressen. [nyhetsvärde 2 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-08-12",
+    "headline": "Hon gör konst av vardagens måsten",
+    "url": "https://alandsradio.ax/nyheter/hon-gor-konst-av-vardagens-masten",
+    "skriv": false,
+    "nyhetsvarde": 1,
+    "tema": "kultur",
+    "anledning": "Modern performancekonst med fokus på vardagliga sysslor saknar relevans för Julius redaktionella inriktning. För obetydligt för en ledarartikel. [nyhetsvärde 1 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-08-12",
+    "headline": "Färre dagisplatser i Mariehamn – ökat tryck på de yngsta",
+    "url": "https://alandsradio.ax/nyheter/farre-dagisplatser-i-mariehamn-okat-tryck-pa-de-yngsta",
+    "skriv": false,
+    "nyhetsvarde": 3,
+    "tema": "lokal förvaltning",
+    "anledning": "Ämnet är för lokalt och administrativt för en ledare. Det saknar koppling till centrala teman som självstyrelse eller sedlighet. [nyhetsvärde 3 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-08-12",
+    "headline": "Ålands befolkning har ökat med 116 personer hittills i år",
+    "url": "https://alandsradio.ax/nyheter/alands-befolkning-har-okat-med-116-personer-hittills-i-ar",
+    "skriv": false,
+    "nyhetsvarde": 3,
+    "tema": "demografi",
+    "anledning": "Statistik över befolkningsförändringar är mer en rutinmässig notis än en händelse som kräver en ledarartikel. Ingen direkt koppling till autonomi, politik, eller större samhällsfrågor med tydlig konflikt eller beslut som kräver Sundbloms penna. Saknar substans för en värdig ledare. [nyhetsvärde 3 < 6]",
+    "fallback": false
   }
 ]
