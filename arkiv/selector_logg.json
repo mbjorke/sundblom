@@ -3338,5 +3338,55 @@
     "tema": "personnotis",
     "anledning": "Personnotis om en praktikplats, saknar större politisk eller samhällelig betydelse för Julius redaktionella inriktning 1926. Den åländska representationen i EU är inte heller en relevant fråga på den tiden. [nyhetsvärde 2 < 6]",
     "fallback": false
+  },
+  {
+    "date": "2026-08-12",
+    "headline": "Flera gatuavstängningar i Mariehamn från och med fredag",
+    "url": "https://alandsradio.ax/nyheter/flera-gatuavstangningar-i-mariehamn-fran-och-med-fredag",
+    "skriv": false,
+    "nyhetsvarde": 2,
+    "tema": "lokal infrastruktur",
+    "anledning": "Trivial notis om lokala gatuavstängningar. Saknar all relevans för Julius Sundbloms redaktionella fokus. [nyhetsvärde 2 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-08-12",
+    "headline": "Svenska moderater raggar röster på Åland",
+    "url": "https://alandsradio.ax/nyheter/svenska-moderater-raggar-roster-pa-aland",
+    "skriv": false,
+    "nyhetsvarde": 3,
+    "tema": "rikspolitik",
+    "anledning": "Även om det handlar om svensk rikspolitik och val, är det en trivial notis om ett valmöte. Detta är inte en väsentlig händelse som direkt påverkar Ålands självstyrelse, ekonomi eller samhälle på ett sätt som skulle motivera en ledare av Julius Sundblom. Det saknar den djupare substans eller konflikt som krävs för en ledarartikel. [nyhetsvärde 3 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-08-12",
+    "headline": "Skunk får 98 000 euro i EU-medel – stor del går till resekostnader",
+    "url": "https://alandsradio.ax/nyheter/skunk-far-98-000-euro-i-eu-medel-stor-del-gar-till-resekostnader",
+    "skriv": true,
+    "nyhetsvarde": null,
+    "tema": "fel",
+    "anledning": "API-fel (fail-open): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}",
+    "fallback": true
+  },
+  {
+    "date": "2026-08-12",
+    "headline": "Ålands näringsliv satsar på rådgivning för företag som vill nå utanför Åland",
+    "url": "https://alandsradio.ax/nyheter/alands-naringsliv-satsar-pa-radgivning-for-foretag-som-vill-na-utanfor-aland",
+    "skriv": false,
+    "nyhetsvarde": 4,
+    "tema": "ekonomi",
+    "anledning": "Även om ekonomin är central, är detta mer en rutinmässig notis om näringslivets arbete med företagsrådgivning och rekrytering. Det saknar den substans i form av en konkret händelse, konflikt eller stort beslut som motiverar en ledare av Julius Sundblom. Fokus är på framtida, inte omedelbara, ageranden och tendenser snarare än avgörande händelser. [nyhetsvärde 4 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-08-12",
+    "headline": "Jansryd: “Behövs hot om tvångssammanslagning” – Lumparland tvingas låna mer",
+    "url": "https://alandsradio.ax/nyheter/jansryd-behovs-hot-om-tvangssammanslagning-lumparland-tvingas-lana-mer",
+    "skriv": true,
+    "nyhetsvarde": 8,
+    "tema": "ekonomi och självstyrelse",
+    "anledning": "Frågan om kommunsammanslagningar och eventuellt tvångingripande från landskapet är direkt kopplad till den åländska självstyrelsens funktion och kommunernas ekonomiska bärkraft, vilket är av stor vikt för Julius.",
+    "fallback": false
   }
 ]
