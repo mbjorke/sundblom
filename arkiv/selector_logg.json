@@ -3488,5 +3488,55 @@
     "tema": "kultur",
     "anledning": "Kortfilm om turism är för lättviktigt för en ledarartikel. Saknar substans för en djupare analys av politik, samhälle eller autonomi. En ren nöjesnyhet. [nyhetsvärde 2 < 6]",
     "fallback": false
+  },
+  {
+    "date": "2026-08-13",
+    "headline": "Hotellövernattningarna minskade i juni",
+    "url": "https://alandsradio.ax/nyheter/hotellovernattningarna-minskade-i-juni",
+    "skriv": false,
+    "nyhetsvarde": 3,
+    "tema": "ekonomi",
+    "anledning": "Statistik om hotellövernattningar är en rutinmässig ekonomisk notis. Den saknar den tyngd och konflikt som krävs för en ledare, och erbjuder ingen tydlig vinkel för Julius att argumentera kring självstyrelse, sedlighet eller samhällsordning. För obetydlig och utan djupare implikationer för redaktionens huvudsakliga intressen. [nyhetsvärde 3 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-08-13",
+    "headline": "Lemland beviljar tilläggsanslag för ytbeläggning",
+    "url": "https://alandsradio.ax/nyheter/lemland-beviljar-tillaggsanslag-for-ytbelaggning",
+    "skriv": false,
+    "nyhetsvarde": 2,
+    "tema": "småkommunal förvaltning",
+    "anledning": "En rent lokal notis om ett kommunalt tilläggsanslag. Saknar större nyhetsvärde, tematisk passning och substans för en ledare av Julius Sundblom. Ingen koppling till autonomi, rikspolitik eller större samhällsfrågor. [nyhetsvärde 2 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-08-13",
+    "headline": "Högt tryck på psykologutredningar i Mariehamns skolor och daghem",
+    "url": "https://alandsradio.ax/nyheter/hogt-tryck-pa-psykologutredningar-i-mariehamns-skolor-och-daghem",
+    "skriv": false,
+    "nyhetsvarde": 3,
+    "tema": "lokal förvaltning",
+    "anledning": "Ämnet är för specifikt, rör enbart en lokal administrativ utmaning inom skolan och saknar den bredare samhälleliga eller politiska bäring som Julius Sundblom skulle finna värdig en ledarartikel. Det är en intern administrativ fråga snarare än en fråga om principer, autonomi eller rikspolitisk relevans. [nyhetsvärde 3 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-08-13",
+    "headline": "Näfsby skola möter växande stödbehov med ny studio",
+    "url": "https://alandsradio.ax/nyheter/nafsby-skola-moter-vaxande-stodbehov-med-ny-studio",
+    "skriv": false,
+    "nyhetsvarde": 3,
+    "tema": "lokal utbildning",
+    "anledning": "Småskalig lokal nyhet om en enskild skolas interna åtgärder för att möta stödbehov. Saknar större politisk, samhällelig eller autonomirelaterad relevans för en ledarartikel av Julius Sundblom. Det är en rutinåtgärd på en lokal nivå snarare än en väsentlig händelse. [nyhetsvärde 3 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-08-13",
+    "headline": "Kall vinter och torr högsommar utmanar bönderna – inga rekordskördar väntas",
+    "url": "https://alandsradio.ax/nyheter/kall-vinter-och-torr-hogsommar-utmanar-bonderna-inga-rekordskordar-vantas",
+    "skriv": false,
+    "nyhetsvarde": 3,
+    "tema": "ekonomi",
+    "anledning": "Väderrelaterade skörderapporter är av lokal ekonomisk betydelse men saknar den djupare politiska eller samhälleliga vinkel som Julius söker för en ledare. För lite substans för en värdig ledare. [nyhetsvärde 3 < 6]",
+    "fallback": false
   }
 ]
