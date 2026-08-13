@@ -3538,5 +3538,35 @@
     "tema": "ekonomi",
     "anledning": "Väderrelaterade skörderapporter är av lokal ekonomisk betydelse men saknar den djupare politiska eller samhälleliga vinkel som Julius söker för en ledare. För lite substans för en värdig ledare. [nyhetsvärde 3 < 6]",
     "fallback": false
+  },
+  {
+    "date": "2026-08-13",
+    "headline": "AI en orsak när nio tjänster på Paf hotas",
+    "url": "https://alandsradio.ax/nyheter/ai-en-orsak-nar-nio-tjanster-pa-paf-hotas",
+    "skriv": false,
+    "nyhetsvarde": 3,
+    "tema": "ekonomi",
+    "anledning": "Intern omstrukturering på ett enskilt bolag med koppling till 'ny teknologi' som koncept är för abstrakt och saknar den direkta relevans för samhällsordning eller autonomi som Julius efterfrågar år 1926. AI är ett främmande begrepp. För många moderna element i en artikel som Julius Sundblom år 1926 skulle ha svårt att relatera till eller skapa en ledare kring. [nyhetsvärde 3 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-08-13",
+    "headline": "Sara Karlman blir ny chef på Datainspektionen",
+    "url": "https://alandsradio.ax/nyheter/sara-karlman-blir-ny-chef-pa-datainspektionen",
+    "skriv": false,
+    "nyhetsvarde": 3,
+    "tema": "personnotis",
+    "anledning": "Personalbeslut inom en myndighet, utan större politisk eller samhällelig vinkel som Julius skulle finna relevant för en ledare år 1926. Saknar konflikt, autonomifråga eller bredare samhällsrelevans. [nyhetsvärde 3 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-08-13",
+    "headline": "Åländska elever sämre i svenska – nu ska LR ta reda på varför",
+    "url": "https://alandsradio.ax/nyheter/alandska-elever-samre-i-svenska-nu-ska-lr-ta-reda-pa-varfor",
+    "skriv": true,
+    "nyhetsvarde": 8,
+    "tema": "självstyrelse, bildning, sedlighet, samhällsordning",
+    "anledning": "Försämrade skolresultat, särskilt i svenska, är en allvarlig sak som direkt påverkar den åländska identiteten och bildningen. Landskapsregeringens agerande, om än långsamt, är av autonomipolitisk betydelse då det rör kärnan i självstyrelsens uppdrag – att garantera god utbildning och bevara den svenska kulturen. Detta är inte en trivial notis, utan berör grundläggande frågor om samhällets framtid, språket och den åländska identiteten, vilket kräver en ledare av Julius.",
+    "fallback": false
   }
 ]
