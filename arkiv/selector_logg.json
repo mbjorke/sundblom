@@ -3568,5 +3568,45 @@
     "tema": "självstyrelse, bildning, sedlighet, samhällsordning",
     "anledning": "Försämrade skolresultat, särskilt i svenska, är en allvarlig sak som direkt påverkar den åländska identiteten och bildningen. Landskapsregeringens agerande, om än långsamt, är av autonomipolitisk betydelse då det rör kärnan i självstyrelsens uppdrag – att garantera god utbildning och bevara den svenska kulturen. Detta är inte en trivial notis, utan berör grundläggande frågor om samhällets framtid, språket och den åländska identiteten, vilket kräver en ledare av Julius.",
     "fallback": false
+  },
+  {
+    "date": "2026-08-13",
+    "headline": "Teater Gården får ny scen – men oroar sig för verksamhetens framtid",
+    "url": "https://alandsradio.ax/nyheter/teater-garden-far-ny-scen-men-oroar-sig-for-verksamhetens-framtid",
+    "skriv": false,
+    "nyhetsvarde": 2,
+    "tema": "kultur",
+    "anledning": "Smålokal notis om kulturverksamhet i Mariehamn. För obetydlig för en ledarartikel av Julius Sundblom, som fokuserar på större politiska och samhälleliga frågor. [nyhetsvärde 2 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-08-13",
+    "headline": "Han drar i bromsen efter 15 år – men Dansbandssidan blir kvar",
+    "url": "https://alandsradio.ax/nyheter/han-drar-i-bromsen-efter-15-ar-men-dansbandssidan-blir-kvar",
+    "skriv": false,
+    "nyhetsvarde": 2,
+    "tema": "kultur",
+    "anledning": "Trivial personnotis om en hobbyverksamhets framtid. Saknar större samhällsrelevans eller koppling till Julius redaktionella värld. [nyhetsvärde 2 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-08-13",
+    "headline": "Många oklarheter när riksregeringen föreslår nya läkemedelsregler – LR efterlyse",
+    "url": "https://alandsradio.ax/nyheter/manga-oklarheter-nar-riksregeringen-foreslar-nya-lakemedelsregler-lr-efterlyser-dialog",
+    "skriv": true,
+    "nyhetsvarde": 8,
+    "tema": "självstyrelse",
+    "anledning": "Rikspolitisk inblandning i åländska angelägenheter, autonomifrågor kring lagtillämpning och språkrättigheter. Viktigt för Julius att belysa maktfördelning och svensk identitet.",
+    "fallback": false
+  },
+  {
+    "date": "2026-08-13",
+    "headline": "Inte tillräcklig efterfrågan för att bygga ut skattegränsportal",
+    "url": "https://alandsradio.ax/nyheter/inte-tillracklig-efterfragan-for-att-bygga-ut-skattegransportal",
+    "skriv": true,
+    "nyhetsvarde": 8,
+    "tema": "ekonomi",
+    "anledning": "Frågan om skattegränsen och dess utformning är central för Ålands ekonomi och handel, och rör direkt landskapets autonomi och dess relation till omvärlden. Detta har potential att påverka näringslivet och därmed samhällsordningen. Artikeln har tillräcklig substans med konkreta problem, politiska beslut och ekonomiska implikationer.",
+    "fallback": false
   }
 ]
