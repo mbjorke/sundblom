@@ -3758,5 +3758,75 @@
     "tema": "sedlighet",
     "anledning": "Fallet berör sedlighet och rättvisa, med koppling till åländsk jurisdiktion till havs (fartyg), vilket var en viktig debatt vid tiden. Straffets utmätning är av allmänt intresse och ryms väl i Sundbloms syn på lag och ordning.",
     "fallback": false
+  },
+  {
+    "date": "2026-08-14",
+    "headline": "Räddningstjänsten larmades till Källbo skola",
+    "url": "https://alandsradio.ax/nyheter/raddningstjansten-larmades-till-kallbo-skola",
+    "skriv": false,
+    "nyhetsvarde": 1,
+    "tema": "lokala händelser",
+    "anledning": "Trivial notis om tekniskt fel som utlöste automatlarm, ingen substans för en ledare. [nyhetsvärde 1 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-08-14",
+    "headline": "Centrumkorsning stängs av",
+    "url": "https://alandsradio.ax/nyheter/centrumkorsning-stangs-av",
+    "skriv": false,
+    "nyhetsvarde": 1,
+    "tema": "stadsplanering",
+    "anledning": "Trivial, lokal trafikomläggning utan större politisk eller samhällelig betydelse. Saknar djupare substans för en ledare. [nyhetsvärde 1 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-08-14",
+    "headline": "LR välkomnar möjlighet att ingripa mot vårdpersonal efter brott",
+    "url": "https://alandsradio.ax/nyheter/lr-valkomnar-mojlighet-att-ingripa-mot-vardpersonal-efter-brott",
+    "skriv": true,
+    "nyhetsvarde": 8,
+    "tema": "självstyrelse, sedlighet, rättvisa",
+    "anledning": "Lagförslag som berör självstyrelsens befogenheter och möjligheten att upprätthålla sedlighet och rättvisa inom vården. Språkkrav och bedömning av utländska examina berör direkt den åländska arbetsmarknaden och identiteten. Detta har betydande substans och relevans för Julius Sundbloms intressen.",
+    "fallback": false
+  },
+  {
+    "date": "2026-08-14",
+    "headline": "Vårdö redo för presidentbesöket: ”Vill visa livet i en liten skärgårdskommun”",
+    "url": "https://alandsradio.ax/nyheter/vardo-redo-for-presidentbesoket-vill-visa-livet-i-en-liten-skargardskommun",
+    "skriv": false,
+    "nyhetsvarde": 3,
+    "tema": "internationell/rikspolitisk relevans",
+    "anledning": "Presidentbesök är rutinmässigt och denna notis saknar politisk substans utöver lokala artigheter. Inget att skriva en ledare om. [nyhetsvärde 3 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-08-14",
+    "headline": "Löfström om Sannfinländarnas rasismutspel: ”Det känns för jävligt”",
+    "url": "https://alandsradio.ax/nyheter/lofstrom-om-sannfinlandarnas-rasismutspel-det-kanns-for-javligt",
+    "skriv": false,
+    "nyhetsvarde": 4,
+    "tema": "rikspolitik",
+    "anledning": "Ämnet är för modernt och ryms inte i Julius redaktionella värld 1926. 'Rasism' som begrepp är inte etablerat i den allmänna debatten, och det handlar om inrikes finsk partipolitik snarare än direkta åländska intressen eller principer som Julius skulle engagera sig i på ledarnivå. Även om det handlar om en åländsk representant, är det en kommentar på en rikspolitisk inrikesfråga som inte direkt rör Ålands självstyrelse i en grad som motiverar en ledare år 1926. [nyhetsvärde 4 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-08-14",
+    "headline": "Därför visas 25e juli konserten på TV4 i kväll",
+    "url": "https://alandsradio.ax/nyheter/darfor-visas-25e-juli-konserten-pa-tv4-i-kvall",
+    "skriv": false,
+    "nyhetsvarde": 1,
+    "tema": "kultur",
+    "anledning": "Trivial notis om TV-sändning. Saknar relevans för autonomi, samhällsordning eller större politiska frågor. För obetydlig för en ledare av Julius Sundblom. [nyhetsvärde 1 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-08-14",
+    "headline": "Trots fler fall av svinpest i riket är läget oförändrat här",
+    "url": "https://alandsradio.ax/nyheter/trots-fler-fall-av-svinpest-i-riket-ar-laget-oforandrat-har",
+    "skriv": false,
+    "nyhetsvarde": 3,
+    "tema": "hälsa",
+    "anledning": "Veterinärfråga utan direkt koppling till ledarartikel, ingen stor samhällspåverkan eller autonomifråga. Läget oförändrat gör det mindre akut. [nyhetsvärde 3 < 6]",
+    "fallback": false
   }
 ]
