@@ -3688,5 +3688,75 @@
     "tema": "hälsa",
     "anledning": "Ämnet är för specifikt och medicinskt för Julius redaktionella fokus 1926. Brister i medicinförsörjning faller utanför hans intresseområden gällande autonomi, samhällsordning eller sedlighet. [nyhetsvärde 3 < 6]",
     "fallback": false
+  },
+  {
+    "date": "2026-08-14",
+    "headline": "Viking Lines vd: “Silja har blivit mer aggressivt”",
+    "url": "https://alandsradio.ax/nyheter/viking-lines-vd-silja-har-blivit-mer-aggressivt",
+    "skriv": false,
+    "nyhetsvarde": 4,
+    "tema": "ekonomi",
+    "anledning": "Intern ekonomisk rapport från ett enskilt rederi. Saknar tillräcklig koppling till övergripande samhällsfrågor eller autonomi för en ledare 1926. Konkurrens mellan rederier är för smal för en ledarartikel. [nyhetsvärde 4 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-08-14",
+    "headline": "ÅM i hästhoppning och dressyr har över 60 starter",
+    "url": "https://alandsradio.ax/nyheter/am-i-hasthoppning-och-dressyr-har-over-60-starter",
+    "skriv": false,
+    "nyhetsvarde": 1,
+    "tema": "sport",
+    "anledning": "Ren sportresultat-rapportering av lokal karaktär utan större betydelse för Julius redaktionella värld. Ingen koppling till autonomi, samhällsordning, sedlighet eller politik. [nyhetsvärde 1 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-08-14",
+    "headline": "Ännu ett ÅM-guld till Blomqvist",
+    "url": "https://alandsradio.ax/nyheter/annu-ett-am-guld-till-blomqvist",
+    "skriv": false,
+    "nyhetsvarde": 1,
+    "tema": "sport",
+    "anledning": "Ren sportresultat-rapportering utan större betydelse, saknar koppling till Julius redaktionella värld. [nyhetsvärde 1 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-08-14",
+    "headline": "Mats Löfström ställer upp för omval",
+    "url": "https://alandsradio.ax/nyheter/mats-lofstrom-staller-upp-for-omval",
+    "skriv": false,
+    "nyhetsvarde": 4,
+    "tema": "politik",
+    "anledning": "Det är en notis om en kandidat som ställer upp för omval, vilket är en förutsägbar del av den politiska processen. Inget beslut har fattats ännu, och det saknar en konkret händelse eller konflikt som kan motivera en ledarartikel av Julius Sundblom. Dessutom är det inte ett riksdagsval ännu, endast ett besked om att kandidera. [nyhetsvärde 4 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-08-14",
+    "headline": "Renoveringen och utbyggnaden av KHS är färdig",
+    "url": "https://alandsradio.ax/nyheter/renoveringen-och-utbyggnaden-av-khs-ar-fardig",
+    "skriv": false,
+    "nyhetsvarde": 2,
+    "tema": "lokal notis",
+    "anledning": "Trivial lokal notis om en rutinmässig skolrenovering. Saknar politisk, samhällelig eller existentiell bäring för en ledarartikel av Julius Sundblom. Datumet 2025 är också irrelevant för 1926. [nyhetsvärde 2 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-08-14",
+    "headline": "Vårdnadshavare misstänks för misshandel efter ungdomsbråket på Torggatan",
+    "url": "https://alandsradio.ax/nyheter/vardnadshavare-misstanks-for-misshandel-efter-ungdomsbraket-pa-torggatan",
+    "skriv": false,
+    "nyhetsvarde": 4,
+    "tema": "sedlighet",
+    "anledning": "Smålokal notis om ett bråk. Även om en vuxen är inblandad och det rör sig om misshandel mot barn, är det en enskild händelse utan bredare samhälls- eller autonomirelevans. Saknar substans för en ledarartikel. [nyhetsvärde 4 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-08-14",
+    "headline": "Iltalehti: Man dömd till två års fängelse för våldtäkt på Tallink Silja-fartyg",
+    "url": "https://alandsradio.ax/nyheter/iltalehti-man-domd-till-tva-ars-fangelse-for-valdtakt-pa-tallink-silja-fartyg",
+    "skriv": true,
+    "nyhetsvarde": 6,
+    "tema": "sedlighet",
+    "anledning": "Fallet berör sedlighet och rättvisa, med koppling till åländsk jurisdiktion till havs (fartyg), vilket var en viktig debatt vid tiden. Straffets utmätning är av allmänt intresse och ryms väl i Sundbloms syn på lag och ordning.",
+    "fallback": false
   }
 ]
