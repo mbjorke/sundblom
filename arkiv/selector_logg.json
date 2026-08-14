@@ -3828,5 +3828,15 @@
     "tema": "hälsa",
     "anledning": "Veterinärfråga utan direkt koppling till ledarartikel, ingen stor samhällspåverkan eller autonomifråga. Läget oförändrat gör det mindre akut. [nyhetsvärde 3 < 6]",
     "fallback": false
+  },
+  {
+    "date": "2026-08-14",
+    "headline": "Valtonen: Säkra kablar och fungerande logistik viktigt för Åland",
+    "url": "https://alandsradio.ax/nyheter/valtonen-sakra-kablar-och-fungerande-logistik-viktigt-for-aland",
+    "skriv": true,
+    "nyhetsvarde": 8,
+    "tema": "självstyrelse och rikspolitik",
+    "anledning": "Frågor kring Ålands strategiska betydelse, infrastruktur, och beredskap i relation till rikspolitiken är av hög relevans för självstyrelsen och den åländska identiteten. Diskussionen med utrikesministern ger substans för en ledare om Ålands roll i det större landskapet.",
+    "fallback": false
   }
 ]
