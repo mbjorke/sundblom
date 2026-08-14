@@ -3608,5 +3608,85 @@
     "tema": "ekonomi",
     "anledning": "Frågan om skattegränsen och dess utformning är central för Ålands ekonomi och handel, och rör direkt landskapets autonomi och dess relation till omvärlden. Detta har potential att påverka näringslivet och därmed samhällsordningen. Artikeln har tillräcklig substans med konkreta problem, politiska beslut och ekonomiska implikationer.",
     "fallback": false
+  },
+  {
+    "date": "2026-08-14",
+    "headline": "Viking Lines intresseföretag drar ned resultatet",
+    "url": "https://alandsradio.ax/nyheter/viking-lines-intresseforetag-drar-ned-resultatet",
+    "skriv": false,
+    "nyhetsvarde": 4,
+    "tema": "ekonomi",
+    "anledning": "Ekonomisk rapport om ett enskilt bolag, inte tillräckligt brett för att motivera en ledare av Julius 1926. Saknar direkt koppling till autonomi, sedlighet eller den tidens samhällsordning. Fokus på framtida resultat för 2026 är även irrelevant för 1926. [nyhetsvärde 4 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-08-14",
+    "headline": "I kväll visas Wiklöfs konsert på TV4",
+    "url": "https://alandsradio.ax/nyheter/i-kvall-visas-wiklofs-konsert-pa-tv4",
+    "skriv": false,
+    "nyhetsvarde": 1,
+    "tema": "kultur",
+    "anledning": "Trivial underhållningsnotis utan politisk, samhällelig eller sedlig relevans för 1926 års Tidningen Åland. [nyhetsvärde 1 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-08-14",
+    "headline": "Tekniskt fel orsakade brandlarm på Föglö",
+    "url": "https://alandsradio.ax/nyheter/tekniskt-fel-orsakade-brandlarm-pa-foglo",
+    "skriv": false,
+    "nyhetsvarde": 1,
+    "tema": "trivial notis",
+    "anledning": "Trivial lokal notis om tekniskt fel. Saknar nyhetsvärde för en ledare. [nyhetsvärde 1 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-08-14",
+    "headline": "Anna Eklund fortsätter leda litteraturdagarna",
+    "url": "https://alandsradio.ax/nyheter/anna-eklund-fortsatter-leda-litteraturdagarna",
+    "skriv": false,
+    "nyhetsvarde": 2,
+    "tema": "kultur",
+    "anledning": "En ren personnotis om en tjänstetillsättning utan större samhällelig betydelse eller kontrovers. Saknar den substans Julius kunde skriva en ledare om. [nyhetsvärde 2 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-08-14",
+    "headline": "Färre elever i alla Mariehamns skolor",
+    "url": "https://alandsradio.ax/nyheter/farre-elever-i-alla-mariehamns-skolor",
+    "skriv": false,
+    "nyhetsvarde": 2,
+    "tema": "lokal notis",
+    "anledning": "Trivial lokal notis om elevantal. Inget substantiellt för en ledare. [nyhetsvärde 2 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-08-14",
+    "headline": "Mammalådan i fokus i nytt lagförslag",
+    "url": "https://alandsradio.ax/nyheter/mammaladan-i-fokus-i-nytt-lagforslag",
+    "skriv": true,
+    "nyhetsvarde": 6,
+    "tema": "självstyrelse, samhällsordning, ekonomi",
+    "anledning": "Lagförslag som rör fördelning av ansvar och finansiering mellan landskapsregeringen och kommunala organ är av central betydelse för den åländska självstyrelsen och den interna samhällsordningen. Även om 'mammalådan' kan verka trivial, handlar det om principer för hur landskapet förvaltar sina åtaganden och sin ekonomi, samt hur välfärdsutgifter hanteras. Detta är en fråga som ryms väl inom Julius Sundbloms redaktionella intressen, då det berör styrning och resurshantering inom autonomin, samt potentiellt 'modernitetens förfall' genom ökade kostnader och byråkrati.",
+    "fallback": false
+  },
+  {
+    "date": "2026-08-14",
+    "headline": "Nipå vill få fler kulturutövare att stanna på Åland – nu startas ett produktions",
+    "url": "https://alandsradio.ax/nyheter/nipa-vill-fa-fler-kulturutovare-att-stanna-pa-aland-nu-startas-ett-produktionskontor",
+    "skriv": false,
+    "nyhetsvarde": 3,
+    "tema": "kultur",
+    "anledning": "En smålokal kulturinitiativ som saknar den tyngd eller kontrovers som skulle motivera en ledarartikel av Julius Sundblom. Det är mer en serviceinriktad notis än en händelse med stor samhällspolitisk betydelse. [nyhetsvärde 3 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-08-14",
+    "headline": "Fortsatt hög efterfrågan på östrogenpreparat samtidigt som lagren sinar – ”Det ä",
+    "url": "https://alandsradio.ax/nyheter/fortsatt-hog-efterfragan-pa-ostrogenpreparat-samtidigt-som-lagren-sinar-det-ar-alarmerande",
+    "skriv": false,
+    "nyhetsvarde": 3,
+    "tema": "hälsa",
+    "anledning": "Ämnet är för specifikt och medicinskt för Julius redaktionella fokus 1926. Brister i medicinförsörjning faller utanför hans intresseområden gällande autonomi, samhällsordning eller sedlighet. [nyhetsvärde 3 < 6]",
+    "fallback": false
   }
 ]
