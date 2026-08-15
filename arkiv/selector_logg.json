@@ -3858,5 +3858,15 @@
     "tema": "kultur",
     "anledning": "Trivial notis om TV-sändning. Saknar relevans för Julius redaktionella värld och har ingen substans för en ledare. [nyhetsvärde 1 < 6]",
     "fallback": false
+  },
+  {
+    "date": "2026-08-15",
+    "headline": "Räddningsverket släckte risbrasa på Järsö",
+    "url": "https://alandsradio.ax/nyheter/raddningsverket-slackte-risbrasa-pa-jarso",
+    "skriv": false,
+    "nyhetsvarde": 1,
+    "tema": "lokal notis",
+    "anledning": "Trivial, smålokal notis om en rutinåtgärd. Saknar relevans för större teman som självstyrelse eller samhällsordning. Inget att skriva en ledare om. [nyhetsvärde 1 < 6]",
+    "fallback": false
   }
 ]
