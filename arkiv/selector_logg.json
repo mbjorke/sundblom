@@ -3838,5 +3838,25 @@
     "tema": "självstyrelse och rikspolitik",
     "anledning": "Frågor kring Ålands strategiska betydelse, infrastruktur, och beredskap i relation till rikspolitiken är av hög relevans för självstyrelsen och den åländska identiteten. Diskussionen med utrikesministern ger substans för en ledare om Ålands roll i det större landskapet.",
     "fallback": false
+  },
+  {
+    "date": "2026-08-15",
+    "headline": "Vägarbeten inleds i Saltvik",
+    "url": "https://alandsradio.ax/nyheter/vagarbeten-inleds-i-saltvik",
+    "skriv": false,
+    "nyhetsvarde": 2,
+    "tema": "lokala-arbeten",
+    "anledning": "Trivial notis om rutinmässiga vägarbeten, saknar politisk, samhällelig eller autonomirelevant vinkel. Ingen substans för en ledare. [nyhetsvärde 2 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-08-15",
+    "headline": "Därför visas 25e juli konserten på TV4",
+    "url": "https://alandsradio.ax/nyheter/darfor-visas-25e-juli-konserten-pa-tv4",
+    "skriv": false,
+    "nyhetsvarde": 1,
+    "tema": "kultur",
+    "anledning": "Trivial notis om TV-sändning. Saknar relevans för Julius redaktionella värld och har ingen substans för en ledare. [nyhetsvärde 1 < 6]",
+    "fallback": false
   }
 ]
