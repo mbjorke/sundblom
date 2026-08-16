@@ -3878,5 +3878,15 @@
     "tema": "sedlighet",
     "anledning": "Triviala notiser om ordningsstörningar och böter. Saknar substans för en ledare. [nyhetsvärde 2 < 6]",
     "fallback": false
+  },
+  {
+    "date": "2026-08-16",
+    "headline": "Åkerblom vann ÅM i ABT-trap",
+    "url": "https://alandsradio.ax/nyheter/akerblom-vann-am-i-abt-trap",
+    "skriv": false,
+    "nyhetsvarde": 1,
+    "tema": "sport",
+    "anledning": "Ren sportresultat-rapportering, för obetydlig för en ledarartikel av Julius Sundblom. Saknar all relevans för tidningens redaktionella inriktning. [nyhetsvärde 1 < 6]",
+    "fallback": false
   }
 ]
