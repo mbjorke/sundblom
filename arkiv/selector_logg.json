@@ -3868,5 +3868,15 @@
     "tema": "lokal notis",
     "anledning": "Trivial, smålokal notis om en rutinåtgärd. Saknar relevans för större teman som självstyrelse eller samhällsordning. Inget att skriva en ledare om. [nyhetsvärde 1 < 6]",
     "fallback": false
+  },
+  {
+    "date": "2026-08-16",
+    "headline": "Tre fick böter för hög musik i bilar och tre frihetsberövades under helgen",
+    "url": "https://alandsradio.ax/nyheter/tre-fick-boter-for-hog-musik-i-bilar-och-tre-frihetsberovades-under-helgen",
+    "skriv": false,
+    "nyhetsvarde": 2,
+    "tema": "sedlighet",
+    "anledning": "Triviala notiser om ordningsstörningar och böter. Saknar substans för en ledare. [nyhetsvärde 2 < 6]",
+    "fallback": false
   }
 ]
