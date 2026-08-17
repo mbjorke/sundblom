@@ -3888,5 +3888,45 @@
     "tema": "sport",
     "anledning": "Ren sportresultat-rapportering, för obetydlig för en ledarartikel av Julius Sundblom. Saknar all relevans för tidningens redaktionella inriktning. [nyhetsvärde 1 < 6]",
     "fallback": false
+  },
+  {
+    "date": "2026-08-17",
+    "headline": "ÅT: Tommy Ruponen lämnar Stallhagen",
+    "url": "https://alandsradio.ax/nyheter/at-tommy-ruponen-lamnar-stallhagen",
+    "skriv": false,
+    "nyhetsvarde": 2,
+    "tema": "ekonomi",
+    "anledning": "En ren personnotis om ett vd-byte i ett privat bolag är för obetydlig för en ledarartikel av Julius Sundblom. Det saknar större politisk, samhällelig eller autonomirelevant tyngd. Ingen redaktionell vinkel för att skriva om. [nyhetsvärde 2 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-08-17",
+    "headline": "Presidentparet besöker Vårdö i dag",
+    "url": "https://alandsradio.ax/nyheter/presidentparet-besoker-vardo-i-dag",
+    "skriv": false,
+    "nyhetsvarde": 4,
+    "tema": "personnotis",
+    "anledning": "Presidentparets besök är en artighetsvisit utan djupare politisk substans eller konflikt att skriva en ledare om. Det är en rutinåtgärd. [nyhetsvärde 4 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-08-17",
+    "headline": "I höst gäller skjutprov även för vitsvanshjort och rådjur",
+    "url": "https://alandsradio.ax/nyheter/i-host-galler-skjutprov-aven-for-vitsvanshjort-och-radjur",
+    "skriv": false,
+    "nyhetsvarde": 3,
+    "tema": "lagstiftning",
+    "anledning": "Även om det är en ny lag, är det en mycket specifik jaktreglering som saknar den bredare politiska eller samhälleliga relevansen som skulle motivera en ledare av Julius. Fokus är för smalt. [nyhetsvärde 3 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-08-17",
+    "headline": "Mitt Kanta dröjer på Åland – omfattande arbete återstår",
+    "url": "https://alandsradio.ax/nyheter/mitt-kanta-drojer-pa-aland-omfattande-arbete-aterstar",
+    "skriv": false,
+    "nyhetsvarde": 4,
+    "tema": "modernitetens förfall",
+    "anledning": "Även om det berör autonomin och dess begränsningar, är förseningen av en modern digital tjänst för specifik och teknisk för att vara en värdig ledare för Julius, som snarare skulle se det som ett tecken på modernitetens komplexitet än ett stort politiskt misslyckande. [nyhetsvärde 4 < 6]",
+    "fallback": false
   }
 ]
