@@ -3928,5 +3928,45 @@
     "tema": "modernitetens förfall",
     "anledning": "Även om det berör autonomin och dess begränsningar, är förseningen av en modern digital tjänst för specifik och teknisk för att vara en värdig ledare för Julius, som snarare skulle se det som ett tecken på modernitetens komplexitet än ett stort politiskt misslyckande. [nyhetsvärde 4 < 6]",
     "fallback": false
+  },
+  {
+    "date": "2026-08-17",
+    "headline": "Många vill gå Mediskurser i höst – Anmälningarna ökade med 16 procent",
+    "url": "https://alandsradio.ax/nyheter/manga-vill-ga-mediskurser-i-host-anmalningarna-okade-med-16-procent",
+    "skriv": false,
+    "nyhetsvarde": 2,
+    "tema": "lokala notiser",
+    "anledning": "Trivial notis om kursanmälningar. Saknar väsentlig samhälls- eller politisk relevans för en ledare.  Ingen direkt koppling till Julius' redaktionella teman bortom allmän bildning. [nyhetsvärde 2 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-08-17",
+    "headline": "ÅHS samarbetsförhandlingar inleds denna vecka",
+    "url": "https://alandsradio.ax/nyheter/ahs-samarbetsforhandlingar-inleds-denna-vecka",
+    "skriv": false,
+    "nyhetsvarde": 4,
+    "tema": "ekonomi och samhälle",
+    "anledning": "Även om det berör sjukvård och ekonomi, är detta en för specifik och intern administrationsfråga som inte når upp till den nivå av politisk eller samhällelig kris som Julius brukar engagera sig i. Det saknas den stora principiella frågan eller uppenbara orättvisan. Dessutom är förhandlingarna just inledda, för lite substans ännu. [nyhetsvärde 4 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-08-17",
+    "headline": "Ålcom köper MCA av staden",
+    "url": "https://alandsradio.ax/nyheter/alcom-koper-mca-av-staden",
+    "skriv": false,
+    "nyhetsvarde": 3,
+    "tema": "ekonomi",
+    "anledning": "Även om det är ett bolagsförvärv är det en tämligen lokal affär som saknar den stora politiska eller samhälleliga dignitet Julius söker. Det är en rutinåtgärd för ett kommunalt bolag, inte en fråga om självstyrelse, sedlighet eller större samhällsordning. Innehållet är tunt och saknar konflikt eller djupare implikationer för 1926 års Åland. [nyhetsvärde 3 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-08-17",
+    "headline": "I höst gäller skjutprov vid gemensamhetsjakt på vitsvanshjort och rådjur",
+    "url": "https://alandsradio.ax/nyheter/i-host-galler-skjutprov-vid-gemensamhetsjakt-pa-vitsvanshjort-och-radjur",
+    "skriv": false,
+    "nyhetsvarde": 3,
+    "tema": "jakt",
+    "anledning": "Även om det handlar om reglering och viss ordning, är detta en smålokal notis om jaktregler som inte når upp till den redaktionella tröskeln för en ledarartikel av Julius Sundblom. Ingen koppling till autonomi, svensk identitet, samhällsordning eller modernitetens förfall på ett substantiellt sätt. [nyhetsvärde 3 < 6]",
+    "fallback": false
   }
 ]
