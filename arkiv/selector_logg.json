@@ -3968,5 +3968,15 @@
     "tema": "jakt",
     "anledning": "Även om det handlar om reglering och viss ordning, är detta en smålokal notis om jaktregler som inte når upp till den redaktionella tröskeln för en ledarartikel av Julius Sundblom. Ingen koppling till autonomi, svensk identitet, samhällsordning eller modernitetens förfall på ett substantiellt sätt. [nyhetsvärde 3 < 6]",
     "fallback": false
+  },
+  {
+    "date": "2026-08-17",
+    "headline": "Hans son hamnade på akuten efter att ha blivit påkörd av elsparkcykel – \"Föräldr",
+    "url": "https://alandsradio.ax/nyheter/hans-son-hamnade-pa-akuten-efter-att-ha-blivit-pakord-av-elsparkcykel-foraldrar-behover-ta-ansvar",
+    "skriv": false,
+    "nyhetsvarde": 3,
+    "tema": "modernitetens förfall",
+    "anledning": "Incidenten är för lokal och anekdotisk. Trots viss samhällelig relevans ryms inte ämnet elsparkcyklar och trafiksäkerhet för barn inom Julius Sundbloms redaktionella värld i den mån att det skulle motivera en ledarartikel. Frågan om reglering av elsparkcyklar är för nymodig för 1926 och har inte tillräcklig politisk tyngd för en ledare vid denna tidpunkt. [nyhetsvärde 3 < 6]",
+    "fallback": false
   }
 ]
