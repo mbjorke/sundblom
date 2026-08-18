@@ -3978,5 +3978,55 @@
     "tema": "modernitetens förfall",
     "anledning": "Incidenten är för lokal och anekdotisk. Trots viss samhällelig relevans ryms inte ämnet elsparkcyklar och trafiksäkerhet för barn inom Julius Sundbloms redaktionella värld i den mån att det skulle motivera en ledarartikel. Frågan om reglering av elsparkcyklar är för nymodig för 1926 och har inte tillräcklig politisk tyngd för en ledare vid denna tidpunkt. [nyhetsvärde 3 < 6]",
     "fallback": false
+  },
+  {
+    "date": "2026-08-18",
+    "headline": "Mariehamn blir mötesplats för nordisk jazz under Åland sea jazz",
+    "url": "https://alandsradio.ax/nyheter/mariehamn-blir-motesplats-for-nordisk-jazz-under-aland-sea-jazz",
+    "skriv": false,
+    "nyhetsvarde": 3,
+    "tema": "kultur",
+    "anledning": "Kulturarrangemang av begränsad nyhetsvikt 1926. Saknar politisk eller samhällelig relevans för en ledarartikel av Julius Sundblom. [nyhetsvärde 3 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-08-18",
+    "headline": "Sjukskötare kan få rätt att konstatera dödsfall",
+    "url": "https://alandsradio.ax/nyheter/sjukskotare-kan-fa-ratt-att-konstatera-dodsfall",
+    "skriv": false,
+    "nyhetsvarde": 4,
+    "tema": "lagstiftning",
+    "anledning": "Även om det berör praktiska utmaningar på Åland, är detta i grunden en detalj inom hälso- och sjukvårdslagstiftningen. Det saknar den bredare politiska, samhälleliga eller autonomi-relevans som motiverar en ledarartikel av Julius Sundblom. Det är ingen fråga om principiella maktförskjutningar eller sedlighetens förfall, snarare en praktisk resursfråga som inte kräver en ledare. [nyhetsvärde 4 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-08-18",
+    "headline": "Han vill flytta Österleden – “Det är nu eller aldrig“",
+    "url": "https://alandsradio.ax/nyheter/han-vill-flytta-osterleden-det-ar-nu-eller-aldrig",
+    "skriv": false,
+    "nyhetsvarde": 3,
+    "tema": "stadsplanering",
+    "anledning": "Smålokal stadsplaneringsfråga utan större politisk, autonom eller samhällelig betydelse. Julius Sundblom skriver inte ledare om enskilda medborgares medborgarinitiativ kring vägflyttningar. [nyhetsvärde 3 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-08-18",
+    "headline": "Svårt att få åländska kräftor på tallriken i år – små kräftor dominerar fångsten",
+    "url": "https://alandsradio.ax/nyheter/svart-att-fa-alandska-kraftor-pa-tallriken-i-ar-sma-kraftor-dominerar-fangsten",
+    "skriv": false,
+    "nyhetsvarde": 2,
+    "tema": "ekonomi, matkultur",
+    "anledning": "Trivial notis om en enskild kräftfiskares upplevelser. Saknar större ekonomisk eller samhällelig betydelse för en ledarartikel. [nyhetsvärde 2 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-08-18",
+    "headline": "Åländsk rekordrusning till macken i Grisslehamn",
+    "url": "https://alandsradio.ax/nyheter/alandsk-rekordrusning-till-macken-i-grisslehamn",
+    "skriv": false,
+    "nyhetsvarde": 2,
+    "tema": "ekonomi/vardagsnotis",
+    "anledning": "Trivial notis om bensinförsäljning. Saknar politisk, samhällelig eller existentiell betydelse för Ålands självstyrelse eller Sundbloms redaktionella värld. Ingen substans för en ledare. [nyhetsvärde 2 < 6]",
+    "fallback": false
   }
 ]
