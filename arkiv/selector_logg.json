@@ -4028,5 +4028,45 @@
     "tema": "ekonomi/vardagsnotis",
     "anledning": "Trivial notis om bensinförsäljning. Saknar politisk, samhällelig eller existentiell betydelse för Ålands självstyrelse eller Sundbloms redaktionella värld. Ingen substans för en ledare. [nyhetsvärde 2 < 6]",
     "fallback": false
+  },
+  {
+    "date": "2026-08-18",
+    "headline": "Del av Hummersövägen stängs av under tisdag och onsdag",
+    "url": "https://alandsradio.ax/nyheter/del-av-hummersovagen-stangs-av-under-tisdag-och-onsdag",
+    "skriv": false,
+    "nyhetsvarde": 1,
+    "tema": "infrastruktur",
+    "anledning": "Trivial, lokal notis om rutinmässigt vägarbete utan större samhällelig eller politisk relevans. Saknar substans för en ledare. [nyhetsvärde 1 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-08-18",
+    "headline": "Stadsarkitekten ser plus och minus med förslaget om Österleden",
+    "url": "https://alandsradio.ax/nyheter/stadsarkitekten-ser-plus-och-minus-med-forslaget-om-osterleden",
+    "skriv": false,
+    "nyhetsvarde": 3,
+    "tema": "lokal infrastruktur",
+    "anledning": "Trivial notis om ett lokalt infrastrukturförslag i Mariehamn. Saknar politisk, ekonomisk eller autonom relevant tyngd för en ledarartikel av Julius Sundblom. För smalt och detaljerat för en bredare redaktionell vinkel. [nyhetsvärde 3 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-08-18",
+    "headline": "Strul med video på alandsradio.ax",
+    "url": "https://alandsradio.ax/nyheter/strul-med-video-pa-alandsradioax",
+    "skriv": false,
+    "nyhetsvarde": 1,
+    "tema": "teknik/drift",
+    "anledning": "Interna driftproblem hos Ålands Radio, varken väsentlig händelse eller med tillräcklig substans för en ledare i Tidningen Åland 1926. [nyhetsvärde 1 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-08-18",
+    "headline": "Räddningsverket ryckte ut till Islandia",
+    "url": "https://alandsradio.ax/nyheter/raddningsverket-ryckte-ut-till-islandia",
+    "skriv": false,
+    "nyhetsvarde": 1,
+    "tema": "lokal notis",
+    "anledning": "Trivial, smålokal notis om ett misstag vid ett rutintest. Saknar politisk, samhällelig, ekonomisk eller kulturell relevans för en ledarartikel. [nyhetsvärde 1 < 6]",
+    "fallback": false
   }
 ]
