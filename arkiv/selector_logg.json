@@ -4068,5 +4068,65 @@
     "tema": "lokal notis",
     "anledning": "Trivial, smålokal notis om ett misstag vid ett rutintest. Saknar politisk, samhällelig, ekonomisk eller kulturell relevans för en ledarartikel. [nyhetsvärde 1 < 6]",
     "fallback": false
+  },
+  {
+    "date": "2026-08-18",
+    "headline": "MCA värderades till 34 000 – säljs nu för över en halv miljon",
+    "url": "https://alandsradio.ax/nyheter/mca-varderades-till-34-000-saljs-nu-for-over-en-halv-miljon",
+    "skriv": false,
+    "nyhetsvarde": 4,
+    "tema": "ekonomi",
+    "anledning": "Intern kommunal affär med viss ekonomisk snedvridning, men inte tillräckligt stor eller principfast för att motivera en ledare av Julius Sundblom 1926. Monopolfrågan är relevant men för begränsad till en enskild lokal affär. [nyhetsvärde 4 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-08-18",
+    "headline": "Enström: Demilitariseringen är inte Moderaternas sak att bestämma över",
+    "url": "https://alandsradio.ax/nyheter/enstrom-demilitariseringen-ar-inte-moderaternas-sak-att-bestamma-over",
+    "skriv": true,
+    "nyhetsvarde": 8,
+    "tema": "självstyrelse, internationell politik",
+    "anledning": "Ämnet om Ålands demilitarisering är av stor vikt för självstyrelsen och den internationella ställningen, särskilt i ljuset av den försämrade säkerheten i Östersjön. En partisekreterares uttalande om att det 'inte är Sveriges sak' att avgöra demilitariseringen är av substantiell politisk vikt och kräver reflektion i en ledarartikel.",
+    "fallback": false
+  },
+  {
+    "date": "2026-08-18",
+    "headline": "Buster på grund vid södra Föglö",
+    "url": "https://alandsradio.ax/nyheter/buster-pa-grund-vid-sodra-foglo",
+    "skriv": false,
+    "nyhetsvarde": 1,
+    "tema": "smånotis",
+    "anledning": "Trivial, lokal notis om grundstötning. Saknar politisk, samhällelig eller ekonomisk relevans för en ledarartikel. Ingen koppling till Julius redaktionella värld. [nyhetsvärde 1 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-08-18",
+    "headline": "Monteiro korsbandsskadad – missar resten av säsongen",
+    "url": "https://alandsradio.ax/nyheter/monteiro-korsbandsskadad-missar-resten-av-sasongen",
+    "skriv": false,
+    "nyhetsvarde": 1,
+    "tema": "sport",
+    "anledning": "Ren sportresultat-rapportering om fotbollsskada, ingen redaktionell vinkel för 1926 års ledarartikel. [nyhetsvärde 1 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-08-18",
+    "headline": "Färjsunds farled fördjupas",
+    "url": "https://alandsradio.ax/nyheter/farjsunds-farled-fordjupas",
+    "skriv": false,
+    "nyhetsvarde": 2,
+    "tema": "infrastruktur",
+    "anledning": "Rutinåtgärd för farledsfördjupning är för obetydlig. Saknar politisk, samhällelig eller ekonomisk konflikt/beslut av större relevans för ledarartikel. [nyhetsvärde 2 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-08-18",
+    "headline": "ÅMHM förbjuder bad vid Mariebads badstrand",
+    "url": "https://alandsradio.ax/nyheter/amhm-forbjuder-bad-vid-mariebads-badstrand1",
+    "skriv": false,
+    "nyhetsvarde": 2,
+    "tema": "lokala_smånotiser",
+    "anledning": "Trivial, lokal notis om badvattenkvalitet. Saknar koppling till större samhällsfrågor, politik, ekonomi eller autonomi. För obetydlig för en ledare av Julius Sundblom. [nyhetsvärde 2 < 6]",
+    "fallback": false
   }
 ]
