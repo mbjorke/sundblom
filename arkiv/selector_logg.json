@@ -4298,5 +4298,25 @@
     "tema": "rättvisa och autonomi",
     "anledning": "Allvarliga fel inom rättskipningen på Åland, med inblandning av domare och åklagare. Detta kan äventyra rättsskyddet och förtroendet för det åländska rättssystemet, vilket direkt berör autonomins funktion och dess anseende. Det finns tillräckligt med substans för en ledare om vikten av en korrekt rättsskipning och autonomins ansvarsområden.",
     "fallback": false
+  },
+  {
+    "date": "2026-08-19",
+    "headline": "Zetterman vill inte bli Liberalernas nya ordförande",
+    "url": "https://alandsradio.ax/nyheter/zetterman-vill-inte-bli-liberalernas-nya-ordforande",
+    "skriv": false,
+    "nyhetsvarde": 3,
+    "tema": "partipolitik",
+    "anledning": "Intern partifråga utan direkt koppling till större samhällsfrågor eller autonomi, och saknar konflikt eller beslut av vikt för en ledare. [nyhetsvärde 3 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-08-19",
+    "headline": "Hårda anklagelser om upphandlingen av skärgårdstrafiken",
+    "url": "https://alandsradio.ax/nyheter/konkurrens-kring-skargardstrafiken",
+    "skriv": true,
+    "nyhetsvarde": 8,
+    "tema": "autonomi, ekonomi, rättvisa",
+    "anledning": "Stora ekonomiska värden och anklagelser om bristande konkurrensutsättning samt transparens i en upphandling som rör den åländska infrastrukturen. Detta rör direkt självstyrelsen och den ekonomiska förvaltningen, vilket är centralt för Julius.",
+    "fallback": false
   }
 ]
