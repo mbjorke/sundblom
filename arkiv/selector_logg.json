@@ -4188,5 +4188,75 @@
     "tema": "ekonomi/bostäder",
     "anledning": "Trivial notis om bostadsbyggnation utan större politisk, samhällelig eller autonomirelevant vinkel. Saknar substans för en ledare. [nyhetsvärde 3 < 6]",
     "fallback": false
+  },
+  {
+    "date": "2026-08-19",
+    "headline": "Narkotika för 450 000 euro gömdes i lastbil – chaufför åtalas",
+    "url": "https://alandsradio.ax/nyheter/narkotika-for-450-000-euro-gomdes-i-lastbil-chauffor-atalas",
+    "skriv": true,
+    "nyhetsvarde": 7,
+    "tema": "sedlighet och rättvisa",
+    "anledning": "Stort narkotikabeslag med internationella förgreningar pekar på modernitetens förfall och undergräver samhällsordningen, vilket är ett viktigt ämne för en ledare.",
+    "fallback": false
+  },
+  {
+    "date": "2026-08-19",
+    "headline": "Ägg återkallas – salmonella konstaterades på hönseri",
+    "url": "https://alandsradio.ax/nyheter/agg-aterkallas-salmonella-konstaterades-pa-honseri",
+    "skriv": false,
+    "nyhetsvarde": 2,
+    "tema": "ekonomi",
+    "anledning": "Trivial notis om återkallade ägg. Saknar koppling till Ålands större frågor. För obetydligt för en ledare av Julius Sundblom. [nyhetsvärde 2 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-08-19",
+    "headline": "Intressant fiskfynd gjordes i Vargata träsk",
+    "url": "https://alandsradio.ax/nyheter/intressant-fiskfynd-gjordes-i-vargata-trask",
+    "skriv": false,
+    "nyhetsvarde": 2,
+    "tema": "naturvetenskap",
+    "anledning": "Trivial notis om ett fiskfynd. Saknar politisk, samhällelig eller ekonomisk relevans för en ledare. [nyhetsvärde 2 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-08-19",
+    "headline": "Lemlands elever återvände till skolan – tre klasser flyttar in i baracker",
+    "url": "https://alandsradio.ax/nyheter/lemlands-elever-atervande-till-skolan-tre-klasser-flyttar-in-i-baracker",
+    "skriv": false,
+    "nyhetsvarde": 3,
+    "tema": "lokal förvaltning",
+    "anledning": "En smålokal notis om en rutinåtgärd (skolstart) och ett relativt litet lokalt problem (mögel i skola) som hanteras. Saknar bredare politisk eller samhällelig relevans för en ledare. [nyhetsvärde 3 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-08-19",
+    "headline": "Åländske Elvis med i dokumentär på Svenska Yle",
+    "url": "https://alandsradio.ax/nyheter/alandske-elvis-med-i-dokumentar-pa-svenska-yle",
+    "skriv": false,
+    "nyhetsvarde": 2,
+    "tema": "kultur",
+    "anledning": "Personnotis om ett populärkulturellt intresse. Saknar politisk, samhällelig eller autonomirelevant vinkel. För trivialt för en ledare. [nyhetsvärde 2 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-08-19",
+    "headline": "Bättre högsäsong för hotellen – liten ökning av övernattningar i juli",
+    "url": "https://alandsradio.ax/nyheter/battre-hogsasong-for-hotellen-liten-okning-av-overnattningar-i-juli",
+    "skriv": false,
+    "nyhetsvarde": 4,
+    "tema": "ekonomi",
+    "anledning": "Det är en rutinmässig ekonomisk rapport om turismen, utan större kontroverser, politiska implikationer eller djupare samhällsanalys som motiverar en ledarartikel av Julius Sundblom. Ingen substans för ledare. [nyhetsvärde 4 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-08-19",
+    "headline": "Ålands projektkör tar sig an Svensktoppen – i nytt ljus",
+    "url": "https://alandsradio.ax/nyheter/alands-projektkor-tar-sig-an-svensktoppen-i-nytt-ljus",
+    "skriv": false,
+    "nyhetsvarde": 1,
+    "tema": "kultur",
+    "anledning": "Kulturell notis utan större betydelse för ledarsida år 1926. Saknar politisk eller samhällelig relevans för Julius Sundblom. [nyhetsvärde 1 < 6]",
+    "fallback": false
   }
 ]
