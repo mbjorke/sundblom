@@ -4128,5 +4128,65 @@
     "tema": "lokala_smånotiser",
     "anledning": "Trivial, lokal notis om badvattenkvalitet. Saknar koppling till större samhällsfrågor, politik, ekonomi eller autonomi. För obetydlig för en ledare av Julius Sundblom. [nyhetsvärde 2 < 6]",
     "fallback": false
+  },
+  {
+    "date": "2026-08-19",
+    "headline": "Moped och bil krockade i rondell",
+    "url": "https://alandsradio.ax/nyheter/moped-och-bil-krockade-i-rondell",
+    "skriv": false,
+    "nyhetsvarde": 1,
+    "tema": "lokal notis",
+    "anledning": "Trivial, smålokal notis utan större betydelse, saknar koppling till Julius redaktionella värld och saknar substans för en ledare. [nyhetsvärde 1 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-08-19",
+    "headline": "Ålands projektkör tar sig an dansband som nästa projekt",
+    "url": "https://alandsradio.ax/nyheter/alands-projektkor-tar-sig-an-dansband-som-nasta-projekt",
+    "skriv": false,
+    "nyhetsvarde": 1,
+    "tema": "kultur, underhållning",
+    "anledning": "Trivial notis om ett framtida körprojekt. Saknar relevans för politiska, samhälleliga eller ekonomiska frågor av betydelse 1926. Ingen substans för en ledarartikel av Julius Sundblom. [nyhetsvärde 1 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-08-19",
+    "headline": "Bärplansbåt som besökt Åland får problem i Stockholms skärgårdstrafik",
+    "url": "https://alandsradio.ax/nyheter/barplansbat-som-besokt-aland-far-problem-i-stockholms-skargardstrafik",
+    "skriv": false,
+    "nyhetsvarde": 2,
+    "tema": "teknik/lokal anknytning",
+    "anledning": "Tekniska problem med en båt som tidigare besökt Åland är en trivial notis, inte av vikt för en ledarartikel av Julius Sundblom. Ingen koppling till autonomi, politik, samhällsordning eller sedlighet. [nyhetsvärde 2 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-08-19",
+    "headline": "Dyrare transporter drev på inflationen",
+    "url": "https://alandsradio.ax/nyheter/dyrare-transporter-drev-pa-inflationen",
+    "skriv": false,
+    "nyhetsvarde": 3,
+    "tema": "ekonomi",
+    "anledning": "Standardmässig inflationsrapportering. Även om ekonomi är relevant saknas det agerande, konflikt eller specifika åländska särdrag som motiverar en ledarartikel av Sundblom. Det är mer en statistisk notis än en händelse att analysera djupt. [nyhetsvärde 3 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-08-19",
+    "headline": "Nordisk hydrologikonferens pågår i Mariehamn",
+    "url": "https://alandsradio.ax/nyheter/nordisk-hydrologikonferens-pagar-i-mariehamn",
+    "skriv": false,
+    "nyhetsvarde": 3,
+    "tema": "vetenskaplig konferens",
+    "anledning": "Ämnet hydrologi är för specialistinriktat och saknar direkt koppling till Julius Sundbloms redaktionella teman år 1926. Trots att den hålls på Åland, är det en rutinmässig vetenskaplig konferens utan tillräcklig substans för en ledarartikel. [nyhetsvärde 3 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-08-19",
+    "headline": "Bostadsområdet Piloten siktar på 100 små hyreslägenheter",
+    "url": "https://alandsradio.ax/nyheter/bostadsomradet-piloten-siktar-pa-100-sma-hyreslagenheter",
+    "skriv": false,
+    "nyhetsvarde": 3,
+    "tema": "ekonomi/bostäder",
+    "anledning": "Trivial notis om bostadsbyggnation utan större politisk, samhällelig eller autonomirelevant vinkel. Saknar substans för en ledare. [nyhetsvärde 3 < 6]",
+    "fallback": false
   }
 ]
