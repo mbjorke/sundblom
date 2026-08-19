@@ -4258,5 +4258,45 @@
     "tema": "kultur",
     "anledning": "Kulturell notis utan större betydelse för ledarsida år 1926. Saknar politisk eller samhällelig relevans för Julius Sundblom. [nyhetsvärde 1 < 6]",
     "fallback": false
+  },
+  {
+    "date": "2026-08-19",
+    "headline": "Rom Mendel slutar som vd för Optinova",
+    "url": "https://alandsradio.ax/nyheter/rom-mendel-slutar-som-vd-for-optinova",
+    "skriv": false,
+    "nyhetsvarde": 2,
+    "tema": "ekonomi",
+    "anledning": "En enskild VD-avslutning är en rutinmässig företagsnyhet och saknar den politiska eller samhälleliga tyngden för en ledarartikel av Sundblom. Det finns ingen konflikt, kontrovers eller större åländsk autonomi- eller samhällsrelevans. [nyhetsvärde 2 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-08-19",
+    "headline": "Två krockar i samma rondell på onsdagen",
+    "url": "https://alandsradio.ax/nyheter/tva-krockar-i-samma-rondell-pa-onsdagen",
+    "skriv": false,
+    "nyhetsvarde": 2,
+    "tema": "trafik",
+    "anledning": "Trivial notis om trafikolyckor, saknar politisk, samhällelig eller autonomisk relevans för en ledare. Ingen koppling till Julius redaktionella värld. [nyhetsvärde 2 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-08-19",
+    "headline": "Ålcom avfärdar oron: ”Jag ser inte monopolet som något dåligt”",
+    "url": "https://alandsradio.ax/nyheter/alcom-avfardar-oron-jag-ser-inte-monopolet-som-nagot-daligt",
+    "skriv": false,
+    "nyhetsvarde": 4,
+    "tema": "ekonomi",
+    "anledning": "Även om det rör ekonomi och potentiell monopolställning, är detta en modern företeelse (telekommunikation/TV) och saknar direkt koppling till Julius Sundbloms kärnämnen som autonomi, svensk identitet på det sätt han skulle tolka det, eller klass- och samhällsordning i traditionell mening. Det är för specifikt och modernt för att rymmas i hans redaktionella värld 1926. Monopolfrågan är visserligen en substantiell fråga, men kontexten är fel för en ledare 1926. [nyhetsvärde 4 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-08-19",
+    "headline": "Domare får anmärkning av biträdande JK – menar att även åklagare gjort fel",
+    "url": "https://alandsradio.ax/nyheter/domare-far-anmarkning-av-bitradande-jk-menar-att-aven-aklagare-gjort-fel",
+    "skriv": true,
+    "nyhetsvarde": 8,
+    "tema": "rättvisa och autonomi",
+    "anledning": "Allvarliga fel inom rättskipningen på Åland, med inblandning av domare och åklagare. Detta kan äventyra rättsskyddet och förtroendet för det åländska rättssystemet, vilket direkt berör autonomins funktion och dess anseende. Det finns tillräckligt med substans för en ledare om vikten av en korrekt rättsskipning och autonomins ansvarsområden.",
+    "fallback": false
   }
 ]
