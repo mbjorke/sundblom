@@ -4468,5 +4468,15 @@
     "tema": "internationella relationer",
     "anledning": "Trivial notis om rutinåtgärd för svenskar på Åland. Saknar större politisk eller samhällelig relevans för Åland utöver att vara en servicefråga för en liten grupp. För obetydlig för en ledare. [nyhetsvärde 3 < 6]",
     "fallback": false
+  },
+  {
+    "date": "2026-08-20",
+    "headline": "Stadsstyrelsen godkände MCA-försäljningen enhälligt",
+    "url": "https://alandsradio.ax/nyheter/stadsstyrelsen-godkande-mca-forsaljningen-enhalligt",
+    "skriv": false,
+    "nyhetsvarde": 4,
+    "tema": "ekonomi",
+    "anledning": "Lokal ekonomisk notis utan direkt koppling till större autonomifrågor eller Julius Sundbloms kärnämnen. Beslutet är redan fattat och enhälligt, vilket minskar potentialen för en kritisk ledare. För lite substans för att motivera en ledare. [nyhetsvärde 4 < 6]",
+    "fallback": false
   }
 ]
