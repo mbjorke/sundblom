@@ -4348,5 +4348,35 @@
     "tema": "svensk identitet",
     "anledning": "Frågan om svenskspråkig vård i Finland är central för den åländska identiteten och rätten till modersmål. Rapporter om brister i språkrättigheter är alltid relevanta för Julius Sundblom.",
     "fallback": false
+  },
+  {
+    "date": "2026-08-20",
+    "headline": "Nordiska ledare möts – Sjögren lyfter Ålands beredskap",
+    "url": "https://alandsradio.ax/nyheter/nordiska-ledare-mots-sjogren-lyfter-alands-beredskap",
+    "skriv": true,
+    "nyhetsvarde": 8,
+    "tema": "självstyrelse",
+    "anledning": "Nyheten berör både Ålands ställning i Norden (Helsingforsavtalet) och dess bidrag till civil beredskap, vilket har både rikspolitisk och autonom relevans. Diskussionen om de självstyrande områdenas ställning i nordiskt samarbete är direkt relevant för Ålands autonomi och identitet. Det finns tillräckligt med substans i Sjögrens uttalanden för en ledarartikel.",
+    "fallback": false
+  },
+  {
+    "date": "2026-08-20",
+    "headline": "Onödiga fastigheter bör avvecklas, säger Kim Lehto, vd för Mariehamns fastighets",
+    "url": "https://alandsradio.ax/nyheter/onodiga-fastigheter-bor-avvecklas-sager-kim-lehto-vd-for-mariehamns-fastighetsverk",
+    "skriv": false,
+    "nyhetsvarde": 4,
+    "tema": "ekonomi",
+    "anledning": "Intern omorganisation och effektiviseringssträvanden inom Mariehamns stad, utan direkt koppling till självstyrelsen eller större samhällsfrågor. För tunnt för en ledare. [nyhetsvärde 4 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-08-20",
+    "headline": "Hovrätten ger dömd förman på äldreboende fortsatt prövning",
+    "url": "https://alandsradio.ax/nyheter/hovratten-ger-domd-forman-pa-aldreboende-fortsatt-provning",
+    "skriv": false,
+    "nyhetsvarde": 4,
+    "tema": "rättvisa",
+    "anledning": "Även om det rör rättvisa och tjänsteplikt, är detta en detaljerad processrättslig fråga om enskilt fall utan bredare samhällelig eller autonomirelevant vinkel. För obetydligt för en ledare. [nyhetsvärde 4 < 6]",
+    "fallback": false
   }
 ]
