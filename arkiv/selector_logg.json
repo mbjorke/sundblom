@@ -4318,5 +4318,35 @@
     "tema": "autonomi, ekonomi, rättvisa",
     "anledning": "Stora ekonomiska värden och anklagelser om bristande konkurrensutsättning samt transparens i en upphandling som rör den åländska infrastrukturen. Detta rör direkt självstyrelsen och den ekonomiska förvaltningen, vilket är centralt för Julius.",
     "fallback": false
+  },
+  {
+    "date": "2026-08-20",
+    "headline": "Vattenavstängning på västra Åland på torsdagen",
+    "url": "https://alandsradio.ax/nyheter/vattenavstangning-pa-vastra-aland-pa-torsdagen",
+    "skriv": false,
+    "nyhetsvarde": 1,
+    "tema": "infrastruktur",
+    "anledning": "Trivial, lokal notis om en rutinmässig reparation av vattenledning. Saknar större politisk, samhällelig eller existentiell betydelse för en ledare. [nyhetsvärde 1 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-08-20",
+    "headline": "Fler rörde sig i Mariehamns centrum i sommar",
+    "url": "https://alandsradio.ax/nyheter/fler-rorde-sig-i-mariehamns-centrum-i-sommar",
+    "skriv": false,
+    "nyhetsvarde": 2,
+    "tema": "ekonomi",
+    "anledning": "Trivial notis om besöksstatistik. Saknar djupare ekonomisk eller samhällelig substans för en ledare.  Ingen politisk konflikt eller autonomirelevans. [nyhetsvärde 2 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-08-20",
+    "headline": "Överläkare bedömer: Bättre möjligheter till vård på svenska i Åbo än i Helsingfo",
+    "url": "https://alandsradio.ax/nyheter/overlakare-bedomer-battre-mojligheter-till-vard-pa-svenska-i-abo-an-i-helsingfors",
+    "skriv": true,
+    "nyhetsvarde": 7,
+    "tema": "svensk identitet",
+    "anledning": "Frågan om svenskspråkig vård i Finland är central för den åländska identiteten och rätten till modersmål. Rapporter om brister i språkrättigheter är alltid relevanta för Julius Sundblom.",
+    "fallback": false
   }
 ]
