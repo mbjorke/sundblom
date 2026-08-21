@@ -4478,5 +4478,55 @@
     "tema": "ekonomi",
     "anledning": "Lokal ekonomisk notis utan direkt koppling till större autonomifrågor eller Julius Sundbloms kärnämnen. Beslutet är redan fattat och enhälligt, vilket minskar potentialen för en kritisk ledare. För lite substans för att motivera en ledare. [nyhetsvärde 4 < 6]",
     "fallback": false
+  },
+  {
+    "date": "2026-08-21",
+    "headline": "Bekräftat mässlingsfall på Åland",
+    "url": "https://alandsradio.ax/nyheter/bekraftat-masslingsfall-pa-aland",
+    "skriv": false,
+    "nyhetsvarde": 3,
+    "tema": "hälsa",
+    "anledning": "Viktig information, men inte tillräckligt för en ledarartikel av Julius Sundblom. Det är en ren faktabaserad hälsonyhet med uppmaningar, inte en fråga om politik, samhällsordning eller autonomi. [nyhetsvärde 3 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-08-21",
+    "headline": "Ålands Radio sänder från Sottunga",
+    "url": "https://alandsradio.ax/nyheter/alands-radio-sander-fran-sottunga",
+    "skriv": false,
+    "nyhetsvarde": 1,
+    "tema": "lokal notis",
+    "anledning": "Trivial, renodlad lokal notis om en radiosändning från en kommun. Saknar substans för en ledarartikel. [nyhetsvärde 1 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-08-21",
+    "headline": "Wikström frågar om skärgårdsupphandlingen: Räcker en anbudsgivare?",
+    "url": "https://alandsradio.ax/nyheter/wikstrom-fragar-om-skargardsupphandlingen-racker-en-anbudsgivare",
+    "skriv": false,
+    "nyhetsvarde": 4,
+    "tema": "ekonomi",
+    "anledning": "Även om det rör ekonomi och potentiella missförhållanden, är detta en nyhet från 2024 om en lagtingsledamots fråga, inte ett beslut eller en faktisk konflikt av den dignitet Julius skulle bedöma som en ledarartikel 1926. Den är för modern och den konkreta substansen, utöver Wikströms åsikt, är begränsad. [nyhetsvärde 4 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-08-21",
+    "headline": "S:t Görans kyrka får nytt liv inför hundraårsdagen",
+    "url": "https://alandsradio.ax/nyheter/st-gorans-kyrka-far-nytt-liv-infor-hundraarsdagen",
+    "skriv": false,
+    "nyhetsvarde": 3,
+    "tema": "lokal notis",
+    "anledning": "Renovering av kyrka är en rutinåtgärd av lokal karaktär utan större politisk, samhällelig eller existentiell bäring för en ledarartikel. [nyhetsvärde 3 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-08-21",
+    "headline": "Sjukhuskaféet får ny regi – Svarta katten tar över",
+    "url": "https://alandsradio.ax/nyheter/sjukhuskafeet-far-ny-regi-svarta-katten-tar-over",
+    "skriv": false,
+    "nyhetsvarde": 1,
+    "tema": "ekonomi",
+    "anledning": "Trivial lokal notis om kaféverksamhet, saknar större samhällelig eller politisk relevans. Inget för en ledarartikel av Julius Sundblom. [nyhetsvärde 1 < 6]",
+    "fallback": false
   }
 ]
