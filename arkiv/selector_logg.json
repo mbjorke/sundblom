@@ -4608,5 +4608,85 @@
     "tema": "hälsa",
     "anledning": "En enskild, lindrig sjukdomsnotis med rutinmässiga hälsoinstruktioner är inte av den dignitet att Julius skulle skriva en ledare om det. Det saknar koppling till centrala ledarteman som autonomi, samhällsordning eller större politiska skeenden. [nyhetsvärde 2 < 6]",
     "fallback": false
+  },
+  {
+    "date": "2026-08-21",
+    "headline": "Panel: Åland förlorar i äkthet ju fler AI-bilder som används",
+    "url": "https://alandsradio.ax/nyheter/panel-aland-forlorar-i-akthet-ju-fler-ai-bilder-som-anvands",
+    "skriv": false,
+    "nyhetsvarde": 3,
+    "tema": "modernitetens förfall",
+    "anledning": "Ämnet är för nischat och handlar om en teknisk utveckling som ännu inte har den samhällspolitiska tyngden 1926. Julius skulle se det som en modernitetens nyckfullhet snarare än ett ämne för en ledarartikel. [nyhetsvärde 3 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-08-21",
+    "headline": "Risken för spridning av mässling är liten men inte obefintlig",
+    "url": "https://alandsradio.ax/nyheter/risken-for-spridning-av-massling-ar-liten-men-inte-obefintlig",
+    "skriv": false,
+    "nyhetsvarde": 2,
+    "tema": "hälsa",
+    "anledning": "Tunn notis om folkhälsa utan större politisk, samhällelig eller sedlig bäring för en ledare. Ingen konflikt eller beslut som kräver Julius Sundbloms penna. [nyhetsvärde 2 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-08-21",
+    "headline": "Tröska fattade eld och orsakade markbrand",
+    "url": "https://alandsradio.ax/nyheter/troska-fattade-eld-och-orsakade-markbrand",
+    "skriv": false,
+    "nyhetsvarde": 2,
+    "tema": "smånotis",
+    "anledning": "Trivial, lokal notis om en olycka. Saknar koppling till större samhällsfrågor, politik eller autonomi. För lite substans för en ledare. [nyhetsvärde 2 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-08-21",
+    "headline": "Mässlingssmittad åkte anslutningsbuss från Berghamn till Ålandsplan",
+    "url": "https://alandsradio.ax/nyheter/masslingssmittad-akte-anslutningsbuss-fran-berghamn-till-alandsplan",
+    "skriv": false,
+    "nyhetsvarde": 2,
+    "tema": "hälsa",
+    "anledning": "Trivial notis om en enskild smittspridningshändelse, saknar större samhällelig eller politisk relevans. För lite substans för en ledare. [nyhetsvärde 2 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-08-21",
+    "headline": "Vad ska det kosta att kissa? Stadsnämnd tar ställning på måndag",
+    "url": "https://alandsradio.ax/nyheter/vad-ska-det-kosta-att-kissa-stadsnamnd-tar-stallning-pa-mandag",
+    "skriv": false,
+    "nyhetsvarde": 2,
+    "tema": "lokal förvaltning",
+    "anledning": "Trivial notis om avgifter för offentliga toaletter i Mariehamn. Saknar koppling till större politiska, samhälleliga eller autonomifrågor som Julius Sundblom skulle finna värdiga en ledare. För smålokal och administrativt specifik. [nyhetsvärde 2 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-08-21",
+    "headline": "Sottunga håller ställningarna – 80 invånare ses som kritisk gräns",
+    "url": "https://alandsradio.ax/nyheter/sottunga-haller-stallningarna-80-invanare-ses-som-kritisk-grans",
+    "skriv": false,
+    "nyhetsvarde": 4,
+    "tema": "småskalig kommunal utveckling",
+    "anledning": "Småskalig lokalnyhet om en enskild kommuns demografi och ekonomi, utan direkt koppling till större autonomifrågor eller rikspolitik. För specifik och begränsad för en ledarartikel av Julius Sundblom. [nyhetsvärde 4 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-08-21",
+    "headline": "Hälften av trafiken via Åland dras in i januari",
+    "url": "https://alandsradio.ax/nyheter/halften-av-trafiken-via-aland-dras-in-i-januari",
+    "skriv": false,
+    "nyhetsvarde": 4,
+    "tema": "ekonomi",
+    "anledning": "Rutinmässiga dockningar av fartyg är en förutsägbar händelse inom sjöfarten. Även om det påverkar resenärer och den lokala ekonomin tillfälligt, saknar det den politiska eller samhälleliga tyngd som motiverar en ledarartikel av Sundblom. Det är ingen kris eller principfråga, utan snarare en praktisk logistisk utmaning. [nyhetsvärde 4 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-08-21",
+    "headline": "Passbåtsskepparen fick barnbarn och ser fram emot att återuppta skoltransportern",
+    "url": "https://alandsradio.ax/nyheter/passbatsskepparen-fick-barnbarn-och-ser-fram-emot-att-ateruppta-skoltransporterna-till-kokar",
+    "skriv": false,
+    "nyhetsvarde": 2,
+    "tema": "personnotis",
+    "anledning": "En personlig notis om en passbåtsskeppare som fått barnbarn och kommenterar allmänt om skärgårdstrafiken. Inget konkret beslut, konflikt eller problem som kräver en ledare. För obetydligt för Julius redaktionella värld. [nyhetsvärde 2 < 6]",
+    "fallback": false
   }
 ]
