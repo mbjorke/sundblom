@@ -4528,5 +4528,85 @@
     "tema": "ekonomi",
     "anledning": "Trivial lokal notis om kaféverksamhet, saknar större samhällelig eller politisk relevans. Inget för en ledarartikel av Julius Sundblom. [nyhetsvärde 1 < 6]",
     "fallback": false
+  },
+  {
+    "date": "2026-08-21",
+    "headline": "Bifafastigheten kan bli Strandnäs FBK:s nya station",
+    "url": "https://alandsradio.ax/nyheter/bifafastigheten-kan-bli-strandnas-fbks-nya-station",
+    "skriv": false,
+    "nyhetsvarde": 3,
+    "tema": "småkommunal förvaltning",
+    "anledning": "Trivial notis om en lokal fastighetsaffär och brandkårens lokaler. Saknar den bredare samhälls-, autonomi- eller rikspolitiska relevansen som Julius Sundblom söker för en ledarartikel. För detaljerad och smålokal för att kunna lyftas till en ledare. [nyhetsvärde 3 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-08-21",
+    "headline": "Nio elever i Sottunga skola – samarbete med Föglö återupptas",
+    "url": "https://alandsradio.ax/nyheter/nio-elever-i-sottunga-skola-samarbete-med-foglo-aterupptas",
+    "skriv": false,
+    "nyhetsvarde": 2,
+    "tema": "lokal notis",
+    "anledning": "Trivial lokal notis om elevantal och samarbete, saknar större politisk eller samhällelig bäring för en ledarartikel. Julius skulle inte finna substans nog för en ledare. [nyhetsvärde 2 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-08-21",
+    "headline": "Rederierna inväntar instruktioner – fick reda på mässlingsfallet samtidigt som a",
+    "url": "https://alandsradio.ax/nyheter/rederierna-invantar-instruktioner-fick-reda-pa-masslingsfallet-samtidigt-som-allmanheten",
+    "skriv": false,
+    "nyhetsvarde": 3,
+    "tema": "hälsa",
+    "anledning": "Även om det handlar om folkhälsa, är detta en enstaka notis om ett mässlingsfall, med låg smittorisk bedömd av myndigheter. Det saknas en tydlig koppling till bredare teman som autonomi, samhällsordning eller modernitetens förfall som Julius Sundblom skulle kunna engagera sig i för en ledare. Det är mer en rutininformation än en principiell fråga. [nyhetsvärde 3 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-08-21",
+    "headline": "Ryskt plan misstänks ha kränkt finländskt luftrum sydost om Kökar",
+    "url": "https://alandsradio.ax/nyheter/ryskt-plan-misstanks-ha-krankt-finlandskt-luftrum-sydost-om-kokar",
+    "skriv": true,
+    "nyhetsvarde": 9,
+    "tema": "Sverige/Finland/Ryssland",
+    "anledning": "En rysk luftrumskränkning i omedelbar närhet till Åland är av yttersta vikt med tanke på Ålands demilitariserade status och relationerna mellan Finland, Sverige och Ryssland. Detta hotar den regionala stabiliteten och kräver en ledare som behandlar autonomins säkerhetsimplikationer.",
+    "fallback": false
+  },
+  {
+    "date": "2026-08-21",
+    "headline": "THL: Åland har sämre skydd mot mässling",
+    "url": "https://alandsradio.ax/nyheter/thl-aland-har-samre-skydd-mot-massling",
+    "skriv": false,
+    "nyhetsvarde": 3,
+    "tema": "hälsa",
+    "anledning": "Hälsonotis av smålokal karaktär. Visserligen nationell myndighet inblandad, men situationen bedöms inte som allvarlig, ingen konflikt eller större samhällelig implikation att skriva en ledare om. Vaccinationstäckningen är ett faktum snarare än en fråga för Sundbloms ledarpenna, som sällan ägnar sig åt rena medicinska fakta utan samhällelig koppling. [nyhetsvärde 3 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-08-21",
+    "headline": "Mats Lindman ny vd för Dahlmans",
+    "url": "https://alandsradio.ax/nyheter/mats-lindman-ny-vd-for-dahlmans",
+    "skriv": false,
+    "nyhetsvarde": 2,
+    "tema": "ekonomi",
+    "anledning": "Intern rutinåtgärd i ett privat företag, saknar bredare samhällelig eller politisk relevans för en ledarartikel av Julius Sundblom. Ingen substans för en värdig ledare. [nyhetsvärde 2 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-08-21",
+    "headline": "LR ersätter församling med 220 000 euro för fredning av naturreservat",
+    "url": "https://alandsradio.ax/nyheter/lr-ersatter-forsamling-med-220-000-euro-for-fredning-av-naturreservat",
+    "skriv": true,
+    "nyhetsvarde": 7,
+    "tema": "autonomi, egendom, ekonomi",
+    "anledning": "Frågan om äganderätt och ersättning för inskränkningar är central för Julius Sundblom, särskilt när det gäller förvaltningen av landskapet och dess resurser. Landskapsregeringens agerande i fredningsfrågan och ersättningens storlek, baserad på skogsvärdering och Skatteförvaltningens bedömning, kan tolkas som en viktig aspekt av den åländska självstyrelsens praktiska utövande och dess förmåga att reglera egendom och mark. Det berör även balansen mellan det allmänna intresset (naturvård) och enskilda/institutionella äganderätter. Detta ger substans för en ledare om autonomins räckvidd och ansvarsutkrävande.",
+    "fallback": false
+  },
+  {
+    "date": "2026-08-21",
+    "headline": "Chefsöverläkaren: Lindrigt mässlingsfall, vårdas i hemmet",
+    "url": "https://alandsradio.ax/nyheter/chefsoverlakaren-lindrigt-masslingsfall-vardas-i-hemmet",
+    "skriv": false,
+    "nyhetsvarde": 2,
+    "tema": "hälsa",
+    "anledning": "En enskild, lindrig sjukdomsnotis med rutinmässiga hälsoinstruktioner är inte av den dignitet att Julius skulle skriva en ledare om det. Det saknar koppling till centrala ledarteman som autonomi, samhällsordning eller större politiska skeenden. [nyhetsvärde 2 < 6]",
+    "fallback": false
   }
 ]
