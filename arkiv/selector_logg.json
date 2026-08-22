@@ -4698,5 +4698,15 @@
     "tema": "kommunal förvaltning",
     "anledning": "För lokal och specifik för att motivera en ledarartikel. Även om det rör förvaltning och ekonomi, saknar det den större principiella eller autonomirelaterade dignitet Julius söker. Det är en intern kommunal angelägenhet i Eckerö. [nyhetsvärde 3 < 6]",
     "fallback": false
+  },
+  {
+    "date": "2026-08-22",
+    "headline": "Modern sjömansvisa om att mista någon till havs – Bromander släpper singeln Härj",
+    "url": "https://alandsradio.ax/nyheter/modern-sjomansvisa-om-att-mista-nagon-till-havs-bromander-slapper-singeln-harjande-hav",
+    "skriv": false,
+    "nyhetsvarde": 1,
+    "tema": "kultur/musik",
+    "anledning": "Modern musiknotis, inte tillräckligt relevant för Julius redaktionella värld 1926. Saknar politisk eller samhällelig bäring. [nyhetsvärde 1 < 6]",
+    "fallback": false
   }
 ]
