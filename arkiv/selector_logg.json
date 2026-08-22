@@ -4688,5 +4688,15 @@
     "tema": "personnotis",
     "anledning": "En personlig notis om en passbåtsskeppare som fått barnbarn och kommenterar allmänt om skärgårdstrafiken. Inget konkret beslut, konflikt eller problem som kräver en ledare. För obetydligt för Julius redaktionella värld. [nyhetsvärde 2 < 6]",
     "fallback": false
+  },
+  {
+    "date": "2026-08-22",
+    "headline": "Många arbetsgrupper i Eckerö får kritik av revisorer",
+    "url": "https://alandsradio.ax/nyheter/manga-arbetsgrupper-i-eckero-far-kritik-av-revisorer",
+    "skriv": false,
+    "nyhetsvarde": 3,
+    "tema": "kommunal förvaltning",
+    "anledning": "För lokal och specifik för att motivera en ledarartikel. Även om det rör förvaltning och ekonomi, saknar det den större principiella eller autonomirelaterade dignitet Julius söker. Det är en intern kommunal angelägenhet i Eckerö. [nyhetsvärde 3 < 6]",
+    "fallback": false
   }
 ]
