@@ -4708,5 +4708,15 @@
     "tema": "kultur/musik",
     "anledning": "Modern musiknotis, inte tillräckligt relevant för Julius redaktionella värld 1926. Saknar politisk eller samhällelig bäring. [nyhetsvärde 1 < 6]",
     "fallback": false
+  },
+  {
+    "date": "2026-08-22",
+    "headline": "Skarven transporterar bränsle på måndag",
+    "url": "https://alandsradio.ax/nyheter/skarven-transporterar-bransle-pa-mandag",
+    "skriv": false,
+    "nyhetsvarde": 1,
+    "tema": "infrastruktur/logistik",
+    "anledning": "Rutininformation om en specifik transport. Ingen politisk, samhällelig eller autonomirelevant vinkel. För trivial för en ledare. [nyhetsvärde 1 < 6]",
+    "fallback": false
   }
 ]
