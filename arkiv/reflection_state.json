@@ -1,12 +1,14 @@
 {
-  "last_date": "2026-07-31",
+  "last_date": "2026-08-23",
   "last_mode": "iakttagelse",
-  "last_focus": "sommar, Åland",
+  "last_focus": "sensommar på landsbygden, skörd och eftertanke",
   "recent_modes": [
+    "iakttagelse",
     "iakttagelse"
   ],
   "recent_themes": [],
   "revisited_ids": [
-    "2026-05-28-landskapet-varnar-for-hal-vagbana-efter-oljespill.json"
+    "2026-05-28-landskapet-varnar-for-hal-vagbana-efter-oljespill.json",
+    "2026-07-14-ghanansk-forsvarare-klar-for-ifk-mariehamn.json"
   ]
 }
