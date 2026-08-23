@@ -4728,5 +4728,35 @@
     "tema": "kultur",
     "anledning": "Trivial notis om författarbesök. Saknar politisk, samhällelig eller ekonomisk relevans för en ledare. [nyhetsvärde 2 < 6]",
     "fallback": false
+  },
+  {
+    "date": "2026-08-23",
+    "headline": "Skagvägens grundförbättring inleds på måndag",
+    "url": "https://alandsradio.ax/nyheter/skagvagens-grundforbattring-inleds-pa-mandag",
+    "skriv": false,
+    "nyhetsvarde": 1,
+    "tema": "infrastruktur",
+    "anledning": "Trivial, lokal notis om vägarbete. Saknar större betydelse för politik, samhälle eller autonomi. För lite substans för en ledare. [nyhetsvärde 1 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-08-23",
+    "headline": "IFK Mariehamn svarade för jätteknall - besegrade serieledarna KuPS",
+    "url": "https://alandsradio.ax/nyheter/ifk-mariehamn-svarade-for-jatteknall-besegrade-serieledarna-kups",
+    "skriv": false,
+    "nyhetsvarde": 2,
+    "tema": "sport",
+    "anledning": "Ren sportresultat-rapportering, ingen redaktionell vinkel för Julius Sundblom år 1926. [nyhetsvärde 2 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-08-23",
+    "headline": "Åland United fick kämpa hårt för tre poäng",
+    "url": "https://alandsradio.ax/nyheter/aland-united-fick-kampa-hart-for-tre-poang",
+    "skriv": false,
+    "nyhetsvarde": 2,
+    "tema": "sport",
+    "anledning": "Ren sportresultat-rapportering, ingen redaktionell vinkel. [nyhetsvärde 2 < 6]",
+    "fallback": false
   }
 ]
