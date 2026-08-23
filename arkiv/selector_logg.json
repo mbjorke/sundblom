@@ -4718,5 +4718,15 @@
     "tema": "infrastruktur/logistik",
     "anledning": "Rutininformation om en specifik transport. Ingen politisk, samhällelig eller autonomirelevant vinkel. För trivial för en ledare. [nyhetsvärde 1 < 6]",
     "fallback": false
+  },
+  {
+    "date": "2026-08-23",
+    "headline": "Eva Frantz till Kökar den 25 augusti",
+    "url": "https://alandsradio.ax/nyheter/eva-frantz-till-kokar-den-25-augusti",
+    "skriv": false,
+    "nyhetsvarde": 2,
+    "tema": "kultur",
+    "anledning": "Trivial notis om författarbesök. Saknar politisk, samhällelig eller ekonomisk relevans för en ledare. [nyhetsvärde 2 < 6]",
+    "fallback": false
   }
 ]
