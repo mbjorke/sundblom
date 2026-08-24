@@ -4848,5 +4848,85 @@
     "tema": "kultur",
     "anledning": "Kulturrelaterad notis om en dokumentärvisning, ingen omedelbar koppling till 1926 års politiska eller samhälleliga teman för Julius Sundblom att skriva en ledare om. För liten substans för att generera en ledare. [nyhetsvärde 3 < 6]",
     "fallback": false
+  },
+  {
+    "date": "2026-08-24",
+    "headline": "Strandnäs FBK är i behov av nya lokaler",
+    "url": "https://alandsradio.ax/nyheter/strandnas-fbk-ar-i-behov-av-nya-lokaler",
+    "skriv": false,
+    "nyhetsvarde": 3,
+    "tema": "lokal förvaltning",
+    "anledning": "Trivial lokal notis om fastighetsköp och renoveringar, saknar större politisk, samhällelig eller existentiell betydelse för Åland. Ingen substans för en ledare av Julius Sundblom. [nyhetsvärde 3 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-08-24",
+    "headline": "Liten markbrand i Mariehamn",
+    "url": "https://alandsradio.ax/nyheter/liten-markbrand-i-mariehamn",
+    "skriv": false,
+    "nyhetsvarde": 1,
+    "tema": "lokal notis",
+    "anledning": "Trivial lokal notis om en mycket liten markbrand. Saknar nyhetsvärde, tematisk passning och substans för en ledare. [nyhetsvärde 1 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-08-24",
+    "headline": "Projektpengar för ungas hälsa blev oanvända när kommunerna inte kunde enas",
+    "url": "https://alandsradio.ax/nyheter/projektpengar-for-ungas-halsa-blev-oanvanda-nar-kommunerna-inte-kunde-enas",
+    "skriv": true,
+    "nyhetsvarde": 7,
+    "tema": "samhällsordning",
+    "anledning": "Frågan om kommunal oenighet och dess konsekvenser för ungas välfärd är av betydelse. Projektledarens förslag om tydligare styrning eller lagstiftning tangerar autonomins gränser och hur samhället bör organiseras för att tjäna medborgarna. Detta är en debatt som Julius bör uppmärksamma.",
+    "fallback": false
+  },
+  {
+    "date": "2026-08-24",
+    "headline": "Brand i båthall påverkar Alandias halvårsresultat",
+    "url": "https://alandsradio.ax/nyheter/brand-i-bathall-paverkar-alandias-halvarsresultat",
+    "skriv": false,
+    "nyhetsvarde": 4,
+    "tema": "ekonomi",
+    "anledning": "Även om ekonomisk rapport, är det primärt en rutinmässig kvartalsrapport för ett enskilt bolag med en specifik händelse som förklaring, och inte av tillräckligt stor samhällelig eller politisk räckvidd för en ledarartikel av Julius Sundblom. Han fokuserar hellre på de större dragen kring Ålands ekonomi, inte enskilda förlustposter. [nyhetsvärde 4 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-08-24",
+    "headline": "26 tjänster berörs när Chipsters omställningsförhandlar",
+    "url": "https://alandsradio.ax/nyheter/26-tjanster-berors-nar-chipsters-omstallningsforhandlar",
+    "skriv": false,
+    "nyhetsvarde": 4,
+    "tema": "ekonomi",
+    "anledning": "Även om det handlar om lokala jobb och ekonomi, är det i grunden en företagsspecifik kontraktstvist och omställning. Saknar den bredare politiska eller samhälleliga vinkel som Julius söker för en ledare år 1926. För lite substans för att utgöra grund för en djupare ledarartikel, snarare en notis. [nyhetsvärde 4 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-08-24",
+    "headline": "Lyckad hjälpsändning till Ukraina – ålänningar överlämnade bil och brandsläckare",
+    "url": "https://alandsradio.ax/nyheter/lyckad-hjalpsandning-till-ukraina-alanningar-overlamnade-bil-och-brandslackare",
+    "skriv": false,
+    "nyhetsvarde": 2,
+    "tema": "internationella relationer/humanitärt",
+    "anledning": "Välgörenhet är inte en redaktionell prioritet för Julius Sundblom år 1926. Nyheten saknar koppling till Ålands självstyrelse, svensk identitet, klassfrågor eller sedlighet. Det är en personnotis om en god gärning, inte en händelse av politisk, ekonomisk eller samhällelig vikt som kräver en ledare. [nyhetsvärde 2 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-08-24",
+    "headline": "ÅFD ger Jomala rätt om detaljplan i Sviby",
+    "url": "https://alandsradio.ax/nyheter/afd-ger-jomala-ratt-om-detaljplan-i-sviby",
+    "skriv": false,
+    "nyhetsvarde": 3,
+    "tema": "lokal förvaltning",
+    "anledning": "Ärendet är en smålokal notis om detaljplan och infrastruktur. Saknar större politisk, samhällelig eller principiell betydelse för att motivera en ledare av Julius Sundblom. Trots att det rör sig om ett domstolsbeslut, är ämnet för specifikt och saknar den bredare relevans som Julius söker. [nyhetsvärde 3 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-08-24",
+    "headline": "Två av tio Lotsuddenlägenheter reserverade",
+    "url": "https://alandsradio.ax/nyheter/tva-av-tio-lotsuddenlagenheter-reserverade",
+    "skriv": false,
+    "nyhetsvarde": 2,
+    "tema": "ekonomi/bostäder",
+    "anledning": "För obetydlig och kommersiell notis om bostadsförsäljning. Saknar relevans för större samhällsfrågor eller Julius redaktionella teman. Ingen substans för en ledarartikel. [nyhetsvärde 2 < 6]",
+    "fallback": false
   }
 ]
