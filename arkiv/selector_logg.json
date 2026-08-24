@@ -4758,5 +4758,45 @@
     "tema": "sport",
     "anledning": "Ren sportresultat-rapportering, ingen redaktionell vinkel. [nyhetsvärde 2 < 6]",
     "fallback": false
+  },
+  {
+    "date": "2026-08-24",
+    "headline": "Äldre i par dricker mer alkohol än ensamstående",
+    "url": "https://alandsradio.ax/nyheter/aldre-i-par-dricker-mer-alkohol-an-ensamstaende",
+    "skriv": false,
+    "nyhetsvarde": 3,
+    "tema": "sedlighet",
+    "anledning": "Intressant notis men saknar tillräcklig koppling till Åländsk politik eller samhälle i stort för en ledare. Mer en generell samhällsfråga. [nyhetsvärde 3 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-08-24",
+    "headline": "Ålänningar förvånas över den låga vaccinationstäckningen för mässling",
+    "url": "https://alandsradio.ax/nyheter/alanningar-forvanas-over-den-laga-vaccinationstackningen-for-massling",
+    "skriv": false,
+    "nyhetsvarde": 3,
+    "tema": "hälsa",
+    "anledning": "Hälsonyhet med begränsad relevans för Julius redaktionella värld 1926. Saknar politisk, samhällelig eller moralisk dimension som motiverar en ledare. För ytlig notis. [nyhetsvärde 3 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-08-24",
+    "headline": "Nämnd ska ta ställning till Mathias Erikssons rättelseyrkande i kväll",
+    "url": "https://alandsradio.ax/nyheter/namnd-ska-ta-stallning-till-mathias-erikssons-rattelseyrkande-i-kvall",
+    "skriv": false,
+    "nyhetsvarde": 4,
+    "tema": "ekonomi",
+    "anledning": "Även om det rör en ekonomisk tvist med koppling till kommunala beslut, är det en lokal byråkratisk notis om ett avslaget rättelseyrkande. Det saknar den bredare samhälleliga eller politiska implikationen som skulle motivera en ledare av Sundblom. Dessutom är det för tidigt i processen, då ett arrendebeslut kan överklagas senare. [nyhetsvärde 4 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-08-24",
+    "headline": "Därför fördubblades antalet familjevåldsoffer på Åland i fjol",
+    "url": "https://alandsradio.ax/nyheter/darfor-fordubblades-antalet-familjevaldsoffer-pa-aland-i-fjol",
+    "skriv": true,
+    "nyhetsvarde": 7,
+    "tema": "sedlighet",
+    "anledning": "Frågan om våld i hemmet har stor betydelse för samhällsordningen och sedligheten. Statistiken kan belysas för att diskutera moraliskt förfall eller behov av starkare sociala strukturer.",
+    "fallback": false
   }
 ]
