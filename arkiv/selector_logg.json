@@ -4798,5 +4798,55 @@
     "tema": "sedlighet",
     "anledning": "Frågan om våld i hemmet har stor betydelse för samhällsordningen och sedligheten. Statistiken kan belysas för att diskutera moraliskt förfall eller behov av starkare sociala strukturer.",
     "fallback": false
+  },
+  {
+    "date": "2026-08-24",
+    "headline": "Dramatik och hjärnskakning till trots – Ålänningar säkrade VM guld i Marstrand",
+    "url": "https://alandsradio.ax/nyheter/dramatik-och-hjarnskakning-till-trots-alanningar-sakrade-vm-guld-i-marstrand",
+    "skriv": false,
+    "nyhetsvarde": 2,
+    "tema": "sport",
+    "anledning": "Ren sportresultat-rapportering med en dramatisk, men personlig, olycka. Ingen redaktionell vinkel för ledarartikel. [nyhetsvärde 2 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-08-24",
+    "headline": "Två personer undersöktes efter trafikolycka på Nya Godbyvägen",
+    "url": "https://alandsradio.ax/nyheter/tva-personer-undersoktes-efter-trafikolycka-pa-nya-godbyvagen",
+    "skriv": false,
+    "nyhetsvarde": 1,
+    "tema": "trivial notis",
+    "anledning": "Trivial olycksnotis utan större betydelse, saknar koppling till Julius redaktionella teman. [nyhetsvärde 1 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-08-24",
+    "headline": "Omspel krävdes för att kora Eckerö golfs klubbmästare",
+    "url": "https://alandsradio.ax/nyheter/omspel-kravdes-for-att-kora-eckero-golfs-klubbmastare",
+    "skriv": false,
+    "nyhetsvarde": 1,
+    "tema": "sport",
+    "anledning": "Ren sportresultat-rapportering utan större betydelse, saknar koppling till Julius redaktionella värld. [nyhetsvärde 1 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-08-24",
+    "headline": "Flera berusade greps under helgen – två misstänks för grovt rattfylleri",
+    "url": "https://alandsradio.ax/nyheter/flera-berusade-greps-under-helgen-tva-misstanks-for-grovt-rattfylleri",
+    "skriv": false,
+    "nyhetsvarde": 3,
+    "tema": "sedlighet",
+    "anledning": "Trivial notis om fylleri och rattfylleri. Även om det rör sedlighet och ordning är det en rutinmässig händelse utan större principiell tyngd för en ledare. [nyhetsvärde 3 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-08-24",
+    "headline": "Världens minsta parlament på Yle Fem",
+    "url": "https://alandsradio.ax/nyheter/varldens-minsta-parlament-pa-yle-fem",
+    "skriv": false,
+    "nyhetsvarde": 3,
+    "tema": "kultur",
+    "anledning": "Kulturrelaterad notis om en dokumentärvisning, ingen omedelbar koppling till 1926 års politiska eller samhälleliga teman för Julius Sundblom att skriva en ledare om. För liten substans för att generera en ledare. [nyhetsvärde 3 < 6]",
+    "fallback": false
   }
 ]
