@@ -4928,5 +4928,55 @@
     "tema": "ekonomi/bostäder",
     "anledning": "För obetydlig och kommersiell notis om bostadsförsäljning. Saknar relevans för större samhällsfrågor eller Julius redaktionella teman. Ingen substans för en ledarartikel. [nyhetsvärde 2 < 6]",
     "fallback": false
+  },
+  {
+    "date": "2026-08-25",
+    "headline": "FM i curling spelas i Eckerö i vinter",
+    "url": "https://alandsradio.ax/nyheter/fm-i-curling-spelas-i-eckero-i-vinter",
+    "skriv": false,
+    "nyhetsvarde": 2,
+    "tema": "sport",
+    "anledning": "Ren sportresultat-rapportering och smålokal sportnyhet utan djupare politisk eller samhällelig relevans för en ledare. [nyhetsvärde 2 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-08-25",
+    "headline": "Ökning av bokade korttidsboenden via bokningssajter under 2025",
+    "url": "https://alandsradio.ax/nyheter/okning-av-bokade-korttidsboenden-via-bokningssajter-under-2025",
+    "skriv": false,
+    "nyhetsvarde": 4,
+    "tema": "ekonomi",
+    "anledning": "Ekonomisk statistik av visst intresse, men saknar den djupare samhälleliga eller politiska dimension som Julius normalt skulle fördjupa sig i. För tunt för en ledare. [nyhetsvärde 4 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-08-25",
+    "headline": "Kumlinge: Vårt flygfält är viktigt för beredskapen",
+    "url": "https://alandsradio.ax/nyheter/kumlinge-vart-flygfalt-ar-viktigt-for-beredskapen",
+    "skriv": true,
+    "nyhetsvarde": 8,
+    "tema": "självstyrelse, beredskap, ekonomi",
+    "anledning": "Frågan om flygfältets framtid i Kumlinge är av stor betydelse för Ålands beredskap och autonomi. Den rör landskapets ansvar och ekonomiska prioriteringar, samt kommunernas roll. Julius kan granska landskapsregeringens agerande och belysa vikten av strategiska investeringar för Ålands framtid.",
+    "fallback": false
+  },
+  {
+    "date": "2026-08-25",
+    "headline": "Slut på öl efter rekordsommar – nu går bryggeriet på högvarv",
+    "url": "https://alandsradio.ax/nyheter/slut-pa-ol-efter-rekordsommar-nu-gar-bryggeriet-pa-hogvarv",
+    "skriv": false,
+    "nyhetsvarde": 2,
+    "tema": "ekonomi",
+    "anledning": "Trivial notis om ett mikrobryggeris försäljning. Saknar den bredare ekonomiska, samhälleliga eller politiska relevans som krävs för en ledare. För lite substans för Julius. [nyhetsvärde 2 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-08-25",
+    "headline": "Tre år senare: Fortfarande inget kafé vid Lemströms kanal",
+    "url": "https://alandsradio.ax/nyheter/tre-ar-senare-fortfarande-inget-kafe-vid-lemstroms-kanal",
+    "skriv": false,
+    "nyhetsvarde": 3,
+    "tema": "lokala angelägenheter",
+    "anledning": "För obetydlig lokal notis. Inget djup i självstyrelse, rikspolitik eller större samhällsfrågor. 'Kulturpolitisk fråga' är för svagt formulerat och saknar substans för en ledare. [nyhetsvärde 3 < 6]",
+    "fallback": false
   }
 ]
