@@ -4978,5 +4978,55 @@
     "tema": "lokala angelägenheter",
     "anledning": "För obetydlig lokal notis. Inget djup i självstyrelse, rikspolitik eller större samhällsfrågor. 'Kulturpolitisk fråga' är för svagt formulerat och saknar substans för en ledare. [nyhetsvärde 3 < 6]",
     "fallback": false
+  },
+  {
+    "date": "2026-08-25",
+    "headline": "Andelsbankens halvårsresultat sämre än ifjol",
+    "url": "https://alandsradio.ax/nyheter/andelsbankens-halvarsresultat-samre-an-ifjol",
+    "skriv": false,
+    "nyhetsvarde": 4,
+    "tema": "ekonomi",
+    "anledning": "Ekonomisk notis, men saknar tillräckligt dramatisk substans eller specifik autonomikoppling för en ledare. En bankrapport är ingen skandal eller kritisk situation för samhället som helhet. [nyhetsvärde 4 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-08-25",
+    "headline": "M/S Eckerö försenad på grund av olycka på E18",
+    "url": "https://alandsradio.ax/nyheter/ms-eckero-forsenad-pa-grund-av-olycka-pa-e18",
+    "skriv": false,
+    "nyhetsvarde": 1,
+    "tema": "ekonomi/transport",
+    "anledning": "En enskild försening för en färja på grund av en olycka är en trivial notis utan större betydelse för Julius redaktionella värld 1926. Saknar politisk, samhällelig eller autonom relevans. [nyhetsvärde 1 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-08-25",
+    "headline": "Norrmén fortsätter som ÅU:s huvudtränare",
+    "url": "https://alandsradio.ax/nyheter/norrmen-fortsatter-som-aus-huvudtranare",
+    "skriv": false,
+    "nyhetsvarde": 2,
+    "tema": "sport",
+    "anledning": "Ren sportresultat-rapportering om tränarförlängning. För trivialt för en ledarartikel. [nyhetsvärde 2 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-08-25",
+    "headline": "Ung tjejs brev ledde till ny skrivtävling",
+    "url": "https://alandsradio.ax/nyheter/ung-tjejs-brev-ledde-till-ny-skrivtavling",
+    "skriv": false,
+    "nyhetsvarde": 2,
+    "tema": "kultur",
+    "anledning": "En lokal skrivtävling för skolbarn är för smal och saknar koppling till större politiska, samhälleliga eller autonomifrågor. Innehåller inte tillräckligt med substans för en ledare. [nyhetsvärde 2 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-08-25",
+    "headline": "Två avgångar med M/S Eckerö ställs in i september",
+    "url": "https://alandsradio.ax/nyheter/tva-avgangar-med-ms-eckero-stalls-in-i-september",
+    "skriv": false,
+    "nyhetsvarde": 1,
+    "tema": "ekonomi",
+    "anledning": "En ren rutinnotis om inställda färjeavgångar på grund av underhåll. För obetydligt för en ledare och saknar den bredare samhälleliga eller politiska vinkeln som Julius söker. [nyhetsvärde 1 < 6]",
+    "fallback": false
   }
 ]
