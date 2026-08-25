@@ -5028,5 +5028,65 @@
     "tema": "ekonomi",
     "anledning": "En ren rutinnotis om inställda färjeavgångar på grund av underhåll. För obetydligt för en ledare och saknar den bredare samhälleliga eller politiska vinkeln som Julius söker. [nyhetsvärde 1 < 6]",
     "fallback": false
+  },
+  {
+    "date": "2026-08-25",
+    "headline": "Finnlines testar bussanslutningar till och från Kapellskär",
+    "url": "https://alandsradio.ax/nyheter/finnlines-testar-bussanslutningar-till-och-fran-kapellskar",
+    "skriv": false,
+    "nyhetsvarde": 2,
+    "tema": "ekonomi",
+    "anledning": "Trivial notis om bussanslutningar. Ingen större politisk, samhällelig eller autonomirelevant betydelse. Saknar substans för en ledare. [nyhetsvärde 2 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-08-25",
+    "headline": "Socialstyrelsen ser inga hinder för svenska läkarstuderande på Åland",
+    "url": "https://alandsradio.ax/nyheter/socialstyrelsen-ser-inga-hinder-for-svenska-lakarstuderande-pa-aland",
+    "skriv": false,
+    "nyhetsvarde": 3,
+    "tema": "byråkrati",
+    "anledning": "Frågan rör teknikaliteter kring läkarutbildning och byråkratiska tolkningar mellan myndigheter. Även om det har viss koppling till Ålands ställning, är det för specifikt och saknar den politiska eller samhälleliga tyngd som motiverar en ledare. Det är mer en administrativ fråga än ett principiellt ställningstagande för Sundblom. [nyhetsvärde 3 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-08-25",
+    "headline": "De vill fortsätta efter valet – tre har bestämt sig för att sluta",
+    "url": "https://alandsradio.ax/nyheter/de-vill-fortsatta-efter-valet-tre-har-bestamt-sig-for-att-sluta",
+    "skriv": false,
+    "nyhetsvarde": 2,
+    "tema": "interna personfrågor",
+    "anledning": "Interna personfrågor inom det åländska politiska etablissemanget är av begränsat intresse för en ledare 1926. Nyheten saknar en tydlig koppling till autonomi, sedlighet eller samhällsordning av den dignitet Julius Sundblom skulle finna värd en ledarartikel. Det är en ren personnotis om politiker som kommer och går, snarare än en fråga om substantiell politik. [nyhetsvärde 2 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-08-25",
+    "headline": "Majs kastades in till hästar – \"Gå inte in i hagar och mata inte djur\"",
+    "url": "https://alandsradio.ax/nyheter/majs-kastades-in-till-hastar-ga-inte-in-i-hagar-och-mata-inte-djur",
+    "skriv": false,
+    "nyhetsvarde": 1,
+    "tema": "trivialitet",
+    "anledning": "Trivial notis om djurmatning utan större samhällelig betydelse eller koppling till Julius redaktionella teman. [nyhetsvärde 1 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-08-25",
+    "headline": "Jomalastyrelsen vill se äldreboende med 40 platser vid Oasen",
+    "url": "https://alandsradio.ax/nyheter/jomalastyrelsen-vill-se-aldreboende-med-40-platser-vid-oasen",
+    "skriv": false,
+    "nyhetsvarde": 3,
+    "tema": "lokal förvaltning",
+    "anledning": "Smålokal notis om äldreboende, rutinåtgärd. Ingen större autonomipolitisk, samhällelig eller ekonomisk relevans för en ledarartikel av Julius Sundblom. Dessutom för tunt innehåll. [nyhetsvärde 3 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-08-25",
+    "headline": "Rekordmånga ålänningar blev 100 år",
+    "url": "https://alandsradio.ax/nyheter/rekordmanga-alanningar-blev-100-ar",
+    "skriv": false,
+    "nyhetsvarde": 4,
+    "tema": "demografi",
+    "anledning": "Statistik om befolkning och ålder är intressant men saknar den politiska eller samhälleliga konflikt som krävs för en ledarartikel. Flyttningsöverskottet och invandringen är noterbara, men inte i sig tillräckligt för en djuplodande ledare i Julius redaktionella anda år 1926 utan en mer direkt koppling till självstyrelse, ekonomi eller sedlighetens förfall. [nyhetsvärde 4 < 6]",
+    "fallback": false
   }
 ]
