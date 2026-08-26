@@ -5278,5 +5278,15 @@
     "tema": "ekonomi",
     "anledning": "Marginell förändring i arbetslöshet är en rutinmässig statistikuppdatering. Saknar djupare konflikt, agerande eller beslut som skulle motivera en ledare. [nyhetsvärde 3 < 6]",
     "fallback": false
+  },
+  {
+    "date": "2026-08-26",
+    "headline": "Ladugård brinner i Jomala",
+    "url": "https://alandsradio.ax/nyheter/ladugard-brinner-i-jomala",
+    "skriv": false,
+    "nyhetsvarde": 2,
+    "tema": "lokal notis",
+    "anledning": "Trivial lokal notis om en brand, saknar större samhällelig, politisk eller autonomi-relaterad betydelse. Inte tillräckligt med substans för en ledare. [nyhetsvärde 2 < 6]",
+    "fallback": false
   }
 ]
