@@ -5148,5 +5148,65 @@
     "tema": "ekonomi",
     "anledning": "Även om det handlar om näringsliv och ekonomi, är detta en smålokal företagshändelse utan större politisk, samhällelig eller moralisk dimension som motiverar en ledarartikel av Julius Sundblom 1926. Det saknar koppling till autonomi, svensk identitet, samhällsordning eller sedlighet på ett sätt som skulle intressera honom för en ledare. [nyhetsvärde 3 < 6]",
     "fallback": false
+  },
+  {
+    "date": "2026-08-26",
+    "headline": "Oro bland markägare kring kartenkät – landskapsregeringen förtydligar syftet",
+    "url": "https://alandsradio.ax/nyheter/oro-bland-markagare-kring-kartenkat-landskapsregeringen-fortydligar-syftet",
+    "skriv": false,
+    "nyhetsvarde": 3,
+    "tema": "lokal förvaltning",
+    "anledning": "Förtydligande av en rutinmässig administrativ process. Ingen större konflikt, hot mot autonomin, eller djupare samhällsfrågor att belysa. [nyhetsvärde 3 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-08-26",
+    "headline": "JoHo Pyro vann prestigefylld tävling i Cannes",
+    "url": "https://alandsradio.ax/nyheter/joho-pyro-vann-prestigefylld-tavling-i-cannes",
+    "skriv": false,
+    "nyhetsvarde": 3,
+    "tema": "kultur",
+    "anledning": "Kulturell prestation utan direkt koppling till Julius redaktionella värld av självstyrelse, politik, samhällsordning eller sedlighet. För trivialt för en ledare. [nyhetsvärde 3 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-08-26",
+    "headline": "Hotell utrymdes vid brandlarm – tekniskt fel på detektorn",
+    "url": "https://alandsradio.ax/nyheter/hotell-utrymdes-vid-brandlarm-tekniskt-fel-pa-detektorn",
+    "skriv": false,
+    "nyhetsvarde": 1,
+    "tema": "lokal nyhet",
+    "anledning": "Trivial notis om tekniskt fel, saknar politisk, samhällelig eller kulturell relevans för en ledarartikel av Julius Sundblom. [nyhetsvärde 1 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-08-26",
+    "headline": "Vattnet stängs av i Jomala",
+    "url": "https://alandsradio.ax/nyheter/vattnet-stangs-av-i-jomala",
+    "skriv": false,
+    "nyhetsvarde": 1,
+    "tema": "lokal notis",
+    "anledning": "Ren smålokal notis om en vattenläcka, ingen relevans för Julius Sundbloms redaktionella linje eller en ledarartikel. [nyhetsvärde 1 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-08-26",
+    "headline": "25 juli-konserten slog valutfrågningen i tv4",
+    "url": "https://alandsradio.ax/nyheter/25-juli-konserten-slog-valutfragningen-i-tv4",
+    "skriv": false,
+    "nyhetsvarde": 1,
+    "tema": "kultur",
+    "anledning": "Modern underhållning och tittarsiffror är av föga intresse för en ledarartikel. Saknar koppling till centrala teman som självstyrelse eller samhällsordning. [nyhetsvärde 1 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-08-26",
+    "headline": "Stabilt kvartal för Birka Gotland",
+    "url": "https://alandsradio.ax/nyheter/stabilt-kvartal-for-birka-gotland",
+    "skriv": false,
+    "nyhetsvarde": 3,
+    "tema": "ekonomi",
+    "anledning": "Ekonomisk rapport om ett enskilt bolag, inte direkt kopplat till åländsk autonomi eller större samhällsfrågor. För specifik och begränsad för en ledarartikel av Julius Sundblom. [nyhetsvärde 3 < 6]",
+    "fallback": false
   }
 ]
