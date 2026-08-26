@@ -5208,5 +5208,75 @@
     "tema": "ekonomi",
     "anledning": "Ekonomisk rapport om ett enskilt bolag, inte direkt kopplat till åländsk autonomi eller större samhällsfrågor. För specifik och begränsad för en ledarartikel av Julius Sundblom. [nyhetsvärde 3 < 6]",
     "fallback": false
+  },
+  {
+    "date": "2026-08-26",
+    "headline": "Balare började brinna under arbete i Ytterby",
+    "url": "https://alandsradio.ax/nyheter/balare-borjade-brinna-under-arbete-i-ytterby",
+    "skriv": false,
+    "nyhetsvarde": 2,
+    "tema": "lokal notis",
+    "anledning": "Trivial lokal notis om en mindre brand. Saknar politisk, samhällelig eller autonomisk relevans för en ledarartikel. Även om 'många frivilliga boende i byn kom och hjälpte till' kan antyda samhällsanda, är händelsen i sig för liten för en ledare. [nyhetsvärde 2 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-08-26",
+    "headline": "Här är AI:s tips för den som är rädd för att vara ensam med en ålänning",
+    "url": "https://alandsradio.ax/nyheter/har-ar-ais-tips-for-den-som-ar-radd-for-att-vara-ensam-med-en-alanning",
+    "skriv": false,
+    "nyhetsvarde": 2,
+    "tema": "modernitetens förfall",
+    "anledning": "Trivial notis om AI:s svar. Saknar den substans eller den politiska/samhälleliga tyngd som krävs för en ledare av Julius Sundblom. Trots att den berör 'modernitetens förfall' är det mer en kuriositet än en allvarlig reflektion. Det är humoristiskt, inte ledarmaterial. [nyhetsvärde 2 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-08-26",
+    "headline": "Staden går vidare med Bifafastigheten",
+    "url": "https://alandsradio.ax/nyheter/staden-gar-vidare-med-bifafastigheten",
+    "skriv": false,
+    "nyhetsvarde": 3,
+    "tema": "lokal förvaltning",
+    "anledning": "Smålokal notis om ett kommunalt fastighetsköp. Saknar större politisk, samhällelig eller autonomirelevant vinkel. Innehållet är tunt för en ledare. [nyhetsvärde 3 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-08-26",
+    "headline": "ÅHS säger nej till sparförslag – patientsäkerheten kan hotas",
+    "url": "https://alandsradio.ax/nyheter/ahs-sager-nej-till-sparforslag-patientsakerheten-kan-hotas",
+    "skriv": true,
+    "nyhetsvarde": 8,
+    "tema": "självstyrelse, ekonomi, samhällsordning",
+    "anledning": "Beslutet från ÅHS styrelse är av betydande vikt för Ålands självstyrelse och dess ekonomiska förvaltning. Det berör direkt välfärden och patientsäkerheten för ålänningarna, vilket har stora samhälleliga implikationer. Dessutom sätter det fingret på spänningen mellan landskapsregeringens ekonomiska styrning och institutionernas ansvar att upprätthålla grundläggande tjänster, vilket är ett klassiskt tema för en ledare.",
+    "fallback": false
+  },
+  {
+    "date": "2026-08-26",
+    "headline": "På lördag blir det skogsfest på Föglö",
+    "url": "https://alandsradio.ax/nyheter/p",
+    "skriv": false,
+    "nyhetsvarde": 1,
+    "tema": "lokala_notiser",
+    "anledning": "Trivial lokal notis om invigning av skogsområde; saknar politisk, samhällelig eller ekonomisk relevans för en ledarartikel av Julius Sundblom. Ingen substans för en värdig ledare. [nyhetsvärde 1 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-08-26",
+    "headline": "Kvigor räddades efter att ha fastnat i träsk",
+    "url": "https://alandsradio.ax/nyheter/kvigor-raddades-efter-att-ha-fastnat-i-trask",
+    "skriv": false,
+    "nyhetsvarde": 1,
+    "tema": "lokal notis",
+    "anledning": "Trivial, smålokal notis utan större betydelse för ledarsida. Saknar koppling till Julius redaktionella teman. [nyhetsvärde 1 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-08-26",
+    "headline": "Arbetslösheten steg marginellt i juli",
+    "url": "https://alandsradio.ax/nyheter/arbetslosheten-steg-marginellt-i-juli",
+    "skriv": false,
+    "nyhetsvarde": 3,
+    "tema": "ekonomi",
+    "anledning": "Marginell förändring i arbetslöshet är en rutinmässig statistikuppdatering. Saknar djupare konflikt, agerande eller beslut som skulle motivera en ledare. [nyhetsvärde 3 < 6]",
+    "fallback": false
   }
 ]
