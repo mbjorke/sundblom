@@ -5088,5 +5088,65 @@
     "tema": "demografi",
     "anledning": "Statistik om befolkning och ålder är intressant men saknar den politiska eller samhälleliga konflikt som krävs för en ledarartikel. Flyttningsöverskottet och invandringen är noterbara, men inte i sig tillräckligt för en djuplodande ledare i Julius redaktionella anda år 1926 utan en mer direkt koppling till självstyrelse, ekonomi eller sedlighetens förfall. [nyhetsvärde 4 < 6]",
     "fallback": false
+  },
+  {
+    "date": "2026-08-26",
+    "headline": "Dömd idrottstränare vill ha lägre straff",
+    "url": "https://alandsradio.ax/nyheter/domd-idrottstranare-vill-ha-lagre-straff",
+    "skriv": true,
+    "nyhetsvarde": 8,
+    "tema": "sedlighet",
+    "anledning": "Fråga om sedlighet och rättvisa. Ledande landskapsåklagaren är involverad och frågan berör samhällsmoralen samt rättssystemets effektivitet, vilket är väsentligt för Julius redaktionella värld. En diskussion om straffmätning i så allvarliga brott kan ge underlag för en ledare.",
+    "fallback": false
+  },
+  {
+    "date": "2026-08-26",
+    "headline": "Två nya aktörer levererar personlig assistans på Åland",
+    "url": "https://alandsradio.ax/nyheter/tva-nya-aktorer-levererar-personlig-assistans-pa-aland",
+    "skriv": false,
+    "nyhetsvarde": 4,
+    "tema": "ekonomi/kommunal förvaltning",
+    "anledning": "Ämnet är viktigt men detaljerna är för administrativa och rutinmässiga för att motivera en ledarartikel av Julius Sundblom. Upphandlingsresultat, omorganisation av interna tjänster och fastighetsförsäljning är för specifik och saknar den större principiella vinkel som Julius söker. [nyhetsvärde 4 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-08-26",
+    "headline": "Mariehamn vill bli huvudman för räddningsmyndigheten",
+    "url": "https://alandsradio.ax/nyheter/mariehamn-vill-bli-huvudman-for-raddningsmyndigheten",
+    "skriv": false,
+    "nyhetsvarde": 3,
+    "tema": "lokal förvaltning",
+    "anledning": "Även om det handlar om en organisatorisk fråga mellan kommuner, är detta en intern åländsk förvaltningsfråga som saknar den bredare politiska, ekonomiska eller samhälleliga dignitet Julius söker för en ledare. Det saknar koppling till centrala teman som självstyrelse, svensk identitet eller modernitetens förfall på ett djupare plan. Ärendet saknar substans för en fyllig ledarartikel. [nyhetsvärde 3 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-08-26",
+    "headline": "Staden utreder alternativ till fritidshem under loven",
+    "url": "https://alandsradio.ax/nyheter/staden-utreder-alternativ-till-fritidshem-under-loven",
+    "skriv": false,
+    "nyhetsvarde": 2,
+    "tema": "lokal förvaltning",
+    "anledning": "Trivial notis om en rutinåtgärd inom lokal förvaltning. Saknar politisk tyngd eller koppling till Julius Sundbloms kärnämnen. [nyhetsvärde 2 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-08-26",
+    "headline": "Nytt vaccin mot hudcancer når historisk fas – ”Kan förändra sjukvården radikalt”",
+    "url": "https://alandsradio.ax/nyheter/nytt-vaccin-mot-hudcancer-nar-historisk-fas-kan-forandra-sjukvarden-radikalt",
+    "skriv": false,
+    "nyhetsvarde": 4,
+    "tema": "hälsa",
+    "anledning": "Medicinsk nyhet med generell relevans, men saknar direkt koppling till Julius redaktionella teman som autonomi, samhällsordning eller sedlighet. För tidigt stadium för ledare. [nyhetsvärde 4 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-08-26",
+    "headline": "Åland Distillery tar in 150 000 genom nyemission",
+    "url": "https://alandsradio.ax/nyheter/aland-distillery-tar-in-150-000-genom-nyemission",
+    "skriv": false,
+    "nyhetsvarde": 3,
+    "tema": "ekonomi",
+    "anledning": "Även om det handlar om näringsliv och ekonomi, är detta en smålokal företagshändelse utan större politisk, samhällelig eller moralisk dimension som motiverar en ledarartikel av Julius Sundblom 1926. Det saknar koppling till autonomi, svensk identitet, samhällsordning eller sedlighet på ett sätt som skulle intressera honom för en ledare. [nyhetsvärde 3 < 6]",
+    "fallback": false
   }
 ]
