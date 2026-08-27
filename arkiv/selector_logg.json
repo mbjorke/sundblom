@@ -5288,5 +5288,105 @@
     "tema": "lokal notis",
     "anledning": "Trivial lokal notis om en brand, saknar större samhällelig, politisk eller autonomi-relaterad betydelse. Inte tillräckligt med substans för en ledare. [nyhetsvärde 2 < 6]",
     "fallback": false
+  },
+  {
+    "date": "2026-08-27",
+    "headline": "Aktivist försenade Cinderella med en timme – klättrade på skorstenen",
+    "url": "https://alandsradio.ax/nyheter/aktivist-forsenade-cinderella-med-en-timme-klattrade-pa-skorstenen",
+    "skriv": false,
+    "nyhetsvarde": 3,
+    "tema": "allmän ordning",
+    "anledning": "En enskild händelse utan större politisk, samhällelig eller ekonomisk bäring för Åland 1926. Det saknas en tydlig koppling till autonomi, svensk identitet eller klassfrågor. [nyhetsvärde 3 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-08-27",
+    "headline": "Perämaa öppnar för mer pengar till ÅHS – Sparkrav får inte hota patientsäkerhete",
+    "url": "https://alandsradio.ax/nyheter/peramaa-oppnar-for-mer-pengar-till-ahs-sparkrav-far-inte-hota-patientsakerheten",
+    "skriv": false,
+    "nyhetsvarde": 4,
+    "tema": "ekonomi",
+    "anledning": "Även om det rör autonom ekonomi och välfärd, är detta i grunden en budgetdiskussion om en enskild verksamhet med återremiss. Det är en rutinåtgärd i ekonomiska förhandlingar och saknar den tyngd eller principfråga som Julius skulle lyfta i en ledare. Det är en för intern och administrativ fråga. [nyhetsvärde 4 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-08-27",
+    "headline": "Ekström på väg mot ordförandeposten – redo att bli lantråd",
+    "url": "https://alandsradio.ax/nyheter/ekstrom-pa-vag-mot-ordforandeposten-redo-att-bli-lantrad",
+    "skriv": false,
+    "nyhetsvarde": 4,
+    "tema": "politik",
+    "anledning": "Även om det handlar om politik och en potentiell framtida lantrådskandidat, är detta primärt en spekulation om en kommande intern partiledarstrid inom Liberalerna. Julius skulle finna det för internt och för lite konkret substans för en ledarartikel. Det saknas ett omedelbart beslut eller en händelse av större samhällelig dignitet som motiverar en ledare år 1926. Den är en notis, inte en väsentlig händelse. [nyhetsvärde 4 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-08-27",
+    "headline": "Här tar Åland Harvest Moon Festival form",
+    "url": "https://alandsradio.ax/nyheter/har-tar-aland-harvest-moon-festival-form",
+    "skriv": false,
+    "nyhetsvarde": 1,
+    "tema": "kultur och nöje",
+    "anledning": "Trivial notis om en kommande nöjesfestival. Saknar politisk, samhällelig eller existentiell relevans för ledarartikel. [nyhetsvärde 1 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-08-27",
+    "headline": "Trafiken regleras runt triathlon",
+    "url": "https://alandsradio.ax/nyheter/trafiken-regleras-runt-triathlon",
+    "skriv": false,
+    "nyhetsvarde": 1,
+    "tema": "trivial notis",
+    "anledning": "Trivial notis om temporära trafikregleringar för ett sportevenemang. Saknar helt koppling till ledarredaktionens teman och har ingen substans för en värdig ledare. [nyhetsvärde 1 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-08-27",
+    "headline": "Polisen: Brandutredningen kan ta månader",
+    "url": "https://alandsradio.ax/nyheter/polisen-brandutredningen-kan-ta-manader",
+    "skriv": false,
+    "nyhetsvarde": 3,
+    "tema": "brott",
+    "anledning": "Brandutredning är en rutinåtgärd. Ingen politisk, samhällelig eller autonomirelevant vinkel finns ännu. Julius skriver inte om varje pågående utredning. [nyhetsvärde 3 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-08-27",
+    "headline": "80-åring dömd efter olycka i Godbykorsningen",
+    "url": "https://alandsradio.ax/nyheter/80-aring-domd-efter-olycka-i-godbykorsningen",
+    "skriv": false,
+    "nyhetsvarde": 2,
+    "tema": "trafiknotis",
+    "anledning": "Trivial lokal notis om en trafikolycka utan större samhällelig betydelse eller koppling till Julius redaktionella intressen. För obetydlig för en ledare. [nyhetsvärde 2 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-08-27",
+    "headline": "Skarvens café stängt i fyra dagar",
+    "url": "https://alandsradio.ax/nyheter/skarvens-cafe-stangt-i-fyra-dagar",
+    "skriv": false,
+    "nyhetsvarde": 1,
+    "tema": "trivial notis",
+    "anledning": "Trivial notis om ett stängt café. Saknar koppling till politik, samhälle, ekonomi eller andra relevanta teman för en ledare. [nyhetsvärde 1 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-08-27",
+    "headline": "LR besvarar inte Wikströms skriftliga fråga",
+    "url": "https://alandsradio.ax/nyheter/lr-besvarar-inte-wikstroms-skriftliga-fraga",
+    "skriv": true,
+    "nyhetsvarde": 7,
+    "tema": "självstyrelse, ekonomi",
+    "anledning": "Fråga om transparens och beslutsprocess inom autonomins kärnområde (ekonomi/upphandling), samt landskapsregeringens agerande kring informationsfrihet under pågående förhandlingar. Detta kan tolkas som bristande insyn eller potentiellt maktmissbruk, vilket är värt en ledarartikel.",
+    "fallback": false
+  },
+  {
+    "date": "2026-08-27",
+    "headline": "Jomala: Underfart behövs om Andersbölekorsningen stängs",
+    "url": "https://alandsradio.ax/nyheter/jomala-underfart-behovs-om-andersbolekorsningen-stangs",
+    "skriv": false,
+    "nyhetsvarde": 3,
+    "tema": "lokal infrastruktur",
+    "anledning": "Frågan om en underfart i Jomala är en detaljfråga om lokal infrastruktur och har inte tillräcklig substans eller tematisk passning för en ledarartikel av Julius Sundblom. Den saknar koppling till de större samhälleliga, politiska eller autonoma frågor som Tidningen Åland fokuserar på. [nyhetsvärde 3 < 6]",
+    "fallback": false
   }
 ]
