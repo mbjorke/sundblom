@@ -5388,5 +5388,15 @@
     "tema": "lokal infrastruktur",
     "anledning": "Frågan om en underfart i Jomala är en detaljfråga om lokal infrastruktur och har inte tillräcklig substans eller tematisk passning för en ledarartikel av Julius Sundblom. Den saknar koppling till de större samhälleliga, politiska eller autonoma frågor som Tidningen Åland fokuserar på. [nyhetsvärde 3 < 6]",
     "fallback": false
+  },
+  {
+    "date": "2026-08-27",
+    "headline": "Här är de mest lyssnade sommarpraten i Ålands Radio 2026",
+    "url": "https://alandsradio.ax/nyheter/har-ar-de-mest-lyssnade-sommarpraten-i-alands-radio-2026",
+    "skriv": false,
+    "nyhetsvarde": 1,
+    "tema": "kultur/media",
+    "anledning": "Trivial notis om lyssnarstatistik för ett radioprogram. Saknar all relevans för Julius redaktionella värld 1926. Ingen substans för en ledare. [nyhetsvärde 1 < 6]",
+    "fallback": false
   }
 ]
