@@ -5528,5 +5528,15 @@
     "tema": "sport/personnotis",
     "anledning": "Trivial personnotis om en fritidsaktivitet. Saknar all anknytning till Julius redaktionella värld och har inget nyhetsvärde för en ledare. [nyhetsvärde 1 < 6]",
     "fallback": false
+  },
+  {
+    "date": "2026-08-28",
+    "headline": "Dystra tongångar från förhandlingarna om ny självstyrelselag",
+    "url": "https://alandsradio.ax/nyheter/dystra-tongangar-fran-forhandlingarna-om-ny-sjalvstyrelselag",
+    "skriv": true,
+    "nyhetsvarde": 9,
+    "tema": "självstyrelse",
+    "anledning": "Förhandlingar om självstyrelselagen är av central betydelse för Ålands framtid. Dystra tongångar signalerar potentiell kris för autonomin, vilket Julius med säkerhet skulle betrakta som en ledare värd att skriva om, med tanke på hans engagemang i självstyrelsefrågan och relationerna mellan Åland, Finland och Sverige.",
+    "fallback": false
   }
 ]
