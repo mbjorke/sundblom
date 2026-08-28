@@ -5398,5 +5398,35 @@
     "tema": "kultur/media",
     "anledning": "Trivial notis om lyssnarstatistik för ett radioprogram. Saknar all relevans för Julius redaktionella värld 1926. Ingen substans för en ledare. [nyhetsvärde 1 < 6]",
     "fallback": false
+  },
+  {
+    "date": "2026-08-28",
+    "headline": "Blomqvist vann ÅM i standardpistol",
+    "url": "https://alandsradio.ax/nyheter/blomqvist-vann-am-i-standardpistol",
+    "skriv": false,
+    "nyhetsvarde": 1,
+    "tema": "sport",
+    "anledning": "Ren sportresultat-rapportering utan större samhällelig betydelse eller koppling till Julius redaktionella värld. För obetydlig för en ledare. [nyhetsvärde 1 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-08-28",
+    "headline": "Ett år efter: Alandia Forel säljer mer fisk än Fifax klarade av",
+    "url": "https://alandsradio.ax/nyheter/ett-ar-efter-alandia-forel-saljer-mer-fisk-an-fifax-klarade-av",
+    "skriv": true,
+    "nyhetsvarde": 6,
+    "tema": "ekonomi",
+    "anledning": "Ekonomisk framgång efter konkurs, betydande för åländsk ekonomi och sysselsättning. Passar in i Julius intresse för näringsliv och återhämtning.",
+    "fallback": false
+  },
+  {
+    "date": "2026-08-28",
+    "headline": "Drönare och markrobotar börjar ta plats inom jordbruket",
+    "url": "https://alandsradio.ax/nyheter/dronare-och-markrobotar-borjar-ta-plats-inom-jordbruket",
+    "skriv": false,
+    "nyhetsvarde": 3,
+    "tema": "modernitet",
+    "anledning": "Tekniknyhet som är för framåtblickande och spekulativ för 1926. Saknar omedelbar politisk, samhällelig eller ekonomisk relevans för Tidningen Åland. [nyhetsvärde 3 < 6]",
+    "fallback": false
   }
 ]
