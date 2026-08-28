@@ -5428,5 +5428,105 @@
     "tema": "modernitet",
     "anledning": "Tekniknyhet som är för framåtblickande och spekulativ för 1926. Saknar omedelbar politisk, samhällelig eller ekonomisk relevans för Tidningen Åland. [nyhetsvärde 3 < 6]",
     "fallback": false
+  },
+  {
+    "date": "2026-08-28",
+    "headline": "Regnbågsalliansen: Hatet normaliseras genom mängden",
+    "url": "https://alandsradio.ax/nyheter/regnbagsalliansen-hatet-normaliseras-genom-mangden",
+    "skriv": false,
+    "nyhetsvarde": 3,
+    "tema": "sedlighet",
+    "anledning": "Ämnet är för modernt och ryms inte i Julius redaktionella värld 1926. Fokus på sociala medier och 'hatprat' har ingen relevans för ledarartikel på den tiden. [nyhetsvärde 3 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-08-28",
+    "headline": "Åländska Mathias söker sig frivilligt till militären – Linus blev kallad",
+    "url": "https://alandsradio.ax/nyheter/alandska-mathias-soker-sig-frivilligt-till-militaren-linus-blev-kallad",
+    "skriv": false,
+    "nyhetsvarde": 4,
+    "tema": "militär/värnplikt",
+    "anledning": "Ämnet i sig är förvisso intressant och tangerar åländsk status, men artikeln är mer en personlig reportagebit om enskilda individer och deras inställning till värnplikt. Den saknar den substans, konflikt eller det beslut som skulle motivera en ledarartikel av Julius. Den lyfter inte heller fram någon tydlig redaktionell vinkel om självstyrelse eller svensk identitet på ett sätt som skulle engagera redaktionschefen år 1926. Den är en notis, inte en ledare. [nyhetsvärde 4 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-08-28",
+    "headline": "Nyan: Två får rivna i misstänkt vargattack",
+    "url": "https://alandsradio.ax/nyheter/nyan-tva-far-rivna-i-misstankt-vargattack",
+    "skriv": false,
+    "nyhetsvarde": 3,
+    "tema": "lokalnotis",
+    "anledning": "Lokal notis om vargattack är för smal och saknar koppling till centrala teman som självstyrelse eller större samhällsfrågor. För obetydligt för en ledare av Julius Sundblom. [nyhetsvärde 3 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-08-28",
+    "headline": "Prideflagga förstörd vid Högskolan på Åland",
+    "url": "https://alandsradio.ax/nyheter/prideflagga-forstord-vid-hogskolan-pa-aland",
+    "skriv": false,
+    "nyhetsvarde": 2,
+    "tema": "sedlighet",
+    "anledning": "Även om det berör sedlighet och ordning, är det en lokal notis om skadegörelse med begränsad substans för en ledare. Högskolans reaktion är återhållsam och det saknas större samhällelig konflikt eller autonomipolitisk koppling. [nyhetsvärde 2 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-08-28",
+    "headline": "Mickels gård deltar i Skördefesten trots branden",
+    "url": "https://alandsradio.ax/nyheter/mickels-gard-deltar-i-skordefesten-trots-branden",
+    "skriv": false,
+    "nyhetsvarde": 3,
+    "tema": "lokal notis",
+    "anledning": "Tragisk händelse för gården men saknar större politisk, ekonomisk eller samhällelig relevans för en ledarartikel. Det är primärt en lokal notis om en enskild gårds olycka och framåtblick. [nyhetsvärde 3 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-08-28",
+    "headline": "Pafs omställningsförhandlingar klara – sju personer lämnar bolaget",
+    "url": "https://alandsradio.ax/nyheter/pafs-omstallningsforhandlingar-klara-sju-personer-lamnar-bolaget",
+    "skriv": false,
+    "nyhetsvarde": 2,
+    "tema": "ekonomi",
+    "anledning": "Personalnotis utan större samhällelig betydelse eller koppling till autonomi. För tunn för en ledare. [nyhetsvärde 2 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-08-28",
+    "headline": "Man friades från misshandelsmisstankar",
+    "url": "https://alandsradio.ax/nyheter/man-friades-fran-misshandelsmisstankar",
+    "skriv": false,
+    "nyhetsvarde": 3,
+    "tema": "rättvisa",
+    "anledning": "Även om det handlar om rättvisa, är detta en enskild brottmålsnotis som saknar större principiell relevans för Åland, dess självstyrelse eller bredare samhällsfrågor. För liten substans för en ledare. [nyhetsvärde 3 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-08-28",
+    "headline": "LR inrättar nytt naturreservat i Kökar – markägare får 48 000 i ersättning",
+    "url": "https://alandsradio.ax/nyheter/lr-inrattar-nytt-naturreservat-i-kokar-markagare-far-48-000-i-ersattning",
+    "skriv": false,
+    "nyhetsvarde": 4,
+    "tema": "miljö",
+    "anledning": "Även om det handlar om ett beslut från landskapsregeringen och berör markägare, är ämnet i grunden miljöskydd och naturreservat. Julius skulle nog se detta som en alltför specifik och teknisk fråga om naturvård, snarare än något med tillräcklig koppling till autonomi, svensk identitet, samhällsordning eller större ekonomiska principer. Ersättningen till markägaren är en rutinåtgärd. Det är inte tillräckligt laddat för en ledare 1926. [nyhetsvärde 4 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-08-28",
+    "headline": "Del av Hammarlandsvägen stängs av under streetrace",
+    "url": "https://alandsradio.ax/nyheter/del-av-hammarlandsvagen-stangs-av-under-streetrace",
+    "skriv": false,
+    "nyhetsvarde": 1,
+    "tema": "trivial notis",
+    "anledning": "Trivial notis om en lokal trafikomläggning för ett sportevenemang. Saknar koppling till centrala teman som självstyrelse, politik, samhällsordning eller ekonomi. Inget av nyhetsvärde för en ledare av Julius. [nyhetsvärde 1 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-08-28",
+    "headline": "Vinden överraskade på SUP-paddling från Sverige – nya äventyr kan vänta",
+    "url": "https://alandsradio.ax/nyheter/sup-paddling",
+    "skriv": false,
+    "nyhetsvarde": 1,
+    "tema": "sport/personnotis",
+    "anledning": "Trivial personnotis om en fritidsaktivitet. Saknar all anknytning till Julius redaktionella värld och har inget nyhetsvärde för en ledare. [nyhetsvärde 1 < 6]",
+    "fallback": false
   }
 ]
