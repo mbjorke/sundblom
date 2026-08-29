@@ -5608,5 +5608,35 @@
     "tema": "sport",
     "anledning": "Ren sportresultat-rapportering av låg nationell betydelse, ej relevant för ledarartikel. [nyhetsvärde 1 < 6]",
     "fallback": false
+  },
+  {
+    "date": "2026-08-29",
+    "headline": "ÅU föll mot HJK – kampen om silvret nu jämn",
+    "url": "https://alandsradio.ax/nyheter/au-foll-mot-hjk-kampen-om-silvret-nu-jamn",
+    "skriv": false,
+    "nyhetsvarde": 2,
+    "tema": "sport",
+    "anledning": "Ren sportresultat-rapportering, ingen redaktionell vinkel för Tidningen Åland år 1926. [nyhetsvärde 2 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-08-29",
+    "headline": "Pridefesten lyckad trots dåligt väder",
+    "url": "https://alandsradio.ax/nyheter/pridefesten-lyckad-trots-daligt-vader",
+    "skriv": false,
+    "nyhetsvarde": 1,
+    "tema": "sedlighet, modernitetens förfall",
+    "anledning": "Ämnet är för kontroversiellt och saknar direkt koppling till Julius redaktionella prioriteringar som självstyrelse eller nationell identitet. Detta är en notis om en modern företeelse som inte skulle ges utrymme som ledarartikel 1926, snarare ses som ett tecken på sedlighetens förfall. Dessutom är substansen i artikeln för tunn för en ledare. [nyhetsvärde 1 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-08-29",
+    "headline": "IFK:s akademilag i serieledning efter vinst mot KaaPo",
+    "url": "https://alandsradio.ax/nyheter/ifks-akademilag-i-serieledning-efter-vinst-mot-kaapo",
+    "skriv": false,
+    "nyhetsvarde": 2,
+    "tema": "sport",
+    "anledning": "Ren sportresultat-rapportering utan större samhälls- eller politisk relevans för en ledarartikel av Julius Sundblom. För obetydligt för ledarsidan. [nyhetsvärde 2 < 6]",
+    "fallback": false
   }
 ]
