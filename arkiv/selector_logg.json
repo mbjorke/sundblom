@@ -5578,5 +5578,15 @@
     "tema": "vård och omsorg",
     "anledning": "Trivial notis om ett samarbetsprojekt inom ett specifikt vårdområde. Saknar den bredare politiska, samhälleliga eller identitetsmässiga relevans som krävs för en ledarartikel av Julius Sundblom. För smal fokus och ingen substans för en ledare. [nyhetsvärde 2 < 6]",
     "fallback": false
+  },
+  {
+    "date": "2026-08-29",
+    "headline": "Welander tremålsskytt då JIK:s herrar bortaslog FC RP",
+    "url": "https://alandsradio.ax/nyheter/welander-tremalsskytt-da-jiks-herrar-bortaslog-fc-rp",
+    "skriv": false,
+    "nyhetsvarde": 1,
+    "tema": "sport",
+    "anledning": "Ren sportresultat-rapportering av en smålokal fotbollsmatch. Saknar all relevans för Julius Sundbloms redaktionella linje. [nyhetsvärde 1 < 6]",
+    "fallback": false
   }
 ]
