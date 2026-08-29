@@ -5588,5 +5588,25 @@
     "tema": "sport",
     "anledning": "Ren sportresultat-rapportering av en smålokal fotbollsmatch. Saknar all relevans för Julius Sundbloms redaktionella linje. [nyhetsvärde 1 < 6]",
     "fallback": false
+  },
+  {
+    "date": "2026-08-29",
+    "headline": "Mari Puska är Årets fyr",
+    "url": "https://alandsradio.ax/nyheter/mari-puska-ar-arets-fyr",
+    "skriv": false,
+    "nyhetsvarde": 1,
+    "tema": "sedlighet",
+    "anledning": "Modern företeelse utan relevans för 1926 års redaktionella värld. Inget av Julius intresseområden berörs. Tunn notis utan substans för ledare. [nyhetsvärde 1 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-08-29",
+    "headline": "IFK:s akademilag i fortsatt serieledning",
+    "url": "https://alandsradio.ax/nyheter/ifks-akademilag-i-fortsatt-serieledning",
+    "skriv": false,
+    "nyhetsvarde": 1,
+    "tema": "sport",
+    "anledning": "Ren sportresultat-rapportering av låg nationell betydelse, ej relevant för ledarartikel. [nyhetsvärde 1 < 6]",
+    "fallback": false
   }
 ]
