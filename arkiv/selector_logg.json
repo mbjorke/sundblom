@@ -5538,5 +5538,45 @@
     "tema": "självstyrelse",
     "anledning": "Förhandlingar om självstyrelselagen är av central betydelse för Ålands framtid. Dystra tongångar signalerar potentiell kris för autonomin, vilket Julius med säkerhet skulle betrakta som en ledare värd att skriva om, med tanke på hans engagemang i självstyrelsefrågan och relationerna mellan Åland, Finland och Sverige.",
     "fallback": false
+  },
+  {
+    "date": "2026-08-29",
+    "headline": "Nu jagas varg i Hammarland – ”Svårt att lokalisera innan snön”",
+    "url": "https://alandsradio.ax/nyheter/nu-jagas-varg-i-hammarland-svart-att-lokalisera-innan-snon",
+    "skriv": false,
+    "nyhetsvarde": 3,
+    "tema": "smånotis",
+    "anledning": "Smålokal notis om vargjakt, saknar större politisk, samhällelig eller existentiell relevans för Julius. [nyhetsvärde 3 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-08-29",
+    "headline": "Vädret stoppar streetrace i Hammarland",
+    "url": "https://alandsradio.ax/nyheter/vadret-stoppar-streetrace-i-hammarland",
+    "skriv": false,
+    "nyhetsvarde": 1,
+    "tema": "trivial notis",
+    "anledning": "Trivial notis om inställt evenemang på grund av väder. Saknar relevans för Sundbloms redaktionella värld. [nyhetsvärde 1 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-08-29",
+    "headline": "Alla jaktvårdsföreningar får nu jaga varg – landskapet ska samordna",
+    "url": "https://alandsradio.ax/nyheter/alla-jaktvardsforeningar-far-nu-jaga-varg-landskapet-ska-samordna",
+    "skriv": false,
+    "nyhetsvarde": 3,
+    "tema": "lokal förvaltning",
+    "anledning": "Fråga om jakt på varg är en praktisk förvaltningsfråga, varken mer eller mindre. Trivialt. [nyhetsvärde 3 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-08-29",
+    "headline": "Åland och Lettland samarbetar för mer demensvänliga utemiljöer",
+    "url": "https://alandsradio.ax/nyheter/aland-och-lettland-samarbetar-for-mer-demensvanliga-utemiljoer",
+    "skriv": false,
+    "nyhetsvarde": 2,
+    "tema": "vård och omsorg",
+    "anledning": "Trivial notis om ett samarbetsprojekt inom ett specifikt vårdområde. Saknar den bredare politiska, samhälleliga eller identitetsmässiga relevans som krävs för en ledarartikel av Julius Sundblom. För smal fokus och ingen substans för en ledare. [nyhetsvärde 2 < 6]",
+    "fallback": false
   }
 ]
