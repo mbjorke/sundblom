@@ -5638,5 +5638,35 @@
     "tema": "sport",
     "anledning": "Ren sportresultat-rapportering utan större samhälls- eller politisk relevans för en ledarartikel av Julius Sundblom. För obetydligt för ledarsidan. [nyhetsvärde 2 < 6]",
     "fallback": false
+  },
+  {
+    "date": "2026-08-30",
+    "headline": "Tekniskt fel utlöste larm från Hotell Cikada",
+    "url": "https://alandsradio.ax/nyheter/tekniskt-fel-utloste-larm-fran-hotell-cikada",
+    "skriv": false,
+    "nyhetsvarde": 1,
+    "tema": "lokalnotis",
+    "anledning": "Trivial notis om tekniskt fel och falsklarm, saknar nyhetsvärde för en ledare. [nyhetsvärde 1 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-08-30",
+    "headline": "Motorproblem på Lumparn – sjöräddningen fick bogsera",
+    "url": "https://alandsradio.ax/nyheter/motorproblem-pa-lumparn-sjoraddningen-fick-bogsera",
+    "skriv": false,
+    "nyhetsvarde": 1,
+    "tema": "trivial notis",
+    "anledning": "Trivial lokal notis utan någon som helst koppling till politiska, samhälleliga eller ekonomiska frågor av intresse för en ledarartikel. Ingen substans för Julius redaktionella värld. [nyhetsvärde 1 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-08-30",
+    "headline": "Bestred fortkörningsbot – döms i tingsrätten",
+    "url": "https://alandsradio.ax/nyheter/bestred-fortkorningsbot-doms-i-tingsratten",
+    "skriv": false,
+    "nyhetsvarde": 2,
+    "tema": "rättvisa",
+    "anledning": "En ren personnotis om en fortkörningsbot och rättegång. Saknar den bredare samhälleliga eller politiska relevans som motiverar en ledarartikel av Julius Sundblom. Ingen koppling till autonomi, svensk identitet, samhällsordning eller modernitetens förfall på ett substantiellt sätt. [nyhetsvärde 2 < 6]",
+    "fallback": false
   }
 ]
