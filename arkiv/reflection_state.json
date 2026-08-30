@@ -1,14 +1,16 @@
 {
-  "last_date": "2026-08-23",
-  "last_mode": "iakttagelse",
-  "last_focus": "sensommar på landsbygden, skörd och eftertanke",
+  "last_date": "2026-08-30",
+  "last_mode": "tråddragning",
+  "last_focus": "höstens annalkande, naturens förändring",
   "recent_modes": [
     "iakttagelse",
-    "iakttagelse"
+    "iakttagelse",
+    "tråddragning"
   ],
   "recent_themes": [],
   "revisited_ids": [
     "2026-05-28-landskapet-varnar-for-hal-vagbana-efter-oljespill.json",
-    "2026-07-14-ghanansk-forsvarare-klar-for-ifk-mariehamn.json"
+    "2026-07-14-ghanansk-forsvarare-klar-for-ifk-mariehamn.json",
+    "2026-07-25-landskapet-vill-effektivisera-servicen-for-arbetssokande.json"
   ]
 }
