@@ -5758,5 +5758,55 @@
     "tema": "trivial notis",
     "anledning": "Trivial notis om sjöräddning utan större samhällelig betydelse eller koppling till Julius redaktionella teman. Saknar substans för en ledare. [nyhetsvärde 1 < 6]",
     "fallback": false
+  },
+  {
+    "date": "2026-08-31",
+    "headline": "Åländska elever halkar efter – Finland satsar mer på stöd",
+    "url": "https://alandsradio.ax/nyheter/alandska-elever-halkar-efter-finland-satsar-mer-pa-stod",
+    "skriv": true,
+    "nyhetsvarde": 8,
+    "tema": "självstyrelse, bildning, samhällsordning",
+    "anledning": "Belyser en oroande trend inom åländsk utbildning jämfört med Finland, vilket direkt kopplar till autonomins förmåga att tillgodose samhällsbehov. Frågan om skillnaden i resurser (speciallärare) och åtgärder jämfört med finska skolor är av stor vikt för självstyrelsens legitimitet och hur väl Åland förvaltar sitt utbildningsansvar. Utbildningsministerns uttalande och förslag på åtgärder ger substans för en diskussion om både problemets omfattning och potentiella lösningar. Detta är en kärnfråga för Ålands framtid och Julius Sundblom skulle finna den värdig en ledarartikel.",
+    "fallback": false
+  },
+  {
+    "date": "2026-08-31",
+    "headline": "Så ska skyddsjakten på varg gå till – jägarna rapporterar dagligen",
+    "url": "https://alandsradio.ax/nyheter/sa-ska-skyddsjakten-pa-varg-ga-till-jagarna-rapporterar-dagligen",
+    "skriv": false,
+    "nyhetsvarde": 3,
+    "tema": "natur",
+    "anledning": "Ämnet i sig är för perifert för Julius redaktionella värld 1926. Vargjakt saknar koppling till autonomi, svensk identitet, klass, sedlighet eller de större geopolitiska frågorna. Det är en praktisk förvaltningsfråga av begränsad betydelse. [nyhetsvärde 3 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-08-31",
+    "headline": "Ehn: Nu måste riket visa att viljan finns",
+    "url": "https://alandsradio.ax/nyheter/ehn-nu-maste-riket-visa-att-viljan-finns",
+    "skriv": true,
+    "nyhetsvarde": 9,
+    "tema": "självstyrelse",
+    "anledning": "Frågan om revidering av självstyrelselagen är av central betydelse för Ålands autonomi och framtid. Innehåller politisk strid, tidsaspekter och potentiella konsekvenser för självstyrelsens räckvidd. Detta är en huvudfråga för Julius Sundblom.",
+    "fallback": false
+  },
+  {
+    "date": "2026-08-31",
+    "headline": "Föreningen Regnbågsfyren kan upphöra vid årsskiftet",
+    "url": "https://alandsradio.ax/nyheter/foreningen-regnbagsfyren-kan-upphora-vid-arsskiftet",
+    "skriv": false,
+    "nyhetsvarde": 2,
+    "tema": "ekonomi/föreningsliv",
+    "anledning": "En smålokal notis om en förenings ekonomiska svårigheter. Saknar tillräcklig koppling till centrala åländska frågor som självstyrelse, politik, samhällsordning eller sedlighet för en ledare år 1926. Denna typ av nyhet saknar den tyngd och det nyhetsvärde som krävs för att Julius Sundblom skulle skriva en ledarartikel. Han skulle se detta som en trivial, intern angelägenhet för en enskild förening. [nyhetsvärde 2 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-08-31",
+    "headline": "Trafikavstängningar och ändrade färjeförbindelser på Brändö i höst",
+    "url": "https://alandsradio.ax/nyheter/trafikavstangningar-och-andrade-farjeforbindelser-pa-brando-i-host",
+    "skriv": false,
+    "nyhetsvarde": 2,
+    "tema": "infrastruktur",
+    "anledning": "Standardmässigt underhållsarbete med lokala trafikförändringar. Saknar djupare politisk, samhällelig eller existentiell bäring för en ledarartikel. [nyhetsvärde 2 < 6]",
+    "fallback": false
   }
 ]
