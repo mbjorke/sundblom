@@ -5808,5 +5808,15 @@
     "tema": "infrastruktur",
     "anledning": "Standardmässigt underhållsarbete med lokala trafikförändringar. Saknar djupare politisk, samhällelig eller existentiell bäring för en ledarartikel. [nyhetsvärde 2 < 6]",
     "fallback": false
+  },
+  {
+    "date": "2026-08-31",
+    "headline": "IFK fortsätter flyga – en poäng till kvalplats inför slutserien",
+    "url": "https://alandsradio.ax/nyheter/ifk-fortsatter-flyga-en-poang-till-kvalplats-infor-slutserien",
+    "skriv": false,
+    "nyhetsvarde": 2,
+    "tema": "sport",
+    "anledning": "Ren sportresultat-rapportering, ingen redaktionell vinkel med relevans för 1926 års Åland eller Julius Sundbloms intresseområden. [nyhetsvärde 2 < 6]",
+    "fallback": false
   }
 ]
