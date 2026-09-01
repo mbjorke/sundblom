@@ -5888,5 +5888,85 @@
     "tema": "självstyrelse",
     "anledning": "Frågan om myndighetsresurser och autonomins förmåga att upprätthålla samhällsfunktioner är direkt kopplad till självstyrelsen och dess effektivitet. Risken för sämre tillsyn och längre handläggningstider kan tolkas som ett hot mot samhällsordningen och medborgarnas rättssäkerhet, vilket är ett redaktionellt intresse.",
     "fallback": false
+  },
+  {
+    "date": "2026-09-01",
+    "headline": "Sömnprofessorns bästa tips för en god natts sömn",
+    "url": "https://alandsradio.ax/nyheter/somnprofessorns-basta-tips-for-en-god-natts-somn",
+    "skriv": false,
+    "nyhetsvarde": 1,
+    "tema": "hälsa",
+    "anledning": "Trivial notis om sömnråd, saknar relevans för Julius redaktionella värld och Åland 1926. [nyhetsvärde 1 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-09-01",
+    "headline": "Fem ålänningar kvalade till SM i billjud",
+    "url": "https://alandsradio.ax/nyheter/fem-alanningar-kvalade-till-sm-i-billjud",
+    "skriv": false,
+    "nyhetsvarde": 1,
+    "tema": "nöje",
+    "anledning": "Trivial notis om en modern fritidssysselsättning utan koppling till Tidningen Ålands redaktionella linje. Saknar politisk, samhällelig eller kulturell relevans för år 1926. [nyhetsvärde 1 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-09-01",
+    "headline": "Slut på postombudsverksamhet i Geta",
+    "url": "https://alandsradio.ax/nyheter/slut-pa-postombudsverksamhet-i-geta",
+    "skriv": false,
+    "nyhetsvarde": 2,
+    "tema": "lokal service",
+    "anledning": "Trivial smålokal notis om rutinåtgärd. Saknar politisk, samhällelig eller existentiell betydelse för en ledarartikel. [nyhetsvärde 2 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-09-01",
+    "headline": "Slagsmål på Lilla holmen gav två unga män böter",
+    "url": "https://alandsradio.ax/nyheter/slagsmal-pa-lilla-holmen-gav-tva-unga-man-boter",
+    "skriv": false,
+    "nyhetsvarde": 2,
+    "tema": "sedlighet",
+    "anledning": "Trivial notis om ungdomsfylla och slagsmål, saknar större samhällelig relevans eller koppling till Julius redaktionella teman bortom allmän sedlighet. För lite substans för en ledare. [nyhetsvärde 2 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-09-01",
+    "headline": "Polisen: Ingen är skyddad från brott på nätet",
+    "url": "https://alandsradio.ax/nyheter/polisen-ingen-ar-skyddad-fran-brott-pa-natet",
+    "skriv": false,
+    "nyhetsvarde": 2,
+    "tema": "modernitetens foerfall",
+    "anledning": "Internets framvaext och brottslighetens nya former aeterfinns inte i 1926 aars saemhaelle. Saknar daermed substans foer en ledare. [nyhetsvärde 2 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-09-01",
+    "headline": "Saltvik funderar på kameraövervakning vid daghem",
+    "url": "https://alandsradio.ax/nyheter/saltvik-funderar-pa-kameraovervakning-vid-daghem",
+    "skriv": false,
+    "nyhetsvarde": 2,
+    "tema": "smånotiser",
+    "anledning": "Trivial, lokal notis om skadegörelse och rutinåtgärd. Ingen större politisk, samhällelig eller autonomirelaterad relevans. Saknar substans för en ledare av Julius. [nyhetsvärde 2 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-09-01",
+    "headline": "Operafestivalen lockade besökare utifrån",
+    "url": "https://alandsradio.ax/nyheter/operafestivalen-lockade-besokare-utifran",
+    "skriv": false,
+    "nyhetsvarde": 3,
+    "tema": "kultur",
+    "anledning": "Kultur- och turistnotis. För trivial för en ledare, ingen politisk, samhällelig eller existentiell vinkel. Fokus på besökarsiffror. [nyhetsvärde 3 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-09-01",
+    "headline": "Högskolan satsar 20 000 på AI-verktyg för turistföretagare",
+    "url": "https://alandsradio.ax/nyheter/hogskolan-satsar-20-000-pa-ai-verktyg-for-turistforetagare",
+    "skriv": false,
+    "nyhetsvarde": 3,
+    "tema": "ekonomi",
+    "anledning": "För specifik och modern teknisk satsning som inte ryms i Julius redaktionella värld 1926. Saknar bredare samhällelig eller politisk relevans för en ledare. [nyhetsvärde 3 < 6]",
+    "fallback": false
   }
 ]
