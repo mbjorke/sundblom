@@ -5968,5 +5968,25 @@
     "tema": "ekonomi",
     "anledning": "För specifik och modern teknisk satsning som inte ryms i Julius redaktionella värld 1926. Saknar bredare samhällelig eller politisk relevans för en ledare. [nyhetsvärde 3 < 6]",
     "fallback": false
+  },
+  {
+    "date": "2026-09-01",
+    "headline": "Sjöräddningen hjälpte båt med bränslestopp",
+    "url": "https://alandsradio.ax/nyheter/sjoraddningen-hjalpte-bat-med-branslestopp",
+    "skriv": false,
+    "nyhetsvarde": 1,
+    "tema": "trivial notis",
+    "anledning": "Trivial notis om sjöräddning, ingen politisk eller samhällelig relevans för en ledare. [nyhetsvärde 1 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-09-01",
+    "headline": "Man körde 158 kilometer i timmen på Hammarlandsvägen – döms till böter",
+    "url": "https://alandsradio.ax/nyheter/man-korde-158-kilometer-i-timmen-pa-hammarlandsvagen-doms-till-boter",
+    "skriv": false,
+    "nyhetsvarde": 2,
+    "tema": "sedlighet",
+    "anledning": "En enskild fortkörningsdom är en trivial notis, inte tillräckligt väsentlig för en ledarartikel av Julius Sundblom. Saknar större samhällsbetydelse eller koppling till autonomi. [nyhetsvärde 2 < 6]",
+    "fallback": false
   }
 ]
