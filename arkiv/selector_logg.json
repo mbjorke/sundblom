@@ -5818,5 +5818,75 @@
     "tema": "sport",
     "anledning": "Ren sportresultat-rapportering, ingen redaktionell vinkel med relevans för 1926 års Åland eller Julius Sundbloms intresseområden. [nyhetsvärde 2 < 6]",
     "fallback": false
+  },
+  {
+    "date": "2026-09-01",
+    "headline": "Bättre tider spås på arbetsmarknaden – utbildning och inflyttning kan sänka arbe",
+    "url": "https://alandsradio.ax/nyheter/battre-tider-spas-pa-arbetsmarknaden-utbildning-och-inflyttning-kan-sanka-arbetslosheten",
+    "skriv": true,
+    "nyhetsvarde": 7,
+    "tema": "ekonomi och samhällsordning",
+    "anledning": "Arbetsmarknadsutmaningar med koppling till kompetensförsörjning och inflyttning har stor samhällelig och ekonomisk relevans. Det berör Ålands framtida utveckling och kan diskuteras i relation till autonomins förutsättningar, utbildningspolitik och sociala frågor. Möjlighet att belysa modernitetens utmaningar och behovet av bildning.",
+    "fallback": false
+  },
+  {
+    "date": "2026-09-01",
+    "headline": "Luke: Nationell minskning av sjöfågelbestånden under 2026",
+    "url": "https://alandsradio.ax/nyheter/luke-nationell-minskning-av-sjofagelbestanden-under-2026",
+    "skriv": false,
+    "nyhetsvarde": 3,
+    "tema": "natur/miljö",
+    "anledning": "Även om det handlar om djur och natur, är detta en ren statistisk rapport om viltbestånd, inte en fråga av autonomipolitisk, ekonomisk eller samhällelig betydelse som skulle motivera en ledarartikel av Julius Sundblom. Det saknar koppling till hans kärnämnen. [nyhetsvärde 3 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-09-01",
+    "headline": "M/S Skarven satt fast i Degerby",
+    "url": "https://alandsradio.ax/nyheter/ms-skarven-satt-fast-i-degerby",
+    "skriv": false,
+    "nyhetsvarde": 1,
+    "tema": "lokal notis",
+    "anledning": "Trivial notis om en mindre försening, ingen redaktionell vinkel för en ledare. [nyhetsvärde 1 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-09-01",
+    "headline": "Jomalas köp av Hemgården slutfört",
+    "url": "https://alandsradio.ax/nyheter/jomalas-kop-av-hemgarden-slutfort",
+    "skriv": false,
+    "nyhetsvarde": 3,
+    "tema": "lokal förvaltning",
+    "anledning": "Smålokal notis om en rutinåtgärd (fastighetsförsäljning) som inte har någon större politisk, samhällelig eller autonomirelevant bäring. Saknar substans för en ledarartikel av Julius. [nyhetsvärde 3 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-09-01",
+    "headline": "Finströms önskemål får vänta – landskapet prioriterar lagändringar",
+    "url": "https://alandsradio.ax/nyheter/finstroms-onskemal-far-vanta-landskapet-prioriterar-lagandringar",
+    "skriv": false,
+    "nyhetsvarde": 3,
+    "tema": "administration",
+    "anledning": "Ämnet berör lagstiftning och ansvarsfördelning inom socialvården, vilket har viss relevans för självstyrelsen. Dock är det snarare en intern administrativ fråga om prioritering av lagändringar före rekommendationer, inte en större konflikt eller ett principiellt beslut. Saknar den dramatik eller ideologiska vinkel Julius Sundblom skulle behöva för en ledare. För detaljerat och tekniskt för att motivera en ledare. [nyhetsvärde 3 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-09-01",
+    "headline": "Elva trafikolyckor med personskador under andra kvartalet",
+    "url": "https://alandsradio.ax/nyheter/elva-trafikolyckor-med-personskador-under-andra-kvartalet",
+    "skriv": false,
+    "nyhetsvarde": 3,
+    "tema": "sedlighet",
+    "anledning": "Statistik över trafikolyckor är en för trivial notis. Även om en ökning av olyckor kan ge en vinkel om 'modernitetens förfall', saknar denna notis substans för en ledare. [nyhetsvärde 3 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-09-01",
+    "headline": "ÅMHM tvingas dra ner på personal – samtidigt växer uppdraget",
+    "url": "https://alandsradio.ax/nyheter/amhm-tvingas-dra-ner-pa-personal-samtidigt-vaxer-uppdraget",
+    "skriv": true,
+    "nyhetsvarde": 7,
+    "tema": "självstyrelse",
+    "anledning": "Frågan om myndighetsresurser och autonomins förmåga att upprätthålla samhällsfunktioner är direkt kopplad till självstyrelsen och dess effektivitet. Risken för sämre tillsyn och längre handläggningstider kan tolkas som ett hot mot samhällsordningen och medborgarnas rättssäkerhet, vilket är ett redaktionellt intresse.",
+    "fallback": false
   }
 ]
