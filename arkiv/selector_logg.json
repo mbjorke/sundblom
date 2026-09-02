@@ -6088,5 +6088,75 @@
     "tema": "samhällsordning",
     "anledning": "Viktigt ämne för allmänheten, men för mycket av en administrativ rutinärende med tekniska förklaringar snarare än en konflikt av större principiell karaktär för en ledarartikel. Julius skriver inte om varje krånglande system. [nyhetsvärde 4 < 6]",
     "fallback": false
+  },
+  {
+    "date": "2026-09-02",
+    "headline": "Ett sista farväl ges till Getaboden med sånger, tavlor och minnen",
+    "url": "https://alandsradio.ax/nyheter/ett-sista-farval-ges-till-getaboden-med-sanger-tavlor-och-minnen",
+    "skriv": false,
+    "nyhetsvarde": 2,
+    "tema": "lokal notis",
+    "anledning": "Trivial lokal notis om en butiks nedläggning. Saknar relevans för Julius Sundbloms redaktionella fokus. [nyhetsvärde 2 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-09-02",
+    "headline": "Lysrör orsakade utryckning till KHS",
+    "url": "https://alandsradio.ax/nyheter/lysror-orsakade-utryckning-till-khs",
+    "skriv": false,
+    "nyhetsvarde": 1,
+    "tema": "trivial notis",
+    "anledning": "En trivial notis om en mindre incident, helt utan koppling till politik, samhällsordning, självstyrelse eller andra väsentliga teman. Saknar substans för en ledare. [nyhetsvärde 1 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-09-02",
+    "headline": "Vitkindade gäss inventerade – “Liten ökning från förra året”",
+    "url": "https://alandsradio.ax/nyheter/vitkindade-gass-inventerade-liten-okning-fran-forra-aret",
+    "skriv": false,
+    "nyhetsvarde": 1,
+    "tema": "natur",
+    "anledning": "Trivial notis om fågelinventering, saknar koppling till centrala redaktionella teman. [nyhetsvärde 1 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-09-02",
+    "headline": "Skärgårdens enda flygfält kan läggas ner – upprustning kan kosta en miljon",
+    "url": "https://alandsradio.ax/nyheter/skargardens-enda-flygfalt-kan-laggas-ner-upprustning-kan-kosta-en-miljon",
+    "skriv": false,
+    "nyhetsvarde": 3,
+    "tema": "infrastruktur",
+    "anledning": "Även om det rör infrastruktur och kommunikation, är detta en smålokal notis med begränsad relevans för de stora samhällsfrågorna 1926. Flygtrafik är ännu inte central i Sundbloms redaktionella värld, och notisen saknar den typ av konflikt eller autonomirelevans som skulle motivera en ledare. [nyhetsvärde 3 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-09-02",
+    "headline": "Social- och miljöutskottet säger ja till mammografi från 40 år",
+    "url": "https://alandsradio.ax/nyheter/social-och-miljoutskottet-sager-ja-till-mammografi-fran-40-ar",
+    "skriv": false,
+    "nyhetsvarde": 4,
+    "tema": "hälsa",
+    "anledning": "Frågan om mammografi är en viktig hälsofråga, men den saknar den typ av politisk, samhällelig eller sedlig relevans som Julius Sundblom skulle finna värdig en ledarartikel. Det är en detaljfråga om sjukvård som inte direkt berör självstyrelsen, den svenska identiteten eller tidens stora omvälvningar. Den saknar även tillräcklig konflikt eller substans för en djupare ledare. [nyhetsvärde 4 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-09-02",
+    "headline": "Sannfinländarnas ungdomsförbund vill ha tvångsfinska på Åland",
+    "url": "https://alandsradio.ax/nyheter/sannfinlandarnas-ungdomsforbund-vill-ha-tvangsfinska-pa-aland",
+    "skriv": true,
+    "nyhetsvarde": 9,
+    "tema": "självstyrelse, svensk identitet, rikspolitik",
+    "anledning": "Direkt attack mot Ålands autonomi och svenska språkets ställning. Hög politisk relevans och potentiell konflikt med rikspolitiken.",
+    "fallback": false
+  },
+  {
+    "date": "2026-09-02",
+    "headline": "Nu är spelschemat för IFK:s höst klart",
+    "url": "https://alandsradio.ax/nyheter/nu-ar-spelschemat-for-ifks-host-klart",
+    "skriv": false,
+    "nyhetsvarde": 1,
+    "tema": "sport",
+    "anledning": "Ren sportresultat-rapportering och spelschema. Saknar politisk, samhällelig eller existentiell relevans för ledarartikel. [nyhetsvärde 1 < 6]",
+    "fallback": false
   }
 ]
