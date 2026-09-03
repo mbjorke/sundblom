@@ -6348,5 +6348,15 @@
     "tema": "ekonomi",
     "anledning": "Lokal kommunal investering med skattepåverkan är av viss relevans men saknar den djupare politiska eller samhälleliga vinkel som Julius söker för en ledarartikel. Beslutet är lokalt och rör rutinmässig äldreomsorgsplanering snarare än principer om självstyrelse, sedlighet eller större ekonomiska reformer. Finns inte tillräckligt för en värdig ledare av Julius kaliber. [nyhetsvärde 4 < 6]",
     "fallback": false
+  },
+  {
+    "date": "2026-09-03",
+    "headline": "Förslaget till stadsstyrelsen: Gör om upphandlingen av företagshälsovård",
+    "url": "https://alandsradio.ax/nyheter/forslaget-till-stadsstyrelsen-gor-om-upphandlingen-av-foretagshalsovard",
+    "skriv": false,
+    "nyhetsvarde": 4,
+    "tema": "lokal förvaltning",
+    "anledning": "Även om det rör en betydande summa pengar och en offentlig upphandling, är detta i grunden en rutinfråga inom kommunal förvaltning. Marknadsdomstolens beslut har redan kommit, och stadens reaktion är en administrativ åtgärd snarare än en konflikt eller principiell fråga som kräver en ledarartikel av Julius Sundblom. Det saknar den bredare politiska eller samhälleliga relevans som Julius normalt fokuserar på. [nyhetsvärde 4 < 6]",
+    "fallback": false
   }
 ]
