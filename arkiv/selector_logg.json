@@ -6338,5 +6338,15 @@
     "tema": "ekonomi, personnotis",
     "anledning": "Intern ekonomisk dispyt i en förening. För obetydlig för en ledare, saknar samhällelig eller politisk tyngd i Julius' värld. Lönediskussioner inom en enskild organisation är inte av tillräckligt allmänintresse för 1926 års ledarspalt. [nyhetsvärde 3 < 6]",
     "fallback": false
+  },
+  {
+    "date": "2026-09-03",
+    "headline": "Jomala satsar 18 miljoner på nya äldreboendet – kan innebära skattehöjning med e",
+    "url": "https://alandsradio.ax/nyheter/jomala-satsar-18-miljoner-pa-nya-aldreboendet-kan-innebara-skattehojning-med-en-procentenhet",
+    "skriv": false,
+    "nyhetsvarde": 4,
+    "tema": "ekonomi",
+    "anledning": "Lokal kommunal investering med skattepåverkan är av viss relevans men saknar den djupare politiska eller samhälleliga vinkel som Julius söker för en ledarartikel. Beslutet är lokalt och rör rutinmässig äldreomsorgsplanering snarare än principer om självstyrelse, sedlighet eller större ekonomiska reformer. Finns inte tillräckligt för en värdig ledare av Julius kaliber. [nyhetsvärde 4 < 6]",
+    "fallback": false
   }
 ]
