@@ -6158,5 +6158,105 @@
     "tema": "sport",
     "anledning": "Ren sportresultat-rapportering och spelschema. Saknar politisk, samhällelig eller existentiell relevans för ledarartikel. [nyhetsvärde 1 < 6]",
     "fallback": false
+  },
+  {
+    "date": "2026-09-03",
+    "headline": "Alandia Forel söker näringsrätt i efterhand – ingen dramatik, enligt vd:n",
+    "url": "https://alandsradio.ax/nyheter/alandia-forel-soker-naringsratt-i-efterhand-ingen-dramatik-enligt-vdn",
+    "skriv": false,
+    "nyhetsvarde": 3,
+    "tema": "ekonomi/juridik",
+    "anledning": "Även om det rör ett bolags agerande och en viss försummelse, är det en administrativ notis om en efterhandsansökan. Det saknar den politiska eller samhälleliga dignitet Julius söker för en ledare. Det är mer en rutinåtgärd i efterhand, och vd:n tonar själv ned dramatiken. För tunt för en ledare. [nyhetsvärde 3 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-09-03",
+    "headline": "”Det känns jätteroligt“ - Jomalas äldreomsorgschef om byggbeslutet",
+    "url": "https://alandsradio.ax/nyheter/det-kanns-jatteroligt-jomalas-aldreomsorgschef-om-byggbeslutet",
+    "skriv": false,
+    "nyhetsvarde": 3,
+    "tema": "lokal förvaltning",
+    "anledning": "Ämnet är en kommunal byggfråga som är för smal och saknar koppling till större autonomifrågor eller Julius Sundbloms typiska ledarämnen. Beslutet är lokalt och av rutinkaraktär. [nyhetsvärde 3 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-09-03",
+    "headline": "Ålandsbostäder om centrumaffären: ”Vi går in för att bevara och förbättra”",
+    "url": "https://alandsradio.ax/nyheter/alandsbostader-om-centrumaffaren-vi-gar-in-for-att-bevara-och-forbattra",
+    "skriv": false,
+    "nyhetsvarde": 3,
+    "tema": "ekonomi",
+    "anledning": "Tunn notis om en fastighetsaffär som saknar den tyngd och konflikt som krävs för en ledarartikel. Ingen direkt koppling till självstyrelse, sedlighet eller rikspolitik. [nyhetsvärde 3 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-09-03",
+    "headline": "Ferrari ny tf rektor vid ÅMI",
+    "url": "https://alandsradio.ax/nyheter/ferrari-ny-tf-rektor-vid-ami",
+    "skriv": false,
+    "nyhetsvarde": 4,
+    "tema": "personalfråga",
+    "anledning": "Intern personalfråga med inslag av disciplinärenden. För lokal och personfokuserad för en ledare, saknar bredare samhälls- eller autonomirelevans. Julius skulle snarare se detta som en notis, möjligen i 'Blandade Notiser'. [nyhetsvärde 4 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-09-03",
+    "headline": "Ömsen ger upp centrumprojektet – de tar över",
+    "url": "https://alandsradio.ax/nyheter/omsen-ger-upp-centrumprojektet-de-tar-over",
+    "skriv": false,
+    "nyhetsvarde": 4,
+    "tema": "ekonomi",
+    "anledning": "Större fastighetsaffär, men ingen direkt koppling till autonomi, sedlighet eller rikspolitik. Lokal ekonomisk notis, saknar tyngd för en ledare av Sundblom. [nyhetsvärde 4 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-09-03",
+    "headline": "Utredning från högskolan: Elektrifiering skulle sänka Transmars koldioxidutsläpp",
+    "url": "https://alandsradio.ax/nyheter/utredning-fran-hogskolan-elektrifiering-skulle-sanka-transmars-koldioxidutslapp-med-88-procent",
+    "skriv": false,
+    "nyhetsvarde": 4,
+    "tema": "ekonomi/miljö",
+    "anledning": "Ämnet berör visserligen ekonomi och framtida teknik, men det är en företagsintern utredning som ännu inte lett till konkreta beslut. Nyhetsvärdet är för lågt för en ledare, och den saknar koppling till Julius Sundbloms kärnämnen som autonomi, samhällsordning eller sedlighet. Det är mer en notis om ett företags funderingar. [nyhetsvärde 4 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-09-03",
+    "headline": "Judoklubben vill se bättre rutiner kring judosalen",
+    "url": "https://alandsradio.ax/nyheter/judoklubben-vill-se-battre-rutiner-kring-judosalen",
+    "skriv": false,
+    "nyhetsvarde": 2,
+    "tema": "småskalig föreningsfråga",
+    "anledning": "Trivial notis om en förenings interna angelägenheter och rutinmässiga förhandlingar med kommunen. Saknar politisk, samhällelig eller existentiell bäring för Åland som helhet. [nyhetsvärde 2 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-09-03",
+    "headline": "LR vill reglera metalldetektering vid fornminnen",
+    "url": "https://alandsradio.ax/nyheter/lr-vill-reglera-metalldetektering-vid-fornminnen",
+    "skriv": false,
+    "nyhetsvarde": 4,
+    "tema": "kultur",
+    "anledning": "Reglering av metalldetektering är en smal sak. För liten samhällelig betydelse för Julius ledarspalt. Fokus ligger på hobbyutövande, ej stora principer. [nyhetsvärde 4 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-09-03",
+    "headline": "Hållbarhetsarbetet fyller tio år – här kan resultaten följas",
+    "url": "https://alandsradio.ax/nyheter/hallbarhetsarbetet-fyller-tio-ar-har-kan-resultaten-foljas",
+    "skriv": false,
+    "nyhetsvarde": 3,
+    "tema": "modernitetens förfall",
+    "anledning": "Begreppet 'hållbarhet' är främmande för tidsepoken 1926. Denna notis är för modern och teknisk i sin natur för att passa Sundbloms redaktionella linje. Det saknar konkret konflikt eller beslut som direkt påverkar den åländska självstyrelsen, sedligheten eller den svenska identiteten på ett sätt som skulle motivera en ledarartikel. [nyhetsvärde 3 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-09-03",
+    "headline": "Polismästaren kritisk till att ÅHS sparkrav spiller över på andra – myndigheten ",
+    "url": "https://alandsradio.ax/nyheter/polismastaren-kritisk-till-att-ahs-sparkrav-spiller-over-pa-andra-myndigheten-sparar-700-000",
+    "skriv": true,
+    "nyhetsvarde": 8,
+    "tema": "självstyrelse, ekonomi, samhällsordning",
+    "anledning": "Polismästarens kritik mot hur sparkrav fördelas inom landskapsförvaltningen, där ÅHS:s misslyckanden påverkar andra myndigheter, är av stor betydelse för autonomins ekonomiska förvaltning och principen om rättvisa. Detta berör samhällsordningen, ekonomin och den åländska självstyrelsens funktion, vilket är centralt för Sundblom. Dessutom finns konkreta förslag om höjda avgifter och förändringar i arbetstider, vilket påverkar allmänheten och därmed samhället. Detta har tillräcklig substans för en ledare.",
+    "fallback": false
   }
 ]
