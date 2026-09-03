@@ -6258,5 +6258,85 @@
     "tema": "självstyrelse, ekonomi, samhällsordning",
     "anledning": "Polismästarens kritik mot hur sparkrav fördelas inom landskapsförvaltningen, där ÅHS:s misslyckanden påverkar andra myndigheter, är av stor betydelse för autonomins ekonomiska förvaltning och principen om rättvisa. Detta berör samhällsordningen, ekonomin och den åländska självstyrelsens funktion, vilket är centralt för Sundblom. Dessutom finns konkreta förslag om höjda avgifter och förändringar i arbetstider, vilket påverkar allmänheten och därmed samhället. Detta har tillräcklig substans för en ledare.",
     "fallback": false
+  },
+  {
+    "date": "2026-09-03",
+    "headline": "ÅHS minskar vårdplatserna på flera avdelningar – 18 tjänster berörs",
+    "url": "https://alandsradio.ax/nyheter/ahs-minskar-vardplatserna-pa-flera-avdelningar-18-tjanster-berors",
+    "skriv": true,
+    "nyhetsvarde": 8,
+    "tema": "ekonomi och samhällsordning",
+    "anledning": "Betydande nedskärningar inom den offentliga vården, med konsekvenser för personal och medborgare. Detta berör direkt samhällets funktion och välfärd, och kan tolkas som ett förfall av den moderna tidens strävan efter effektivitet på bekostnad av mänskliga behov. Julius skulle kunna analysera de långsiktiga konsekvenserna för Åland och den självstyrda regionens förmåga att tillhandahålla grundläggande tjänster, samt sätta det i relation till ekonomiska realiteter och eventuell misskötsel.",
+    "fallback": false
+  },
+  {
+    "date": "2026-09-03",
+    "headline": "Vägtrumma byts på Skagvägen",
+    "url": "https://alandsradio.ax/nyheter/vagtrumma-byts-pa-skagvagen",
+    "skriv": false,
+    "nyhetsvarde": 1,
+    "tema": "lokal infrastruktur",
+    "anledning": "Trivial, smålokal notis om rutinåtgärd. Saknar all anknytning till Julius redaktionella värld eller substans för en ledare. [nyhetsvärde 1 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-09-03",
+    "headline": "Landskapsregeringen ställer in årets julfest",
+    "url": "https://alandsradio.ax/nyheter/landskapsregeringen-staller-in-arets-julfest",
+    "skriv": true,
+    "nyhetsvarde": 8,
+    "tema": "ekonomi och självstyrelse",
+    "anledning": "Beslutet rör landskapets ekonomi och politiska prioriteringar, vilket har en direkt koppling till självstyrelsens ansvar och medborgarnas förtroende. Den offentliga kritiken ger en tydlig konflikt som Sundblom kan kommentera utifrån klass- och samhällsordning, samt sedlighet.",
+    "fallback": false
+  },
+  {
+    "date": "2026-09-03",
+    "headline": "HI söker ny manlig talesperson",
+    "url": "https://alandsradio.ax/nyheter/hi-soker-ny-manlig-talesperson",
+    "skriv": false,
+    "nyhetsvarde": 2,
+    "tema": "partipolitik",
+    "anledning": "Intern partinotis utan större politisk eller samhällelig relevans. Saknar substans för en ledarartikel av Julius Sundblom. [nyhetsvärde 2 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-09-03",
+    "headline": "Ömsens vd: Jag har påmints om centrumprojektet varje morgon",
+    "url": "https://alandsradio.ax/nyheter/omsens-vd-jag-har-pamints-om-centrumprojektet-varje-morgon",
+    "skriv": false,
+    "nyhetsvarde": 4,
+    "tema": "ekonomi",
+    "anledning": "Även om det handlar om större fastighetsaffärer, är detta främst en lokal ekonomisk nyhet om ett privat bolags misslyckande och försäljning. Den saknar den direkta politiska eller samhälleliga relevans som skulle motivera en ledare av Julius Sundblom 1926. Den är mer en 'notis' än en ledarartikelvärdig händelse ur 1926 års perspektiv. [nyhetsvärde 4 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-09-03",
+    "headline": "Så bemöter de involverade Ålands Radios rapportering om rysk-kopplad gästhamn",
+    "url": "https://alandsradio.ax/nyheter/sa-bemoter-de-involverade-alands-radios-rapportering-om-rysk-kopplad-gasthamn",
+    "skriv": true,
+    "nyhetsvarde": 9,
+    "tema": "Sverige/Finland/Ryssland",
+    "anledning": "Internationella relationer med potentiell påverkan på Ålands neutralitet och säkerhet, samt ekonomiska intressen. Frågan om rysk inblandning på Åland och dess kopplingar till statliga intressen har hög relevans för självstyrelsen och den politiska ordningen.",
+    "fallback": false
+  },
+  {
+    "date": "2026-09-03",
+    "headline": "Rysk medborgare köpte gästhamn på Kökar – styrelseledamot har kontakter med band",
+    "url": "https://alandsradio.ax/nyheter/rysk-medborgare-kopte-gasthamn-pa-kokar-styrelseledamot-har-kontakter-med-band-till-kreml",
+    "skriv": true,
+    "nyhetsvarde": 9,
+    "tema": "självstyrelse, säkerhet, egendom, rikspolitik",
+    "anledning": "Ägarbyte av strategisk fastighet, inblandning av ryska medborgare med kopplingar till statsmakten och Kreml. Detta har stora implikationer för Ålands självstyrelse, rikssäkerheten och egendomsfrågorna, särskilt med tanke på de finska restriktionerna som inte appliceras på Åland. Väckte starka känslor i riket, samt ifrågasätter åländska lagarnas tillräcklighet.",
+    "fallback": false
+  },
+  {
+    "date": "2026-09-03",
+    "headline": "Verksamhetsledaren försvarar lönen – anser inte att Regnbågsfyren behöver läggas",
+    "url": "https://alandsradio.ax/nyheter/verksamhetsledaren-forsvarar-lonen-anser-inte-att-regnbagsfyren-behover-laggas-ner",
+    "skriv": false,
+    "nyhetsvarde": 3,
+    "tema": "ekonomi, personnotis",
+    "anledning": "Intern ekonomisk dispyt i en förening. För obetydlig för en ledare, saknar samhällelig eller politisk tyngd i Julius' värld. Lönediskussioner inom en enskild organisation är inte av tillräckligt allmänintresse för 1926 års ledarspalt. [nyhetsvärde 3 < 6]",
+    "fallback": false
   }
 ]
