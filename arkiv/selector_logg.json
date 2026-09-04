@@ -6458,5 +6458,75 @@
     "tema": "ekonomi",
     "anledning": "Trots att det rör sig om en större fastighetsaffär, är fokus på butiksytor och enskilda kedjor för lokalt centrumliv. Detta är för lokalt och har inte den bredare samhälleliga eller politiska relevansen som krävs för en Sundblom-ledare. Inga djupare samhällsstrukturella frågor eller autonomifrågor berörs. [nyhetsvärde 3 < 6]",
     "fallback": false
+  },
+  {
+    "date": "2026-09-04",
+    "headline": "Ömsen i miljonförlikning efter svensk storbrand",
+    "url": "https://alandsradio.ax/nyheter/omsen-i-miljonforlikning-efter-svensk-storbrand",
+    "skriv": false,
+    "nyhetsvarde": 4,
+    "tema": "ekonomi",
+    "anledning": "Även om det handlar om ett åländskt bolags ekonomi och en betydande summa, rör det sig om en förlikning för en gammal skada. Det saknas en tydlig koppling till autonomi, samhällsordning eller större principiella frågor som skulle motivera en ledarartikel av Sundblom. Det är mer en finansiell notis än en händelse med bredare samhällsrelevans. [nyhetsvärde 4 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-09-04",
+    "headline": "Tallink Silja växte med Ålandstrafiken",
+    "url": "https://alandsradio.ax/nyheter/tallink-silja-vaxte-med-alandstrafiken",
+    "skriv": false,
+    "nyhetsvarde": 2,
+    "tema": "ekonomi",
+    "anledning": "Ren rapportering av bolagsresultat, inte tillräckligt för en ledare av Julius Sundblom. Saknar koppling till större samhällsfrågor eller autonomi. [nyhetsvärde 2 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-09-04",
+    "headline": "Staden annonserar efter stadsdirektör – 11 000 i lön",
+    "url": "https://alandsradio.ax/nyheter/staden-annonserar-efter-stadsdirektor-11-000-i-lon",
+    "skriv": false,
+    "nyhetsvarde": 3,
+    "tema": "lokal förvaltning",
+    "anledning": "Rutinåtgärd för lokal förvaltning. Ingen större politisk, samhällelig eller autonomisk relevans för en ledarartikel av Sundblom. För tunn substans. [nyhetsvärde 3 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-09-04",
+    "headline": "Paasikivi om Kökar-fallet: ”Viktigt att ha kontroll på sitt territorium”",
+    "url": "https://alandsradio.ax/nyheter/paasikivi-om-kokar-fallet-viktigt-att-ha-kontroll-pa-sitt-territorium",
+    "skriv": true,
+    "nyhetsvarde": 9,
+    "tema": "säkerhet och autonomi",
+    "anledning": "Frågan om utländskt ägande, särskilt med kopplingar till Ryssland, på strategiska platser på Åland berör direkt öns säkerhet, autonomi och Sveriges intressen. Det finns tydlig substans för en ledare som kan belysa dessa allvarliga frågor och Julius oro för Ålands ställning och eventuella yttre hot.",
+    "fallback": false
+  },
+  {
+    "date": "2026-09-04",
+    "headline": "Brändö lax förlorar tvisten mot Chipsters",
+    "url": "https://alandsradio.ax/nyheter/brando-lax-forlorar-tvisten-mot-chipsters",
+    "skriv": false,
+    "nyhetsvarde": 4,
+    "tema": "ekonomi",
+    "anledning": "En ren affärstvist mellan två företag, saknar större samhällelig, autonomi- eller rikspolitisk relevans. För obetydlig för en ledare. [nyhetsvärde 4 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-09-04",
+    "headline": "36 konstnärer öppnar sina ateljéer under Konstrundan",
+    "url": "https://alandsradio.ax/nyheter/36-konstnarer-oppnar-sina-ateljeer-under-konstrundan",
+    "skriv": false,
+    "nyhetsvarde": 3,
+    "tema": "kultur",
+    "anledning": "Kulturevenemang utan större politisk, samhällelig eller existentiell bäring för Ålands självstyrelse eller identitet. För obetydligt för en ledarartikel av Julius Sundblom. [nyhetsvärde 3 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-09-04",
+    "headline": "Fastighetsverkets vd vikarierar som fastighetschef",
+    "url": "https://alandsradio.ax/nyheter/fastighetsverkets-vd-vikarierar-som-fastighetschef",
+    "skriv": false,
+    "nyhetsvarde": 2,
+    "tema": "rutinärenden",
+    "anledning": "En ren personnotis om ett vikariat och interna omstruktureringar inom kommunal förvaltning. Saknar politisk, ekonomisk eller samhällelig tyngd för en ledare av Julius Sundblom. [nyhetsvärde 2 < 6]",
+    "fallback": false
   }
 ]
