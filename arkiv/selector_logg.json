@@ -6358,5 +6358,105 @@
     "tema": "lokal förvaltning",
     "anledning": "Även om det rör en betydande summa pengar och en offentlig upphandling, är detta i grunden en rutinfråga inom kommunal förvaltning. Marknadsdomstolens beslut har redan kommit, och stadens reaktion är en administrativ åtgärd snarare än en konflikt eller principiell fråga som kräver en ledarartikel av Julius Sundblom. Det saknar den bredare politiska eller samhälleliga relevans som Julius normalt fokuserar på. [nyhetsvärde 4 < 6]",
     "fallback": false
+  },
+  {
+    "date": "2026-09-04",
+    "headline": "Ålandsministern om självstyrelselagen: ”Ligger inte enbart i mina händer”",
+    "url": "https://alandsradio.ax/nyheter/alandsministern-om-sjalvstyrelselagen-ligger-inte-enbart-i-mina-hander",
+    "skriv": true,
+    "nyhetsvarde": 8,
+    "tema": "självstyrelse",
+    "anledning": "Frågan om en ny självstyrelselag är av central betydelse för Ålands framtid. Att riket nu tvekar och att det finns 'juridiska och grundlagsmässiga utmaningar' är en mycket väsentlig utveckling som direkt berör åländsk autonomi och Julius Sundbloms kärnfrågor. Ålandsministerns uttalande om att frågan inte enbart ligger i hennes händer understryker den politiska komplexiteten och behovet av en ledare för att analysera situationen och försvara Ålands intressen.",
+    "fallback": false
+  },
+  {
+    "date": "2026-09-04",
+    "headline": "Teknisk störning på Oasen påverkar klientlarm",
+    "url": "https://alandsradio.ax/nyheter/teknisk-storning-pa-oasen-paverkar-klientlarm",
+    "skriv": false,
+    "nyhetsvarde": 2,
+    "tema": "lokal notis",
+    "anledning": "En renodlad smålokal notis om en teknisk störning som snabbt åtgärdades, utan någon koppling till större politiska, samhälleliga eller autonomifrågor. Inget av det som Julius Sundblom skulle finna värdigt en ledarartikel. [nyhetsvärde 2 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-09-04",
+    "headline": "Tog snöröjningen till domstol – kan nu få uppdraget i Geta",
+    "url": "https://alandsradio.ax/nyheter/tog-snorojningen-till-domstol-kan-nu-fa-uppdraget-i-geta",
+    "skriv": false,
+    "nyhetsvarde": 3,
+    "tema": "lokal förvaltning",
+    "anledning": "En smålokal notis om en rutinåtgärd och en enskild entreprenadtvist, saknar större politisk eller samhällelig relevans för en ledare. [nyhetsvärde 3 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-09-04",
+    "headline": "Ålandsbanken öppnar kontor i Haparanda och Luleå",
+    "url": "https://alandsradio.ax/nyheter/alandsbanken-oppnar-kontor-i-haparanda-och-lulea",
+    "skriv": false,
+    "nyhetsvarde": 4,
+    "tema": "ekonomi",
+    "anledning": "Bankens etablering är för framåtblickande och dess direkta inverkan på Åland 1926 är begränsad, vilket gör den till en notis snarare än en ledarartikel. [nyhetsvärde 4 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-09-04",
+    "headline": "Museerna har kvar sin attraktionskraft",
+    "url": "https://alandsradio.ax/nyheter/museerna-har-kvar-sin-attraktionskraft",
+    "skriv": false,
+    "nyhetsvarde": 2,
+    "tema": "kulturstatistik",
+    "anledning": "Trivial notis om besöksstatistik för museer, saknar koppling till centrala teman som självstyrelse, politik eller större samhällsfrågor. För liten substans för en ledare. [nyhetsvärde 2 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-09-04",
+    "headline": "Bilbrand i Sund – ingen skadades",
+    "url": "https://alandsradio.ax/nyheter/bilbrand-i-sund-ingen-skadades",
+    "skriv": false,
+    "nyhetsvarde": 1,
+    "tema": "lokala notiser",
+    "anledning": "Trivial, smålokal notis utan större betydelse, saknar koppling till centrala teman som självstyrelse eller samhällsordning. För lite substans för en ledare. [nyhetsvärde 1 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-09-04",
+    "headline": "Man ljög om arbetslöshet - döms för bedrägeri",
+    "url": "https://alandsradio.ax/nyheter/man-ljog-om-arbetsloshet-doms-for-bedrageri",
+    "skriv": false,
+    "nyhetsvarde": 3,
+    "tema": "rättvisa",
+    "anledning": "Trivial notis om ett smärre bedrägeri, saknar större samhällelig betydelse eller koppling till Julius redaktionella teman bortom allmän rättsskipning. Redan avklarad med erkännande och återbetalning. [nyhetsvärde 3 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-09-04",
+    "headline": "Besöken minskade på ÅHS – vården utanför Åland ökade",
+    "url": "https://alandsradio.ax/nyheter/besoken-minskade-pa-ahs-varden-utanfor-aland-okade",
+    "skriv": false,
+    "nyhetsvarde": 3,
+    "tema": "hälsovård",
+    "anledning": "Statistisk rapport om hälsovården är intressant, men saknar den akuta konflikt eller beslutsfaktor som skulle motivera en ledare av Julius Sundblom. Det är ingen väsentlig händelse utan snarare en rutinmässig redovisning av siffror. [nyhetsvärde 3 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-09-04",
+    "headline": "Mer pengar krävs till Tobölevägen",
+    "url": "https://alandsradio.ax/nyheter/mer-pengar-kravs-till-tobolevagen",
+    "skriv": false,
+    "nyhetsvarde": 2,
+    "tema": "lokal förvaltning",
+    "anledning": "Trivial notis om lokal vägfinansiering. Saknar större politisk, samhällelig eller autonomirelevant vinkel. För lokal och detaljfokuserad för en ledare av Sundblom. [nyhetsvärde 2 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-09-04",
+    "headline": "Eriksson Capital tar över Zeipels: ”Lindex och Dressmann skulle passa bra”",
+    "url": "https://alandsradio.ax/nyheter/eriksson-capital-tar-over-zeipels-lindex-och-dressmann-skulle-passa-bra",
+    "skriv": false,
+    "nyhetsvarde": 3,
+    "tema": "ekonomi",
+    "anledning": "Trots att det rör sig om en större fastighetsaffär, är fokus på butiksytor och enskilda kedjor för lokalt centrumliv. Detta är för lokalt och har inte den bredare samhälleliga eller politiska relevansen som krävs för en Sundblom-ledare. Inga djupare samhällsstrukturella frågor eller autonomifrågor berörs. [nyhetsvärde 3 < 6]",
+    "fallback": false
   }
 ]
