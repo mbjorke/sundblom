@@ -6528,5 +6528,25 @@
     "tema": "rutinärenden",
     "anledning": "En ren personnotis om ett vikariat och interna omstruktureringar inom kommunal förvaltning. Saknar politisk, ekonomisk eller samhällelig tyngd för en ledare av Julius Sundblom. [nyhetsvärde 2 < 6]",
     "fallback": false
+  },
+  {
+    "date": "2026-09-04",
+    "headline": "30 år av samarbete vid landsbygdscentret – lönsamheten fortsatt en utmaning",
+    "url": "https://alandsradio.ax/nyheter/30-ar-av-samarbete-vid-landsbygdscentret-lonsamheten-fortsatt-en-utmaning",
+    "skriv": false,
+    "nyhetsvarde": 3,
+    "tema": "ekonomi",
+    "anledning": "Jubileumsfirande av en lantbruksorganisation. Även om lönsamhet berörs, är det en generell diskussion utan ny specifik händelse, beslut, konflikt eller agerande som motiverar en ledare. För svag substans för Julius år 1926. [nyhetsvärde 3 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-09-04",
+    "headline": "Angstbadan släpper nytt album",
+    "url": "https://alandsradio.ax/nyheter/angstbadan-slapper-nytt-album",
+    "skriv": false,
+    "nyhetsvarde": 1,
+    "tema": "kultur",
+    "anledning": "Trivial personnotis och underhållning. Saknar relevans för Julius redaktionella värld 1926. [nyhetsvärde 1 < 6]",
+    "fallback": false
   }
 ]
