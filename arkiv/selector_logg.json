@@ -6548,5 +6548,35 @@
     "tema": "kultur",
     "anledning": "Trivial personnotis och underhållning. Saknar relevans för Julius redaktionella värld 1926. [nyhetsvärde 1 < 6]",
     "fallback": false
+  },
+  {
+    "date": "2026-09-05",
+    "headline": "Erikslund sköt hem sista ÅM-titeln",
+    "url": "https://alandsradio.ax/nyheter/erikslund-skot-hem-sista-am-titeln",
+    "skriv": false,
+    "nyhetsvarde": 1,
+    "tema": "sport",
+    "anledning": "Ren sportresultat-rapportering av lokal betydelse. Saknar koppling till Julius redaktionella värld och är för obetydlig för en ledare. [nyhetsvärde 1 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-09-05",
+    "headline": "Grannar ingrep vid brand i Hindersböle",
+    "url": "https://alandsradio.ax/nyheter/grannar-ingrep-vid-brand-i-hindersbole",
+    "skriv": false,
+    "nyhetsvarde": 2,
+    "tema": "lokalnotis",
+    "anledning": "Trivial lokalnotis om brand, saknar större samhällelig betydelse eller koppling till Julius redaktionella teman. Grannars insats är positiv, men inte tillräcklig för en ledare. [nyhetsvärde 2 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-09-05",
+    "headline": "Önningebykolonist får egen utställning på Ateneum",
+    "url": "https://alandsradio.ax/nyheter/onningebykolonist-far-egen-utstallning-pa-ateneum",
+    "skriv": false,
+    "nyhetsvarde": 3,
+    "tema": "kultur",
+    "anledning": "Kulturell notis utan direkt koppling till Ålands politiska ställning, samhällsordning eller andra för Julius relevanta teman. För obetydligt för en ledare. [nyhetsvärde 3 < 6]",
+    "fallback": false
   }
 ]
