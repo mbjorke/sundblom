@@ -6578,5 +6578,25 @@
     "tema": "kultur",
     "anledning": "Kulturell notis utan direkt koppling till Ålands politiska ställning, samhällsordning eller andra för Julius relevanta teman. För obetydligt för en ledare. [nyhetsvärde 3 < 6]",
     "fallback": false
+  },
+  {
+    "date": "2026-09-05",
+    "headline": "Välbesökt på Blåljusdagen",
+    "url": "https://alandsradio.ax/nyheter/valbesokt-pa-blaljusdagen",
+    "skriv": false,
+    "nyhetsvarde": 2,
+    "tema": "lokal notis",
+    "anledning": "Trivial lokal notis om ett publikt evenemang. Saknar koppling till centrala teman som självstyrelse, politik eller samhällsordning. Ingen substans för en ledarartikel. [nyhetsvärde 2 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-09-05",
+    "headline": "Bäcklund fyra vid SM i halvmaraton",
+    "url": "https://alandsradio.ax/nyheter/backlund-fyra-vid-sm-i-halvmaraton",
+    "skriv": false,
+    "nyhetsvarde": 1,
+    "tema": "sport",
+    "anledning": "Ren sportresultat-rapportering utan större betydelse för Tidningen Åland 1926 eller Julius Sundbloms redaktionella linje. Ingen koppling till autonomi, politik, samhälle eller sedlighet. [nyhetsvärde 1 < 6]",
+    "fallback": false
   }
 ]
