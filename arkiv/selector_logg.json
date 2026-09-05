@@ -6598,5 +6598,35 @@
     "tema": "sport",
     "anledning": "Ren sportresultat-rapportering utan större betydelse för Tidningen Åland 1926 eller Julius Sundbloms redaktionella linje. Ingen koppling till autonomi, politik, samhälle eller sedlighet. [nyhetsvärde 1 < 6]",
     "fallback": false
+  },
+  {
+    "date": "2026-09-05",
+    "headline": "JIK förlorade hemma mot MaPS 2",
+    "url": "https://alandsradio.ax/nyheter/jik-forlorade-hemma-mot-maps-2",
+    "skriv": false,
+    "nyhetsvarde": 1,
+    "tema": "sport",
+    "anledning": "Ren sportresultat-rapportering, för obetydlig för en ledare av Julius Sundblom. Saknar all koppling till hans redaktionella teman. [nyhetsvärde 1 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-09-05",
+    "headline": "IFK dam krossade FC Rauma",
+    "url": "https://alandsradio.ax/nyheter/ifk-dam-krossade-fc-rauma",
+    "skriv": false,
+    "nyhetsvarde": 2,
+    "tema": "sport",
+    "anledning": "Ren sportresultat-rapportering, ingen redaktionell vinkel för en ledare. [nyhetsvärde 2 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-09-05",
+    "headline": "Bara en poäng för IFK akademi mot JyTy",
+    "url": "https://alandsradio.ax/nyheter/bara-en-poang-for-ifk-akademi-mot-jyty",
+    "skriv": false,
+    "nyhetsvarde": 1,
+    "tema": "sport",
+    "anledning": "Ren sportresultat-rapportering från en lägre division, utan koppling till politik, samhälle, autonomi eller övriga redaktionella teman. [nyhetsvärde 1 < 6]",
+    "fallback": false
   }
 ]
