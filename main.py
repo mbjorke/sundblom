@@ -24,6 +24,7 @@ from bs4 import BeautifulSoup
 from google import genai
 from google.genai import types as genai_types
 import selector  # Redaktörsomdömet — LLM-grind före generering
+import kronika   # Veckokrönikan — skrivs på dagar utan nyhet värd en ledare
 
 # ── Logging ──────────────────────────────────────────────────────────────────
 logging.basicConfig(
@@ -614,10 +615,14 @@ def save_last_headline(headline: str) -> None:
 
 
 def save_article_json(headline: str, julius_text: str, body: str, author: str,
-                      source_url: str, date_iso: str, slug: str) -> None:
+                      source_url: str, date_iso: str, slug: str,
+                      kind: str = "ledare", sources: list[dict] | None = None) -> None:
     """
     Pushar artikel-data som JSON till src/content/articles/YYYY-MM-DD-slug.json.
     Astro läser dessa filer och bygger statisk HTML vid deployment.
+
+    kind='kronika' + sources = veckokrönika; då visar högerkolumnen veckans
+    rubriker i stället för en originalartikel.
     """
     path = f"src/content/articles/{date_iso}-{slug}.json"
     article = {
@@ -629,9 +634,13 @@ def save_article_json(headline: str, julius_text: str, body: str, author: str,
         "date": date_iso,
         "published_at": datetime.datetime.now(datetime.timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
         "slug": slug,
+        "kind": kind,
     }
+    if sources:
+        article["sources"] = sources
     content = json.dumps(article, ensure_ascii=False, indent=2)
-    _push_file(path, content, f"[skip ci] 🗞️ Ny artikel: {headline[:60]}")
+    etikett = "🖋️ Veckokrönika" if kind == "kronika" else "🗞️ Ny artikel"
+    _push_file(path, content, f"[skip ci] {etikett}: {headline[:60]}")
     log.info("Artikel JSON sparad: %s", path)
 
 
@@ -668,6 +677,45 @@ def publish_og_image(png_bytes: bytes) -> None:
     log.info("✅ OG-bild pushad.")
 
 
+def skriv_kronika(today: str) -> bool:
+    """Veckokrönika på dagar då ingen nyhet höll måttet för en ledare.
+
+    Redaktörsomdömet avvisar med flit det mesta, och på stilla dagar avvisas
+    allt — då stod sidan tidigare stilla. I stället för att sänka ribban för
+    ledaren blickar Julius tillbaka på veckan som gått.
+    """
+    now_utc = datetime.datetime.now(datetime.timezone.utc)
+    underlag = kronika.samla_underlag(today, extra_omdomen=selector.dagens_omdomen())
+    beslut, varfor = kronika.bor_skriva_kronika(today, now_utc, underlag)
+    if not beslut:
+        log.info("🖋️ Ingen veckokrönika idag: %s", varfor)
+        return False
+    if not GOOGLE_API_KEY:
+        log.warning("GOOGLE_API_KEY saknas — krönikan kan inte skrivas.")
+        return False
+
+    log.info("🖋️ Skriver veckokrönika: %s", varfor)
+    rubrik, text = kronika.generera(
+        underlag, SUNDBLOM_PROMPT, load_riktlinjer(), _call_api
+    )
+    slug = f"{kronika.KRONIKA_SLUG_PREFIX}-{slugify(rubrik, max_length=48)}"
+    save_article_json(
+        headline=rubrik,
+        julius_text=text,
+        body="",
+        author="Julius Sundblom",
+        source_url=ALANDS_RADIO_URL,
+        date_iso=today,
+        slug=slug,
+        kind="kronika",
+        sources=kronika.kallor(underlag),
+    )
+    # Flyttar deploy-branchen → CF Pages bygger om med krönikan överst
+    save_last_headline(rubrik)
+    log.info("🖋️ Veckokrönika publicerad: %s", rubrik)
+    return True
+
+
 # ─────────────────────────────────────────────────────────────────────────────
 # MAIN
 # ─────────────────────────────────────────────────────────────────────────────
@@ -681,20 +729,23 @@ def main() -> None:
         log.info("Inga rubriker hittades — avslutar.")
         return
 
-    # 2. Early exit: om topprubrik är oförändrad sedan senaste körning → spara API-anrop
+    # 2. Early exit: om topprubrik är oförändrad sedan senaste körning → spara API-anrop.
+    #    Vi avslutar dock inte körningen: krönikeprövningen längre ner ska ändå
+    #    ske, annars står sidan stilla hela dagar då topprubriken ligger kvar.
     last_headline = load_last_headline()
     top_headline = headlines[0][0]
-    if top_headline == last_headline:
-        log.info("Topprubrik oförändrad (%s) — ingen ny artikel att publicera.", top_headline[:60])
-        return
+    topp_oforandrad = top_headline == last_headline
+    if topp_oforandrad:
+        log.info("Topprubrik oförändrad (%s) — hoppar över nyhetsloopen.", top_headline[:60])
 
     # 3. Ladda redan processade URLar (undviker dubbletter vid helger/högtider)
-    seen_urls = load_seen_urls()
+    kandidater = [] if topp_oforandrad else headlines
+    seen_urls = load_seen_urls() if kandidater else set()
 
     today = datetime.date.today().isoformat()
     new_articles = 0
 
-    for headline, url in headlines:
+    for headline, url in kandidater:
         if url == ALANDS_RADIO_URL:
             log.info("Fallback-URL — hoppar över: %s", url)
             continue
@@ -739,6 +790,7 @@ def main() -> None:
 
     if new_articles == 0:
         log.info("Inga nya artiklar att publicera idag.")
+        skriv_kronika(today)
     else:
         log.info("%d ny/nya artikel(ar) publicerade.", new_articles)
         save_last_headline(top_headline)
