@@ -128,6 +128,12 @@ def editorial_judgment(headline: str, body: str, source_url: str) -> dict:
     return j
 
 
+def dagens_omdomen() -> list[dict]:
+    """Körningens hittills fällda omdömen (ännu ej pushade). Veckokrönikan
+    använder dem så att dagens avvisade notiser kommer med i underlaget."""
+    return list(_buffer)
+
+
 def _entry(headline: str, url: str, j: dict) -> dict:
     return {
         "date": datetime.date.today().isoformat(),
