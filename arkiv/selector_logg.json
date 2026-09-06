@@ -6628,5 +6628,15 @@
     "tema": "sport",
     "anledning": "Ren sportresultat-rapportering från en lägre division, utan koppling till politik, samhälle, autonomi eller övriga redaktionella teman. [nyhetsvärde 1 < 6]",
     "fallback": false
+  },
+  {
+    "date": "2026-09-06",
+    "headline": "20-åring döms för rattfylleri",
+    "url": "https://alandsradio.ax/nyheter/20-aring-doms-for-rattfylleri",
+    "skriv": false,
+    "nyhetsvarde": 2,
+    "tema": "sedlighet",
+    "anledning": "En enskild rattfylleridom är en trivial notis utan större betydelse för en ledarartikel. Saknar substans för en värdig ledare. [nyhetsvärde 2 < 6]",
+    "fallback": false
   }
 ]
