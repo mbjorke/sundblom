@@ -6638,5 +6638,45 @@
     "tema": "sedlighet",
     "anledning": "En enskild rattfylleridom är en trivial notis utan större betydelse för en ledarartikel. Saknar substans för en värdig ledare. [nyhetsvärde 2 < 6]",
     "fallback": false
+  },
+  {
+    "date": "2026-09-06",
+    "headline": "Rehn vann sista ÅM-tävlingen i hagelskytte",
+    "url": "https://alandsradio.ax/nyheter/rehn-vann-sista-am-tavlingen-i-hagelskytte",
+    "skriv": false,
+    "nyhetsvarde": 1,
+    "tema": "sport",
+    "anledning": "Ren sportresultat-rapportering utan djupare samhälls-, autonomi- eller kulturkoppling. För trivialt för en ledare av Julius Sundblom. [nyhetsvärde 1 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-09-06",
+    "headline": "Tänk på var och när du laddar",
+    "url": "https://alandsradio.ax/nyheter/tank-pa-var-och-nar-du-laddar",
+    "skriv": false,
+    "nyhetsvarde": 2,
+    "tema": "allmän säkerhet",
+    "anledning": "Allmänna säkerhetsråd utan specifik åländsk koppling eller politisk/samhällelig bäring för en ledarartikel. Rent informativ notis. [nyhetsvärde 2 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-09-06",
+    "headline": "Medaljregn över åländska simmarna i första tävlingen",
+    "url": "https://alandsradio.ax/nyheter/medaljregn-over-alandska-simmarna-i-forsta-tavlingen",
+    "skriv": false,
+    "nyhetsvarde": 2,
+    "tema": "sport",
+    "anledning": "Ren sportresultat-rapportering utan större samhällelig eller politisk relevans för en ledarartikel. Saknar substans för Julius Sundbloms teman. [nyhetsvärde 2 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-09-06",
+    "headline": "BP gick om DIF i tabellen",
+    "url": "https://alandsradio.ax/nyheter/bp-gick-om-dif-i-tabellen",
+    "skriv": false,
+    "nyhetsvarde": 1,
+    "tema": "sport",
+    "anledning": "Ren sportresultat-rapportering från rikssvensk fotboll. Inget av intresse för Julius Sundblom. [nyhetsvärde 1 < 6]",
+    "fallback": false
   }
 ]
