@@ -6778,5 +6778,85 @@
     "tema": "internationellt samarbete",
     "anledning": "Även om det berör Ålands externpolitik är det en tvist om upphovsrätt och publiceringsprocesser snarare än en djupare politisk eller samhällelig fråga. Substansen är för tunn för en ledare av Julius. [nyhetsvärde 4 < 6]",
     "fallback": false
+  },
+  {
+    "date": "2026-09-07",
+    "headline": "Avgångar med Töftöfärjan ställs in",
+    "url": "https://alandsradio.ax/nyheter/avgangar-med-toftofarjan-stalls-in",
+    "skriv": false,
+    "nyhetsvarde": 1,
+    "tema": "lokal service",
+    "anledning": "Trivial notis om inställda färjeavgångar på grund av service. Saknar relevans för större politiska eller samhälleliga frågor. [nyhetsvärde 1 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-09-07",
+    "headline": "Förslaget till stadsstyrelsen: Köp inte Bifafastigheten",
+    "url": "https://alandsradio.ax/nyheter/forslaget-till-stadsstyrelsen-kop-inte-bifafastigheten",
+    "skriv": false,
+    "nyhetsvarde": 3,
+    "tema": "lokal förvaltning",
+    "anledning": "Trivial notis om fastighetsköp. Saknar större politisk eller samhällelig betydelse. Ingen substans för en ledare. [nyhetsvärde 3 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-09-07",
+    "headline": "Jonathan Svedberg om IFK:s pånyttfödelse",
+    "url": "https://alandsradio.ax/nyheter/jonathan-svedberg-om-ifks-panyttfodelse",
+    "skriv": false,
+    "nyhetsvarde": 2,
+    "tema": "sport",
+    "anledning": "Ren sportresultat-rapportering och personnotis om sportspelare. Saknar relevans för Julius redaktionella värld 1926. [nyhetsvärde 2 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-09-07",
+    "headline": "Besvikelse när M/S Ejdern sätts in – ställer till det för seminarium",
+    "url": "https://alandsradio.ax/nyheter/besvikelse-nar-ms-ejdern-satts-in-staller-till-det-for-seminarium",
+    "skriv": false,
+    "nyhetsvarde": 3,
+    "tema": "infrastruktur",
+    "anledning": "Trivial notis om färjbyte och bekvämlighetsproblem, saknar tillräcklig substans för en ledare. [nyhetsvärde 3 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-09-07",
+    "headline": "Två IFK:are med i månadens lag",
+    "url": "https://alandsradio.ax/nyheter/tva-ifkare-med-i-manadens-lag",
+    "skriv": false,
+    "nyhetsvarde": 1,
+    "tema": "sport",
+    "anledning": "Ren sportresultat-rapportering utan djupare samhällelig, politisk eller autonomi-relaterad relevans. Saknar substans för en ledare av Julius Sundblom. [nyhetsvärde 1 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-09-07",
+    "headline": "Jyskhuset utrymdes – ingen brand",
+    "url": "https://alandsradio.ax/nyheter/jyskhuset-utrymdes-ingen-brand",
+    "skriv": false,
+    "nyhetsvarde": 1,
+    "tema": "trivial notis",
+    "anledning": "Trivial notis om tekniskt fel på larm, saknar väsentlig samhällsrelevans eller koppling till Julius Sundbloms redaktionella teman. [nyhetsvärde 1 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-09-07",
+    "headline": "Veronica Thörnroos hem attackerat – igen",
+    "url": "https://alandsradio.ax/nyheter/veronica-thornroos-hem-attackerat-igen",
+    "skriv": false,
+    "nyhetsvarde": 3,
+    "tema": "brottslighet",
+    "anledning": "Även om det rör en lagtingsledamot, är det primärt en notis om personlig brottslighet utan större politisk eller samhällelig vinkel. Julius skulle se det som en polissak snarare än något för en ledarartikel. [nyhetsvärde 3 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-09-07",
+    "headline": "Åland ska få jämförelsesajt för elavtal",
+    "url": "https://alandsradio.ax/nyheter/aland-ska-fa-jamforelsesajt-for-elavtal",
+    "skriv": false,
+    "nyhetsvarde": 4,
+    "tema": "ekonomi",
+    "anledning": "Ämnet är för tekniskt och byråkratiskt för en ledarartikel. Det saknar en tydlig konflikt eller ett avgörande beslut som motiverar en ledare. Kostnaden är för obetydlig för att uppröra, och jämförelsesajten är mer av en rutinåtgärd. Frågan om 'jämförelsesajt' saknar den tyngd Julius söker. [nyhetsvärde 4 < 6]",
+    "fallback": false
   }
 ]
