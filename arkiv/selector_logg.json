@@ -6858,5 +6858,15 @@
     "tema": "ekonomi",
     "anledning": "Ämnet är för tekniskt och byråkratiskt för en ledarartikel. Det saknar en tydlig konflikt eller ett avgörande beslut som motiverar en ledare. Kostnaden är för obetydlig för att uppröra, och jämförelsesajten är mer av en rutinåtgärd. Frågan om 'jämförelsesajt' saknar den tyngd Julius söker. [nyhetsvärde 4 < 6]",
     "fallback": false
+  },
+  {
+    "date": "2026-09-07",
+    "headline": "Fortsatt öppet vad Pub Bastun ska användas till",
+    "url": "https://alandsradio.ax/nyheter/fortsatt-oppet-vad-pub-bastun-ska-anvandas-till",
+    "skriv": false,
+    "nyhetsvarde": 2,
+    "tema": "lokal förvaltning",
+    "anledning": "Trivial notis om en rutinåtgärd gällande en enskild byggnad. Saknar större politisk, samhällelig eller autonomirelevant betydelse. [nyhetsvärde 2 < 6]",
+    "fallback": false
   }
 ]
