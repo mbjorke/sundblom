@@ -6678,5 +6678,105 @@
     "tema": "sport",
     "anledning": "Ren sportresultat-rapportering från rikssvensk fotboll. Inget av intresse för Julius Sundblom. [nyhetsvärde 1 < 6]",
     "fallback": false
+  },
+  {
+    "date": "2026-09-07",
+    "headline": "Butik slutade lagerhålla presentkort på grund av bedrägerier",
+    "url": "https://alandsradio.ax/nyheter/butik-slutade-lagerhalla-presentkort-pa-grund-av-bedragerier",
+    "skriv": false,
+    "nyhetsvarde": 3,
+    "tema": "sedlighet, samhällsordning",
+    "anledning": "Även om det berör sedlighet och samhällsordning är det en isolerad händelse, och det finns inte tillräckligt med substans för en ledarartikel av Julius. Mer en notis för att varna allmänheten, inte för fördjupad analys. [nyhetsvärde 3 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-09-07",
+    "headline": "Kanborg efter uppgifterna om Regnbågsfyren: Se över Paf-reglerna",
+    "url": "https://alandsradio.ax/nyheter/kanborg-efter-uppgifterna-om-regnbagsfyren-se-over-paf-reglerna",
+    "skriv": false,
+    "nyhetsvarde": 4,
+    "tema": "ekonomi och förvaltning",
+    "anledning": "Intern förvaltningsfråga, inte tillräckligt substantiell för en ledare av Julius Sundblom. Handlar om detaljer kring bidragsutdelning, inte storpolitik eller självstyrelsefrågor av större vikt. [nyhetsvärde 4 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-09-07",
+    "headline": "Lastbilschaufför döms efter narkotikabeslag värt 450 000 euro",
+    "url": "https://alandsradio.ax/nyheter/lastbilschauffor-doms-efter-narkotikabeslag-vart-450-000-euro",
+    "skriv": false,
+    "nyhetsvarde": 4,
+    "tema": "kriminalitet",
+    "anledning": "Även om det är ett grovt brott, är det främst en notis om en enskild kriminell handling, inte något som direkt rör autonomi, samhällsordning i stort eller Julius specifika teman. Avsaknad av djupare samhälls- eller politisk implikation. [nyhetsvärde 4 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-09-07",
+    "headline": "Så ser Eckerö Link ut i nya färger",
+    "url": "https://alandsradio.ax/nyheter/sa-ser-eckero-link-ut-i-nya-farger",
+    "skriv": false,
+    "nyhetsvarde": 2,
+    "tema": "ekonomi",
+    "anledning": "Trivial notis om ett fartygs ommålning. Saknar politisk eller samhällelig substans för en ledare. [nyhetsvärde 2 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-09-07",
+    "headline": "Hund ormbiten på Seglinge – sjöräddningen ryckte ut",
+    "url": "https://alandsradio.ax/nyheter/hund-ormbiten-pa-seglinge-sjoraddningen-ryckte-ut",
+    "skriv": false,
+    "nyhetsvarde": 1,
+    "tema": "trivial notis",
+    "anledning": "Trivial lokal notis om ett djurärende, saknar politisk, samhällelig eller ekonomisk relevans. Ingen koppling till Julius Sundbloms redaktionella teman. [nyhetsvärde 1 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-09-07",
+    "headline": "SE-Alert testas i Sverige – samma teknik väntas på Åland",
+    "url": "https://alandsradio.ax/nyheter/se-alert-testas-i-sverige-samma-teknik-vantas-pa-aland",
+    "skriv": false,
+    "nyhetsvarde": 4,
+    "tema": "modernitetens förfall",
+    "anledning": "Även om det berör Åland och framtida säkerhet, är ett test av ett tekniskt varningssystem i Sverige, även om det kopplas till finsk teknik som ska användas på Åland, en för rutinartad och saknar den politiska eller samhälleliga konflikt som krävs för en ledare. Det är mer en praktisk notis om teknisk utveckling snarare än en väsentlig händelse som rör autonomi, sedlighet eller djupare samhällsfrågor. Landskapsregeringens krav om svenska är en viktig detalj, men inte tillräcklig för att bära en hel ledare. Den direkta nyheten är ett test i ett annat land, inte en åländsk händelse med omedelbar tyngd. [nyhetsvärde 4 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-09-07",
+    "headline": "Åland ansluter sig till nordisk deklaration om försörjningsberedskap",
+    "url": "https://alandsradio.ax/nyheter/aland-ansluter-sig-till-nordisk-deklaration-om-forsorjningsberedskap",
+    "skriv": true,
+    "nyhetsvarde": 8,
+    "tema": "självstyrelse, internationellt samarbete",
+    "anledning": "Beslut om nordiskt samarbete i försörjningsberedskap är av stor vikt för Ålands autonomi och säkerhet, särskilt med tanke på de osäkra tiderna. Även om deklarationen inte är juridiskt bindande, signalerar den en riktning som är relevant för Julius Sundbloms intressen kring Ålands ställning och självbestämmande, samt dess relation till Norden och rikspolitiken.",
+    "fallback": false
+  },
+  {
+    "date": "2026-09-07",
+    "headline": "Dags för blodgivning igen",
+    "url": "https://alandsradio.ax/nyheter/dags-for-blodgivning-igen",
+    "skriv": false,
+    "nyhetsvarde": 1,
+    "tema": "rutinåtgärd",
+    "anledning": "En ren notis om en rutinmässig blodgivning utan större nyhetsvärde eller koppling till Julius redaktionella teman. [nyhetsvärde 1 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-09-07",
+    "headline": "Kumlinge om föreslagna turlistor: LR:s löften infrias inte",
+    "url": "https://alandsradio.ax/nyheter/kumlinge-om-foreslagna-turlistor-lrs-loften-infrias-inte",
+    "skriv": false,
+    "nyhetsvarde": 4,
+    "tema": "ekonomi",
+    "anledning": "Även om det handlar om skärgårdstrafik och löften, är det en för lokal och administrativ fråga om turlistor och utlåtanden, utan tillräcklig substans för en ledare av Sundblom. Det handlar om detaljer kring ett redan fattat beslut, inte beslutet i sig eller dess principer. [nyhetsvärde 4 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-09-07",
+    "headline": "Upphovsrättstvist stoppar Ålands FN-samarbete",
+    "url": "https://alandsradio.ax/nyheter/upphovsrattstvist-stoppar-alands-fn-samarbete",
+    "skriv": false,
+    "nyhetsvarde": 4,
+    "tema": "internationellt samarbete",
+    "anledning": "Även om det berör Ålands externpolitik är det en tvist om upphovsrätt och publiceringsprocesser snarare än en djupare politisk eller samhällelig fråga. Substansen är för tunn för en ledare av Julius. [nyhetsvärde 4 < 6]",
+    "fallback": false
   }
 ]
