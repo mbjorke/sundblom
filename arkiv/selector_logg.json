@@ -7048,5 +7048,35 @@
     "tema": "ekonomi",
     "anledning": "Intern förvaltningsfråga om fartygslinjer. För obetydligt för en ledare, ingen större principiell fråga. [nyhetsvärde 3 < 6]",
     "fallback": false
+  },
+  {
+    "date": "2026-09-08",
+    "headline": "LR tiger om tidigare anställds roll i FN-tvisten",
+    "url": "https://alandsradio.ax/nyheter/lr-tiger-om-tidigare-anstallds-roll-i-fn-tvisten",
+    "skriv": true,
+    "nyhetsvarde": 8,
+    "tema": "autonomi, samhällsordning, etik",
+    "anledning": "Frågor kring landskapsregeringens agerande, insyn och transparens i en internationell tvist som påverkar Ålands anseende och samarbete. Detta berör direkt autonomins trovärdighet och hur man hanterar offentliga medel och förtroende, vilket är av stor vikt för Julius.",
+    "fallback": false
+  },
+  {
+    "date": "2026-09-08",
+    "headline": "Oförändrat läge i kampen om kvalplatsen – IFK och Jaro förlorade",
+    "url": "https://alandsradio.ax/nyheter/oforandrat-lage-i-kampen-om-kvalplatsen-ifk-och-jaro-forlorade",
+    "skriv": false,
+    "nyhetsvarde": 1,
+    "tema": "sport",
+    "anledning": "Ren sportresultat-rapportering utan större samhällelig eller politisk relevans. För obetydlig för en ledarartikel av Julius Sundblom. [nyhetsvärde 1 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-09-08",
+    "headline": "Svenska riksdagsvalet ser ut att bli en rysare",
+    "url": "https://alandsradio.ax/nyheter/svenska-riksdagsvalet-ser-ut-att-bli-en-rysare",
+    "skriv": true,
+    "nyhetsvarde": 7,
+    "tema": "Sverige/Finland/Ryssland",
+    "anledning": "Svenska riksdagsvalet är av intresse för Åland, särskilt med tanke på gränshinder och samarbete. Artklen har tillräcklig substans.",
+    "fallback": false
   }
 ]
