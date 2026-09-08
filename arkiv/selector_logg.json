@@ -6868,5 +6868,95 @@
     "tema": "lokal förvaltning",
     "anledning": "Trivial notis om en rutinåtgärd gällande en enskild byggnad. Saknar större politisk, samhällelig eller autonomirelevant betydelse. [nyhetsvärde 2 < 6]",
     "fallback": false
+  },
+  {
+    "date": "2026-09-08",
+    "headline": "Finlands Pisa-resultat fortsätter försämras",
+    "url": "https://alandsradio.ax/nyheter/finlands-pisa-resultat-fortsatter-forsamras",
+    "skriv": false,
+    "nyhetsvarde": 4,
+    "tema": "utbildning",
+    "anledning": "Även om utbildning är ett viktigt område, är denna nyhet om Pisa-resultat och en försämring i Finland för framtidsinriktad och saknar direkt koppling till Julius Sundbloms specifika intresseområden som autonomi, svensk identitet på Åland i relation till fastlandsfinland, eller tidens politiska strömningar. Även om Åland deltog, är de åländska resultaten inte presenterade, vilket gör nyheten för abstrakt för en ledarartikel av Julius 1926. [nyhetsvärde 4 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-09-08",
+    "headline": "Ekström ensam nominerad till Liberalernas ordförandepost – fem vill bli vice ord",
+    "url": "https://alandsradio.ax/nyheter/ekstrom-ensam-nominerad-till-liberalernas-ordforandepost-fem-vill-bli-vice-ordforande",
+    "skriv": false,
+    "nyhetsvarde": 3,
+    "tema": "lokalpolitik",
+    "anledning": "Intern partinotism utan större samhällelig betydelse eller konflikt. För obetydligt för en ledare av Julius Sundblom. [nyhetsvärde 3 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-09-08",
+    "headline": "Viking Line gör om ledningsgruppen – tre får gå",
+    "url": "https://alandsradio.ax/nyheter/viking-line-gor-om-ledningsgruppen-tre-far-ga",
+    "skriv": false,
+    "nyhetsvarde": 4,
+    "tema": "ekonomi, personnotis",
+    "anledning": "Även om det rör en betydande åländsk aktör, är denna interna omstrukturering primärt en person- och rutinnotis utan större samhällelig, autonomi- eller politisk relevans för en ledare 1926. Den saknar den substans av konflikt, beslut med bredare konsekvenser eller tydlig koppling till de stora redaktionella frågorna. [nyhetsvärde 4 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-09-08",
+    "headline": "Falskt brandlarm på Klinten på tisdagsmorgonen",
+    "url": "https://alandsradio.ax/nyheter/falskt-brandlarm-pa-klinten-pa-tisdagsmorgonen",
+    "skriv": false,
+    "nyhetsvarde": 1,
+    "tema": "lokal notis",
+    "anledning": "Trivial, smålokal notis om ett falskt brandlarm utan större betydelse eller koppling till Julius redaktionella värld. Saknar helt substans för en ledare. [nyhetsvärde 1 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-09-08",
+    "headline": "Surfa inte på jobbet: Geta inför mobilregler",
+    "url": "https://alandsradio.ax/nyheter/surfa-inte-pa-jobbet-geta-infor-mobilregler",
+    "skriv": false,
+    "nyhetsvarde": 2,
+    "tema": "intern kommunal rutin",
+    "anledning": "Trivial, lokal administrativ rutin utan större betydelse för autonomin eller rikspolitiken. Saknar substans för en ledare. [nyhetsvärde 2 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-09-08",
+    "headline": "Man slog sambo – döms till dagsböter",
+    "url": "https://alandsradio.ax/nyheter/man-slog-sambo-doms-till-dagsboter",
+    "skriv": false,
+    "nyhetsvarde": 3,
+    "tema": "sedlighet",
+    "anledning": "En enskild brottmålsdom utan större implikationer för samhället i stort. För lokal och trivial för en ledare. [nyhetsvärde 3 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-09-08",
+    "headline": "Mindre åska än vanligt i augusti",
+    "url": "https://alandsradio.ax/nyheter/mindre-aska-an-vanligt-i-augusti",
+    "skriv": false,
+    "nyhetsvarde": 1,
+    "tema": "väder",
+    "anledning": "Väderstatistik är en trivial notis utan politisk, samhällelig eller kulturell relevans för en ledarartikel av Julius Sundblom. Ingen substans för en djupare analys. [nyhetsvärde 1 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-09-08",
+    "headline": "Försvarsutredarens tips till Eckerölinjen: Den här nischen gör Grisslehamn vikti",
+    "url": "https://alandsradio.ax/nyheter/forsvarsutredarens-tips-till-eckerolinjen-den-har-nischen-gor-grisslehamn-viktig",
+    "skriv": true,
+    "nyhetsvarde": 8,
+    "tema": "självstyrelse",
+    "anledning": "Frågan om Ålands roll i Sveriges och Finlands försvar och strategiska infrastruktur är av yttersta vikt för den åländska självstyrelsen och neutraliteten. Det tangerar autonomins gränser och Ålands framtid.",
+    "fallback": false
+  },
+  {
+    "date": "2026-09-08",
+    "headline": "”Flummigt blomsterspråk” – hård debatt om hållbarhetsarbetet",
+    "url": "https://alandsradio.ax/nyheter/flummigt-blomstersprak-hard-debatt-om-hallbarhetsarbetet",
+    "skriv": false,
+    "nyhetsvarde": 4,
+    "tema": "modernitetens förfall",
+    "anledning": "Även om 'hållbarhet' i modern mening är ett främmande begrepp för 1926, kan man ana att en debatt om kostnader, 'flummigt språk' och 'luftslott' skulle kunna locka Julius att argumentera för sund hushållning och mot onödig byråkrati eller tomma fraser. Dock saknas en stark koppling till de centrala teman som självstyrelse eller identitet. Det är en intern debatt som, trots den höga kostnaden, inte har tillräckligt med substans för en ledare. [nyhetsvärde 4 < 6]",
+    "fallback": false
   }
 ]
