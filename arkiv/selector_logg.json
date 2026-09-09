@@ -7178,5 +7178,65 @@
     "tema": "ekonomi",
     "anledning": "Trivial notis om enskilda butikers försäljning, saknar samhällsekonomisk eller politisk tyngd för en ledarartikel. Språkfrågan är en liten detalj i sammanhanget. [nyhetsvärde 2 < 6]",
     "fallback": false
+  },
+  {
+    "date": "2026-09-09",
+    "headline": "”Överkapacitet av vårdplatser” – Erica Bonns om ÅHS nedskärningar",
+    "url": "https://alandsradio.ax/nyheter/overkapacitet-av-vardplatser-erica-bonns-om-ahs-nedskarningar",
+    "skriv": true,
+    "nyhetsvarde": 8,
+    "tema": "ekonomi, samhällsordning, autonomi",
+    "anledning": "Väsentlig fråga om hushållning med självstyrelsens medel inom sjukvården, en central samhällsfunktion. Handlar om effektivitet och modernisering, vilket Julius bör kunna se som en viktig diskussion för Ålands framtid och ekonomi. Nedskärningar och förvaltning av offentliga medel är alltid relevant.",
+    "fallback": false
+  },
+  {
+    "date": "2026-09-09",
+    "headline": "Utkomststödet splittrar lagtinget: ”Var går gränsen?”",
+    "url": "https://alandsradio.ax/nyheter/utkomststodet-splittrar-lagtinget-var-gar-gransen",
+    "skriv": true,
+    "nyhetsvarde": 8,
+    "tema": "klass- och samhällsordning",
+    "anledning": "Frågan om utkomststöd och arbetslinjen är djupt rotad i samhällsordningen och den åländska självstyrelsen. Debatten belyser ideologiska klyftor kring arbete, fattigdom och människovärde, vilket är klassiska teman för Sundblom. Återinförandet av avdraget är ett konkret beslut inom landskapets kompetens som har direkt påverkan på medborgarnas livsvillkor och väcker starka reaktioner, vilket ger god substans för en ledare.",
+    "fallback": false
+  },
+  {
+    "date": "2026-09-09",
+    "headline": "Veritas vd: Vi behåller våra fastigheter på Åland",
+    "url": "https://alandsradio.ax/nyheter/veritas-vd-vi-behaller-vara-fastigheter-pa-aland",
+    "skriv": false,
+    "nyhetsvarde": 4,
+    "tema": "ekonomi",
+    "anledning": "Ekonomisk notis om en extern aktörs fastighetsinnehav och pensionshantering. Trots Ålands relevans för bolaget, är beslutet om att behålla fastigheter ingen omvälvande händelse med direkt inverkan på autonomi, samhällsordning eller sedlighet som skulle motivera en ledarartikel av Julius Sundblom. Det är mer en rutinmässig affärsnyhet. [nyhetsvärde 4 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-09-09",
+    "headline": "Flera fall av skadegörelse på Geta kyrkogård",
+    "url": "https://alandsradio.ax/nyheter/flera-fall-av-skadegorelse-pa-geta-kyrkogard",
+    "skriv": false,
+    "nyhetsvarde": 3,
+    "tema": "sedlighet",
+    "anledning": "Trivial notis om smålokal skadegörelse, saknar större samhällelig eller politisk relevans för en ledare. Ingen substans för en värdig ledare av Julius Sundblom. [nyhetsvärde 3 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-09-09",
+    "headline": "Sjödagarna får största evenemangsbidraget från Mariehamn",
+    "url": "https://alandsradio.ax/nyheter/sjodagarna-far-storsta-evenemangsbidraget-fran-mariehamn",
+    "skriv": false,
+    "nyhetsvarde": 2,
+    "tema": "ekonomi",
+    "anledning": "Trivial notis om kommunala bidrag, ingen koppling till större politiska eller samhälleliga frågor av intresse för en ledarartikel. [nyhetsvärde 2 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-09-09",
+    "headline": "Wikström frågar på nytt om skärgårdstrafikupphandlingen",
+    "url": "https://alandsradio.ax/nyheter/wikstrom-fragar-pa-nytt-om-skargardstrafikupphandlingen",
+    "skriv": true,
+    "nyhetsvarde": 8,
+    "tema": "ekonomi",
+    "anledning": "Fråga om upphandling och skattebetalarnas pengar direkt berör landskapets ekonomi och hur medlen förvaltas, med potentiell påverkan på självstyrelsens rykte och effektivitet. Detta är av stort allmänintresse och relaterar till den ekonomiska ordningen och egendomen.",
+    "fallback": false
   }
 ]
