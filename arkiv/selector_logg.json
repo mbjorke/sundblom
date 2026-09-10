@@ -7338,5 +7338,75 @@
     "tema": "lokal förvaltning",
     "anledning": "Trivial lokal nyhet om en kommuns inköp och rutinåtgärder. Saknar större politisk, samhällelig eller existentiell betydelse för Åland. [nyhetsvärde 2 < 6]",
     "fallback": false
+  },
+  {
+    "date": "2026-09-10",
+    "headline": "Åtalas för att ha riktat pistol mot huvudet på midsommarfirare",
+    "url": "https://alandsradio.ax/nyheter/atalas-for-att-ha-riktat-pistol-mot-huvudet-pa-midsommarfirare",
+    "skriv": true,
+    "nyhetsvarde": 6,
+    "tema": "sedlighet",
+    "anledning": "Även om det rör en enskild händelse, berör den allmän ordning, sedlighet och säkerhet. Midsommarfirande är en central tradition, och brottslighet kopplad till alkohol och vapen under en sådan tillställning kan användas för att belysa farorna med modernitetens förfall eller bristande kontroll av allmän ordning. Frågan om vapeninnehav och hot kan väcka debatt om samhällsordningen på Åland och behovet av fastare lagföring. Julius kan argumentera för vikten av att upprätthålla 'sedligheten' och tryggheten i den åländska tillvaron.",
+    "fallback": false
+  },
+  {
+    "date": "2026-09-10",
+    "headline": "Smidigare att skicka in åländsk musik till Ålands Radio",
+    "url": "https://alandsradio.ax/nyheter/smidigare-att-skicka-in-alandsk-musik-till-alands-radio",
+    "skriv": false,
+    "nyhetsvarde": 1,
+    "tema": "kultur (lättare)",
+    "anledning": "Trivial notis om en rutinåtgärd hos radion. Saknar väsentlig nyhetsvinkel för en ledare. [nyhetsvärde 1 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-09-10",
+    "headline": "Bilist körde för nära gående i Mariehamn – döms till böter",
+    "url": "https://alandsradio.ax/nyheter/bilist-korde-for-nara-gaende-i-mariehamn-doms-till-boter",
+    "skriv": false,
+    "nyhetsvarde": 3,
+    "tema": "rättvisa/vardag",
+    "anledning": "En enskild trafikförseelse som visserligen leder till dom, men saknar den bredare samhälleliga, politiska eller sedliga relevans som krävs för en ledarartikel. Ärendet är för smalt och saknar bäring på Julius Sundbloms kärnämnen. En notis i lokalspalten räcker. [nyhetsvärde 3 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-09-10",
+    "headline": "Wiklöfprisvinnaren pekar ut fisket som Östersjöns politiska nyckelfråga",
+    "url": "https://alandsradio.ax/nyheter/wiklofprisvinnaren-pekar-ut-fisket-som-ostersjons-politiska-nyckelfraga",
+    "skriv": false,
+    "nyhetsvarde": 4,
+    "tema": "miljö",
+    "anledning": "Även om det berör Östersjön, handlar det primärt om ett pris och en svensk politikers åsikter, snarare än ett konkret åländskt autonomifråga eller en händelse av omedelbar betydelse för det åländska samhället år 1926. Fisket var en viktig fråga, men detta är mer en personlig utmärkelse och framåtblickande kommentarer, än ett skarpt ämne för en ledarartikel. [nyhetsvärde 4 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-09-10",
+    "headline": "Åländska myndigheter övar för kemiska och nukleära hot",
+    "url": "https://alandsradio.ax/nyheter/alandska-myndigheter-ovar-for-kemiska-och-nukleara-hot",
+    "skriv": false,
+    "nyhetsvarde": 4,
+    "tema": "rutinåtgärd",
+    "anledning": "Utbildning är en rutinåtgärd. Dessutom, trots att det berör säkerhet, är det inte direkt relaterat till de politiska, autonoma eller sedlighetsteman som Julius skulle vilja skriva om. Det saknar konflikt, kontrovers eller ett tydligt politiskt ställningstagande. [nyhetsvärde 4 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-09-10",
+    "headline": "Medborgarinitiativ leder till förändring – enigt lagting för utvidgad mammografi",
+    "url": "https://alandsradio.ax/nyheter/medborgarinitiativ-leder-till-forandring-enigt-lagting-for-utvidgad-mammografi",
+    "skriv": false,
+    "nyhetsvarde": 4,
+    "tema": "hälsovård",
+    "anledning": "Frågan rör hälsovård, vilket är en viktig samhällsfråga men saknar de typiska vinklarna för en ledare av Julius 1926. Fokus ligger på medicinska beslut och resursfördelning inom sjukvården, inte direkt autonomi, identitet, klass, eller tidens politiska strider. [nyhetsvärde 4 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-09-10",
+    "headline": "Lemland, Lumparland och Kökar utvärderas efter årsskiftet",
+    "url": "https://alandsradio.ax/nyheter/lemland-lumparland-och-kokar-utvarderas-efter-arsskiftet",
+    "skriv": true,
+    "nyhetsvarde": 8,
+    "tema": "självstyrelse, ekonomi, samhällsordning",
+    "anledning": "Frågan om kommunernas ekonomi och landskapsregeringens agerande är direkt kopplad till den åländska självstyrelsens funktion och samhällsordning. Det finns tillräckligt med substans i utvärderingsförfarandet, dess tidsramar och de inblandade parterna för en ledarartikel. Julius kan argumentera för vikten av kommunal självständighet kontra centraliserad kontroll, eller kommentera hur ekonomisk svaghet hotar självstyret.",
+    "fallback": false
   }
 ]
