@@ -7238,5 +7238,105 @@
     "tema": "ekonomi",
     "anledning": "Fråga om upphandling och skattebetalarnas pengar direkt berör landskapets ekonomi och hur medlen förvaltas, med potentiell påverkan på självstyrelsens rykte och effektivitet. Detta är av stort allmänintresse och relaterar till den ekonomiska ordningen och egendomen.",
     "fallback": false
+  },
+  {
+    "date": "2026-09-10",
+    "headline": "Staden tar in juridisk expertis för upphandling av Övernäsrenovering",
+    "url": "https://alandsradio.ax/nyheter/staden-tar-in-juridisk-expertis-for-upphandling-av-overnasrenovering",
+    "skriv": false,
+    "nyhetsvarde": 3,
+    "tema": "rutinärende",
+    "anledning": "En rutinåtgärd gällande upphandling och anlitande av juridisk expertis för ett lokalt skolprojekt. Ingen större politisk, samhällelig eller autonomirelevant betydelse. [nyhetsvärde 3 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-09-10",
+    "headline": "Vattnet stängs av i Geta i dag torsdag",
+    "url": "https://alandsradio.ax/nyheter/vattnet-stangs-av-i-geta-i-dag-torsdag",
+    "skriv": false,
+    "nyhetsvarde": 1,
+    "tema": "lokal notis",
+    "anledning": "Trivial, smålokal notis om en rutinåtgärd. Saknar större politisk, samhällelig eller tematisk relevans för en ledarartikel. [nyhetsvärde 1 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-09-10",
+    "headline": "ÅT: 27 000 euro har gått till att utreda Selanders juristnota",
+    "url": "https://alandsradio.ax/nyheter/at-27-000-euro-har-gatt-till-att-utreda-selanders-juristnota",
+    "skriv": true,
+    "nyhetsvarde": 8,
+    "tema": "ekonomi, rättvisa, samhällsordning, självstyrelse",
+    "anledning": "Betydande slöseri med offentliga medel i en tvist med koppling till kommunal förvaltning och potentiellt tjänstemannaansvar. Väcker frågor om ansvarsutkrävande och transparens inom självstyrelsen. Utökade kostnader långt över budget är anmärkningsvärt och förtjänar en ledarartikel som granskar ekonomisk förvaltning och etiska principer inom det offentliga.",
+    "fallback": false
+  },
+  {
+    "date": "2026-09-10",
+    "headline": "Chans att fynda finsk design när kyrkmöbler auktioneras ut",
+    "url": "https://alandsradio.ax/nyheter/chans-att-fynda-finsk-design-nar-kyrkmobler-auktioneras-ut",
+    "skriv": false,
+    "nyhetsvarde": 2,
+    "tema": "kultur/ekonomi",
+    "anledning": "Trivial notis om försäljning av kyrkmöbler, saknar politisk eller samhällelig relevans för en ledare. Ingen tydlig koppling till autonomi, klass, sedlighet eller bildning. [nyhetsvärde 2 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-09-10",
+    "headline": "Sundets vatten stänger av vattnet natten mot fredag",
+    "url": "https://alandsradio.ax/nyheter/sundets-vatten-stanger-av-vattnet-natten-mot-fredag",
+    "skriv": false,
+    "nyhetsvarde": 1,
+    "tema": "trivial notis",
+    "anledning": "En smålokal notis om en rutinåtgärd för att laga en vattenläcka. Saknar all relevans för Julius redaktionella värld och är för trivial för en ledarartikel. [nyhetsvärde 1 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-09-10",
+    "headline": "Emma Nohrén får Lasse Wiklöf-priset – första pristagaren på tre år",
+    "url": "https://alandsradio.ax/nyheter/emma-nohren-far-lasse-wiklof-priset-forsta-pristagaren-pa-tre-ar",
+    "skriv": false,
+    "nyhetsvarde": 3,
+    "tema": "miljö",
+    "anledning": "Prisutdelning för miljöengagemang är inte av tillräcklig vikt för en ledare år 1926. Den har ingen direkt koppling till åländsk autonomi, rikspolitik av kritisk art, eller andra kärnvärden som Julius skulle prioritera. Det är en positiv, men i det stora hela, trivial notis för den tiden. [nyhetsvärde 3 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-09-10",
+    "headline": "Kvinna döms för skjutvapenbrott efter utgången licens",
+    "url": "https://alandsradio.ax/nyheter/kvinna-doms-for-skjutvapenbrott-efter-utgangen-licens",
+    "skriv": false,
+    "nyhetsvarde": 2,
+    "tema": "rättsväsende",
+    "anledning": "Trivial notis om ett enskilt fall av vapenbrott utan större samhällelig relevans eller koppling till autonomi. Saknar substans för en ledarartikel. [nyhetsvärde 2 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-09-10",
+    "headline": "Arbetsgrupp ska jobba med Geta ÅVC:s brister",
+    "url": "https://alandsradio.ax/nyheter/arbetsgrupp-ska-jobba-med-geta-avcs-brister",
+    "skriv": false,
+    "nyhetsvarde": 3,
+    "tema": "lokal förvaltning",
+    "anledning": "Interna kommunala rutiner och effektivisering av en återvinningscentral är för lokalt och trivialt för en ledarartikel av Julius Sundblom. Brist på bredare politisk eller samhällelig relevans. [nyhetsvärde 3 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-09-10",
+    "headline": "Vargata föreslås få ny 30-zon",
+    "url": "https://alandsradio.ax/nyheter/vargata-foreslas-fa-ny-30-zon",
+    "skriv": false,
+    "nyhetsvarde": 1,
+    "tema": "lokal infrastruktur",
+    "anledning": "Trivial, smålokal notis om hastighetsbegränsning utan koppling till större autonomifrågor, samhällsordning eller ekonomi. [nyhetsvärde 1 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-09-10",
+    "headline": "Eckerö köper solceller till skolan",
+    "url": "https://alandsradio.ax/nyheter/eckero-koper-solceller-till-skolan",
+    "skriv": false,
+    "nyhetsvarde": 2,
+    "tema": "lokal förvaltning",
+    "anledning": "Trivial lokal nyhet om en kommuns inköp och rutinåtgärder. Saknar större politisk, samhällelig eller existentiell betydelse för Åland. [nyhetsvärde 2 < 6]",
+    "fallback": false
   }
 ]
