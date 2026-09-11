@@ -7418,5 +7418,85 @@
     "tema": "internationell politik",
     "anledning": "Ämnet i sig är av vikt, men det är en allmän analys av internationell politik utan direkt koppling till Åland eller Julius centrala teman. För spekulativ och avlägsen för en ledare. [nyhetsvärde 4 < 6]",
     "fallback": false
+  },
+  {
+    "date": "2026-09-11",
+    "headline": "Åland får mer i klumpsumma än väntat 2027",
+    "url": "https://alandsradio.ax/nyheter/aland-far-mer-i-klumpsumma-an-vantat-2027",
+    "skriv": true,
+    "nyhetsvarde": 8,
+    "tema": "självstyrelse, ekonomi",
+    "anledning": "Ekonomiska beslut rörande klumpsumman och skatteavräkningen är centrala för Ålands autonomi och ekonomiska välfärd. Ökade belopp är en viktig nyhet som direkt påverkar landskapets finanser och självstyrelsens ställning. Det finns tillräckligt med substans för en ledare om hur dessa medel kan eller bör användas, och vad det säger om relationen till riket.",
+    "fallback": false
+  },
+  {
+    "date": "2026-09-11",
+    "headline": "Thörnroos om kritiserade sjukhusbesöket: ”Jag söker ingen konflikt”",
+    "url": "https://alandsradio.ax/nyheter/thornroos-om-kritiserade-sjukhusbesoket-jag-soker-ingen-konflikt",
+    "skriv": false,
+    "nyhetsvarde": 3,
+    "tema": "personnotis",
+    "anledning": "Ämnet är en smålokal personnotis rörande en specifik lagtingsledamots agerande, med fokus på den efterföljande kritiken. Detta är för trivialt och saknar den bredare politiska eller samhälleliga relevans som krävs för en ledarartikel av Julius Sundblom, som snarare skulle fokusera på principer för självstyrelse eller viktiga samhällsfrågor snarare än en enskild politikers agerande vid ett sjukhusbesök. [nyhetsvärde 3 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-09-11",
+    "headline": "Tidigare åländskt fartyg svårt skadat i drönarattack",
+    "url": "https://alandsradio.ax/nyheter/tidigare-alandskt-fartyg-svart-skadat-i-dronarattack",
+    "skriv": false,
+    "nyhetsvarde": 3,
+    "tema": "internationella händelser",
+    "anledning": "Även om det handlar om ett fartyg med åländsk historia, är händelsen i sig, en drönarattack mot ett icke-åländskt fartyg i Svarta havet, för avlägsen och saknar direkt koppling till åländsk självstyrelse, ekonomi eller samhällsordning för att motivera en ledarartikel av Julius Sundblom. Det är mer en notis om en internationell händelse. [nyhetsvärde 3 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-09-11",
+    "headline": "Tobölevägen behöver 120 000 euro extra",
+    "url": "https://alandsradio.ax/nyheter/tobolevagen-behover-120-000-euro-extra",
+    "skriv": false,
+    "nyhetsvarde": 2,
+    "tema": "lokal infrastruktur",
+    "anledning": "En smålokal notis om en rutinmässig kostnadsökning för en väg. Saknar större politisk, samhällelig eller autonomirelevant betydelse för en ledarartikel av Julius Sundblom. Detta är en trivial notis. [nyhetsvärde 2 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-09-11",
+    "headline": "Stadsstyrelsen säger nej till köp av Bifafastigheten",
+    "url": "https://alandsradio.ax/nyheter/stadsstyrelsen-sager-nej-till-kop-av-bifafastigheten",
+    "skriv": false,
+    "nyhetsvarde": 3,
+    "tema": "lokalpolitik",
+    "anledning": "Trivial lokalpolitisk notis om ett fastighetsköp. Ingen större betydelse för autonomin, samhällsordningen eller Julius Sundbloms redaktionella värld. Saknar tillräcklig substans för en ledare. [nyhetsvärde 3 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-09-11",
+    "headline": "Kommunförbundet och Mariehamn vill ha en coach",
+    "url": "https://alandsradio.ax/nyheter/kommunforbundet-och-mariehamn-vill-ha-en-coach",
+    "skriv": false,
+    "nyhetsvarde": 3,
+    "tema": "kommunal förvaltning",
+    "anledning": "Begäran om finansiering av en kommuncoach är en administrativ fråga utan större politisk, samhällelig eller existentiell bäring för Åland. Det är en intern förvaltningsfråga för kommunerna, snarare än en angelägenhet för en ledarartikel av Sundblom. Innehåller ingen konflikt eller beslut av stor vikt. [nyhetsvärde 3 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-09-11",
+    "headline": "Frysboxfallet avgörs i tingsrätten – åländska män åtalade",
+    "url": "https://alandsradio.ax/nyheter/frysboxfallet-avgors-i-tingsratten-alandska-man-atalade",
+    "skriv": false,
+    "nyhetsvarde": 4,
+    "tema": "sedlighet",
+    "anledning": "Även om fallet är makabert och tangerar sedlighet, är det primärt en kriminell notis utan direkt koppling till större autonomifrågor, samhällsordning eller rikspolitisk relevans för en ledarartikel av Julius. Det är för lokalt och specifikt i sin brottsrubricering. [nyhetsvärde 4 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-09-11",
+    "headline": "Jenny Rådland vill inte bli av med sin personliga assistent –”Det är ovissheten ",
+    "url": "https://alandsradio.ax/nyheter/jenny-radland-vill-inte-bli-av-med-sin-personliga-assistent-det-ar-ovissheten-som-ar-det-jobbiga",
+    "skriv": false,
+    "nyhetsvarde": 3,
+    "tema": "sociala frågor",
+    "anledning": "Ämnet berör personlig välfärd snarare än bredare samhällsstrukturer eller autonomifrågor. Notisen är dessutom för lokal och personfokuserad för en ledare. [nyhetsvärde 3 < 6]",
+    "fallback": false
   }
 ]
