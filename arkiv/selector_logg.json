@@ -7498,5 +7498,75 @@
     "tema": "sociala frågor",
     "anledning": "Ämnet berör personlig välfärd snarare än bredare samhällsstrukturer eller autonomifrågor. Notisen är dessutom för lokal och personfokuserad för en ledare. [nyhetsvärde 3 < 6]",
     "fallback": false
+  },
+  {
+    "date": "2026-09-11",
+    "headline": "Förslaget på ny taxilag till lagtinget – väckte kritik under remissrundan",
+    "url": "https://alandsradio.ax/nyheter/forslaget-pa-ny-taxilag-till-lagtinget-vackte-kritik-under-remissrundan",
+    "skriv": false,
+    "nyhetsvarde": 3,
+    "tema": "ekonomi",
+    "anledning": "Även om det berör näringslivet och reglering, är detta en för specifik lagstiftningsfråga med begränsad samhällspåverkan för en ledarartikel. Det är inte ett principbeslut som rör autonomin eller större samhällsförändringar, och kritiken från branschen är för lokal och specifik. Julius letar efter bredare, mer fundamentala frågor. [nyhetsvärde 3 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-09-11",
+    "headline": "Marja har hittat kreativiteten på Kökar - först att skicka in till[email protect",
+    "url": "https://alandsradio.ax/nyheter/marja-har-hittat-kreativiteten-pa-kokar-forst-att-skicka-in-till-musikalandsradioax",
+    "skriv": false,
+    "nyhetsvarde": 1,
+    "tema": "kultur/personnotis",
+    "anledning": "Trivial personnotis om en enskild persons hobbyprojekt och användning av modern teknologi. Saknar politisk, samhällelig eller autonomirelevant betydelse. Ingen substans för en ledare av Sundblom. [nyhetsvärde 1 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-09-11",
+    "headline": "Frysboxfallet: Föräldrarna skulle begravas i USA",
+    "url": "https://alandsradio.ax/nyheter/frysboxfallet-foraldrarna-skulle-begravas-i-usa",
+    "skriv": false,
+    "nyhetsvarde": 3,
+    "tema": "kriminalitet",
+    "anledning": "Fallet är en uppseendeväckande kriminalnotis men saknar direkt koppling till Ålands självstyrelse, svensk identitet, klassordning eller andra centrala redaktionella teman för Tidningen Åland 1926. Den är snarare en kuriositet och för 'modern' i sin karaktär för att motivera en ledare av Julius Sundblom. [nyhetsvärde 3 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-09-11",
+    "headline": "Skördefesten fortsätter att växa",
+    "url": "https://alandsradio.ax/nyheter/skordefesten-fortsatter-att-vaxa",
+    "skriv": false,
+    "nyhetsvarde": 3,
+    "tema": "ekonomi/kultur",
+    "anledning": "Skördefesten är visserligen en positiv ekonomisk och kulturell händelse, men den saknar den politiska eller samhälleliga tyngd som motiverar en ledarartikel från Julius. Branden på Mickels gård är en enskild tragisk händelse men inte tillräcklig för att lyfta hela nyheten till ledarnivå i tidningen 1926. [nyhetsvärde 3 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-09-11",
+    "headline": "Problem med finländska bankkort hos Rusta",
+    "url": "https://alandsradio.ax/nyheter/problem-med-finlandska-bankkort-hos-rusta",
+    "skriv": false,
+    "nyhetsvarde": 1,
+    "tema": "ekonomi/vardagligt",
+    "anledning": "Trivial notis om betalkortsproblem hos en enskild butik. Saknar större politisk, samhällelig eller principiell relevans för en ledare år 1926. Inget som Julius skulle finna värdigt en ledarartikel. [nyhetsvärde 1 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-09-11",
+    "headline": "Gruppledare om ÅHS-besöket: ”Ett olyckligt övertramp”",
+    "url": "https://alandsradio.ax/nyheter/gruppledare-om-ahs-besoket-ett-olyckligt-overtramp",
+    "skriv": false,
+    "nyhetsvarde": 4,
+    "tema": "internpolitik",
+    "anledning": "Även om det handlar om lagtingsledamöter är detta primärt en internpolitisk dispyt om etikett och arbetsformer, inte ett sakpolitiskt beslut med större autonomi- eller samhällsbetydelse. Julius skulle nog se det som för internt och 'småskvaller'. [nyhetsvärde 4 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-09-11",
+    "headline": "Svenska Yle: Bröderna företräder sig själva i frysboxfallet",
+    "url": "https://alandsradio.ax/nyheter/svenska-yle-broderna-foretrader-sig-sjalva-i-frysboxfallet",
+    "skriv": false,
+    "nyhetsvarde": 3,
+    "tema": "rättvisa",
+    "anledning": "Även om det är ett rättsfall, är 'frysboxfallet' en modern brottsrubricering och brödernas beslut att företräda sig själva är mer en processuell detalj än något med större samhällspolitisk relevans för Julius Sundblom år 1926. Den saknar koppling till centrala teman som självstyrelse, svensk identitet, eller modernitetens förfall på ett sätt som skulle motivera en ledare. [nyhetsvärde 3 < 6]",
+    "fallback": false
   }
 ]
