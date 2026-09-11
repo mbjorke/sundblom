@@ -7568,5 +7568,15 @@
     "tema": "rättvisa",
     "anledning": "Även om det är ett rättsfall, är 'frysboxfallet' en modern brottsrubricering och brödernas beslut att företräda sig själva är mer en processuell detalj än något med större samhällspolitisk relevans för Julius Sundblom år 1926. Den saknar koppling till centrala teman som självstyrelse, svensk identitet, eller modernitetens förfall på ett sätt som skulle motivera en ledare. [nyhetsvärde 3 < 6]",
     "fallback": false
+  },
+  {
+    "date": "2026-09-11",
+    "headline": "Läkare varnar för nedskärning av vårdplatser",
+    "url": "https://alandsradio.ax/nyheter/lakare-varnar-for-nedskarning-av-vardplatser",
+    "skriv": true,
+    "nyhetsvarde": 8,
+    "tema": "samhälle",
+    "anledning": "Väsentlig fråga rörande samhällets ansvar för medborgarnas hälsa och välfärd, med direkta implikationer för Ålands självstyrelses förmåga att tillhandahålla grundläggande tjänster. Frågan om nedskärningar i vården och dess konsekvenser för patienter och personal har hög redaktionell relevans, berör klass- och samhällsordningens funktion samt sedligheten i att upprätthålla en god vård. Det finns substans för att diskutera både de ekonomiska aspekterna och de mänskliga konsekvenserna.",
+    "fallback": false
   }
 ]
