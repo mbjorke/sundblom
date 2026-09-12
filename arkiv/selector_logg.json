@@ -7578,5 +7578,25 @@
     "tema": "samhälle",
     "anledning": "Väsentlig fråga rörande samhällets ansvar för medborgarnas hälsa och välfärd, med direkta implikationer för Ålands självstyrelses förmåga att tillhandahålla grundläggande tjänster. Frågan om nedskärningar i vården och dess konsekvenser för patienter och personal har hög redaktionell relevans, berör klass- och samhällsordningens funktion samt sedligheten i att upprätthålla en god vård. Det finns substans för att diskutera både de ekonomiska aspekterna och de mänskliga konsekvenserna.",
     "fallback": false
+  },
+  {
+    "date": "2026-09-12",
+    "headline": "Håkan Strömmer lyftes fram i svenskt humorprogram",
+    "url": "https://alandsradio.ax/nyheter/hakan-strommer-lyftes-fram-i-svenskt-humorprogram",
+    "skriv": false,
+    "nyhetsvarde": 1,
+    "tema": "kultur",
+    "anledning": "Trivial notis om svenskt humorprogram, ingen relevans för ledarartikel. Julius skulle inte finna det värdigt. [nyhetsvärde 1 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-09-12",
+    "headline": "Kumlinge ser positivt på kommunala samarbeten",
+    "url": "https://alandsradio.ax/nyheter/kumlinge-ser-positivt-pa-kommunala-samarbeten",
+    "skriv": false,
+    "nyhetsvarde": 3,
+    "tema": "småkommunal förvaltning",
+    "anledning": "Interna kommunala diskussioner om samarbete, för lokal och administrativ för att motivera en ledare av Julius Sundblom. Ingen koppling till större autonomifrågor eller rikspolitik. [nyhetsvärde 3 < 6]",
+    "fallback": false
   }
 ]
