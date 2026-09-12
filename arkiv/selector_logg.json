@@ -7598,5 +7598,25 @@
     "tema": "småkommunal förvaltning",
     "anledning": "Interna kommunala diskussioner om samarbete, för lokal och administrativ för att motivera en ledare av Julius Sundblom. Ingen koppling till större autonomifrågor eller rikspolitik. [nyhetsvärde 3 < 6]",
     "fallback": false
+  },
+  {
+    "date": "2026-09-12",
+    "headline": "IFK tillbaka på vinnarspåret – 17-åring matchvinnare",
+    "url": "https://alandsradio.ax/nyheter/ifk-tillbaka-pa-vinnarsparet-17-aring-matchvinnare",
+    "skriv": false,
+    "nyhetsvarde": 2,
+    "tema": "sport",
+    "anledning": "Ren sportresultat-rapportering, ingen redaktionell vinkel. [nyhetsvärde 2 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-09-12",
+    "headline": "MC-förare till sjukhus efter krock",
+    "url": "https://alandsradio.ax/nyheter/mc-forare-till-sjukhus-efter-krock",
+    "skriv": false,
+    "nyhetsvarde": 1,
+    "tema": "trafikolycka",
+    "anledning": "Trivial lokal notis utan djupare samhällelig, politisk eller autonomi-relaterad relevans. Inget för en ledarartikel av Sundblom. [nyhetsvärde 1 < 6]",
+    "fallback": false
   }
 ]
