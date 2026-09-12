@@ -543,6 +543,11 @@ def main() -> None:
     url = save_reflection(headline, julius_text, mode, focus, refs, today)
     log.info("Reflektion sparad: %s", url)
 
+    # Trigga deployen. _push_file skriver bara till main, och CF Pages lyssnar
+    # på deploy-branchen — utan detta blev reflektionen liggande osynlig ända
+    # tills nästa ledare publicerades.
+    M.save_last_headline(headline)
+
     # Uppdatera state
     recent_modes = (state.get("recent_modes", []) + [mode])[-6:]
     revisited = list(state.get("revisited_ids", []))

@@ -39,6 +39,7 @@ export async function getStaticPaths() {
 const { entry, prevHref, nextHref } = Astro.props;
 const article = entry.data;
 
+const isKronika = article.kind === 'kronika';
 const dateLabel = formatSwedishDate(article.date);
 const juliusHtml = toParagraphs(article.julius_text);
 const bodyHtml = article.body
@@ -63,6 +64,8 @@ const description = toDescription(article.julius_text);
       prevHref={prevHref}
       nextHref={nextHref}
       dateLabel={dateLabel}
+      isKronika={isKronika}
+      sources={article.sources ?? null}
     />
   </div>
 </BaseLayout>

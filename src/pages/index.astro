@@ -20,6 +20,7 @@ if (sorted.length === 0) {
 const article = sorted[0].data;
 const nextArticle = sorted[1]?.data ?? null;
 
+const isKronika = article.kind === 'kronika';
 const dateLabel = formatSwedishDate(article.date);
 const juliusHtml = toParagraphs(article.julius_text);
 const bodyHtml = article.body
@@ -49,6 +50,8 @@ const nextHref = null; // already on newest
       prevHref={prevHref}
       nextHref={nextHref}
       dateLabel={dateLabel}
+      isKronika={isKronika}
+      sources={article.sources ?? null}
     />
   </div>
 </BaseLayout>

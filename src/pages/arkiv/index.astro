@@ -55,6 +55,9 @@ const days = Object.keys(byDate).sort((a, b) => b.localeCompare(a));
                   <a href={`/arkiv/${entry.data.slug}`}>
                     {entry.data.headline}
                   </a>
+                  {entry.data.kind === 'kronika' && (
+                    <span class="kind-tag">Veckokrönika</span>
+                  )}
                 </li>
               ))}
             </ul>
@@ -133,13 +136,25 @@ const days = Object.keys(byDate).sort((a, b) => b.localeCompare(a));
     border-bottom: 1px solid #c8b090; padding-bottom: .3rem;
   }
   ul { list-style: none; margin: 0; padding: 0; }
-  ul li { border-bottom: 1px solid #e8d8c0; }
+  ul li { border-bottom: 1px solid #e8d8c0; position: relative; }
   ul li a {
     display: block; padding: .55rem .2rem;
     font-family: 'IM Fell English SC', serif; font-size: .85rem; letter-spacing: .05em;
     color: var(--ink); text-decoration: none;
   }
   ul li a:hover { color: var(--accent); }
+  ul li:has(.kind-tag) a { padding-right: 8rem; }
+
+  /* Etikett för veckokrönikor i listan */
+  .kind-tag {
+    position: absolute; right: .2rem; top: 50%; transform: translateY(-50%);
+    font-family: 'IM Fell English SC', serif; font-size: .7rem;
+    letter-spacing: .18em; text-transform: uppercase;
+    color: var(--muted); background: var(--paper);
+    border: 1px solid #c8b090; border-radius: 2px;
+    padding: .1rem .35rem;
+    pointer-events: none;
+  }
 
   #no-results { text-align: center; color: var(--muted); font-style: italic; font-size: .85rem; margin-top: 2rem; }
 

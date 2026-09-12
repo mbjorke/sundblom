@@ -8,9 +8,17 @@ interface Props {
   prevHref: string | null;
   nextHref: string | null;
   dateLabel: string;
+  /* Krönika: höger kolumn visar veckans rubriker i stället för en originalartikel */
+  isKronika?: boolean;
+  sources?: { headline: string; url: string; date?: string }[] | null;
 }
 
-const { headline, juliusHtml, bodyHtml, author, sourceUrl, prevHref, nextHref, dateLabel } = Astro.props;
+const {
+  headline, juliusHtml, bodyHtml, author, sourceUrl, prevHref, nextHref, dateLabel,
+  isKronika = false, sources = null,
+} = Astro.props;
+
+const veckansRubriker = isKronika ? (sources ?? []) : [];
 ---
 
 <main id="main-content" class="split" aria-label="Artikeln"
@@ -26,7 +34,7 @@ const { headline, juliusHtml, bodyHtml, author, sourceUrl, prevHref, nextHref, d
     )}
     <div class="col-header">
       <div class="col-name">Julius Sundblom</div>
-      <div class="col-sub">AI-tolkning · 1920-tal</div>
+      <div class="col-sub">{isKronika ? 'Veckokrönika' : 'AI-tolkning'} · 1920-tal</div>
     </div>
     <h2 class="julius-headline">{headline}</h2>
     <div class="julius-body" set:html={juliusHtml} />
@@ -62,11 +70,27 @@ const { headline, juliusHtml, bodyHtml, author, sourceUrl, prevHref, nextHref, d
     )}
     <div class="col-header">
       <div class="col-name">Ålands Radio</div>
-      <div class="col-sub">Originalartikeln · {new Date().getFullYear()}</div>
+      <div class="col-sub">{isKronika ? 'Veckans rubriker' : 'Originalartikeln'} · {new Date().getFullYear()}</div>
     </div>
-    <h2 class="radio-headline">{headline}</h2>
-    <p class="radio-byline">{author}</p>
-    <div class="radio-body" set:html={bodyHtml} />
+    {isKronika ? (
+      <>
+        <h2 class="radio-headline">Veckan som gick</h2>
+        <p class="radio-byline">Rubrikerna Julius blickar tillbaka på</p>
+        <ul class="radio-sources">
+          {veckansRubriker.map(k => (
+            <li>
+              <a href={k.url} target="_blank" rel="noopener">{k.headline}</a>
+            </li>
+          ))}
+        </ul>
+      </>
+    ) : (
+      <>
+        <h2 class="radio-headline">{headline}</h2>
+        <p class="radio-byline">{author}</p>
+        <div class="radio-body" set:html={bodyHtml} />
+      </>
+    )}
   </div>
 
 </main>
@@ -304,6 +328,30 @@ const { headline, juliusHtml, bodyHtml, author, sourceUrl, prevHref, nextHref, d
     font-size: .87rem; line-height: 1.72;
     color: var(--radio-ink); margin-bottom: .65rem;
     text-align: left;
+  }
+
+  /* ── Veckans rubriker (krönika) ── */
+  .radio-sources {
+    list-style: none;
+    margin: 0 0 .8rem;
+    padding: 0;
+  }
+  .radio-sources li {
+    font-family: 'Source Serif 4', serif;
+    font-size: .87rem; line-height: 1.5;
+    padding: .45rem 0;
+    border-bottom: 1px dotted #c8b090;
+  }
+  .radio-sources li:last-child { border-bottom: none; }
+  .radio-sources a {
+    color: var(--radio-ink);
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+    transition: border-color .2s, color .2s;
+  }
+  .radio-sources a:hover {
+    color: var(--radio-blue);
+    border-bottom-color: var(--radio-blue);
   }
 
   /* ── Kolumnnavigering (bara desktop med hover) ── */
