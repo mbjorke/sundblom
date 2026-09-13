@@ -7638,5 +7638,15 @@
     "tema": "infrastruktur",
     "anledning": "Trivial, lokal notis om rutinmässigt infrastrukturarbete. Ingen politisk, samhällelig eller autonomirelevant vinkel. [nyhetsvärde 2 < 6]",
     "fallback": false
+  },
+  {
+    "date": "2026-09-13",
+    "headline": "Frustrerande hemmaförlust för ÅU – tappade i silverstriden",
+    "url": "https://alandsradio.ax/nyheter/frustrerande-hemmaforlust-for-au-tappade-i-silverstriden",
+    "skriv": false,
+    "nyhetsvarde": 2,
+    "tema": "sport",
+    "anledning": "Ren sportresultat-rapportering, ingen redaktionell vinkel. För trivialt för Julius. [nyhetsvärde 2 < 6]",
+    "fallback": false
   }
 ]
