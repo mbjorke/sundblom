@@ -7618,5 +7618,25 @@
     "tema": "trafikolycka",
     "anledning": "Trivial lokal notis utan djupare samhällelig, politisk eller autonomi-relaterad relevans. Inget för en ledarartikel av Sundblom. [nyhetsvärde 1 < 6]",
     "fallback": false
+  },
+  {
+    "date": "2026-09-13",
+    "headline": "IFK-hockey träningsmatchade igång säsongen",
+    "url": "https://alandsradio.ax/nyheter/ifk-hockey-traningsmatchade-igang-sasongen",
+    "skriv": false,
+    "nyhetsvarde": 1,
+    "tema": "sport",
+    "anledning": "Ren sportresultat-rapportering av träningsmatcher, ingen redaktionell vinkel för en ledare. [nyhetsvärde 1 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-09-13",
+    "headline": "Södragatan grävs upp för nya VA-ledningar",
+    "url": "https://alandsradio.ax/nyheter/sodragatan-gravs-upp-for-nya-va-ledningar",
+    "skriv": false,
+    "nyhetsvarde": 2,
+    "tema": "infrastruktur",
+    "anledning": "Trivial, lokal notis om rutinmässigt infrastrukturarbete. Ingen politisk, samhällelig eller autonomirelevant vinkel. [nyhetsvärde 2 < 6]",
+    "fallback": false
   }
 ]
