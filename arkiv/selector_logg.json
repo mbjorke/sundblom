@@ -7748,5 +7748,45 @@
     "tema": "infrastruktur",
     "anledning": "Trivial notis om en rutinförändring i färjetrafiken. Saknar större politisk eller samhällelig betydelse för en ledarartikel. [nyhetsvärde 2 < 6]",
     "fallback": false
+  },
+  {
+    "date": "2026-09-14",
+    "headline": "Christoffer hittade vägen ur ensamheten genom körsång",
+    "url": "https://alandsradio.ax/nyheter/christoffer-hittade-vagen-ur-ensamheten-genom-korsang",
+    "skriv": false,
+    "nyhetsvarde": 2,
+    "tema": "personnotis",
+    "anledning": "Trivial personnotis utan större samhällelig eller politisk relevans för en ledarartikel av Julius Sundblom. Brist på substans för en ledare. [nyhetsvärde 2 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-09-14",
+    "headline": "Tidigare ÅMI-rektor åtalas – riksåklagaren går emot förra beslutet",
+    "url": "https://alandsradio.ax/nyheter/tidigare-ami-rektor-atalas-riksaklagaren-gar-emot-forra-beslutet",
+    "skriv": true,
+    "nyhetsvarde": 8,
+    "tema": "rättvisa och sedlighet",
+    "anledning": "Fallet rör en ledande tjänsteman, moraliskt förfall, minderårigas trygghet samt myndighetsutövning (riksåklagarens agerande) och har väckt debatt. Det är en betydande fråga för allmänhetens tilltro till myndigheter och tjänstemän samt skolväsendets sedlighet. Även autonomiaspekten med landskapsåklagarens ursprungliga bedömning kontra riksåklagarens omprövning är av intresse.",
+    "fallback": false
+  },
+  {
+    "date": "2026-09-14",
+    "headline": "Stödet har blivit bättre – men vårdnadshavare till barn med funktionsnedsättning",
+    "url": "https://alandsradio.ax/nyheter/stodet-har-blivit-battre-men-vardnadshavare-till-barn-med-funktionsnedsattning-saknar-vagledning",
+    "skriv": false,
+    "nyhetsvarde": 4,
+    "tema": "sociala frågor",
+    "anledning": "Ämnet är viktigt för social rättvisa och barns välfärd, men 1926 skulle detta sannolikt bedömas som en specialistfråga för fackmyndigheter snarare än en ledarartikel. Det saknas den typ av politisk eller existentiell konflikt som Sundblom typiskt fokuserade på. [nyhetsvärde 4 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-09-14",
+    "headline": "Överläkaren: Döende patienter riskerar lokaler utan toalett och rinnande vatten",
+    "url": "https://alandsradio.ax/nyheter/overlakaren-doende-patienter-riskerar-lokaler-utan-toalett-och-rinnande-vatten",
+    "skriv": true,
+    "nyhetsvarde": 8,
+    "tema": "samhällsordning",
+    "anledning": "Frågan om vård för de allra svagaste och brister i den offentliga omsorgen är central för samhällsordningen och sedligheten. Nedskärningar som drabbar döende patienter med risk för undermåliga lokaler är ett underbetyg åt landskapsstyrelsens ansvar och hantering av allmänna medel. Detta har substans för en kraftfull ledare som kritiserar modernitetens förfall och bristen på mänsklighet.",
+    "fallback": false
   }
 ]
