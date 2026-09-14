@@ -7648,5 +7648,105 @@
     "tema": "sport",
     "anledning": "Ren sportresultat-rapportering, ingen redaktionell vinkel. För trivialt för Julius. [nyhetsvärde 2 < 6]",
     "fallback": false
+  },
+  {
+    "date": "2026-09-14",
+    "headline": "Skarvpopulationen minskar – störst nedgång i Skärgårdshavet",
+    "url": "https://alandsradio.ax/nyheter/skarvpopulationen-minskar-storst-nedgang-i-skargardshavet",
+    "skriv": false,
+    "nyhetsvarde": 2,
+    "tema": "miljö",
+    "anledning": "För obetydlig notis om djurbestånd. Saknar koppling till centrala teman som självstyrelse, politik eller samhällsordning. Inget att skriva en värdig ledare om. [nyhetsvärde 2 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-09-14",
+    "headline": "Riket vill bestämma mer om åländska hamnar",
+    "url": "https://alandsradio.ax/nyheter/riket-vill-bestamma-mer-om-alandska-hamnar",
+    "skriv": true,
+    "nyhetsvarde": 9,
+    "tema": "självstyrelse, autonomi, rikspolitik, egendom, säkerhet",
+    "anledning": "Direkt angrepp på åländsk självstyrelse och behörighet över egna angelägenheter. Frågan rör kritisk infrastruktur och säkerhet, med koppling till rikspolitik och EU-regler. Detta är en väsentlig händelse som Julius Sundblom skulle finna ytterst angelägen att kommentera.",
+    "fallback": false
+  },
+  {
+    "date": "2026-09-14",
+    "headline": "Förslag om färre sjöfartsplatser oroar – lärare varnar för långsiktiga följder",
+    "url": "https://alandsradio.ax/nyheter/forslag-om-farre-sjofartsplatser-oroar-larare-varnar-for-langsiktiga-foljder",
+    "skriv": true,
+    "nyhetsvarde": 8,
+    "tema": "ekonomi",
+    "anledning": "Förslaget om att minska sjöfartsutbildningarna har stor betydelse för Ålands framtida ekonomi och näringsliv, vilket är av central vikt för autonomin. Det finns en tydlig konflikt och substans i varningarna från lärarna.",
+    "fallback": false
+  },
+  {
+    "date": "2026-09-14",
+    "headline": "Ab Lantbruk väljer bilvägen istället för sjövägen",
+    "url": "https://alandsradio.ax/nyheter/ab-lantbruk-valjer-bilvagen-istallet-for-sjovagen",
+    "skriv": false,
+    "nyhetsvarde": 3,
+    "tema": "ekonomi",
+    "anledning": "Även om det handlar om ett viktigt åländskt företag och en förändring i logistik, är det en intern affärsbeslut som saknar den större politiska, samhälleliga eller autonomirelaterade vinkeln som Julius Sundblom skulle fokusera på. Det är för mycket av en rutinmässig företagsnyhet och för lite om principer, politik eller samhällsförfall. [nyhetsvärde 3 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-09-14",
+    "headline": "Inflationen var nästan två procent i augusti",
+    "url": "https://alandsradio.ax/nyheter/inflationen-var-nastan-tva-procent-i-augusti",
+    "skriv": false,
+    "nyhetsvarde": 4,
+    "tema": "ekonomi",
+    "anledning": "För tunn och rutinartad ekonomisk statistik för att motivera en ledare av Julius Sundblom. Ingen tydlig konflikt eller större samhällspåverkan som kräver ledarposition. [nyhetsvärde 4 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-09-14",
+    "headline": "Segelbåt fick haveri i växellådan",
+    "url": "https://alandsradio.ax/nyheter/segelbat-fick-haveri-i-vaxelladan",
+    "skriv": false,
+    "nyhetsvarde": 1,
+    "tema": "trivial notis",
+    "anledning": "Trivial sjöräddningsnotis utan koppling till politik, samhälle, ekonomi eller Julius redaktionella teman. Brist på substans för en ledarartikel. [nyhetsvärde 1 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-09-14",
+    "headline": "LR nekade kvinna jordförvärvstillstånd - HFD fastställde",
+    "url": "https://alandsradio.ax/nyheter/lr-nekade-kvinna-jordforvarvstillstand-hfd-faststallde",
+    "skriv": true,
+    "nyhetsvarde": 8,
+    "tema": "självstyrelse och egendom",
+    "anledning": "Jordförvärvslagen och dess tillämpning, samt HFD:s fastställelse, berör direkt åländsk självstyrelse, egendomsrätt, och frågor om bosättning. Ärendet har rikspolitisk bäring genom HFD:s inblandning och dess bedömning mot Ålandsprotokollet. Det finns tillräckligt med substans för en ledare om autonomins gränser och lagtolkningens konsekvenser för Ålands unika ställning.",
+    "fallback": false
+  },
+  {
+    "date": "2026-09-14",
+    "headline": "Valve: “Åland kan bli tungan på vågen i svenska valet”",
+    "url": "https://alandsradio.ax/nyheter/valve-aland-kan-bli-tungan-pa-vagen-i-svenska-valet",
+    "skriv": false,
+    "nyhetsvarde": 4,
+    "tema": "internationell/rikspolitisk relevans",
+    "anledning": "Även om det svenska valet är av intresse, är det en spekulation om Ålands påverkan via utlandsröster, och inte ett konkret beslut eller händelse att skriva en ledare om. Fokus är på spekulation snarare än fakta eller en utveckling som direkt påverkar Ålands autonomi eller ställning. [nyhetsvärde 4 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-09-14",
+    "headline": "Otroligt jämnt i det svenska valet",
+    "url": "https://alandsradio.ax/nyheter/otroligt-jamnt-i-det-svenska-valet",
+    "skriv": true,
+    "nyhetsvarde": 7,
+    "tema": "internationell/rikspolitisk relevans",
+    "anledning": "Utgången av det svenska riksdagsvalet är av yttersta vikt för Åland givet våra nära historiska och kulturella band till Sverige. Det potentiella regeringsskiftet och styrkeförhållandena mellan partierna kan ha långtgående implikationer för nordiskt samarbete och synen på minoritetsfrågor. Julius Sundblom torde finna stort intresse i att analysera valresultatet och dess potentiella konsekvenser, både för Åland och det bredare nordiska sammanhanget. Den jämna utgången skapar dessutom en dramatisk vinkel lämplig för en ledarartikel.",
+    "fallback": false
+  },
+  {
+    "date": "2026-09-14",
+    "headline": "Ändrade färjelägen på Brändö förlänger resan med 15 minuter i höst",
+    "url": "https://alandsradio.ax/nyheter/andrade-farjelagen-pa-brando-forlanger-resan-med-15-minuter-i-host",
+    "skriv": false,
+    "nyhetsvarde": 2,
+    "tema": "infrastruktur",
+    "anledning": "Trivial notis om en rutinförändring i färjetrafiken. Saknar större politisk eller samhällelig betydelse för en ledarartikel. [nyhetsvärde 2 < 6]",
+    "fallback": false
   }
 ]
