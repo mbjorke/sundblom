@@ -7788,5 +7788,105 @@
     "tema": "samhällsordning",
     "anledning": "Frågan om vård för de allra svagaste och brister i den offentliga omsorgen är central för samhällsordningen och sedligheten. Nedskärningar som drabbar döende patienter med risk för undermåliga lokaler är ett underbetyg åt landskapsstyrelsens ansvar och hantering av allmänna medel. Detta har substans för en kraftfull ledare som kritiserar modernitetens förfall och bristen på mänsklighet.",
     "fallback": false
+  },
+  {
+    "date": "2026-09-15",
+    "headline": "2,5 miljoner extra i nytt budgetförslag – ÅHS slipper kapa i vård utanför Åland",
+    "url": "https://alandsradio.ax/nyheter/25-miljoner-extra-i-nytt-budgetforslag-ahs-slipper-kapa-i-vard-utanfor-aland",
+    "skriv": true,
+    "nyhetsvarde": 7,
+    "tema": "självstyrelse",
+    "anledning": "Beslut från landskapsregeringen gällande en vital samhällsfunktion (sjukvården) med direkt inverkan på autonomin och folkets välfärd. Diskussionen om patienters säkerhet, politiska beslut och finansiering av en viktig samhällstjänst är av stor relevans. Även om siffrorna är moderna (Euro), är principen densamma: hur självstyrelsen hanterar interna angelägenheter och dess finansiering är centralt för Sundblom.",
+    "fallback": false
+  },
+  {
+    "date": "2026-09-15",
+    "headline": "Guldviva expanderar i Sjökvarteret",
+    "url": "https://alandsradio.ax/nyheter/guldviva-expanderar-i-sjokvarteret",
+    "skriv": false,
+    "nyhetsvarde": 3,
+    "tema": "ekonomi",
+    "anledning": "Småskalig lokal företagsutvidgning utan större samhällsekonomisk eller politisk relevans. Inget för Sundblom. [nyhetsvärde 3 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-09-15",
+    "headline": "Lagtinget överens om behovet av ny lag - ändå har det dröjt snart 20 år",
+    "url": "https://alandsradio.ax/nyheter/laghinder-for-penninginsamling-och-systemkaos-i-skargardstrafiken-sysselsatte-lagtinget",
+    "skriv": false,
+    "nyhetsvarde": 4,
+    "tema": "lagstiftning",
+    "anledning": "Även om det handlar om lagstiftning och lagtingets effektivitet, är det en internpolitisk diskussion om en specifik lag och ett bokningssystem som saknar den bredare samhälleliga eller autonomipolitiska tyngd som en ledare av Julius Sundblom bör ha. Det är för mycket av en rutinmässig politisk debatt med mindre substans för en redaktionell artikel. [nyhetsvärde 4 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-09-15",
+    "headline": "Planen: Barnpoolen vid Mariebad byts ut till våren",
+    "url": "https://alandsradio.ax/nyheter/planen-barnpoolen-vid-mariebad-byts-ut-till-varen",
+    "skriv": false,
+    "nyhetsvarde": 1,
+    "tema": "lokal infrastruktur",
+    "anledning": "En trivial lokal notis om byte av en barnpool. Saknar politisk, samhällelig eller existentiell relevans för Åland 1926. Ingen substans för en ledare. [nyhetsvärde 1 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-09-15",
+    "headline": "Analoga val är en styrka – men när systemet inte kan påverkas riktas hoten mot v",
+    "url": "https://alandsradio.ax/nyheter/analoga-val-ar-en-styrka-men-nar-systemet-inte-kan-paverkas-riktas-hoten-mot-valjarna",
+    "skriv": false,
+    "nyhetsvarde": 3,
+    "tema": "modernitetens förfall",
+    "anledning": "Ämnet är för tekniskt och spekulativt för en ledarartikel från 1926. Fokus på digitala hot mot valsystemet är inte relevant i denna tidsperiod. Julius skulle se det som en modernitetens dårskap snarare än ett konkret hot att skriva en ledare om. [nyhetsvärde 3 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-09-15",
+    "headline": "Ny väg i Lumparland ska heta Badbergsstigen",
+    "url": "https://alandsradio.ax/nyheter/ny-vag-i-lumparland-ska-heta-badbergsstigen",
+    "skriv": false,
+    "nyhetsvarde": 1,
+    "tema": "lokal förvaltning",
+    "anledning": "Trivial notis om vägnamn, ingen substans för en ledare. [nyhetsvärde 1 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-09-15",
+    "headline": "Staden vill locka ungdomar till Knuten med simulator",
+    "url": "https://alandsradio.ax/nyheter/staden-vill-locka-ungdomar-till-knuten-med-simulator",
+    "skriv": false,
+    "nyhetsvarde": 2,
+    "tema": "småkommunala notiser",
+    "anledning": "För obetydlig och småskalig kommunal budgetdetalj. Ingen större politisk, samhällelig eller autonomirelevant händelse. Handlar om lokal fritidsverksamhet och interna administrativa beslut. Saknar tyngd för en ledare av Julius Sundblom. [nyhetsvärde 2 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-09-15",
+    "headline": "Cancerföreningen kräver att planerna för palliativa vården stoppas – “oövertänkt",
+    "url": "https://alandsradio.ax/nyheter/cancerforeningen-kraver-att-planerna-for-palliativa-varden-stoppas-oovertankt-och-omanskligt",
+    "skriv": true,
+    "nyhetsvarde": 7,
+    "tema": "samhällsordning",
+    "anledning": "Väsentlig fråga rörande samhällsviktig vård och resurser, med inslag av kritik mot myndighetsbeslut. Potentiell ledare om vikten av värdig vård och hur den åländska självstyrelsen ska förvalta sådana frågor.",
+    "fallback": false
+  },
+  {
+    "date": "2026-09-15",
+    "headline": "Vårdö vill frostsäkra vattenledningar för 40 000 euro",
+    "url": "https://alandsradio.ax/nyheter/vardo-vill-frostsakra-vattenledningar-for-40-000-euro",
+    "skriv": false,
+    "nyhetsvarde": 2,
+    "tema": "lokal förvaltning",
+    "anledning": "Smålokal notis om rutinmässiga kommunala investeringar i infrastruktur, ingen större samhällelig betydelse eller politisk konflikt. För obetydligt för en ledare. [nyhetsvärde 2 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-09-15",
+    "headline": "Referensgrupp ska ta fram nya registreringsskyltar",
+    "url": "https://alandsradio.ax/nyheter/referensgrupp-ska-ta-fram-nya-registreringsskyltar",
+    "skriv": false,
+    "nyhetsvarde": 2,
+    "tema": "byråkrati",
+    "anledning": "Trivial notis om en rutinåtgärd för att ta fram registreringsskyltar. Saknar politisk, samhällelig eller autonomirelevant substans för en ledarartikel. [nyhetsvärde 2 < 6]",
+    "fallback": false
   }
 ]
