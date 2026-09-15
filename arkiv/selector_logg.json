@@ -7888,5 +7888,75 @@
     "tema": "byråkrati",
     "anledning": "Trivial notis om en rutinåtgärd för att ta fram registreringsskyltar. Saknar politisk, samhällelig eller autonomirelevant substans för en ledarartikel. [nyhetsvärde 2 < 6]",
     "fallback": false
+  },
+  {
+    "date": "2026-09-15",
+    "headline": "Kvinnorna tog plats i svensk politik genom långvarigt arbete",
+    "url": "https://alandsradio.ax/nyheter/kvinnorna-tog-plats-i-svensk-politik-genom-langvarigt-arbete",
+    "skriv": false,
+    "nyhetsvarde": 3,
+    "tema": "svensk politik, jämställdhet",
+    "anledning": "Artikeln behandlar svensk inrikespolitik rörande kvinnors representation. Även om jämställdhet kan beröras av Julius så är ämnet för distanserat från Ålands unika situation och autonomifrågor. Den aktuella svenska valrörelsen är inte av avgörande vikt för Ålands tidning 1926. [nyhetsvärde 3 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-09-15",
+    "headline": "Påkörningsolycka i Finström – en till sjukhus för kontroll",
+    "url": "https://alandsradio.ax/nyheter/pakorningsolycka-i-finstrom-en-till-sjukhus-for-kontroll",
+    "skriv": false,
+    "nyhetsvarde": 2,
+    "tema": "lokal notis",
+    "anledning": "Trivial, smålokal notis utan större betydelse för ledarskap; saknar politisk, samhällelig eller autonomirelevant vinkel. För tunt för en ledare. [nyhetsvärde 2 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-09-15",
+    "headline": "ÅHS ledning på medieträff: Vi måste göra saker annorlunda nu",
+    "url": "https://alandsradio.ax/nyheter/ahs-haller-medietr",
+    "skriv": false,
+    "nyhetsvarde": 4,
+    "tema": "ekonomi",
+    "anledning": "Interna omorganiseringar inom ÅHS har inte direkt autonomipolitisk relevans år 1926. Budgetåtstramningar och diskussioner om vårdplatser är för specifika och saknar den bredare samhälleliga eller politiska vinkel som Julius söker för en ledare. Tonen är för mycket intern för att höra hemma på ledarplats. [nyhetsvärde 4 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-09-15",
+    "headline": "Tehy Åland: Djupt bestörta över sparkraven",
+    "url": "https://alandsradio.ax/nyheter/tehy-aland-djupt-bestorta-over-sparkraven",
+    "skriv": false,
+    "nyhetsvarde": 4,
+    "tema": "ekonomi, samhällsordning",
+    "anledning": "Intern förhandling och kritik av sparkrav inom landskapsregeringen är en relevant notis, men inte tillräckligt substantiell eller unik för en ledare av Julius Sundblom. Han föredrar större frågor som rör autonomins principer eller internationella relationer. [nyhetsvärde 4 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-09-15",
+    "headline": "Slut på reserverna, nu måste Kökar lyfta driftslån",
+    "url": "https://alandsradio.ax/nyheter/slut-pa-reserverna-nu-maste-kokar-lyfta-driftslan",
+    "skriv": false,
+    "nyhetsvarde": 3,
+    "tema": "ekonomi",
+    "anledning": "Smålokal notis om ett driftslån i en liten kommun. Saknar större politisk eller samhällelig relevans för en ledarartikel av Julius Sundblom. Ej heller någon större konflikt eller principfråga. [nyhetsvärde 3 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-09-15",
+    "headline": "Rättegång om spridda sexbilder hölls öppen på offrets begäran",
+    "url": "https://alandsradio.ax/nyheter/rattegang-om-spridda-sexbilder-holls-oppen-pa-offrets-begaran",
+    "skriv": false,
+    "nyhetsvarde": 4,
+    "tema": "sedlighet",
+    "anledning": "Frågan om sedlighet är relevant, men händelsen är en personlig notis snarare än en väsentlig samhällsfråga som motiverar en ledare. Fallet är för specifikt och saknar den bredare politiska eller autonoma kopplingen Julius söker. Det finns inte tillräcklig substans för att utvinna en principiell ledare från detta enskilda fall, utan att riskera att bli alltför sensationslysten eller personlig, vilket inte är Julius stil. Dessutom, att en rättegång hålls öppen på offrets begäran är inte en nyhet med tillräcklig samhällelig bäring 1926. [nyhetsvärde 4 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-09-15",
+    "headline": "Cancerföreningen ställer krav: ”Man kan inte splittra den palliativa avdelningen",
+    "url": "https://alandsradio.ax/nyheter/cancerforeningen-staller-krav-man-kan-inte-splittra-den-palliativa-avdelningen",
+    "skriv": false,
+    "nyhetsvarde": 4,
+    "tema": "lokalvård",
+    "anledning": "Viktig fråga för de berörda, men för specifik och för liten att motivera en ledare av Sundblom. Handlar om lokal organisering snarare än principer för autonomi eller samhällsordning av bredare intresse. [nyhetsvärde 4 < 6]",
+    "fallback": false
   }
 ]
