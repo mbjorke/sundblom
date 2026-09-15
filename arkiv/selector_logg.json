@@ -7968,5 +7968,15 @@
     "tema": "personnotis",
     "anledning": "Intern föreningsangelägenhet utan större politisk eller samhällelig relevans för 1926 års Åland. 'Regnbågsverksamhet' är helt obekant och irrelevant för Julius redaktionella värld. [nyhetsvärde 2 < 6]",
     "fallback": false
+  },
+  {
+    "date": "2026-09-15",
+    "headline": "LR: Bra att riksåklagaren prövar fallet med ÅMI:s rektor",
+    "url": "https://alandsradio.ax/nyheter/lr-bra-att-riksaklagaren-provar-fallet-med-amis-rektor",
+    "skriv": true,
+    "nyhetsvarde": 8,
+    "tema": "sedlighet",
+    "anledning": "Fallet rör tjänsteplikt och moraliskt ansvar för minderåriga inom skolväsendet, vilket har tydlig koppling till sedlighet och samhällsordning. Frågan om tjänstemäns ansvar och trygghet för elever är av stor vikt för Julius.",
+    "fallback": false
   }
 ]
