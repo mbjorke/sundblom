@@ -7958,5 +7958,15 @@
     "tema": "lokalvård",
     "anledning": "Viktig fråga för de berörda, men för specifik och för liten att motivera en ledare av Sundblom. Handlar om lokal organisering snarare än principer för autonomi eller samhällsordning av bredare intresse. [nyhetsvärde 4 < 6]",
     "fallback": false
+  },
+  {
+    "date": "2026-09-15",
+    "headline": "Regnbågsfyren läggs ner med omedelbar verkan",
+    "url": "https://alandsradio.ax/nyheter/regnbagsfyren-laggs-ner-med-omedelbar-verkan",
+    "skriv": false,
+    "nyhetsvarde": 2,
+    "tema": "personnotis",
+    "anledning": "Intern föreningsangelägenhet utan större politisk eller samhällelig relevans för 1926 års Åland. 'Regnbågsverksamhet' är helt obekant och irrelevant för Julius redaktionella värld. [nyhetsvärde 2 < 6]",
+    "fallback": false
   }
 ]
