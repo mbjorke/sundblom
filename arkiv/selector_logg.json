@@ -8018,5 +8018,85 @@
     "tema": "byråkrati",
     "anledning": "Ärendet är för trivialt, rör rena rutinfrågor om registreringsskyltar och saknar tillräcklig substans för en ledarartikel. Även om EU-direktiv nämns är kopplingen till Julius redaktionella värld svag och han skulle se detta som en oviktig byråkratisk detalj. [nyhetsvärde 2 < 6]",
     "fallback": false
+  },
+  {
+    "date": "2026-09-16",
+    "headline": "Strid om hur Regnbågsfyrens ekonomi kunde ha räddats",
+    "url": "https://alandsradio.ax/nyheter/strid-om-hur-regnbagsfyrens-ekonomi-kunde-ha-raddats",
+    "skriv": false,
+    "nyhetsvarde": 3,
+    "tema": "ekonomi",
+    "anledning": "Intern föreningsstrid och lokal likvidation av en förening är för obetydlig för en ledarartikel av Julius Sundblom. Det saknar större politisk, samhällelig eller autonomirelevant tyngd. Även om ekonomi berörs, är det på en för lokal och liten nivå. [nyhetsvärde 3 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-09-16",
+    "headline": "Zekaj: ”Vi tummar aldrig på patientsäkerheten!”",
+    "url": "https://alandsradio.ax/nyheter/zekaj-vi-tummar-aldrig-pa-patientsakerheten",
+    "skriv": false,
+    "nyhetsvarde": 4,
+    "tema": "samhällsordning",
+    "anledning": "Ämnet är viktigt men innehållet är främst en intervju med ministern, och saknar den djupgående konflikt eller det konkreta beslut som skulle motivera en ledare. Tonen är mer lugnande än upprörande. [nyhetsvärde 4 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-09-16",
+    "headline": "Lagförslag om ensamkommande gav upphov till ny hätsk debatt",
+    "url": "https://alandsradio.ax/nyheter/lagforslag-om-ensamkommande-gav-upphov-till-ny-hatsk-debatt",
+    "skriv": false,
+    "nyhetsvarde": 4,
+    "tema": "sedlighet",
+    "anledning": "Intern lagtingsdebatt om en specifik lag, ingen direkt koppling till självstyrelsens principer eller yttre hot. Debatten är intern och saknar den större principiella konflikt som Julius brukar engagera sig i. Dessutom är det risk att artikeln blir en ren rapportering av en hätsk diskussion, vilket inte är Julius stil. [nyhetsvärde 4 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-09-16",
+    "headline": "Fri prissättning delar lagtinget i taxidebatten",
+    "url": "https://alandsradio.ax/nyheter/fri-prissattning-delar-lagtinget-i-taxidebatten",
+    "skriv": false,
+    "nyhetsvarde": 4,
+    "tema": "ekonomi",
+    "anledning": "Även om det rör ett landskapslagförslag och ekonomiska principer, handlar det om en förhållandevis smal fråga (taxibranschen) som inte når upp till den nivå av rikspolitisk tyngd eller grundläggande autonomifrågor som Julius Sundblom skulle prioritera för en ledarartikel. Det är en intern åländsk regleringsdebatt som saknar den bredare samhälleliga eller existentiella dimension som en ledare skulle kräva år 1926. [nyhetsvärde 4 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-09-16",
+    "headline": "Skadegörelse på Lilla holmen kostar staden tusenlappar",
+    "url": "https://alandsradio.ax/nyheter/skadegorelse-pa-lilla-holmen-kostar-staden-tusenlappar",
+    "skriv": false,
+    "nyhetsvarde": 3,
+    "tema": "sedlighet",
+    "anledning": "Småskalig skadegörelse med lokal relevans, saknar den större politiska eller samhälleliga vinkeln för en ledare. [nyhetsvärde 3 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-09-16",
+    "headline": "Gesterby mjölk inte längre till försäljning",
+    "url": "https://alandsradio.ax/nyheter/gesterby-mjolk-inte-langre-till-forsaljning",
+    "skriv": false,
+    "nyhetsvarde": 3,
+    "tema": "ekonomi/lokal",
+    "anledning": "Även om det handlar om ett konkursbo och en potentiell försäljning av en lantbruksfastighet, är det i nuläget en osäker notis utan konkreta fakta om en avslutad affär eller en tydlig konsekvens för Åland. Konkursen och tvisten är intressant men redan känd och denna notis tillför inte tillräcklig substans för en ledarartikel av Julius Sundblom. [nyhetsvärde 3 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-09-16",
+    "headline": "Källor till Ålands Radio: Palliativa flyttar och vårdplatserna dras ner",
+    "url": "https://alandsradio.ax/nyheter/kallor-till-alands-radio-palliativa-flyttar-och-vardplatserna-dras-ner",
+    "skriv": true,
+    "nyhetsvarde": 8,
+    "tema": "samhällsordning",
+    "anledning": "Neddragning av vårdplatser för palliativ vård är en väsentlig samhällsfråga som berör medborgarnas välfärd och tillgång till vård, vilket har hög relevans för Julius Sundbloms redaktionella värld avseende samhällsordning och rättvisa. Han hade sett detta som ett problem och en förfallens modernitet.",
+    "fallback": false
+  },
+  {
+    "date": "2026-09-16",
+    "headline": "LR: HD och rikets energimyndighet sakar behörigheter i utsläppshandeln",
+    "url": "https://alandsradio.ax/nyheter/lr-hd-och-rikets-energimyndighet-sakar-behorigheter-i-utslappshandeln",
+    "skriv": true,
+    "nyhetsvarde": 8,
+    "tema": "självstyrelse, ekonomi, juridik",
+    "anledning": "Frågor kring behörighet och fördelning av medel mellan landskapet och riket har direkt koppling till Ålands självstyrelse och ekonomiska oberoende. Konflikten med rikets institutioner (Högsta domstolen, energimyndigheten) och hänvisningen till Ålandsdelegationen är centrala för Sundbloms redaktionella linje. Det finns substans i frågan om vem som har rätt att besluta i dessa för Åland viktiga ärenden.",
+    "fallback": false
   }
 ]
