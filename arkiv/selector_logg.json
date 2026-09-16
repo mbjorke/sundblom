@@ -7978,5 +7978,45 @@
     "tema": "sedlighet",
     "anledning": "Fallet rör tjänsteplikt och moraliskt ansvar för minderåriga inom skolväsendet, vilket har tydlig koppling till sedlighet och samhällsordning. Frågan om tjänstemäns ansvar och trygghet för elever är av stor vikt för Julius.",
     "fallback": false
+  },
+  {
+    "date": "2026-09-16",
+    "headline": "Staden avbryter upphandlingen av basketplan – \"Vill gärna förverkliga den\"",
+    "url": "https://alandsradio.ax/nyheter/staden-avbryter-upphandlingen-av-basketplan-vill-garna-forverkliga-den",
+    "skriv": false,
+    "nyhetsvarde": 2,
+    "tema": "lokal politik",
+    "anledning": "Trivial lokal notis om en avbruten upphandling av en basketplan. Saknar större politisk, samhällelig eller autonomisk relevans för en ledarartikel av Julius Sundblom. Dessutom är det inte tillräckligt med substans för att skriva en hel ledare om. Julius skulle se det som en småsak som inte påverkar de större frågorna. [nyhetsvärde 2 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-09-16",
+    "headline": "LR svarar Kökar: Vi bygger inte ut djursalongen på M/S Skiftet",
+    "url": "https://alandsradio.ax/nyheter/lr-svarar-kokar-vi-bygger-inte-ut-djursalongen-pa-ms-skiftet",
+    "skriv": false,
+    "nyhetsvarde": 3,
+    "tema": "infrastruktur",
+    "anledning": "Trivial notis om en rutinåtgärd gällande fartygsutrymmen. Saknar större politisk, ekonomisk eller samhällelig relevans för en ledarartikel av Julius Sundblom. Ej kopplat till självstyrelse, klass eller sedlighet. [nyhetsvärde 3 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-09-16",
+    "headline": "Nytt avtal föreslås för akuttransporter i skärgården",
+    "url": "https://alandsradio.ax/nyheter/nytt-avtal-foreslas-for-akuttransporter-i-skargarden",
+    "skriv": false,
+    "nyhetsvarde": 3,
+    "tema": "lokal förvaltning",
+    "anledning": "Även om det rör samhällsservice är det en smålokal administrativ angelägenhet om avtal för transporter. Inte tillräckligt substantiellt för en ledare. [nyhetsvärde 3 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-09-16",
+    "headline": "Holmberg försvarar referensgrupp för registerplåtar: \"Positivt att oppositionen ",
+    "url": "https://alandsradio.ax/nyheter/holmberg-forsvarar-referensgrupp-for-registerplatar-positivt-att-oppositionen-ar-med",
+    "skriv": false,
+    "nyhetsvarde": 2,
+    "tema": "byråkrati",
+    "anledning": "Ärendet är för trivialt, rör rena rutinfrågor om registreringsskyltar och saknar tillräcklig substans för en ledarartikel. Även om EU-direktiv nämns är kopplingen till Julius redaktionella värld svag och han skulle se detta som en oviktig byråkratisk detalj. [nyhetsvärde 2 < 6]",
+    "fallback": false
   }
 ]
