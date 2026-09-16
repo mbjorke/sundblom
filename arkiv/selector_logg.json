@@ -8108,5 +8108,15 @@
     "tema": "ekonomi",
     "anledning": "Notisen handlar om en potentiell fartygsinvestering, men det är i ett tidigt skede och inga konkreta beslut har fattats. Ingen redaktionell vinkel med större betydelse för autonomin, samhällsordningen eller rikspolitiken. [nyhetsvärde 3 < 6]",
     "fallback": false
+  },
+  {
+    "date": "2026-09-16",
+    "headline": "LR: HD och rikets energimyndighet saknar behörigheter i utsläppshandeln",
+    "url": "https://alandsradio.ax/nyheter/lr-hd-och-rikets-energimyndighet-saknar-behorigheter-i-utslappshandeln",
+    "skriv": true,
+    "nyhetsvarde": 9,
+    "tema": "självstyrelse",
+    "anledning": "Frågan rör direkt Ålands autonomi och gränserna för rikets maktutövning, särskilt gällande ekonomiska befogenheter och juridisk behörighet över landskapet. Julius skulle se detta som en principiell fråga om Ålands ställning i förhållande till riket och en möjlighet att belysa kampen för självbestämmande och ekonomiskt oberoende. Det finns tydlig substans i form av en konflikt med rikets myndigheter och juridiska frågor som måste lösas.",
+    "fallback": false
   }
 ]
