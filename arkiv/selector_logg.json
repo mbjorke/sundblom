@@ -8198,5 +8198,105 @@
     "tema": "miljö",
     "anledning": "Detta är en lokal miljönotis, med enskild klagare och en företagare som har tekniska svårigheter. Den rör inte större politiska beslut, självstyrelsefrågor, eller ämnen som Julius regelmässigt skulle skriva ledare om år 1926. Den har inte heller den dignitet att den föranleder en ledare av chefredaktören. [nyhetsvärde 4 < 6]",
     "fallback": false
+  },
+  {
+    "date": "2026-09-17",
+    "headline": "Åländska politiker skeptiska till svenska systerpartiernas röda linjer",
+    "url": "https://alandsradio.ax/nyheter/alandska-politiker-skeptiska-till-svenska-systerpartiernas-roda-linjer",
+    "skriv": false,
+    "nyhetsvarde": 3,
+    "tema": "inrikespolitik",
+    "anledning": "Notisen handlar om svensk rikspolitik och spekulationer kring regeringsbildning. Även om åländska politiker kommenterar, har det ingen direkt relevans för Julius Sundbloms redaktionella värld av åländsk självstyrelse, svensk identitet, klass- och samhällsordning etc. Det saknar substans för en ledare. [nyhetsvärde 3 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-09-17",
+    "headline": "Gratis buss i tre dagar för att uppmärksamma bilfria dagen",
+    "url": "https://alandsradio.ax/nyheter/gratis-buss-i-tre-dagar-for-att-uppmarksamma-bilfria-dagen",
+    "skriv": false,
+    "nyhetsvarde": 2,
+    "tema": "lokal notis",
+    "anledning": "Trivial notis om en rutinåtgärd utan större samhällelig eller politisk relevans. Saknar substans för en ledare. [nyhetsvärde 2 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-09-17",
+    "headline": "Saltviksnämnd vill låta föreningar nyttja hallar avgiftsfritt",
+    "url": "https://alandsradio.ax/nyheter/saltviksnamnd-vill-lata-foreningar-nyttja-hallar-avgiftsfritt",
+    "skriv": false,
+    "nyhetsvarde": 3,
+    "tema": "lokal förvaltning",
+    "anledning": "Smålokal notis med begränsad relevans för Julius redaktionella teman. Beslutet har inte tillräcklig substans för en ledarartikel. [nyhetsvärde 3 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-09-17",
+    "headline": "Tehyordförande: \"Pest eller kolera\" när ÅHS tvingas spara",
+    "url": "https://alandsradio.ax/nyheter/tehyordforande-pest-eller-kolera-nar-ahs-tvingas-spara",
+    "skriv": true,
+    "nyhetsvarde": 7,
+    "tema": "ekonomi, samhällsordning, självstyrelse",
+    "anledning": "Besparingar inom ÅHS medför samhällsekonomiska konsekvenser, berör autonomins ansvar för välfärden och arbetsvillkor. Frågan om vilken vård som ska erbjudas på Åland är av vikt för autonomin.",
+    "fallback": false
+  },
+  {
+    "date": "2026-09-17",
+    "headline": "Medicinavdelningens personal vädjar till beslutsfattare i skrivelse",
+    "url": "https://alandsradio.ax/nyheter/medicinavdelningens-personal-vadjar-till-beslutsfattare-i-skrivelse",
+    "skriv": false,
+    "nyhetsvarde": 4,
+    "tema": "lokal förvaltning",
+    "anledning": "Intern sjukhusfråga om bemanning och vårdplatser. Även om det är en viktig fråga för de berörda, saknar den den bredare politiska, samhälleliga eller autonomiska vinkel Julius föredrar för en ledare. Det är mer en administrativ fråga än en stor principsak för tidningen just nu. [nyhetsvärde 4 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-09-17",
+    "headline": "Åtal om lindrig misshandel på daghem förkastas",
+    "url": "https://alandsradio.ax/nyheter/atal-om-lindrig-misshandel-pa-daghem-forkastas",
+    "skriv": false,
+    "nyhetsvarde": 3,
+    "tema": "rättvisa",
+    "anledning": "Även om det rör ett rättsfall, är det en för lindrig misshandel och en allt för liten skala för en ledarartikel. Julius fokuserar på större samhälleliga frågor, ej denna typ av händelse. Dessutom är 'daghem' ett alldeles för modernt koncept för att falla in under Julius klassiska ledarteman. Han skriver inte om hur barn ska uppfostras på daghem. [nyhetsvärde 3 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-09-17",
+    "headline": "Gymnasiet i rävsax – ska erbjuda fler utbildningsplatser trots oförändrad budget",
+    "url": "https://alandsradio.ax/nyheter/gymnasiet-i-ravsax-ska-erbjuda-fler-utbildningsplatser-trots-oforandrad-budgetram",
+    "skriv": false,
+    "nyhetsvarde": 4,
+    "tema": "ekonomi, förvaltning",
+    "anledning": "Intern förvaltningsfråga om budget och utbildningsplatser. Saknar den bredare samhälleliga eller politiska relevans som Julius söker för en ledarartikel. Det är en rutinåtgärd med inbyggd konflikt, men inte av tillräcklig substans för en ledare. [nyhetsvärde 4 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-09-17",
+    "headline": "Allt är klart för Harvest Moon Festival",
+    "url": "https://alandsradio.ax/nyheter/allt-ar-klart-for-harvest-moon-festival",
+    "skriv": false,
+    "nyhetsvarde": 2,
+    "tema": "kultur",
+    "anledning": "En festival med musikunderhållning är en trivial notis utan större politisk, samhällelig eller autonomisk relevans för en ledarartikel av Sundblom. Det saknar djupare substans för en redaktionell vinkel 1926. [nyhetsvärde 2 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-09-17",
+    "headline": "Kommentar: Det här vet vi om beslutsgången kring palliativa avdelningen på ÅHS",
+    "url": "https://alandsradio.ax/nyheter/kommentar-det-har-vet-vi-om-beslutsgangen-kring-palliativa-avdelningen-pa-ahs",
+    "skriv": false,
+    "nyhetsvarde": 4,
+    "tema": "sjukhusledning",
+    "anledning": "Ämnet är för specifikt, rörande intern kommunikation och informella beslut inom en sjukhusavdelning, och saknar den bredare politiska eller samhälleliga relevans som krävs för en ledarartikel av Julius Sundblom. Det är mer en intern organisationsfråga än en fråga av avgörande allmän betydelse. [nyhetsvärde 4 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-09-17",
+    "headline": "Tre politiker i gemensam motion för palliativa vården",
+    "url": "https://alandsradio.ax/nyheter/tre-politiker-i-gemensam-motion-for-palliativa-varden",
+    "skriv": false,
+    "nyhetsvarde": 4,
+    "tema": "vård",
+    "anledning": "Viktig fråga, men rör specifik vårdinsats. Ingen större koppling till autonomi, sedlighet, eller Julius övriga kärnämnen. För lokalt och specifikt för en ledare. [nyhetsvärde 4 < 6]",
+    "fallback": false
   }
 ]
