@@ -8118,5 +8118,85 @@
     "tema": "självstyrelse",
     "anledning": "Frågan rör direkt Ålands autonomi och gränserna för rikets maktutövning, särskilt gällande ekonomiska befogenheter och juridisk behörighet över landskapet. Julius skulle se detta som en principiell fråga om Ålands ställning i förhållande till riket och en möjlighet att belysa kampen för självbestämmande och ekonomiskt oberoende. Det finns tydlig substans i form av en konflikt med rikets myndigheter och juridiska frågor som måste lösas.",
     "fallback": false
+  },
+  {
+    "date": "2026-09-17",
+    "headline": "Boogården behöver mer renovering än kommunen budgeterat",
+    "url": "https://alandsradio.ax/nyheter/boogarden-behover-mer-renovering-an-kommunen-budgeterat",
+    "skriv": false,
+    "nyhetsvarde": 3,
+    "tema": "lokal förvaltning",
+    "anledning": "Småskalig lokal notis om renovering och budget. Saknar bredare betydelse för autonomi, politik eller samhällsordning. Inget som engagerar Julius redaktionellt. [nyhetsvärde 3 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-09-17",
+    "headline": "Höga förväntningar inför seglingsfinal",
+    "url": "https://alandsradio.ax/nyheter/hoga-forvantningar-infor-seglingsfinal",
+    "skriv": false,
+    "nyhetsvarde": 2,
+    "tema": "sport",
+    "anledning": "Ren sportresultat-rapportering, ingen redaktionell vinkel för Julius Sundblom. [nyhetsvärde 2 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-09-17",
+    "headline": "LR svarar Finström om bostadspolitiken",
+    "url": "https://alandsradio.ax/nyheter/lr-svarar-finstrom-om-bostadspolitiken",
+    "skriv": false,
+    "nyhetsvarde": 4,
+    "tema": "kommunalpolitik",
+    "anledning": "Ämnet är i sig relevant, men Landskapsregeringens svar är en rutinåtgärd utan konkret substans för en ledarartikel. Det är mer en bekräftelse av status quo och en inbjudan till dialog, snarare än ett beslut eller en strid. [nyhetsvärde 4 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-09-17",
+    "headline": "Finnlines ökade antalet picknickkryssare",
+    "url": "https://alandsradio.ax/nyheter/finnlines-okade-antalet-picknickkryssare",
+    "skriv": false,
+    "nyhetsvarde": 2,
+    "tema": "ekonomi, lokalnyhet",
+    "anledning": "Trivial notis om passagerarstatistik för ett rederi. Saknar djupare samhälls-, autonomi- eller politisk relevans. För obetydlig för en ledarartikel av Sundblom. [nyhetsvärde 2 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-09-17",
+    "headline": "Staden köper tavla av åländsk konstnär",
+    "url": "https://alandsradio.ax/nyheter/staden-koper-tavla-av-alandsk-konstnar",
+    "skriv": false,
+    "nyhetsvarde": 3,
+    "tema": "kultur",
+    "anledning": "Trivial notis om konstköp, saknar större samhällsrelevans eller koppling till Julius' redaktionella teman. [nyhetsvärde 3 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-09-17",
+    "headline": "Larsson: Landskapsanställda skulle inte skriva FN-rapport",
+    "url": "https://alandsradio.ax/nyheter/larsson-landskapsanstallda-skulle-inte-skriva-fn-rapport",
+    "skriv": false,
+    "nyhetsvarde": 3,
+    "tema": "förvaltning",
+    "anledning": "Intern förvaltningsfråga om upphovsrätt och medförfattarskap. Saknar större politisk eller samhällelig bäring för en ledare. [nyhetsvärde 3 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-09-17",
+    "headline": "Åländska ostar har fler tillsatsämnen än svenska och finska",
+    "url": "https://alandsradio.ax/nyheter/alandska-ostar-har-fler-tillsatsamnen-an-svenska-och-finska",
+    "skriv": false,
+    "nyhetsvarde": 2,
+    "tema": "ekonomi",
+    "anledning": "Trivial notis om livsmedelstillsatser. Saknar politisk eller samhällelig relevans för en ledare, och för lite substans för Julius Sundblom. [nyhetsvärde 2 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-09-17",
+    "headline": "ÅMHM ser allvarligt på utsläpp vid Alandia Forel",
+    "url": "https://alandsradio.ax/nyheter/amhm-ser-allvarligt-pa-utslapp-vid-alandia-forel",
+    "skriv": false,
+    "nyhetsvarde": 4,
+    "tema": "miljö",
+    "anledning": "Detta är en lokal miljönotis, med enskild klagare och en företagare som har tekniska svårigheter. Den rör inte större politiska beslut, självstyrelsefrågor, eller ämnen som Julius regelmässigt skulle skriva ledare om år 1926. Den har inte heller den dignitet att den föranleder en ledare av chefredaktören. [nyhetsvärde 4 < 6]",
+    "fallback": false
   }
 ]
