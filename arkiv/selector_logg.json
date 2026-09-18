@@ -8398,5 +8398,75 @@
     "tema": "ekonomi, samhällsordning, självstyrelse, bildning",
     "anledning": "Frågan om högskolans ekonomi berör direkt landskapets ekonomiska styrning, utbildningspolitiken, och vikten av åländsk självbestämmanderätt över egna institutioner. Waller uttalar sig också om hur högskolan ska hantera sina pengar, vilket är av stor vikt för den åländska självstyrelsen, samt bildningens och samhällets utveckling. Julius Sundblom skulle finna det intressant att analysera de långsiktiga konsekvenserna av landskapsregeringens agerande samt relationen mellan utbildning och Ålands framtid.",
     "fallback": false
+  },
+  {
+    "date": "2026-09-18",
+    "headline": "Ålänningen Johanna Sandén vill stoppa byggandet av datacenter i Finland \"Känns s",
+    "url": "https://alandsradio.ax/nyheter/alanningen-johanna-sanden-vill-stoppa-byggandet-av-datacenter-i-finland-kanns-suspekt",
+    "skriv": false,
+    "nyhetsvarde": 3,
+    "tema": "miljö/teknik",
+    "anledning": "Ämnet berör Finlands inrikespolitik och modern teknik snarare än Ålands självstyrelse eller andra centrala redaktionella teman år 1926. Den lokala åländska kopplingen (Johanna Sandén) är för svag för att motivera en ledare av Julius Sundblom. Dessutom saknas direkt koppling till dåtidens relevanta samhällsdebatter. [nyhetsvärde 3 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-09-18",
+    "headline": "Sally Salminen – mer än bara Katrina",
+    "url": "https://alandsradio.ax/nyheter/sally-salminen-mer-an-bara-katrina",
+    "skriv": false,
+    "nyhetsvarde": 3,
+    "tema": "kultur",
+    "anledning": "Kulturpersonlighet, men notisen är av retrospektiv karaktär och saknar akut nyhetsvärde eller kontrovers för en ledare år 1926. Dessutom handlar artikeln om hennes liv efter 1926. [nyhetsvärde 3 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-09-18",
+    "headline": "Ömsens svar: Därför kan endast en kund få tillbaka premiehöjningen",
+    "url": "https://alandsradio.ax/nyheter/omsens-svar-darfor-kan-endast-en-kund-fa-tillbaka-premiehojningen",
+    "skriv": false,
+    "nyhetsvarde": 4,
+    "tema": "ekonomi",
+    "anledning": "Ärendet rör en försäkringsfråga som trots att den delvis behandlas av en extern nämnd, fortfarande framstår som en isolerad kundtvist. Även om det handlar om återbetalning av premiehöjningar, saknar det bredare samhällsekonomisk eller autonomirelaterad tyngd för en ledarartikel. Det är för specifikt och saknar den substans som Julius Sundblom skulle behöva för att formulera en ledare av djupare allmänintresse. [nyhetsvärde 4 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-09-18",
+    "headline": "Perämaa: Chipsters sade själva upp hyresavtalet",
+    "url": "https://alandsradio.ax/nyheter/peramaa-chipsters-sade-sjalva-upp-hyresavtalet",
+    "skriv": false,
+    "nyhetsvarde": 4,
+    "tema": "ekonomi/juridik",
+    "anledning": "Nyheten rör ett privat företags avtalsförhållande och landskapsregeringens administration av ett bolag. Även om det handlar om offentlig förvaltning och ekonomiska frågor, saknar det den bredare samhällspolitiska eller självstyrelsefrågan som Julius Sundblom skulle finna värdig en ledare 1926. Det är mer en administrativ och juridisk angelägenhet, snarare än en principfråga. Informationen är också något tunn för en värdig ledare, då det mest handlar om en uppsagd överenskommelse och svårigheter att hitta en likvidator, utan någon större konflikt eller princip att diskutera. [nyhetsvärde 4 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-09-18",
+    "headline": "Chipsters har sagt upp personalen i Norrböle – ”Det är så tragiskt att man skull",
+    "url": "https://alandsradio.ax/nyheter/chipsters-har-sagt-upp-personalen-i-norrbole-det-ar-sa-tragiskt-att-man-skulle-vilja-grata",
+    "skriv": true,
+    "nyhetsvarde": 8,
+    "tema": "ekonomi, samhällsordning, självstyrelse",
+    "anledning": "Massuppsägningar på grund av landskapsägda bolags oförmåga att agera, vilket påverkar åländsk ekonomi och samhälle djupt. Detta har stor bäring på klass- och samhällsordning samt landskapets ansvar.",
+    "fallback": false
+  },
+  {
+    "date": "2026-09-18",
+    "headline": "Laiho fortsätter i ÅU-staben",
+    "url": "https://alandsradio.ax/nyheter/laiho-fortsatter-i-au-staben",
+    "skriv": false,
+    "nyhetsvarde": 1,
+    "tema": "sport",
+    "anledning": "Ren sportnotis om tränarförlängning, saknar relevans för redaktionella teman 1926. [nyhetsvärde 1 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-09-18",
+    "headline": "ÅHS-styrelse vill ha konditionsbesiktning av Gullåsen – flytt kan dröja",
+    "url": "https://alandsradio.ax/nyheter/ahs-styrelse-vill-ha-konditionsbesiktning-av-gullasen-flytt-kan-droja",
+    "skriv": false,
+    "nyhetsvarde": 4,
+    "tema": "förvaltning",
+    "anledning": "Även om det rör offentlig förvaltning och viss kritik mot kommunikation, är detta en intern förvaltningsfråga av begränsad samhällelig tyngd för en ledarartikel. Det saknas den politiska eller principiella konflikt som Julius söker. [nyhetsvärde 4 < 6]",
+    "fallback": false
   }
 ]
