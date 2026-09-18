@@ -8468,5 +8468,15 @@
     "tema": "förvaltning",
     "anledning": "Även om det rör offentlig förvaltning och viss kritik mot kommunikation, är detta en intern förvaltningsfråga av begränsad samhällelig tyngd för en ledarartikel. Det saknas den politiska eller principiella konflikt som Julius söker. [nyhetsvärde 4 < 6]",
     "fallback": false
+  },
+  {
+    "date": "2026-09-18",
+    "headline": "IFK Mariehamn föll mot SJK",
+    "url": "https://alandsradio.ax/nyheter/ifk-mariehamn-foll-mot-sjk",
+    "skriv": false,
+    "nyhetsvarde": 2,
+    "tema": "sport",
+    "anledning": "Ren sportresultat-rapportering, ingen redaktionell vinkel för Tidningen Åland år 1926. [nyhetsvärde 2 < 6]",
+    "fallback": false
   }
 ]
