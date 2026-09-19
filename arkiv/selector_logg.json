@@ -8478,5 +8478,15 @@
     "tema": "sport",
     "anledning": "Ren sportresultat-rapportering, ingen redaktionell vinkel för Tidningen Åland år 1926. [nyhetsvärde 2 < 6]",
     "fallback": false
+  },
+  {
+    "date": "2026-09-19",
+    "headline": "Åland United tillbaka som vinnare",
+    "url": "https://alandsradio.ax/nyheter/aland-united-tillbaka-som-vinnare",
+    "skriv": false,
+    "nyhetsvarde": 1,
+    "tema": "sport",
+    "anledning": "Ren sportresultat-rapportering utan koppling till ledarredaktionens intresseområden. [nyhetsvärde 1 < 6]",
+    "fallback": false
   }
 ]
