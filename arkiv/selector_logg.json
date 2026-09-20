@@ -8488,5 +8488,15 @@
     "tema": "sport",
     "anledning": "Ren sportresultat-rapportering utan koppling till ledarredaktionens intresseområden. [nyhetsvärde 1 < 6]",
     "fallback": false
+  },
+  {
+    "date": "2026-09-20",
+    "headline": "Gudingen ersätter Ejdern under delar av söndagen",
+    "url": "https://alandsradio.ax/nyheter/gudingen-ersatter-ejdern-under-delar-av-sondagen",
+    "skriv": false,
+    "nyhetsvarde": 1,
+    "tema": "rutinärende",
+    "anledning": "Trivial notis om ett rutinmässigt fartygsbyte. Saknar relevans för större frågor som autonomi, samhällsordning eller ekonomi och har inte tillräckligt med substans för en ledare. [nyhetsvärde 1 < 6]",
+    "fallback": false
   }
 ]
