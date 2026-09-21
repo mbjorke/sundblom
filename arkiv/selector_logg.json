@@ -8608,5 +8608,85 @@
     "tema": "lokalnotis",
     "anledning": "Tunn lokal notis om djurliv, saknar politisk eller samhällelig relevans för en ledare. [nyhetsvärde 3 < 6]",
     "fallback": false
+  },
+  {
+    "date": "2026-09-21",
+    "headline": "4 000 kundkonton hos Ålandstrafiken kan ha hackats – LR polisanmäler",
+    "url": "https://alandsradio.ax/nyheter/4-000-kundkonton-hos-alandstrafiken-kan-ha-hackats-lr-polisanmaler",
+    "skriv": false,
+    "nyhetsvarde": 4,
+    "tema": "modernitetens förfall",
+    "anledning": "Även om det är ett tecken på modernitetens sårbarhet, saknas den politiska eller samhälleliga dignitet som Julius efterfrågar för en ledarartikel. Det är primärt en teknisk incident snarare än en fråga om styrelse, ekonomi eller sedlighet i stor skala. [nyhetsvärde 4 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-09-21",
+    "headline": "Medis och Fredsinstitutet vill öka kunskapen om Ålands särställning",
+    "url": "https://alandsradio.ax/nyheter/medis-och-fredsinstitutet-vill-oka-kunskapen-om-alands-sarstallning",
+    "skriv": true,
+    "nyhetsvarde": 8,
+    "tema": "självstyrelse",
+    "anledning": "Frågan om Ålands demilitarisering och neutralisering, i synnerhet i ljuset av det förändrade säkerhetsläget, är av yttersta vikt för Ålands ställning och framtid. Det rör vid centrala aspekter av autonomin och dess relation till omvärlden. Diskussionen om ålänningarnas syn och vikten av diplomati är högaktuell och ger utrymme för en principiell ledare.",
+    "fallback": false
+  },
+  {
+    "date": "2026-09-21",
+    "headline": "Solgården i Eckerö får egen sjukskötare",
+    "url": "https://alandsradio.ax/nyheter/solgarden-i-eckero-far-egen-sjukskotare",
+    "skriv": false,
+    "nyhetsvarde": 4,
+    "tema": "lokal förvaltning",
+    "anledning": "Även om det handlar om kommunal förvaltning och en viss kostnadsfråga, är detta en lokal, ganska rutinmässig personalfråga inom äldreomsorgen. Det saknar den bredare politiska, samhälleliga eller autonomirelaterade vinkeln som Julius skulle efterfråga för en ledarartikel. Det finns ingen större konflikt eller principfråga här, endast en mindre meningsskiljaktighet på kommunstyrelsenivå. Substansen är för tunn för en ledare. [nyhetsvärde 4 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-09-21",
+    "headline": "Nytt projekt ska ge Östersjön en egen röst",
+    "url": "https://alandsradio.ax/nyheter/nytt-projekt-ska-ge-ostersjon-en-egen-rost",
+    "skriv": false,
+    "nyhetsvarde": 3,
+    "tema": "miljö",
+    "anledning": "Projektet är för abstrakt och experimentellt, saknar konkret politik eller samhällsordning av intresse för en ledare 1926. Den juridiska personligheten för naturen är för modern en tanke. [nyhetsvärde 3 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-09-21",
+    "headline": "Uppskattningsvis 2 000 besökare första festivalkvällen – publiken avgör framtide",
+    "url": "https://alandsradio.ax/nyheter/uppskattningsvis-2-000-besokare-forsta-festivalkvallen-publiken-avgor-framtiden",
+    "skriv": false,
+    "nyhetsvarde": 2,
+    "tema": "kultur",
+    "anledning": "Trivial notis om ett kulturevenemang utan större betydelse, varken politisk, samhällelig eller ekonomisk relevans för en ledare. [nyhetsvärde 2 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-09-21",
+    "headline": "Zekaj om ÅHS-kritiken: Pengarna ska gå till vård",
+    "url": "https://alandsradio.ax/nyheter/zekaj-om-ahs-kritiken-pengarna-ska-ga-till-vard",
+    "skriv": true,
+    "nyhetsvarde": 8,
+    "tema": "samhällsordning, självstyrelse, ekonomi, sedlighet",
+    "anledning": "Väsentlig debatt om allmännyttig sjukvård, resursfördelning och etik. Direkt koppling till Ålands självstyrelse och ekonomiska ansvar, samt frågor om samhällsordning och sedlighet i vården. Innehåller konflikt och beslutsfattande.",
+    "fallback": false
+  },
+  {
+    "date": "2026-09-21",
+    "headline": "Chipsters besked slår mot leverantörerna – 300 ton åländsk fisk måste hitta ny k",
+    "url": "https://alandsradio.ax/nyheter/chipsters-besked-slar-mot-leverantorerna-300-ton-alandsk-fisk-maste-hitta-ny-kopare",
+    "skriv": false,
+    "nyhetsvarde": 4,
+    "tema": "ekonomi",
+    "anledning": "Även om det handlar om åländsk näring och ekonomi, är det en företagsintern angelägenhet som saknar den större politiska eller samhälleliga vinkeln som Julius skulle efterfråga. Det är en lokal ekonomisk notis snarare än en ledarartikel. [nyhetsvärde 4 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-09-21",
+    "headline": "Nu inleds elektrifieringen av Töftölinjen – en färja ersätts av två",
+    "url": "https://alandsradio.ax/nyheter/nu-inleds-elektrifieringen-av-toftolinjen-en-farja-ersatts-av-tva",
+    "skriv": false,
+    "nyhetsvarde": 4,
+    "tema": "infrastruktur",
+    "anledning": "Rutinåtgärd för infrastruktur, även om det rör modernisering, saknar den större politisk eller samhällelig konflikt som motiverar en ledare. För lite substans för Julius att utbrodera. [nyhetsvärde 4 < 6]",
+    "fallback": false
   }
 ]
