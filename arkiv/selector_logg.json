@@ -8508,5 +8508,105 @@
     "tema": "personnotis/sport",
     "anledning": "Ren personnotis om en fritidsaktivitet, saknar all relevans för Julius redaktionella värld eller substans för en ledarartikel. Det är en trivial notis. [nyhetsvärde 1 < 6]",
     "fallback": false
+  },
+  {
+    "date": "2026-09-21",
+    "headline": "Skyddsjakten fortsätter efter fälld varg – två vargar siktade på viltkamera",
+    "url": "https://alandsradio.ax/nyheter/skyddsjakten-fortsatter-efter-falld-varg-tva-vargar-siktade-pa-viltkamera",
+    "skriv": false,
+    "nyhetsvarde": 3,
+    "tema": "lokal natur/jakt",
+    "anledning": "Vargjakt är en lokal notis, saknar djupare politisk, samhällelig eller existentiell relevans för Åland 1926. Den ryms inte i Julius Sundbloms redaktionella värld av självstyrelse, svensk identitet, samhällsordning eller sedlighet. För obetydlig för en ledarartikel. [nyhetsvärde 3 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-09-21",
+    "headline": "Ålandsbanken har landets näst nöjdaste privatkunder",
+    "url": "https://alandsradio.ax/nyheter/alandsbanken-har-landets-nast-nojdaste-privatkunder",
+    "skriv": false,
+    "nyhetsvarde": 3,
+    "tema": "ekonomi",
+    "anledning": "Kundnöjdhetsundersökning är intressant men saknar den djupare substans eller politiska vinkel som krävs för en ledarartikel av Julius. Den berör inte autonomin, klassfrågor eller sedlighet på ett sätt som skulle motivera en ledare. [nyhetsvärde 3 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-09-21",
+    "headline": "Gudingen ersätter Ejdern på två avgångar",
+    "url": "https://alandsradio.ax/nyheter/gudingen-ersatter-ejdern-pa-tva-avgangar",
+    "skriv": false,
+    "nyhetsvarde": 1,
+    "tema": "lokaltrafik",
+    "anledning": "Trivial notis om en rutinåtgärd i lokaltrafiken. Saknar större politisk eller samhällelig relevans och substans för en ledarartikel. [nyhetsvärde 1 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-09-21",
+    "headline": "Tekniskt problem stängde Ålandstrafikens webbokning",
+    "url": "https://alandsradio.ax/nyheter/tekniskt-problem-stangde-alandstrafikens-webbokning",
+    "skriv": false,
+    "nyhetsvarde": 1,
+    "tema": "trivial notis",
+    "anledning": "Trivial teknisk notis, ingen politisk eller samhällsmässig relevans, saknar substans för en ledarartikel. [nyhetsvärde 1 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-09-21",
+    "headline": "Bekräftat: Varg skjuten i Eckerö",
+    "url": "https://alandsradio.ax/nyheter/bekraftat-varg-skjuten-i-eckero",
+    "skriv": false,
+    "nyhetsvarde": 2,
+    "tema": "lokal notis",
+    "anledning": "En smålokal notis om vargjakt, saknar större samhällelig, politisk eller autonomi-relevans för en ledare. [nyhetsvärde 2 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-09-21",
+    "headline": "LR kritiserar beredningen av nytt varningssystem",
+    "url": "https://alandsradio.ax/nyheter/lr-kritiserar-beredningen-av-nytt-varningssystem",
+    "skriv": true,
+    "nyhetsvarde": 8,
+    "tema": "självstyrelse",
+    "anledning": "Frågan om autonomins gränser, språkets ställning, och landskapsregeringens behörighet i förhållande till riksmyndigheter är central för Julius. Kritiken mot beredningen och kravet på direkt behörighet för åländska myndigheter är högintressant ur ett självstyrelseperspektiv. Det är en tydlig konflikt och substans finns för en ledare.",
+    "fallback": false
+  },
+  {
+    "date": "2026-09-21",
+    "headline": "Nordiskt VVS-pris till åländska Bertel",
+    "url": "https://alandsradio.ax/nyheter/nordiskt-vvs-pris-till-alandska-bertel",
+    "skriv": false,
+    "nyhetsvarde": 2,
+    "tema": "ekonomi/lokalt",
+    "anledning": "Positiv personnyhet om lokal framgång, men saknar den politiska eller samhälleliga tyngd som motiverar en ledare av Sundblom. För smal fokus för hans penna. [nyhetsvärde 2 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-09-21",
+    "headline": "Ny föreläsningsserie ska förklara Ålands särskilda ställning",
+    "url": "https://alandsradio.ax/nyheter/ny-forelasningsserie-ska-forklara-alands-sarskilda-stallning",
+    "skriv": true,
+    "nyhetsvarde": 8,
+    "tema": "självstyrelse, bildning, åländsk identitet",
+    "anledning": "En föreläsningsserie som syftar till att fördjupa allmänhetens förståelse för Ålands särskilda ställning, dess historia, internationella relevans och demilitarisering är av stort nyhetsvärde. Detta berör direkt kärnan i Julius Sundbloms intressen: den åländska självstyrelsen, folkbildning och stärkandet av den åländska identiteten. Det finns tillräckligt med substans i ämnesvalen och medverkande för en värdig ledare.",
+    "fallback": false
+  },
+  {
+    "date": "2026-09-21",
+    "headline": "Skördefesten lockade både trogna och helt nya besökare",
+    "url": "https://alandsradio.ax/nyheter/skordefesten-lockade-bade-trogna-och-helt-nya-besokare",
+    "skriv": false,
+    "nyhetsvarde": 2,
+    "tema": "lokala evenemang",
+    "anledning": "Trivial notis om ett lokalt evenemang. Saknar koppling till centrala teman som självstyrelse, politik eller samhällsordning. Inget att bygga en ledare på. [nyhetsvärde 2 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-09-21",
+    "headline": "Varg sägs ha skjutits i Eckerö",
+    "url": "https://alandsradio.ax/nyheter/varg-sags-ha-skjutits-i-eckero",
+    "skriv": false,
+    "nyhetsvarde": 3,
+    "tema": "lokalnotis",
+    "anledning": "Tunn lokal notis om djurliv, saknar politisk eller samhällelig relevans för en ledare. [nyhetsvärde 3 < 6]",
+    "fallback": false
   }
 ]
