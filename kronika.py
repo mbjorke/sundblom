@@ -86,6 +86,7 @@ gäller oförändrat.
 # ─────────────────────────────────────────────────────────────────────────────
 
 def _datum_bakat(today: str, dagar: int) -> str:
+    """Datumet `dagar` dygn före `today`, som ISO-sträng."""
     d = datetime.date.fromisoformat(today) - datetime.timedelta(days=dagar)
     return d.isoformat()
 
@@ -103,6 +104,7 @@ def _las_artiklar() -> list[dict]:
 
 
 def _las_selektorlogg() -> list[dict]:
+    """Redaktörsomdömets logg från arbetskatalogen, tom lista om den saknas."""
     if not os.path.exists(SELECTOR_LOG):
         return []
     try:
@@ -165,6 +167,7 @@ def kallor(underlag: dict, max_antal: int = MAX_KALLOR) -> list[dict]:
 
 
 def antal_rubriker(underlag: dict) -> int:
+    """Hur många rubriker veckan bjöd på, ledare och notiser tillsammans."""
     return len(underlag["ledare"]) + len(underlag["notiser"])
 
 
@@ -173,6 +176,7 @@ def antal_rubriker(underlag: dict) -> int:
 # ─────────────────────────────────────────────────────────────────────────────
 
 def _publicerat_idag(today: str) -> bool:
+    """True om någon utgåva redan bär dagens datum."""
     return bool(glob.glob(os.path.join(ARTICLES_DIR, f"{today}-*.json")))
 
 
@@ -218,6 +222,9 @@ def bor_skriva_kronika(today: str, now_utc: datetime.datetime,
 # ─────────────────────────────────────────────────────────────────────────────
 
 def bygg_prompt(underlag: dict) -> str:
+    """Veckans material som prompttext, inramat så modellen ser var det börjar
+    och slutar. Ledarna följs av ett utdrag ur originalet; av notiserna känner
+    modellen bara rubriken."""
     rader = [
         f"VECKANS MATERIAL UR ÅLANDS RADIO "
         f"({underlag['fran']} till och med {underlag['till']}):",

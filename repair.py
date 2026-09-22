@@ -78,6 +78,8 @@ def update_article(path: str, data: dict, sha: str) -> None:
 
 
 def main() -> None:
+    """Går igenom arkivet och genererar om ledare vars julius_text är
+    trunkerad. Krönikor och reflektioner lämnas orörda."""
     if not GOOGLE_API_KEY:
         log.error("GOOGLE_API_KEY saknas.")
         sys.exit(1)

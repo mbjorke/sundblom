@@ -766,6 +766,8 @@ def skriv_kronika(today: str) -> bool:
 # ─────────────────────────────────────────────────────────────────────────────
 
 def main() -> None:
+    """Dagens körning: skrapa Ålands Radio, låt redaktörsomdömet välja, skriv
+    ledare på det som höll måttet — och en veckokrönika om intet gjorde det."""
     log.info("═══ Åland igår och idag — daglig körning startar ═══")
 
     # 1. Scrape upp till 20 rubriker i DOM-ordning

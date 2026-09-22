@@ -491,6 +491,8 @@ def save_state(state: dict) -> None:
 # ─────────────────────────────────────────────────────────────────────────────
 
 def main() -> None:
+    """Veckans fristående betraktelse: bygger minnet, väljer läge, genererar
+    texten och sparar den jämte reflektionens tillstånd."""
     ap = argparse.ArgumentParser(description="Julius Sundblom reflekterar ur minne.")
     ap.add_argument("--selftest", action="store_true", help="validera minne/prompt utan API")
     ap.add_argument("--dry-run", action="store_true", help="generera men pusha ej")
