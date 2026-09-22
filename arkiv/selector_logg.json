@@ -8758,5 +8758,105 @@
     "tema": "modernitetens förfall",
     "anledning": "Ämnet i sig är intressant med tanke på sedlighet och modernitetens utmaningar, men det saknar direkt koppling till åländsk självstyrelse eller rikspolitik på det sätt Julius skulle prioritera. Det är dessutom för tidigt i processen för att erbjuda tillräcklig substans för en ledare. [nyhetsvärde 4 < 6]",
     "fallback": false
+  },
+  {
+    "date": "2026-09-22",
+    "headline": "Kjell Ekström och Siv Ekström är årets eldsjälar i Jomala",
+    "url": "https://alandsradio.ax/nyheter/kjell-ekstrom-och-siv-ekstrom-ar-arets-eldsjalar-i-jomala",
+    "skriv": false,
+    "nyhetsvarde": 2,
+    "tema": "lokal notis",
+    "anledning": "Trivial notis om lokal utmärkelse, saknar större politisk, samhällelig eller autonomirelevant betydelse för en ledarartikel av Julius Sundblom. För smalt och lokalt fokus. [nyhetsvärde 2 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-09-22",
+    "headline": "Moderaterna hyllar åländsk operaturism – öppnar för diskussion om mer stöd",
+    "url": "https://alandsradio.ax/nyheter/moderaterna-hyllar-alandsk-operaturism-oppnar-for-diskussion-om-mer-stod",
+    "skriv": false,
+    "nyhetsvarde": 4,
+    "tema": "ekonomi",
+    "anledning": "Det handlar om evenemangsstöd och turism, inte direkt politiskt brännande eller av stor samhällelig betydelse för 1926. Debatten om offentligt stöd till kultur och turism är för lokal och saknar den tyngd som Julius söker för en ledare. [nyhetsvärde 4 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-09-22",
+    "headline": "Efter oväntad kostnadsökning: KST behöver 700 000 euro i tillägg",
+    "url": "https://alandsradio.ax/nyheter/efter-ovantad-kostnadsokning-kst-behover-700-000-euro-i-tillagg",
+    "skriv": false,
+    "nyhetsvarde": 4,
+    "tema": "ekonomi",
+    "anledning": "Intern kommunal budgetfråga utan djupare politisk eller samhällelig vinkel lämplig för en ledare av Julius. Kostnadsökningar är del av vardagen. [nyhetsvärde 4 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-09-22",
+    "headline": "Återfallsförbrytare får fängelse efter vapenhot under midsommarfirande på Jurmo",
+    "url": "https://alandsradio.ax/nyheter/aterfallsforbrytare-far-fangelse-efter-vapenhot-under-midsommarfirande-pa-jurmo",
+    "skriv": false,
+    "nyhetsvarde": 4,
+    "tema": "brottslighet",
+    "anledning": "Kriminalitet faller under sedlighet men detta är en isolerad händelse utan större politisk eller samhällelig vinkel som skulle motivera en ledarartikel av Julius. Brister i substans för en djupare analys bortom en notis. [nyhetsvärde 4 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-09-22",
+    "headline": "Rockkväll i Lemland för Ukraina",
+    "url": "https://alandsradio.ax/nyheter/rockkvall-i-lemland-for-ukraina",
+    "skriv": false,
+    "nyhetsvarde": 2,
+    "tema": "internationell politik",
+    "anledning": "Välgörenhetskonsert är en trivial notis utan direkt koppling till Ålands självstyrelse, svensk identitet, klassordning, sedlighet eller bildning. För tunn för en ledare av Julius Sundblom. [nyhetsvärde 2 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-09-22",
+    "headline": "Finansministern vill ha tullresurs i Bryssel – Hoppas på samfinansiering med red",
+    "url": "https://alandsradio.ax/nyheter/finansministern-vill-ha-tullresurs-i-bryssel-hoppas-pa-samfinansiering-med-rederierna-och-alands-naringsliv",
+    "skriv": true,
+    "nyhetsvarde": 8,
+    "tema": "självstyrelse, ekonomi, EU",
+    "anledning": "Frågan om tullresurser i Bryssel och EU:s tullkodex är direkt kopplad till Ålands ekonomiska särställning och autonomi. Detta är en väsentlig händelse som påverkar framtiden för åländsk handel och rederinäring. Även om taxfree-frågan inte explicit nämns som en del av Perämaas förslag, så ligger det implicit under när man talar om tullhantering och handel inom EU. Detta är en fråga av både ekonomisk och politisk vikt för Åland och kräver uppmärksamhet från ledarredaktionen.",
+    "fallback": false
+  },
+  {
+    "date": "2026-09-22",
+    "headline": "Tio föreningar ber ÅHS tänka om: ”Vården får inte monteras ned”",
+    "url": "https://alandsradio.ax/nyheter/tio-foreningar-ber-ahs-tanka-om-varden-far-inte-monteras-ned",
+    "skriv": true,
+    "nyhetsvarde": 7,
+    "tema": "samhälle",
+    "anledning": "Vårdnedskärningar som påverkar allmänheten och personalen är av väsentlig samhällelig betydelse. Julius skulle kunna argumentera kring vikten av samhällsansvar och hur nedskärningar kan underminera välfärden och sedligheten.",
+    "fallback": false
+  },
+  {
+    "date": "2026-09-22",
+    "headline": "Nya Åland byter tryckeri – \"Kraftig inbesparing” att trycka på fastlandet",
+    "url": "https://alandsradio.ax/nyheter/nya-aland-byter-tryckeri-kraftig-inbesparing-att-trycka-pa-fastlandet",
+    "skriv": false,
+    "nyhetsvarde": 3,
+    "tema": "ekonomi",
+    "anledning": "Även om det rör ekonomi för en tidning, är detta en intern affärsbeslut för en konkurrent och inte av tillräcklig vikt för en ledarartikel av Julius Sundblom. Det saknar djupare koppling till autonomi, sedlighet eller rikspolitik på det sätt Julius skulle agera år 1926. [nyhetsvärde 3 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-09-22",
+    "headline": "Cyberattacken mot Ålandstrafiken: ”Finns alltid en sårbarhet”",
+    "url": "https://alandsradio.ax/nyheter/cyberattacken-mot-alandstrafiken-finns-alltid-en-sarbarhet",
+    "skriv": false,
+    "nyhetsvarde": 4,
+    "tema": "modernitetens förfall",
+    "anledning": "Även om det berör infrastruktur och modernitetens sårbarhet, är detta en teknisk incident som saknar den djupare politiska, samhälleliga eller ekonomiska konflikt som skulle motivera en ledare av Julius Sundblom 1926. Det är mer en praktisk notis om en digital incident än en fråga om styre eller samhällsordning. [nyhetsvärde 4 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-09-22",
+    "headline": "Augustiarbetslösheten ökade, men jämfört med juli minskade den",
+    "url": "https://alandsradio.ax/nyheter/augustiarbetslosheten-okade-men-jamfort-med-juli-minskade-den",
+    "skriv": false,
+    "nyhetsvarde": 3,
+    "tema": "ekonomi",
+    "anledning": "Statistik om arbetslöshet är av ekonomisk karaktär, men den presenterade informationen är en rutinmässig månadsrapport med små variationer. Den saknar den dramatik eller konflikt som skulle motivera en ledarartikel av Julius Sundblom. Dessutom refererar den till 2025 och 2026, vilket är en avvikelse från 1926 års tidsperspektiv. [nyhetsvärde 3 < 6]",
+    "fallback": false
   }
 ]
