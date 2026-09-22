@@ -105,16 +105,18 @@ Krönikan skrivs när **alla** villkor är uppfyllda:
 | Villkor | Miljövariabel | Default |
 |---|---|---|
 | Krönikan är påslagen | `KRONIKA_ENABLED` | `1` |
-| Körningen sker sent på dagen (dagens sista körning, 22:00 EET) | `KRONIKA_AFTER_UTC_HOUR` | `18` |
+| Körningen sker efter denna timme UTC | `KRONIKA_AFTER_UTC_HOUR` | `18` |
 | Ingen utgåva är publicerad detta datum | — | — |
 | Minst så här många dagar sedan förra krönikan (en helg ger alltså en, inte två) | `KRONIKA_MIN_DAYS` | `3` |
 | Veckan bjöd på minst så här många rubriker | `KRONIKA_MIN_RUBRIKER` | `5` |
 | Så många dagar bakåt krönikan blickar | `KRONIKA_DAGAR` | `7` |
 
-Tidpunkten är vald så att söndagens veckobetraktelse (`reflect.py`, 17:00 UTC)
-hinner före: publicerar den en betraktelse blir dagen inte längre tom, och
-krönikan uteblir. I praktiken ger det krönika på lördagar och betraktelse på
-söndagar.
+Tröskeln är ett golv, inte ett klockslag. Av de schemalagda körningarna passerar
+bara den sista (20:00 UTC = 22:00 EET vintertid, 23:00 EEST sommartid), medan en
+manuell `workflow_dispatch` på eftermiddagen också kan göra det. Golvet ligger
+efter söndagens veckobetraktelse (`reflect.py`, 17:00 UTC): skriver den en
+betraktelse är dagen inte längre tom och krönikan uteblir. I praktiken ger det
+krönika på lördagar och betraktelse på söndagar.
 
 Krönikan sparas som vanlig artikel-JSON med `"kind": "kronika"` och ett
 `sources`-fält. På sajten visar högerkolumnen då **veckans rubriker** med
@@ -128,10 +130,12 @@ Cloudflare Pages lyssnar på branchen `deploy`, inte `main`. Endast
 krönikan och veckobetraktelsen anropar den därför efter att ha sparat sin text;
 annars blir texten liggande i repot utan att synas på sajten.
 
-Triggern görs om en gång direkt vid fel. Går den ändå inte igenom upptäcker
-nästa körning det — dagens nyaste artikel är då stämplad senare än
-`src/build-meta.json` — och gör om försöket, så en sparad text aldrig blir
-liggande osynlig i mer än en körning.
+Triggern görs om en gång direkt, både när anropet kastar och när flytten av
+`deploy` nekas. Går den ändå inte igenom upptäcker nästa körning det: dagens
+nyaste artikel är då stämplad senare än `last_updated` i `src/build-meta.json`
+**så som den ser ut på deploy-branchen**. Beviset måste hämtas därifrån — filen
+på `main` uppdateras i samma commit som gjordes före ref-flytten, och skulle
+annars dölja just det fel den ska avslöja.
 
 Torrkörning utan API-nyckel — visar beslut, underlag och prompt:
 

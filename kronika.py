@@ -221,6 +221,18 @@ def bor_skriva_kronika(today: str, now_utc: datetime.datetime,
 # GENERERING
 # ─────────────────────────────────────────────────────────────────────────────
 
+def _skydda_kalltext(varde) -> str:
+    """Neutraliserar ramraderna i en källtext.
+
+    Rubriker och brödtext kommer från Ålands Radio. Innehöll de ordagrant
+    KÄLLMATERIAL SLUTAR kunde de stänga ramen i förtid, och det som följde
+    läsas som tillsägelser i stället för som nyhetsstoff.
+    """
+    text = "" if varde is None else str(varde)
+    return (text.replace(KALLA_START, "[KÄLLMATERIAL BÖRJAR]")
+                .replace(KALLA_SLUT, "[KÄLLMATERIAL SLUTAR]"))
+
+
 def bygg_prompt(underlag: dict) -> str:
     """Veckans material som prompttext, inramat så modellen ser var det börjar
     och slutar. Ledarna följs av ett utdrag ur originalet; av notiserna känner
@@ -235,8 +247,10 @@ def bygg_prompt(underlag: dict) -> str:
     ledare = underlag["ledare"][:MAX_LEDARE_I_PROMPT]
     if ledare:
         for a in ledare:
-            rader.append(f"- [{a.get('date','')}] {a.get('headline','')}")
-            utdrag = (a.get("body") or "").strip().replace("\n", " ")
+            datum = _skydda_kalltext(a.get("date", ""))
+            rubrik = _skydda_kalltext(a.get("headline", ""))
+            rader.append(f"- [{datum}] {rubrik}")
+            utdrag = _skydda_kalltext(a.get("body") or "").strip().replace("\n", " ")
             if utdrag:
                 rader.append(f"    ur originalet: {utdrag[:BODY_UTDRAG]}")
     else:
@@ -246,8 +260,10 @@ def bygg_prompt(underlag: dict) -> str:
     notiser = underlag["notiser"][:MAX_NOTISER_I_PROMPT]
     if notiser:
         for e in notiser:
-            tema = e.get("tema") or "?"
-            rader.append(f"- [{e.get('date','')}] {e.get('headline','')} (ämne: {tema})")
+            datum = _skydda_kalltext(e.get("date", ""))
+            rubrik = _skydda_kalltext(e.get("headline", ""))
+            tema = _skydda_kalltext(e.get("tema") or "?")
+            rader.append(f"- [{datum}] {rubrik} (ämne: {tema})")
     else:
         rader.append("- (inga)")
 

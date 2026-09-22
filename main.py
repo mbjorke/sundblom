@@ -41,7 +41,6 @@ GITHUB_API_BASE  = "https://api.github.com"
 _ROOT = os.path.dirname(os.path.abspath(__file__))
 RIKTLINJER_PATH = os.path.join(_ROOT, "riktlinjer.json")
 ARTICLES_DIR = os.path.join(_ROOT, "src", "content", "articles")
-BUILD_META_PATH = os.path.join(_ROOT, "src", "build-meta.json")
 
 # ── GitHub config (from env) ───────────────────────────────────────────────
 GITHUB_TOKEN  = os.environ.get("GITHUB_TOKEN", "")
@@ -491,8 +490,12 @@ def save_seen_url(url: str, headline: str, date_iso: str) -> None:
     log.info("URL sparad i seen-urls.json: %s", url)
 
 
-def save_last_headline(headline: str) -> None:
+def save_last_headline(headline: str) -> bool:
     """Sparar senast publicerad rubrik och build-meta i ett enda atomärt commit.
+
+    Returnerar True endast om deploy-branchen faktiskt flyttades — det är det
+    enda som får CF Pages att bygga. Lyckas commiten men inte ref-flytten är
+    texten fortfarande osynlig, och då måste anroparen försöka igen.
 
     Använder Git Trees API för att uppdatera last_headline.txt OCH
     src/build-meta.json i samma commit — utan [skip cf] — så att CF Pages
@@ -500,7 +503,7 @@ def save_last_headline(headline: str) -> None:
     Det gör att index.html får ett nytt hash och laddas upp av CF Pages.
     """
     if not GITHUB_TOKEN or not GITHUB_REPO:
-        return
+        return False
     headers = {
         "Authorization": f"Bearer {GITHUB_TOKEN}",
         "Accept": "application/vnd.github+json",
@@ -580,7 +583,7 @@ def save_last_headline(headline: str) -> None:
         break
     else:
         log.error("Kunde inte uppdatera branch-ref efter 5 försök — hoppar över deploy-trigger.")
-        return
+        return False
 
     # 6. Flytta deploy-branchen till samma commit → triggar CF Pages exakt en gång
     #    CF Pages är konfigurerat att lyssna på 'deploy', inte 'main',
@@ -590,7 +593,8 @@ def save_last_headline(headline: str) -> None:
         headers=headers,
         json={"sha": new_commit_sha, "force": True},
     )
-    if deploy_resp.status_code == 200:
+    deployad = deploy_resp.status_code == 200
+    if deployad:
         log.info("deploy-branch uppdaterad → CF Pages-deploy triggas.")
     else:
         log.warning("Kunde inte uppdatera deploy-branch: %s", deploy_resp.text)
@@ -599,6 +603,7 @@ def save_last_headline(headline: str) -> None:
         "last_headline.txt + build-meta.json uppdaterade atomärt (commit %s).",
         new_commit_sha[:7],
     )
+    return deployad
 
 
 def save_article_json(headline: str, julius_text: str, body: str, author: str,
@@ -666,22 +671,53 @@ def publish_og_image(png_bytes: bytes) -> None:
 
 def trigga_deploy(headline: str) -> bool:
     """save_last_headline() med ett omförsök. Den är det enda som flyttar
-    deploy-branchen, så ett tyst misslyckande betyder att texten aldrig syns."""
+    deploy-branchen, så ett tyst misslyckande betyder att texten aldrig syns.
+    Ett nekat ref-anrop räknas som misslyckande, inte bara ett kastat fel."""
+    if not GITHUB_TOKEN or not GITHUB_REPO:
+        log.info("GitHub-miljövariabler saknas — ingen deploy att trigga.")
+        return True
     for forsok in (1, 2):
         try:
-            save_last_headline(headline)
-            return True
+            if save_last_headline(headline):
+                return True
+            log.warning("Deploy-branchen flyttades inte (försök %d/2).", forsok)
         except requests.RequestException as e:
             log.warning("Deploy-trigger misslyckades (försök %d/2): %s", forsok, e)
     return False
 
 
+def _deploy_build_meta() -> str | None:
+    """last_updated ur build-meta.json så som den ser ut på deploy-branchen.
+
+    CF Pages bygger från deploy, inte från main, så det är enda stället där
+    filen bevisar att en text faktiskt gått ut. None om den inte går att läsa.
+    """
+    if not GITHUB_TOKEN or not GITHUB_REPO:
+        return None
+    headers = {
+        "Authorization": f"Bearer {GITHUB_TOKEN}",
+        "Accept": "application/vnd.github+json",
+        "X-GitHub-Api-Version": "2022-11-28",
+    }
+    api_url = f"{GITHUB_API_BASE}/repos/{GITHUB_REPO}/contents/src/build-meta.json"
+    try:
+        resp = requests.get(api_url, headers=headers, params={"ref": "deploy"})
+        if resp.status_code != 200:
+            log.warning("Kunde inte läsa build-meta från deploy (%s).", resp.status_code)
+            return None
+        raw = base64.b64decode(resp.json()["content"]).decode("utf-8")
+        return json.loads(raw).get("last_updated", "")
+    except (requests.RequestException, json.JSONDecodeError, KeyError) as e:
+        log.warning("Kunde inte läsa build-meta från deploy — %s", e)
+        return None
+
+
 def _deploy_efterslapning(today: str) -> str | None:
     """Rubriken på en artikel som sparats men aldrig deployats, annars None.
 
-    build-meta.json skrivs bara av save_last_headline(). Är dagens nyaste
-    artikel stämplad senare än build-metas last_updated hann deploy-triggern
-    aldrig köra för den, och texten ligger osynlig i repot.
+    Dagens nyaste artikel jämförs med build-meta på deploy-branchen. Är
+    artikeln nyare gick deploy-triggern aldrig igenom för den, och texten
+    ligger osynlig i repot.
     """
     artiklar = []
     for path in glob.glob(os.path.join(ARTICLES_DIR, f"{today}-*.json")):
@@ -693,10 +729,8 @@ def _deploy_efterslapning(today: str) -> str | None:
     if not artiklar:
         return None
     senaste = max(artiklar, key=lambda a: a.get("published_at", ""))
-    try:
-        with open(BUILD_META_PATH, "r", encoding="utf-8") as f:
-            byggd = json.load(f).get("last_updated", "")
-    except (json.JSONDecodeError, OSError):
+    byggd = _deploy_build_meta()
+    if byggd is None:
         return None
     if senaste.get("published_at", "") > byggd:
         return senaste.get("headline", "")
@@ -834,7 +868,8 @@ def main() -> None:
             atergarda_missad_deploy(today)
     else:
         log.info("%d ny/nya artikel(ar) publicerade.", new_articles)
-        save_last_headline(top_headline)
+        if not trigga_deploy(top_headline):
+            log.error("Artiklarna sparade men ej deployade — nästa körning gör om försöket.")
 
     # Töm redaktörsommödets logg (en gång per körning)
     selector.flush_log()
