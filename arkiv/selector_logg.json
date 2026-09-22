@@ -8688,5 +8688,75 @@
     "tema": "infrastruktur",
     "anledning": "Rutinåtgärd för infrastruktur, även om det rör modernisering, saknar den större politisk eller samhällelig konflikt som motiverar en ledare. För lite substans för Julius att utbrodera. [nyhetsvärde 4 < 6]",
     "fallback": false
+  },
+  {
+    "date": "2026-09-22",
+    "headline": "Byggpartner bygger om Vinkelboda – var ensam anbudsgivare",
+    "url": "https://alandsradio.ax/nyheter/byggpartner-bygger-om-vinkelboda-var-ensam-anbudsgivare",
+    "skriv": false,
+    "nyhetsvarde": 3,
+    "tema": "lokal förvaltning",
+    "anledning": "Detta är en rutinåtgärd för en ombyggnation av ett daghem. Även om det handlar om offentlig upphandling och kostnader, är det en för obetydlig och teknisk notis för en ledarartikel av Julius Sundblom. Bristen på konkurrens med endast en anbudsgivare är visserligen en notering, men inte tillräckligt för en ledare. [nyhetsvärde 3 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-09-22",
+    "headline": "Coolcationturister ökade i sommar",
+    "url": "https://alandsradio.ax/nyheter/coolcationturister-okade-i-sommar",
+    "skriv": false,
+    "nyhetsvarde": 2,
+    "tema": "ekonomi",
+    "anledning": "Trivial notis om turiststatistik. Saknar substans för en ledarartikel om autonomi, samhällsordning eller sedlighet. Julius Sundblom skulle finna detta för obetydligt. [nyhetsvärde 2 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-09-22",
+    "headline": "Liten nedgång för hotellen – men långväga gäster ökade",
+    "url": "https://alandsradio.ax/nyheter/liten-nedgang-for-hotellen-men-langvaga-gaster-okade",
+    "skriv": false,
+    "nyhetsvarde": 3,
+    "tema": "ekonomi",
+    "anledning": "Statistik om hotellövernattningar är för detaljerad och saknar den politiska eller samhälleliga vinkeln för en ledare. [nyhetsvärde 3 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-09-22",
+    "headline": "ÅHS vill utöka infertilitetsvården – finansieringen avgör",
+    "url": "https://alandsradio.ax/nyheter/ahs-vill-utoka-infertilitetsvarden-finansieringen-avgor",
+    "skriv": false,
+    "nyhetsvarde": 3,
+    "tema": "sociala fragor",
+    "anledning": "Ämnet är för specifikt för en ledare. Budgetfråga om enskild vårdform saknar bredare samhälls-, autonomi- eller moralisk vinkel. För tekniskt och detaljfokuserat för Julius. [nyhetsvärde 3 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-09-22",
+    "headline": "Vattenavstängning i Mariehamn under onsdagen",
+    "url": "https://alandsradio.ax/nyheter/vattenavstangning-i-mariehamn-under-onsdagen",
+    "skriv": false,
+    "nyhetsvarde": 1,
+    "tema": "infrastruktur",
+    "anledning": "Trivial, lokal notis om rutinunderhåll av vattennätet. Saknar politisk, samhällelig eller existentiell betydelse för Julius Sundblom. [nyhetsvärde 1 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-09-22",
+    "headline": "Ordstrid om ”systemkaos” i skärgårdstrafiken",
+    "url": "https://alandsradio.ax/nyheter/ordstrid-om-systemkaos-i-skargardstrafiken",
+    "skriv": true,
+    "nyhetsvarde": 8,
+    "tema": "självstyrelse, politik, samhällsordning",
+    "anledning": "Debatten i lagtinget om Ålandstrafikens problem rör direkt Ålands autonomi och förmåga att förvalta sina egna angelägenheter. Frågan om 'systemkaos' och bristande resurser i infrastruktur är central för både ekonomi och samhällsordning, och oppositionens kritik av landskapsregeringen har tydlig politisk substans. En ledare av Julius Sundblom kan analysera den politiska striden och dess implikationer för den åländska självstyrelsens rykte och effektivitet, samt beröra hur modernitetens 'reformiver' kan leda till förfall om den saknar kompetens och substans.",
+    "fallback": false
+  },
+  {
+    "date": "2026-09-22",
+    "headline": "Anton Nilsson: EU-kommissionen vet att det finns stöd för åldersgränser på socia",
+    "url": "https://alandsradio.ax/nyheter/anton-nilsson-eu-kommissionen-vet-att-det-finns-stod-for-aldersgranser-pa-sociala-medier",
+    "skriv": false,
+    "nyhetsvarde": 4,
+    "tema": "modernitetens förfall",
+    "anledning": "Ämnet i sig är intressant med tanke på sedlighet och modernitetens utmaningar, men det saknar direkt koppling till åländsk självstyrelse eller rikspolitik på det sätt Julius skulle prioritera. Det är dessutom för tidigt i processen för att erbjuda tillräcklig substans för en ledare. [nyhetsvärde 4 < 6]",
+    "fallback": false
   }
 ]
