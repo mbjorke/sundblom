@@ -15,6 +15,7 @@ import os
 import re
 import sys
 import json
+import glob
 import base64
 import logging
 import datetime
@@ -37,7 +38,10 @@ log = logging.getLogger(__name__)
 # ── Constants ─────────────────────────────────────────────────────────────────
 ALANDS_RADIO_URL = "https://alandsradio.ax/nyheter"
 GITHUB_API_BASE  = "https://api.github.com"
-RIKTLINJER_PATH = os.path.join(os.path.dirname(os.path.abspath(__file__)), "riktlinjer.json")
+_ROOT = os.path.dirname(os.path.abspath(__file__))
+RIKTLINJER_PATH = os.path.join(_ROOT, "riktlinjer.json")
+ARTICLES_DIR = os.path.join(_ROOT, "src", "content", "articles")
+BUILD_META_PATH = os.path.join(_ROOT, "src", "build-meta.json")
 
 # ── GitHub config (from env) ───────────────────────────────────────────────
 GITHUB_TOKEN  = os.environ.get("GITHUB_TOKEN", "")
@@ -487,23 +491,6 @@ def save_seen_url(url: str, headline: str, date_iso: str) -> None:
     log.info("URL sparad i seen-urls.json: %s", url)
 
 
-def load_last_headline() -> str:
-    """Hämtar senast publicerad rubrik från last_headline.txt i repot."""
-    if not GITHUB_TOKEN or not GITHUB_REPO:
-        return ""
-    headers = {
-        "Authorization": f"Bearer {GITHUB_TOKEN}",
-        "Accept": "application/vnd.github+json",
-        "X-GitHub-Api-Version": "2022-11-28",
-    }
-    api_url = f"{GITHUB_API_BASE}/repos/{GITHUB_REPO}/contents/last_headline.txt"
-    resp = requests.get(api_url, headers=headers, params={"ref": GITHUB_BRANCH})
-    if resp.status_code == 404:
-        return ""
-    resp.raise_for_status()
-    return base64.b64decode(resp.json()["content"]).decode("utf-8").strip()
-
-
 def save_last_headline(headline: str) -> None:
     """Sparar senast publicerad rubrik och build-meta i ett enda atomärt commit.
 
@@ -677,6 +664,55 @@ def publish_og_image(png_bytes: bytes) -> None:
     log.info("✅ OG-bild pushad.")
 
 
+def trigga_deploy(headline: str) -> bool:
+    """save_last_headline() med ett omförsök. Den är det enda som flyttar
+    deploy-branchen, så ett tyst misslyckande betyder att texten aldrig syns."""
+    for forsok in (1, 2):
+        try:
+            save_last_headline(headline)
+            return True
+        except requests.RequestException as e:
+            log.warning("Deploy-trigger misslyckades (försök %d/2): %s", forsok, e)
+    return False
+
+
+def _deploy_efterslapning(today: str) -> str | None:
+    """Rubriken på en artikel som sparats men aldrig deployats, annars None.
+
+    build-meta.json skrivs bara av save_last_headline(). Är dagens nyaste
+    artikel stämplad senare än build-metas last_updated hann deploy-triggern
+    aldrig köra för den, och texten ligger osynlig i repot.
+    """
+    artiklar = []
+    for path in glob.glob(os.path.join(ARTICLES_DIR, f"{today}-*.json")):
+        try:
+            with open(path, "r", encoding="utf-8") as f:
+                artiklar.append(json.load(f))
+        except (json.JSONDecodeError, OSError):
+            continue
+    if not artiklar:
+        return None
+    senaste = max(artiklar, key=lambda a: a.get("published_at", ""))
+    try:
+        with open(BUILD_META_PATH, "r", encoding="utf-8") as f:
+            byggd = json.load(f).get("last_updated", "")
+    except (json.JSONDecodeError, OSError):
+        return None
+    if senaste.get("published_at", "") > byggd:
+        return senaste.get("headline", "")
+    return None
+
+
+def atergarda_missad_deploy(today: str) -> None:
+    """Gör om en deploy-trigger som aldrig gick igenom i en tidigare körning."""
+    rubrik = _deploy_efterslapning(today)
+    if not rubrik:
+        return
+    log.warning("Osynlig artikel hittad (%s) — gör om deploy-triggern.", rubrik[:60])
+    if trigga_deploy(rubrik):
+        log.info("Deploy-triggern gick igenom i andra hand.")
+
+
 def skriv_kronika(today: str) -> bool:
     """Veckokrönika på dagar då ingen nyhet höll måttet för en ledare.
 
@@ -695,9 +731,15 @@ def skriv_kronika(today: str) -> bool:
         return False
 
     log.info("🖋️ Skriver veckokrönika: %s", varfor)
-    rubrik, text = kronika.generera(
-        underlag, SUNDBLOM_PROMPT, load_riktlinjer(), _call_api
-    )
+    try:
+        rubrik, text = kronika.generera(
+            underlag, SUNDBLOM_PROMPT, load_riktlinjer(), _call_api
+        )
+    except ValueError as e:
+        # Tom eller trunkerad text. Vi sparar ingenting: hade den skrivits till
+        # repot vore dagen räknad som publicerad och nästa försök blockerat.
+        log.error("🖋️ Krönikan förkastades — %s", e)
+        return False
     slug = f"{kronika.KRONIKA_SLUG_PREFIX}-{slugify(rubrik, max_length=48)}"
     save_article_json(
         headline=rubrik,
@@ -710,8 +752,11 @@ def skriv_kronika(today: str) -> bool:
         kind="kronika",
         sources=kronika.kallor(underlag),
     )
-    # Flyttar deploy-branchen → CF Pages bygger om med krönikan överst
-    save_last_headline(rubrik)
+    # Flyttar deploy-branchen → CF Pages bygger om med krönikan överst.
+    # Misslyckas den är krönikan sparad men osynlig; nästa körning upptäcker
+    # det via build-meta och gör om försöket.
+    if not trigga_deploy(rubrik):
+        log.error("🖋️ Krönikan sparad men ej deployad — nästa körning gör om försöket.")
     log.info("🖋️ Veckokrönika publicerad: %s", rubrik)
     return True
 
@@ -729,23 +774,16 @@ def main() -> None:
         log.info("Inga rubriker hittades — avslutar.")
         return
 
-    # 2. Early exit: om topprubrik är oförändrad sedan senaste körning → spara API-anrop.
-    #    Vi avslutar dock inte körningen: krönikeprövningen längre ner ska ändå
-    #    ske, annars står sidan stilla hela dagar då topprubriken ligger kvar.
-    last_headline = load_last_headline()
+    # 2. Ladda redan processade URLar. Det är det enda filtret vi behöver: en
+    #    oförändrad topprubrik säger ingenting om rubrikerna under den, och att
+    #    avbryta på den lämnade nya nyheter oprocessade tills toppen byttes ut.
     top_headline = headlines[0][0]
-    topp_oforandrad = top_headline == last_headline
-    if topp_oforandrad:
-        log.info("Topprubrik oförändrad (%s) — hoppar över nyhetsloopen.", top_headline[:60])
-
-    # 3. Ladda redan processade URLar (undviker dubbletter vid helger/högtider)
-    kandidater = [] if topp_oforandrad else headlines
-    seen_urls = load_seen_urls() if kandidater else set()
+    seen_urls = load_seen_urls()
 
     today = datetime.date.today().isoformat()
     new_articles = 0
 
-    for headline, url in kandidater:
+    for headline, url in headlines:
         if url == ALANDS_RADIO_URL:
             log.info("Fallback-URL — hoppar över: %s", url)
             continue
@@ -790,7 +828,8 @@ def main() -> None:
 
     if new_articles == 0:
         log.info("Inga nya artiklar att publicera idag.")
-        skriv_kronika(today)
+        if not skriv_kronika(today):
+            atergarda_missad_deploy(today)
     else:
         log.info("%d ny/nya artikel(ar) publicerade.", new_articles)
         save_last_headline(top_headline)

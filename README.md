@@ -128,6 +128,11 @@ Cloudflare Pages lyssnar på branchen `deploy`, inte `main`. Endast
 krönikan och veckobetraktelsen anropar den därför efter att ha sparat sin text;
 annars blir texten liggande i repot utan att synas på sajten.
 
+Triggern görs om en gång direkt vid fel. Går den ändå inte igenom upptäcker
+nästa körning det — dagens nyaste artikel är då stämplad senare än
+`src/build-meta.json` — och gör om försöket, så en sparad text aldrig blir
+liggande osynlig i mer än en körning.
+
 Torrkörning utan API-nyckel — visar beslut, underlag och prompt:
 
 ```bash

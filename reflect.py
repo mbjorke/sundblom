@@ -545,8 +545,13 @@ def main() -> None:
 
     # Trigga deployen. _push_file skriver bara till main, och CF Pages lyssnar
     # på deploy-branchen — utan detta blev reflektionen liggande osynlig ända
-    # tills nästa ledare publicerades.
-    M.save_last_headline(headline)
+    # tills nästa ledare publicerades. Ett misslyckande får inte hindra att
+    # reflection_state sparas nedan; main.py:s körning gör om försöket.
+    try:
+        if not M.trigga_deploy(headline):
+            log.error("Reflektionen sparad men ej deployad — görs om vid nästa körning.")
+    except Exception as e:  # noqa: BLE001 — state måste sparas oavsett
+        log.error("Deploy-triggern kastade (%s) — state sparas ändå.", e)
 
     # Uppdatera state
     recent_modes = (state.get("recent_modes", []) + [mode])[-6:]
