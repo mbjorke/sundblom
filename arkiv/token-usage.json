@@ -1,6 +1,6 @@
 {
-  "total_input": 2961029,
-  "total_output": 760021,
+  "total_input": 3047509,
+  "total_output": 777890,
   "calls": [
     {
       "date": "2026-03-24T06:49:07Z",
@@ -9658,6 +9658,234 @@
       "model": "gemini-2.5-flash",
       "input": 2277,
       "output": 457
+    },
+    {
+      "date": "2026-09-07T10:39:16Z",
+      "model": "gemini-2.5-flash",
+      "input": 2145,
+      "output": 520
+    },
+    {
+      "date": "2026-09-08T09:59:47Z",
+      "model": "gemini-2.5-flash",
+      "input": 2409,
+      "output": 469
+    },
+    {
+      "date": "2026-09-08T14:42:10Z",
+      "model": "gemini-2.5-flash",
+      "input": 2203,
+      "output": 414
+    },
+    {
+      "date": "2026-09-08T17:59:01Z",
+      "model": "gemini-2.5-flash",
+      "input": 2428,
+      "output": 515
+    },
+    {
+      "date": "2026-09-08T17:59:16Z",
+      "model": "gemini-2.5-flash",
+      "input": 2336,
+      "output": 554
+    },
+    {
+      "date": "2026-09-09T10:02:26Z",
+      "model": "gemini-2.5-flash",
+      "input": 2174,
+      "output": 470
+    },
+    {
+      "date": "2026-09-09T10:02:44Z",
+      "model": "gemini-2.5-flash",
+      "input": 2370,
+      "output": 501
+    },
+    {
+      "date": "2026-09-09T10:03:06Z",
+      "model": "gemini-2.5-flash",
+      "input": 2149,
+      "output": 386
+    },
+    {
+      "date": "2026-09-09T14:43:24Z",
+      "model": "gemini-2.5-flash",
+      "input": 2281,
+      "output": 396
+    },
+    {
+      "date": "2026-09-09T14:43:35Z",
+      "model": "gemini-2.5-flash",
+      "input": 2422,
+      "output": 577
+    },
+    {
+      "date": "2026-09-09T14:43:55Z",
+      "model": "gemini-2.5-flash",
+      "input": 2160,
+      "output": 427
+    },
+    {
+      "date": "2026-09-10T09:58:50Z",
+      "model": "gemini-2.5-flash",
+      "input": 2277,
+      "output": 467
+    },
+    {
+      "date": "2026-09-10T14:33:33Z",
+      "model": "gemini-2.5-flash",
+      "input": 2307,
+      "output": 534
+    },
+    {
+      "date": "2026-09-10T14:34:06Z",
+      "model": "gemini-2.5-flash",
+      "input": 2174,
+      "output": 406
+    },
+    {
+      "date": "2026-09-11T09:56:48Z",
+      "model": "gemini-2.5-flash",
+      "input": 2220,
+      "output": 527
+    },
+    {
+      "date": "2026-09-11T22:15:28Z",
+      "model": "gemini-2.5-flash",
+      "input": 2279,
+      "output": 414
+    },
+    {
+      "date": "2026-09-14T10:54:58Z",
+      "model": "gemini-2.5-flash",
+      "input": 2159,
+      "output": 429
+    },
+    {
+      "date": "2026-09-14T10:55:09Z",
+      "model": "gemini-2.5-flash",
+      "input": 2356,
+      "output": 491
+    },
+    {
+      "date": "2026-09-14T10:55:33Z",
+      "model": "gemini-2.5-flash",
+      "input": 2201,
+      "output": 510
+    },
+    {
+      "date": "2026-09-14T10:55:48Z",
+      "model": "gemini-2.5-flash",
+      "input": 2101,
+      "output": 370
+    },
+    {
+      "date": "2026-09-14T16:27:19Z",
+      "model": "gemini-2.5-flash",
+      "input": 2336,
+      "output": 431
+    },
+    {
+      "date": "2026-09-14T16:27:35Z",
+      "model": "gemini-2.5-flash",
+      "input": 2318,
+      "output": 494
+    },
+    {
+      "date": "2026-09-15T10:20:09Z",
+      "model": "gemini-2.5-flash",
+      "input": 2290,
+      "output": 418
+    },
+    {
+      "date": "2026-09-15T10:20:42Z",
+      "model": "gemini-2.5-flash",
+      "input": 2227,
+      "output": 512
+    },
+    {
+      "date": "2026-09-15T22:42:52Z",
+      "model": "gemini-2.5-flash",
+      "input": 2360,
+      "output": 454
+    },
+    {
+      "date": "2026-09-16T15:07:33Z",
+      "model": "gemini-2.5-flash",
+      "input": 2337,
+      "output": 452
+    },
+    {
+      "date": "2026-09-16T15:07:45Z",
+      "model": "gemini-2.5-flash",
+      "input": 2220,
+      "output": 490
+    },
+    {
+      "date": "2026-09-16T22:38:44Z",
+      "model": "gemini-2.5-flash",
+      "input": 2220,
+      "output": 436
+    },
+    {
+      "date": "2026-09-17T15:10:15Z",
+      "model": "gemini-2.5-flash",
+      "input": 2373,
+      "output": 525
+    },
+    {
+      "date": "2026-09-18T10:00:01Z",
+      "model": "gemini-2.5-flash",
+      "input": 2453,
+      "output": 451
+    },
+    {
+      "date": "2026-09-18T14:35:41Z",
+      "model": "gemini-2.5-flash",
+      "input": 2344,
+      "output": 490
+    },
+    {
+      "date": "2026-09-21T11:00:20Z",
+      "model": "gemini-2.5-flash",
+      "input": 2177,
+      "output": 352
+    },
+    {
+      "date": "2026-09-21T11:00:36Z",
+      "model": "gemini-2.5-flash",
+      "input": 2206,
+      "output": 450
+    },
+    {
+      "date": "2026-09-21T16:32:35Z",
+      "model": "gemini-2.5-flash",
+      "input": 2292,
+      "output": 490
+    },
+    {
+      "date": "2026-09-21T16:32:55Z",
+      "model": "gemini-2.5-flash",
+      "input": 2347,
+      "output": 574
+    },
+    {
+      "date": "2026-09-22T10:14:27Z",
+      "model": "gemini-2.5-flash",
+      "input": 2405,
+      "output": 523
+    },
+    {
+      "date": "2026-09-22T15:06:51Z",
+      "model": "gemini-2.5-flash",
+      "input": 2261,
+      "output": 432
+    },
+    {
+      "date": "2026-09-22T15:07:03Z",
+      "model": "gemini-2.5-flash",
+      "input": 2163,
+      "output": 518
     }
   ]
 }
