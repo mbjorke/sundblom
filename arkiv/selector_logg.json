@@ -8858,5 +8858,105 @@
     "tema": "ekonomi",
     "anledning": "Statistik om arbetslöshet är av ekonomisk karaktär, men den presenterade informationen är en rutinmässig månadsrapport med små variationer. Den saknar den dramatik eller konflikt som skulle motivera en ledarartikel av Julius Sundblom. Dessutom refererar den till 2025 och 2026, vilket är en avvikelse från 1926 års tidsperspektiv. [nyhetsvärde 3 < 6]",
     "fallback": false
+  },
+  {
+    "date": "2026-09-23",
+    "headline": "Åländsk lyxkaviar återuppstår – blir småländsk",
+    "url": "https://alandsradio.ax/nyheter/alandsk-lyxkaviar-ateruppstar-blir-smalandsk",
+    "skriv": false,
+    "nyhetsvarde": 3,
+    "tema": "ekonomi",
+    "anledning": "Ekonomisk notis om ett enskilt företag som dessutom flyttat sin verksamhet från Åland, för obetydligt för en ledare. Ingen bäring på autonomin eller viktigare samhällsfrågor. [nyhetsvärde 3 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-09-23",
+    "headline": "Över hälften av landets kvotjakt på varg sker i sydvästra delen",
+    "url": "https://alandsradio.ax/nyheter/over-halften-av-landets-kvotjakt-pa-varg-sker-i-sydvastra-delen",
+    "skriv": false,
+    "nyhetsvarde": 3,
+    "tema": "natur",
+    "anledning": "Frågan om vargjakt är för perifer för att motivera en ledarartikel av Sundblom. Det handlar om en rikspolitisk kvot utan direkt åländsk självstyrelseimplikation, även om vargar har setts på Åland. Ämnet saknar den politiska eller samhällsordningsmässiga tyngd som Julius skulle fokusera på. [nyhetsvärde 3 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-09-23",
+    "headline": "Nu ska församlingsstruktur utredas",
+    "url": "https://alandsradio.ax/nyheter/nu-ska-forsamlingsstruktur-utredas",
+    "skriv": false,
+    "nyhetsvarde": 3,
+    "tema": "lokal förvaltning",
+    "anledning": "Intern församlingsangelägenhet utan större autonomi- eller rikspolitisk relevans. Även om ekonomi nämns, är det för lokalt för en ledarartikel. [nyhetsvärde 3 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-09-23",
+    "headline": "Nu har Ålcom tagit över MCA",
+    "url": "https://alandsradio.ax/nyheter/nu-har-alcom-tagit-over-mca",
+    "skriv": false,
+    "nyhetsvarde": 3,
+    "tema": "ekonomi",
+    "anledning": "Även om det handlar om en företagstransaktion, är det en lokal affärsnyhet som saknar den politiska eller samhälleliga dignitet som krävs för en ledarartikel av Julius Sundblom. Han fokuserar på större principiella frågor, inte enskilda företagsuppköp av denna karaktär. [nyhetsvärde 3 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-09-23",
+    "headline": "LR kan kräva Teboil på 313 000 euro",
+    "url": "https://alandsradio.ax/nyheter/lr-kan-krava-teboil-pa-313-000-euro",
+    "skriv": false,
+    "nyhetsvarde": 3,
+    "tema": "ekonomi",
+    "anledning": "Ärendet är fortfarande i ett inledande skede ('kan komma att kräva', 'överväger att påföra'), ingen definitiv åtgärd har ännu beslutats. Dessutom är det en relativt specifik ekonomisk regleringsfråga som saknar den bredare politiska eller samhälleliga relevans Julius skulle efterfråga för en ledare. Tidigare fall med lägre böter har inte heller motiverat en ledare. [nyhetsvärde 3 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-09-23",
+    "headline": "Ann Nedergård får Östersjöfondens Ålandspris",
+    "url": "https://alandsradio.ax/nyheter/ann-nedergard-far-ostersjofondens-alandspris",
+    "skriv": false,
+    "nyhetsvarde": 3,
+    "tema": "miljö/personnotis",
+    "anledning": "Viktigt ämne men handlar om en enskild person som får ett pris, ingen större politisk eller samhällelig konflikt, autonomifråga eller ny policy som motiverar en ledare av Sundblom. Dessutom för långt in i framtiden, år 1926 är 2026 inte relevant. [nyhetsvärde 3 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-09-23",
+    "headline": "En ålänning med när Finlands lucia ska utses",
+    "url": "https://alandsradio.ax/nyheter/en-alanning-med-nar-finlands-lucia-ska-utses",
+    "skriv": false,
+    "nyhetsvarde": 2,
+    "tema": "kultur",
+    "anledning": "Kulturpersonnotis utan större samhälls- eller politisk betydelse. För trivial för en ledare. [nyhetsvärde 2 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-09-23",
+    "headline": "Kvinna tog med sig hasch på färjan – döms till böter",
+    "url": "https://alandsradio.ax/nyheter/kvinna-tog-med-sig-hasch-pa-farjan-doms-till-boter",
+    "skriv": false,
+    "nyhetsvarde": 3,
+    "tema": "kriminalitet",
+    "anledning": "En enskild personnotis om ett mindre narkotikabrott, saknar större samhällelig relevans eller koppling till Julius Sundbloms kärnämnen som självstyrelse, svensk identitet, eller bredare sedlighetsfrågor av strukturell natur. För lite substans för en ledare. [nyhetsvärde 3 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-09-23",
+    "headline": "Skiftet har satts in istället för Ejdern",
+    "url": "https://alandsradio.ax/nyheter/skiftet-har-satts-in-istallet-for-ejdern",
+    "skriv": false,
+    "nyhetsvarde": 2,
+    "tema": "lokal nyhet",
+    "anledning": "Trivial notis om färjeproblem. Saknar större politisk, samhällelig eller autonomirelevant vinkel. Inget för Julius Sundblom att skriva en ledare om. [nyhetsvärde 2 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-09-23",
+    "headline": "Intresset för vaccin ökade efter mässlingfallet",
+    "url": "https://alandsradio.ax/nyheter/intresset-for-vaccin-okade-efter-masslingfallet",
+    "skriv": false,
+    "nyhetsvarde": 2,
+    "tema": "hälsa",
+    "anledning": "För obetydlig notis om hälsa, inget politiskt, ekonomiskt eller samhälleligt djup för en ledare. [nyhetsvärde 2 < 6]",
+    "fallback": false
   }
 ]
