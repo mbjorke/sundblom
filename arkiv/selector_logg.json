@@ -9008,5 +9008,95 @@
     "tema": "sport",
     "anledning": "Ren sportresultat-rapportering av en smålokal sportnotis, saknar politisk, samhällelig eller existentiell bäring för en ledare. [nyhetsvärde 2 < 6]",
     "fallback": false
+  },
+  {
+    "date": "2026-09-24",
+    "headline": "Professor i HBL: Bensinpriset sjunker aldrig under två euro igen",
+    "url": "https://alandsradio.ax/nyheter/professor-i-hbl-bensinpriset-sjunker-aldrig-under-tva-euro-igen",
+    "skriv": true,
+    "nyhetsvarde": 7,
+    "tema": "ekonomi",
+    "anledning": "Bensinpriset har stor inverkan på Ålands ekonomi, särskilt transport och rederinäringen. Även om inflation inte fanns 1926 kan vi extrapolera att prisökningar på bränsle får konsekvenser. Diskussionen om åländska näringars anpassning och statens roll i att stödja medborgare är också relevant.",
+    "fallback": false
+  },
+  {
+    "date": "2026-09-24",
+    "headline": "\"En bonde tankade traktorn för 500 euro, en kranförare sin bil för 700”",
+    "url": "https://alandsradio.ax/nyheter/branslepriserna-heta-i-riksdagens-budgetdebatt-en-bonde-tankade-traktorn-for-500-euro-en-kranforare-sin-bil-for-700",
+    "skriv": true,
+    "nyhetsvarde": 8,
+    "tema": "ekonomi",
+    "anledning": "Frågan om bränslepriser har stor inverkan på Ålands ekonomi, särskilt jordbruk och transporter, vilket är centralt för självstyret. Mats Löfströms uttalande i riksdagen, med konkreta exempel och förslag, ger god substans för en ledare om ekonomisk politik, den åländska självstyrelsens intressen i riksdagen, samt balansen mellan näringsliv och samhällsnytta. Det ryms väl i Sundbloms värld av klass- och samhällsordning, näringslivets villkor och Finlands rikspolitik.",
+    "fallback": false
+  },
+  {
+    "date": "2026-09-24",
+    "headline": "Lantrådet: ÅHS styrelse måste sätta fart på utvecklingen av hemsjukvården",
+    "url": "https://alandsradio.ax/nyheter/lantradet-ahs-styrelse-maste-satta-fart-pa-utvecklingen-av-hemsjukvarden",
+    "skriv": false,
+    "nyhetsvarde": 4,
+    "tema": "samhällsordning",
+    "anledning": "Frågan om hemsjukvård är viktig för samhället, men detta är en rutinmässig politisk diskussion i lagtinget. Det saknar dramatisk konflikt eller beslut av omedelbar, stor autonomisk eller rikspolitisk betydelse. Det finns inte tillräckligt med substans för en kraftfull ledare av Julius. [nyhetsvärde 4 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-09-24",
+    "headline": "Kund stämmer mäklare på 20 000 euro",
+    "url": "https://alandsradio.ax/nyheter/kund-stammer-maklare-pa-20-000-euro",
+    "skriv": false,
+    "nyhetsvarde": 4,
+    "tema": "ekonomi",
+    "anledning": "Även om det rör ekonomi och en rättslig tvist är det en enskild civilrättslig tvist utan större politisk, samhällelig eller autonomirelevant bäring. För snäv för en ledare av Julius Sundblom. [nyhetsvärde 4 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-09-24",
+    "headline": "ABF vill se Åland Pride nästa år – startar arbetsgrupp",
+    "url": "https://alandsradio.ax/nyheter/abf-vill-se-aland-pride-nasta-ar-startar-arbetsgrupp",
+    "skriv": false,
+    "nyhetsvarde": 1,
+    "tema": "sedlighet",
+    "anledning": "Ämnet är för kontroversiellt för Julius redaktionella linje och saknar direkt koppling till de huvudsakliga intresseområdena för ledarartiklar, såsom självstyrelse eller ekonomiska frågor. Detta anses vara en smålokal notis med fokus på minoritetsfrågor som inte passar ledarspalten år 1926. [nyhetsvärde 1 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-09-24",
+    "headline": "Även Hammarland funderar på att lämna Svinryggen",
+    "url": "https://alandsradio.ax/nyheter/aven-hammarland-funderar-pa-att-lamna-svinryggen",
+    "skriv": false,
+    "nyhetsvarde": 2,
+    "tema": "ekonomi, kommunal förvaltning",
+    "anledning": "En smålokal notis om en rutinåtgärd kring en deponi och aktieägarskap. Saknar större politisk eller samhällelig bäring och är för trivial för en ledare av Julius. [nyhetsvärde 2 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-09-24",
+    "headline": "Holmberg och oppositionen eniga i kritiken mot Axyards",
+    "url": "https://alandsradio.ax/nyheter/holmberg-och-oppositionen-eniga-i-kritiken-mot-axyards",
+    "skriv": true,
+    "nyhetsvarde": 8,
+    "tema": "ekonomi, självstyrelse, samhällsordning",
+    "anledning": "Betydande politisk debatt kring landskapets ekonomiska roll och konkurrens med privat näringsliv, direkt relevant för självstyrelsens ekonomiska principer och samhällsordning. Innehåller konflikt och konkreta uttalanden från ledamöter och ministrar, vilket ger substans för en ledare.",
+    "fallback": false
+  },
+  {
+    "date": "2026-09-24",
+    "headline": "Lotsbroverket behöver byggas ut för sex miljoner",
+    "url": "https://alandsradio.ax/nyheter/lotsbroverket-behover-byggas-ut-for-sex-miljoner",
+    "skriv": false,
+    "nyhetsvarde": 4,
+    "tema": "infrastruktur",
+    "anledning": "Även om det handlar om betydande investeringar och framtida miljökrav, är detta primärt en teknisk och kommunal infrastrukturfråga. Den saknar den djupare politiska, samhälleliga eller autonomirelaterade vinkel som Julius söker för en ledarartikel. Det är en rutinåtgärd gällande avloppsrening, snarare än en konflikt, ett autonomibeslut eller en händelse av större nationell/internationell betydelse. [nyhetsvärde 4 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-09-24",
+    "headline": "Ny vattenutställning ska täppa till kunskapsluckor",
+    "url": "https://alandsradio.ax/nyheter/ny-vattenutstallning-ska-tappa-till-kunskapsluckor",
+    "skriv": false,
+    "nyhetsvarde": 2,
+    "tema": "miljöutbildning",
+    "anledning": "Trivial notis om en lokal utställning. Inget politiskt, samhälleligt eller ekonomiskt avgörande. Saknar den tyngd som behövs för en ledare av Julius Sundblom. [nyhetsvärde 2 < 6]",
+    "fallback": false
   }
 ]
