@@ -9198,5 +9198,15 @@
     "tema": "sport",
     "anledning": "Ren sportresultat-rapportering av lokal karaktär, saknar relevans för ledarartikel. Obetydligt. [nyhetsvärde 1 < 6]",
     "fallback": false
+  },
+  {
+    "date": "2026-09-24",
+    "headline": "Omstart på eventuellt tomtbyte mellan staden och Jomala",
+    "url": "https://alandsradio.ax/nyheter/omstart-pa-eventuellt-tomtbyte-mellan-staden-och-jomala",
+    "skriv": false,
+    "nyhetsvarde": 3,
+    "tema": "lokal förvaltning",
+    "anledning": "Trivial notis om rutinåtgärd och omstart av ett tomtbyte, saknar den större politiska eller samhälleliga digniteten för en ledare. [nyhetsvärde 3 < 6]",
+    "fallback": false
   }
 ]
