@@ -9098,5 +9098,105 @@
     "tema": "miljöutbildning",
     "anledning": "Trivial notis om en lokal utställning. Inget politiskt, samhälleligt eller ekonomiskt avgörande. Saknar den tyngd som behövs för en ledare av Julius Sundblom. [nyhetsvärde 2 < 6]",
     "fallback": false
+  },
+  {
+    "date": "2026-09-24",
+    "headline": "Saltviks kommundirektör säger upp sig",
+    "url": "https://alandsradio.ax/nyheter/saltviks-kommundirektor-sager-upp-sig",
+    "skriv": false,
+    "nyhetsvarde": 2,
+    "tema": "småkommunal förvaltning",
+    "anledning": "En kommundirektörs uppsägning är en rutinåtgärd. Ingen större politisk, samhällelig eller autonomirelevant händelse. För lokal och trivial notis för en ledare. [nyhetsvärde 2 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-09-24",
+    "headline": "Viking Line betalar ut en till dividend",
+    "url": "https://alandsradio.ax/nyheter/viking-line-betalar-ut-en-till-dividend",
+    "skriv": false,
+    "nyhetsvarde": 3,
+    "tema": "ekonomi",
+    "anledning": "Ren rutinåtgärd gällande dividendutbetalning, saknar konflikt, politisk eller samhällelig relevans för en ledare. [nyhetsvärde 3 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-09-24",
+    "headline": "Årets äppelskörd har startat bra",
+    "url": "https://alandsradio.ax/nyheter/arets-appelskord-har-startat-bra",
+    "skriv": false,
+    "nyhetsvarde": 3,
+    "tema": "ekonomi",
+    "anledning": "Det är en rutinåtgärd och enbart en notis om en del av ekonomin. Den saknar den tyngd och konflikt som Julius söker för en ledarartikel. [nyhetsvärde 3 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-09-24",
+    "headline": "Hungerdagen samlar till Röda korsets katastroffond",
+    "url": "https://alandsradio.ax/nyheter/hungerdagen-samlar-till-roda-korsets-katastroffond",
+    "skriv": false,
+    "nyhetsvarde": 3,
+    "tema": "välgörenhet",
+    "anledning": "Välgörenhet är visserligen en del av det goda samhället, men denna insamling är en rutinåtgärd och saknar den politiska eller samhälleliga spännvidd som krävs för en ledarartikel. Den är inte tillräckligt kontroversiell, nyskapande eller kopplad till Ålands ställning för att motivera Sundbloms penna. Att pengarna går till en allmän katastroffond, snarare än en specifik åländsk fråga, minskar också dess relevans för en ledare i Tidningen Åland 1926. [nyhetsvärde 3 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-09-24",
+    "headline": "Sjödagarna fortsätter – Pyro och party tecknar avtal till 2030",
+    "url": "https://alandsradio.ax/nyheter/sjodagarna-fortsatter-pyro-och-party-tecknar-avtal-till-2030",
+    "skriv": false,
+    "nyhetsvarde": 2,
+    "tema": "lokal underhållning",
+    "anledning": "Trivial notis om ett lokalt underhållningsevenemang, saknar politisk, samhällelig eller existentiell bäring för en ledarartikel. [nyhetsvärde 2 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-09-24",
+    "headline": "Viktigt att Norden står enat, men Åland måste få vara med i Haga-samarbetet",
+    "url": "https://alandsradio.ax/nyheter/viktigt-att-norden-star-enat-men-aland-maste-fa-vara-med-i-haga-samarbetet",
+    "skriv": true,
+    "nyhetsvarde": 8,
+    "tema": "självstyrelse, internationell politik, försvar",
+    "anledning": "Frågan om Ålands deltagande i nordiskt försvarssamarbete, särskilt Haga-samarbetet, har direkt bäring på Ålands autonomi och internationella ställning, samt säkerheten i regionen. Det finns en tydlig konflikt (Åland vill vara med, men är inte fullt delaktigt) och substans för att argumentera för Ålands rätt och behov av att delta fullt ut i dessa diskussioner, särskilt med tanke på den geopolitiska utvecklingen. Detta ryms väl inom Julius Sundbloms intresse för Ålands plats i världen och dess självstyrelse.",
+    "fallback": false
+  },
+  {
+    "date": "2026-09-24",
+    "headline": "Utskott avslutar granskning av elhybridaffären",
+    "url": "https://alandsradio.ax/nyheter/utskott-avslutar-granskning-av-elhybridaffaren",
+    "skriv": true,
+    "nyhetsvarde": 8,
+    "tema": "ekonomi, rättvisa, självstyrelse, modernitetens förfall",
+    "anledning": "Stora summor i skadestånd och misstankar om tjänstefel i hanteringen av landskapsregeringens avtal är av stort intresse. Frågan om huruvida olagligheter begåtts och hur landskapet förvaltar sina medel, samt hur beslut fattas, har stor samhällelig relevans och berör direkt den åländska självstyrelsens rykte och ansvar. Temat om modernitetens förfall kan lyftas fram i hanteringen av avtalet.",
+    "fallback": false
+  },
+  {
+    "date": "2026-09-24",
+    "headline": "Utplacerad klient vände sig till besvärsnämnden – förlorade men nämnden var oeni",
+    "url": "https://alandsradio.ax/nyheter/utplacerad-klient-vande-sig-till-besvarsnamnden-forlorade-men-namnden-var-oenig",
+    "skriv": false,
+    "nyhetsvarde": 3,
+    "tema": "socialpolitik",
+    "anledning": "Även om det rör social trygghet och ett principiellt beslut, är ärendet i sig för specifikt och individuellt, och saknar den bredare politiska eller samhälleliga relevansen som Julius eftersträvar för en ledare år 1926. Den internationella aspekten med Sverige och möjligen Europadomstolen är inte tillräckligt relevant för Julius perspektiv, och han skulle se det som en modern byråkratisk angelägenhet. Oenigheten i nämnden är intressant men inte tillräckligt för att höja det till ledarnivå. [nyhetsvärde 3 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-09-24",
+    "headline": "Svenskspråkig kristelefon fortsätter – framtiden avgörs i december",
+    "url": "https://alandsradio.ax/nyheter/svensksprakig-kristelefon-fortsatter-framtiden-avgors-i-december",
+    "skriv": false,
+    "nyhetsvarde": 2,
+    "tema": "sociala frågor",
+    "anledning": "Ämnet är i sig relevant för samhället men nyheten rör endast en organisations interna förhandlingar och personalneddragningar, inte ett beslut eller en konflikt med direkt åländsk relevans eller substans nog för en ledare av Julius. Frågan om den åländska tillgången är inte avgjord, och det saknas politisk eller autonomi-vinkel. [nyhetsvärde 2 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-09-24",
+    "headline": "Åland marathon är nu en officiell bana",
+    "url": "https://alandsradio.ax/nyheter/aland-marathon-ar-nu-en-officiell-bana",
+    "skriv": false,
+    "nyhetsvarde": 1,
+    "tema": "sport",
+    "anledning": "Ren sportresultat-rapportering av lokal karaktär, saknar relevans för ledarartikel. Obetydligt. [nyhetsvärde 1 < 6]",
+    "fallback": false
   }
 ]
