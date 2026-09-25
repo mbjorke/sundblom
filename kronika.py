@@ -28,9 +28,11 @@ log = logging.getLogger(__name__)
 
 # ── Konfiguration ────────────────────────────────────────────────────────────
 KRONIKA_ENABLED = os.environ.get("KRONIKA_ENABLED", "1") == "1"
-# Krönikan skrivs bara i dagens sista körning (22:00 EET = 20:00 UTC): dagen
-# ska få hela sin chans att bjuda på en riktig nyhet först, och söndagens
-# veckobetraktelse (reflect.py, 17:00 UTC) ska hinna före krönikan.
+# Ett golv i UTC, inte ett klockslag: dagen ska få hela sin chans att bjuda på
+# en riktig nyhet först. Av de schemalagda körningarna passerar bara den sista
+# (20:00 UTC), men en manuell workflow_dispatch på eftermiddagen gör det också
+# och räddar dagen om den sista körningen uteblir. Golvet ligger efter
+# söndagens veckobetraktelse (reflect.py, 17:00 UTC), så den hinner före.
 KRONIKA_AFTER_UTC_HOUR = int(os.environ.get("KRONIKA_AFTER_UTC_HOUR", "18"))
 # Minsta antal dagar mellan två krönikor (en helg ger alltså en, ej två).
 KRONIKA_MIN_DAYS = int(os.environ.get("KRONIKA_MIN_DAYS", "3"))
