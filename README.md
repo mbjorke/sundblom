@@ -118,6 +118,10 @@ efter söndagens veckobetraktelse (`reflect.py`, 17:00 UTC): skriver den en
 betraktelse är dagen inte längre tom och krönikan uteblir. I praktiken ger det
 krönika på lördagar och betraktelse på söndagar.
 
+Underlaget räknar bara riktiga nyheter: tidigare krönikor och söndagens
+veckobetraktelser filtreras bort, eftersom de är Julius egen text och inte
+material ur Ålands Radio.
+
 Krönikan sparas som vanlig artikel-JSON med `"kind": "kronika"` och ett
 `sources`-fält. På sajten visar högerkolumnen då **veckans rubriker** med
 länkar till Ålands Radio i stället för en enskild originalartikel, och arkivet
@@ -131,11 +135,13 @@ krönikan och veckobetraktelsen anropar den därför efter att ha sparat sin tex
 annars blir texten liggande i repot utan att synas på sajten.
 
 Triggern görs om en gång direkt, både när anropet kastar och när flytten av
-`deploy` nekas. Går den ändå inte igenom upptäcker nästa körning det: dagens
-nyaste artikel är då stämplad senare än `last_updated` i `src/build-meta.json`
-**så som den ser ut på deploy-branchen**. Beviset måste hämtas därifrån — filen
-på `main` uppdateras i samma commit som gjordes före ref-flytten, och skulle
-annars dölja just det fel den ska avslöja.
+`deploy` nekas. Går den ändå inte igenom upptäcker nästa körning det: den
+nyaste artikeln från de senaste två veckorna är då stämplad senare än
+`last_updated` i `src/build-meta.json` **så som den ser ut på deploy-branchen**.
+Beviset måste hämtas därifrån — filen på `main` uppdateras i samma commit som
+gjordes före ref-flytten, och skulle annars dölja just det fel den ska avslöja.
+Fönstret sträcker sig bakåt eftersom deployen kan misslyckas i dygnets sista
+körning, varpå datumet hinner byta innan nästa försök.
 
 Torrkörning utan API-nyckel — visar beslut, underlag och prompt:
 

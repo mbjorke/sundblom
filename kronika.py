@@ -126,10 +126,15 @@ def samla_underlag(today: str, dagar: int = KRONIKA_DAGAR,
     """
     grans = _datum_bakat(today, dagar)
 
+    # Varken tidigare krönikor eller söndagens veckobetraktelser är nyheter:
+    # de är Julius egen text. Räknas de som underlag kan en betraktelse ensam
+    # lyfta en annars för tunn vecka över tröskeln, och prompten skulle
+    # presentera den som en artikel ur Ålands Radio.
     ledare = [
         a for a in _las_artiklar()
         if grans <= a.get("date", "") <= today
         and a.get("kind") != KRONIKA_SLUG_PREFIX
+        and a.get("content_type") != "reflektion"
     ]
     ledare.sort(key=lambda a: a.get("date", ""), reverse=True)
 

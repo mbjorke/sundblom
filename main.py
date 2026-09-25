@@ -41,6 +41,9 @@ GITHUB_API_BASE  = "https://api.github.com"
 _ROOT = os.path.dirname(os.path.abspath(__file__))
 RIKTLINJER_PATH = os.path.join(_ROOT, "riktlinjer.json")
 ARTICLES_DIR = os.path.join(_ROOT, "src", "content", "articles")
+# Så långt bak en sparad men odeployad artikel letas upp. Måste vara mer än
+# ett dygn: deployen kan misslyckas i dygnets sista körning.
+DEPLOY_KOLL_DAGAR = 14
 
 # ── GitHub config (from env) ───────────────────────────────────────────────
 GITHUB_TOKEN  = os.environ.get("GITHUB_TOKEN", "")
@@ -712,15 +715,22 @@ def _deploy_build_meta() -> str | None:
         return None
 
 
-def _deploy_efterslapning(today: str) -> str | None:
+def _deploy_efterslapning(today: str, dagar: int = DEPLOY_KOLL_DAGAR) -> str | None:
     """Rubriken på en artikel som sparats men aldrig deployats, annars None.
 
-    Dagens nyaste artikel jämförs med build-meta på deploy-branchen. Är
-    artikeln nyare gick deploy-triggern aldrig igenom för den, och texten
-    ligger osynlig i repot.
+    Den nyaste artikeln inom fönstret jämförs med build-meta på
+    deploy-branchen. Är artikeln nyare gick deploy-triggern aldrig igenom för
+    den, och texten ligger osynlig i repot.
+
+    Fönstret sträcker sig bakåt av en anledning: misslyckas deployen i dygnets
+    sista körning hinner datumet byta innan nästa försök, och en sökning som
+    bara omfattade dagens filer skulle aldrig hitta artikeln igen.
     """
+    forsta = datetime.date.fromisoformat(today) - datetime.timedelta(days=dagar)
     artiklar = []
-    for path in glob.glob(os.path.join(ARTICLES_DIR, f"{today}-*.json")):
+    for path in glob.glob(os.path.join(ARTICLES_DIR, "*.json")):
+        if not (forsta.isoformat() <= os.path.basename(path)[:10] <= today):
+            continue
         try:
             with open(path, "r", encoding="utf-8") as f:
                 artiklar.append(json.load(f))
