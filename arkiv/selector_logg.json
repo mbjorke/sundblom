@@ -9208,5 +9208,75 @@
     "tema": "lokal förvaltning",
     "anledning": "Trivial notis om rutinåtgärd och omstart av ett tomtbyte, saknar den större politiska eller samhälleliga digniteten för en ledare. [nyhetsvärde 3 < 6]",
     "fallback": false
+  },
+  {
+    "date": "2026-09-25",
+    "headline": "Brunstiga älgar tar sig in i trädgårdar på Brändö – jaktledaren tipsar om hur du",
+    "url": "https://alandsradio.ax/nyheter/brunstiga-algar-tar-sig-in-i-tradgardar-pa-brando-jaktledaren-tipsar-om-hur-du-blir-av-med-dem",
+    "skriv": false,
+    "nyhetsvarde": 2,
+    "tema": "smålokal notis",
+    "anledning": "Trivial lokal notis om djur, saknar politisk, samhällelig eller existentiell bäring för en ledarartikel. Ingen koppling till självstyrelse, svensk identitet, samhällsordning eller sedlighet. Ingen substans för en ledare av Julius Sundblom. [nyhetsvärde 2 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-09-25",
+    "headline": "En miljon åkte med skärgårdstrafiken",
+    "url": "https://alandsradio.ax/nyheter/en-miljon-akte-med-skargardstrafiken",
+    "skriv": false,
+    "nyhetsvarde": 3,
+    "tema": "ekonomi/trafik",
+    "anledning": "Statistik över passagerar- och fordonsvolymer i skärgårdstrafiken är en rutinmässig notis. Den saknar den politiska, samhälleliga eller etiska spännvidd som krävs för en ledarartikel av Julius Sundblom. Ingen konflikt, inget beslut, ingen koppling till självstyrelse eller modernitetens förfall. [nyhetsvärde 3 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-09-25",
+    "headline": "Budbil förlorar Matkahuoltos leveranser till Åland Post",
+    "url": "https://alandsradio.ax/nyheter/budbil-forlorar-matkahuoltos-leveranser-till-aland-post",
+    "skriv": false,
+    "nyhetsvarde": 3,
+    "tema": "ekonomi",
+    "anledning": "Småskalig ekonomisk förändring utan större redaktionell vinkel för Julius. Det handlar om ett kommersiellt avtal som byter händer, inte om principer rörande autonomi, samhällsordning eller sedlighet. [nyhetsvärde 3 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-09-25",
+    "headline": "Eckerölinjen förbereder resenärerna på hundtät helg",
+    "url": "https://alandsradio.ax/nyheter/eckerolinjen-forbereder-resenarerna-pa-hundtat-helg",
+    "skriv": false,
+    "nyhetsvarde": 1,
+    "tema": "trivial notis",
+    "anledning": "Trivial notis om hundutställning och färjetransport, ingen koppling till Julius Sundbloms redaktionella värld eller substans för en ledare. [nyhetsvärde 1 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-09-25",
+    "headline": "Löfström: Risk att fartyg måste tas ur trafik på grund av höga bränslepriser",
+    "url": "https://alandsradio.ax/nyheter/lofstrom-risk-att-fartyg-maste-tas-ur-trafik-pa-grund-av-hoga-branslepriser",
+    "skriv": true,
+    "nyhetsvarde": 8,
+    "tema": "ekonomi",
+    "anledning": "Ekonomiska bekymmer för sjöfarten, en central näring för Åland, med koppling till rikspolitik och EU-frågor. Löfströms uttalande har substans och potentiell påverkan på Ålands ekonomi och därmed självstyrelsen.",
+    "fallback": false
+  },
+  {
+    "date": "2026-09-25",
+    "headline": "”Snattas otroligt mycket” – staden ordnade nytt möte om stök på stan",
+    "url": "https://alandsradio.ax/nyheter/snattas-otroligt-mycket-staden-ordnade-nytt-mote-om-stok-pa-stan",
+    "skriv": false,
+    "nyhetsvarde": 4,
+    "tema": "sedlighet",
+    "anledning": "Ämnet berör sedlighet och samhällsordning, men notisen saknar konkret agerande eller beslut som skulle motivera en ledarartikel. Det är mer en rapportering om ett problem än en nyhet med tillräcklig substans för Julius att utgå ifrån. [nyhetsvärde 4 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-09-25",
+    "headline": "ÅMHM: Avtal med ÅHS kan lösa hemservicens medicinproblem",
+    "url": "https://alandsradio.ax/nyheter/amhm-avtal-med-ahs-kan-losa-hemservicens-medicinproblem",
+    "skriv": false,
+    "nyhetsvarde": 4,
+    "tema": "socialvård",
+    "anledning": "Ämnet berör socialvård och byråkrati, men saknar den djupare politiska eller samhälleliga vinkel som krävs för en ledare av Julius Sundblom. Problematiken är för specifik och lösningen för teknisk. [nyhetsvärde 4 < 6]",
+    "fallback": false
   }
 ]
