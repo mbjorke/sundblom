@@ -31,8 +31,10 @@ Ett stort tack till **Jimmy Flink** och hans [klassiskanyheter.se](https://klass
 Python (main.py)
   → Scrapa alandsradio.ax (upp till 20 artiklar, DOM-ordning)
   → Filtrera bort redan processade (seen-urls.json)
+  → Redaktörsomdömet (selector.py) → förtjänar nyheten en ledare alls?
   → Anropa Claude API → Julius Sundbloms tolkning
   → Pusha src/content/articles/YYYY-MM-DD-slug.json till GitHub
+  → Gav dagen ingen ledare? → veckokrönika (kronika.py)
 
 Cloudflare Pages (vid varje push)
   → bun install && bun run build
@@ -47,6 +49,8 @@ Cloudflare Pages (vid varje push)
 ```
 .
 ├── main.py                          # Scraping + Claude API + JSON-push
+├── selector.py                      # Redaktörsomdömet — grind före generering
+├── kronika.py                       # Veckokrönika på dagar utan värdig nyhet
 ├── backfill.py                      # Manuell backfill av historiska artiklar
 ├── requirements.txt                 # Python-beroenden
 ├── package.json                     # Astro + Bun
@@ -75,6 +79,76 @@ Cloudflare Pages (vid varje push)
     └── workflows/
         ├── daily.yml                # Kör kl. 16:00 UTC varje dag
         └── backfill.yml             # Manuell backfill-trigger
+```
+
+---
+
+## Redaktörsomdömet och veckokrönikan
+
+### Grinden (`selector.py`)
+
+Varje nyhet bedöms av en billig modell innan Julius får skriva: nyhetsvärde
+1–10, tematisk passning och substans. Under `SELECTOR_MIN_VALUE` (default 6)
+blir det ingen ledare. Grinden är avsiktligt sträng — Julius var redaktör och
+valde bort. Ungefär 12 % av nyheterna passerar.
+
+### Krönikan (`kronika.py`)
+
+Baksidan av en sträng grind: på helger och stilla dagar avvisas *allt*, och då
+publicerades tidigare ingenting alls — över hälften av dagarna sedan mars var
+sådana tomma dagar. I stället för att sänka ribban för ledaren skriver Julius
+då en **veckokrönika**: en betraktelse över veckan som gått, byggd på veckans
+publicerade ledare och de notiser som avvisades.
+
+Krönikan skrivs när **alla** villkor är uppfyllda:
+
+| Villkor | Miljövariabel | Default |
+|---|---|---|
+| Krönikan är påslagen | `KRONIKA_ENABLED` | `1` |
+| Körningen sker efter denna timme UTC | `KRONIKA_AFTER_UTC_HOUR` | `18` |
+| Ingen utgåva är publicerad detta datum | — | — |
+| Minst så här många dagar sedan förra krönikan (en helg ger alltså en, inte två) | `KRONIKA_MIN_DAYS` | `3` |
+| Veckan bjöd på minst så här många rubriker | `KRONIKA_MIN_RUBRIKER` | `5` |
+| Så många dagar bakåt krönikan blickar | `KRONIKA_DAGAR` | `7` |
+
+Tröskeln är ett golv, inte ett klockslag. Av de schemalagda körningarna passerar
+bara den sista (20:00 UTC = 22:00 EET vintertid, 23:00 EEST sommartid), medan en
+manuell `workflow_dispatch` på eftermiddagen också kan göra det. Golvet ligger
+efter söndagens veckobetraktelse (`reflect.py`, 17:00 UTC): skriver den en
+betraktelse är dagen inte längre tom och krönikan uteblir. I praktiken ger det
+krönika på lördagar och betraktelse på söndagar.
+
+Underlaget räknar bara riktiga nyheter: tidigare krönikor och söndagens
+veckobetraktelser filtreras bort, eftersom de är Julius egen text och inte
+material ur Ålands Radio.
+
+Krönikan sparas som vanlig artikel-JSON med `"kind": "kronika"` och ett
+`sources`-fält. På sajten visar högerkolumnen då **veckans rubriker** med
+länkar till Ålands Radio i stället för en enskild originalartikel, och arkivet
+märker posten med *Veckokrönika*.
+
+### Deploy-triggern
+
+Cloudflare Pages lyssnar på branchen `deploy`, inte `main`. Endast
+`save_last_headline()` flyttar den — pushar av artikel-JSON gör det inte. Både
+krönikan och veckobetraktelsen anropar den därför efter att ha sparat sin text;
+annars blir texten liggande i repot utan att synas på sajten.
+
+Triggern görs om en gång direkt, både när anropet kastar och när flytten av
+`deploy` nekas. Går den ändå inte igenom upptäcker nästa körning det: den
+nyaste artikeln från de senaste två veckorna är då stämplad senare än
+`last_updated` i `src/build-meta.json` **så som den ser ut på deploy-branchen**.
+Beviset måste hämtas därifrån — filen på `main` uppdateras i samma commit som
+gjordes före ref-flytten, och skulle annars dölja just det fel den ska avslöja.
+Fönstret sträcker sig bakåt eftersom deployen kan misslyckas i dygnets sista
+körning, varpå datumet hinner byta innan nästa försök.
+
+Torrkörning utan API-nyckel — visar beslut, underlag och prompt:
+
+```bash
+python kronika.py --selftest             # för idag
+python kronika.py --selftest --datum 2026-09-06
+python selector.py --selftest
 ```
 
 ---

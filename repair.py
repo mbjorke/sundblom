@@ -78,6 +78,8 @@ def update_article(path: str, data: dict, sha: str) -> None:
 
 
 def main() -> None:
+    """Går igenom arkivet och genererar om ledare vars julius_text är
+    trunkerad. Krönikor och reflektioner lämnas orörda."""
     if not GOOGLE_API_KEY:
         log.error("GOOGLE_API_KEY saknas.")
         sys.exit(1)
@@ -95,6 +97,12 @@ def main() -> None:
     for file_info in sorted(files, key=lambda f: f["name"]):
         data, sha = get_article(file_info)
         julius = data.get("julius_text", "")
+
+        # Krönikor och reflektioner saknar källartikel — generate_sundblom
+        # skulle skriva om dem till ledare utan underlag.
+        if data.get("kind") == "kronika" or data.get("content_type") == "reflektion":
+            skipped += 1
+            continue
 
         if len(julius) >= MIN_JULIUS_LENGTH:
             skipped += 1

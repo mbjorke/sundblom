@@ -15,6 +15,7 @@ import os
 import re
 import sys
 import json
+import glob
 import base64
 import logging
 import datetime
@@ -24,6 +25,7 @@ from bs4 import BeautifulSoup
 from google import genai
 from google.genai import types as genai_types
 import selector  # Redaktörsomdömet — LLM-grind före generering
+import kronika   # Veckokrönikan — skrivs på dagar utan nyhet värd en ledare
 
 # ── Logging ──────────────────────────────────────────────────────────────────
 logging.basicConfig(
@@ -36,7 +38,12 @@ log = logging.getLogger(__name__)
 # ── Constants ─────────────────────────────────────────────────────────────────
 ALANDS_RADIO_URL = "https://alandsradio.ax/nyheter"
 GITHUB_API_BASE  = "https://api.github.com"
-RIKTLINJER_PATH = os.path.join(os.path.dirname(os.path.abspath(__file__)), "riktlinjer.json")
+_ROOT = os.path.dirname(os.path.abspath(__file__))
+RIKTLINJER_PATH = os.path.join(_ROOT, "riktlinjer.json")
+ARTICLES_DIR = os.path.join(_ROOT, "src", "content", "articles")
+# Så långt bak en sparad men odeployad artikel letas upp. Måste vara mer än
+# ett dygn: deployen kan misslyckas i dygnets sista körning.
+DEPLOY_KOLL_DAGAR = 14
 
 # ── GitHub config (from env) ───────────────────────────────────────────────
 GITHUB_TOKEN  = os.environ.get("GITHUB_TOKEN", "")
@@ -486,25 +493,12 @@ def save_seen_url(url: str, headline: str, date_iso: str) -> None:
     log.info("URL sparad i seen-urls.json: %s", url)
 
 
-def load_last_headline() -> str:
-    """Hämtar senast publicerad rubrik från last_headline.txt i repot."""
-    if not GITHUB_TOKEN or not GITHUB_REPO:
-        return ""
-    headers = {
-        "Authorization": f"Bearer {GITHUB_TOKEN}",
-        "Accept": "application/vnd.github+json",
-        "X-GitHub-Api-Version": "2022-11-28",
-    }
-    api_url = f"{GITHUB_API_BASE}/repos/{GITHUB_REPO}/contents/last_headline.txt"
-    resp = requests.get(api_url, headers=headers, params={"ref": GITHUB_BRANCH})
-    if resp.status_code == 404:
-        return ""
-    resp.raise_for_status()
-    return base64.b64decode(resp.json()["content"]).decode("utf-8").strip()
-
-
-def save_last_headline(headline: str) -> None:
+def save_last_headline(headline: str) -> bool:
     """Sparar senast publicerad rubrik och build-meta i ett enda atomärt commit.
+
+    Returnerar True endast om deploy-branchen faktiskt flyttades — det är det
+    enda som får CF Pages att bygga. Lyckas commiten men inte ref-flytten är
+    texten fortfarande osynlig, och då måste anroparen försöka igen.
 
     Använder Git Trees API för att uppdatera last_headline.txt OCH
     src/build-meta.json i samma commit — utan [skip cf] — så att CF Pages
@@ -512,7 +506,7 @@ def save_last_headline(headline: str) -> None:
     Det gör att index.html får ett nytt hash och laddas upp av CF Pages.
     """
     if not GITHUB_TOKEN or not GITHUB_REPO:
-        return
+        return False
     headers = {
         "Authorization": f"Bearer {GITHUB_TOKEN}",
         "Accept": "application/vnd.github+json",
@@ -592,7 +586,7 @@ def save_last_headline(headline: str) -> None:
         break
     else:
         log.error("Kunde inte uppdatera branch-ref efter 5 försök — hoppar över deploy-trigger.")
-        return
+        return False
 
     # 6. Flytta deploy-branchen till samma commit → triggar CF Pages exakt en gång
     #    CF Pages är konfigurerat att lyssna på 'deploy', inte 'main',
@@ -602,7 +596,8 @@ def save_last_headline(headline: str) -> None:
         headers=headers,
         json={"sha": new_commit_sha, "force": True},
     )
-    if deploy_resp.status_code == 200:
+    deployad = deploy_resp.status_code == 200
+    if deployad:
         log.info("deploy-branch uppdaterad → CF Pages-deploy triggas.")
     else:
         log.warning("Kunde inte uppdatera deploy-branch: %s", deploy_resp.text)
@@ -611,13 +606,18 @@ def save_last_headline(headline: str) -> None:
         "last_headline.txt + build-meta.json uppdaterade atomärt (commit %s).",
         new_commit_sha[:7],
     )
+    return deployad
 
 
 def save_article_json(headline: str, julius_text: str, body: str, author: str,
-                      source_url: str, date_iso: str, slug: str) -> None:
+                      source_url: str, date_iso: str, slug: str,
+                      kind: str = "ledare", sources: list[dict] | None = None) -> None:
     """
     Pushar artikel-data som JSON till src/content/articles/YYYY-MM-DD-slug.json.
     Astro läser dessa filer och bygger statisk HTML vid deployment.
+
+    kind='kronika' + sources = veckokrönika; då visar högerkolumnen veckans
+    rubriker i stället för en originalartikel.
     """
     path = f"src/content/articles/{date_iso}-{slug}.json"
     article = {
@@ -629,9 +629,13 @@ def save_article_json(headline: str, julius_text: str, body: str, author: str,
         "date": date_iso,
         "published_at": datetime.datetime.now(datetime.timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
         "slug": slug,
+        "kind": kind,
     }
+    if sources:
+        article["sources"] = sources
     content = json.dumps(article, ensure_ascii=False, indent=2)
-    _push_file(path, content, f"[skip ci] 🗞️ Ny artikel: {headline[:60]}")
+    etikett = "🖋️ Veckokrönika" if kind == "kronika" else "🗞️ Ny artikel"
+    _push_file(path, content, f"[skip ci] {etikett}: {headline[:60]}")
     log.info("Artikel JSON sparad: %s", path)
 
 
@@ -668,11 +672,146 @@ def publish_og_image(png_bytes: bytes) -> None:
     log.info("✅ OG-bild pushad.")
 
 
+def trigga_deploy(headline: str) -> bool:
+    """save_last_headline() med ett omförsök. Den är det enda som flyttar
+    deploy-branchen, så ett tyst misslyckande betyder att texten aldrig syns.
+    Ett nekat ref-anrop räknas som misslyckande, inte bara ett kastat fel."""
+    if not GITHUB_TOKEN or not GITHUB_REPO:
+        log.info("GitHub-miljövariabler saknas — ingen deploy att trigga.")
+        return True
+    for forsok in (1, 2):
+        try:
+            if save_last_headline(headline):
+                return True
+            log.warning("Deploy-branchen flyttades inte (försök %d/2).", forsok)
+        except requests.RequestException as e:
+            log.warning("Deploy-trigger misslyckades (försök %d/2): %s", forsok, e)
+    return False
+
+
+def _deploy_build_meta() -> str | None:
+    """last_updated ur build-meta.json så som den ser ut på deploy-branchen.
+
+    CF Pages bygger från deploy, inte från main, så det är enda stället där
+    filen bevisar att en text faktiskt gått ut. None om den inte går att läsa.
+    """
+    if not GITHUB_TOKEN or not GITHUB_REPO:
+        return None
+    headers = {
+        "Authorization": f"Bearer {GITHUB_TOKEN}",
+        "Accept": "application/vnd.github+json",
+        "X-GitHub-Api-Version": "2022-11-28",
+    }
+    api_url = f"{GITHUB_API_BASE}/repos/{GITHUB_REPO}/contents/src/build-meta.json"
+    try:
+        resp = requests.get(api_url, headers=headers, params={"ref": "deploy"})
+        if resp.status_code != 200:
+            log.warning("Kunde inte läsa build-meta från deploy (%s).", resp.status_code)
+            return None
+        raw = base64.b64decode(resp.json()["content"]).decode("utf-8")
+        return json.loads(raw).get("last_updated", "")
+    except (requests.RequestException, json.JSONDecodeError, KeyError) as e:
+        log.warning("Kunde inte läsa build-meta från deploy — %s", e)
+        return None
+
+
+def _deploy_efterslapning(today: str, dagar: int = DEPLOY_KOLL_DAGAR) -> str | None:
+    """Rubriken på en artikel som sparats men aldrig deployats, annars None.
+
+    Den nyaste artikeln inom fönstret jämförs med build-meta på
+    deploy-branchen. Är artikeln nyare gick deploy-triggern aldrig igenom för
+    den, och texten ligger osynlig i repot.
+
+    Fönstret sträcker sig bakåt av en anledning: misslyckas deployen i dygnets
+    sista körning hinner datumet byta innan nästa försök, och en sökning som
+    bara omfattade dagens filer skulle aldrig hitta artikeln igen.
+    """
+    forsta = datetime.date.fromisoformat(today) - datetime.timedelta(days=dagar)
+    artiklar = []
+    for path in glob.glob(os.path.join(ARTICLES_DIR, "*.json")):
+        if not (forsta.isoformat() <= os.path.basename(path)[:10] <= today):
+            continue
+        try:
+            with open(path, "r", encoding="utf-8") as f:
+                artiklar.append(json.load(f))
+        except (json.JSONDecodeError, OSError):
+            continue
+    if not artiklar:
+        return None
+    senaste = max(artiklar, key=lambda a: a.get("published_at", ""))
+    byggd = _deploy_build_meta()
+    if byggd is None:
+        return None
+    if senaste.get("published_at", "") > byggd:
+        return senaste.get("headline", "")
+    return None
+
+
+def atergarda_missad_deploy(today: str) -> None:
+    """Gör om en deploy-trigger som aldrig gick igenom i en tidigare körning."""
+    rubrik = _deploy_efterslapning(today)
+    if not rubrik:
+        return
+    log.warning("Osynlig artikel hittad (%s) — gör om deploy-triggern.", rubrik[:60])
+    if trigga_deploy(rubrik):
+        log.info("Deploy-triggern gick igenom i andra hand.")
+
+
+def skriv_kronika(today: str) -> bool:
+    """Veckokrönika på dagar då ingen nyhet höll måttet för en ledare.
+
+    Redaktörsomdömet avvisar med flit det mesta, och på stilla dagar avvisas
+    allt — då stod sidan tidigare stilla. I stället för att sänka ribban för
+    ledaren blickar Julius tillbaka på veckan som gått.
+    """
+    now_utc = datetime.datetime.now(datetime.timezone.utc)
+    underlag = kronika.samla_underlag(today, extra_omdomen=selector.dagens_omdomen())
+    beslut, varfor = kronika.bor_skriva_kronika(today, now_utc, underlag)
+    if not beslut:
+        log.info("🖋️ Ingen veckokrönika idag: %s", varfor)
+        return False
+    if not GOOGLE_API_KEY:
+        log.warning("GOOGLE_API_KEY saknas — krönikan kan inte skrivas.")
+        return False
+
+    log.info("🖋️ Skriver veckokrönika: %s", varfor)
+    try:
+        rubrik, text = kronika.generera(
+            underlag, SUNDBLOM_PROMPT, load_riktlinjer(), _call_api
+        )
+    except ValueError as e:
+        # Tom eller trunkerad text. Vi sparar ingenting: hade den skrivits till
+        # repot vore dagen räknad som publicerad och nästa försök blockerat.
+        log.error("🖋️ Krönikan förkastades — %s", e)
+        return False
+    slug = f"{kronika.KRONIKA_SLUG_PREFIX}-{slugify(rubrik, max_length=48)}"
+    save_article_json(
+        headline=rubrik,
+        julius_text=text,
+        body="",
+        author="Julius Sundblom",
+        source_url=ALANDS_RADIO_URL,
+        date_iso=today,
+        slug=slug,
+        kind="kronika",
+        sources=kronika.kallor(underlag),
+    )
+    # Flyttar deploy-branchen → CF Pages bygger om med krönikan överst.
+    # Misslyckas den är krönikan sparad men osynlig; nästa körning upptäcker
+    # det via build-meta och gör om försöket.
+    if not trigga_deploy(rubrik):
+        log.error("🖋️ Krönikan sparad men ej deployad — nästa körning gör om försöket.")
+    log.info("🖋️ Veckokrönika publicerad: %s", rubrik)
+    return True
+
+
 # ─────────────────────────────────────────────────────────────────────────────
 # MAIN
 # ─────────────────────────────────────────────────────────────────────────────
 
 def main() -> None:
+    """Dagens körning: skrapa Ålands Radio, låt redaktörsomdömet välja, skriv
+    ledare på det som höll måttet — och en veckokrönika om intet gjorde det."""
     log.info("═══ Åland igår och idag — daglig körning startar ═══")
 
     # 1. Scrape upp till 20 rubriker i DOM-ordning
@@ -681,14 +820,10 @@ def main() -> None:
         log.info("Inga rubriker hittades — avslutar.")
         return
 
-    # 2. Early exit: om topprubrik är oförändrad sedan senaste körning → spara API-anrop
-    last_headline = load_last_headline()
+    # 2. Ladda redan processade URLar. Det är det enda filtret vi behöver: en
+    #    oförändrad topprubrik säger ingenting om rubrikerna under den, och att
+    #    avbryta på den lämnade nya nyheter oprocessade tills toppen byttes ut.
     top_headline = headlines[0][0]
-    if top_headline == last_headline:
-        log.info("Topprubrik oförändrad (%s) — ingen ny artikel att publicera.", top_headline[:60])
-        return
-
-    # 3. Ladda redan processade URLar (undviker dubbletter vid helger/högtider)
     seen_urls = load_seen_urls()
 
     today = datetime.date.today().isoformat()
@@ -739,9 +874,12 @@ def main() -> None:
 
     if new_articles == 0:
         log.info("Inga nya artiklar att publicera idag.")
+        if not skriv_kronika(today):
+            atergarda_missad_deploy(today)
     else:
         log.info("%d ny/nya artikel(ar) publicerade.", new_articles)
-        save_last_headline(top_headline)
+        if not trigga_deploy(top_headline):
+            log.error("Artiklarna sparade men ej deployade — nästa körning gör om försöket.")
 
     # Töm redaktörsommödets logg (en gång per körning)
     selector.flush_log()

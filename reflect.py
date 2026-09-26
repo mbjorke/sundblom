@@ -491,6 +491,8 @@ def save_state(state: dict) -> None:
 # ─────────────────────────────────────────────────────────────────────────────
 
 def main() -> None:
+    """Veckans fristående betraktelse: bygger minnet, väljer läge, genererar
+    texten och sparar den jämte reflektionens tillstånd."""
     ap = argparse.ArgumentParser(description="Julius Sundblom reflekterar ur minne.")
     ap.add_argument("--selftest", action="store_true", help="validera minne/prompt utan API")
     ap.add_argument("--dry-run", action="store_true", help="generera men pusha ej")
@@ -542,6 +544,16 @@ def main() -> None:
     # Spara
     url = save_reflection(headline, julius_text, mode, focus, refs, today)
     log.info("Reflektion sparad: %s", url)
+
+    # Trigga deployen. _push_file skriver bara till main, och CF Pages lyssnar
+    # på deploy-branchen — utan detta blev reflektionen liggande osynlig ända
+    # tills nästa ledare publicerades. Ett misslyckande får inte hindra att
+    # reflection_state sparas nedan; main.py:s körning gör om försöket.
+    try:
+        if not M.trigga_deploy(headline):
+            log.error("Reflektionen sparad men ej deployad — görs om vid nästa körning.")
+    except Exception as e:  # noqa: BLE001 — state måste sparas oavsett
+        log.error("Deploy-triggern kastade (%s) — state sparas ändå.", e)
 
     # Uppdatera state
     recent_modes = (state.get("recent_modes", []) + [mode])[-6:]
