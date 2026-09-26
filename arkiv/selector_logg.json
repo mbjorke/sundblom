@@ -9368,5 +9368,15 @@
     "tema": "satir",
     "anledning": "Det är en satirisk krönika som refererar till nutida (1926) händelser på Åland, men dess form och innehåll är inte lämpligt för en ledarartikel av Julius Sundblom. Den är för modern i tonen och saknar den tyngd som krävs för en ledare om specifika beslut eller politiska vinklingar. [nyhetsvärde 3 < 6]",
     "fallback": false
+  },
+  {
+    "date": "2026-09-26",
+    "headline": "Fyllefärd på fyrhjuling gav villkorligt fängelse",
+    "url": "https://alandsradio.ax/nyheter/fyllefard-pa-fyrhjuling-gav-villkorligt-fangelse",
+    "skriv": false,
+    "nyhetsvarde": 3,
+    "tema": "brottslighet",
+    "anledning": "En enskild dom för rattfylleri är en trivial notis för en ledarartikel. Saknar större samhällsrelevans eller koppling till Julius redaktionella teman. [nyhetsvärde 3 < 6]",
+    "fallback": false
   }
 ]
