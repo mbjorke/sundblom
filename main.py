@@ -611,13 +611,18 @@ def save_last_headline(headline: str) -> bool:
 
 def save_article_json(headline: str, julius_text: str, body: str, author: str,
                       source_url: str, date_iso: str, slug: str,
-                      kind: str = "ledare", sources: list[dict] | None = None) -> None:
+                      kind: str = "ledare", sources: list[dict] | None = None,
+                      published_at: str | None = None) -> None:
     """
     Pushar artikel-data som JSON till src/content/articles/YYYY-MM-DD-slug.json.
     Astro läser dessa filer och bygger statisk HTML vid deployment.
 
     kind='kronika' + sources = veckokrönika; då visar högerkolumnen veckans
     rubriker i stället för en originalartikel.
+
+    published_at styr sorteringen på sajten och sätts normalt till nu. En
+    efterhandsskriven text måste ange tidpunkten själv — annars hamnar den
+    överst på förstasidan trots att den hör till en passerad dag.
     """
     path = f"src/content/articles/{date_iso}-{slug}.json"
     article = {
@@ -627,7 +632,8 @@ def save_article_json(headline: str, julius_text: str, body: str, author: str,
         "author": author or "Ålands Radio",
         "source_url": source_url,
         "date": date_iso,
-        "published_at": datetime.datetime.now(datetime.timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
+        "published_at": published_at or datetime.datetime.now(
+            datetime.timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
         "slug": slug,
         "kind": kind,
     }

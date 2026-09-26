@@ -51,6 +51,7 @@ Cloudflare Pages (vid varje push)
 ├── main.py                          # Scraping + Claude API + JSON-push
 ├── selector.py                      # Redaktörsomdömet — grind före generering
 ├── kronika.py                       # Veckokrönika på dagar utan värdig nyhet
+├── backfill_kronikor.py             # Krönikor i efterhand för passerade tysta dagar
 ├── backfill.py                      # Manuell backfill av historiska artiklar
 ├── requirements.txt                 # Python-beroenden
 ├── package.json                     # Astro + Bun
@@ -142,6 +143,25 @@ Beviset måste hämtas därifrån — filen på `main` uppdateras i samma commit
 gjordes före ref-flytten, och skulle annars dölja just det fel den ska avslöja.
 Fönstret sträcker sig bakåt eftersom deployen kan misslyckas i dygnets sista
 körning, varpå datumet hinner byta innan nästa försök.
+
+### Efterhandskrönikor
+
+Krönikan infördes 26 september 2026. De tysta dagarna dessförinnan står kvar
+som hål i arkivet, och `backfill_kronikor.py` fyller dem på samma villkor som
+den dagliga körningen hade gjort. Underlaget rekonstrueras troget — datum-
+filtret gör att en krönika för den 12 september bara ser det som fanns då.
+
+Körs manuellt via **Actions → 🖋️ Efterhandskrönikor** (där `GOOGLE_API_KEY`
+finns). Den letar tysta dagar bakåt, glesar ut dem så en helg ger en krönika
+i stället för två, och triggar deployen en gång för hela omgången. En
+efterhandskrönika stämplas med `published_at` kvällen den dag den avser, så
+den hamnar på rätt plats i arkivet i stället för överst på förstasidan.
+
+```bash
+python backfill_kronikor.py --dry-run          # visa besluten, skriv inget
+python backfill_kronikor.py --dagar 30         # en månad bakåt
+python backfill_kronikor.py --datum 2026-09-05 2026-09-12
+```
 
 Torrkörning utan API-nyckel — visar beslut, underlag och prompt:
 

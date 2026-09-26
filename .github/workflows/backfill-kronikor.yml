@@ -1,0 +1,57 @@
+name: 🖋️ Efterhandskrönikor
+
+# Fyller tysta dagar som passerade innan veckokrönikan fanns.
+# Körs bara manuellt — aldrig på schema.
+on:
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: "Visa besluten utan att generera eller spara"
+        type: boolean
+        default: true
+      dagar:
+        description: "Hur många dagar bakåt tysta dagar letas"
+        default: "30"
+      datum:
+        description: "Exakta datum i stället för att leta (mellanslag emellan)"
+        default: ""
+      alla:
+        description: "Skriv även dagar som ligger tätt (annars en per helg)"
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+
+jobs:
+  backfill:
+    name: Skriv krönikor i efterhand
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+
+    steps:
+      - name: Checka ut kod
+        uses: actions/checkout@v4
+
+      - name: Sätt upp Python 3.11
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: "pip"
+
+      - name: Installera Python-beroenden
+        run: pip install -r requirements.txt
+
+      - name: Kör efterhandskrönikorna
+        env:
+          GOOGLE_API_KEY: ${{ secrets.GOOGLE_API_KEY }}
+          SUNDBLOM_MODEL: ${{ secrets.SUNDBLOM_MODEL }}
+          GITHUB_TOKEN:   ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_REPO:    ${{ github.repository }}
+          GITHUB_BRANCH:  ${{ github.ref_name }}
+        run: |
+          python backfill_kronikor.py \
+            --dagar "${{ inputs.dagar }}" \
+            ${{ inputs.datum != '' && format('--datum {0}', inputs.datum) || '' }} \
+            ${{ inputs.alla && '--alla' || '' }} \
+            ${{ inputs.dry_run && '--dry-run' || '' }}
