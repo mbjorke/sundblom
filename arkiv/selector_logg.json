@@ -9378,5 +9378,15 @@
     "tema": "brottslighet",
     "anledning": "En enskild dom för rattfylleri är en trivial notis för en ledarartikel. Saknar större samhällsrelevans eller koppling till Julius redaktionella teman. [nyhetsvärde 3 < 6]",
     "fallback": false
+  },
+  {
+    "date": "2026-09-27",
+    "headline": "Äter du för mycket salt? Då är du inte ensam",
+    "url": "https://alandsradio.ax/nyheter/ater-du-for-mycket-salt-da-ar-du-inte-ensam",
+    "skriv": false,
+    "nyhetsvarde": 2,
+    "tema": "hälsa",
+    "anledning": "Trivial notis om kostråd. Saknar politisk, samhällelig eller ekonomisk relevans för Julius ledarspalt. För obetydlig för att motivera en ledare. [nyhetsvärde 2 < 6]",
+    "fallback": false
   }
 ]
