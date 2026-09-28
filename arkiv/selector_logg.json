@@ -9488,5 +9488,45 @@
     "tema": "samhällsordning",
     "anledning": "Intern fördelning av ansvar mellan förvaltningar, med en lösning i sikte. Saknar den bredare samhälleliga eller politiska konflikt som Julius söker. [nyhetsvärde 4 < 6]",
     "fallback": false
+  },
+  {
+    "date": "2026-09-28",
+    "headline": "Dom står fast mot man som tog lån i fruns namn",
+    "url": "https://alandsradio.ax/nyheter/dom-star-fast-mot-man-som-tog-lan-i-fruns-namn",
+    "skriv": false,
+    "nyhetsvarde": 3,
+    "tema": "sedlighet",
+    "anledning": "Även om det berör sedlighet och rättvisa, är detta en enskild brottsdom utan större samhällelig eller autonomipolitisk bäring som motiverar en ledarartikel av Julius Sundblom. För lokal och trivial. [nyhetsvärde 3 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-09-28",
+    "headline": "Hovrätten ändrar inte straff för yrkeschaufför",
+    "url": "https://alandsradio.ax/nyheter/hovratten-andrar-inte-straff-for-yrkeschauffor",
+    "skriv": false,
+    "nyhetsvarde": 4,
+    "tema": "rättvisa/sedlighet",
+    "anledning": "Ärendet har en viss substans gällande rättvisa och sedlighet, men en ledare av Sundblom kräver mer än en bekräftad dom i en enskild sak. Det handlar om en personnotis av kriminell art, inte en principiell fråga som påverkar större samhällsgrupper eller autonomin. Ingen tillräcklig koppling till Sundbloms huvudfrågor. [nyhetsvärde 4 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-09-28",
+    "headline": "Chipsters vill återanställa personalen och fortsätta i Norrböle",
+    "url": "https://alandsradio.ax/nyheter/chipsters-vill-ateranstalla-personalen-och-fortsatta-i-norrbole",
+    "skriv": false,
+    "nyhetsvarde": 4,
+    "tema": "ekonomi/lokalt näringsliv",
+    "anledning": "Även om det handlar om ett lokalt företag och sysselsättning är det en för specifik och detaljerad notis om ett enskilt företags problem, snarare än en bredare samhällsfråga eller politiskt beslut av ledarpotential. Julius undviker att skriva om enskilda företags vedermödor. [nyhetsvärde 4 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-09-28",
+    "headline": "32 år sedan Estonias förlisning",
+    "url": "https://alandsradio.ax/nyheter/32-ar-sedan-estonias-forlisning",
+    "skriv": false,
+    "nyhetsvarde": 1,
+    "tema": "nutidshistoria",
+    "anledning": "Händelsen ligger långt fram i tiden från 1926. Dessutom är det en minnesnotis om en nutida händelse som saknar relevans för Julius Sundbloms redaktionella värld 1926. [nyhetsvärde 1 < 6]",
+    "fallback": false
   }
 ]
