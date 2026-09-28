@@ -9388,5 +9388,105 @@
     "tema": "hälsa",
     "anledning": "Trivial notis om kostråd. Saknar politisk, samhällelig eller ekonomisk relevans för Julius ledarspalt. För obetydlig för att motivera en ledare. [nyhetsvärde 2 < 6]",
     "fallback": false
+  },
+  {
+    "date": "2026-09-28",
+    "headline": "Fredrik sadlade om och blev äppelodlare",
+    "url": "https://alandsradio.ax/nyheter/fredrik-sadlade-om-och-blev-appelodlare",
+    "skriv": false,
+    "nyhetsvarde": 2,
+    "tema": "lokalekonomi",
+    "anledning": "Trivial personnotis om en enskild näringsidkare. Saknar större samhällelig eller politisk relevans för en ledare. [nyhetsvärde 2 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-09-28",
+    "headline": "Kirgizistanavtal blev självstyrelsestrid i lagtinget – ”Man kan inte nonchalera ",
+    "url": "https://alandsradio.ax/nyheter/kirgizistanavtal-blev-sjalvstyrelsestrid-i-lagtinget-man-kan-inte-nonchalera-oss",
+    "skriv": true,
+    "nyhetsvarde": 9,
+    "tema": "självstyrelse och dess försvar mot rikspolitisk överhöghet",
+    "anledning": "Även om det handlar om ett ogripbart avtal med Kirgizistan, blir det en principiell och central strid om Ålands självstyrelse och dess ställning gentemot Helsingfors. Det berör direkt Ålands särställning och autonomins framtid, vilket är kärnan i Julius Sundbloms redaktionella värld. Att försvara vunna positioner och markera mot rikspolitiken är av yttersta vikt och har hög substans för en ledarartikel.",
+    "fallback": false
+  },
+  {
+    "date": "2026-09-28",
+    "headline": "HBL: JO ger Statistikcentralen rätt att minska svenskan – Wickström varnar för f",
+    "url": "https://alandsradio.ax/nyheter/hbl-jo-ger-statistikcentralen-ratt-att-minska-svenskan-wickstrom-varnar-for-foljderna",
+    "skriv": true,
+    "nyhetsvarde": 8,
+    "tema": "svensk identitet",
+    "anledning": "Frågan om svenskans ställning i riket och en statlig myndighets minskning av svenskspråkigt innehåll är av stor principiell vikt för den svenskspråkiga befolkningen i Finland, vilket direkt anknyter till Julius redaktionella värld om svensk identitet, minoritetsrättigheter och Finlands relation till sin svenska befolkning. Ett beslut från JO om detta har hög relevans.",
+    "fallback": false
+  },
+  {
+    "date": "2026-09-28",
+    "headline": "Vårdö har fått sitt första utegym – helt i trä",
+    "url": "https://alandsradio.ax/nyheter/vardo-har-fatt-sitt-forsta-utegym-helt-i-tra",
+    "skriv": false,
+    "nyhetsvarde": 1,
+    "tema": "lokal reportage",
+    "anledning": "Trivial lokal notis om fritidsaktivitet, saknar koppling till Julius redaktionella värld eller substans för en ledarartikel. [nyhetsvärde 1 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-09-28",
+    "headline": "Så var sommarens algläge",
+    "url": "https://alandsradio.ax/nyheter/sa-var-sommarens-alglage",
+    "skriv": false,
+    "nyhetsvarde": 3,
+    "tema": "miljö",
+    "anledning": "Algläget är en rutinmässig miljörapport. Även om det är relevant för Åland, saknar den den politiska, samhälleliga eller autonomirelaterade tyngd som Julius Sundblom skulle fokusera på. Det finns ingen direkt konflikt, beslut eller annan substans som kräver en ledare 1926. [nyhetsvärde 3 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-09-28",
+    "headline": "Josefsson: HD-utlåtandet en ”home run” för landskapsregeringen",
+    "url": "https://alandsradio.ax/nyheter/josefsson-hd-utlatandet-en-home-run-for-landskapsregeringen",
+    "skriv": true,
+    "nyhetsvarde": 8,
+    "tema": "självstyrelse, ekonomi, relation till riket",
+    "anledning": "Betydande utslag från Högsta domstolen som stärker Ålands självstyre och ekonomiska rättigheter gentemot riket, med klara implikationer för Ålands ställning. Det finns tillräckligt med substans i ämnet för en ledare om autonomins gränser, ekonomisk rättvisa och relationerna till Finland.",
+    "fallback": false
+  },
+  {
+    "date": "2026-09-28",
+    "headline": "Ministeriernas kanslichefer besöker Åland",
+    "url": "https://alandsradio.ax/nyheter/ministeriernas-kanslichefer-besoker-aland",
+    "skriv": true,
+    "nyhetsvarde": 9,
+    "tema": "självstyrelse",
+    "anledning": "Besöket av ministeriernas kanslichefer är av stor vikt för Ålands självstyrelse och dess relation till statsförvaltningen. Diskussionerna kring självstyrelselagen, säkerhet, beredskap samt social- och hälsovård, utbildning, kultur, energi och logistik berör centrala frågor för Ålands framtid och autonomi. Detta är en händelse med hög politisk och samhällelig relevans som direkt påverkar åländsk självstyrelse och därmed faller väl inom Julius redaktionella värld. Det finns tillräckligt med substans för en värdig ledare, speciellt då det första gången sedan 2017 som kanslicheferna gemensamt besöker Åland för sådana samtal.",
+    "fallback": false
+  },
+  {
+    "date": "2026-09-28",
+    "headline": "HD ger grönt ljus för åländsk utsläppshandel",
+    "url": "https://alandsradio.ax/nyheter/hd-ger-gront-ljus-for-alandsk-utslappshandel",
+    "skriv": true,
+    "nyhetsvarde": 8,
+    "tema": "självstyrelse",
+    "anledning": "Högsta domstolens beslut om Ålands rätt till egen auktionsförrättare och intäkter för utsläppshandel är ett betydande steg för den åländska självstyrelsen och ekonomiska oberoendet. Det berör direkt Ålands behörighet gentemot riket och har substans för en ledare om autonomins utveckling och relationen till centralmakten, med särskilt intresse för de icke-enhälliga delarna av beslutet.",
+    "fallback": false
+  },
+  {
+    "date": "2026-09-28",
+    "headline": "Svensk AI-användning rusar – men många äldre står utanför det digitala",
+    "url": "https://alandsradio.ax/nyheter/svensk-ai-anvandning-rusar-men-manga-aldre-star-utanfor-det-digitala",
+    "skriv": false,
+    "nyhetsvarde": 2,
+    "tema": "modernitetens förfall",
+    "anledning": "För obetydlig och tidig för en ledarartikel. AI är en framtida företeelse, ej relevant för 1926 års ledarspalt. Fokus på 'digitalt utanförskap' är för tidigt och inte av central betydelse för ledarredaktionen. [nyhetsvärde 2 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-09-28",
+    "headline": "KST och ÅHS ska lösa vårdglapp – Zekaj utlovar tilläggsfinansiering",
+    "url": "https://alandsradio.ax/nyheter/kst-och-ahs-ska-losa-vardglapp-zekaj-utlovar-tillaggsfinansiering",
+    "skriv": false,
+    "nyhetsvarde": 4,
+    "tema": "samhällsordning",
+    "anledning": "Intern fördelning av ansvar mellan förvaltningar, med en lösning i sikte. Saknar den bredare samhälleliga eller politiska konflikt som Julius söker. [nyhetsvärde 4 < 6]",
+    "fallback": false
   }
 ]
