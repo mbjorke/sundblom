@@ -9528,5 +9528,105 @@
     "tema": "nutidshistoria",
     "anledning": "Händelsen ligger långt fram i tiden från 1926. Dessutom är det en minnesnotis om en nutida händelse som saknar relevans för Julius Sundbloms redaktionella värld 1926. [nyhetsvärde 1 < 6]",
     "fallback": false
+  },
+  {
+    "date": "2026-09-29",
+    "headline": "De får stipendier från Julius Sundbloms minnesstiftelse",
+    "url": "https://alandsradio.ax/nyheter/de-far-stipendier-fran-julius-sundbloms-minnesstiftelse",
+    "skriv": false,
+    "nyhetsvarde": 3,
+    "tema": "kultur",
+    "anledning": "Stipendieutdelning är en rutinåtgärd. Inget nyhetsvärde för en ledarartikel av Julius Sundblom själv, även om det rör hans stiftelse. Saknar reell substans för en ledare. [nyhetsvärde 3 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-09-29",
+    "headline": "Saltviksdirektörens anhållan om uppsägning godkändes",
+    "url": "https://alandsradio.ax/nyheter/saltviksdirektorens-anhallan-om-uppsagning-godkandes",
+    "skriv": false,
+    "nyhetsvarde": 2,
+    "tema": "lokal förvaltning",
+    "anledning": "Trivial notis om en rutinmässig uppsägning av en kommundirektör. Ingen tydlig koppling till större politiska, samhälleliga eller autonomifrågor. Innehåller ingen konflikt eller substans för en ledarartikel. [nyhetsvärde 2 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-09-29",
+    "headline": "Viking Line och FlixBus lanserar gemensamma resor",
+    "url": "https://alandsradio.ax/nyheter/viking-line-och-flixbus-lanserar-gemensamma-resor",
+    "skriv": false,
+    "nyhetsvarde": 3,
+    "tema": "ekonomi",
+    "anledning": "Ren kommersiell notis utan större politisk, samhällelig eller autonomirelevant vinkel. För tunt för en ledare. [nyhetsvärde 3 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-09-29",
+    "headline": "Han får Östersjöpriset",
+    "url": "https://alandsradio.ax/nyheter/han-far-ostersjopriset",
+    "skriv": false,
+    "nyhetsvarde": 4,
+    "tema": "miljö",
+    "anledning": "Prisutdelning för miljöforskning, men saknar direkt koppling till åländsk autonomi, rikspolitik eller större samhällsfrågor som Julius brukar behandla. För specifik och inte tillräckligt kontroversiell eller politiskt laddad för en ledarartikel. [nyhetsvärde 4 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-09-29",
+    "headline": "Paf får minst 70 konkurrenter när spelmarknaden öppnar",
+    "url": "https://alandsradio.ax/nyheter/paf-far-minst-70-konkurrenter-nar-spelmarknaden-oppnar",
+    "skriv": false,
+    "nyhetsvarde": 4,
+    "tema": "ekonomi",
+    "anledning": "Även om det handlar om ett viktigt åländskt bolag är det i första hand en ekonomisk nyhet om ökad konkurrens. Detta saknar djupare politisk, samhällelig eller autonomirelevant vinkel för en ledare 1926. 'Modernitetens förfall' kan tangera detta, men saknar konkret substans att skriva en hel ledare om. Fahlstedts varningar är intressanta men rör framtida spekulationer, inte fakta som Julius kunde agera på. [nyhetsvärde 4 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-09-29",
+    "headline": "Norrlandspartiet gör succéval i Sverige – med Åland som inspiration",
+    "url": "https://alandsradio.ax/nyheter/norrlandspartiet-gor-succeval-i-sverige-med-aland-som-inspiration",
+    "skriv": true,
+    "nyhetsvarde": 8,
+    "tema": "självstyrelse",
+    "anledning": "Direkt koppling till Ålands självstyrelse som modell och rikspolitisk relevans i Sverige. Visar på autonomins potential och intresset för den åländska lösningen bortom landskapets gränser.",
+    "fallback": false
+  },
+  {
+    "date": "2026-09-29",
+    "headline": "Mariehamn behöver tillfälligt avtal för företagshälsovården – stadsstyrelsen tar",
+    "url": "https://alandsradio.ax/nyheter/mariehamn-behover-tillfalligt-avtal-for-foretagshalsovarden-stadsstyrelsen-tar-stallning-i-dag",
+    "skriv": false,
+    "nyhetsvarde": 3,
+    "tema": "lokal förvaltning",
+    "anledning": "En ren rutinåtgärd gällande lokal upphandling, även om Marknadsdomstolen varit inblandad. Inte tillräckligt substans för en ledarartikel. [nyhetsvärde 3 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-09-29",
+    "headline": "Vägarbete leder till vattenavbrott under tisdagen",
+    "url": "https://alandsradio.ax/nyheter/vagarbete-leder-till-vattenavbrott-under-tisdagen",
+    "skriv": false,
+    "nyhetsvarde": 1,
+    "tema": "infrastruktur",
+    "anledning": "Trivial, lokal notis om ett kortvarigt vattenavbrott. Saknar politisk, samhällelig eller existentiell betydelse för Åland eller dess autonomi. [nyhetsvärde 1 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-09-29",
+    "headline": "Öar diskuterade hur turism kan göra lokalsamhället bättre",
+    "url": "https://alandsradio.ax/nyheter/oar-diskuterade-hur-turism-kan-gora-lokalsamhallet-battre",
+    "skriv": false,
+    "nyhetsvarde": 3,
+    "tema": "ekonomi",
+    "anledning": "Diskussion om turism och dess effekter på lokalsamhället är relevant, men artikeln presenterar endast diskussioner och idéer utan konkreta beslut eller handlingar. Ingen tydlig koppling till autonomi, sedlighet, eller större politisk/ekonomisk konflikt som motiverar en ledare av Julius Sundblom. Dessutom är det en relativt lokal diskussion, inte en stor händelse. [nyhetsvärde 3 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-09-29",
+    "headline": "Entreprenörer utsedda till Björkö och Simskäla-linjer",
+    "url": "https://alandsradio.ax/nyheter/entreprenorer-utsedda-till-bjorko-och-simskala-linjer",
+    "skriv": true,
+    "nyhetsvarde": 6,
+    "tema": "ekonomi och självstyrelse",
+    "anledning": "Beslut av landskapsregeringen gällande viktig infrastruktur och offentlig upphandling, med ekonomisk relevans för landskapet och dess självstyre.",
+    "fallback": false
   }
 ]
