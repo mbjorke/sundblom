@@ -9628,5 +9628,45 @@
     "tema": "ekonomi och självstyrelse",
     "anledning": "Beslut av landskapsregeringen gällande viktig infrastruktur och offentlig upphandling, med ekonomisk relevans för landskapet och dess självstyre.",
     "fallback": false
+  },
+  {
+    "date": "2026-09-29",
+    "headline": "Konjunkturvändningen syns ännu inte riktigt på Åland",
+    "url": "https://alandsradio.ax/nyheter/konjunkturvandningen-syns-annu-inte-riktigt-pa-aland",
+    "skriv": false,
+    "nyhetsvarde": 4,
+    "tema": "ekonomi",
+    "anledning": "Ekonomisk rapport, men utan konkret åtgärd, konflikt eller beslut att grunda en ledare på. Det är snarare en lägesbeskrivning än en händelse som kräver en redaktionell åsikt från Julius. [nyhetsvärde 4 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-09-29",
+    "headline": "Från Hanken till Bryssel: Elin Lindholm praktiserar hos Ålands ministerråd",
+    "url": "https://alandsradio.ax/nyheter/fran-hanken-till-bryssel-elin-lindholm-praktiserar-hos-alands-ministerrad",
+    "skriv": false,
+    "nyhetsvarde": 2,
+    "tema": "personnotis",
+    "anledning": "En ren personnotis om en praktikant, saknar substans för en ledarartikel av Julius. Ingen koppling till autonomi, samhällsordning eller större politik. [nyhetsvärde 2 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-09-29",
+    "headline": "Jansson om bordläggningstricket: ”Katrin är inte arg på mig”",
+    "url": "https://alandsradio.ax/nyheter/jansson-om-bordlaggningstricket-katrin-ar-inte-arg-pa-mig1",
+    "skriv": true,
+    "nyhetsvarde": 9,
+    "tema": "självstyrelse",
+    "anledning": "En klar och tydlig markering mot Helsingfors gällande självstyrelsens ställning, med rikspolitisk potential och internt politiskt agerande av stort intresse för Julius Sundblom.",
+    "fallback": false
+  },
+  {
+    "date": "2026-09-29",
+    "headline": "Studie ledde till antikorruptionsarbete – tilliten på Åland mäts igen",
+    "url": "https://alandsradio.ax/nyheter/studie-ledde-till-antikorruptionsarbete-tilliten-pa-aland-mats-igen",
+    "skriv": true,
+    "nyhetsvarde": 8,
+    "tema": "samhällsordning",
+    "anledning": "Korruption är en allvarlig anklagelse som hotar samhällsordningen och den moraliska sedligheten. En studie som visar på så utbredd 'vänskapskorruption' och därtill kopplar det till utsatta gruppers bristande tillit är en väsentlig händelse. Landskapsregeringens åtgärder, även om de är sena, visar på ett erkännande av problemets allvar. Detta är en fråga som Julius Sundblom skulle finna av yttersta vikt att kommentera, både gällande moral och styrelsens agerande.",
+    "fallback": false
   }
 ]
