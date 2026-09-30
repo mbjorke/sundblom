@@ -9838,5 +9838,15 @@
     "tema": "ekonomi, kommunal förvaltning",
     "anledning": "Frågan rör kommunal ekonomi och avgifter, men är en lokal utredningsfråga i en enskild kommun. Även om det rör en principfråga om laglighet är det inte av tillräckligt stor autonomi- eller rikspolitisk relevans för en ledarartikel av Julius Sundblom. Det saknas också substans i form av ett faktiskt beslut eller en större konflikt bortom en utredning. [nyhetsvärde 4 < 6]",
     "fallback": false
+  },
+  {
+    "date": "2026-09-30",
+    "headline": "Pensionerade avdelningskötaren sågar ÅHS planer: ”Tänk först och handla sedan”",
+    "url": "https://alandsradio.ax/nyheter/pensionerade-avdelningskotaren-sagar-ahs-planer-tank-forst-och-handla-sedan",
+    "skriv": false,
+    "nyhetsvarde": 4,
+    "tema": "hälsovård",
+    "anledning": "Intern fråga inom ÅHS med fokus på en specifik avdelning. Saknar tillräcklig koppling till övergripande självstyrelsefrågor, ekonomi i stort eller rikspolitik för att Julius Sundblom ska skriva en ledare om det. Det är en lokal angelägenhet som främst berör sjukhusets förvaltning. [nyhetsvärde 4 < 6]",
+    "fallback": false
   }
 ]
