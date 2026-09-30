@@ -9668,5 +9668,105 @@
     "tema": "samhällsordning",
     "anledning": "Korruption är en allvarlig anklagelse som hotar samhällsordningen och den moraliska sedligheten. En studie som visar på så utbredd 'vänskapskorruption' och därtill kopplar det till utsatta gruppers bristande tillit är en väsentlig händelse. Landskapsregeringens åtgärder, även om de är sena, visar på ett erkännande av problemets allvar. Detta är en fråga som Julius Sundblom skulle finna av yttersta vikt att kommentera, både gällande moral och styrelsens agerande.",
     "fallback": false
+  },
+  {
+    "date": "2026-09-30",
+    "headline": "Maxinge och Mathias Eriksson tar beslut om grannfastigheter till ÅFD",
+    "url": "https://alandsradio.ax/nyheter/maxinge-och-mathias-eriksson-tar-beslut-om-grannfastigheter-till-afd",
+    "skriv": false,
+    "nyhetsvarde": 4,
+    "tema": "ekonomi",
+    "anledning": "För specifik lokal fastighetsstrid. Inte tillräckligt brett för en ledare av Julius. [nyhetsvärde 4 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-09-30",
+    "headline": "Följ med och träffa de tama papegojorna Bibbi, Pippi och Kalle",
+    "url": "https://alandsradio.ax/nyheter/folj-med-och-traffa-de-tama-papegojorna-bibbi-pippi-och-kalle",
+    "skriv": false,
+    "nyhetsvarde": 1,
+    "tema": "trivial",
+    "anledning": "Trivial personnotis om husdjur, saknar all relevans för tidningens redaktionella linje eller Julius Sundbloms intresseområden. Saknar politisk, samhällelig, ekonomisk eller autonomisk relevans. [nyhetsvärde 1 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-09-30",
+    "headline": "Fem åländska vindkraftverk får nya ägare",
+    "url": "https://alandsradio.ax/nyheter/fem-alandska-vindkraftverk-far-nya-agare",
+    "skriv": false,
+    "nyhetsvarde": 4,
+    "tema": "ekonomi",
+    "anledning": "Ägarbyte av vindkraftverk är i sig inte av tillräckligt hög nyhetsvärde för en ledare, och även om det berör energiinfrastruktur, saknas den politiska eller samhälleliga konflikt som skulle motivera Julius att ta bladet från munnen. Det är en affärsnotis som är för specifik och saknar den bredare implikation som Julius söker för en ledare. [nyhetsvärde 4 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-09-30",
+    "headline": "Skolval och demokrativecka ska skapa intresse hos unga i Mariehamn",
+    "url": "https://alandsradio.ax/nyheter/skolval-och-demokrativecka-ska-skapa-intresse-hos-unga-i-mariehamn",
+    "skriv": false,
+    "nyhetsvarde": 4,
+    "tema": "demokrati",
+    "anledning": "Ämnet är i sig relevant för samhället och bildning, men är en lokal, framåtblickande planeringsnotis med begränsad omedelbar substans. Det saknas en konkret händelse eller beslut att kommentera på ett djupgående sätt. [nyhetsvärde 4 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-09-30",
+    "headline": "Yngling söndrade brandvarnare och rökte i hytt – döms till böter",
+    "url": "https://alandsradio.ax/nyheter/yngling-sondrade-brandvarnare-och-rokte-i-hytt-doms-till-boter",
+    "skriv": false,
+    "nyhetsvarde": 2,
+    "tema": "sedlighet",
+    "anledning": "Trivial notis om ungdomsförseelser, saknar bredare samhällelig eller politisk relevans för en ledare. [nyhetsvärde 2 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-09-30",
+    "headline": "Kumlinge vill erbjuda fritidshemsverksamhet under skollov",
+    "url": "https://alandsradio.ax/nyheter/kumlinge-vill-erbjuda-fritidshemsverksamhet-under-skollov",
+    "skriv": false,
+    "nyhetsvarde": 1,
+    "tema": "lokal förvaltning",
+    "anledning": "En smålokal administrativ notis om barnomsorg i Kumlinge är av alltför trivial karaktär och saknar den tyngd som krävs för en ledarartikel av Julius Sundblom. Ingen koppling till autonomi, rikspolitik eller större samhällsfrågor. [nyhetsvärde 1 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-09-30",
+    "headline": "Östersjön mår allt sämre – ytterskärgården har gått från grön till röd status på",
+    "url": "https://alandsradio.ax/nyheter/ostersjon-mar-allt-samre-ytterskargarden-har-gatt-fran-gron-till-rod-status-pa-bara-nagra-ar",
+    "skriv": false,
+    "nyhetsvarde": 4,
+    "tema": "miljö",
+    "anledning": "Miljöfrågor hade inte den prioritet eller djupare samhällsanknytning som Julius sökte 1926. Saknar politisk eller autonom vinkel. [nyhetsvärde 4 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-09-30",
+    "headline": "Drygt 160 paket har fastnat på posten – varken kunderna eller posten kan förtull",
+    "url": "https://alandsradio.ax/nyheter/drygt-160-paket-har-fastnat-pa-posten-varken-kunderna-eller-posten-kan-fortulla-dem",
+    "skriv": false,
+    "nyhetsvarde": 4,
+    "tema": "ekonomi och byråkrati",
+    "anledning": "Ämnet är för tekniskt och byråkratiskt. Handlar om nya tullrutiner, inte om stora ekonomiska skeenden eller direkta autonomifrågor. Mer en praktisk notis än en ledare. [nyhetsvärde 4 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-09-30",
+    "headline": "Jansson: Stubb kommer att pressas om Ålands utsläppshandel",
+    "url": "https://alandsradio.ax/nyheter/jansson-stubb-kommer-att-pressas-om-alands-utslappshandel",
+    "skriv": true,
+    "nyhetsvarde": 8,
+    "tema": "självstyrelse, ekonomi, rättvisa",
+    "anledning": "Högsta domstolens utlåtande om Ålands rätt till utsläppshandelsintäkter är av yttersta vikt för autonomin och Ålands ekonomiska självständighet. Att presidenten nu ska ta ställning och kan pressas, adderar en politisk dimension som Julius definitivt skulle vilja belysa i en ledare. Det handlar om maktfördelning och rättvisa gentemot riket.",
+    "fallback": false
+  },
+  {
+    "date": "2026-09-30",
+    "headline": "Ålandslinjen vill köpa gamla Turella – och att Mariehamn finansierar en Kapellsk",
+    "url": "https://alandsradio.ax/nyheter/alandslinjen-vill-kopa-gamla-turella-och-att-mariehamn-finansierar-en-kapellskarskaj",
+    "skriv": false,
+    "nyhetsvarde": 4,
+    "tema": "ekonomi",
+    "anledning": "Interna affärsdiskussioner och infrastrukturfrågor utan direkt koppling till Julius Sundbloms redaktionella fokus. För obetydlig för en ledarartikel. [nyhetsvärde 4 < 6]",
+    "fallback": false
   }
 ]
