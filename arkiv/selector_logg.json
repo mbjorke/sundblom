@@ -9768,5 +9768,75 @@
     "tema": "ekonomi",
     "anledning": "Interna affärsdiskussioner och infrastrukturfrågor utan direkt koppling till Julius Sundbloms redaktionella fokus. För obetydlig för en ledarartikel. [nyhetsvärde 4 < 6]",
     "fallback": false
+  },
+  {
+    "date": "2026-09-30",
+    "headline": "Kårer ryckte ut till liten markbrand i Lemland",
+    "url": "https://alandsradio.ax/nyheter/karer-ryckte-ut-till-liten-markbrand-i-lemland",
+    "skriv": false,
+    "nyhetsvarde": 1,
+    "tema": "lokalnotis",
+    "anledning": "Trivial, smålokal notis om en mindre markbrand utan större betydelse eller redaktionell vinkel. [nyhetsvärde 1 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-09-30",
+    "headline": "Bonns: Vinklad information bakom mycket av oron för ÅHS",
+    "url": "https://alandsradio.ax/nyheter/bonns-vinklad-information-bakom-mycket-av-oron-for-ahs",
+    "skriv": false,
+    "nyhetsvarde": 3,
+    "tema": "lokal förvaltning",
+    "anledning": "Ämnet är för specifikt för 1926 och en ledare av Julius Sundblom. Dessutom, även om det rör förvaltning, är det en intern fråga om effektivisering, inte en principiell sak för autonomin. Inte heller tillräcklig konflikt eller substans för att motivera en ledare. [nyhetsvärde 3 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-09-30",
+    "headline": "Johnny Sid om fartygsvalet: Turella erbjuder en annan upplevelse",
+    "url": "https://alandsradio.ax/nyheter/johnny-sid-om-fartygsvalet-turella-erbjuder-en-annan-upplevelse",
+    "skriv": false,
+    "nyhetsvarde": 4,
+    "tema": "ekonomi/autonomi",
+    "anledning": "Frågan om ett nytt fartyg och kajplats är lokalekonomisk relevant, men innehåller för många 'om' och 'kanske'. Konflikten med hamnen är konkret men saknar den djupare politiska eller samhälleliga laddning som krävs för en ledare. Risken med 20-timmarsregeln är en autonomi-relaterad fråga men den presenteras som ett hypotetiskt problem. Det finns för lite fastställd information och för mycket spekulation för att Julius ska kunna skriva en tung ledare. [nyhetsvärde 4 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-09-30",
+    "headline": "Ombudsmannamyndigheten avslutar ärende om skärgårdsupphandlingen",
+    "url": "https://alandsradio.ax/nyheter/ombudsmannamyndigheten-avslutar-arende-om-skargardsupphandlingen",
+    "skriv": false,
+    "nyhetsvarde": 4,
+    "tema": "rättvisa",
+    "anledning": "Ärendet har inte avgjorts i sak av Ombudsmannamyndigheten, utan avslutas pga. Marknadsdomstolens handläggning. Ingen ny vinkel för en ledare. [nyhetsvärde 4 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-09-30",
+    "headline": "Höglund: ÅHS styrelse behöver återvinna förtroendet",
+    "url": "https://alandsradio.ax/nyheter/hoglund-ahs-styrelse-behover-atervinna-fortroendet",
+    "skriv": false,
+    "nyhetsvarde": 4,
+    "tema": "inrikespolitik",
+    "anledning": "Även om det berör det åländska självstyret och har viss ekonomisk bäring, handlar det primärt om en intern budgetfråga och förtroende inom en specifik institution. Inte tillräckligt hög politisk tyngd för en Julius-ledare 1926. [nyhetsvärde 4 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-09-30",
+    "headline": "Avfallsavgift i Saltvik kan höjas från noll till 80 euro",
+    "url": "https://alandsradio.ax/nyheter/avfallsavgift-i-saltvik-kan-hojas-fran-noll-till-80-euro",
+    "skriv": false,
+    "nyhetsvarde": 1,
+    "tema": "ekonomi",
+    "anledning": "Smålokal notis om en rutinåtgärd. För obetydligt för Julius Sundblom. [nyhetsvärde 1 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-09-30",
+    "headline": "Sund ska utreda slopad avfallsgift",
+    "url": "https://alandsradio.ax/nyheter/sund-ska-utreda-slopad-avfallsgift",
+    "skriv": false,
+    "nyhetsvarde": 4,
+    "tema": "ekonomi, kommunal förvaltning",
+    "anledning": "Frågan rör kommunal ekonomi och avgifter, men är en lokal utredningsfråga i en enskild kommun. Även om det rör en principfråga om laglighet är det inte av tillräckligt stor autonomi- eller rikspolitisk relevans för en ledarartikel av Julius Sundblom. Det saknas också substans i form av ett faktiskt beslut eller en större konflikt bortom en utredning. [nyhetsvärde 4 < 6]",
+    "fallback": false
   }
 ]
