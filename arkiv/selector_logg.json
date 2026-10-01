@@ -9948,5 +9948,85 @@
     "tema": "ekonomi",
     "anledning": "Intern ekonomisk åtstramning av lokal betydelse. Beslut om julfest är en tunn notis. [nyhetsvärde 3 < 6]",
     "fallback": false
+  },
+  {
+    "date": "2026-10-01",
+    "headline": "953 skräp plockades i östra hamnen – dykklubb letade i havet",
+    "url": "https://alandsradio.ax/nyheter/953-skrap-plockades-i-ostra-hamnen-dykklubb-letade-i-havet",
+    "skriv": false,
+    "nyhetsvarde": 1,
+    "tema": "miljö",
+    "anledning": "Trivial lokal notis om städning, saknar koppling till centrala redaktionella teman som självstyrelse eller samhällsordning. Inget att skriva en ledare om. [nyhetsvärde 1 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-10-01",
+    "headline": "Nyan: Göran Djupsund har avlidit",
+    "url": "https://alandsradio.ax/nyheter/nyan-goran-djupsund-har-avlidit",
+    "skriv": false,
+    "nyhetsvarde": 3,
+    "tema": "personnotis",
+    "anledning": "Dödsfall är i sig inte tillräckligt för en ledarartikel om inte personen haft en direkt avgörande roll i åländsk politik eller samhällsordning av intresse för Julius. Göran Djupsund är visserligen statsvetare med viss koppling till Åland, men hans bortgång är i första hand en personnotis och hans expertroll är inte av den kaliber att det motiverar en ledare av Julius. Inget politiskt agerande, ingen konflikt, ingen autonomifråga. [nyhetsvärde 3 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-10-01",
+    "headline": "Saltviks bibliotek firar 100 år",
+    "url": "https://alandsradio.ax/kultur/saltviks-bibliotek-firar-100-ar",
+    "skriv": false,
+    "nyhetsvarde": 2,
+    "tema": "kultur",
+    "anledning": "Trivial notis om en lokal biblioteksjubileum, saknar väsentlig samhälls- eller politisk relevans för en ledarartikel. Saknar substans för en värdig ledare. [nyhetsvärde 2 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-10-01",
+    "headline": "Ekonomin i elhybridaffären ska granskas – ”Frågan är inflammerad”",
+    "url": "https://alandsradio.ax/nyheter/ekonomin-i-elhybridaffaren-ska-granskas-fragan-ar-inflammerad",
+    "skriv": true,
+    "nyhetsvarde": 8,
+    "tema": "ekonomi",
+    "anledning": "En granskning av en betydande ekonomisk affär med inblandning av landskapet är av stort allmänintresse. Aspekter rörande upphandling och hur offentliga medel förvaltas är centrala för Julius, särskilt när ärendet beskrivs som 'inflammerat' och riskerar att skada allmänhetens tilltro. Frågan om hur ekonomiska kalkylerna för större offentliga affärer byggs upp är av stor vikt för en god samhällsordning och kan potentiellt blottlägga brister i förvaltningen, något Julius skulle vilja belysa och varna för. Detta har direkt relevans för både autonomi och samhällsordning, då det berör landskapets förmåga att sköta sina angelägenheter.",
+    "fallback": false
+  },
+  {
+    "date": "2026-10-01",
+    "headline": "Låst läge i Långnäs hamn – oenigt om kostnader för kajrenoveringen",
+    "url": "https://alandsradio.ax/nyheter/last-lage-i-langnas-hamn-oenigt-om-kostnader-for-kajrenoveringen",
+    "skriv": true,
+    "nyhetsvarde": 8,
+    "tema": "ekonomi och samhällsnytta",
+    "anledning": "Strid om ekonomiska ansvar och infrastruktur som påverkar viktiga bränsletransporter och Ålands ekonomi. Påverkar samhällsfunktioner och belyser en konflikt mellan näringsliv och offentlig förvaltning, vilket är lämpligt för en ledare om hur Åland sköter sina angelägenheter.",
+    "fallback": false
+  },
+  {
+    "date": "2026-10-01",
+    "headline": "Rekryteringen av ny kommundirektör i Saltvik får lov att ta tid",
+    "url": "https://alandsradio.ax/nyheter/rekryteringen-av-ny-kommundirektor-i-saltvik-far-lov-att-ta-tid",
+    "skriv": false,
+    "nyhetsvarde": 2,
+    "tema": "lokal förvaltning",
+    "anledning": "Intern kommunal rutinåtgärd utan större samhällelig eller politisk relevans. För obetydlig för en ledare. [nyhetsvärde 2 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-10-01",
+    "headline": "Man köpte sex av minderårig – får villkorligt fängelse",
+    "url": "https://alandsradio.ax/nyheter/man-kopte-sex-av-minderarig-far-villkorligt-fangelse",
+    "skriv": true,
+    "nyhetsvarde": 8,
+    "tema": "sedlighet",
+    "anledning": "Brott mot sedligheten med minderårig inblandad. Ett ämne som rör samhällsmoral och ordning, relevant för en ledare om sedlighetens förfall och rättvisans skipande.",
+    "fallback": false
+  },
+  {
+    "date": "2026-10-01",
+    "headline": "Fikastunden är ett måste när Västra Saltviks FBK-juniorer träffas",
+    "url": "https://alandsradio.ax/nyheter/fikastunden-ar-ett-maste-nar-vastra-saltviks-fbk-juniorer-traffas",
+    "skriv": false,
+    "nyhetsvarde": 1,
+    "tema": "lokalnotis",
+    "anledning": "Trivial smålokal notis om en rutinåtgärd. Saknar all relevans för Julius Sundbloms redaktionella linje. [nyhetsvärde 1 < 6]",
+    "fallback": false
   }
 ]
