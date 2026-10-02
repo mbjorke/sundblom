@@ -10128,5 +10128,75 @@
     "tema": "hälsa",
     "anledning": "Trivial notis om svampförgiftning, saknar koppling till Julius redaktionella värld av politik, samhällsordning eller självstyrelse. Ingen substans för en ledare. [nyhetsvärde 1 < 6]",
     "fallback": false
+  },
+  {
+    "date": "2026-10-02",
+    "headline": "Östersjön har blivit renare – men nya hot växer fram",
+    "url": "https://alandsradio.ax/nyheter/ostersjon-har-blivit-renare-men-nya-hot-vaxer-fram",
+    "skriv": false,
+    "nyhetsvarde": 4,
+    "tema": "miljö",
+    "anledning": "Miljöfrågor är av intresse, men denna notis saknar den direkta politiska eller samhällsordningsmässiga tyngd som Julius Sundblom söker för en ledare år 1926. Den är mer en allmän observationsrapport än en konkret konflikt eller beslut. [nyhetsvärde 4 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-10-02",
+    "headline": "Fotade ovetande flickvän under sex – döms av tingsrätten",
+    "url": "https://alandsradio.ax/nyheter/fotade-ovetande-flickvan-under-sex-doms-av-tingsratten",
+    "skriv": false,
+    "nyhetsvarde": 4,
+    "tema": "sedlighet",
+    "anledning": "Ämnet berör sedlighet och rättvisa, men fallet är en enskild brottmålsdom utan större principiell betydelse för autonomi eller samhällsordning. Inget i nyheten motiverar en ledarartikel av Julius Sundblom, som tenderar att fokusera på bredare samhällsfrågor och Ålands ställning. [nyhetsvärde 4 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-10-02",
+    "headline": "Lösning nådd mellan Chipsters och Ålands fastighets Ab",
+    "url": "https://alandsradio.ax/nyheter/chipsters",
+    "skriv": false,
+    "nyhetsvarde": 3,
+    "tema": "ekonomi/lokalt",
+    "anledning": "Lokal affärsöverenskommelse utan djupare samhällelig eller politisk bäring för en ledare. [nyhetsvärde 3 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-10-02",
+    "headline": "Ehn: Fortfarande avgörande veckor för självstyrelselagen",
+    "url": "https://alandsradio.ax/nyheter/ehn-fortfarande-avgorande-veckor-for-sjalvstyrelselagen",
+    "skriv": true,
+    "nyhetsvarde": 8,
+    "tema": "självstyrelse",
+    "anledning": "Central fråga för Ålands autonomi och relation till riket. Fortlöpande förhandlingar med komplikationer kräver en ledare för att belysa situationen för allmänheten och betona vikten av en rättvis lösning. Innehåller tillräckligt med fakta och spänning för en ledare.",
+    "fallback": false
+  },
+  {
+    "date": "2026-10-02",
+    "headline": "Rosa-Blåbandet galan viktig för cancerföreningen",
+    "url": "https://alandsradio.ax/nyheter/rosa-blabandet-galan-viktig-for-cancerforeningen",
+    "skriv": false,
+    "nyhetsvarde": 1,
+    "tema": "insamling",
+    "anledning": "Välgörenhetsgala är en smålokal notis av rutinmässig karaktär. Saknar politisk, samhällelig eller existentiell relevans för en ledare av Sundblom. Det handlar om insamling till en förening, inte större principer. [nyhetsvärde 1 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-10-02",
+    "headline": "Hon är Ålands Radios reporter med fokus på en ung publik",
+    "url": "https://alandsradio.ax/nyheter/hon-ar-alands-radios-reporter-med-fokus-pa-en-ung-publik",
+    "skriv": false,
+    "nyhetsvarde": 2,
+    "tema": "modernitetens förfall",
+    "anledning": "Även om det handlar om modernitet och medier, är detta en intern anställningsnyhet för en ny, ung reporter med fokus på sociala medier. Detta är för obetydligt för en ledarartikel av Julius Sundblom. Han skulle nog snarare se det som ytterligare ett tecken på ytlighet och modernitetens förfall, snarare än något att skriva en seriös ledare om. [nyhetsvärde 2 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-10-02",
+    "headline": "ÅTT vill utveckla redaktionssystem för nordiska mediehus",
+    "url": "https://alandsradio.ax/nyheter/att-vill-utveckla-redaktionssystem-for-nordiska-mediehus",
+    "skriv": false,
+    "nyhetsvarde": 3,
+    "tema": "ekonomi",
+    "anledning": "Intern affärsutveckling för ett lokalt bolag, ingen bredare samhällelig eller politisk relevans i Julius redaktionella värld. Saknar konfliktyta eller stor betydelse för autonomin eller sedligheten. [nyhetsvärde 3 < 6]",
+    "fallback": false
   }
 ]
