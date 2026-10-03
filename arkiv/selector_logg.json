@@ -10198,5 +10198,15 @@
     "tema": "ekonomi",
     "anledning": "Intern affärsutveckling för ett lokalt bolag, ingen bredare samhällelig eller politisk relevans i Julius redaktionella värld. Saknar konfliktyta eller stor betydelse för autonomin eller sedligheten. [nyhetsvärde 3 < 6]",
     "fallback": false
+  },
+  {
+    "date": "2026-10-03",
+    "headline": "Dahlmans söker tillstånd för kråkjakt vid slakteriet",
+    "url": "https://alandsradio.ax/nyheter/dahlmans-soker-tillstand-for-krakjakt-vid-slakteriet",
+    "skriv": false,
+    "nyhetsvarde": 1,
+    "tema": "lokal notis",
+    "anledning": "Trivial, smålokal notis om skadedjur. Saknar koppling till centrala teman som självstyrelse, samhällsordning, eller större ekonomisk betydelse. För obetydlig för en ledare. [nyhetsvärde 1 < 6]",
+    "fallback": false
   }
 ]
