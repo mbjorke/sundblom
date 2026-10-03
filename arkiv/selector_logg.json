@@ -10218,5 +10218,45 @@
     "tema": "sport",
     "anledning": "Ren sportresultat-rapportering av folkrace, ingen redaktionell vinkel med koppling till Julius Sundbloms intressen eller Tidningen Ålands ledarartiklar 1926. [nyhetsvärde 1 < 6]",
     "fallback": false
+  },
+  {
+    "date": "2026-10-03",
+    "headline": "Dubbla storsegrar för FBC Åland",
+    "url": "https://alandsradio.ax/nyheter/dubbla-storsegrar-for-fbc-aland",
+    "skriv": false,
+    "nyhetsvarde": 1,
+    "tema": "sport",
+    "anledning": "Ren sportresultat-rapportering av en obetydlig händelse. Saknar koppling till Julius redaktionella värld och är för trivial för en ledarartikel. [nyhetsvärde 1 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-10-03",
+    "headline": "Förlust för JIK efter jämn match",
+    "url": "https://alandsradio.ax/sport/forlust-for-jik-efter-jamn-match",
+    "skriv": false,
+    "nyhetsvarde": 1,
+    "tema": "sport",
+    "anledning": "Ren sportresultat-rapportering utan koppling till Julius redaktionella värld eller större samhällsbetydelse. [nyhetsvärde 1 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-10-03",
+    "headline": "Åland United vinner mot IF Gnistan – kopplar greppet om silverstriden",
+    "url": "https://alandsradio.ax/sport/aland-united-vinner-mot-if-gnistan-kopplar-greppet-om-silverstriden",
+    "skriv": false,
+    "nyhetsvarde": 1,
+    "tema": "sport",
+    "anledning": "Ren sportresultat-rapportering utan djupare samhällelig eller politisk relevans för en ledarartikel. Julius intresserar sig inte för sportresultat. [nyhetsvärde 1 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-10-03",
+    "headline": "Sofia Sandell avslutade folkracesäsongen med en efterlängtad andraplats",
+    "url": "https://alandsradio.ax/sport/sofia-sandell-tvaa-i-sasongens-sista-folkrace",
+    "skriv": false,
+    "nyhetsvarde": 1,
+    "tema": "sport",
+    "anledning": "Ren sportresultat-rapportering av lokal karaktär. Saknar helt koppling till Julius Sundbloms redaktionella linje eller några större samhälleliga frågor. Inte substans nog för en ledare. [nyhetsvärde 1 < 6]",
+    "fallback": false
   }
 ]
