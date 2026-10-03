@@ -10208,5 +10208,15 @@
     "tema": "lokal notis",
     "anledning": "Trivial, smålokal notis om skadedjur. Saknar koppling till centrala teman som självstyrelse, samhällsordning, eller större ekonomisk betydelse. För obetydlig för en ledare. [nyhetsvärde 1 < 6]",
     "fallback": false
+  },
+  {
+    "date": "2026-10-03",
+    "headline": "Sofia Sandell avslutade folkracesäsongen med en efterlängtad andraplats",
+    "url": "https://alandsradio.ax/nyheter/sofia-sandell-tvaa-i-sasongens-sista-folkrace",
+    "skriv": false,
+    "nyhetsvarde": 1,
+    "tema": "sport",
+    "anledning": "Ren sportresultat-rapportering av folkrace, ingen redaktionell vinkel med koppling till Julius Sundbloms intressen eller Tidningen Ålands ledarartiklar 1926. [nyhetsvärde 1 < 6]",
+    "fallback": false
   }
 ]
