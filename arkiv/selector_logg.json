@@ -10318,5 +10318,25 @@
     "tema": "infrastruktur",
     "anledning": "Trivial, temporär förändring i färjetrafik, saknar politisk eller samhällelig tyngd. [nyhetsvärde 1 < 6]",
     "fallback": false
+  },
+  {
+    "date": "2026-10-04",
+    "headline": "MOT granskar högerextremism och hemundervisning på Åland – kopplingen ifrågasätt",
+    "url": "https://alandsradio.ax/nyheter/mot-granskar-hogerextremism-och-hemundervisning-pa-aland-kopplingen-ifragasatts",
+    "skriv": false,
+    "nyhetsvarde": 4,
+    "tema": "sedlighet",
+    "anledning": "Ämnet är av intresse, men artikeln rapporterar om att det inte finns stöd för påståendet. Det saknas substans för en ledare när konflikten uteblir. [nyhetsvärde 4 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-10-04",
+    "headline": "Tuff start för JIK:s volleybollslag i seriepremiären",
+    "url": "https://alandsradio.ax/nyheter/tuff-start-for-jiks-volleybollslag-i-seriepremiaren",
+    "skriv": false,
+    "nyhetsvarde": 1,
+    "tema": "sport",
+    "anledning": "Ren sportresultat-rapportering av lokal betydelse, saknar relevans för Julius Sundbloms redaktionella linje. [nyhetsvärde 1 < 6]",
+    "fallback": false
   }
 ]
