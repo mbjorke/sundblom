@@ -10258,5 +10258,65 @@
     "tema": "sport",
     "anledning": "Ren sportresultat-rapportering av lokal karaktär. Saknar helt koppling till Julius Sundbloms redaktionella linje eller några större samhälleliga frågor. Inte substans nog för en ledare. [nyhetsvärde 1 < 6]",
     "fallback": false
+  },
+  {
+    "date": "2026-10-04",
+    "headline": "Max Sjuls slog finländskt rekord i marklyft under SFI-mästerskapen",
+    "url": "https://alandsradio.ax/nyheter/max-sjuls-slog-finlandskt-rekord-i-marklyft-under-sfi-masterskapen",
+    "skriv": false,
+    "nyhetsvarde": 2,
+    "tema": "sport",
+    "anledning": "Ren sportresultat-rapportering utan större samhälls- eller politisk relevans för en ledarartikel. Julius intresserar sig inte för sportresultat. [nyhetsvärde 2 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-10-04",
+    "headline": "Åländsk medaljskörd i Norrtäljedoppet – 40 medaljer",
+    "url": "https://alandsradio.ax/nyheter/alandsk-medaljskord-i-norrtaljedoppet-40-medaljer",
+    "skriv": false,
+    "nyhetsvarde": 1,
+    "tema": "sport",
+    "anledning": "Ren sportresultat-rapportering av lokal karaktär utan större samhällsrelevans eller koppling till Julius redaktionella teman. För trivialt för en ledare. [nyhetsvärde 1 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-10-04",
+    "headline": "Oavgjort för IFK Mariehamn Akademi i säsongsavslutningen",
+    "url": "https://alandsradio.ax/nyheter/oavgjort-for-ifk-mariehamn-akademi-i-sasongsavslutningen",
+    "skriv": false,
+    "nyhetsvarde": 1,
+    "tema": "sport",
+    "anledning": "Ren sportresultat-rapportering utan djupare samhälls-, autonomi- eller kulturvinkel. För obetydlig för en ledare. [nyhetsvärde 1 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-10-04",
+    "headline": "Seger för Matti Janlöv i nattorientering",
+    "url": "https://alandsradio.ax/nyheter/seger-for-matti-janlov-i-nattorientering",
+    "skriv": false,
+    "nyhetsvarde": 1,
+    "tema": "sport",
+    "anledning": "Ren sportresultat-rapportering av en lokal orienteringstävling utan större betydelse för Ålands politiska, samhälleliga eller kulturella liv. [nyhetsvärde 1 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-10-04",
+    "headline": "Förlust på hemmaplan för IFK Mariehamns andralag",
+    "url": "https://alandsradio.ax/nyheter/forlust-pa-hemmaplan-for-ifk-mariehamns-andralag",
+    "skriv": false,
+    "nyhetsvarde": 1,
+    "tema": "sport",
+    "anledning": "Ren sportresultat-rapportering av en lokal match utan större betydelse. Saknar koppling till Julius redaktionella intressen. [nyhetsvärde 1 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-10-04",
+    "headline": "Mindre färja trafikerar Björkölinjen i oktober",
+    "url": "https://alandsradio.ax/nyheter/mindre-farja-trafikerar-bjorkolinjen-i-oktober",
+    "skriv": false,
+    "nyhetsvarde": 1,
+    "tema": "infrastruktur",
+    "anledning": "Trivial, temporär förändring i färjetrafik, saknar politisk eller samhällelig tyngd. [nyhetsvärde 1 < 6]",
+    "fallback": false
   }
 ]
