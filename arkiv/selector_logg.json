@@ -10338,5 +10338,25 @@
     "tema": "sport",
     "anledning": "Ren sportresultat-rapportering av lokal betydelse, saknar relevans för Julius Sundbloms redaktionella linje. [nyhetsvärde 1 < 6]",
     "fallback": false
+  },
+  {
+    "date": "2026-10-04",
+    "headline": "Alandia Sailing Team slutade elva i Tyskland",
+    "url": "https://alandsradio.ax/nyheter/alandia-sailing-team-slutade-elva-i-tyskland",
+    "skriv": false,
+    "nyhetsvarde": 2,
+    "tema": "sport",
+    "anledning": "Ren sportresultat-rapportering från en sporttävling, ingen redaktionell vinkel för en ledare. [nyhetsvärde 2 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-10-04",
+    "headline": "IFK:s hockeyherrar vann säsongspremiären trots tufft motstånd",
+    "url": "https://alandsradio.ax/nyheter/ifks-hockeyherrar-vann-sasongspremiaren-trots-tufft-motstand",
+    "skriv": false,
+    "nyhetsvarde": 1,
+    "tema": "sport",
+    "anledning": "Ren sportresultat-rapportering från en trivial notis. Saknar koppling till Julius Sundbloms redaktionella värld och har ingen substans för en ledare. [nyhetsvärde 1 < 6]",
+    "fallback": false
   }
 ]
