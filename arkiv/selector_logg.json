@@ -10458,5 +10458,65 @@
     "tema": "modernitetens förfall",
     "anledning": "Ämnet berör visserligen modern teknik och dess potentiella påverkan på samhället, men nyheten är för obetydlig och rymmer inte tillräckligt med substans för en ledare. Det är ett testprojekt snarare än en etablerad förändring och Julius skulle se det som en småsak. Dessutom saknar det direkt koppling till de stora autonomifrågorna, svensk identitet, eller klassordning. [nyhetsvärde 3 < 6]",
     "fallback": false
+  },
+  {
+    "date": "2026-10-05",
+    "headline": "Skyddspolisen: Vi tog uppgifterna om högerextrema hemundervisare från Expo",
+    "url": "https://alandsradio.ax/nyheter/skyddspolisen-vi-tog-uppgifterna-om-hogerextrema-hemundervisare-fran-expo",
+    "skriv": true,
+    "nyhetsvarde": 8,
+    "tema": "självstyrelse",
+    "anledning": "Frågan om hemundervisning kontra skolplikt berör autonomin och dess tolkning, samt medborgarnas rättigheter och skyldigheter gentemot det åländska samhället. Att rikspolisen blandar sig i, baserat på tveksam information, skapar en spänning mellan självstyrelsen och riket, vilket Julius gärna skulle kommentera. Dessutom berör det barnens bildning och familjens roll, vilket är av stor vikt för sedligheten och samhällsordningen.",
+    "fallback": false
+  },
+  {
+    "date": "2026-10-05",
+    "headline": "Styrelsen stöder förändringsarbetet vid Åhs",
+    "url": "https://alandsradio.ax/nyheter/styrelsen-stoder-forandringsarbetet-vid-ahs",
+    "skriv": false,
+    "nyhetsvarde": 3,
+    "tema": "lokal förvaltning",
+    "anledning": "Ärendet rör en rutinmässig diskussion och ett internt stöd för förändringsarbete inom en myndighet, vilket är för obetydligt för en ledarartikel av Julius. Det saknar djupgående politisk eller samhällelig konflikt som motiverar en ledare. [nyhetsvärde 3 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-10-05",
+    "headline": "Unga: Ge oss mer att göra, så minskar stöket på stan",
+    "url": "https://alandsradio.ax/nyheter/unga-ge-oss-mer-att-gora-sa-minskar-stoket-pa-stan",
+    "skriv": false,
+    "nyhetsvarde": 3,
+    "tema": "sedlighet",
+    "anledning": "Trivial notis om ungdomars beteende. Saknar politisk tyngd eller koppling till centrala autonomifrågor. Innehåller få konkreta fakta eller beslut att bygga en ledare på. [nyhetsvärde 3 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-10-05",
+    "headline": "Viking Line köper fraktfartyg – nytt samarbete över Finska viken",
+    "url": "https://alandsradio.ax/nyheter/viking-line-koper-fraktfartyg-nytt-samarbete-over-finska-viken",
+    "skriv": false,
+    "nyhetsvarde": 3,
+    "tema": "ekonomi/handel",
+    "anledning": "Även om det handlar om ett viktigt åländskt rederi, är denna specifika notis om ett fraktsamarbete med Tyskland och Estland för specifik och saknar den bredare politiska eller samhälleliga vinkel som Julius Sundblom skulle förvänta sig för en ledarartikel. Det är en ren affärsnyhet som inte direkt berör självstyrelsen, den svenska identiteten eller tidens större samhällsfrågor på Åland 1926. Den påverkar heller inte 'årets resultat eller koncernens finansieringsställning' nämnvärt. [nyhetsvärde 3 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-10-05",
+    "headline": "Ålands Radio lanserar Ålandsnytt på lätt svenska",
+    "url": "https://alandsradio.ax/nyheter/alands-radio-lanserar-alandsnytt-pa-latt-svenska",
+    "skriv": false,
+    "nyhetsvarde": 3,
+    "tema": "kultur",
+    "anledning": "Intern rutinfråga för radion, inte tillräckligt substantiell för en ledare av Julius. Frågan om 'lätt svenska' faller utanför de stora samhällsfrågorna 1926 och är mer en redaktionell notis. [nyhetsvärde 3 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-10-05",
+    "headline": "Tehy: ÅHS kan spara på chefer och strukturer – inte bara vårdpersonal",
+    "url": "https://alandsradio.ax/nyheter/tehy-ahs-kan-spara-pa-chefer-och-strukturer-inte-bara-vardpersonal",
+    "skriv": false,
+    "nyhetsvarde": 4,
+    "tema": "ekonomi",
+    "anledning": "Interna organisationsfrågor inom ÅHS saknar den större politiska eller samhälleliga relevans som krävs för en ledare, och berör inte autonomi eller nationell identitet. Besparingar är en rutinåtgärd. [nyhetsvärde 4 < 6]",
+    "fallback": false
   }
 ]
