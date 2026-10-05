@@ -10358,5 +10358,105 @@
     "tema": "sport",
     "anledning": "Ren sportresultat-rapportering från en trivial notis. Saknar koppling till Julius Sundbloms redaktionella värld och har ingen substans för en ledare. [nyhetsvärde 1 < 6]",
     "fallback": false
+  },
+  {
+    "date": "2026-10-05",
+    "headline": "KST inför familjetelefon för råd och stöd",
+    "url": "https://alandsradio.ax/nyheter/kst-infor-familjetelefon-for-rad-och-stod",
+    "skriv": false,
+    "nyhetsvarde": 3,
+    "tema": "sociala frågor",
+    "anledning": "En ren servicenyhet om en ny tjänst. Saknar konflikt, större samhällelig relevans eller koppling till autonomi/svensk identitet. För lokal och trivial för en ledare. [nyhetsvärde 3 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-10-05",
+    "headline": "EU godkänner Cosmic- och vindkraftspengar",
+    "url": "https://alandsradio.ax/nyheter/eu-godkanner-cosmic-och-vindkraftspengar",
+    "skriv": true,
+    "nyhetsvarde": 8,
+    "tema": "autonomi och ekonomi",
+    "anledning": "Betydande EU-finansiering för åländska projekt av stor vikt för självstyrelsen och ekonomin, som havsbaserad vindkraft och vårdinformationssystem. Detta berör Ålands framtid, ekonomi och förmåga att agera självständigt med stöd från yttre makter. Julius skulle se detta som en möjlighet att belysa Ålands ställning i förhållande till både Finland och internationella organ.",
+    "fallback": false
+  },
+  {
+    "date": "2026-10-05",
+    "headline": "Kemetter förstår Tehys kritik: ”Tråkigt att allt sker samtidigt”",
+    "url": "https://alandsradio.ax/nyheter/kemetter-forstar-tehys-kritik-trakigt-att-allt-sker-samtidigt",
+    "skriv": false,
+    "nyhetsvarde": 3,
+    "tema": "arbetsmarknad/sociala frågor",
+    "anledning": "Intern arbetsmarknadsfråga inom ÅHS, saknar större politisk eller autonomirelaterad relevans. Innehållet är en rutinmässig arbetsrättslig diskussion snarare än en principfråga för Julius. [nyhetsvärde 3 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-10-05",
+    "headline": "Ålands konstmuseum köper målning av Victor Westerholm",
+    "url": "https://alandsradio.ax/nyheter/alands-konstmuseum-koper-malning-av-victor-westerholm",
+    "skriv": false,
+    "nyhetsvarde": 3,
+    "tema": "kultur",
+    "anledning": "Köp av en tavla av ett museum är en rutinåtgärd. Visst kultuvärde, men inte tillräckligt för en ledarartikel av Julius Sundblom. Ingen koppling till självstyrelse, samhällsordning eller större teman. [nyhetsvärde 3 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-10-05",
+    "headline": "Tommy Ruponen blir ny vd för ÅCA",
+    "url": "https://alandsradio.ax/nyheter/tommy-ruponen-blir-ny-vd-for-aca",
+    "skriv": false,
+    "nyhetsvarde": 2,
+    "tema": "ekonomi/näringsliv",
+    "anledning": "Ren personnotis om vd-byte inom ett företag, saknar större samhällelig eller politisk relevans för en ledarartikel. För obetydligt för Julius Sundblom. [nyhetsvärde 2 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-10-05",
+    "headline": "Landskapets verkstad samarbetsförhandlar – två berörs",
+    "url": "https://alandsradio.ax/nyheter/landskapets-verkstad-samarbetsforhandlar-tva-berors",
+    "skriv": false,
+    "nyhetsvarde": 2,
+    "tema": "ekonomi/arbetsliv",
+    "anledning": "Småskaliga samarbetsförhandlingar med begränsad påverkan. Ingen större politisk, samhällelig eller autonomirelevant vinkel. För obetydligt för en ledare av Julius Sundblom. [nyhetsvärde 2 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-10-05",
+    "headline": "Facket ifrågasätter nyrekrytering genast efter ÅHS uppsägningar",
+    "url": "https://alandsradio.ax/nyheter/facket-ifragasatter-nyrekrytering-genast-efter-ahs-uppsagningar",
+    "skriv": false,
+    "nyhetsvarde": 3,
+    "tema": "arbetsmarknad",
+    "anledning": "Även om fackliga frågor rör klass och samhällsordning, är denna notis för lokal och specifik i sin karaktär. Den saknar den större principiella konflikt eller det bredare samhälleliga perspektiv som Julius skulle se som grund för en ledare. Det är mer en intern arbetsmarknadsfråga inom en specifik myndighet, och inte en fråga som utmanar autonomin, sedligheten eller den större politiska ordningen på Åland 1926. [nyhetsvärde 3 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-10-05",
+    "headline": "19 vill bli stadsdirektör",
+    "url": "https://alandsradio.ax/nyheter/19-vill-bli-stadsdirektor",
+    "skriv": false,
+    "nyhetsvarde": 3,
+    "tema": "personnotis",
+    "anledning": "Ansökningslista för en tjänst, inget avgörande besked eller konflikt ännu. [nyhetsvärde 3 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-10-05",
+    "headline": "Slog och knäade man som försökte lugna bråk – döms till böter",
+    "url": "https://alandsradio.ax/nyheter/slog-och-knaade-man-som-forsokte-lugna-brak-doms-till-boter",
+    "skriv": false,
+    "nyhetsvarde": 3,
+    "tema": "sedlighet",
+    "anledning": "Trivial notis om ett krogbråk och bötesstraff. För obetydligt för en ledarartikel. [nyhetsvärde 3 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-10-05",
+    "headline": "AI ska tolka mellan KST:s klienter och personal",
+    "url": "https://alandsradio.ax/nyheter/ai-ska-tolka-mellan-ksts-klienter-och-personal",
+    "skriv": false,
+    "nyhetsvarde": 3,
+    "tema": "modernitetens förfall",
+    "anledning": "Ämnet berör visserligen modern teknik och dess potentiella påverkan på samhället, men nyheten är för obetydlig och rymmer inte tillräckligt med substans för en ledare. Det är ett testprojekt snarare än en etablerad förändring och Julius skulle se det som en småsak. Dessutom saknar det direkt koppling till de stora autonomifrågorna, svensk identitet, eller klassordning. [nyhetsvärde 3 < 6]",
+    "fallback": false
   }
 ]
