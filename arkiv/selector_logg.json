@@ -10518,5 +10518,105 @@
     "tema": "ekonomi",
     "anledning": "Interna organisationsfrågor inom ÅHS saknar den större politiska eller samhälleliga relevans som krävs för en ledare, och berör inte autonomi eller nationell identitet. Besparingar är en rutinåtgärd. [nyhetsvärde 4 < 6]",
     "fallback": false
+  },
+  {
+    "date": "2026-10-06",
+    "headline": "Padelcenter samlar in pengar till förmån för cancerforskning",
+    "url": "https://alandsradio.ax/nyheter/padelcenter-samlar-in-pengar-till-forman-for-cancerforskning",
+    "skriv": false,
+    "nyhetsvarde": 1,
+    "tema": "välgörenhet/sport",
+    "anledning": "Trivial notis om välgörenhet och sport, saknar koppling till centrala åländska frågor och för lite substans för en ledarartikel av Julius Sundblom. [nyhetsvärde 1 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-10-06",
+    "headline": "Endast en färja trafikerar Töftölinjen",
+    "url": "https://alandsradio.ax/nyheter/endast-en-farja-trafikerar-toftolinjen",
+    "skriv": false,
+    "nyhetsvarde": 2,
+    "tema": "infrastruktur",
+    "anledning": "Trivial notis om en tillfällig störning i färjetrafiken. Saknar större politisk eller samhällelig betydelse för en ledare. Passar inte Julius redaktionella värld av djupare samhällsfrågor. [nyhetsvärde 2 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-10-06",
+    "headline": "Aktieägarföreningen Viking står inför upplösning – ordförande: “Inte så mycket s",
+    "url": "https://alandsradio.ax/nyheter/aktieagarforeningen-viking-star-infor-upplosning-ordforande-inte-sa-mycket-skal-att-fortsatta",
+    "skriv": false,
+    "nyhetsvarde": 3,
+    "tema": "ekonomi",
+    "anledning": "Intern föreningsangelägenhet utan direkt koppling till större autonomifrågor eller rikspolitisk relevans. Även om det handlar om ett viktigt åländskt rederi är nyheten om en aktieägarförenings upplösning för smal och saknar den substans som krävs för en ledarartikel av Sundblom. Det berör inte heller sedlighet eller samhällsordning på ett relevant sätt för 1926. [nyhetsvärde 3 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-10-06",
+    "headline": "Harry Jansson vill sänka tröskeln till politiken",
+    "url": "https://alandsradio.ax/nyheter/harry-jansson-vill-sanka-troskeln-till-politiken",
+    "skriv": false,
+    "nyhetsvarde": 3,
+    "tema": "politik",
+    "anledning": "En enskild politikers initiativ för politisk utbildning är en rutinåtgärd. Brist på substans för en ledare. [nyhetsvärde 3 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-10-06",
+    "headline": "Palliativflytt: Värmen en utmaning – uteplats en fördel",
+    "url": "https://alandsradio.ax/nyheter/palliativflytt-varmen-en-utmaning-uteplats-en-fordel",
+    "skriv": false,
+    "nyhetsvarde": 2,
+    "tema": "lokal förvaltning",
+    "anledning": "Ämnet är för specifikt, tekniskt och rör intern organisering av sjukvård, vilket inte passar Julius Sundbloms redaktionella fokus på 1920-talet. Det saknar koppling till större politiska, samhälleliga eller autonomifrågor. [nyhetsvärde 2 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-10-06",
+    "headline": "Ålands Radio rättar: EU-ansökan för Cosmic och Sunnanvind fortsatt under behandl",
+    "url": "https://alandsradio.ax/nyheter/alands-radio-rattar-eu-ansokan-for-cosmic-och-sunnanvind-fortsatt-under-behandling",
+    "skriv": false,
+    "nyhetsvarde": 3,
+    "tema": "ekonomi",
+    "anledning": "Notisen handlar om en rättelse kring EU-stöd och Finlands ansökan. Den berör inte direkt Ålands självstyrelse i sig, utan snarare en teknisk detalj om vilken ansökan specifika åländska projekt ingår i. Inget stort beslutsfattande eller konflikt att skriva en ledare om. [nyhetsvärde 3 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-10-06",
+    "headline": "Varuboden får bygglov för biltvätt och varuutlämning i Möckelö",
+    "url": "https://alandsradio.ax/nyheter/varuboden-far-bygglov-for-biltvatt-och-varuutlamning-i-mockelo",
+    "skriv": false,
+    "nyhetsvarde": 2,
+    "tema": "ekonomi/lokalt",
+    "anledning": "Trivial, lokal bygglovsnotis utan större samhällelig, politisk eller autonomi-relaterad betydelse. Saknar substans för en ledare av Julius Sundblom. [nyhetsvärde 2 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-10-06",
+    "headline": "Lång kryssningssäsong nästa år – 18 anlöp bokade hittills",
+    "url": "https://alandsradio.ax/nyheter/lang-kryssningssasong-nasta-ar-18-anlop-bokade-hittills",
+    "skriv": false,
+    "nyhetsvarde": 3,
+    "tema": "ekonomi",
+    "anledning": "Notis om framtida kryssningsanlöp är för spekulativ och rutinartad för en ledarartikel. Saknar direkt koppling till ledarens kärnämnen som autonomi, samhällsordning eller sedlighet, och handlar om en framtida händelse snarare än en aktuell konflikt eller beslut som kräver omedelbar kommentar. [nyhetsvärde 3 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-10-06",
+    "headline": "Åland avbröt kommersiellt laxfiske",
+    "url": "https://alandsradio.ax/nyheter/aland-avbrot-kommersiellt-laxfiske",
+    "skriv": false,
+    "nyhetsvarde": 4,
+    "tema": "ekonomi",
+    "anledning": "Även om det rör ekonomi och näring, är detta en rutinåtgärd kring kvoter och fiske som saknar den djupare politiska eller samhälleliga konflikt som Julius söker för en ledare. För trivialt. [nyhetsvärde 4 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-10-06",
+    "headline": "Ålands regler för hemundervisning kan bli modell för riket",
+    "url": "https://alandsradio.ax/nyheter/alands-regler-for-hemundervisning-kan-bli-modell-for-riket",
+    "skriv": true,
+    "nyhetsvarde": 8,
+    "tema": "självstyrelse, utbildning, rikspolitisk relevans",
+    "anledning": "Frågan om hemundervisning berör både den åländska självstyrelsen, utbildningspolitiken, och har en rikspolitisk dimension där Åland kan fungera som modell. Ministrar från riket och Åland diskuterar samarbetet, vilket ger ämnet tyngd och substans för en ledare.",
+    "fallback": false
   }
 ]
