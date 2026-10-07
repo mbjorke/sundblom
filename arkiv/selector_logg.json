@@ -10798,5 +10798,75 @@
     "tema": "lokal förvaltning",
     "anledning": "Vårdöstyrelsens beslut rör en lokal, administrativ fråga om infrastruktur, inte av tillräcklig politisk, samhällelig eller autonom relevans för en ledarartikel av Julius Sundblom. Det saknas en tydlig koppling till bredare teman som självstyrelse, svensk identitet, samhällsordning eller modernitetens förfall. Beslutet är snarare en rutinåtgärd på lokal nivå, även om en anhållan till landskapsregeringen görs. [nyhetsvärde 3 < 6]",
     "fallback": false
+  },
+  {
+    "date": "2026-10-07",
+    "headline": "Jansson om uppmaningen till LR: \"Jag skrev som privatperson\"",
+    "url": "https://alandsradio.ax/nyheter/jansson-om-uppmaningen-till-lr-jag-skrev-som-privatperson",
+    "skriv": false,
+    "nyhetsvarde": 4,
+    "tema": "ekonomi",
+    "anledning": "Även om det rör ekonomiska problem och en koppling till landskapsregeringen, är det en personnotis och en intern affär som saknar den bredare samhälls- eller autonomirelevans som motiverar en ledare av Julius Sundblom. Uppmaningen är från en privatperson, vilket minskar dess politiska tyngd för en ledare. [nyhetsvärde 4 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-10-07",
+    "headline": "Perämaa om ÅFAB-skulderna: \"Besvärande att det gavs politiska löften som man int",
+    "url": "https://alandsradio.ax/nyheter/peramaa-om-afab-skulderna-besvarande-att-det-gavs-politiska-loften-som-man-inte-haft-tackning-for",
+    "skriv": true,
+    "nyhetsvarde": 8,
+    "tema": "självstyrelse, ekonomi, samhällsordning",
+    "anledning": "Frågan om landskapets ansvar för skulder i ett landskapsägt bolag, politiska löften utan täckning, och en potentiell jävsituation är av stor betydelse för Ålands självstyrelse och ekonomiska stabilitet. Detta berör medborgarnas tillit till politiken och hanteringen av allmänna medel. En ledare av Julius Sundblom skulle kunna granska förvaltningen och de politiska besluten, samt diskutera ansvarsutkrävande och transparens inom självstyret.",
+    "fallback": false
+  },
+  {
+    "date": "2026-10-07",
+    "headline": "Arsim Zekaj beklagar avhoppen",
+    "url": "https://alandsradio.ax/nyheter/arsim-zekaj-beklagar-avhoppen",
+    "skriv": false,
+    "nyhetsvarde": 3,
+    "tema": "interna stridigheter",
+    "anledning": "Även om det handlar om ett viktigt sakområde (vård) är nyheten i sig en personnotis om avhopp och ministerbeklaganden. Det saknar den bredare politiska eller samhälleliga vinkel Julius skulle kräva för en ledare, och handlar mer om interna stridigheter än principfrågor av stor vikt för självstyrelsen eller samhällsordningen. Den ger inte tillräckligt med substans för en djupare analys avsedd för en ledare. [nyhetsvärde 3 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-10-07",
+    "headline": "Kemetter om avhoppen: ”De gick in med fel förväntningar”",
+    "url": "https://alandsradio.ax/nyheter/kemetter-om-avhoppen-de-gick-in-med-fel-forvantningar",
+    "skriv": false,
+    "nyhetsvarde": 4,
+    "tema": "landskapsförvaltning",
+    "anledning": "Även om det rör autonomins förvaltning, handlar det om interna avhopp och personkonflikter snarare än principfrågor av substantiell politisk vikt som Julius skulle vilja belysa i en ledare. För lite 'kött på benen' för en ledare. [nyhetsvärde 4 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-10-07",
+    "headline": "Arja Saijonmaa till Åland på fredag – publiken kanske får välja språk på musiken",
+    "url": "https://alandsradio.ax/nyheter/arja-saijonmaa-till-aland-pa-fredag-publiken-kanske-far-valja-sprak-pa-musiken",
+    "skriv": false,
+    "nyhetsvarde": 2,
+    "tema": "kultur",
+    "anledning": "Kulturevenemang med artist från Finland, men saknar djupare koppling till autonomi, samhällsfrågor eller politik. För lättviktigt för en ledare. [nyhetsvärde 2 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-10-07",
+    "headline": "”Vi behöver en tydlig och stark ledare” – förhoppning om ny stadsdirektör på pla",
+    "url": "https://alandsradio.ax/nyheter/vi-behover-en-tydlig-och-stark-ledare-forhoppning-om-ny-stadsdirektor-pa-plats-i-februari",
+    "skriv": false,
+    "nyhetsvarde": 4,
+    "tema": "lokalpolitik",
+    "anledning": "Internrekrytering av stadsdirektör är för lokalt och rutinmässigt. Inga större samhällspolitiska aspekter att skriva en ledare om. [nyhetsvärde 4 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-10-07",
+    "headline": "Stadens bildningssektor behöver 800 000 euro mer – personal har underbudgeterats",
+    "url": "https://alandsradio.ax/nyheter/stadens-bildningssektor-behover-800-000-euro-mer-personal-har-underbudgeterats-under-flera-ars-tid",
+    "skriv": false,
+    "nyhetsvarde": 4,
+    "tema": "ekonomi",
+    "anledning": "Intern kommunal budgetfråga utan djupare politisk eller samhällelig vinkel. Saknar 'kris' eller bredare implikationer för autonomin eller sedligheten. [nyhetsvärde 4 < 6]",
+    "fallback": false
   }
 ]
