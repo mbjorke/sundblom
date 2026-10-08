@@ -11028,5 +11028,15 @@
     "tema": "ekonomi",
     "anledning": "Smålokal notis om detaljplan och dispyt mellan kommun och företag. Saknar större politisk eller samhällelig relevans för en ledare. [nyhetsvärde 3 < 6]",
     "fallback": false
+  },
+  {
+    "date": "2026-10-08",
+    "headline": "Eckerölinjen ställer in avgångar på fredag",
+    "url": "https://alandsradio.ax/nyheter/eckerolinjen-staller-in-avgangar-pa-fredag",
+    "skriv": false,
+    "nyhetsvarde": 1,
+    "tema": "väder",
+    "anledning": "Väderrelaterade inställda avgångar är en trivial notis utan politisk, samhällelig eller autonomirelevant betydelse. Ingen substans för en ledare. [nyhetsvärde 1 < 6]",
+    "fallback": false
   }
 ]
