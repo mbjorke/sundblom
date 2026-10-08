@@ -10948,5 +10948,85 @@
     "tema": "teknik",
     "anledning": "Modernitetens förfall som tema är för svagt här. Det är en praktisk funktion som inte innehåller någon politisk, samhällelig eller existentiell konflikt värd en ledare. För lite substans för Julius. [nyhetsvärde 3 < 6]",
     "fallback": false
+  },
+  {
+    "date": "2026-10-08",
+    "headline": "Sjöräddningen assisterade Michael Sars",
+    "url": "https://alandsradio.ax/nyheter/sjoraddningen-assisterade-michael-sars",
+    "skriv": false,
+    "nyhetsvarde": 2,
+    "tema": "lokala notiser",
+    "anledning": "Trivial notis om rutinmässig sjöräddningsinsats. Saknar politisk, samhällelig eller autonomirelevant vinkel. För tunt för en ledare av Julius Sundblom. [nyhetsvärde 2 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-10-08",
+    "headline": "50 år sedan åländsk polis dödades i tjänst",
+    "url": "https://alandsradio.ax/nyheter/50-ar-sedan-alandsk-polis-dodades-i-tjanst",
+    "skriv": false,
+    "nyhetsvarde": 2,
+    "tema": "polisarbete",
+    "anledning": "Notisen handlar om ett enskilt dödsfall 50 år tidigare och polisens säkerhetsarbete. Den har ingen direkt koppling till självstyrelse, svensk identitet, klass, sedlighet eller annan för Julius relevant tematik. Saknar den substans för en ledare 1926. [nyhetsvärde 2 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-10-08",
+    "headline": "Megaevent i geocaching kan locka hundratals till Åland",
+    "url": "https://alandsradio.ax/nyheter/megaevent-i-geocaching-kan-locka-hundratals-till-aland",
+    "skriv": false,
+    "nyhetsvarde": 2,
+    "tema": "turism",
+    "anledning": "Trivial notis om framtida turismevenemang. Saknar politisk, samhällelig eller existentiell relevans för ledarartikel år 1926. [nyhetsvärde 2 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-10-08",
+    "headline": "Jeanette Pajunen får ordinarie jobb i Eckerö kommun",
+    "url": "https://alandsradio.ax/nyheter/jeanette-pajunen-far-ordinarie-jobb-i-eckero-kommun",
+    "skriv": false,
+    "nyhetsvarde": 1,
+    "tema": "småkommunal förvaltning",
+    "anledning": "Trivial personnotis om en anställning i en liten kommun. Saknar större politisk, samhällelig eller autonomirelevant betydelse. Ingen substans för en ledarartikel av Julius Sundblom. [nyhetsvärde 1 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-10-08",
+    "headline": "Lantrådet ser allvarligt på avhoppen i ÅHS-styrelsen “Det skadar förtroendet för",
+    "url": "https://alandsradio.ax/nyheter/lantradet-ser-allvarligt-pa-avhoppen-i-ahs-styrelsen-det-skadar-fortroendet-for-liberalerna",
+    "skriv": true,
+    "nyhetsvarde": 7,
+    "tema": "självstyrelse, politik, samhällsordning",
+    "anledning": "Avhopp från en viktig offentlig styrelse medför kritik mot det styrande partiet. Det rör allmänhetens förtroende för styret och självstyrelsens funktion.",
+    "fallback": false
+  },
+  {
+    "date": "2026-10-08",
+    "headline": "LR ger stöd för gemensamt demenscentrum på Åland",
+    "url": "https://alandsradio.ax/nyheter/lr-ger-stod-for-gemensamt-demenscentrum-pa-aland",
+    "skriv": false,
+    "nyhetsvarde": 4,
+    "tema": "samhällsfrågor",
+    "anledning": "Ämnet i sig är angeläget men nyheten är en rutinmässig beviljning av medel och saknar den substans, konflikt eller principiella dimension som motiverar en ledarartikel av Julius Sundblom. Det är mer en administrativ notis än en händelse med stor politisk eller samhällsomdanande relevans för 1926. [nyhetsvärde 4 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-10-08",
+    "headline": "Fortsatt försening för Töftölinjens reservfärja – oklart när den kan sättas i tr",
+    "url": "https://alandsradio.ax/nyheter/fortsatt-forsening-for-toftolinjens-reservfarja-oklart-nar-den-kan-sattas-i-trafik",
+    "skriv": false,
+    "nyhetsvarde": 2,
+    "tema": "infrastruktur",
+    "anledning": "Trivial notis om en mindre försening av en reservfärja. Saknar större politisk, samhällelig eller ekonomisk bäring som motiverar en ledarartikel från Julius Sundblom. Passar inte hans redaktionella värld. [nyhetsvärde 2 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-10-08",
+    "headline": "Jomala kritiserar uttalanden i handelskriget: ”Stämmer inte med verkligheten”",
+    "url": "https://alandsradio.ax/nyheter/jomala-kritiserar-uttalanden-i-handelskriget-stammer-inte-med-verkligheten",
+    "skriv": false,
+    "nyhetsvarde": 3,
+    "tema": "ekonomi",
+    "anledning": "Smålokal notis om detaljplan och dispyt mellan kommun och företag. Saknar större politisk eller samhällelig relevans för en ledare. [nyhetsvärde 3 < 6]",
+    "fallback": false
   }
 ]
