@@ -10868,5 +10868,85 @@
     "tema": "ekonomi",
     "anledning": "Intern kommunal budgetfråga utan djupare politisk eller samhällelig vinkel. Saknar 'kris' eller bredare implikationer för autonomin eller sedligheten. [nyhetsvärde 4 < 6]",
     "fallback": false
+  },
+  {
+    "date": "2026-10-08",
+    "headline": "Två lämnar ÅHS styrelse, demonstration på söndag och färre barn i skolorna",
+    "url": "https://alandsradio.ax/nyheter/tva-lamnar-ahs-styrelse-demonstration-pa-sondag-och-farre-barn-i-skolorna",
+    "skriv": false,
+    "nyhetsvarde": 4,
+    "tema": "inre politik",
+    "anledning": "Interna stridigheter i ÅHS styrelse är för lokala och specifika för att Julius ska skriva en ledare om det. Beslut saknar större betydelse för autonomi eller samhällsordning. [nyhetsvärde 4 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-10-08",
+    "headline": "Ålänningarna ser betydligt mörkare på ekonomin än grannarna – håller hårdare i p",
+    "url": "https://alandsradio.ax/nyheter/alanningarna-ser-betydligt-morkare-pa-ekonomin-an-grannarna-haller-hardare-i-planboken",
+    "skriv": false,
+    "nyhetsvarde": 4,
+    "tema": "ekonomi",
+    "anledning": "Ekonomisk notis utan större politisk eller autonomi-relaterad vikt. Inte tillräckligt med substans för en ledare. [nyhetsvärde 4 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-10-08",
+    "headline": "Fem islandshästsmedaljer med hem från Sverige",
+    "url": "https://alandsradio.ax/nyheter/fem-islandshastsmedaljer-med-hem-fran-sverige",
+    "skriv": false,
+    "nyhetsvarde": 2,
+    "tema": "sport",
+    "anledning": "Ren sportresultat-rapportering utan större samhällelig relevans eller anknytning till Julius redaktionella värld. [nyhetsvärde 2 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-10-08",
+    "headline": "Jaatinens kontrakt med ÅU förlängs med två år",
+    "url": "https://alandsradio.ax/nyheter/jaatinens-kontrakt-med-au-forlangs-med-tva-ar",
+    "skriv": false,
+    "nyhetsvarde": 1,
+    "tema": "sport",
+    "anledning": "Ren sportresultat-rapportering om ett idrottskontrakt. Saknar substans och relevans för en ledarartikel av Julius Sundblom. Ingen koppling till autonomi, samhälle eller sedlighet. [nyhetsvärde 1 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-10-08",
+    "headline": "Axrent växer på höjden och bredden",
+    "url": "https://alandsradio.ax/nyheter/axrent-vaxer-pa-hojden-och-bredden",
+    "skriv": false,
+    "nyhetsvarde": 2,
+    "tema": "ekonomi",
+    "anledning": "Trivial notis om ett enskilt företags expansion. Saknar koppling till större samhälleliga eller politiska frågor av intresse för en ledarartikel. [nyhetsvärde 2 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-10-08",
+    "headline": "Staden förstör två konstverk",
+    "url": "https://alandsradio.ax/nyheter/staden-forstor-tva-konstverk",
+    "skriv": false,
+    "nyhetsvarde": 2,
+    "tema": "kultur",
+    "anledning": "Trivial notis om destruktion av två kommunala konstverk. Ingen större kulturell eller samhällelig relevans för en ledare 1926. Saknar den typ av konflikt eller problematik som Julius brukar engagera sig i. [nyhetsvärde 2 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-10-08",
+    "headline": "Markköp kan göra underfart under Nya Godbyvägen möjlig",
+    "url": "https://alandsradio.ax/nyheter/markkop-kan-gora-underfart-under-nya-godbyvagen-mojlig",
+    "skriv": false,
+    "nyhetsvarde": 4,
+    "tema": "lokal infrastruktur",
+    "anledning": "Även om det handlar om kommunala markköp och infrastruktur, är det en lokal Finström-fråga som saknar den större politiska eller principiella tyngd Julius Sundblom skulle ägna en ledare åt. Det är ingen konflikt med landskapsregeringen som hotar självstyrelsen eller ekonomin i stort, utan snarare en rutinfråga om vägbyggen. [nyhetsvärde 4 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-10-08",
+    "headline": "Ålcom redo för att ta i bruk FI-Alert",
+    "url": "https://alandsradio.ax/nyheter/alcom-redo-for-att-ta-i-bruk-fi-alert",
+    "skriv": false,
+    "nyhetsvarde": 3,
+    "tema": "teknik",
+    "anledning": "Modernitetens förfall som tema är för svagt här. Det är en praktisk funktion som inte innehåller någon politisk, samhällelig eller existentiell konflikt värd en ledare. För lite substans för Julius. [nyhetsvärde 3 < 6]",
+    "fallback": false
   }
 ]
