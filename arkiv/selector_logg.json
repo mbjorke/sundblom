@@ -11198,5 +11198,15 @@
     "tema": "ekonomi",
     "anledning": "Ämnet är för specifikt för upphandlingar och saknar koppling till centrala teman som självstyrelse, svensk identitet, klass eller sedlighet år 1926. Det är för detaljerat och saknar den större principiella konflikt som Julius söker för en ledare. [nyhetsvärde 3 < 6]",
     "fallback": false
+  },
+  {
+    "date": "2026-10-09",
+    "headline": "Fördel Finland efter första kvalmötet – debut för Ulenius",
+    "url": "https://alandsradio.ax/nyheter/fordel-finland-efter-forsta-kvalmotet-debut-for-ulenius",
+    "skriv": false,
+    "nyhetsvarde": 1,
+    "tema": "sport",
+    "anledning": "Ren sportresultat-rapportering från en landskamp, för obetydligt för en ledare. [nyhetsvärde 1 < 6]",
+    "fallback": false
   }
 ]
