@@ -11138,5 +11138,65 @@
     "tema": "ekonomi, självstyrelse",
     "anledning": "Upphandling av skärgårdstrafiken är av stor ekonomisk och självstyrelsemässig betydelse för Åland. Konkurrens och kostnadskontroll är centrala frågor för landskapsregeringen och medborgarna. Torghattens intresse och den avbrutna upphandlingen medför stor substans och möjlighet till en ledare om hur landskapsregeringen sköter dessa viktiga ärenden.",
     "fallback": false
+  },
+  {
+    "date": "2026-10-09",
+    "headline": "Arne Selander letar nya köpare till ÅFAB:s fastigheter",
+    "url": "https://alandsradio.ax/nyheter/arne-selander-letar-nya-kopare-till-afabs-fastigheter",
+    "skriv": false,
+    "nyhetsvarde": 4,
+    "tema": "ekonomi",
+    "anledning": "Även om det rör ekonomi och en viss offentlig anknytning (Fastighetsverket), är det en för specifik och intern bolagsfråga för att motivera en ledare. Det saknar den bredare politiska eller samhälleliga vinkeln som Julius skulle efterfråga. Det handlar om interna affärer snarare än principer eller autonomi. [nyhetsvärde 4 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-10-09",
+    "headline": "Fredsforskare om Nobelpriset: ”En markering för folkrätten”",
+    "url": "https://alandsradio.ax/nyheter/fredsforskare-om-nobelpriset-en-markering-for-folkratten",
+    "skriv": false,
+    "nyhetsvarde": 3,
+    "tema": "internationell politik",
+    "anledning": "Nobelpris till sydafrikansk jurist är intressant, men för långt ifrån åländsk vardag. Kopplingen till Ålands fredsinstitut och Åland som exempel på folkrättens betydelse är relevant, men händelsen är inte tillräckligt substantiell för Julius redaktionella inriktning på ledarplats. [nyhetsvärde 3 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-10-09",
+    "headline": "Endast en Töftöfärja även i helgen",
+    "url": "https://alandsradio.ax/nyheter/endast-en-toftofarja-aven-i-helgen",
+    "skriv": false,
+    "nyhetsvarde": 2,
+    "tema": "lokal infrastruktur",
+    "anledning": "Trivial notis om en rutinfördröjning i färjetrafiken. Saknar större politisk, samhällelig eller ekonomisk bäring som motiverar en ledare av Sundblom. Det är en smålokal notis. [nyhetsvärde 2 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-10-09",
+    "headline": "Efter avbruten upphandling: Gunell sträcker ut en hand till oppositionen",
+    "url": "https://alandsradio.ax/nyheter/efter-avbruten-upphandling-gunell-stracker-ut-en-hand-till-oppositionen",
+    "skriv": true,
+    "nyhetsvarde": 8,
+    "tema": "självstyrelse, ekonomi, samhällsordning, modernitetens förfall",
+    "anledning": "Frågan om skärgårdstrafiken är central för Ålands infrastruktur, ekonomi och invånarnas välfärd, och berör direkt den åländska självstyrelsen och dess förmåga att hantera viktiga samhällsfunktioner. Att en upphandling avbryts och oppositionen bjuds in indikerar ett potentiellt systemfel eller en misskötsel som kräver granskning. Debatten om kostnader kontra moderna krav (utsläpp, teknik) kan tjäna som en kommentar till 'modernitetens förfall' eller den ekonomiska verklighetens krav. Dessutom har det en tydlig politisk konflikt och ett konkret beslut med långtgående konsekvenser, vilket ger god substans för en ledarartikel.",
+    "fallback": false
+  },
+  {
+    "date": "2026-10-09",
+    "headline": "Klart: Staden och Föglö avslutar hemundervisningsavtal",
+    "url": "https://alandsradio.ax/nyheter/klart-staden-och-foglo-avslutar-hemundervisningsavtal",
+    "skriv": false,
+    "nyhetsvarde": 3,
+    "tema": "lokal förvaltning",
+    "anledning": "Trivial notis om rutinåtgärd inom lokal förvaltning. Saknar större politisk, samhällelig eller principiell relevans för en ledare. [nyhetsvärde 3 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-10-09",
+    "headline": "Oppositionen välkomnar den avbrutna upphandlingen: ”Gyllene möjlighet”",
+    "url": "https://alandsradio.ax/nyheter/oppositionen-valkomnar-den-avbrutna-upphandlingen-gyllene-mojlighet",
+    "skriv": false,
+    "nyhetsvarde": 3,
+    "tema": "ekonomi",
+    "anledning": "Ämnet är för specifikt för upphandlingar och saknar koppling till centrala teman som självstyrelse, svensk identitet, klass eller sedlighet år 1926. Det är för detaljerat och saknar den större principiella konflikt som Julius söker för en ledare. [nyhetsvärde 3 < 6]",
+    "fallback": false
   }
 ]
