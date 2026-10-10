@@ -11208,5 +11208,35 @@
     "tema": "sport",
     "anledning": "Ren sportresultat-rapportering från en landskamp, för obetydligt för en ledare. [nyhetsvärde 1 < 6]",
     "fallback": false
+  },
+  {
+    "date": "2026-10-10",
+    "headline": "Ägg återkallas efter salmonellafynd",
+    "url": "https://alandsradio.ax/nyheter/agg-aterkallas-efter-salmonellafynd",
+    "skriv": false,
+    "nyhetsvarde": 1,
+    "tema": "hälsa och konsumentfrågor",
+    "anledning": "Trivial notis om livsmedelsåterkallelse. Ingen större betydelse för Ålands autonomi, politik, samhällsordning eller Julius redaktionella värld. Saknar substans för en ledare. [nyhetsvärde 1 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-10-10",
+    "headline": "Danielsson och Hartzell tillbaka på Kanonloppstronen",
+    "url": "https://alandsradio.ax/nyheter/danielsson-och-hartzell-tillbaka-pa-kanonloppstronen",
+    "skriv": false,
+    "nyhetsvarde": 1,
+    "tema": "sport",
+    "anledning": "Ren sportresultat-rapportering av ett lokalt lopp, saknar redaktionell vinkel för en ledare. För obetydligt för Sundblom. [nyhetsvärde 1 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-10-10",
+    "headline": "Staden och LR diskuterar sänkt hastighet och fler övergångsställen på Österleden",
+    "url": "https://alandsradio.ax/nyheter/staden-och-lr-diskuterar-sankt-hastighet-och-fler-overgangsstallen-pa-osterleden",
+    "skriv": false,
+    "nyhetsvarde": 2,
+    "tema": "lokal infrastruktur",
+    "anledning": "Trivial, smålokal notis om infrastrukturdetaljer, saknar större samhällelig eller politisk relevans för en ledarartikel av Julius Sundblom. Ingen tydlig koppling till självstyrelse, svensk identitet, klass, sedlighet eller internationella relationer. [nyhetsvärde 2 < 6]",
+    "fallback": false
   }
 ]
