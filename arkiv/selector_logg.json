@@ -11238,5 +11238,25 @@
     "tema": "lokal infrastruktur",
     "anledning": "Trivial, smålokal notis om infrastrukturdetaljer, saknar större samhällelig eller politisk relevans för en ledarartikel av Julius Sundblom. Ingen tydlig koppling till självstyrelse, svensk identitet, klass, sedlighet eller internationella relationer. [nyhetsvärde 2 < 6]",
     "fallback": false
+  },
+  {
+    "date": "2026-10-10",
+    "headline": "IFK:s hockeyherrar förlorade på bortaplan – b-laget tog första segern",
+    "url": "https://alandsradio.ax/nyheter/ifks-hockeyherrar-forlorade-pa-bortaplan-b-laget-tog-forsta-segern",
+    "skriv": false,
+    "nyhetsvarde": 1,
+    "tema": "sport",
+    "anledning": "Ren sportresultat-rapportering, för obetydligt för en ledarartikel av Julius Sundblom. Inga större teman som samhällsordning, autonomi eller sedlighet berörs. [nyhetsvärde 1 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-10-10",
+    "headline": "Matlagning utlöste automatlarm",
+    "url": "https://alandsradio.ax/nyheter/matlagning-utloste-automatlarm",
+    "skriv": false,
+    "nyhetsvarde": 1,
+    "tema": "trivial notis",
+    "anledning": "Trivial lokal notis om en rutinåtgärd. Saknar all relevans för Julius Sundbloms intresseområden. [nyhetsvärde 1 < 6]",
+    "fallback": false
   }
 ]
