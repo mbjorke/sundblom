@@ -11258,5 +11258,15 @@
     "tema": "trivial notis",
     "anledning": "Trivial lokal notis om en rutinåtgärd. Saknar all relevans för Julius Sundbloms intresseområden. [nyhetsvärde 1 < 6]",
     "fallback": false
+  },
+  {
+    "date": "2026-10-10",
+    "headline": "Kryss för IFK – nu måste man vinna i Jakobstad",
+    "url": "https://alandsradio.ax/nyheter/kryss-for-ifk-nu-maste-man-vinna-i-jakobstad",
+    "skriv": false,
+    "nyhetsvarde": 2,
+    "tema": "sport",
+    "anledning": "Ren sportresultat-rapportering, ingen redaktionell vinkel för 1926 års Tidningen Åland. [nyhetsvärde 2 < 6]",
+    "fallback": false
   }
 ]
