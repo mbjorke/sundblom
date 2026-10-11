@@ -11268,5 +11268,15 @@
     "tema": "sport",
     "anledning": "Ren sportresultat-rapportering, ingen redaktionell vinkel för 1926 års Tidningen Åland. [nyhetsvärde 2 < 6]",
     "fallback": false
+  },
+  {
+    "date": "2026-10-11",
+    "headline": "Församlingsvalets valkompass har öppnat",
+    "url": "https://alandsradio.ax/nyheter/forsamlingsvalets-valkompass-har-oppnat",
+    "skriv": false,
+    "nyhetsvarde": 1,
+    "tema": "lokal församlingsfråga",
+    "anledning": "För obetydlig och rör en rutinmässig församlingsfråga utan djupare politisk eller samhällelig relevans för en ledarartikel av Sundblom. Dessutom har valkompasser sannolikt inte hunnit bli en etablerad nyhetsform år 1926. [nyhetsvärde 1 < 6]",
+    "fallback": false
   }
 ]
