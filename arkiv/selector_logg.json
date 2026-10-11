@@ -11278,5 +11278,25 @@
     "tema": "lokal församlingsfråga",
     "anledning": "För obetydlig och rör en rutinmässig församlingsfråga utan djupare politisk eller samhällelig relevans för en ledarartikel av Sundblom. Dessutom har valkompasser sannolikt inte hunnit bli en etablerad nyhetsform år 1926. [nyhetsvärde 1 < 6]",
     "fallback": false
+  },
+  {
+    "date": "2026-10-11",
+    "headline": "Hundratals i protest mot nedskärningarna på palliativa",
+    "url": "https://alandsradio.ax/nyheter/hundratals-i-protest-mot-nedskarningarna-pa-palliativa",
+    "skriv": false,
+    "nyhetsvarde": 4,
+    "tema": "sociala frågor",
+    "anledning": "Intern social fråga med lokalpolitiska undertoner. För obetydligt för en ledare av Sundblom. Inga kopplingar till självstyrelse, svensk identitet, nationell politik eller större samhällsförändringar av intresse för 1926 års redaktionschef. [nyhetsvärde 4 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-10-11",
+    "headline": "Rivstart men sen tappade IFK allt – ny förlust för hockeyherrarna",
+    "url": "https://alandsradio.ax/nyheter/rivstart-men-sen-tappade-ifk-allt-ny-forlust-for-hockeyherrarna",
+    "skriv": false,
+    "nyhetsvarde": 1,
+    "tema": "sport",
+    "anledning": "Ren sportresultat-rapportering utan djupare samhälls-, autonomi- eller kulturkoppling. För obetydligt för en ledare. [nyhetsvärde 1 < 6]",
+    "fallback": false
   }
 ]
