@@ -11298,5 +11298,105 @@
     "tema": "sport",
     "anledning": "Ren sportresultat-rapportering utan djupare samhälls-, autonomi- eller kulturkoppling. För obetydligt för en ledare. [nyhetsvärde 1 < 6]",
     "fallback": false
+  },
+  {
+    "date": "2026-10-12",
+    "headline": "Två linfärjor trafikerar nu på Töftölinjen",
+    "url": "https://alandsradio.ax/nyheter/tva-linfarjor-trafikerar-nu-pa-toftolinjen",
+    "skriv": false,
+    "nyhetsvarde": 2,
+    "tema": "infrastruktur",
+    "anledning": "En ren rutinnotis om temporärt upphörda trafikstörningar. Saknar politisk, ekonomisk eller samhällelig tyngd för en ledare. För lite substans. [nyhetsvärde 2 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-10-12",
+    "headline": "Östersjön hotas av oåterkalleliga skador – dikning av skogsmark pekas ut som ext",
+    "url": "https://alandsradio.ax/nyheter/ostersjon-hotas-av-oaterkalleliga-skador-dikning-av-skogsmark-pekas-ut-som-extra-problematisk",
+    "skriv": false,
+    "nyhetsvarde": 4,
+    "tema": "miljö",
+    "anledning": "Frågan om miljö och dikning är relevant, men den saknar den direkta politiska eller samhällsordningskonflikten som Julius Sundblom skulle vilja ha. Diskussionen är för teknisk och saknar den ideologiska udden för en ledarartikel 1926. Den känns för modern i sin problemformulering. [nyhetsvärde 4 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-10-12",
+    "headline": "Störningar i Telias mobilnät i fyra kommuner",
+    "url": "https://alandsradio.ax/nyheter/storningar-i-telias-mobilnat-i-fyra-kommuner",
+    "skriv": false,
+    "nyhetsvarde": 2,
+    "tema": "teknik/infrastruktur",
+    "anledning": "Trivial notis om en teknisk driftstörning. Saknar politisk, samhällelig eller ekonomisk tyngd för en ledare. [nyhetsvärde 2 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-10-12",
+    "headline": "Personlig registerskylt – de här reglerna gäller",
+    "url": "https://alandsradio.ax/nyheter/personlig-registerskylt-de-har-reglerna-galler",
+    "skriv": false,
+    "nyhetsvarde": 1,
+    "tema": "trivialitet",
+    "anledning": "Trivial notis om en enskild persons registerskylt som inte berör större politiska, samhälleliga eller autonomirelaterade frågor. Ingen substans för en ledare av Julius Sundblom. [nyhetsvärde 1 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-10-12",
+    "headline": "Hammarland: Större klasser i KHS kan spara pengar",
+    "url": "https://alandsradio.ax/nyheter/hammarland-storre-klasser-i-khs-kan-spara-pengar",
+    "skriv": false,
+    "nyhetsvarde": 3,
+    "tema": "ekonomi",
+    "anledning": "Smålokal notis om kommunal budget och sparåtgärder. Saknar större politisk eller autonomi-relaterad relevans. Innehållet är för tunt för en ledare. [nyhetsvärde 3 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-10-12",
+    "headline": "IS: Viking Line slängde barnfamiljs mat",
+    "url": "https://alandsradio.ax/nyheter/is-viking-line-slangde-barnfamiljs-mat",
+    "skriv": false,
+    "nyhetsvarde": 3,
+    "tema": "personnotis",
+    "anledning": "Trivial notis om en enskild incident mellan passagerare och rederi. Saknar djupare politisk eller samhällelig relevans för en ledarartikel av Julius. [nyhetsvärde 3 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-10-12",
+    "headline": "Alfågeln försenas på grund av läget i Töftö",
+    "url": "https://alandsradio.ax/nyheter/alfageln-forsenas-pa-grund-av-laget-i-tofto",
+    "skriv": false,
+    "nyhetsvarde": 1,
+    "tema": "infrastruktur",
+    "anledning": "Trivial notis om en mindre försening i lokaltrafiken. Saknar större politisk, samhällelig eller ekonomisk relevans, och ingen koppling till Julius redaktionella teman bortom allmän bekvämlighet. [nyhetsvärde 1 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-10-12",
+    "headline": "Anton Björklund om tuffa kökslivet: ”Man måste ha lite pannben”",
+    "url": "https://alandsradio.ax/nyheter/anton-bjorklund-om-tuffa-kokslivet-man-maste-ha-lite-pannben",
+    "skriv": false,
+    "nyhetsvarde": 1,
+    "tema": "nöje/underhållning",
+    "anledning": "Trivial personnotis om TV-program och matlagning. Saknar politisk, samhällelig eller existentiell relevans för Tidningen Åland år 1926. [nyhetsvärde 1 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-10-12",
+    "headline": "Rekordresultat för cancergalan",
+    "url": "https://alandsradio.ax/nyheter/rekordresultat-for-cancergalan",
+    "skriv": false,
+    "nyhetsvarde": 1,
+    "tema": "välgörenhet",
+    "anledning": "Trivial notis om insamlingsresultat. Saknar koppling till centrala teman som självstyrelse, politik, samhällsordning eller större ekonomiska frågor. [nyhetsvärde 1 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-10-12",
+    "headline": "Sjökvarteret vill ha 80 000 euro av staden",
+    "url": "https://alandsradio.ax/nyheter/sjokvarteret-vill-ha-80-000-euro-av-staden",
+    "skriv": false,
+    "nyhetsvarde": 3,
+    "tema": "ekonomi",
+    "anledning": "Smålokal notis om ett kommunalt bidrag, saknar bredare samhällelig eller politisk relevans för en ledarartikel av Julius Sundblom. Budgetfrågor i staden är inte i sig själv en stor ledarfråga. [nyhetsvärde 3 < 6]",
+    "fallback": false
   }
 ]
