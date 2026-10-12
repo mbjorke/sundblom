@@ -11398,5 +11398,45 @@
     "tema": "ekonomi",
     "anledning": "Smålokal notis om ett kommunalt bidrag, saknar bredare samhällelig eller politisk relevans för en ledarartikel av Julius Sundblom. Budgetfrågor i staden är inte i sig själv en stor ledarfråga. [nyhetsvärde 3 < 6]",
     "fallback": false
+  },
+  {
+    "date": "2026-10-12",
+    "headline": "Gamla Svibyvägen stängs av i tre dagar",
+    "url": "https://alandsradio.ax/nyheter/gamla-svibyvagen-stangs-av-i-tre-dagar",
+    "skriv": false,
+    "nyhetsvarde": 1,
+    "tema": "infrastruktur",
+    "anledning": "Trivial notis om en rutinåtgärd för vägavstängning, saknar väsentlig nyhetsvärde och koppling till redaktionella teman. [nyhetsvärde 1 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-10-12",
+    "headline": "Skilsmässodrama i 70-talsmiljö får premiär på Alandica",
+    "url": "https://alandsradio.ax/nyheter/skilsmassodrama-i-70-talsmiljo-far-premiar-pa-alandica",
+    "skriv": false,
+    "nyhetsvarde": 3,
+    "tema": "kultur",
+    "anledning": "Kulturrecension av pjäs i modern tid. Inte tillräckligt relevant för Julius redaktionella inriktning eller tidsepok. [nyhetsvärde 3 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-10-12",
+    "headline": "Så vill Mogens Lindén skapa ett ekonomiskt hållbart ÅHS",
+    "url": "https://alandsradio.ax/nyheter/sa-vill-mogens-linden-skapa-ett-ekonomiskt-hallbart-ahs",
+    "skriv": false,
+    "nyhetsvarde": 4,
+    "tema": "ekonomi",
+    "anledning": "Intern debatt om sjukvårdsekonomi är viktig, men Lindéns förslag är av mer långsiktig karaktär och saknar omedelbar konkretion för en ledarartikel just nu. Dessutom är det en enskild lagtingsledamots åsikt, inte ett beslut. [nyhetsvärde 4 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-10-12",
+    "headline": "Färre älgar, mer vall och mindre spannmål på Åland",
+    "url": "https://alandsradio.ax/nyheter/farre-algar-mer-vall-och-mindre-spannmal-pa-aland",
+    "skriv": false,
+    "nyhetsvarde": 3,
+    "tema": "ekonomi",
+    "anledning": "Statistik om primärnäringarna, även om det berör ekonomi och landskap, är mer av en faktarapportering. Det saknar den typ av konflikt, politisk dimension eller principiell fråga som Julius Sundblom skulle ta sig an i en ledarartikel. Beslut om jakt och skogsbruk är ofta tekniska eller rutinmässiga och inte av den kaliber som kräver en ledare. [nyhetsvärde 3 < 6]",
+    "fallback": false
   }
 ]
