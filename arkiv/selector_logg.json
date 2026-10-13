@@ -11438,5 +11438,95 @@
     "tema": "ekonomi",
     "anledning": "Statistik om primärnäringarna, även om det berör ekonomi och landskap, är mer av en faktarapportering. Det saknar den typ av konflikt, politisk dimension eller principiell fråga som Julius Sundblom skulle ta sig an i en ledarartikel. Beslut om jakt och skogsbruk är ofta tekniska eller rutinmässiga och inte av den kaliber som kräver en ledare. [nyhetsvärde 3 < 6]",
     "fallback": false
+  },
+  {
+    "date": "2026-10-13",
+    "headline": "Ulenius målskytt när Finland tog kliv närmare VM",
+    "url": "https://alandsradio.ax/nyheter/ulenius-malskytt-nar-finland-tog-kliv-narmare-vm",
+    "skriv": false,
+    "nyhetsvarde": 2,
+    "tema": "sport",
+    "anledning": "Ren sportresultat-rapportering av sportresultat, trots åländsk medverkan. Saknar politisk, samhällelig eller autonomisk relevans för en ledare. [nyhetsvärde 2 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-10-13",
+    "headline": "Viking Line utvidgar servicesamarbete",
+    "url": "https://alandsradio.ax/nyheter/viking-line-utvidgar-servicesamarbete",
+    "skriv": false,
+    "nyhetsvarde": 3,
+    "tema": "ekonomi",
+    "anledning": "Standard affärsnyhet om ett befintligt samarbete, saknar den djupare politiska eller samhälleliga relevans Julius söker för en ledare. [nyhetsvärde 3 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-10-13",
+    "headline": "Kumlinge andelshandel på fötter igen – ser positivt på framtiden",
+    "url": "https://alandsradio.ax/nyheter/kumlinge-andelshandel-pa-fotter-igen-ser-positivt-pa-framtiden",
+    "skriv": false,
+    "nyhetsvarde": 3,
+    "tema": "ekonomi",
+    "anledning": "Smålokal notis om en enskild andelshandel, ingen större autonomi- eller samhällsfråga. Saknar den bredare redaktionella vinkeln som Julius söker. [nyhetsvärde 3 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-10-13",
+    "headline": "“Många som utbildar sig till pilot tycker om att landa på Kumlinge”",
+    "url": "https://alandsradio.ax/nyheter/manga-som-utbildar-sig-till-pilot-tycker-om-att-landa-pa-kumlinge",
+    "skriv": false,
+    "nyhetsvarde": 3,
+    "tema": "lokalpolitik",
+    "anledning": "Ämnet är för lokalt och specifikt (flygfält på Kumlinge) och saknar den bredare politiska, samhälleliga eller autonomirelevans som Julius söker i en ledare. Diskussionen om framtida elflyg eller beredskapsaspekter är för spekulativ och inte tillräckligt konkretiserad för att tjäna som grund för en ledare. [nyhetsvärde 3 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-10-13",
+    "headline": "Tre tjänster dras in när Ålandsbanken gör om hållbarhetsarbetet",
+    "url": "https://alandsradio.ax/nyheter/tre-tjanster-dras-in-nar-alandsbanken-gor-om-hallbarhetsarbetet",
+    "skriv": false,
+    "nyhetsvarde": 3,
+    "tema": "ekonomi",
+    "anledning": "Intern omorganisation inom en privat bank är för obetydlig för en ledare, även om den rör sysselsättning. Fokus är på rapportering, inte bankens ekonomi i stort, och kopplingen till autonomin eller samhällsordningen är svag. [nyhetsvärde 3 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-10-13",
+    "headline": "Skärgårdsunga har väldigt god tandhälsa – för rullstolsburna är resan till motta",
+    "url": "https://alandsradio.ax/nyheter/skargardsunga-har-valdigt-god-tandhalsa-for-rullstolsburna-ar-resan-till-mottagningen-i-stan-besvarlig",
+    "skriv": false,
+    "nyhetsvarde": 2,
+    "tema": "hälsa",
+    "anledning": "Trivial notis om lokal tandvård och logistiska utmaningar; saknar djupare politisk, samhällelig eller existentiell vinkel för Julius Sundblom att kommentera på. [nyhetsvärde 2 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-10-13",
+    "headline": "Vattenläcka bakom Telias störningar i mobilnätet – skadad utrustning nu utbytt",
+    "url": "https://alandsradio.ax/nyheter/vattenlacka-bakom-telias-storningar-i-mobilnatet-skadad-utrustning-nu-utbytt",
+    "skriv": false,
+    "nyhetsvarde": 2,
+    "tema": "teknik",
+    "anledning": "Trivial notis om tekniskt fel i mobilnätet. Saknar samhälls-, autonomi- eller politisk relevans. Ingen vinkel för Julius att skriva en ledare om år 1926. [nyhetsvärde 2 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-10-13",
+    "headline": "Södragatan grävs upp igen – vattnet stängs av längs Ålandsvägen och Klockargränd",
+    "url": "https://alandsradio.ax/nyheter/sodragatan-gravs-upp-igen-vattnet-stangs-av-langs-alandsvagen-och-klockargrand",
+    "skriv": false,
+    "nyhetsvarde": 2,
+    "tema": "trivial lokal notis",
+    "anledning": "En ren praktisk, smålokal notis om vattenavstängning och en mindre vattenläcka. Saknar koppling till Julius Sundbloms redaktionella värld och har ingen substans för en ledarartikel. [nyhetsvärde 2 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-10-13",
+    "headline": "Hammarland till KST: Överväg hyra istället för bygga",
+    "url": "https://alandsradio.ax/nyheter/hammarland-till-kst-overvag-hyra-istallet-for-bygga",
+    "skriv": false,
+    "nyhetsvarde": 3,
+    "tema": "lokal förvaltning",
+    "anledning": "För specifik och smålokal budgetfråga. Saknar större politisk eller samhällelig relevans för en ledarartikel. [nyhetsvärde 3 < 6]",
+    "fallback": false
   }
 ]
