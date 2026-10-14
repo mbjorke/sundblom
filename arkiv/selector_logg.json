@@ -11528,5 +11528,105 @@
     "tema": "lokal förvaltning",
     "anledning": "För specifik och smålokal budgetfråga. Saknar större politisk eller samhällelig relevans för en ledarartikel. [nyhetsvärde 3 < 6]",
     "fallback": false
+  },
+  {
+    "date": "2026-10-14",
+    "headline": "Stora investeringar väntar Mariehamn – stadsstyrelsen tog del av direktörens bud",
+    "url": "https://alandsradio.ax/nyheter/stora-investeringar-vantar-mariehamn-stadsstyrelsen-tog-del-av-direktorens-budgetforslag",
+    "skriv": true,
+    "nyhetsvarde": 8,
+    "tema": "ekonomi och samhällsutveckling",
+    "anledning": "Stora investeringar och budgetunderskott i huvudstaden har direkt relevans för både åländsk ekonomi, stadsutveckling, och medborgarnas levnadsförhållanden. Det rör allmänna medel och samhällsplanering, vilket är ett väsentligt ämne för en ledare. Budgetunderskottet och behovet av finansiering kan diskuteras utifrån ett principiellt perspektiv, exempelvis om sparsamhet eller framåtblickande investeringar. Det är också kopplat till Mariehamns ställning som centralort och dess autonomi i lokala beslut.",
+    "fallback": false
+  },
+  {
+    "date": "2026-10-14",
+    "headline": "Julia Johnsson nöjd trots förlust mot världsmästaren",
+    "url": "https://alandsradio.ax/nyheter/julia-johnsson-nojd-trots-forlust-mot-varldsmastaren",
+    "skriv": false,
+    "nyhetsvarde": 1,
+    "tema": "sport",
+    "anledning": "Ren sportresultat-rapportering med personfokus, ingen redaktionell vinkel för en ledare. [nyhetsvärde 1 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-10-14",
+    "headline": "Mariebads äventyrsbad stängs – planeras öppna 31 oktober",
+    "url": "https://alandsradio.ax/nyheter/mariebads-aventyrsbad-stangs-planeras-oppna-31-oktober",
+    "skriv": false,
+    "nyhetsvarde": 1,
+    "tema": "lokal notis",
+    "anledning": "Trivial lokal notis om stängning av ett badhus på grund av skada. Saknar politisk, samhällelig, ekonomisk eller sedlig relevans för en ledarartikel av Julius Sundblom. Ingen substans för en värdig ledare. [nyhetsvärde 1 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-10-14",
+    "headline": "Sagostund med havsäventyr ombord på Pommern under höstlovet",
+    "url": "https://alandsradio.ax/nyheter/sagostund-med-havsaventyr-ombord-pa-pommern-under-hostlovet",
+    "skriv": false,
+    "nyhetsvarde": 1,
+    "tema": "kultur/fritid",
+    "anledning": "Trivial lokal notis om barnaktivitet på museum, saknar politisk, samhällelig eller ekonomisk relevans för en ledarartikel. [nyhetsvärde 1 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-10-14",
+    "headline": "Mammalådan utökad – boll en av nyheterna",
+    "url": "https://alandsradio.ax/nyheter/mammaladan-utokad-boll-en-av-nyheterna",
+    "skriv": false,
+    "nyhetsvarde": 2,
+    "tema": "välfärd/familj",
+    "anledning": "Trivial notis om utökning av mammalådan, saknar djupare politisk, samhällelig eller autonomirelaterad vinkel. Understödets storlek och innehåll i en låda är för specifikt och obetydligt för en ledare. [nyhetsvärde 2 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-10-14",
+    "headline": "VBL: ÅHS chefsöverläkare ingick sekretessavtal med stöldmisstänkt läkare",
+    "url": "https://alandsradio.ax/nyheter/vbl-ahs-chefsoverlakare-ingick-sekretessavtal-med-stoldmisstankt-lakare",
+    "skriv": false,
+    "nyhetsvarde": 4,
+    "tema": "sedlighet",
+    "anledning": "Även om det rör sig om viss korruption och sedlighetsfrågor är fallet för perifert och utan direkt åländsk relevans för en ledarartikel av Julius Sundblom. Det är dessutom en notis från ett annat välfärdsområde. [nyhetsvärde 4 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-10-14",
+    "headline": "Kappahls besked efter storvarslet: Ingen sådan situation på Åland",
+    "url": "https://alandsradio.ax/nyheter/kappahls-besked-efter-storvarslet-ingen-sadan-situation-pa-aland",
+    "skriv": false,
+    "nyhetsvarde": 3,
+    "tema": "ekonomi",
+    "anledning": "Småskalig lokal notis om personal, inte av tillräcklig vikt för en ledare av Julius. [nyhetsvärde 3 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-10-14",
+    "headline": "Vaccinförseningar i riket påverkar inte Åland",
+    "url": "https://alandsradio.ax/nyheter/vaccinforseningar-i-riket-paverkar-inte-aland",
+    "skriv": false,
+    "nyhetsvarde": 2,
+    "tema": "hälsa",
+    "anledning": "Trivial notis om rutinåtgärd. Ingen koppling till autonomi, politik eller samhällsordning. Saknar substans för en ledare. [nyhetsvärde 2 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-10-14",
+    "headline": "Hambrudd: Tre villkor för ja till Sunnanvind",
+    "url": "https://alandsradio.ax/nyheter/hambrudd-tre-villkor-for-ja-till-sunnanvind",
+    "skriv": true,
+    "nyhetsvarde": 8,
+    "tema": "självstyrelse, ekonomi, samhällsordning",
+    "anledning": "Frågan om vindkraftsprojektet 'Sunnanvind' berör centrala aspekter av åländsk självstyrelse, kommunal beslutanderätt och fördelning av ekonomiska resurser. Det är ett beslut av stor betydelse för Ålands framtid, både ekonomiskt och politiskt, och därmed en värdig grund för en ledarartikel av Julius Sundblom. Centerns krav på begränsningar och tydliga inkomstfördelningar är konkreta punkter som kan analyseras ur ett samhälls- och autonomiperspektiv.",
+    "fallback": false
+  },
+  {
+    "date": "2026-10-14",
+    "headline": "Dödligt hundvirus sprids i Finland – veterinär uppmanar hundägare att se över va",
+    "url": "https://alandsradio.ax/nyheter/dodligt-hundvirus-sprids-i-finland-veterinar-uppmanar-hundagare-att-se-over-vaccinationsskyddet",
+    "skriv": false,
+    "nyhetsvarde": 2,
+    "tema": "hälsa",
+    "anledning": "Trivial notis om djurhälsa, saknar koppling till centrala teman som självstyrelse, samhällsordning eller rikspolitik. [nyhetsvärde 2 < 6]",
+    "fallback": false
   }
 ]
