@@ -11628,5 +11628,95 @@
     "tema": "hälsa",
     "anledning": "Trivial notis om djurhälsa, saknar koppling till centrala teman som självstyrelse, samhällsordning eller rikspolitik. [nyhetsvärde 2 < 6]",
     "fallback": false
+  },
+  {
+    "date": "2026-10-14",
+    "headline": "Höstlovet bjuder på varierande väder och en del vind",
+    "url": "https://alandsradio.ax/nyheter/hostlovet-bjuder-pa-varierande-vader-och-en-del-vind",
+    "skriv": false,
+    "nyhetsvarde": 1,
+    "tema": "väder",
+    "anledning": "Ren väderprognos utan djupare nyhetsvärde eller redaktionell vinkel för en ledare. [nyhetsvärde 1 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-10-14",
+    "headline": "Ulenius nöjd efter första landslagssamlingen – hoppas på nya landslagsmöjlighete",
+    "url": "https://alandsradio.ax/nyheter/ulenius-nojd-efter-forsta-landslagssamlingen-hoppas-pa-nya-landslagsmojligheter",
+    "skriv": false,
+    "nyhetsvarde": 2,
+    "tema": "sport",
+    "anledning": "Ren sportresultat-rapportering av en enskild idrottsprestation. Saknar koppling till Julius redaktionella värld av självstyrelse, politik eller samhällsfrågor. För obetydlig för en ledarartikel. [nyhetsvärde 2 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-10-14",
+    "headline": "Åländska inflationstakten ökar med bensinpriset",
+    "url": "https://alandsradio.ax/nyheter/alandska-inflationstakten-okar-med-bensinpriset",
+    "skriv": false,
+    "nyhetsvarde": 4,
+    "tema": "ekonomi",
+    "anledning": "Ekonomisk statistik av rutinmässig karaktär. Visst ekonomiskt intresse, men saknar den djupare konflikt eller betydelse för självstyrelse/samhällsordning som Julius skulle vilja analysera i en ledare. För lite substans för att skriva en värdig ledare om. [nyhetsvärde 4 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-10-14",
+    "headline": "Läckan vid Södragatan åtgärdad – snart läggs asfalt igen",
+    "url": "https://alandsradio.ax/nyheter/lackan-vid-sodragatan-atgardad-snart-laggs-asfalt-igen",
+    "skriv": false,
+    "nyhetsvarde": 1,
+    "tema": "infrastruktur",
+    "anledning": "Trivial notis om en rutinåtgärdad vattenläcka. Saknar större samhällelig, politisk eller autonomi-relaterad betydelse. Ingen substans för en ledare. [nyhetsvärde 1 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-10-14",
+    "headline": "Fängelse väntar 36-årig återfallsförbrytare efter misshandelsdom",
+    "url": "https://alandsradio.ax/nyheter/fangelse-vantar-36-arig-aterfallsforbrytare-efter-misshandelsdom",
+    "skriv": false,
+    "nyhetsvarde": 3,
+    "tema": "sedlighet",
+    "anledning": "Trivial notis om en enskild misshandelsdom, utan större samhällelig relevans eller koppling till Julius redaktionella värld utöver en allmän fråga om sedlighet. [nyhetsvärde 3 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-10-14",
+    "headline": "Flytt av Maria Alexandrovna-statyn skjuts på framtiden – “klokast att inte ha fö",
+    "url": "https://alandsradio.ax/nyheter/flytt-av-maria-alexandrovna-statyn-skjuts-pa-framtiden-klokast-att-inte-ha-for-forhastade-asikter",
+    "skriv": false,
+    "nyhetsvarde": 3,
+    "tema": "lokalpolitik",
+    "anledning": "Frågan om statyn är av lokalpolitisk karaktär och återremittering av ett ärende i en nämnd är en rutinåtgärd. Inte tillräckligt substantiellt för en ledare av Julius Sundblom. [nyhetsvärde 3 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-10-14",
+    "headline": "Nytt spörsmål om ÅHS och sjukvårdens framtid",
+    "url": "https://alandsradio.ax/nyheter/nytt-sporsmal-om-ahs-och-sjukvardens-framtid",
+    "skriv": true,
+    "nyhetsvarde": 8,
+    "tema": "självstyrelse, ekonomi, samhällsordning",
+    "anledning": "Kritik mot landskapsregeringens nedskärningar inom ÅHS rörande sjukvårdens framtid och kvalitet. Detta är en väsentlig fråga för Ålands självstyre, folkets välfärd och den ekonomiska förvaltningen, med potential att väcka debatt om ledarskap och prioriteringar. Det ryms väl inom Julius redaktionella intressen och har tillräcklig substans för en ledarartikel.",
+    "fallback": false
+  },
+  {
+    "date": "2026-10-14",
+    "headline": "Fräck grusstöld vid Högtomt – ÖSUF uppmanar tjuven ersätta med godisklubbor",
+    "url": "https://alandsradio.ax/nyheter/frack-grusstold-vid-hogtomt-osuf-uppmanar-tjuven-ersatta-med-godisklubbor",
+    "skriv": false,
+    "nyhetsvarde": 1,
+    "tema": "lokal notis",
+    "anledning": "Trivial lokal notis om grusstöld. Saknar politisk, samhällelig eller autonomirelaterad relevans. Inte tillräckligt substans för en ledare av Julius Sundblom. [nyhetsvärde 1 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-10-14",
+    "headline": "Sjöfartsmuseet vill förnya basutställningen om två år",
+    "url": "https://alandsradio.ax/nyheter/sjofartsmuseet-vill-fornya-basutstallningen-om-tva-ar",
+    "skriv": false,
+    "nyhetsvarde": 2,
+    "tema": "kulturadministration",
+    "anledning": "Intern museiförvaltning och finansiering av en utställning är för obetydligt för en ledarartikel. Ämnet 'kvinnor till sjöss' har viss potential, men är här presenterat som en programpunkt, inte en händelse med tillräcklig substans för en ledare. [nyhetsvärde 2 < 6]",
+    "fallback": false
   }
 ]
