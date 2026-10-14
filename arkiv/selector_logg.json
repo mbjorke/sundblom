@@ -11718,5 +11718,25 @@
     "tema": "kulturadministration",
     "anledning": "Intern museiförvaltning och finansiering av en utställning är för obetydligt för en ledarartikel. Ämnet 'kvinnor till sjöss' har viss potential, men är här presenterat som en programpunkt, inte en händelse med tillräcklig substans för en ledare. [nyhetsvärde 2 < 6]",
     "fallback": false
+  },
+  {
+    "date": "2026-10-14",
+    "headline": "Förnyelsen av självstyrelselagen faller",
+    "url": "https://alandsradio.ax/nyheter/fornyelsen-av-sjalvstyrelselagen-faller",
+    "skriv": true,
+    "nyhetsvarde": 9,
+    "tema": "självstyrelse",
+    "anledning": "Frågan om självstyrelselagens förnyelse är av central betydelse för Ålands framtid och autonomi. Att förhandlingarna faller är ett allvarligt bakslag som kräver en grundlig analys och kommentar från ledarredaktionen, särskilt med tanke på de politiska implikationerna och de fortsatta utmaningarna för landskapet i dess relation till riket. Detta är direkt kopplat till Julius Sundbloms kärnfrågor om åländsk självbestämmanderätt och identitet.",
+    "fallback": false
+  },
+  {
+    "date": "2026-10-14",
+    "headline": "Södersundas sexor vann Trafikjokern",
+    "url": "https://alandsradio.ax/nyheter/sodersundas-sexor-vann-trafikjokern",
+    "skriv": false,
+    "nyhetsvarde": 1,
+    "tema": "lokal notis",
+    "anledning": "Trivial notis om skoltävling. Saknar väsentlig politisk, samhällelig eller autonomirelevant betydelse. Ingen substans för en ledarartikel av Sundblom. [nyhetsvärde 1 < 6]",
+    "fallback": false
   }
 ]
