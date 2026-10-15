@@ -11828,5 +11828,65 @@
     "tema": "utbildning",
     "anledning": "Ämnet är utbildning och barnuppfostran, vilket kan intressera Julius. Frågan är om en enskild skärpning av en paragraf med praktiska förenklingar också rymmer tillräckligt med substans för en politisk ledartext? Ämnet i sig om sedlighet och uppfostran intresserar Julius, men denna enskilda nyhet är för liten i sammanhanget, och snarare en praktisk detalj än en stor principfråga. Det känns inte som att Julius skulle skriva en hel ledarartikel om detta. [nyhetsvärde 4 < 6]",
     "fallback": false
+  },
+  {
+    "date": "2026-10-15",
+    "headline": "Besvikelse efter utebliven revision av självstyrelselagen – Jansson: \"Sannfinlän",
+    "url": "https://alandsradio.ax/nyheter/besvikelse-efter-utebliven-revision-av-sjalvstyrelselagen-jansson-sannfinlandarna-ar-vart-problem",
+    "skriv": true,
+    "nyhetsvarde": 9,
+    "tema": "självstyrelse",
+    "anledning": "Frågan om självstyrelselagen är av central betydelse för Ålands status och relation till Finland. Beskedet om utebliven revision, samt anklagelserna mot Sannfinländarna, har stor politisk tyngd och rör direkt vid Ålands autonomi och internationella förpliktelser. Julius Sundblom skulle finna detta vara ett ypperligt ämne för en ledarartikel om Ålands ställning.",
+    "fallback": false
+  },
+  {
+    "date": "2026-10-15",
+    "headline": "81-årige dansbandsveteranen Rolf Larsson på miniturné på Åland",
+    "url": "https://alandsradio.ax/nyheter/81-arige-dansbandsveteranen-rolf-larsson-pa-miniturne-pa-aland",
+    "skriv": false,
+    "nyhetsvarde": 1,
+    "tema": "kultur",
+    "anledning": "Trevlig personnotis men för obetydlig för en ledarartikel av Julius Sundblom. Ingen koppling till relevanta redaktionella teman. [nyhetsvärde 1 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-10-15",
+    "headline": "Nytt fel orsakar störningar i Telias mobilnät",
+    "url": "https://alandsradio.ax/nyheter/nytt-fel-orsakar-storningar-i-telias-mobilnat",
+    "skriv": false,
+    "nyhetsvarde": 2,
+    "tema": "infrastruktur",
+    "anledning": "Trivial notis om lokala mobilnätsstörningar. Saknar större politisk, samhällelig eller autonomirelaterad relevans. Inte tillräckligt med substans för en ledare. [nyhetsvärde 2 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-10-15",
+    "headline": "Över tusen oönskade sms – nu döms mannen för trakasserier och misshandel",
+    "url": "https://alandsradio.ax/nyheter/over-tusen-oonskade-sms-nu-doms-mannen-for-trakasserier-och-misshandel",
+    "skriv": false,
+    "nyhetsvarde": 3,
+    "tema": "sedlighet",
+    "anledning": "Personnotis utan större samhällelig betydelse eller koppling till centrala ledarteman. Incidenten är mer av privat natur och saknar den bredare relevans som krävs för en ledare. [nyhetsvärde 3 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-10-15",
+    "headline": "Tre offentliga toaletter ska placeras ut i Mariehamn",
+    "url": "https://alandsradio.ax/nyheter/tre-offentliga-toaletter-ska-placeras-ut-i-mariehamn",
+    "skriv": false,
+    "nyhetsvarde": 2,
+    "tema": "lokal förvaltning",
+    "anledning": "Trivial notis om lokala rutinåtgärder. Saknar större politisk eller samhällelig relevans för en ledarartikel av Sundblom. Medborgarinitiativet är avvisat, så ingen reell konflikt eller substans för en ledare. [nyhetsvärde 2 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-10-15",
+    "headline": "Mats Löfström om den nya självstyrelselagens fall: “Oerhört besviken”",
+    "url": "https://alandsradio.ax/nyheter/mats-lofstrom-om-den-nya-sjalvstyrelselagens-fall-oerhort-besviken",
+    "skriv": true,
+    "nyhetsvarde": 9,
+    "tema": "självstyrelse",
+    "anledning": "Central fråga för Ålands autonomi, rikspolitisk konflikt och dess konsekvenser för självstyrelselagens utveckling. Väsentlig händelse som berör Ålands ställning och dess relation till riket. Löfströms besvikelse belyser den politiska kampen och framtiden för autonomin, vilket är av yttersta vikt för Tidningen Åland.",
+    "fallback": false
   }
 ]
