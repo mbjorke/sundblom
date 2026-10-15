@@ -11888,5 +11888,15 @@
     "tema": "självstyrelse",
     "anledning": "Central fråga för Ålands autonomi, rikspolitisk konflikt och dess konsekvenser för självstyrelselagens utveckling. Väsentlig händelse som berör Ålands ställning och dess relation till riket. Löfströms besvikelse belyser den politiska kampen och framtiden för autonomin, vilket är av yttersta vikt för Tidningen Åland.",
     "fallback": false
+  },
+  {
+    "date": "2026-10-15",
+    "headline": "MLK får landskapslån för att köpa Bollhalla",
+    "url": "https://alandsradio.ax/nyheter/mlk-far-landskapslan-for-att-kopa-bollhalla",
+    "skriv": false,
+    "nyhetsvarde": 3,
+    "tema": "ekonomi, sport",
+    "anledning": "Även om det rör ett lån från landskapsregeringen är detta en lokal notis om en idrottsförenings köp och upprustning, inte av tillräcklig politisk, samhällelig eller principiell betydelse för en ledarartikel av Sundblom. Det saknar djupare koppling till autonomi, svensk identitet, klassfrågor eller sedlighet. Det är för tunt för en ledare. [nyhetsvärde 3 < 6]",
+    "fallback": false
   }
 ]
