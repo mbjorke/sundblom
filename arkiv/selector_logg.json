@@ -11738,5 +11738,95 @@
     "tema": "lokal notis",
     "anledning": "Trivial notis om skoltävling. Saknar väsentlig politisk, samhällelig eller autonomirelevant betydelse. Ingen substans för en ledarartikel av Sundblom. [nyhetsvärde 1 < 6]",
     "fallback": false
+  },
+  {
+    "date": "2026-10-15",
+    "headline": "Riksdagssossar beklagar haveriet med självstyrelselagen",
+    "url": "https://alandsradio.ax/nyheter/riksdagssossar-beklagar-haveriet-med-sjalvstyrelselagen",
+    "skriv": true,
+    "nyhetsvarde": 8,
+    "tema": "självstyrelse",
+    "anledning": "Centralt autonomibeslut som rör Ålands framtid. Politiskt uttalande från rikspolitiker om fördröjning av en nyckelreform är av stor vikt för självstyrelsen och dess relation till riket. Detta berör direkt Julius Sundbloms intressen rörande Ålands ställning och Finlands roll som rättsstat.",
+    "fallback": false
+  },
+  {
+    "date": "2026-10-15",
+    "headline": "Spörsmål, landslagsmål och ingen ny självstyrelselag",
+    "url": "https://alandsradio.ax/nyheter/sporsmal-landslagsmal-och-ingen-ny-sjalvstyrelselag",
+    "skriv": true,
+    "nyhetsvarde": 8,
+    "tema": "självstyrelse",
+    "anledning": "Frågan om självstyrelselagen är av central betydelse för Ålands framtid och autonomi. Att den inte förnyas trots 15 års arbete är ett misslyckande som berör kärnan i Julius redaktionella värld. Oenighet i Finlands regering är av rikspolitisk relevans. Spörsmålet om ÅHS rör samhällsordning och sociala frågor, vilket också är relevant, men inte lika centralt som självstyrelselagen.",
+    "fallback": false
+  },
+  {
+    "date": "2026-10-15",
+    "headline": "Beslutet om skärgårdsupphandlingen är nu fattat – anbuden hålls hemliga",
+    "url": "https://alandsradio.ax/nyheter/beslutet-om-skargardsupphandlingen-ar-nu-fattat-anbuden-halls-hemliga",
+    "skriv": false,
+    "nyhetsvarde": 4,
+    "tema": "ekonomi",
+    "anledning": "Även om det rör autonomins ekonomi, är detta en administrativ rutinåtgärd kring en upphandling som avbryts. Saknar den direkta politiska konflikten eller den djupare principiella frågan som Julius skulle vilja behandla i en ledare. För lite substans för att skriva något meningsfullt utöver en notis. [nyhetsvärde 4 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-10-15",
+    "headline": "Fyra fackförbund kräver paus i ÅHS nedskärningar",
+    "url": "https://alandsradio.ax/nyheter/fyra-fackforbund-kraver-paus-i-ahs-nedskarningar",
+    "skriv": true,
+    "nyhetsvarde": 8,
+    "tema": "samhällsordning",
+    "anledning": "Frågan om vårdens nedskärningar och fackförbundens krav rör direkt samhällsordningen, medborgarnas välfärd, och en potentiell konflikt mellan arbetsgivare och arbetstagare, vilket kan ses som en del av samhällsordningen. Det rör även självstyrelsens ansvar att tillhandahålla god vård och förvalta resurser. Det är en fråga om rättvisa och konsekvenserna av modernisering och effektiviseringar, vilket passar Julius redaktionella värld. Det finns substans i form av krav från flera fackförbund, oro över patientsäkerhet och arbetsmiljö, samt en vädjan till landskapsregeringen.",
+    "fallback": false
+  },
+  {
+    "date": "2026-10-15",
+    "headline": "Aktieägarföreningens sista önskan till Viking Line: Återuppta Kapellskärstrafike",
+    "url": "https://alandsradio.ax/nyheter/aktieagarforeningens-sista-onskan-till-viking-line-ateruppta-kapellskarstrafiken",
+    "skriv": false,
+    "nyhetsvarde": 3,
+    "tema": "ekonomi",
+    "anledning": "Intern angelägenhet för ett privat bolag och dess aktieägare, även om det rör sjöfart, som traditionellt är viktig för Åland. Inget politiskt beslut, ingen samhällsförändring. För lite substans för en ledare av Julius. [nyhetsvärde 3 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-10-15",
+    "headline": "LR vill förlänga undantag för färjetrafiken",
+    "url": "https://alandsradio.ax/nyheter/lr-vill-forlanga-undantag-for-farjetrafiken",
+    "skriv": true,
+    "nyhetsvarde": 8,
+    "tema": "autonomi, ekonomi, självstyrelse, internationell/rikspolitisk relevans",
+    "anledning": "Frågan om undantag för färjetrafiken direkt påverkar Ålands ekonomi och tillgänglighet, vilket är centralt för självstyrelsens funktion och invånarnas välfärd. Diskussionen om EU:s utsläppshandel och dess konsekvenser för Åland har både politisk och ekonomisk substans som förtjänar en ledare. Att landskapsregeringen agerar mot riksdagen och EU visar på självstyrelsens ställningstaganden i viktiga internationella frågor.",
+    "fallback": false
+  },
+  {
+    "date": "2026-10-15",
+    "headline": "Ålänningarna lever allt längre",
+    "url": "https://alandsradio.ax/nyheter/alanningarna-lever-allt-langre",
+    "skriv": false,
+    "nyhetsvarde": 3,
+    "tema": "hälsa/demografi",
+    "anledning": "Statistik om livslängd och sjukdomar är intressant men saknar den politiska eller samhälleliga konflikt som krävs för en ledarartikel av Julius. Den berör inte direkt självstyrelsen, den svenska identiteten eller klassordningen på ett sätt som motiverar en ledare. [nyhetsvärde 3 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-10-15",
+    "headline": "Alandia försäkringars vd efter nya attacker mot handelsfartyg: \"Det är en ny vär",
+    "url": "https://alandsradio.ax/nyheter/alandia-forsakringars-vd-efter-nya-attacker-mot-handelsfartyg-det-ar-en-ny-varld",
+    "skriv": false,
+    "nyhetsvarde": 4,
+    "tema": "ekonomi",
+    "anledning": "Även om det handlar om sjöfart och ekonomi, är det för långt bort geografiskt och den direkta kopplingen till Åland är inte tillräckligt stark för en ledare. Mer en notis om internationell handel. [nyhetsvärde 4 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-10-15",
+    "headline": "Efter ”allvarliga hot” – reglerna för hemundervisning skärps",
+    "url": "https://alandsradio.ax/nyheter/efter-allvarliga-hot-reglerna-for-hemundervisning-skarps",
+    "skriv": false,
+    "nyhetsvarde": 4,
+    "tema": "utbildning",
+    "anledning": "Ämnet är utbildning och barnuppfostran, vilket kan intressera Julius. Frågan är om en enskild skärpning av en paragraf med praktiska förenklingar också rymmer tillräckligt med substans för en politisk ledartext? Ämnet i sig om sedlighet och uppfostran intresserar Julius, men denna enskilda nyhet är för liten i sammanhanget, och snarare en praktisk detalj än en stor principfråga. Det känns inte som att Julius skulle skriva en hel ledarartikel om detta. [nyhetsvärde 4 < 6]",
+    "fallback": false
   }
 ]
