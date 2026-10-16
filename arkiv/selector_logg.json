@@ -11898,5 +11898,105 @@
     "tema": "ekonomi, sport",
     "anledning": "Även om det rör ett lån från landskapsregeringen är detta en lokal notis om en idrottsförenings köp och upprustning, inte av tillräcklig politisk, samhällelig eller principiell betydelse för en ledarartikel av Sundblom. Det saknar djupare koppling till autonomi, svensk identitet, klassfrågor eller sedlighet. Det är för tunt för en ledare. [nyhetsvärde 3 < 6]",
     "fallback": false
+  },
+  {
+    "date": "2026-10-16",
+    "headline": "Iltalehti: Ung landslagsspelare misstänks för våldtäkt ombord på färja",
+    "url": "https://alandsradio.ax/nyheter/iltalehti-ung-landslagsspelare-misstanks-for-valdtakt-ombord-pa-farja",
+    "skriv": true,
+    "nyhetsvarde": 8,
+    "tema": "sedlighet och rättvisa",
+    "anledning": "Misstänkt brott, särskilt våldtäkt mot minderårig, har högt nyhetsvärde ur ett sedlighetsperspektiv. Fallet rör ungdomar, idrott och gränsöverskridande brottslighet, vilket väcker frågor om moral, ansvar och rättvisa, som Julius ofta behandlar. Det finns tillräckligt med substans genom utredning, avstängning och rättslig prövning.",
+    "fallback": false
+  },
+  {
+    "date": "2026-10-16",
+    "headline": "Presidenten ger grönt ljus för åländska utsläppshandelslagar",
+    "url": "https://alandsradio.ax/nyheter/presidenten-ger-gront-ljus-for-alandska-utslappshandelslagar",
+    "skriv": true,
+    "nyhetsvarde": 8,
+    "tema": "självstyrelse och ekonomi",
+    "anledning": "Presidentens beslut i en autonomifråga med ekonomiska konsekvenser för Åland, särskilt rörande rätten att utse egen auktionsförrättare trots delade meningar från Ålandsdelegationen, är av stor betydelse för självstyrelsens räckvidd och Ålands ekonomiska suveränitet. Ämnet har både politisk och ekonomisk tyngd, och inbegriper relationen mellan riket och självstyrelsen.",
+    "fallback": false
+  },
+  {
+    "date": "2026-10-16",
+    "headline": "Svensk ungdom beklagar haveriet med den nya självstyrelselagen",
+    "url": "https://alandsradio.ax/nyheter/svensk-ungdom-beklagar-haveriet-med-den-nya-sjalvstyrelselagen",
+    "skriv": true,
+    "nyhetsvarde": 8,
+    "tema": "självstyrelse",
+    "anledning": "Utrycke för beklagan gällande självstyrelselagens haveri från rikspolitiskt ungdomsförbund. Detta är en väsentlig händelse som rör Ålands autonomi, internationella avtal och rikspolitisk relevans. Det finns tillräckligt med substans i pressmeddelandet och uttalandet för en ledare.",
+    "fallback": false
+  },
+  {
+    "date": "2026-10-16",
+    "headline": "Funktionsrätt Åland: Socialvården stor valfråga",
+    "url": "https://alandsradio.ax/nyheter/funktionsratt-aland-socialvarden-stor-valfraga",
+    "skriv": false,
+    "nyhetsvarde": 4,
+    "tema": "socialpolitik",
+    "anledning": "Ämnet är viktigt men nyheten är en förhandsdiskussion inför valkampanj och saknar konkret händelse, beslut eller konflikt som är tillräckligt substantiell för en ledare nu. Julius skriver inte om valfläsk. [nyhetsvärde 4 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-10-16",
+    "headline": "Polisen: Butikssnatterierna ökar och många är minderåriga",
+    "url": "https://alandsradio.ax/nyheter/polisen-butikssnatterierna-okar-och-manga-ar-minderariga",
+    "skriv": false,
+    "nyhetsvarde": 4,
+    "tema": "sedlighet",
+    "anledning": "För obetydligt för en ledare, saknar den större samhälleliga eller politiska implikation som Sundblom skulle ta sig an. Visserligen tangerar det sedlighet, men en notis om ökat snatteri är inte ledarmaterial. Känns mer som en notis för den allmänna delen av tidningen. [nyhetsvärde 4 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-10-16",
+    "headline": "Intern S-kritik mot nedskärningarna inom ÅHS",
+    "url": "https://alandsradio.ax/nyheter/intern-s-kritik-mot-nedskarningarna-inom-ahs",
+    "skriv": false,
+    "nyhetsvarde": 4,
+    "tema": "inrikespolitik",
+    "anledning": "Även om det berör sjukvård och internpolitik, är det en intern partikritik mot nedskärningar. Julius skulle nog se det som för internt och möjligen enbart en notis, inte en ledarartikel som fokuserar på de större frågorna om självstyrelse, nationell identitet eller bildning. Det saknar också den tyngd av beslut eller bredare samhällskonflikt som motiverar en ledare år 1926. [nyhetsvärde 4 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-10-16",
+    "headline": "80 000 euro till digitalisering av skolpsykologin",
+    "url": "https://alandsradio.ax/nyheter/80-000-euro-till-digitalisering-av-skolpsykologin",
+    "skriv": false,
+    "nyhetsvarde": 3,
+    "tema": "administration",
+    "anledning": "Modern teknik och digitalisering, även om det rör skolan, är för abstrakt och administrativt för Julius Sundbloms redaktionella värld. Saknar tydlig koppling till självstyrelse, svensk identitet, samhällsordning eller sedlighet, och det är en teknisk administrativ notis, inte en väsentlig händelse. [nyhetsvärde 3 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-10-16",
+    "headline": "Alfågeln tas ur trafik – fartygsrockad på norra och södra linjen",
+    "url": "https://alandsradio.ax/nyheter/alfageln-tas-ur-trafik-fartygsrockad-pa-norra-och-sodra-linjen",
+    "skriv": false,
+    "nyhetsvarde": 2,
+    "tema": "rutinåtgärd",
+    "anledning": "Ren rutinåtgärd kring fartygsunderhåll och temporära ersättningar. Saknar politisk, samhällelig eller existentiell betydelse för Åland. [nyhetsvärde 2 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-10-16",
+    "headline": "”Sorgligt och respektlöst” – ”helhetsreformer omöjliga”",
+    "url": "https://alandsradio.ax/nyheter/sorgligt-och-respektlost-helhetsreformer-omojliga",
+    "skriv": true,
+    "nyhetsvarde": 9,
+    "tema": "självstyrelse",
+    "anledning": "Misslyckandet med självstyrelselagsrevisionen är en central fråga för Ålands framtid och autonomi. Detta är ett beslut av stor politisk tyngd med rikspolitiska implikationer och väcker starka reaktioner bland åländska politiker. Det finns tillräckligt med substans för en ledare om Ålands ställning gentemot riket, de politiska processerna, och behovet av enighet.",
+    "fallback": false
+  },
+  {
+    "date": "2026-10-16",
+    "headline": "Budgetvarningen från Mariehamn: Många kommuner kan tvingas höja skatten nästa år",
+    "url": "https://alandsradio.ax/nyheter/budgetvarningen-fran-mariehamn-manga-kommuner-kan-tvingas-hoja-skatten-nasta-ar",
+    "skriv": true,
+    "nyhetsvarde": 8,
+    "tema": "självstyrelse, ekonomi, samhällsordning",
+    "anledning": "Orolande tecken på ekonomiska påfrestningar för kommunerna till följd av landskapets agerande. Detta rör direkt självstyrelsens funktion och ansvarsfördelning, samt hotar den ekonomiska stabiliteten i de åländska kommunerna. Demografiska utmaningar och stora investeringsbehov är också av stor vikt för samhällsordningen. En värdig ledare kan varna för konsekvenserna av ett kortsiktigt ekonomiskt tänkande och betona vikten av kommunal självständighet och en sund ekonomisk politik.",
+    "fallback": false
   }
 ]
