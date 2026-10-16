@@ -11998,5 +11998,85 @@
     "tema": "självstyrelse, ekonomi, samhällsordning",
     "anledning": "Orolande tecken på ekonomiska påfrestningar för kommunerna till följd av landskapets agerande. Detta rör direkt självstyrelsens funktion och ansvarsfördelning, samt hotar den ekonomiska stabiliteten i de åländska kommunerna. Demografiska utmaningar och stora investeringsbehov är också av stor vikt för samhällsordningen. En värdig ledare kan varna för konsekvenserna av ett kortsiktigt ekonomiskt tänkande och betona vikten av kommunal självständighet och en sund ekonomisk politik.",
     "fallback": false
+  },
+  {
+    "date": "2026-10-16",
+    "headline": "IFK redo inför lördagens uppgift – avslappnad stämning efter fredagens träning",
+    "url": "https://alandsradio.ax/nyheter/ifk-redo-infor",
+    "skriv": false,
+    "nyhetsvarde": 2,
+    "tema": "sport",
+    "anledning": "Ren sportresultat-rapportering om fotboll, ingen redaktionell vinkel med relevans för de angivna kriterierna år 1926. Den typen av sportreferat är inte av intresse för Julius. [nyhetsvärde 2 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-10-16",
+    "headline": "Ehn: Åland kan inte godkänna förslaget till ändringar i självstyrelselagen",
+    "url": "https://alandsradio.ax/nyheter/ehn-aland-kan-inte-godkanna-forslaget-till-andringar-i-sjalvstyrelselagen",
+    "skriv": true,
+    "nyhetsvarde": 9,
+    "tema": "självstyrelse, rikspolitik",
+    "anledning": "Direkt attack mot åländsk autonomi med rikspolitisk inblandning; avgörande för öns framtid. Här finns både konflikt och substans för en grundlig ledare.",
+    "fallback": false
+  },
+  {
+    "date": "2026-10-16",
+    "headline": "Brådskande ändringar i självstyrelselagen på remiss – totalreformen till parlame",
+    "url": "https://alandsradio.ax/nyheter/bradskande-andringar-i-sjalvstyrelselagen-pa-remiss-totalreformen-till-parlamentarisk-arbetsgrupp",
+    "skriv": true,
+    "nyhetsvarde": 9,
+    "tema": "självstyrelse, rikspolitik, nationell säkerhet",
+    "anledning": "Direkt inverkan på Ålands autonomi och förhållande till riket, med relevans för nationell säkerhet och förvaltningsreformer. Hög substans för en ledare.",
+    "fallback": false
+  },
+  {
+    "date": "2026-10-16",
+    "headline": "Medborgarinitiativ startat mot nedskärningarna på palliativa",
+    "url": "https://alandsradio.ax/nyheter/medborgarinitiativ-startat-mot-nedskarningarna-pa-palliativa",
+    "skriv": false,
+    "nyhetsvarde": 4,
+    "tema": "lokal politik/samhälle",
+    "anledning": "Ämnet berör visserligen samhället men är för lokalt och specifikt för att motivera en ledare av Julius Sundblom 1926. Saknar bredare autonomipolitisk eller rikspolitisk koppling som skulle intressera Julius. Det är mer en notis om en lokal medborgaråtgärd. [nyhetsvärde 4 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-10-16",
+    "headline": "ÅHS och Enjoy Åland överens om sjukvårdsuppgifter",
+    "url": "https://alandsradio.ax/nyheter/ahs-och-enjoy-aland-overens-om-sjukvardsuppgifter",
+    "skriv": false,
+    "nyhetsvarde": 3,
+    "tema": "lokal förvaltning",
+    "anledning": "En ren rutinåtgärd mellan två lokala förvaltningsorgan. Saknar den bredare politiska, samhälleliga eller principiella relevans som krävs för en ledarartikel av Julius Sundblom. Ingen substantiell konflikt eller principfråga att behandla. [nyhetsvärde 3 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-10-16",
+    "headline": "Efter massiva kritiken: Vårdplatsprojektet fortsätter – Zekaj lovar mer informat",
+    "url": "https://alandsradio.ax/nyheter/efter-massiva-kritiken-vardplatsprojektet-fortsatter-zekaj-lovar-mer-information",
+    "skriv": true,
+    "nyhetsvarde": 8,
+    "tema": "självstyrelse, samhällsordning, ekonomi",
+    "anledning": "Viktigt autonomi-relaterat beslut med stor samhällspåverkan gällande vård och ekonomi. Konflikt inom det egna partiet och massiv kritik från allmänheten ger stark substans för en ledare.",
+    "fallback": false
+  },
+  {
+    "date": "2026-10-16",
+    "headline": "M/S Knipan försenas på grund av tekniskt fel",
+    "url": "https://alandsradio.ax/nyheter/ms-knipan-forsenas-pa-grund-av-tekniskt-fel",
+    "skriv": false,
+    "nyhetsvarde": 1,
+    "tema": "ekonomi",
+    "anledning": "Trivial notis om en rutinmässig försening utan större samhälls- eller politisk relevans. Saknar substans för en ledarartikel. [nyhetsvärde 1 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-10-16",
+    "headline": "Miljontillskott till ÅHS – LR vill lätta på sparkraven",
+    "url": "https://alandsradio.ax/nyheter/pengaregn-over-ahs-lr-lattar-ocksa-pa-sparkraven-for-ahs",
+    "skriv": false,
+    "nyhetsvarde": 4,
+    "tema": "ekonomi",
+    "anledning": "Intern förvaltningsekonomi utan direkt koppling till större autonomifrågor eller Julius Sundbloms redaktionella fokus 1926. Rutinmässiga budgetjusteringar är sällan ledarmaterial. [nyhetsvärde 4 < 6]",
+    "fallback": false
   }
 ]
