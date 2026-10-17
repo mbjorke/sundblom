@@ -12128,5 +12128,15 @@
     "tema": "sport",
     "anledning": "Ren sportresultat-rapportering från en fotbollsmatch. Saknar nyhetsvärde för en ledare och anknytning till Julius redaktionella värld. [nyhetsvärde 2 < 6]",
     "fallback": false
+  },
+  {
+    "date": "2026-10-17",
+    "headline": "Adam Larsson: \"Det är hjärtskärande\"",
+    "url": "https://alandsradio.ax/nyheter/adam-larsson-det-ar-hjartskarande",
+    "skriv": false,
+    "nyhetsvarde": 2,
+    "tema": "sport",
+    "anledning": "Ren sportresultat-rapportering och spelarintervjuer efter förlust, ingen redaktionell vinkel för Julius Sundblom. [nyhetsvärde 2 < 6]",
+    "fallback": false
   }
 ]
