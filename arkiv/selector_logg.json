@@ -12088,5 +12088,25 @@
     "tema": "självstyrelse, säkerhet, rikspolitik",
     "anledning": "Försvarsministerns förslag om att tillämpa säkerhetsinlösningslagen på Åland är av stor vikt för den åländska självstyrelsen och dess förhållande till riket. Frågan om nationell säkerhet kontra åländsk särställning är central. Trots försäkringar om att särställningen inte påverkas, är det ett ingrepp i autonomin som Julius med all säkerhet skulle vilja granska kritiskt. Frågan har bäring på både politik, säkerhet och autonomi, vilket ger god substans för en ledare.",
     "fallback": false
+  },
+  {
+    "date": "2026-10-17",
+    "headline": "Så startar IFK i ödesmatchen – Svedberg tillbaka i öppningselvan",
+    "url": "https://alandsradio.ax/nyheter/sa-startar-ifk-i-odesmatchen-svedberg-tillbaka-i-oppningselvan",
+    "skriv": false,
+    "nyhetsvarde": 1,
+    "tema": "sport",
+    "anledning": "Ren sportresultat-rapportering utan djupare samhällelig eller politisk relevans. För obetydlig för en ledarartikel av Julius Sundblom. [nyhetsvärde 1 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-10-17",
+    "headline": "Finnlines slopar hyttkravet – passagerarna ökade med 25 procent",
+    "url": "https://alandsradio.ax/nyheter/finnlines-slopar-hyttkravet-passagerarna-okade-med-25-procent",
+    "skriv": false,
+    "nyhetsvarde": 3,
+    "tema": "ekonomi/logistik",
+    "anledning": "Även om det handlar om ökad passagerartrafik och därmed ekonomi, är det en för specifik företagstjänst och rutinmässig affärsutveckling som saknar den bredare politiska eller samhälleliga vinkel Julius Sundblom skulle finna värdig en ledare. Det saknar djupare koppling till autonomi, svensk identitet, samhällsordning eller sedlighet. [nyhetsvärde 3 < 6]",
+    "fallback": false
   }
 ]
