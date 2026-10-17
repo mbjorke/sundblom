@@ -12108,5 +12108,25 @@
     "tema": "ekonomi/logistik",
     "anledning": "Även om det handlar om ökad passagerartrafik och därmed ekonomi, är det en för specifik företagstjänst och rutinmässig affärsutveckling som saknar den bredare politiska eller samhälleliga vinkel Julius Sundblom skulle finna värdig en ledare. Det saknar djupare koppling till autonomi, svensk identitet, samhällsordning eller sedlighet. [nyhetsvärde 3 < 6]",
     "fallback": false
+  },
+  {
+    "date": "2026-10-17",
+    "headline": "IFK Mariehamn är utslagna ur fotbollsligan",
+    "url": "https://alandsradio.ax/nyheter/ifk-mariehamn-ar-utslagna-ur-fotbollsligan",
+    "skriv": false,
+    "nyhetsvarde": 2,
+    "tema": "sport",
+    "anledning": "Ren sportresultat-rapportering, ingen redaktionell vinkel. [nyhetsvärde 2 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-10-17",
+    "headline": "Här kunde du följa IFK:s avgörande mot Jaro",
+    "url": "https://alandsradio.ax/nyheter/har-kunde-du-folja-ifks-avgorande-mot-jaro",
+    "skriv": false,
+    "nyhetsvarde": 2,
+    "tema": "sport",
+    "anledning": "Ren sportresultat-rapportering från en fotbollsmatch. Saknar nyhetsvärde för en ledare och anknytning till Julius redaktionella värld. [nyhetsvärde 2 < 6]",
+    "fallback": false
   }
 ]
