@@ -12248,5 +12248,55 @@
     "tema": "självstyrelse och ekonomi",
     "anledning": "Frågan om kommunernas ekonomi och relationen till landskapet är central för självstyrelsen. Sänkta bidrag och sena besked påverkar den kommunala självbestämmanderätten och ekonomiska stabiliteten. Detta berör direkt samhällsordningen, den åländska självstyrelsens funktion, och riskerar att leda till skattehöjningar vilket är av stor vikt för egendomsägare och medborgare. Det finns tillräcklig substans i artikeln för en ledare.",
     "fallback": false
+  },
+  {
+    "date": "2026-10-19",
+    "headline": "Arbetet inför IFK:s nästa säsong har inletts",
+    "url": "https://alandsradio.ax/nyheter/arbetet-infor-ifks-nasta-sasong-har-inletts",
+    "skriv": false,
+    "nyhetsvarde": 2,
+    "tema": "sport",
+    "anledning": "Ren sportresultat-rapportering med fokus på ett fotbollslags interna angelägenheter. Saknar koppling till Julius Sundbloms redaktionella fokus. [nyhetsvärde 2 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-10-19",
+    "headline": "Åland stöder tvångsinlösen av säkerhetsskäl",
+    "url": "https://alandsradio.ax/nyheter/aland-stoder-tvangsinlosen-av-sakerhetsskal",
+    "skriv": true,
+    "nyhetsvarde": 9,
+    "tema": "självstyrelse och säkerhet",
+    "anledning": "Förslagen om tvångsinlösen och nekad näringsrätt med rikspolitisk koppling har direkt påverkan på Ålands autonomi, egendom och relation till rikets säkerhet. Detta är av högsta vikt för Julius Sundblom.",
+    "fallback": false
+  },
+  {
+    "date": "2026-10-19",
+    "headline": "En tjänst försvinner från landskapets verkstad",
+    "url": "https://alandsradio.ax/nyheter/en-tjanst-forsvinner-fran-landskapets-verkstad",
+    "skriv": false,
+    "nyhetsvarde": 2,
+    "tema": "lokal förvaltning",
+    "anledning": "Trivial notis om en rutinåtgärd inom den lokala förvaltningen. Saknar större politisk, samhällelig eller ekonomisk relevans för en ledarartikel. [nyhetsvärde 2 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-10-19",
+    "headline": "Trendbrott – färre barn får hemundervisning",
+    "url": "https://alandsradio.ax/nyheter/trendbrott-farre-barn-far-hemundervisning",
+    "skriv": false,
+    "nyhetsvarde": 2,
+    "tema": "demografi",
+    "anledning": "Statistisk notis om en minimal förändring som saknar reell substans för en ledare och ingen tydlig koppling till Sundbloms huvudintressen. Antal påverkade är för litet för att motivera en större analys om samhällsordning eller självstyrelse. [nyhetsvärde 2 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-10-19",
+    "headline": "Anders Wiklöf efter Jaros pik: Påhittigt, men ålänningarna behöver inte vara oro",
+    "url": "https://alandsradio.ax/nyheter/anders-wiklof-efter-jaros-pik-pahittigt-men-alanningarna-behover-inte-vara-oroliga",
+    "skriv": false,
+    "nyhetsvarde": 2,
+    "tema": "sport",
+    "anledning": "Ren sportresultat-rapportering med en personnotis av begränsad betydelse. Saknar djupare koppling till autonomi, samhällsordning eller sedlighet. [nyhetsvärde 2 < 6]",
+    "fallback": false
   }
 ]
