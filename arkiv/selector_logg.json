@@ -12398,5 +12398,105 @@
     "tema": "ekonomi",
     "anledning": "Även om det är av ekonomisk betydelse för Åland, är detta en affärsrelaterad nyhet med fokus på en bank. Den berör inte direkt Julius redaktionella teman som självstyrelse, svensk identitet, samhällsordning, eller sedlighet på ett sätt som motiverar en ledare. Den innehåller inte heller någon politisk konflikt eller större samhällspåverkan som skulle kräva en djupare analys från Julius. [nyhetsvärde 4 < 6]",
     "fallback": false
+  },
+  {
+    "date": "2026-10-20",
+    "headline": "Åland som internationellt exempel tema på föreläsning under tisdagen",
+    "url": "https://alandsradio.ax/nyheter/aland-som-internationellt-exempel-tema-pa-forelasning-under-tisdagen",
+    "skriv": false,
+    "nyhetsvarde": 4,
+    "tema": "självstyrelse",
+    "anledning": "Ämnet är relevant för Julius, men det är en notis om en föreläsning snarare än en faktisk händelse eller ett beslut. För lite substans för en ledare år 1926. [nyhetsvärde 4 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-10-20",
+    "headline": "Lemland och Eckerö ser gärna staden som huvudman för räddningsmyndigheten",
+    "url": "https://alandsradio.ax/nyheter/lemland-och-eckero-ser-garna-staden-som-huvudman-for-raddningsmyndigheten",
+    "skriv": false,
+    "nyhetsvarde": 3,
+    "tema": "lokal förvaltning",
+    "anledning": "Intern kommunal diskussion om en rutinåtgärd. Ingen större politisk betydelse för självstyrelsen eller bredare samhällsfrågor. För liten substans för en ledarartikel av Julius. [nyhetsvärde 3 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-10-20",
+    "headline": "Ålands lyceum har varken pengar eller elevunderlag som motiverar studier i ryska",
+    "url": "https://alandsradio.ax/nyheter/alands-lyceum-har-varken-pengar-eller-elevunderlag-som-motiverar-studier-i-ryska",
+    "skriv": true,
+    "nyhetsvarde": 8,
+    "tema": "självstyrelse, bildning, relationer med omvärlden, försvar",
+    "anledning": "Frågan om språkundervisning, särskilt ryska, är av stor betydelse för Ålands identitet, självstyrelse, och relationer till omvärlden, särskilt med tanke på Sveriges historiska och kulturella kopplingar samt Finlands roll. Julius Sundblom skulle finna temat om bildningens roll i förhållande till nationella intressen och försvaret av den åländska identiteten högst relevant. Utbildningsministerns passivitet ger dessutom en tydlig konflikt att adressera.",
+    "fallback": false
+  },
+  {
+    "date": "2026-10-20",
+    "headline": "Henrik Herlin: “Fler ålänningar borde lära sig ryska”",
+    "url": "https://alandsradio.ax/nyheter/henrik-herlin-fler-alanningar-borde-lara-sig-ryska",
+    "skriv": true,
+    "nyhetsvarde": 7,
+    "tema": "självstyrelse, säkerhet, bildning",
+    "anledning": "Frågan om språk och totalförsvar berör Ålands roll inom Finland, vår självstyrelse och bildning, vilket är en väsentlig diskussion för Julius Sundblom.",
+    "fallback": false
+  },
+  {
+    "date": "2026-10-20",
+    "headline": "Bråk om vädring mellan grannar slutade med misshandel",
+    "url": "https://alandsradio.ax/nyheter/brak-om-vadring-mellan-grannar-slutade-med-misshandel",
+    "skriv": false,
+    "nyhetsvarde": 3,
+    "tema": "sedlighet",
+    "anledning": "Småskalig personlig konflikt med inslag av våld, men utan större samhällelig betydelse eller koppling till bredare åländska frågor. Inte tillräckligt för en ledare av Julius Sundblom. [nyhetsvärde 3 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-10-20",
+    "headline": "Valve anmäler den stora skärgårdsupphandlingen",
+    "url": "https://alandsradio.ax/nyheter/valve-anmaler-den-stora-skargardsupphandlingen",
+    "skriv": true,
+    "nyhetsvarde": 9,
+    "tema": "självstyrelse, ekonomi, samhällsordning",
+    "anledning": "Större upphandling, anmälan och kritik mot landskapsregeringen, konkurrensfrågor och autonomins ekonomiska förvaltning. Mycket substans för en ledare.",
+    "fallback": false
+  },
+  {
+    "date": "2026-10-20",
+    "headline": "Två till sjukhus då personbilar kolliderade med buss i Finström",
+    "url": "https://alandsradio.ax/nyheter/tva-till-sjukhus-da-personbilar-kolliderade-med-buss-i-finstrom",
+    "skriv": false,
+    "nyhetsvarde": 2,
+    "tema": "lokal olycka",
+    "anledning": "Ren olycksrapportering utan större samhällsbetydelse eller koppling till Julius redaktionella teman. [nyhetsvärde 2 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-10-20",
+    "headline": "Baltic Biostimulants hoppas på internationell tillväxt",
+    "url": "https://alandsradio.ax/nyheter/baltic-biostimulants-hoppas-pa-internationell-tillvaxt",
+    "skriv": false,
+    "nyhetsvarde": 3,
+    "tema": "ekonomi/näringsliv",
+    "anledning": "Ämnet är för nischat och saknar den bredare samhälls-, autonomi- eller politiska relevans som krävs för en ledarartikel av Julius Sundblom. Dessutom är det en framåtblickande projektnyhet utan konkret beslut eller större samhällspåverkan än. [nyhetsvärde 3 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-10-20",
+    "headline": "Minskad lastkapacitet på Embarsunds- och Björkölinjen",
+    "url": "https://alandsradio.ax/nyheter/minskad-lastkapacitet-pa-embarsunds-och-bjorkolinjen",
+    "skriv": false,
+    "nyhetsvarde": 2,
+    "tema": "lokal infrastruktur",
+    "anledning": "Trivial notis om rutinåtgärd och tillfälligt minskad lastkapacitet, saknar bredare samhällelig eller politisk relevans för en ledarartikel. [nyhetsvärde 2 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-10-20",
+    "headline": "Rådjuret på Järsö har handväskan kvar runt halsen – \"Vi ska ställa oss i halvmån",
+    "url": "https://alandsradio.ax/nyheter/radjuret-pa-jarso-har-handvaskan-kvar-runt-halsen-vi-ska-stalla-oss-i-halvmaneformation-och-valla-det-mot-ett-nat",
+    "skriv": false,
+    "nyhetsvarde": 2,
+    "tema": "smånotis",
+    "anledning": "Trivial notis om djur och en handväska. Saknar politisk, samhällelig eller existentiell bäring för en ledare. [nyhetsvärde 2 < 6]",
+    "fallback": false
   }
 ]
