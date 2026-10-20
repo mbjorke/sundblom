@@ -12298,5 +12298,105 @@
     "tema": "sport",
     "anledning": "Ren sportresultat-rapportering med en personnotis av begränsad betydelse. Saknar djupare koppling till autonomi, samhällsordning eller sedlighet. [nyhetsvärde 2 < 6]",
     "fallback": false
+  },
+  {
+    "date": "2026-10-20",
+    "headline": "Ny konsul, mera stölder och IFK spelar inte längre i högsta ligan",
+    "url": "https://alandsradio.ax/nyheter/ny-konsul-mera-stolder-och-ifk-spelar-inte-langre-i-hogsta-ligan",
+    "skriv": true,
+    "nyhetsvarde": 8,
+    "tema": "självstyrelse",
+    "anledning": "Ändringar i självstyrelselagen med koppling till landets säkerhet är av yttersta vikt för Ålands autonomi och relationen till Finland, och kräver en ledare. Konsulbytet är också av intresse.",
+    "fallback": false
+  },
+  {
+    "date": "2026-10-20",
+    "headline": "Landskapsregeringen vill reda ut ansvar för läkemedelslager på Åland",
+    "url": "https://alandsradio.ax/nyheter/landskapsregeringen-vill-reda-ut-ansvar-for-lakemedelslager-pa-aland",
+    "skriv": true,
+    "nyhetsvarde": 9,
+    "tema": "självstyrelse",
+    "anledning": "Frågan om läkemedelslager blottlägger en fundamental konflikt om självstyrelsens gränser och rikets befogenheter, direkt kopplad till Ålands unika ställning och säkerhet. Detta är av yttersta vikt för den åländska autonomin och förtjänar en djuplodande ledarartikel.",
+    "fallback": false
+  },
+  {
+    "date": "2026-10-20",
+    "headline": "Rymdresor till Jupiter och Mars – Mobilt planetarium gästar Åland",
+    "url": "https://alandsradio.ax/nyheter/rymdresor-till-jupiter-och-mars-mobilt-planetarium-gastar-aland",
+    "skriv": false,
+    "nyhetsvarde": 2,
+    "tema": "allmänbildning",
+    "anledning": "Intressant för barn, men saknar politisk, samhällelig eller ekonomisk relevans för en ledarartikel. Rent lokal notis om skolverksamhet. [nyhetsvärde 2 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-10-20",
+    "headline": "Höjda träningsavgifter för ungdomar en av konsekvenserna efter ligauttåget",
+    "url": "https://alandsradio.ax/nyheter/hojda-traningsavgifter-for-ungdomar-en-av-konsekvenserna-efter-ligauttaget",
+    "skriv": false,
+    "nyhetsvarde": 2,
+    "tema": "sport",
+    "anledning": "Ren sportrelaterad ekonomisk notis utan djupare samhälls-, autonomi- eller politisk relevans. För obetydlig för Julius Sundblom. [nyhetsvärde 2 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-10-20",
+    "headline": "Peggy Eriksson om självstyrelselagen: ”En skandal hur Finland behandlar Åland”",
+    "url": "https://alandsradio.ax/nyheter/peggy-eriksson-om-sjalvstyrelselagen-en-skandal-hur-finland-behandlar-aland",
+    "skriv": true,
+    "nyhetsvarde": 9,
+    "tema": "självstyrelse",
+    "anledning": "Direkt och skarp kritik mot Finlands hantering av självstyrelselagen, med uppmaning till internationellt agerande. Detta är centralt för Ålands politiska existens och Julius redaktionella linje om självbestämmande och förhållandet till Finland.",
+    "fallback": false
+  },
+  {
+    "date": "2026-10-20",
+    "headline": "Privatperson varnar för otrygg trafiksituation i Västanträsk",
+    "url": "https://alandsradio.ax/nyheter/privatperson-varnar-for-otrygg-trafiksituation-i-vastantrask",
+    "skriv": false,
+    "nyhetsvarde": 2,
+    "tema": "lokal notis",
+    "anledning": "Trivial, smålokal notis om en privatpersons klagomål gällande hastighetsbegränsning, saknar större politisk eller samhällelig relevans för en ledarartikel. [nyhetsvärde 2 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-10-20",
+    "headline": "Staden köper verk av Marlene Lindbäck",
+    "url": "https://alandsradio.ax/nyheter/staden-koper-verk-av-marlene-lindback",
+    "skriv": false,
+    "nyhetsvarde": 2,
+    "tema": "kultur",
+    "anledning": "Trivial, lokal konstnotis utan större samhälls- eller autonomirelevans. Ingen substans för en ledare av Julius Sundblom. [nyhetsvärde 2 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-10-20",
+    "headline": "Lemland vill samordna socialvården – men värna fungerande lokal äldreomsorg",
+    "url": "https://alandsradio.ax/nyheter/lemland-vill-samordna-socialvarden-men-varna-fungerande-lokal-aldreomsorg",
+    "skriv": false,
+    "nyhetsvarde": 4,
+    "tema": "kommunalpolitik",
+    "anledning": "Ämnet är för lokalt och specifikt. Även om det rör autonomi i viss mån, är det en intern diskussion om samarbete mellan kommun och landskapsregering, utan större politisk eller samhällelig vinkel som Julius skulle prioritera för en ledare. [nyhetsvärde 4 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-10-20",
+    "headline": "Transmar välkomnar rikets bränslestöd – men vill se mer pengar",
+    "url": "https://alandsradio.ax/nyheter/transmar-valkomnar-rikets-branslestod-men-vill-se-mer-pengar",
+    "skriv": false,
+    "nyhetsvarde": 3,
+    "tema": "ekonomi",
+    "anledning": "Även om det handlar om ekonomi och stöd till näringslivet, är detta en notis om ett rikspolitiskt beslut som ännu inte preciserats. Det saknas tillräcklig substans och åländsk förankring för en ledare av Sundblom. Transmars kommentar är allmän och handlar om fördelningen av ett nationellt stöd, inte specifikt om åländsk autonomi eller unika åländska förhållanden. Landskapsregeringens potentiella agerande är endast på utredningsstadiet. [nyhetsvärde 3 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-10-20",
+    "headline": "Ålandsbanken tvingas avveckla stor samarbetspartner",
+    "url": "https://alandsradio.ax/nyheter/alandsbanken-tvingas-avveckla-stor-samarbetspartner",
+    "skriv": false,
+    "nyhetsvarde": 4,
+    "tema": "ekonomi",
+    "anledning": "Även om det är av ekonomisk betydelse för Åland, är detta en affärsrelaterad nyhet med fokus på en bank. Den berör inte direkt Julius redaktionella teman som självstyrelse, svensk identitet, samhällsordning, eller sedlighet på ett sätt som motiverar en ledare. Den innehåller inte heller någon politisk konflikt eller större samhällspåverkan som skulle kräva en djupare analys från Julius. [nyhetsvärde 4 < 6]",
+    "fallback": false
   }
 ]
