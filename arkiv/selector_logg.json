@@ -12498,5 +12498,25 @@
     "tema": "smånotis",
     "anledning": "Trivial notis om djur och en handväska. Saknar politisk, samhällelig eller existentiell bäring för en ledare. [nyhetsvärde 2 < 6]",
     "fallback": false
+  },
+  {
+    "date": "2026-10-20",
+    "headline": "Sökte personlig skylt med ”666” – landskapsregeringen pekar på brister i avslage",
+    "url": "https://alandsradio.ax/nyheter/sokte-personlig-skylt-med-666-landskapsregeringen-pekar-pa-brister-i-avslaget",
+    "skriv": false,
+    "nyhetsvarde": 3,
+    "tema": "administration/byråkrati",
+    "anledning": "Ärendet är en administrativ rutinfråga gällande myndighetsbeslut och saknar den tyngd som krävs för en ledarartikel av Julius Sundblom. Det rör inte direkta självstyrelsefrågor, samhällsordning eller sedlighet i en större kontext, utan snarare en formaliafråga kring bristande motivering i ett enskilt fall. Även om '666' kan anspela på sedlighet, är det omständigheterna kring beslutet och dess bristfällighet som är nyheten, inte symbolen i sig. Beslutet var korrekt, blott bristfälligt i sin motivering. [nyhetsvärde 3 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-10-20",
+    "headline": "Valve offentliggör sin anmälan av den stora skärgårdsupphandlingen",
+    "url": "https://alandsradio.ax/nyheter/valve-offentliggor-sin-anmalan-av-den-stora-skargardsupphandlingen",
+    "skriv": true,
+    "nyhetsvarde": 8,
+    "tema": "självstyrelse och ekonomi",
+    "anledning": "Frågan om skärgårdstrafiken och upphandlingen av densamma är av yttersta vikt för hela det åländska samhället, särskilt avseende autonomin, den ekonomiska rättvisan och den svenska identiteten genom tillgängligheten till öarna. Att landskapet genom sitt delägarskap i Axferries potentiellt gynnar detta bolag över andra aktörer är en fråga om sund förvaltning och konkurrens. Dessutom handlar det om en enorm summa skattemedel. Detta förtjänar sannerligen en ledarartikel av Sundblom. Det finns en tydlig koppling till autonomins ansvarsområde, ekonomiska principer och samhällelig rättvisa. Substansen är riklig med fakta om anmälan, kritiken, den avbrutna upphandlingen och det kommande behovet av en ny.",
+    "fallback": false
   }
 ]
