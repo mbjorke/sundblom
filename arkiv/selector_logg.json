@@ -12528,5 +12528,105 @@
     "tema": "kommunalpolitik",
     "anledning": "Internkommunal diskussion om organisatoriskt huvudmannaskap är för lokal och administrativ för en ledare, saknar bredare samhälls- eller autonomirelevans. [nyhetsvärde 3 < 6]",
     "fallback": false
+  },
+  {
+    "date": "2026-10-21",
+    "headline": "Pro Åland bjuder in Karl Hedin för vargdiskussion",
+    "url": "https://alandsradio.ax/nyheter/pro-aland-bjuder-in-karl-hedin-for-vargdiskussion",
+    "skriv": false,
+    "nyhetsvarde": 4,
+    "tema": "miljö/jordbruk",
+    "anledning": "Ämnet i sig (vargfrågan) har viss lokal relevans för jordbruk och sedlighet, men det är i grunden en smal intressefråga utan direkt koppling till de större politiska, ekonomiska eller självstyrelsefrågorna som Julius Sundblom prioriterade. Notisen har inte tillräcklig substans för en ledare. [nyhetsvärde 4 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-10-21",
+    "headline": "ÅCA kan minska sortimentet för att undvika mer import",
+    "url": "https://alandsradio.ax/nyheter/aca-kan-minska-sortimentet-for-att-undvika-mer-import",
+    "skriv": true,
+    "nyhetsvarde": 7,
+    "tema": "ekonomi, självstyrelse, samhällsordning",
+    "anledning": "Frågan om livsmedelsförsörjning, Ålands ekonomiska självständighet och relationen mellan näringsliv och samhälle är central. Hotet om minskad åländsk produktion och ökat importberoende berör Ålands ekonomiska självstyre och Sundbloms syn på det åländska samhället.",
+    "fallback": false
+  },
+  {
+    "date": "2026-10-21",
+    "headline": "Ålandsbankens första Norrlandskontor är nu bara en månad bort",
+    "url": "https://alandsradio.ax/nyheter/alandsbankens-forsta-norrlandskontor-ar-nu-bara-en-manad-bort",
+    "skriv": false,
+    "nyhetsvarde": 3,
+    "tema": "ekonomi",
+    "anledning": "Bankens expansion till Haparanda är en affärsbeslut av banken, inte en händelse av direkt politisk eller samhällelig betydelse för Åland eller autonomin. Det är en rutinmässig expansion för en privat aktör, trots att banken har åländskt ursprung. Brist på substans för en ledarartikel av Sundblom. [nyhetsvärde 3 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-10-21",
+    "headline": "Webbokning för höstens vaccin har öppnat",
+    "url": "https://alandsradio.ax/nyheter/webbokning-for-hostens-vaccin-har-oppnat",
+    "skriv": false,
+    "nyhetsvarde": 2,
+    "tema": "hälsovård",
+    "anledning": "Trivial notis om rutinåtgärd. Ingen samhällelig eller politisk konflikt, ingen koppling till självstyrelse eller andra centrala teman. För obetydligt för en ledarartikel av Julius Sundblom. [nyhetsvärde 2 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-10-21",
+    "headline": "Inger Eriksson får prestigefyllt forskarpris",
+    "url": "https://alandsradio.ax/nyheter/inger-eriksson-far-prestigefyllt-forskarpris",
+    "skriv": false,
+    "nyhetsvarde": 4,
+    "tema": "utbildning",
+    "anledning": "Prestigefyllt pris till åländsk forskare, men saknar direkt koppling till Julius Sundbloms kärnämnen som självstyrelse eller storpolitik. Det är mer en positiv personnotis med allmänbildande karaktär än en nyhet som kräver en ledare. [nyhetsvärde 4 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-10-21",
+    "headline": "KST får 300 000 euro i stöd för att upphandla nytt socialvårdssystem",
+    "url": "https://alandsradio.ax/nyheter/kst-far-300-000-euro-i-stod-for-att-upphandla-nytt-socialvardssystem",
+    "skriv": false,
+    "nyhetsvarde": 3,
+    "tema": "förvaltning",
+    "anledning": "Teknisk och administrativ nyhet om systemupphandling, saknar politisk eller samhällelig konflikt som Julius skulle intressera sig för. För detaljerad och byråkratisk för en ledarartikel. [nyhetsvärde 3 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-10-21",
+    "headline": "WHA får nytt passersystem för 36 000 euro",
+    "url": "https://alandsradio.ax/nyheter/wha-far-nytt-passersystem-for-36-000-euro",
+    "skriv": false,
+    "nyhetsvarde": 2,
+    "tema": "ekonomi/kommunalteknik",
+    "anledning": "Trivial kommunal notis om inköp av passersystem, saknar större nyhetsvärde och koppling till Julius redaktionella teman. [nyhetsvärde 2 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-10-21",
+    "headline": "Finnlines lanserar färska import- och exportanalyser",
+    "url": "https://alandsradio.ax/nyheter/finnlines-lanserar-farska-import-och-exportanalyser",
+    "skriv": false,
+    "nyhetsvarde": 3,
+    "tema": "ekonomi",
+    "anledning": "Information om fraktvolymer är intressant, men det är företagets egen analys och prognos snarare än en oberoende händelse eller ett beslut av politisk eller samhällelig vikt. Det saknas en tydlig åländsk vinkel och substansen är inte tillräcklig för en ledare av Julius. [nyhetsvärde 3 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-10-21",
+    "headline": "Nordea drar in fakturaservice på bankkontoret",
+    "url": "https://alandsradio.ax/nyheter/nordea-drar-in-fakturaservice-pa-bankkontoret",
+    "skriv": false,
+    "nyhetsvarde": 3,
+    "tema": "ekonomi",
+    "anledning": "Trivial notis om banktjänster, saknar större politisk eller samhällelig relevans för en ledarartikel. Julius skulle inte finna det värt en ledare. [nyhetsvärde 3 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-10-21",
+    "headline": "Demensföreningen kräver besked av staden: ”Känns hopplöst”",
+    "url": "https://alandsradio.ax/nyheter/demensforeningen-kraver-besked-av-staden-kanns-hopplost",
+    "skriv": false,
+    "nyhetsvarde": 3,
+    "tema": "sociala frågor",
+    "anledning": "Lokalt socialt problem, men saknar den bredare politiska eller samhälleliga vinkel Julius Sundblom skulle kräva för en ledare. För smal för 1926. [nyhetsvärde 3 < 6]",
+    "fallback": false
   }
 ]
