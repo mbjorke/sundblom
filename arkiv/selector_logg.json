@@ -12628,5 +12628,75 @@
     "tema": "sociala frågor",
     "anledning": "Lokalt socialt problem, men saknar den bredare politiska eller samhälleliga vinkel Julius Sundblom skulle kräva för en ledare. För smal för 1926. [nyhetsvärde 3 < 6]",
     "fallback": false
+  },
+  {
+    "date": "2026-10-21",
+    "headline": "Svenska Yle: Statliga webbsidor ligger nere",
+    "url": "https://alandsradio.ax/nyheter/svenska-yle-statliga-webbsidor-ligger-nere",
+    "skriv": false,
+    "nyhetsvarde": 1,
+    "tema": "modernitetens förfall",
+    "anledning": "Tekniskt problem med begränsad samhällelig påverkan som inte rör Ålands självstyrelse eller andra centrala teman. För obetydligt för en ledare år 1926. [nyhetsvärde 1 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-10-21",
+    "headline": "Barnombudsmannen vill se tydligare information till barn på Åland – rapport lyft",
+    "url": "https://alandsradio.ax/nyheter/barnombudsmannen-vill-se-tydligare-information-till-barn-pa-aland-rapport-lyfter-lardomar-fran-pandemin",
+    "skriv": false,
+    "nyhetsvarde": 4,
+    "tema": "samhälle",
+    "anledning": "Ämnet är för modernt och handlar om barns delaktighet och informationsförmedling, vilket inte passar Julius redaktionella inriktning eller den tidens fokus. Substansen är också mer av en rekommendation än en konkret händelse eller konflikt. [nyhetsvärde 4 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-10-21",
+    "headline": "Oppositionen öppnar för samarbete om skärgårdstrafiken – men ställer krav",
+    "url": "https://alandsradio.ax/nyheter/oppositionen-oppnar-for-samarbete-om-skargardstrafiken-men-staller-krav",
+    "skriv": true,
+    "nyhetsvarde": 7,
+    "tema": "ekonomi",
+    "anledning": "Frågan om skärgårdstrafiken är en central ekonomisk och samhällelig fråga för Åland. Att oppositionen öppnar för samarbete men ställer tydliga krav indikerar en betydande politisk process som direkt påverkar den åländska infrastrukturen, ekonomin och självstyrelsens förmåga att hantera viktiga samhällsfunktioner. Upphandling, konkurrens och avtalsformer är viktiga ämnen för en ledare.",
+    "fallback": false
+  },
+  {
+    "date": "2026-10-21",
+    "headline": "Getaboden begärd i konkurs – skulle återöppnas till lilla jul",
+    "url": "https://alandsradio.ax/nyheter/getaboden-begard-i-konkurs-skulle-ateroppnas-till-lilla-jul",
+    "skriv": false,
+    "nyhetsvarde": 3,
+    "tema": "ekonomi",
+    "anledning": "Trivial lokal notis om en restaurangs konkurs och potentiella övertagande. Saknar den bredare samhällsrelevans eller koppling till Julius Sundbloms kärnfrågor som självstyrelse eller sedlighet. [nyhetsvärde 3 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-10-21",
+    "headline": "Bildningen får tilläggsanslag – nästa års budget visar minus",
+    "url": "https://alandsradio.ax/nyheter/bildningen-far-tillaggsanslag-nasta-ars-budget-visar-minus",
+    "skriv": true,
+    "nyhetsvarde": 6,
+    "tema": "ekonomi",
+    "anledning": "Budgetbeslut och dess konsekvenser för staden, finansiering och skatter är av vikt för Åland och dess ekonomi. Trots att detta är en stadsfråga, påverkar Mariehamn som centralort hela landskapet. Julius kan skriva om de ekonomiska prioriteringarna och riskerna med budget i minus, samt om synen på framtida skatteintäkter.",
+    "fallback": false
+  },
+  {
+    "date": "2026-10-21",
+    "headline": "Slagsmål om alkohol på Badhusberget gav böter och samhällstjänst",
+    "url": "https://alandsradio.ax/nyheter/slagsmal-om-alkohol-pa-badhusberget-gav-boter-och-samhallstjanst",
+    "skriv": false,
+    "nyhetsvarde": 2,
+    "tema": "sedlighet",
+    "anledning": "Trivial notis om personliga slagsmål, saknar större samhällelig betydelse eller koppling till Julius redaktionella teman bortom allmän sedlighet. För obetydlig för en ledarartikel. [nyhetsvärde 2 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-10-21",
+    "headline": "Tvist om 620 000 euro efter mjölkkonkurs – foderkostnader ifrågasätts",
+    "url": "https://alandsradio.ax/nyheter/tvist-om-620-000-euro-efter-mjolkkonkurs-foderkostnader-ifragasatts",
+    "skriv": false,
+    "nyhetsvarde": 4,
+    "tema": "ekonomi",
+    "anledning": "Även om det är en betydande summa och rör näringslivet, är det en pågående tvist med få konkreta beslut ännu. Julius föredrar att avvakta tills det finns ett tydligare utfall eller principiella frågor om rättvisa eller samhällsordning blir mer framträdande, snarare än en enskild affärstvist. [nyhetsvärde 4 < 6]",
+    "fallback": false
   }
 ]
