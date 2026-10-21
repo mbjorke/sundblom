@@ -12698,5 +12698,25 @@
     "tema": "ekonomi",
     "anledning": "Även om det är en betydande summa och rör näringslivet, är det en pågående tvist med få konkreta beslut ännu. Julius föredrar att avvakta tills det finns ett tydligare utfall eller principiella frågor om rättvisa eller samhällsordning blir mer framträdande, snarare än en enskild affärstvist. [nyhetsvärde 4 < 6]",
     "fallback": false
+  },
+  {
+    "date": "2026-10-21",
+    "headline": "Så fick rådjuret sin ”handväska” – misslyckad räddningsaktion på onsdagen",
+    "url": "https://alandsradio.ax/nyheter/sa-fick-radjuret-sin-handvaska-misslyckad-raddningsaktion-pa-onsdagen",
+    "skriv": false,
+    "nyhetsvarde": 1,
+    "tema": "djurliv",
+    "anledning": "Trivial notis om ett djur, saknar all politisk eller samhällelig relevans. Inget för Julius Sundblom att skriva ledare om. [nyhetsvärde 1 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-10-21",
+    "headline": "Brand i spånsug i slöjdsal på GHS",
+    "url": "https://alandsradio.ax/nyheter/brand-i-spansug-i-slojdsal-pa-ghs",
+    "skriv": false,
+    "nyhetsvarde": 1,
+    "tema": "lokal nyhet",
+    "anledning": "Trivial lokal notis om en mindre brand utan större skador eller konsekvenser. Saknar relevans för Julius redaktionella inriktning. [nyhetsvärde 1 < 6]",
+    "fallback": false
   }
 ]
