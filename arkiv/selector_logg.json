@@ -12718,5 +12718,85 @@
     "tema": "lokal nyhet",
     "anledning": "Trivial lokal notis om en mindre brand utan större skador eller konsekvenser. Saknar relevans för Julius redaktionella inriktning. [nyhetsvärde 1 < 6]",
     "fallback": false
+  },
+  {
+    "date": "2026-10-22",
+    "headline": "666 på bilen, rådjur med väska sökes och ny lösning behövs för skärgårdstrafiken",
+    "url": "https://alandsradio.ax/nyheter/666-pa-bilen-radjur-med-vaska-sokes-och-ny-losning-behovs-for-skargardstrafiken",
+    "skriv": true,
+    "nyhetsvarde": 8,
+    "tema": "ekonomi, självstyrelse, samhällsordning",
+    "anledning": "Frågan om skärgårdstrafiken är av stor betydelse för Ålands ekonomi, invånarnas rörlighet och hela den åländska självstyrelsens förmåga att tillhandahålla grundläggande tjänster. Det rör stora summor pengar och flera politiska aktörer är involverade. Detta har potential att utvecklas till en kris eller en viktig politisk strid som Julius Sundblom absolut skulle vilja kommentera ur ett samhällsekonomiskt och självstyrelseperspektiv. Rådjursnotisen är irrelevant.",
+    "fallback": false
+  },
+  {
+    "date": "2026-10-22",
+    "headline": "LR häver avtal med utbildningsföretag",
+    "url": "https://alandsradio.ax/nyheter/lr-haver-avtal-med-utbildningsforetag",
+    "skriv": false,
+    "nyhetsvarde": 3,
+    "tema": "ekonomi",
+    "anledning": "Kontraktsbrott på grund av konkurs är en rutinåtgärd. Även om det rör utbildning och integration, är det en för liten del av det större SFI-programmet och saknar den politiska, samhälleliga eller sedliga tyngd som krävs för en ledare av Julius. [nyhetsvärde 3 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-10-22",
+    "headline": "Tallink Silja ökade vinsten: ”Starkt sommarkvartal trots ökade kostnader”",
+    "url": "https://alandsradio.ax/nyheter/tallink-silja-okade-vinsten-starkt-sommarkvartal-trots-okade-kostnader",
+    "skriv": false,
+    "nyhetsvarde": 3,
+    "tema": "ekonomi",
+    "anledning": "Tallink Silja finns ej 1926. Denna nyhet är dessutom för modern i sin struktur och rör ett enskilt företags vinst, vilket är för specifikt för en ledare 1926. [nyhetsvärde 3 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-10-22",
+    "headline": "Viking Line varnar: Blir avsevärt lägre vinst i år",
+    "url": "https://alandsradio.ax/nyheter/viking-line-varnar-blir-avsevart-lagre-vinst-i-ar",
+    "skriv": false,
+    "nyhetsvarde": 4,
+    "tema": "ekonomi",
+    "anledning": "Även om ekonomiska nyheter kan vara relevanta, är detta en ganska rutinmässig delårsrapport med en vinstvarning, snarare än en dramatisk händelse som motiverar en ledarartikel från Julius. Ingen större samhällspåverkan eller autonomifråga. [nyhetsvärde 4 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-10-22",
+    "headline": "Kommunförbundet kritiserar reglerna för likviditetsstöd – ”ledde till Lumparland",
+    "url": "https://alandsradio.ax/nyheter/kommunforbundet-kritiserar-reglerna-for-likviditetsstod-ledde-till-lumparlands-uttrade",
+    "skriv": false,
+    "nyhetsvarde": 4,
+    "tema": "ekonomi",
+    "anledning": "Ärendet rör en specifik kommun och en relativt teknisk fråga om likviditetsstöd. Trots att det berör kommunalt självstyre och ekonomi, saknar det den större principiella tyngden för en ledarartikel av Sundblom. Det är mer en intern förvaltningsfråga än en bredare politisk debatt, och den direkta kopplingen till Ålands självstyrelse i stort är för svag. Dessutom är det år 1926 och detta scenario är mer typiskt för en senare tidpunkt. [nyhetsvärde 4 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-10-22",
+    "headline": "Ny demonstration mot nedskärningarna inom den palliativa vården",
+    "url": "https://alandsradio.ax/nyheter/ny-demonstration-mot-nedskarningarna-inom-den-palliativa-varden",
+    "skriv": false,
+    "nyhetsvarde": 4,
+    "tema": "samhällsfråga",
+    "anledning": "Även om det handlar om en samhällsfråga, saknar den den specifika politiska eller existentiella tyngden som Julius Sundblom föredrar i sina ledarartiklar 1926. Fokus på enskilda vårdnedskärningar snarare än större autonomifrågor eller sedlighetsfrågor gör den för smal. [nyhetsvärde 4 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-10-22",
+    "headline": "Slem och avföring avslöjar fiskmångfald i åländska vatten",
+    "url": "https://alandsradio.ax/nyheter/slem-och-avforing-avslojar-fiskmangfald-i-alandska-vatten",
+    "skriv": false,
+    "nyhetsvarde": 3,
+    "tema": "vetenskap",
+    "anledning": "Vetenskaplig metod för fiskbestånd, saknar politisk, ekonomisk eller samhällelig vinkel av betydelse för en ledarartikel. Fokus på metod snarare än konkret effekt. [nyhetsvärde 3 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-10-22",
+    "headline": "Gammal märkning på fack för plast kan förbrylla Mises kunder",
+    "url": "https://alandsradio.ax/nyheter/gammal-markning-pa-fack-for-plast-kan-forbrylla-mises-kunder",
+    "skriv": false,
+    "nyhetsvarde": 1,
+    "tema": "miljö",
+    "anledning": "Trivial notis om sopsortering, saknar relevans för ledarartikel. [nyhetsvärde 1 < 6]",
+    "fallback": false
   }
 ]
