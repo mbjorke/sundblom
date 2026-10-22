@@ -12888,5 +12888,15 @@
     "tema": "kulturarv",
     "anledning": "För obetydlig notis om julmärken och restaurering. Saknar politisk, samhällelig eller autonomirelaterad tyngd för en ledare. [nyhetsvärde 1 < 6]",
     "fallback": false
+  },
+  {
+    "date": "2026-10-22",
+    "headline": "Klart för nya farleder för kortrutt mellan Föglö, Kökar och Sottunga",
+    "url": "https://alandsradio.ax/nyheter/klart-for-nya-farleder-for-kortrutt-mellan-foglo-kokar-och-sottunga",
+    "skriv": true,
+    "nyhetsvarde": 8,
+    "tema": "autonomi, samhällsutveckling, ekonomi, naturvård",
+    "anledning": "Landskapsregeringens beslut om nya farleder är ett konkret exempel på hur den åländska självstyrelsen utövar sin makt och fattar beslut som direkt påverkar åländska medborgare och näringsliv. Det rör stora ekonomiska investeringar (en miljon euro), infrastrukturell utveckling som ska förbättra kommunikationerna i skärgården, men också en intressekonflikt mellan samhällsnytta och naturvård/markägares rättigheter. Detta är en nyhet med substans och flera vinklar som Julius Sundblom kan behandla ur ett självstyrelse-, samhällsordnings- och potentiellt sedlighetsperspektiv, särskilt gällande avvägningen mellan framsteg och bevarande.",
+    "fallback": false
   }
 ]
