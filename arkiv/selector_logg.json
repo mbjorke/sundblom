@@ -12798,5 +12798,95 @@
     "tema": "miljö",
     "anledning": "Trivial notis om sopsortering, saknar relevans för ledarartikel. [nyhetsvärde 1 < 6]",
     "fallback": false
+  },
+  {
+    "date": "2026-10-22",
+    "headline": "Expert varnar för att AI kan påverka våra rättigheter",
+    "url": "https://alandsradio.ax/nyheter/expert-varnar-for-att-ai-kan-paverka-vara-rattigheter",
+    "skriv": false,
+    "nyhetsvarde": 4,
+    "tema": "modernitetens förfall",
+    "anledning": "Ämnet AI och dess påverkan på samhället är för futuristiskt och abstrakt för 1926. Julius Sundblom skulle inte se det som en relevant fråga för en ledarartikel med tanke på de samhällsutmaningar som var aktuella då. [nyhetsvärde 4 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-10-22",
+    "headline": "Viking Lines vd: Omöjligt att låta resenärerna ta ökade bränslekostnader",
+    "url": "https://alandsradio.ax/nyheter/viking-lines-vd-omojligt-att-lata-resenarerna-ta-okade-branslekostnader",
+    "skriv": false,
+    "nyhetsvarde": 4,
+    "tema": "ekonomi",
+    "anledning": "Ekonomisk notis om ett enskilt rederi. Saknar tillräcklig koppling till autonomi eller bredare samhällsfrågor för en ledare 1926. [nyhetsvärde 4 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-10-22",
+    "headline": "Efter kritiken: ÅHS-ledningen föreslår paus för flytt av palliativa vården",
+    "url": "https://alandsradio.ax/nyheter/efter-kritiken-ahs-ledningen-foreslar-paus-for-flytt-av-palliativa-varden",
+    "skriv": false,
+    "nyhetsvarde": 4,
+    "tema": "lokal förvaltning",
+    "anledning": "Även om det handlar om sjukvård och lokal förvaltning, är detta en intern diskussion och en paus i ett förslag. Det är för mycket en administrativ processfråga med tillfällig karaktär snarare än ett principiellt beslut med stor genomslagskraft för en ledare. [nyhetsvärde 4 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-10-22",
+    "headline": "Trafiksäkerhetskonsulent ”Reflexerna håller ungefär tre år och cirka 20 tvättar”",
+    "url": "https://alandsradio.ax/feature/trafiksakerhetskonsulent-reflexerna-haller-ungefar-tre-ar-och-cirka-20-tvattar",
+    "skriv": false,
+    "nyhetsvarde": 1,
+    "tema": "vardagsnotis",
+    "anledning": "Trivial notis om trafiksäkerhet och reflexer, saknar politisk, samhällelig eller kulturell relevans för en ledare. Ingen substans för Sundblom. [nyhetsvärde 1 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-10-22",
+    "headline": "Garagebrand i södra Mariehamn – inga personskador",
+    "url": "https://alandsradio.ax/nyheter/garagebrand-i-sodra-mariehamn-inga-personskador",
+    "skriv": false,
+    "nyhetsvarde": 1,
+    "tema": "lokalnotis",
+    "anledning": "Trivial lokal notis om en brand utan större konsekvenser, saknar koppling till Julius Sundbloms intresseområden. [nyhetsvärde 1 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-10-22",
+    "headline": "ÅHS står fast vid nedskärningarna – sjukhuset svarar läkarna och cancerföreninge",
+    "url": "https://alandsradio.ax/nyheter/ahs-star-fast-vid-nedskarningarna-sjukhuset-svarar-lakarna-och-cancerforeningen",
+    "skriv": true,
+    "nyhetsvarde": 8,
+    "tema": "samhällsordning, ekonomi",
+    "anledning": "Betydande nedskärningar inom den allmänna sjukvården, inklusive palliativ vård, påverkar hela samhället och medborgarnas välfärd. Den ekonomiska situationen och dess konsekvenser för vitala samhällsfunktioner är ett centralt tema som förtjänar en ledare. Kritiken från läkare och cancerföreningen indikerar en konflikt som kan diskuteras ur ett samhälls- och autonomiperspektiv, där ledningens svar och det framtida beslutet får stor betydelse.",
+    "fallback": false
+  },
+  {
+    "date": "2026-10-22",
+    "headline": "Hotellnätterna minskade i september – störst tapp utanför stan",
+    "url": "https://alandsradio.ax/nyheter/hotellnatterna-minskade-i-september-storst-tapp-utanfor-stan",
+    "skriv": false,
+    "nyhetsvarde": 3,
+    "tema": "ekonomi",
+    "anledning": "Statistik om hotellövernattningar är för obetydlig och saknar den politiska eller samhällsbärande tyngd som en ledare kräver. Ingen konflikt, inget beslut, ingen principfråga. Tunn substans. [nyhetsvärde 3 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-10-22",
+    "headline": "Även LR tvingas stänga sajter – problem ska lösas under dagen",
+    "url": "https://alandsradio.ax/nyheter/aven-lr-tvingas-stanga-sajter-problem-ska-losas-under-dagen",
+    "skriv": false,
+    "nyhetsvarde": 3,
+    "tema": "teknik/administration",
+    "anledning": "Tekniskt problem med mjukvara, snarare en rutinåtgärd än en substantiell politisk händelse. Lösningen förväntas ske under dagen, vilket minskar händelsens långsiktiga betydelse. [nyhetsvärde 3 < 6]",
+    "fallback": false
+  },
+  {
+    "date": "2026-10-22",
+    "headline": "Årets julmärken stöder restaurering av lotsstuga på Sälsö",
+    "url": "https://alandsradio.ax/nyheter/arets-julmarken-stoder-restaurering-av-lotsstuga-pa-salso",
+    "skriv": false,
+    "nyhetsvarde": 1,
+    "tema": "kulturarv",
+    "anledning": "För obetydlig notis om julmärken och restaurering. Saknar politisk, samhällelig eller autonomirelaterad tyngd för en ledare. [nyhetsvärde 1 < 6]",
+    "fallback": false
   }
 ]
